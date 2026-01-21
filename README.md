@@ -45,38 +45,11 @@ Run the Streamlit viewer:
 streamlit run show-data.py
 ```
 
-Customizing which countries are extracted
-
-- Open the `extraction.py` file and find the `my_nations` list (around [extraction.py](extraction.py#L310)).
-- Add or remove display names exactly as they appear in the savegame (e.g. "United Kingdom", "Germany").
-- Example snippet in `extraction.py`:
-
-```python
-my_nations = [
-		"Belarus",
-		"Belgium-Luxembourg",
-		"Cambodia",
-		"East African Federation",
-		"Kazakhstan",
-		"Latvia",
-		"Lithuania",
-		"Madagascar",
-		"Nordic Federation",
-		"United Kingdom",
-		"Southern Africa Federation",
-		"South American Union",
-		"Mauritius",
-		"Germany",
-]
-```
-
-Note: The next version will move this list out of the main script into a separate configuration file to make edits easier. I recommend using YAML for that file because it's human-friendly and easy to edit by hand. A suggested format would be `config.yml`:
+Edit `config.yml` and add in the nations you control
 
 ```yaml
 my_nations:
-	- United Kingdom
-	- Germany
-	- Mauritius
+  - United Kingdom
+  - Germany
+  - Mauritius
 ```
-
-Using YAML keeps the configuration readable and supports future extensions (filters, groups, or metadata per nation) without changing code.

@@ -7,6 +7,7 @@ from datetime import datetime
 from threading import Timer
 
 import pandas as pd
+import yaml
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
@@ -307,45 +308,21 @@ def run_extraction_pipeline(specific_file_path=None):
         df = extract_nation_data(data)
 
         # Filter
-        my_nations = [
-            "Belarus",
-            "Belgium-Luxembourg",
-            # "Botswana",
-            "Cambodia",
-            # "Colombia",
-            "East African Federation",
-            # "Ecuador",
-            "Kazakhstan",
-            "Latvia",
-            # "Lesotho",
-            "Lithuania",
-            # "Kenya",
-            "Madagascar",
-            # "Malawi",
-            # "Mozambique",
-            # "Namibia",
-            "Nordic Federation",
-            # "Norway",
-            # "Peru",
-            # "Peruvian Confederation",
-            # "Rwanda-Burundi",
-            # "Tanzania",
-            "United Kingdom",
-            # "Zambia",
-            # "Zimbabwe",
-            # "Somalia",
-            "Southern Africa Federation",
-            "South American Union",
-            # "South Africa",
-            # "Uganda",
-            # "Bolivia",
-            # "Paraguay",
-            # "Somaliland",
-            # "Congo",
-            # "Venezuela",
-            "Mauritius",
-            "Germany",
-        ]
+        # Load nation filter from config.yml if present, otherwise fall back
+        config_path = "config.yml"
+        my_nations = None
+        if os.path.isfile(config_path):
+            try:
+                with open(config_path, "r", encoding="utf-8") as cf:
+                    cfg = yaml.safe_load(cf)
+                    my_nations = cfg.get("my_nations")
+                    logger.info(f"Loaded my_nations from {config_path}: {my_nations}")
+            except Exception as e:
+                logger.error(f"Failed to read {config_path}: {e}")
+        if not my_nations:
+            logger.error(f"No nations specified in {config_path}. Please add a 'my_nations' list.")
+            exit(1)
+
         df_filtered = df[df["nation_name"].isin(my_nations)]
 
         # Check if empty (sometimes save files are just metadata)
