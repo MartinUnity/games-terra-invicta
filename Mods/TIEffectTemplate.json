@@ -298,5 +298,35 @@
     "stackable": true,
     "duration_months": -1,
     "contexts": ["AlienHateFromMCUsage"]
+  },
+  {
+    "dataName": "Effect_ShipMagDamage_lvl1",
+    "operation": "Multiplicative",
+    "value": 1.125,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["ShipMagDamage"]
+  },
+  {
+    "dataName": "Effect_ShipMagDamage_lvl2",
+    "operation": "Multiplicative",
+    "value": 1.2375,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["ShipMagDamage"]
+  },
+  {
+    "dataName": "Effect_ShipMagDamage_lvl3",
+    "operation": "Multiplicative",
+    "value": 1.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["ShipMagDamage"]
   }
 ]

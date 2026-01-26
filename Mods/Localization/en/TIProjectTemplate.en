@@ -5,9 +5,7 @@ TIProjectTemplate.summary.Project_155mmAutocannon_ETC=Develop and manufacture a 
 TIProjectTemplate.displayName.Project_18mmMinigun_ETC=18mm Rapid ETC Minigun
 TIProjectTemplate.summary.Project_18mmMinigun_ETC=Develop and manufacture a 18mm Rapid Minigun with ETC propulsion system.
 
-TIProjectTemplate.displayName.Project_MicroMissileBayMRK1=Micro Missile Bay MRK1
-TIProjectTemplate.summary.Project_MicroMissileBayMRK1=Develop and manufacture a Micro
-
+c
 TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L1=Heuristic Water Optimization L1
 TIProjectTemplate.summary.Project_ZethrokWaterBonus_L1=Research and implement Heuristic Water Optimization Level 1 to improve material efficiency in weapon systems.
 TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L2=Heuristic Water Optimization L2
@@ -76,4 +74,27 @@ TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Master=Research and 
 
 TIProjectTemplate.displayName.Project_PointDefenseArray_T0=Point Defense Array - Tier 0
 TIProjectTemplate.summary.Project_PointDefenseArray_T0=<habmodule>
+
+TIProjectTemplate.displayName.Project_ShipMagDamage_lvl1=Nano Optimized Shell Designing
+TIProjectTemplate.summary.Project_ShipMagDamage_lvl1=Research nano-optimized shell designs to enhance the damage output of magnetic weapons.
+TIProjectTemplate.displayName.Project_ShipMagDamage_lvl2=Argon Hybrid Slug Technology
+TIProjectTemplate.summary.Project_ShipMagDamage_lvl2=Research argon hybrid slug technology to improve the performance of magnetic weapon projectiles.
+TIProjectTemplate.displayName.Project_ShipMagDamage_lvl3=Quantum Destabilized Mass Drivers
+TIProjectTemplate.summary.Project_ShipMagDamage_lvl3=Research quantum destabilized mass driver technology to significantly increase the damage potential of magnetic weapons.
+
+TIProjectTemplate.displayName.Project_ThermalFissionFreighters=Thermal Fission Freighters
+TIProjectTemplate.summary.Project_ThermalFissionFreighters=Develop thermal fission propulsion systems for freighter-class ships to enhance their speed and efficiency.
+TIProjectTemplate.displayName.Project_SuperHeatedGravitonDrives=Super Heated Graviton Drives
+TIProjectTemplate.summary.Project_SuperHeatedGravitonDrives=Research and develop super heated graviton drive technology to significantly improve ship propulsion efficiency and speed.
+TIProjectTemplate.displayName.Project_EarthTransferOptimization=Earth Transfer Optimization
+TIProjectTemplate.summary.Project_EarthTransferOptimization=Implement advanced transfer optimization techniques to reduce travel time
+
+TIProjectTemplate.displayName.Project_FlyingVehicles=Flying Vehicles
+TIProjectTemplate.summary.Project_FlyingVehicles=Research and develop flying vehicle technology to enhance transportation capabilities.
+TIProjectTemplate.displayName.Project_AIControlledFlyingVehicles=AI Controlled Flying Vehicles
+TIProjectTemplate.summary.Project_AIControlledFlyingVehicles=Research and develop AI controlled flying vehicle technology to enhance autonomous transportation capabilities.
+TIProjectTemplate.displayName.Project_VirtualTouristGuides=Virtual Tourist Guides
+TIProjectTemplate.summary.Project_VirtualTouristGuides=Research and develop virtual tourist guide technology to enhance tourism experiences.
+TIProjectTemplate.displayName.Project_SpaceInfusedAugmentedRealityTours=Space-Infused Augmented Reality Tours
+TIProjectTemplate.summary.Project_SpaceInfusedAugmentedRealityTours=Research and develop space-infused augmented reality tour technology to enhance tourism experiences.
 

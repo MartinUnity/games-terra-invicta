@@ -3,24 +3,24 @@
     "dataName": "Digger",
     "friendlyName": "Digger",
     "noseHardpoints": 0,
-    "hullHardpoints": 2,
+    "hullHardpoints": 1,
     "internalModules": 2,
     "consTier": 1,
     "maxOfficers": 1,
     "length_m": 50,
     "toylength_cm": 7.1,
     "width_m": 10,
-    "volume": 1963,
+    "volume": 963,
     "thrusterMultiplier": 1,
-    "structuralIntegrity": 7,
-    "mass_tons": 350,
-    "crew": 4,
+    "structuralIntegrity": 2,
+    "mass_tons": 50,
+    "crew": 1,
     "alien": false,
     "noShipyardBuild": false,
-    "simpleHull": false,
-    "monthlyIncome_Money": -2,
-    "missionControl": 1,
-    "baseConstructionTime_days": 90,
+    "simpleHull": true,
+    "monthlyIncome_Money": -0.2,
+    "missionControl": 0.25,
+    "baseConstructionTime_days": 30,
     "shipyardyOffset": [0, 0, 0],
     "modelResource": ["ships/Escort", "ships/Escort_1"],
     "combatUIpath": [
@@ -72,12 +72,7 @@
       {
         "moduleSlotType": "HullHardPoint",
         "x": 7,
-        "y": 2
-      },
-      {
-        "moduleSlotType": "HullHardPoint",
-        "x": 7,
-        "y": 4
+        "y": 3
       },
       {
         "moduleSlotType": "Utility",

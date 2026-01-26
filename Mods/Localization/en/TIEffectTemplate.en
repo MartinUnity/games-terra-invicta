@@ -33,3 +33,8 @@ TIEffectTemplate.description.Effect_MCUsageMasking_Intermediate=-We estimate we 
 TIEffectTemplate.description.Effect_MCUsageMasking_Advanced=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{3}/{8} MC usage)
 TIEffectTemplate.description.Effect_MCUsageMasking_Expert=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{3}/{8} MC usage)
 TIEffectTemplate.description.Effect_MCUsageMasking_Master=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{3}/{8} MC usage)
+
+TIEffectTemplate.description.Effect_ShipMagDamage_lvl1=-Magnetic Weapons do {18} extra damage (+{3}/{8} damage)
+TIEffectTemplate.description.Effect_ShipMagDamage_lvl2=-Magnetic Weapons do {18} extra damage (+{3}/{8} damage)
+TIEffectTemplate.description.Effect_ShipMagDamage_lvl3=-Magnetic Weapons do {18} extra damage (+{3}/{8} damage)
+

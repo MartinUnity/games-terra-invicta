@@ -27,13 +27,14 @@
     "Hammerhead_ShadowMRK2 # Pure kinetic",
     "Hammerhead_ShadowMRK3 # Pure kinetic"
   ],
-  "THINGS_TO_ADD": [
-    "Magnetic weapons do +X more damage from tech",
-    "Earth transfor time for tugs and haulers reduced by X%",
-    "Boosts used for transfer from earth reduced by X%",
-    "Add new defense structure - super low level",
+  "THINGS_TO_ADD_TO_MOD": [
+    "DONE - Magnetic weapons do +X more damage from tech",
+    "DONE - Earth transfer time for tugs and haulers reduced by X%",
+    "DONE - Boosts used for transfer from earth reduced by X%",
+    "DONE - Add new defense structure - super low level",
     "Space mine mission control cost reduction by X count",
-    "Economy priority increase by X%",
-    "Increase Control Point management capacity by X"
+    "DONE - Economy priority increase by X%",
+    "Increase Control Point management capacity by X",
+    "DONE - Add new small ship hull - Digger"
   ]
 }
