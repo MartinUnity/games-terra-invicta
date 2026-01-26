@@ -1,0 +1,10 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "^Mods/.*",
+        "cmd": "rsync -a --delete Mods \"$HOME/.local/share/Steam/steamapps/common/Terra Invicta/Mods/Enabled/Zethrok\""
+      }
+    ]
+  }
+}

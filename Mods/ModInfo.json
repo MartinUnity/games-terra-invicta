@@ -1,0 +1,30 @@
+{
+  "Title": "Zethrok",
+  "Description": "Various tweaks and improvements.",
+  "Version": "0.11",
+  "Author": "Zethrok",
+  "TODO": [
+    "Add more weapons balancing mods.",
+    "Consider adding new weapon types or variants."
+  ],
+  "GUNS_TO_ADD": [
+    "25mmAutocannon_LightRapid",
+    "155mmAutocannon_ETC",
+    "18mmMinigun_ETC",
+    "Add MRK 1-3 for the above GUNS"
+  ],
+  "MISSILES_TO_ADD": [
+    "MicroMissile_LightningMRK1",
+    "MicroMissile_LightningMRK2",
+    "MicroMissile_LightningMRK3",
+    "Swarmer_ThunderheadMRK1",
+    "Swarmer_ThunderheadMRK2",
+    "Swarmer_ThunderheadMRK3",
+    "Armored_BearMRK1",
+    "Armored_BearMRK2",
+    "Armored_BearMRK3",
+    "Hammerhead_ShadowMRK1 # Pure kinetic",
+    "Hammerhead_ShadowMRK2 # Pure kinetic",
+    "Hammerhead_ShadowMRK3 # Pure kinetic"
+  ]
+}

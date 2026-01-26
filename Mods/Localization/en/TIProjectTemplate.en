@@ -1,0 +1,76 @@
+TIProjectTemplate.displayName.Project_25mmAutocannon=25mm Light Rapid ETC Autocannon
+TIProjectTemplate.summary.Project_25mmAutocannon=Develop and manufacture a 25mm Light Rapid Autocannon with ETC propulsion system.
+TIProjectTemplate.displayName.Project_155mmAutocannon_ETC=155mm Heavy ETC Autocannon
+TIProjectTemplate.summary.Project_155mmAutocannon_ETC=Develop and manufacture a 155mm Heavy Autocannon with ETC propulsion system.
+TIProjectTemplate.displayName.Project_18mmMinigun_ETC=18mm Rapid ETC Minigun
+TIProjectTemplate.summary.Project_18mmMinigun_ETC=Develop and manufacture a 18mm Rapid Minigun with ETC propulsion system.
+
+TIProjectTemplate.displayName.Project_MicroMissileBayMRK1=Micro Missile Bay MRK1
+TIProjectTemplate.summary.Project_MicroMissileBayMRK1=Develop and manufacture a Micro
+
+TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L1=Heuristic Water Optimization L1
+TIProjectTemplate.summary.Project_ZethrokWaterBonus_L1=Research and implement Heuristic Water Optimization Level 1 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L2=Heuristic Water Optimization L2
+TIProjectTemplate.summary.Project_ZethrokWaterBonus_L2=Research and implement Heuristic Water Optimization Level 2 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L3=Heuristic Water Optimization L3
+TIProjectTemplate.summary.Project_ZethrokWaterBonus_L3=Research and implement Heuristic Water Optimization Level 3 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L4=Heuristic Water Optimization L4
+TIProjectTemplate.summary.Project_ZethrokWaterBonus_L4=Research and implement Heuristic Water Optimization Level 4 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L5=Heuristic Water Optimization L5
+TIProjectTemplate.summary.Project_ZethrokWaterBonus_L5=Research and implement Heuristic Water Optimization Level 5 to improve material efficiency in weapon systems.
+
+TIProjectTemplate.displayName.Project_ZethrokVolatilesBonus_L1=Heuristic Volatile Optimization L1
+TIProjectTemplate.summary.Project_ZethrokVolatilesBonus_L1=Research and implement Heuristic Volatile Optimization Level 1 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokVolatilesBonus_L2=Heuristic Volatile Optimization L2
+TIProjectTemplate.summary.Project_ZethrokVolatilesBonus_L2=Research and implement Heuristic Volatile Optimization Level 2 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokVolatilesBonus_L3=Heuristic Volatile Optimization L3
+TIProjectTemplate.summary.Project_ZethrokVolatilesBonus_L3=Research and implement Heuristic Volatile Optimization Level 3 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokVolatilesBonus_L4=Heuristic Volatile Optimization L4
+TIProjectTemplate.summary.Project_ZethrokVolatilesBonus_L4=Research and implement Heuristic Volatile Optimization Level 4 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokVolatilesBonus_L5=Heuristic Volatile Optimization L5
+TIProjectTemplate.summary.Project_ZethrokVolatilesBonus_L5=Research and implement Heuristic Volatile Optimization Level 5 to improve material efficiency in weapon systems.
+
+TIProjectTemplate.displayName.Project_ZethrokMetalsBonus_L1=Heuristic Metals Optimization L1
+TIProjectTemplate.summary.Project_ZethrokMetalsBonus_L1=Research and implement Heuristic Metals Optimization Level 1 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokMetalsBonus_L2=Heuristic Metals Optimization L2
+TIProjectTemplate.summary.Project_ZethrokMetalsBonus_L2=Research and implement Heuristic Metals Optimization Level 2 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokMetalsBonus_L3=Heuristic Metals Optimization L3
+TIProjectTemplate.summary.Project_ZethrokMetalsBonus_L3=Research and implement Heuristic Metals Optimization Level 3 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokMetalsBonus_L4=Heuristic Metals Optimization L4
+TIProjectTemplate.summary.Project_ZethrokMetalsBonus_L4=Research and implement Heuristic Metals Optimization Level 4 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokMetalsBonus_L5=Heuristic Metals Optimization L5
+TIProjectTemplate.summary.Project_ZethrokMetalsBonus_L5=Research and implement Heuristic Metals Optimization Level 5 to improve material efficiency in weapon systems.
+
+TIProjectTemplate.displayName.Project_ZethrokNobleMetalsBonus_L1=Heuristic Noble Metals Optimization L1
+TIProjectTemplate.summary.Project_ZethrokNobleMetalsBonus_L1=Research and implement Heuristic Noble Metals Optimization Level 1 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokNobleMetalsBonus_L2=Heuristic Noble Metals Optimization L2
+TIProjectTemplate.summary.Project_ZethrokNobleMetalsBonus_L2=Research and implement Heuristic Noble Metals Optimization Level 2 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokNobleMetalsBonus_L3=Heuristic Noble Metals Optimization L3
+TIProjectTemplate.summary.Project_ZethrokNobleMetalsBonus_L3=Research and implement Heuristic Noble Metals Optimization Level 3 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokNobleMetalsBonus_L4=Heuristic Noble Metals Optimization L4
+TIProjectTemplate.summary.Project_ZethrokNobleMetalsBonus_L4=Research and implement Heuristic Noble Metals Optimization Level 4 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokNobleMetalsBonus_L5=Heuristic Noble Metals Optimization L5
+TIProjectTemplate.summary.Project_ZethrokNobleMetalsBonus_L5=Research and implement Heuristic Noble Metals Optimization Level 5 to improve material efficiency in weapon systems.
+
+TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L1=Heuristic Fissile Optimization L1
+TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L1=Research and implement Heuristic Fissile Optimization Level 1 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L2=Heuristic Fissile Optimization L2
+TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L2=Research and implement Heuristic Fissile Optimization Level 2 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L3=Heuristic Fissile Optimization L3
+TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L3=Research and implement Heuristic Fissile Optimization Level 3 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L4=Heuristic Fissile Optimization L4
+TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L4=Research and implement Heuristic Fissile Optimization Level 4 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L5=Heuristic Fissile Optimization L5
+TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L5=Research and implement Heuristic Fissile Optimization Level 5 to improve material efficiency in weapon systems.
+
+TIProjectTemplate.displayName.Project_ZethrokHidingInPlainSight_Beginner=Mission Control Usage Masked - Basic
+TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Beginner=Learn to mask the usage of mission control systems to reduce the effectiveness of enemy detection methods.
+TIProjectTemplate.displayName.Project_ZethrokHidingInPlainSight_Intermediate=Mission Control Usage Masked - Intermediate
+TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Intermediate=Research and implement intermediate mission control usage masking technology to reduce the effectiveness of enemy detection methods.
+TIProjectTemplate.displayName.Project_ZethrokHidingInPlainSight_Advanced=Mission Control Usage Masked - Advanced
+TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Advanced=Research and implement advanced mission control usage masking technology to reduce the effectiveness of enemy detection methods.
+TIProjectTemplate.displayName.Project_ZethrokHidingInPlainSight_Expert=Mission Control Usage Masked - Expert
+TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Expert=Research and implement expert mission control usage masking technology to reduce the effectiveness of enemy detection methods.
+TIProjectTemplate.displayName.Project_ZethrokHidingInPlainSight_Master=Mission Control Usage Masked - Master
+TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Master=Research and implement master-level mission control usage masking technology to reduce the effectiveness of enemy detection methods.
+

@@ -1,0 +1,35 @@
+TIEffectTemplate.description.Effect_MiningWaterBonus_lvl1=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="water"></color>
+TIEffectTemplate.description.Effect_MiningWaterBonus_lvl2=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="water"></color>
+TIEffectTemplate.description.Effect_MiningWaterBonus_lvl3=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="water"></color>
+TIEffectTemplate.description.Effect_MiningWaterBonus_lvl4=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="water"></color>
+TIEffectTemplate.description.Effect_MiningWaterBonus_lvl5=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="water"></color>
+
+TIEffectTemplate.description.Effect_MiningVolatilesBonus_lvl1=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="volatiles"></color>
+TIEffectTemplate.description.Effect_MiningVolatilesBonus_lvl2=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="volatiles"></color>
+TIEffectTemplate.description.Effect_MiningVolatilesBonus_lvl3=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="volatiles"></color>
+TIEffectTemplate.description.Effect_MiningVolatilesBonus_lvl4=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="volatiles"></color>
+TIEffectTemplate.description.Effect_MiningVolatilesBonus_lvl5=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="volatiles"></color>
+
+TIEffectTemplate.description.Effect_MiningMetalsBonus_lvl1=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal"></color>
+TIEffectTemplate.description.Effect_MiningMetalsBonus_lvl2=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal"></color>
+TIEffectTemplate.description.Effect_MiningMetalsBonus_lvl3=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal"></color>
+TIEffectTemplate.description.Effect_MiningMetalsBonus_lvl4=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal"></color>
+TIEffectTemplate.description.Effect_MiningMetalsBonus_lvl5=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal"></color>
+
+TIEffectTemplate.description.Effect_MiningNobleMetalsBonus_lvl1=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal_noble"></color>
+TIEffectTemplate.description.Effect_MiningNobleMetalsBonus_lvl2=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal_noble"></color>
+TIEffectTemplate.description.Effect_MiningNobleMetalsBonus_lvl3=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal_noble"></color>
+TIEffectTemplate.description.Effect_MiningNobleMetalsBonus_lvl4=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal_noble"></color>
+TIEffectTemplate.description.Effect_MiningNobleMetalsBonus_lvl5=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="metal_noble"></color>
+
+TIEffectTemplate.description.Effect_MiningFissilesBonus_lvl1=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="radioactive"></color>
+TIEffectTemplate.description.Effect_MiningFissilesBonus_lvl2=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="radioactive"></color>
+TIEffectTemplate.description.Effect_MiningFissilesBonus_lvl3=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="radioactive"></color>
+TIEffectTemplate.description.Effect_MiningFissilesBonus_lvl4=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="radioactive"></color>
+TIEffectTemplate.description.Effect_MiningFissilesBonus_lvl5=-Mines use heuristic processes and will mine {8} more <color=#801f1f><sprite name="radioactive"></color>
+
+TIEffectTemplate.description.Effect_MCUsageMasking_Beginner=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{8} MC usage)
+TIEffectTemplate.description.Effect_MCUsageMasking_Intermediate=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{8} MC usage)
+TIEffectTemplate.description.Effect_MCUsageMasking_Advanced=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{8} MC usage)
+TIEffectTemplate.description.Effect_MCUsageMasking_Expert=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{8} MC usage)
+TIEffectTemplate.description.Effect_MCUsageMasking_Master=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{8} MC usage)

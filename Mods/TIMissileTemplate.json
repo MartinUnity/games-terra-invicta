@@ -1,0 +1,50 @@
+[
+  {
+    "dataName": "MicroMissileBayMRK1",
+    "friendlyName": "Micro Missile Bay MRK1",
+    "mount": "OneHull",
+    "crew": 3,
+    "requiredProjectName": "Project_MicroMissileBayMRK1",
+    "attackMode": true,
+    "defenseMode": false,
+    "warheadClass": "Explosive",
+    "Rocket Thrust": 286810,
+    "EV_kps": 4.45,
+    "acceleration_g": 26.27,
+    "deltaV_kps": 9.41,
+    "baseWeaponMass_tons": 7,
+    "cooldown_s": 3,
+    "salvo_shots": 8,
+    "intraSalvoCooldown_s": 0.5,
+    "efficiency": 1,
+    "flatChipping": 0.5,
+    "magazine": 44,
+    "ammoMass_kg": 200,
+    "fuelMass_kg": 120,
+    "systemMass_kg": 57,
+    "warheadMass_kg": 23,
+    "flatDamage_MJ": 240,
+    "thrustRamp_s": 2,
+    "rotation_degps": 40,
+    "turnRamp_s": 0.3,
+    "maneuver_angle": 35,
+    "bombardmentValue": 0,
+    "targetingRange_km": 900,
+    "pivotRange_deg": 180,
+    "isPointDefenseTargetable": true,
+    "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.1
+    },
+    "ammoMaterials": {
+      "volatiles": 0.25,
+      "metals": 0.17
+    },
+    "iconResource": "shipbuildericons/ICO_PythonNuclearMissileBay",
+    "modelResource": "shipweapons/missile_launcher",
+    "shotModelResource": "spacecombat/AnacondaMissile",
+    "impactVisualFXResource": "spaceCombat/SpaceNuke",
+    "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Missile_Launch",
+    "impactSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Fragmentation_Missile_Detonates_Ship"
+  }
+]

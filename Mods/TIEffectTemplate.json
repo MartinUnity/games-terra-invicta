@@ -1,0 +1,302 @@
+[
+  {
+    "dataName": "Effect_MiningWaterBonus_lvl1",
+    "operation": "Additive",
+    "value": 0.2,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_MiningWaterBonus_lvl2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_MiningWaterBonus_lvl3",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_MiningWaterBonus_lvl4",
+    "operation": "Additive",
+    "value": 0.65,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_MiningWaterBonus_lvl5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_MiningVolatilesBonus_lvl1",
+    "operation": "Additive",
+    "value": 0.2,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningVolatilesBonus_lvl2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningVolatilesBonus_lvl3",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningVolatilesBonus_lvl4",
+    "operation": "Additive",
+    "value": 0.65,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningVolatilesBonus_lvl5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningMetalsBonus_lvl1",
+    "operation": "Additive",
+    "value": 0.2,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_MiningMetalsBonus_lvl2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_MiningMetalsBonus_lvl3",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_MiningMetalsBonus_lvl4",
+    "operation": "Additive",
+    "value": 0.65,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_MiningMetalsBonus_lvl5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_MiningNobleMetalsBonus_lvl1",
+    "operation": "Additive",
+    "value": 0.2,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningNobleMetalsBonus_lvl2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningNobleMetalsBonus_lvl3",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningNobleMetalsBonus_lvl4",
+    "operation": "Additive",
+    "value": 0.65,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningNobleMetalsBonus_lvl5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningFissilesBonus_lvl1",
+    "operation": "Additive",
+    "value": 0.2,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningFissilesBonus_lvl2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningFissilesBonus_lvl3",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningFissilesBonus_lvl4",
+    "operation": "Additive",
+    "value": 0.65,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningFissilesBonus_lvl5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_MCUsageMasking_Beginner",
+    "operation": "Multiplicative",
+    "value": 0.85,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["AlienHateFromMCUsage"]
+  },
+  {
+    "dataName": "Effect_MCUsageMasking_Intermediate",
+    "operation": "Multiplicative",
+    "value": 0.77,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["AlienHateFromMCUsage"]
+  },
+  {
+    "dataName": "Effect_MCUsageMasking_Advanced",
+    "operation": "Multiplicative",
+    "value": 0.72,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["AlienHateFromMCUsage"]
+  },
+  {
+    "dataName": "Effect_MCUsageMasking_Expert",
+    "operation": "Multiplicative",
+    "value": 0.69,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["AlienHateFromMCUsage"]
+  },
+  {
+    "dataName": "Effect_MCUsageMasking_Master",
+    "operation": "Multiplicative",
+    "value": 0.66,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["AlienHateFromMCUsage"]
+  }
+]
