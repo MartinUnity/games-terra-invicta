@@ -634,5 +634,23 @@
         "value": 200
       }
     ]
+  },
+  {
+    "friendlyName": "Point Defense Array - Tier 0",
+    "dataName": "Project_PointDefenseArray_T0",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "SpaceDevelopment",
+    "AI_criticalTech": true,
+    "AI_projectRole": "HabDefense",
+    "researchCost": 100,
+    "prereqs": ["Project_PlatformCore"],
+    "altPrereq0": "Project_OutpostCore",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 50,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
   }
 ]

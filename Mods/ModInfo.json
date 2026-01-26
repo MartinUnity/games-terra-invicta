@@ -1,7 +1,7 @@
 {
   "Title": "Zethrok",
   "Description": "Various tweaks and improvements.",
-  "Version": "0.13.7",
+  "Version": "0.13.8",
   "Author": "Zethrok",
   "TODO": [
     "Add more weapons balancing mods.",
@@ -26,5 +26,14 @@
     "Hammerhead_ShadowMRK1 # Pure kinetic",
     "Hammerhead_ShadowMRK2 # Pure kinetic",
     "Hammerhead_ShadowMRK3 # Pure kinetic"
+  ],
+  "THINGS_TO_ADD": [
+    "Magnetic weapons do +X more damage from tech",
+    "Earth transfor time for tugs and haulers reduced by X%",
+    "Boosts used for transfer from earth reduced by X%",
+    "Add new defense structure - super low level",
+    "Space mine mission control cost reduction by X count",
+    "Economy priority increase by X%",
+    "Increase Control Point management capacity by X"
   ]
 }

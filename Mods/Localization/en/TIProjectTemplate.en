@@ -74,3 +74,6 @@ TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Expert=Research and 
 TIProjectTemplate.displayName.Project_ZethrokHidingInPlainSight_Master=Mission Control Usage Masked - Master
 TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Master=Research and implement master-level mission control usage masking technology to reduce the effectiveness of enemy detection methods.
 
+TIProjectTemplate.displayName.Project_PointDefenseArray_T0=Point Defense Array - Tier 0
+TIProjectTemplate.summary.Project_PointDefenseArray_T0=<habmodule>
+
