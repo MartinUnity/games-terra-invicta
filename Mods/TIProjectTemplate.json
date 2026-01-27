@@ -829,5 +829,47 @@
     "deltaUnlockChance": 5,
     "maxUnlockChance": 100,
     "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Regional Command Structure",
+    "dataName": "Project_RegionalCommandStructure",
+    "techCategory": "SocialScience",
+    "AI_techRole": "Income",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 700,
+    "prereqs": ["DeepSystemSkywatch"],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus10",
+      "Effect_EconomyPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Augemented Organizational Structures",
+    "dataName": "Project_AugementedOrganizationalStructures",
+    "techCategory": "SocialScience",
+    "AI_techRole": "Income",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 2500,
+    "prereqs": ["ArrivalSociology"],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus20",
+      "Effect_EconomyPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
   }
 ]
