@@ -33,130 +33,68 @@ class LEG_Uncategorized cat_Uncategorized;
 
 ```mermaid
 graph LR
-Project_25mmAutocannon["25mm Light Rapid Autocannon
-(cost: 500)"]
-Project_155mmAutocannon_ETC["155mm Heavy ETC Autocannon
-(cost: 500)"]
-Project_18mmMinigun_ETC["18mm Rapid ETC Minigun
-(cost: 500)"]
-Project_MicroMissileBayMRK1["Micro Missile Bay MRK1
-(cost: 500)"]
-Project_ZethrokWaterBonus_L1["Zethrok Water Optimization - Level I
-(cost: 500)"]
-Project_ZethrokWaterBonus_L2["Zethrok Water Optimization - Level II
-(cost: 1000)"]
-Project_ZethrokWaterBonus_L3["Zethrok Water Optimization - Level III
-(cost: 2000)"]
-Project_ZethrokWaterBonus_L4["Zethrok Water Optimization - Level IV
-(cost: 5000)"]
-Project_ZethrokWaterBonus_L5["Zethrok Water Optimization - Level V
-(cost: 10000)"]
-Project_ZethrokWaterBonus_L6["Zethrok Water Optimization - Level VI
-(cost: 20000)"]
-Project_ZethrokVolatilesBonus_L1["Heuristic Volatile Optimization - Level I
-(cost: 500)"]
-Project_ZethrokVolatilesBonus_L2["Heuristic Volatile Optimization - Level II
-(cost: 1000)"]
-Project_ZethrokVolatilesBonus_L3["Heuristic Volatile Optimization - Level III
-(cost: 2000)"]
-Project_ZethrokVolatilesBonus_L4["Heuristic Volatile Optimization - Level IV
-(cost: 5000)"]
-Project_ZethrokVolatilesBonus_L5["Heuristic Volatile Optimization - Level V
-(cost: 10000)"]
-Project_ZethrokVolatilesBonus_L6["Heuristic Volatile Optimization - Level VI
-(cost: 20000)"]
-Project_ZethrokMetalsBonus_L1["Heuristic Metals Optimization - Level I
-(cost: 500)"]
-Project_ZethrokMetalsBonus_L2["Heuristic Metals Optimization - Level II
-(cost: 1000)"]
-Project_ZethrokMetalsBonus_L3["Heuristic Metals Optimization - Level III
-(cost: 2000)"]
-Project_ZethrokMetalsBonus_L4["Heuristic Metals Optimization - Level IV
-(cost: 5000)"]
-Project_ZethrokMetalsBonus_L5["Heuristic Metals Optimization - Level V
-(cost: 10000)"]
-Project_ZethrokMetalsBonus_L6["Heuristic Metals Optimization - Level VI
-(cost: 20000)"]
-Project_ZethrokNobleMetalsBonus_L1["Heuristic Noble Metals Optimization - Level I
-(cost: 500)"]
-Project_ZethrokNobleMetalsBonus_L2["Heuristic Noble Metals Optimization - Level II
-(cost: 1000)"]
-Project_ZethrokNobleMetalsBonus_L3["Heuristic Noble Metals Optimization - Level III
-(cost: 2000)"]
-Project_ZethrokNobleMetalsBonus_L4["Heuristic Noble Metals Optimization - Level IV
-(cost: 5000)"]
-Project_ZethrokNobleMetalsBonus_L5["Heuristic Noble Metals Optimization - Level V
-(cost: 10000)"]
-Project_ZethrokNobleMetalsBonus_L6["Heuristic Noble Metals Optimization - Level VI
-(cost: 20000)"]
-Project_ZethrokFissilesBonus_L1["Heuristic Fissile Optimization - Level I
-(cost: 500)"]
-Project_ZethrokFissilesBonus_L2["Heuristic Fissile Optimization - Level II
-(cost: 1000)"]
-Project_ZethrokFissilesBonus_L3["Heuristic Fissile Optimization - Level III
-(cost: 2000)"]
-Project_ZethrokFissilesBonus_L4["Heuristic Fissile Optimization - Level IV
-(cost: 5000)"]
-Project_ZethrokFissilesBonus_L5["Heuristic Fissile Optimization - Level V
-(cost: 10000)"]
-Project_ZethrokFissilesBonus_L6["Heuristic Fissile Optimization - Level VI
-(cost: 20000)"]
-Project_ZethrokHidingInPlainSight_Beginner["Hiding in Plain Sight - Beginner
-(cost: 500)"]
-Project_ZethrokHidingInPlainSight_Intermediate["Hiding in Plain Sight - Intermediate
-(cost: 2500)"]
-Project_ZethrokHidingInPlainSight_Advanced["Hiding in Plain Sight - Advanced
-(cost: 5000)"]
-Project_ZethrokHidingInPlainSight_Expert["Hiding in Plain Sight - Expert
-(cost: 10000)"]
-Project_ZethrokHidingInPlainSight_Master["Hiding in Plain Sight - Master
-(cost: 35000)"]
-Project_PointDefenseArray_T0["Point Defense Array - Tier 0
-(cost: 100)"]
-Project_ShipMagDamage_lvl1["Nano Optimized Shell Designing
-(cost: 5000)"]
-Project_ShipMagDamage_lvl2["Argon Hybrid Slug Technology
-(cost: 10000)"]
-Project_ShipMagDamage_lvl3["Quantum Destabilized Mass Drivers
-(cost: 20000)"]
-Project_ShipMagDamage_lvl4["Quantum Destabilized Mass Drivers Advanced
-(cost: 30000)"]
-Project_ThermalFissionFreighters["Thermal Fission Freighters
-(cost: 750)"]
-Project_EarthTransferOptimization["Earth Transfer Optimization
-(cost: 5000)"]
-Project_SuperHeatedGravitonDrives["Super Heated Graviton Drives
-(cost: 22500)"]
-Project_FlyingVehicles["Flying Vehicles
-(cost: 8000)"]
-Project_AIControlledFlyingVehicles["AI Controlled Flying Vehicles
-(cost: 8000)"]
-Project_VirtualTouristGuides["Virtual Tourist Guides
-(cost: 1500)"]
-Project_SpaceInfusedAugmentedRealityTours["Space Infused Augmented Reality Tours
-(cost: 1250)"]
-Project_RegionalCommandStructure["Regional Command Structure
-(cost: 700)"]
-Project_AugementedOrganizationalStructures["Augemented Organizational Structures
-(cost: 2500)"]
-Project_OutpostMiningRefiningModule["Mining - Refining Module Small (TMP)
-(cost: 1000)"]
-Project_MiningRefiningModule_lvl1["Mining - Refining Module Small
-(cost: 1000)"]
-Project_MiningRefiningModule_lvl2["Mining - Refining Module Medium
-(cost: 7500)"]
-Project_MiningRefiningModule_lvl3["Mining - Refining Module Large
-(cost: 15000)"]
-Project_BronzeRush["Bronze Rush
-(cost: 500)"]
-Project_SilverRush["Silver Rush
-(cost: 1250)"]
-Project_DiamondRush["Diamond Rush
-(cost: 5000)"]
-Project_PointDefenseArray["Project_PointDefenseArray
-(cost: None)"]
-Project_Warships["Project_Warships
-(cost: None)"]
+Project_25mmAutocannon["25mm Light Rapid Autocannon<br>cost: 500"]
+Project_155mmAutocannon_ETC["155mm Heavy ETC Autocannon<br>cost: 500"]
+Project_18mmMinigun_ETC["18mm Rapid ETC Minigun<br>cost: 500"]
+Project_MicroMissileBayMRK1["Micro Missile Bay MRK1<br>cost: 500"]
+Project_ZethrokWaterBonus_L1["Zethrok Water Optimization - Level I<br>cost: 500<br>MiningWaterBonus: 20%"]
+Project_ZethrokWaterBonus_L2["Zethrok Water Optimization - Level II<br>cost: 1000<br>MiningWaterBonus: 35%"]
+Project_ZethrokWaterBonus_L3["Zethrok Water Optimization - Level III<br>cost: 2000<br>MiningWaterBonus: 50%"]
+Project_ZethrokWaterBonus_L4["Zethrok Water Optimization - Level IV<br>cost: 5000<br>MiningWaterBonus: 65%"]
+Project_ZethrokWaterBonus_L5["Zethrok Water Optimization - Level V<br>cost: 10000<br>MiningWaterBonus: 80%"]
+Project_ZethrokWaterBonus_L6["Zethrok Water Optimization - Level VI<br>cost: 20000<br>MiningWaterBonus: 100%"]
+Project_ZethrokVolatilesBonus_L1["Heuristic Volatile Optimization - Level I<br>cost: 500<br>MiningVolatilesBonus: 20%"]
+Project_ZethrokVolatilesBonus_L2["Heuristic Volatile Optimization - Level II<br>cost: 1000<br>MiningVolatilesBonus: 35%"]
+Project_ZethrokVolatilesBonus_L3["Heuristic Volatile Optimization - Level III<br>cost: 2000<br>MiningVolatilesBonus: 50%"]
+Project_ZethrokVolatilesBonus_L4["Heuristic Volatile Optimization - Level IV<br>cost: 5000<br>MiningVolatilesBonus: 65%"]
+Project_ZethrokVolatilesBonus_L5["Heuristic Volatile Optimization - Level V<br>cost: 10000<br>MiningVolatilesBonus: 80%"]
+Project_ZethrokVolatilesBonus_L6["Heuristic Volatile Optimization - Level VI<br>cost: 20000<br>MiningVolatilesBonus: 100%"]
+Project_ZethrokMetalsBonus_L1["Heuristic Metals Optimization - Level I<br>cost: 500<br>MiningMetalsBonus: 20%"]
+Project_ZethrokMetalsBonus_L2["Heuristic Metals Optimization - Level II<br>cost: 1000<br>MiningMetalsBonus: 35%"]
+Project_ZethrokMetalsBonus_L3["Heuristic Metals Optimization - Level III<br>cost: 2000<br>MiningMetalsBonus: 50%"]
+Project_ZethrokMetalsBonus_L4["Heuristic Metals Optimization - Level IV<br>cost: 5000<br>MiningMetalsBonus: 65%"]
+Project_ZethrokMetalsBonus_L5["Heuristic Metals Optimization - Level V<br>cost: 10000<br>MiningMetalsBonus: 80%"]
+Project_ZethrokMetalsBonus_L6["Heuristic Metals Optimization - Level VI<br>cost: 20000<br>MiningMetalsBonus: 100%"]
+Project_ZethrokNobleMetalsBonus_L1["Heuristic Noble Metals Optimization - Level I<br>cost: 500<br>MiningNoblesBonus: 20%"]
+Project_ZethrokNobleMetalsBonus_L2["Heuristic Noble Metals Optimization - Level II<br>cost: 1000<br>MiningNoblesBonus: 35%"]
+Project_ZethrokNobleMetalsBonus_L3["Heuristic Noble Metals Optimization - Level III<br>cost: 2000<br>MiningNoblesBonus: 50%"]
+Project_ZethrokNobleMetalsBonus_L4["Heuristic Noble Metals Optimization - Level IV<br>cost: 5000<br>MiningNoblesBonus: 65%"]
+Project_ZethrokNobleMetalsBonus_L5["Heuristic Noble Metals Optimization - Level V<br>cost: 10000<br>MiningNoblesBonus: 80%"]
+Project_ZethrokNobleMetalsBonus_L6["Heuristic Noble Metals Optimization - Level VI<br>cost: 20000<br>MiningNoblesBonus: 100%"]
+Project_ZethrokFissilesBonus_L1["Heuristic Fissile Optimization - Level I<br>cost: 500<br>MiningFissilesBonus: 20%"]
+Project_ZethrokFissilesBonus_L2["Heuristic Fissile Optimization - Level II<br>cost: 1000<br>MiningFissilesBonus: 35%"]
+Project_ZethrokFissilesBonus_L3["Heuristic Fissile Optimization - Level III<br>cost: 2000<br>MiningFissilesBonus: 50%"]
+Project_ZethrokFissilesBonus_L4["Heuristic Fissile Optimization - Level IV<br>cost: 5000<br>MiningFissilesBonus: 65%"]
+Project_ZethrokFissilesBonus_L5["Heuristic Fissile Optimization - Level V<br>cost: 10000<br>MiningFissilesBonus: 80%"]
+Project_ZethrokFissilesBonus_L6["Heuristic Fissile Optimization - Level VI<br>cost: 20000<br>MiningFissilesBonus: 100%"]
+Project_ZethrokHidingInPlainSight_Beginner["Hiding in Plain Sight - Beginner<br>cost: 500<br>AlienHateFromMCUsage: -15.0%"]
+Project_ZethrokHidingInPlainSight_Intermediate["Hiding in Plain Sight - Intermediate<br>cost: 2500<br>AlienHateFromMCUsage: -23.0%"]
+Project_ZethrokHidingInPlainSight_Advanced["Hiding in Plain Sight - Advanced<br>cost: 5000<br>AlienHateFromMCUsage: -28.0%"]
+Project_ZethrokHidingInPlainSight_Expert["Hiding in Plain Sight - Expert<br>cost: 10000<br>AlienHateFromMCUsage: -31.0%"]
+Project_ZethrokHidingInPlainSight_Master["Hiding in Plain Sight - Master<br>cost: 35000<br>AlienHateFromMCUsage: -34.0%"]
+Project_PointDefenseArray_T0["Point Defense Array - Tier 0<br>cost: 100"]
+Project_ShipMagDamage_lvl1["Nano Optimized Shell Designing<br>cost: 5000"]
+Project_ShipMagDamage_lvl2["Argon Hybrid Slug Technology<br>cost: 10000"]
+Project_ShipMagDamage_lvl3["Quantum Destabilized Mass Drivers<br>cost: 20000"]
+Project_ShipMagDamage_lvl4["Quantum Destabilized Mass Drivers Advanced<br>cost: 30000"]
+Project_ThermalFissionFreighters["Thermal Fission Freighters<br>cost: 750<br>GenericModuleTransferTime: -12.5%<br>GenericTransferEV_kps: set to 775%"]
+Project_EarthTransferOptimization["Earth Transfer Optimization<br>cost: 5000<br>GenericModuleTransferTime: -25.0%<br>GenericTransferEV_kps: set to 1400%"]
+Project_SuperHeatedGravitonDrives["Super Heated Graviton Drives<br>cost: 22500<br>GenericModuleTransferTime: -50.0%<br>GenericTransferEV_kps: set to 3660%"]
+Project_FlyingVehicles["Flying Vehicles<br>cost: 8000"]
+Project_AIControlledFlyingVehicles["AI Controlled Flying Vehicles<br>cost: 8000"]
+Project_VirtualTouristGuides["Virtual Tourist Guides<br>cost: 1500"]
+Project_SpaceInfusedAugmentedRealityTours["Space Infused Augmented Reality Tours<br>cost: 1250"]
+Project_RegionalCommandStructure["Regional Command Structure<br>cost: 700"]
+Project_AugementedOrganizationalStructures["Augemented Organizational Structures<br>cost: 2500"]
+Project_OutpostMiningRefiningModule["Mining - Refining Module Small (TMP)<br>cost: 1000"]
+Project_MiningRefiningModule_lvl1["Mining - Refining Module Small<br>cost: 1000"]
+Project_MiningRefiningModule_lvl2["Mining - Refining Module Medium<br>cost: 7500"]
+Project_MiningRefiningModule_lvl3["Mining - Refining Module Large<br>cost: 15000"]
+Project_BronzeRush["Bronze Rush<br>cost: 500<br>MCFreeSpaceMineNetwork: 2<br>SpaceMiningBonus: 3%"]
+Project_SilverRush["Silver Rush<br>cost: 1250<br>MCFreeSpaceMineNetwork: 4<br>SpaceMiningBonus: 7%"]
+Project_DiamondRush["Diamond Rush<br>cost: 5000<br>MCFreeSpaceMineNetwork: 8<br>SpaceMiningBonus: 15%"]
+Project_PointDefenseArray["Project_PointDefenseArray<br>cost: None"]
+Project_Warships["Project_Warships<br>cost: None"]
 Project_25mmAutocannon --> Project_Warships
 PrinciplesofSpaceWarfare["PrinciplesofSpaceWarfare"]
 Project_25mmAutocannon --> PrinciplesofSpaceWarfare

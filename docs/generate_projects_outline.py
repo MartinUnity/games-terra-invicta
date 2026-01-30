@@ -17,6 +17,7 @@ from collections import OrderedDict
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 MODS = ROOT / "Mods"
 PROJECTS_FILE = MODS / "TIProjectTemplate.json"
+EFFECTS_FILE = MODS / "TIEffectTemplate.json"
 OUT_MD = ROOT / "docs" / "Projects_Outline.md"
 
 PALETTE = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"]
@@ -102,12 +103,63 @@ def build_category_map(idx):
     return cats
 
 
-def generate_mermaid(idx, cats):
+def generate_mermaid(idx, cats, effects_map=None):
     lines = ["```mermaid", "graph LR"]
     # define nodes for projects: put project nodes first
     for dn, info in idx.items():
         node = safe_id(dn)
-        label = f"{info['friendlyName']}\n(cost: {info['researchCost']})"
+        # build label with research cost and (optional) mapped effects
+        label_lines = [info["friendlyName"]]
+        label_lines.append(f"cost: {info['researchCost']}")
+        # map effects if available
+        effs = info.get("effects") or []
+        if isinstance(effs, list) and effects_map:
+            mapped = []
+            for e in effs:
+                if isinstance(e, str) and e in effects_map:
+                    meta = effects_map[e]
+                    op = meta.get("operation")
+                    val = meta.get("value")
+                    ctxs = meta.get("contexts") or []
+                    # human readable formatting: show only the final formatted value
+                    name = ctxs[0] if ctxs else e
+                    try:
+                        if op == "Additive":
+                            if isinstance(val, int):
+                                display = f"{val}"
+                            else:
+                                display = f"{val*100:.0f}%"
+                            desc = f"{name}: {display}"
+                        elif op == "Multiplicative":
+                            # multiplicative values like 1.03 -> +3%
+                            try:
+                                change = (val - 1.0) * 100.0
+                                sign = "+" if change > 0 else ""
+                                display = f"{sign}{change:.1f}%"
+                                desc = f"{name}: {display}"
+                            except Exception:
+                                desc = f"{name}: ×{val}"
+                        elif op == "IncreaseToValue" or op == "IncreaseTo":
+                            if isinstance(val, int):
+                                display = f"{val}"
+                            else:
+                                display = f"{val*100:.0f}%"
+                            desc = f"{name}: set to {display}"
+                        else:
+                            # fallback: format floats as percent, ints as number
+                            if isinstance(val, int):
+                                display = f"{val}"
+                            else:
+                                display = f"{val*100:.0f}%"
+                            desc = f"{name}: {display}"
+                    except Exception:
+                        desc = f"{name}: {val}"
+                    mapped.append(desc)
+            # include up to 3 effect descriptions to keep label compact
+            for md in mapped[:3]:
+                label_lines.append(md)
+        # assemble label (always set, even if no effects_map provided)
+        label = "<br>".join(label_lines)
         lines.append(f'{node}["{label}"]')
         # add class assignment line later
     # prereq nodes: ensure they exist as targets
@@ -135,6 +187,25 @@ def generate_mermaid(idx, cats):
         lines.append(f"class {safe_id(dn)} {cls};")
     lines.append("```")
     return "\n".join(lines)
+
+
+def collect_effects():
+    effects = {}
+    try:
+        with open(EFFECTS_FILE, "r", encoding="utf-8") as f:
+            items = json.load(f)
+    except Exception:
+        return effects
+    for e in items:
+        dn = e.get("dataName")
+        if not dn:
+            continue
+        effects[dn] = {
+            "operation": e.get("operation"),
+            "value": e.get("value"),
+            "contexts": e.get("contexts") or [],
+        }
+    return effects
 
 
 def write_docs(idx, mermaid, cats):
@@ -190,7 +261,8 @@ def main():
     idx = collect_projects()
     scan_mods(idx)
     cats = build_category_map(idx)
-    mermaid = generate_mermaid(idx, cats)
+    effects_map = collect_effects()
+    mermaid = generate_mermaid(idx, cats, effects_map)
     write_docs(idx, mermaid, cats)
     print(f"Wrote {OUT_MD}")
 
