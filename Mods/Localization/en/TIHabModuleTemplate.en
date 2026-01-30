@@ -1,2 +1,11 @@
 TIHabModuleTemplate.displayName.PointDefenseArray_T0=Point Defense Array - Tier 0
 TIHabModuleTemplate.description.PointDefenseArray_T0=A super basic (Tier 0) battery of defensive weaponry to protect the hab from attack. It will automatically upgrade weapons and armor as we develop new technologies.
+
+TIHabModuleTemplate.displayName.OutpostMiningRefiningModule=TMP - Small Mining & Refining Module
+TIHabModuleTemplate.description.OutpostMiningRefiningModule=TMP - A small and advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 15%
+TIHabModuleTemplate.displayName.MiningRefiningModule_lvl1=Small Mining & Refining Module
+TIHabModuleTemplate.description.MiningRefiningModule_lvl1=A small and advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 15%
+TIHabModuleTemplate.displayName.MiningRefiningModule_lvl2=Medium Mining & Refining Module
+TIHabModuleTemplate.description.MiningRefiningModule_lvl2=A medium and advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 30%
+TIHabModuleTemplate.displayName.MiningRefiningModule_lvl3=Large Mining & Refining Module
+TIHabModuleTemplate.description.MiningRefiningModule_lvl3=A large and advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 50%

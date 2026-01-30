@@ -50,6 +50,16 @@
     "contexts": ["MiningWaterBonus"]
   },
   {
+    "dataName": "Effect_MiningWaterBonus_lvl6",
+    "operation": "Additive",
+    "value": 1.0,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
     "dataName": "Effect_MiningVolatilesBonus_lvl1",
     "operation": "Additive",
     "value": 0.2,
@@ -93,6 +103,16 @@
     "dataName": "Effect_MiningVolatilesBonus_lvl5",
     "operation": "Additive",
     "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningVolatilesBonus_lvl6",
+    "operation": "Additive",
+    "value": 1.0,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -150,6 +170,16 @@
     "contexts": ["MiningMetalsBonus"]
   },
   {
+    "dataName": "Effect_MiningMetalsBonus_lvl6",
+    "operation": "Additive",
+    "value": 1.0,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
     "dataName": "Effect_MiningNobleMetalsBonus_lvl1",
     "operation": "Additive",
     "value": 0.2,
@@ -200,6 +230,16 @@
     "contexts": ["MiningNoblesBonus"]
   },
   {
+    "dataName": "Effect_MiningNobleMetalsBonus_lvl6",
+    "operation": "Additive",
+    "value": 1.0,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
     "dataName": "Effect_MiningFissilesBonus_lvl1",
     "operation": "Additive",
     "value": 0.2,
@@ -243,6 +283,16 @@
     "dataName": "Effect_MiningFissilesBonus_lvl5",
     "operation": "Additive",
     "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_MiningFissilesBonus_lvl6",
+    "operation": "Additive",
+    "value": 1.0,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -328,5 +378,145 @@
     "stackable": true,
     "duration_months": -1,
     "contexts": ["ShipMagDamage"]
+  },
+  {
+    "dataName": "Effect_ShipMagDamage_lvl4",
+    "operation": "Multiplicative",
+    "value": 1.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["ShipMagDamage"]
+  },
+  {
+    "dataName": "Effect_SpaceMineExtra2",
+    "operation": "Additive",
+    "value": 2,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MCFreeSpaceMineNetwork"]
+  },
+  {
+    "dataName": "Effect_SpaceMineExtra4",
+    "operation": "Additive",
+    "value": 4,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MCFreeSpaceMineNetwork"]
+  },
+  {
+    "dataName": "Effect_SpaceMineExtra8",
+    "operation": "Additive",
+    "value": 8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MCFreeSpaceMineNetwork"]
+  },
+  {
+    "dataName": "Effect_SpaceMineExtra10",
+    "operation": "Additive",
+    "value": 10,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MCFreeSpaceMineNetwork"]
+  },
+  {
+    "dataName": "Effect_SpaceMiningBonus03",
+    "operation": "Additive",
+    "value": 0.03,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["SpaceMiningBonus"]
+  },
+  {
+    "dataName": "Effect_SpaceMiningBonus07",
+    "operation": "Additive",
+    "value": 0.07,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["SpaceMiningBonus"]
+  },
+  {
+    "dataName": "Effect_SpaceMiningBonus15",
+    "operation": "Additive",
+    "value": 0.15,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["SpaceMiningBonus"]
+  },
+  {
+    "dataName": "Effect_ThermalFissionRockets",
+    "operation": "IncreaseToValue",
+    "value": 7.75,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "duration_months": -1,
+    "contexts": ["GenericTransferEV_kps"]
+  },
+  {
+    "dataName": "Effect_StarLightRockets",
+    "operation": "IncreaseToValue",
+    "value": 14.0,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "duration_months": -1,
+    "contexts": ["GenericTransferEV_kps"]
+  },
+  {
+    "dataName": "Effect_GravitonRockets",
+    "operation": "IncreaseToValue",
+    "value": 36.6,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "duration_months": -1,
+    "contexts": ["GenericTransferEV_kps"]
+  },
+  {
+    "dataName": "Effect_ThermalFissionFreighters",
+    "operation": "Multiplicative",
+    "value": 0.875,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": false,
+    "duration_months": -1,
+    "initialFactionsStr": ["AlienCouncil"],
+    "contexts": ["GenericModuleTransferTime"]
+  },
+  {
+    "dataName": "Effect_StarLightFreighters",
+    "operation": "Multiplicative",
+    "value": 0.75,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": false,
+    "duration_months": -1,
+    "initialFactionsStr": ["AlienCouncil"],
+    "contexts": ["GenericModuleTransferTime"]
+  },
+  {
+    "dataName": "Effect_GravitonFreighters",
+    "operation": "Multiplicative",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": false,
+    "duration_months": -1,
+    "initialFactionsStr": ["AlienCouncil"],
+    "contexts": ["GenericModuleTransferTime"]
   }
 ]

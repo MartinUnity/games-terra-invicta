@@ -4,8 +4,9 @@ TIProjectTemplate.displayName.Project_155mmAutocannon_ETC=155mm Heavy ETC Autoca
 TIProjectTemplate.summary.Project_155mmAutocannon_ETC=Develop and manufacture a 155mm Heavy Autocannon with ETC propulsion system.
 TIProjectTemplate.displayName.Project_18mmMinigun_ETC=18mm Rapid ETC Minigun
 TIProjectTemplate.summary.Project_18mmMinigun_ETC=Develop and manufacture a 18mm Rapid Minigun with ETC propulsion system.
+TIProjectTemplate.displayName.Project_MicroMissileBayMRK1=Micro Missile Bay MRK1
+TIProjectTemplate.summary.Project_MicroMissileBayMRK1=Develop and manufacture a Micro Missile Bay MRK1 for swarming micro missiles.
 
-c
 TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L1=Heuristic Water Optimization L1
 TIProjectTemplate.summary.Project_ZethrokWaterBonus_L1=Research and implement Heuristic Water Optimization Level 1 to improve material efficiency in weapon systems.
 TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L2=Heuristic Water Optimization L2
@@ -16,6 +17,8 @@ TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L4=Heuristic Water Optim
 TIProjectTemplate.summary.Project_ZethrokWaterBonus_L4=Research and implement Heuristic Water Optimization Level 4 to improve material efficiency in weapon systems.
 TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L5=Heuristic Water Optimization L5
 TIProjectTemplate.summary.Project_ZethrokWaterBonus_L5=Research and implement Heuristic Water Optimization Level 5 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokWaterBonus_L6=Heuristic Water Optimization L6
+TIProjectTemplate.summary.Project_ZethrokWaterBonus_L6=Research and implement Heuristic Water Optimization Level 6 to improve material efficiency in weapon systems.
 
 TIProjectTemplate.displayName.Project_ZethrokVolatilesBonus_L1=Heuristic Volatile Optimization L1
 TIProjectTemplate.summary.Project_ZethrokVolatilesBonus_L1=Research and implement Heuristic Volatile Optimization Level 1 to improve material efficiency in weapon systems.
@@ -27,6 +30,8 @@ TIProjectTemplate.displayName.Project_ZethrokVolatilesBonus_L4=Heuristic Volatil
 TIProjectTemplate.summary.Project_ZethrokVolatilesBonus_L4=Research and implement Heuristic Volatile Optimization Level 4 to improve material efficiency in weapon systems.
 TIProjectTemplate.displayName.Project_ZethrokVolatilesBonus_L5=Heuristic Volatile Optimization L5
 TIProjectTemplate.summary.Project_ZethrokVolatilesBonus_L5=Research and implement Heuristic Volatile Optimization Level 5 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokVolatilesBonus_L6=Heuristic Volatile Optimization L6
+TIProjectTemplate.summary.Project_ZethrokVolatilesBonus_L6=Research and implement Heuristic Volatile Optimization Level 6 to improve material efficiency in weapon systems.
 
 TIProjectTemplate.displayName.Project_ZethrokMetalsBonus_L1=Heuristic Metals Optimization L1
 TIProjectTemplate.summary.Project_ZethrokMetalsBonus_L1=Research and implement Heuristic Metals Optimization Level 1 to improve material efficiency in weapon systems.
@@ -38,6 +43,8 @@ TIProjectTemplate.displayName.Project_ZethrokMetalsBonus_L4=Heuristic Metals Opt
 TIProjectTemplate.summary.Project_ZethrokMetalsBonus_L4=Research and implement Heuristic Metals Optimization Level 4 to improve material efficiency in weapon systems.
 TIProjectTemplate.displayName.Project_ZethrokMetalsBonus_L5=Heuristic Metals Optimization L5
 TIProjectTemplate.summary.Project_ZethrokMetalsBonus_L5=Research and implement Heuristic Metals Optimization Level 5 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokMetalsBonus_L6=Heuristic Metals Optimization L6
+TIProjectTemplate.summary.Project_ZethrokMetalsBonus_L6=Research and implement Heuristic Metals Optimization Level 6 to improve material efficiency in weapon systems.
 
 TIProjectTemplate.displayName.Project_ZethrokNobleMetalsBonus_L1=Heuristic Noble Metals Optimization L1
 TIProjectTemplate.summary.Project_ZethrokNobleMetalsBonus_L1=Research and implement Heuristic Noble Metals Optimization Level 1 to improve material efficiency in weapon systems.
@@ -49,6 +56,8 @@ TIProjectTemplate.displayName.Project_ZethrokNobleMetalsBonus_L4=Heuristic Noble
 TIProjectTemplate.summary.Project_ZethrokNobleMetalsBonus_L4=Research and implement Heuristic Noble Metals Optimization Level 4 to improve material efficiency in weapon systems.
 TIProjectTemplate.displayName.Project_ZethrokNobleMetalsBonus_L5=Heuristic Noble Metals Optimization L5
 TIProjectTemplate.summary.Project_ZethrokNobleMetalsBonus_L5=Research and implement Heuristic Noble Metals Optimization Level 5 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokNobleMetalsBonus_L6=Heuristic Noble Metals Optimization L6
+TIProjectTemplate.summary.Project_ZethrokNobleMetalsBonus_L6=Research and implement Heuristic Noble Metals Optimization Level 6 to improve material efficiency in weapon systems.
 
 TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L1=Heuristic Fissile Optimization L1
 TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L1=Research and implement Heuristic Fissile Optimization Level 1 to improve material efficiency in weapon systems.
@@ -60,6 +69,9 @@ TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L4=Heuristic Fissile 
 TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L4=Research and implement Heuristic Fissile Optimization Level 4 to improve material efficiency in weapon systems.
 TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L5=Heuristic Fissile Optimization L5
 TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L5=Research and implement Heuristic Fissile Optimization Level 5 to improve material efficiency in weapon systems.
+TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L6=Heuristic Fissile Optimization L6
+TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L6=Research and implement Heuristic Fissile Optimization Level 6 to improve material efficiency in weapon systems.
+
 
 TIProjectTemplate.displayName.Project_ZethrokHidingInPlainSight_Beginner=Mission Control Usage Masked - Basic
 TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Beginner=Learn to mask the usage of mission control systems to reduce the effectiveness of enemy detection methods.
@@ -81,6 +93,8 @@ TIProjectTemplate.displayName.Project_ShipMagDamage_lvl2=Argon Hybrid Slug Techn
 TIProjectTemplate.summary.Project_ShipMagDamage_lvl2=Research argon hybrid slug technology to improve the performance of magnetic weapon projectiles.
 TIProjectTemplate.displayName.Project_ShipMagDamage_lvl3=Quantum Destabilized Mass Drivers
 TIProjectTemplate.summary.Project_ShipMagDamage_lvl3=Research quantum destabilized mass driver technology to significantly increase the damage potential of magnetic weapons.
+TIProjectTemplate.displayName.Project_ShipMagDamage_lvl4=Quantum Destabilized Mass Drivers Advanced
+TIProjectTemplate.summary.Project_ShipMagDamage_lvl4=Research Advanced quantum destabilized mass driver technology to significantly increase the damage potential of magnetic weapons.
 
 TIProjectTemplate.displayName.Project_ThermalFissionFreighters=Thermal Fission Freighters
 TIProjectTemplate.summary.Project_ThermalFissionFreighters=Develop thermal fission propulsion systems for freighter-class ships to enhance their speed and efficiency.
@@ -102,3 +116,19 @@ TIProjectTemplate.displayName.Project_RegionalCommandStructure=Regional Command 
 TIProjectTemplate.summary.Project_RegionalCommandStructure=Research and develop regional command structure technology to enhance military coordination and effectiveness.
 TIProjectTemplate.displayName.Project_AugementedOrganizationalStructures=Augemented Organizational Structures
 TIProjectTemplate.summary.Project_AugementedOrganizationalStructures=Research and develop augmented organizational structure technology to enhance military coordination and effectiveness.
+
+TIProjectTemplate.displayName.Project_OutpostMiningRefiningModule=TMP - Small Mining & Refining Module
+TIProjectTemplate.summary.Project_OutpostMiningRefiningModule=TMP - Small Research and develop outpost mining and refining module technology to enhance resource extraction and processing capabilities.
+TIProjectTemplate.displayName.Project_MiningRefiningModule_lvl1=Small Mining & Refining Module
+TIProjectTemplate.summary.Project_MiningRefiningModule_lvl1=Small Research and develop outpost mining and refining module technology to enhance resource extraction and processing capabilities.
+TIProjectTemplate.displayName.Project_MiningRefiningModule_lvl2=Medium Mining & Refining Module
+TIProjectTemplate.summary.Project_MiningRefiningModule_lvl2=Medium Research and develop outpost mining and refining module technology to enhance resource extraction and processing capabilities.
+TIProjectTemplate.displayName.Project_MiningRefiningModule_lvl3=Large Mining & Refining Module
+TIProjectTemplate.summary.Project_MiningRefiningModule_lvl3=Large Research and develop outpost mining and refining module technology to enhance resource extraction and processing capabilities.
+
+TIProjectTemplate.displayName.Project_BronzeRush=Broze Rush
+TIProjectTemplate.summary.Project_BronzeRush=A sudden bronze rush enables us to slowly expand our mining capabilities.
+TIProjectTemplate.displayName.Project_SilverRush=Silver Rush
+TIProjectTemplate.summary.Project_SilverRush=A sudden silver rush enables us to expand our mining capabilities.
+TIProjectTemplate.displayName.Project_DiamondRush=Diamond Rush
+TIProjectTemplate.summary.Project_DiamondRush=A sudden diamond rush enables us to vastly expand our mining capabilities.
