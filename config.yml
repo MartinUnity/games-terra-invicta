@@ -1,23 +1,29 @@
 my_nations:
   - Latvia
   - Lithuania
-  - Denmark
-  - Sweden
-  - Finland
-  - Estonia
-  - South Africa
-  - Eswatini
-  - Namibia
-  - Botswana
-  - Zimbabwe
-  - Mozambique
-  - Angola
-  - Congo
-  - Zambia
-  - Madagascar
-  - Uganda
-  - Tanzania
-  - Rwanda-Burundi
-  - Kenya
-  - Somalia
-  - South Sudan
+  - Nordic Federation
+  #- Finland
+  - Southern Africa Federation
+  #- Eswatini
+  #- Namibia
+  #- Botswana
+  #- Zimbabwe
+  #- Mozambique
+  #- Angola
+  - East African Federation
+  #- Zambia
+  #- Malawi
+  #- Madagascar
+  #- South Sudan
+  #- Sudan
+  #- Chad
+  #- Central African Republic
+  #- Republic of the Congo
+  #- Niger
+  #- Togo
+  #- Ghana
+  #- Benin
+  #- Liberia
+  #- Sierra Leone
+  #- Mauritania
+  #- Mali

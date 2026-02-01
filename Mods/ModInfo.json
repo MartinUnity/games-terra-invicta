@@ -32,9 +32,13 @@
     "DONE - Earth transfer time for tugs and haulers reduced by X%",
     "DONE - Boosts used for transfer from earth reduced by X%",
     "DONE - Add new defense structure - super low level",
-    "Space mine mission control cost reduction by X count",
+    "DONE - Space mine mission control cost reduction by X count",
     "DONE - Economy priority increase by X%",
-    "Increase Control Point management capacity by X",
+    "DONE - Increase Control Point management capacity by X",
     "DONE - Add new small ship hull - Digger"
+  ],
+  "THINGS_TO_CHANGE": [
+    "Migrate several projects into their own Tech Trees",
+    "Check how -% time for investigate Mission Control works from tech Alien Computers (-25%)"
   ]
 }

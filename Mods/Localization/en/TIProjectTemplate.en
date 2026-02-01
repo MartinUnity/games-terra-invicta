@@ -4,6 +4,9 @@ TIProjectTemplate.displayName.Project_155mmAutocannon_ETC=155mm Heavy ETC Autoca
 TIProjectTemplate.summary.Project_155mmAutocannon_ETC=Develop and manufacture a 155mm Heavy Autocannon with ETC propulsion system.
 TIProjectTemplate.displayName.Project_18mmMinigun_ETC=18mm Rapid ETC Minigun
 TIProjectTemplate.summary.Project_18mmMinigun_ETC=Develop and manufacture a 18mm Rapid Minigun with ETC propulsion system.
+TIProjectTemplate.displayName.Project_HypervelocityKineticCannon_Maelstrom=Hypervelocity Kinetic Cannon "Maelstrom"
+TIProjectTemplate.summary.Project_HypervelocityKineticCannon_Maelstrom=Develop and manufacture the Hypervelocity Kinetic Cannon "Maelstrom".
+
 TIProjectTemplate.displayName.Project_MicroMissileBayMRK1=Micro Missile Bay MRK1
 TIProjectTemplate.summary.Project_MicroMissileBayMRK1=Develop and manufacture a Micro Missile Bay MRK1 for swarming micro missiles.
 
@@ -114,7 +117,7 @@ TIProjectTemplate.summary.Project_SpaceInfusedAugmentedRealityTours=Research and
 
 TIProjectTemplate.displayName.Project_RegionalCommandStructure=Regional Command Structure
 TIProjectTemplate.summary.Project_RegionalCommandStructure=Research and develop regional command structure technology to enhance military coordination and effectiveness.
-TIProjectTemplate.displayName.Project_AugementedOrganizationalStructures=Augemented Organizational Structures
+TIProjectTemplate.displayName.Project_AugementedOrganizationalStructures=Augmented Organizational Structures
 TIProjectTemplate.summary.Project_AugementedOrganizationalStructures=Research and develop augmented organizational structure technology to enhance military coordination and effectiveness.
 
 TIProjectTemplate.displayName.Project_OutpostMiningRefiningModule=TMP - Small Mining & Refining Module
@@ -132,3 +135,6 @@ TIProjectTemplate.displayName.Project_SilverRush=Silver Rush
 TIProjectTemplate.summary.Project_SilverRush=A sudden silver rush enables us to expand our mining capabilities.
 TIProjectTemplate.displayName.Project_DiamondRush=Diamond Rush
 TIProjectTemplate.summary.Project_DiamondRush=A sudden diamond rush enables us to vastly expand our mining capabilities.
+
+TIProjectTemplate.displayName.Project_QuantumFluxAccelerator_Mk1=Quantum Flux Accelerator Mk I
+TIProjectTemplate.summary.Project_QuantumFluxAccelerator_Mk1=Engineers harness beginning aspects of quantum fluctuations and electromagnetic fields

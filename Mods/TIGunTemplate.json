@@ -127,5 +127,47 @@
     "_comment_m": "m = warheadMass_kg = 2.25 kg",
     "_comment_v": "v = muzzleVelocity_kps * 1000 = 4.625 kps",
     "_comment_example_damage": "E = 0.5 * 2.25 * (4.625)^2 = 24.054 MJ per shot"
+  },
+  {
+    "dataName": "HypervelocityKineticCannon_Maelstrom",
+    "friendlyName": "Hypervelocity Kinetic Cannon \"Maelstrom\"",
+    "mount": "OneNose",
+    "requiredProjectName": "Project_HypervelocityKineticCannon_Maelstrom",
+    "crew": 2,
+    "attackMode": true,
+    "defenseMode": false,
+    "baseWeaponMass_tons": 100,
+    "cooldown_s": 8,
+    "salvo_shots": 3,
+    "intraSalvoCooldown_s": 1.5,
+    "efficiency": 1,
+    "flatChipping": 1.25,
+    "magazine": 600,
+    "ammoMass_kg": 78,
+    "muzzleVelocity_kps": 2.665,
+    "bombardmentValue": 0,
+    "warheadMass_kg": 48,
+    "targetingRange_km": 915,
+    "pivotRange_deg": 60,
+    "isPointDefenseTargetable": false,
+    "weightedBuildMaterials": {
+      "volatiles": 0.035,
+      "metals": 0.55
+    },
+    "ammoMaterials": {
+      "volatiles": 0.35,
+      "metals": 0.35
+    },
+    "iconResource": "shipbuildericons/ICO_10-InchCannon",
+    "modelResource": "shipweapons/12-Inch_Cannon",
+    "effectResource": "spaceCombat/MuzzleFlashFlame",
+    "shotModelResource": "spaceCombat/BulletGun",
+    "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Cannon",
+    "impactVisualFXResource": "spaceCombat/ImpactOrange",
+    "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid017MonoRR",
+    "_comment_": "Damage is calculated using kinetic energy formula: E = 0.5 * m * v^2",
+    "_comment_m": "m = warheadMass_kg = 48 kg",
+    "_comment_v": "v = muzzleVelocity_kps * 1000 = 2.665 kps",
+    "_comment_example_damage": "E = 0.5 * 48 * (2.665)^2 = 170.28 MJ per shot"
   }
 ]

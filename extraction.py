@@ -2,6 +2,7 @@ import gzip
 import json
 import logging as logger
 import os
+import threading
 import time
 from datetime import datetime
 from threading import Timer
@@ -15,6 +16,53 @@ from watchdog.observers import Observer
 SAVE_DIR = "terra-invicta-save/Saves"
 WATCH_DIRECTORY = "/home/martin/.steam/steam/steamapps/compatdata/1176470/pfx/drive_c/users/steamuser/Documents/My Games/TerraInvicta/Saves/"
 DEBOUNCE_SECONDS = 2.0  # Wait this long after the file stops changing before reading
+CONFIG_PATH = "config.yml"
+CONFIG_RELOAD_INTERVAL = 60  # seconds
+
+# in-memory config (kept up-to-date by a watcher thread)
+CURRENT_CONFIG = {}
+
+
+def load_and_validate_config(path: str):
+    """Load YAML config and validate expected keys. Returns dict or None on error."""
+    if not os.path.isfile(path):
+        logger.warning(f"Config file not found: {path}")
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as cf:
+            cfg = yaml.safe_load(cf) or {}
+    except Exception as e:
+        logger.error(f"Failed to parse YAML {path}: {e}")
+        return None
+
+    # Validate: if present, 'my_nations' should be a list
+    my_nations = cfg.get("my_nations")
+    if my_nations is None:
+        logger.warning(f"Config loaded but 'my_nations' not set in {path}")
+        return cfg
+    if not isinstance(my_nations, list):
+        logger.error(f"Invalid config: 'my_nations' must be a list in {path}")
+        return None
+    return cfg
+
+
+def _config_watcher_thread(path: str, interval: int):
+    """Background thread: reloads config every `interval` seconds."""
+    global CURRENT_CONFIG
+    while True:
+        cfg = load_and_validate_config(path)
+        if cfg is not None:
+            # if config changed, log it
+            if cfg != CURRENT_CONFIG:
+                logger.info(f"Config updated: {path}")
+                CURRENT_CONFIG = cfg
+        # sleep and loop
+        time.sleep(interval)
+
+
+def start_config_watcher(path: str = CONFIG_PATH, interval: int = CONFIG_RELOAD_INTERVAL):
+    t = threading.Thread(target=_config_watcher_thread, args=(path, interval), daemon=True)
+    t.start()
 
 
 def fetch_latest_save():
@@ -308,20 +356,11 @@ def run_extraction_pipeline(specific_file_path=None):
         df = extract_nation_data(data)
 
         # Filter
-        # Load nation filter from config.yml if present, otherwise fall back
-        config_path = "config.yml"
-        my_nations = None
-        if os.path.isfile(config_path):
-            try:
-                with open(config_path, "r", encoding="utf-8") as cf:
-                    cfg = yaml.safe_load(cf)
-                    my_nations = cfg.get("my_nations")
-                    logger.info(f"Loaded my_nations from {config_path}: {my_nations}")
-            except Exception as e:
-                logger.error(f"Failed to read {config_path}: {e}")
+        # Load nation filter from the in-memory CURRENT_CONFIG (kept updated by watcher)
+        my_nations = CURRENT_CONFIG.get("my_nations") if isinstance(CURRENT_CONFIG, dict) else None
         if not my_nations:
-            logger.error(f"No nations specified in {config_path}. Please add a 'my_nations' list.")
-            exit(1)
+            logger.error("No valid 'my_nations' configured; skipping this extraction run.")
+            return
 
         df_filtered = df[df["nation_name"].isin(my_nations)]
 
@@ -351,6 +390,11 @@ def run_extraction_pipeline(specific_file_path=None):
 if __name__ == "__main__":
     # Initialize logging
     logger.basicConfig(level=logger.INFO, format="%(asctime)s - %(message)s")
+    # Load initial config and start watcher thread (so changes are picked up automatically)
+    cfg = load_and_validate_config(CONFIG_PATH)
+    if cfg is not None:
+        CURRENT_CONFIG = cfg
+    start_config_watcher(CONFIG_PATH, CONFIG_RELOAD_INTERVAL)
     # 1. Run once on startup (so you don't have to wait for a save to see data)
     logger.info("Performing initial scan...")
     run_extraction_pipeline()
