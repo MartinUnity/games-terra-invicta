@@ -212,6 +212,19 @@ def main() -> int:
     p.add_argument("--table", action="store_true", help="Show table-like summary")
     p.add_argument("--all", action="store_true", help="Show all files instead of only issues (default shows issues)")
     p.add_argument("--omit", type=str, default=None, help="Comma-separated filenames to omit from validation")
+    p.add_argument(
+        "--list-overrides", action="store_true", help="List dataNames that override game templates (local+game)"
+    )
+    p.add_argument(
+        "--dump-overrides",
+        action="store_true",
+        help="Dump compact diff for local vs game overridden dataNames (default: show diff)",
+    )
+    p.add_argument(
+        "--dump-overrides-full",
+        action="store_true",
+        help="Dump full local and game JSON objects for overridden dataNames",
+    )
     args = p.parse_args()
 
     repo_root = Path(__file__).resolve().parents[1]
@@ -344,6 +357,62 @@ def main() -> int:
     print(
         f"TIProjectTemplate.json entries: {len(templates)}; scanned_files: {total_scanned}; matched_local: {total_matched_local}; matched_game: {total_matched_game}; unmatched: {total_unmatched}; loc_ok_local: {total_loc_ok}; loc_ok_game: {total_loc_ok_game}; loc_missing: {total_loc_missing}"
     )
+
+    # Optionally list or dump overrides: where a local TI*.json contains the same dataName as the game's matching template file
+    if (args.list_overrides or args.dump_overrides or args.dump_overrides_full) and game_templates_dir:
+        for fp in sorted(mods_dir.glob("TI*.json")):
+            if fp.resolve() == template_file.resolve():
+                continue
+            gs = game_templates_dir / fp.name
+            if not gs.exists():
+                continue
+            try:
+                local_obj = load_json(fp)
+                game_obj = load_json(gs)
+            except Exception:
+                continue
+            if not isinstance(local_obj, list) or not isinstance(game_obj, list):
+                continue
+            local_map = {o.get("dataName"): o for o in local_obj if isinstance(o, dict) and o.get("dataName")}
+            game_map = {o.get("dataName"): o for o in game_obj if isinstance(o, dict) and o.get("dataName")}
+            overlap = sorted(k for k in local_map.keys() & game_map.keys())
+            if not overlap:
+                continue
+            if args.list_overrides:
+                print(f"Overrides in {fp.name}: {', '.join(overlap)}")
+            if args.dump_overrides or args.dump_overrides_full:
+                for dn in overlap:
+                    print(f"--- {fp.name} :: {dn} ---")
+                    if args.dump_overrides_full:
+                        print("-- LOCAL --")
+                        print(json.dumps(local_map[dn], indent=2, ensure_ascii=False))
+                        print("-- GAME  --")
+                        print(json.dumps(game_map[dn], indent=2, ensure_ascii=False))
+                    else:
+                        # compact diff: added keys, removed keys, changed keys (show small preview)
+                        lobj = local_map[dn]
+                        gobj = game_map[dn]
+                        lkeys = set(lobj.keys())
+                        gkeys = set(gobj.keys())
+                        added = sorted(list(lkeys - gkeys))
+                        removed = sorted(list(gkeys - lkeys))
+                        common = sorted(list(lkeys & gkeys))
+                        changed = [k for k in common if lobj.get(k) != gobj.get(k)]
+                        if added:
+                            print("+ keys in local:", ", ".join(added))
+                        if removed:
+                            print("- keys in game:", ", ".join(removed))
+                        if changed:
+                            print("~ changed keys:")
+                            for k in changed:
+                                lv = json.dumps(lobj.get(k), ensure_ascii=False)
+                                gv = json.dumps(gobj.get(k), ensure_ascii=False)
+
+                                def trunc(s: str, n: int = 140) -> str:
+                                    s = s.replace("\n", " ")
+                                    return s if len(s) <= n else s[: n - 3] + "..."
+
+                                print(f"  {k}: local={trunc(lv)} | game={trunc(gv)}")
 
     # exit code
     any_errors = any(not ok for _, ok, _ in results)
