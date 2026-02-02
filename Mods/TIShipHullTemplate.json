@@ -90,5 +90,102 @@
         "y": 0
       }
     ]
+  },
+  {
+    "dataName": "Junkraker",
+    "friendlyName": "Junkraker",
+    "noseHardpoints": 0,
+    "hullHardpoints": 3,
+    "internalModules": 1,
+    "consTier": 1,
+    "maxOfficers": 1,
+    "length_m": 50,
+    "toylength_cm": 7.1,
+    "width_m": 10,
+    "volume": 963,
+    "thrusterMultiplier": 1,
+    "structuralIntegrity": 2,
+    "mass_tons": 64,
+    "crew": 1,
+    "alien": false,
+    "noShipyardBuild": false,
+    "simpleHull": true,
+    "monthlyIncome_Money": -0.4,
+    "missionControl": 1,
+    "baseConstructionTime_days": 40,
+    "shipyardyOffset": [0, 0, 0],
+    "modelResource": ["ships/Escort", "ships/Escort_1"],
+    "combatUIpath": [
+      "ui_spacecombat/OBJ_battle_earth_ES",
+      "ui_spacecombat/OBJ_battle_earth_ES_ALT"
+    ],
+    "path1": ["earth_ES/", "earth_ES_ALT/"],
+    "path2": ["OBJ_battle_earth_ES", "OBJ_battle_earth_ES_ALT"],
+    "requiredProjectName": "Project_JunkrakerShip",
+    "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.7,
+      "nobleMetals": 0.2
+    },
+    "shipModuleSlots": [
+      {
+        "moduleSlotType": "Drive",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "PowerPlant",
+        "x": 3,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "None"
+      },
+      {
+        "moduleSlotType": "Radiator",
+        "x": 4,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "TailArmor",
+        "x": 2,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "LateralArmor",
+        "x": 4,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "NoseArmor",
+        "x": 7,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "HullHardPoint",
+        "x": 5,
+        "y": 1
+      },
+      {
+        "moduleSlotType": "HullHardPoint",
+        "x": 6,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "HullHardPoint",
+        "x": 5,
+        "y": 5
+      },
+      {
+        "moduleSlotType": "Utility",
+        "x": 5,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Propellant",
+        "x": 2,
+        "y": 0
+      }
+    ]
   }
 ]

@@ -307,7 +307,8 @@
     "effectDuration": "permanent",
     "stackable": true,
     "duration_months": -1,
-    "contexts": ["AlienHateFromMCUsage"]
+    "contexts": ["AlienHateFromMCUsage"],
+    "_comment_calc_percentage": "1/0.85 = 1.176 = +17.6% MC usage"
   },
   {
     "dataName": "Effect_MCUsageMasking_Intermediate",
@@ -317,7 +318,8 @@
     "effectDuration": "permanent",
     "stackable": true,
     "duration_months": -1,
-    "contexts": ["AlienHateFromMCUsage"]
+    "contexts": ["AlienHateFromMCUsage"],
+    "_comment_calc_percentage": "1/0.77 = 1.2987 = +29.87% MC usage"
   },
   {
     "dataName": "Effect_MCUsageMasking_Advanced",
@@ -327,7 +329,8 @@
     "effectDuration": "permanent",
     "stackable": true,
     "duration_months": -1,
-    "contexts": ["AlienHateFromMCUsage"]
+    "contexts": ["AlienHateFromMCUsage"],
+    "_comment_calc_percentage": "1/0.72 = 1.3888 = +38.88% MC usage"
   },
   {
     "dataName": "Effect_MCUsageMasking_Expert",
@@ -337,7 +340,8 @@
     "effectDuration": "permanent",
     "stackable": true,
     "duration_months": -1,
-    "contexts": ["AlienHateFromMCUsage"]
+    "contexts": ["AlienHateFromMCUsage"],
+    "_comment_calc_percentage": "1/0.69 = 1.449 = +44.9% MC usage"
   },
   {
     "dataName": "Effect_MCUsageMasking_Master",
@@ -347,7 +351,8 @@
     "effectDuration": "permanent",
     "stackable": true,
     "duration_months": -1,
-    "contexts": ["AlienHateFromMCUsage"]
+    "contexts": ["AlienHateFromMCUsage"],
+    "_comment_calc_percentage": "1/0.66 = 1.515 = +51.5% MC usage"
   },
   {
     "dataName": "Effect_ShipMagDamage_lvl1",
@@ -495,7 +500,8 @@
     "stackable": false,
     "duration_months": -1,
     "initialFactionsStr": ["AlienCouncil"],
-    "contexts": ["GenericModuleTransferTime"]
+    "contexts": ["GenericModuleTransferTime"],
+    "_comment_calc_percentage": "1/0.875 = 1.14286 = +14.286% module transfer time"
   },
   {
     "dataName": "Effect_StarLightFreighters",
@@ -506,7 +512,8 @@
     "stackable": false,
     "duration_months": -1,
     "initialFactionsStr": ["AlienCouncil"],
-    "contexts": ["GenericModuleTransferTime"]
+    "contexts": ["GenericModuleTransferTime"],
+    "_comment_calc_percentage": "1/0.75 = 1.3333 = +33.33% module transfer time"
   },
   {
     "dataName": "Effect_GravitonFreighters",
@@ -517,6 +524,7 @@
     "stackable": false,
     "duration_months": -1,
     "initialFactionsStr": ["AlienCouncil"],
-    "contexts": ["GenericModuleTransferTime"]
+    "contexts": ["GenericModuleTransferTime"],
+    "_comment_calc_percentage": "1/0.5 = 2 = +100% module transfer time"
   }
 ]

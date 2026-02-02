@@ -2,10 +2,16 @@ TIProjectTemplate.displayName.Project_25mmAutocannon=25mm Light Rapid ETC Autoca
 TIProjectTemplate.summary.Project_25mmAutocannon=Develop and manufacture a 25mm Light Rapid Autocannon with ETC propulsion system.
 TIProjectTemplate.displayName.Project_155mmAutocannon_ETC=155mm Heavy ETC Autocannon
 TIProjectTemplate.summary.Project_155mmAutocannon_ETC=Develop and manufacture a 155mm Heavy Autocannon with ETC propulsion system.
+TIProjectTemplate.displayName.Project_140mmTungstenAutocannon_ETC=140mm Tungsten Autocannon ETC
+TIProjectTemplate.summary.Project_140mmTungstenAutocannon_ETC=Develop and manufacture a 140mm Tungsten Autocannon with ETC propulsion system.
 TIProjectTemplate.displayName.Project_18mmMinigun_ETC=18mm Rapid ETC Minigun
 TIProjectTemplate.summary.Project_18mmMinigun_ETC=Develop and manufacture a 18mm Rapid Minigun with ETC propulsion system.
 TIProjectTemplate.displayName.Project_HypervelocityKineticCannon_Maelstrom=Hypervelocity Kinetic Cannon "Maelstrom"
 TIProjectTemplate.summary.Project_HypervelocityKineticCannon_Maelstrom=Develop and manufacture the Hypervelocity Kinetic Cannon "Maelstrom".
+TIProjectTemplate.displayName.Project_HypervelocityKineticCannon_Maelstrom_Two=Hypervelocity Kinetic Cannon "Maelstrom". Version Two
+TIProjectTemplate.summary.Project_HypervelocityKineticCannon_Maelstrom_Two=Develop and manufacture the Hypervelocity Kinetic Cannon "Maelstrom". Version Two with improved performance and reliability.
+TIProjectTemplate.displayName.Project_ResonantMaelstrom=Resonant Maelstrom Turrets
+TIProjectTemplate.summary.Project_ResonantMaelstrom=An advanced twin-barrel turret system inspired by the groundbreaking Hypervelocity Kinetic Cannon "Maelstrom."
 
 TIProjectTemplate.displayName.Project_MicroMissileBayMRK1=Micro Missile Bay MRK1
 TIProjectTemplate.summary.Project_MicroMissileBayMRK1=Develop and manufacture a Micro Missile Bay MRK1 for swarming micro missiles.
@@ -138,3 +144,14 @@ TIProjectTemplate.summary.Project_DiamondRush=A sudden diamond rush enables us t
 
 TIProjectTemplate.displayName.Project_QuantumFluxAccelerator_Mk1=Quantum Flux Accelerator Mk I
 TIProjectTemplate.summary.Project_QuantumFluxAccelerator_Mk1=Engineers harness beginning aspects of quantum fluctuations and electromagnetic fields
+
+TIProjectTemplate.displayName.Project_MiniatureWaterHeatSink=Miniature Water Heat Sink
+TIProjectTemplate.summary.Project_MiniatureWaterHeatSink=A very small tank of water is heated while conditions prevent the ship from radiating heat into space.
+
+TIProjectTemplate.displayName.Project_ScrappedAluminiumFoamPlating=Scrapped Aluminium Foam Plating
+TIProjectTemplate.summary.Project_ScrappedAluminiumFoamPlating=Scavenged aluminium foam plating salvaged from scrapyards. Offers minimal protection but is better than nothing.
+TIProjectTemplate.displayName.Project_JunkrakerShip=Junkraker Ship
+TIProjectTemplate.summary.Project_JunkrakerShip=An old salvaged vessel retrofitted for basic space travel. Not much to look at, but it gets the job done.
+TIProjectTemplate.displayName.Project_ScrappedAluminiumFinRadiator=Scrapped Aluminum Fin Radiator
+TIProjectTemplate.summary.Project_ScrappedAluminiumFinRadiator=Scrapped aluminum fin radiator salvaged from scrapyards. Provides minimal heat dissipation but is better than nothing.
+

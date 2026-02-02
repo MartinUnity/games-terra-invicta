@@ -39,10 +39,10 @@ TIEffectTemplate.description.Effect_MCUsageMasking_Advanced=-We estimate we can 
 TIEffectTemplate.description.Effect_MCUsageMasking_Expert=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{3}/{8} MC usage)
 TIEffectTemplate.description.Effect_MCUsageMasking_Master=-We estimate we can increase our faction's presence in space by {18} without inviting alien retaliation (+{3}/{8} MC usage)
 
-TIEffectTemplate.description.Effect_ShipMagDamage_lvl1=-Magnetic Weapons do {18} extra damage (+{3}/{8} damage)
-TIEffectTemplate.description.Effect_ShipMagDamage_lvl2=-Magnetic Weapons do {18} extra damage (+{3}/{8} damage)
-TIEffectTemplate.description.Effect_ShipMagDamage_lvl3=-Magnetic Weapons do {18} extra damage (+{3}/{8} damage)
-TIEffectTemplate.description.Effect_ShipMagDamage_lvl4=-Magnetic Weapons do {18} extra damage (+{3}/{8} damage)
+TIEffectTemplate.description.Effect_ShipMagDamage_lvl1=-Magnetic Weapons do {8} extra damage
+TIEffectTemplate.description.Effect_ShipMagDamage_lvl2=-Magnetic Weapons do {8} extra damage
+TIEffectTemplate.description.Effect_ShipMagDamage_lvl3=-Magnetic Weapons do {8} extra damage
+TIEffectTemplate.description.Effect_ShipMagDamage_lvl4=-Magnetic Weapons do {8} extra damage
 
 TIEffectTemplate.description.Effect_SpaceMineExtra2=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}
 TIEffectTemplate.description.Effect_SpaceMineExtra4=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}

@@ -1,0 +1,23 @@
+[
+  {
+    "dataName": "ScrappedAluminiumFinRadiator",
+    "friendlyName": "Scrapped Aluminum Fin Radiator",
+    "specificMass_2s_kgm2": 1.5,
+    "specificPower_2s_KWkg": 9.5,
+    "operatingTemp_K": 425,
+    "emissivity": 0.8,
+    "vulnerability": 30,
+    "collector": false,
+    "requiredProjectName": "Project_ScrappedAluminiumFinRadiator",
+    "crew": 0,
+    "weightedBuildMaterials": {
+      "volatiles": 0,
+      "metals": 1,
+      "nobleMetals": 0,
+      "exotics": 0
+    },
+    "iconResource": "shipbuildericons/ICO_AluminumFinRadiator",
+    "combatUIpath": "fin",
+    "radiatorType": "Fin"
+  }
+]

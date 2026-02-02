@@ -1,0 +1,14 @@
+[
+  {
+    "dataName": "MiniatureWaterHeatSink",
+    "displayName": "Miniature Water Heat Sink for small crafts",
+    "heatCapacity_GJ": 25,
+    "mass_tons": 60,
+    "requiredProjectName": "Project_MiniatureWaterHeatSink",
+    "crew": 1,
+    "weightedBuildMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_WaterHeatSink"
+  }
+]
