@@ -155,6 +155,17 @@ TIProjectTemplate.summary.Project_DiamondRush=A sudden diamond rush enables us t
 
 TIProjectTemplate.displayName.Project_QuantumFluxAccelerator_Mk1=Quantum Flux Accelerator Mk I
 TIProjectTemplate.summary.Project_QuantumFluxAccelerator_Mk1=Engineers harness beginning aspects of quantum fluctuations and electromagnetic fields
+TIProjectTemplate.displayName.Project_QuantumFluxAccelerator_Mk2=Quantum Flux Accelerator Mk II
+TIProjectTemplate.summary.Project_QuantumFluxAccelerator_Mk2=Research advanced quantum flux acceleration techniques to increase exhaust velocity and thrust.
+TIProjectTemplate.displayName.Project_QuantumFluxAccelerator_Mk3=Quantum Flux Accelerator Mk III
+TIProjectTemplate.summary.Project_QuantumFluxAccelerator_Mk3=Develop state-of-the-art quantum flux acceleration systems for major improvements in propulsion performance.
+
+TIProjectTemplate.displayName.Project_QuantumFluxAccelerator_Mk4=Quantum Flux Accelerator Mk IV
+TIProjectTemplate.summary.Project_QuantumFluxAccelerator_Mk4=Research advanced quantum flux systems to substantially increase thrust and exhaust velocity.
+TIProjectTemplate.displayName.Project_QuantumFluxAccelerator_Mk5=Quantum Flux Accelerator Mk V
+TIProjectTemplate.summary.Project_QuantumFluxAccelerator_Mk5=Explore cutting-edge quantum flux designs for dramatic propulsion performance improvements.
+TIProjectTemplate.displayName.Project_QuantumFluxAccelerator_Mk6=Quantum Flux Accelerator Mk VI
+TIProjectTemplate.summary.Project_QuantumFluxAccelerator_Mk6=Master quantum flux acceleration to achieve peak propulsion efficiency and exhaust velocity.
 
 TIProjectTemplate.displayName.Project_MiniatureWaterHeatSink=Miniature Water Heat Sink
 TIProjectTemplate.summary.Project_MiniatureWaterHeatSink=A very small tank of water is heated while conditions prevent the ship from radiating heat into space.
@@ -168,3 +179,72 @@ TIProjectTemplate.summary.Project_ScrappedAluminiumFinRadiator=Scrapped aluminum
 
 TIProjectTemplate.displayName.Project_AutomatedRefinery=Automated Refinery
 TIProjectTemplate.summary.Project_AutomatedRefinery=An automated refinery system that improves resource processing efficiency.
+
+TIProjectTemplate.displayName.Project_ExtractionCascade_Water_T1=Cascade Extraction: Water Tier I
+TIProjectTemplate.summary.Project_ExtractionCascade_Water_T1=Develop Cascade Extraction processing for water deposits to boost water yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Water_T2=Cascade Extraction: Water Tier II
+TIProjectTemplate.summary.Project_ExtractionCascade_Water_T2=Improve Cascade Extraction processing to further increase water yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Water_T3=Cascade Extraction: Water Tier III
+TIProjectTemplate.summary.Project_ExtractionCascade_Water_T3=Advanced Cascade Extraction techniques to substantially raise water yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Water_T4=Cascade Extraction: Water Tier IV
+TIProjectTemplate.summary.Project_ExtractionCascade_Water_T4=State-of-the-art Cascade Extraction to maximize water yield from deposits.
+
+TIProjectTemplate.displayName.Project_ExtractionCascade_Volatiles_T1=Cascade Extraction: Volatiles Tier I
+TIProjectTemplate.summary.Project_ExtractionCascade_Volatiles_T1=Develop Cascade Extraction processing for volatile deposits to boost volatiles yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Volatiles_T2=Cascade Extraction: Volatiles Tier II
+TIProjectTemplate.summary.Project_ExtractionCascade_Volatiles_T2=Improve Cascade Extraction processing to further increase volatiles yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Volatiles_T3=Cascade Extraction: Volatiles Tier III
+TIProjectTemplate.summary.Project_ExtractionCascade_Volatiles_T3=Advanced Cascade Extraction techniques to substantially raise volatiles yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Volatiles_T4=Cascade Extraction: Volatiles Tier IV
+TIProjectTemplate.summary.Project_ExtractionCascade_Volatiles_T4=State-of-the-art Cascade Extraction to maximize volatiles yield from deposits.
+
+TIProjectTemplate.displayName.Project_ExtractionCascade_Metals_T1=Cascade Extraction: Metals Tier I
+TIProjectTemplate.summary.Project_ExtractionCascade_Metals_T1=Develop Cascade Extraction processing for metal deposits to boost metal yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Metals_T2=Cascade Extraction: Metals Tier II
+TIProjectTemplate.summary.Project_ExtractionCascade_Metals_T2=Improve Cascade Extraction processing to further increase metal yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Metals_T3=Cascade Extraction: Metals Tier III
+TIProjectTemplate.summary.Project_ExtractionCascade_Metals_T3=Advanced Cascade Extraction techniques to substantially raise metal yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Metals_T4=Cascade Extraction: Metals Tier IV
+TIProjectTemplate.summary.Project_ExtractionCascade_Metals_T4=State-of-the-art Cascade Extraction to maximize metal yield from deposits.
+
+TIProjectTemplate.displayName.Project_ExtractionCascade_NobleMetals_T1=Cascade Extraction: Noble Metals Tier I
+TIProjectTemplate.summary.Project_ExtractionCascade_NobleMetals_T1=Develop Cascade Extraction processing for noble metal deposits to boost yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_NobleMetals_T2=Cascade Extraction: Noble Metals Tier II
+TIProjectTemplate.summary.Project_ExtractionCascade_NobleMetals_T2=Improve Cascade Extraction processing to further increase noble metal yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_NobleMetals_T3=Cascade Extraction: Noble Metals Tier III
+TIProjectTemplate.summary.Project_ExtractionCascade_NobleMetals_T3=Advanced Cascade Extraction techniques to substantially raise noble metal yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_NobleMetals_T4=Cascade Extraction: Noble Metals Tier IV
+TIProjectTemplate.summary.Project_ExtractionCascade_NobleMetals_T4=State-of-the-art Cascade Extraction to maximize noble metal yield from deposits.
+
+TIProjectTemplate.displayName.Project_ExtractionCascade_Fissiles_T1=Cascade Extraction: Fissiles Tier I
+TIProjectTemplate.summary.Project_ExtractionCascade_Fissiles_T1=Develop Cascade Extraction processing for fissile deposits to boost fissile yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Fissiles_T2=Cascade Extraction: Fissiles Tier II
+TIProjectTemplate.summary.Project_ExtractionCascade_Fissiles_T2=Improve Cascade Extraction processing to further increase fissile yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Fissiles_T3=Cascade Extraction: Fissiles Tier III
+TIProjectTemplate.summary.Project_ExtractionCascade_Fissiles_T3=Advanced Cascade Extraction techniques to substantially raise fissile yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Fissiles_T4=Cascade Extraction: Fissiles Tier IV
+TIProjectTemplate.summary.Project_ExtractionCascade_Fissiles_T4=State-of-the-art Cascade Extraction to maximize fissile yield from deposits.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Water_T5=Cascade Extraction: Water Tier V
+TIProjectTemplate.summary.Project_ExtractionCascade_Water_T5=Beyond state-of-the-art Cascade Extraction to dramatically increase water yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Water_T6=Cascade Extraction: Water Tier VI
+TIProjectTemplate.summary.Project_ExtractionCascade_Water_T6=Transcendent Cascade Extraction to maximize water yield from deposits.
+
+TIProjectTemplate.displayName.Project_ExtractionCascade_Volatiles_T5=Cascade Extraction: Volatiles Tier V
+TIProjectTemplate.summary.Project_ExtractionCascade_Volatiles_T5=Beyond state-of-the-art Cascade Extraction to dramatically increase volatiles yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Volatiles_T6=Cascade Extraction: Volatiles Tier VI
+TIProjectTemplate.summary.Project_ExtractionCascade_Volatiles_T6=Transcendent Cascade Extraction to maximize volatiles yield from deposits.
+
+TIProjectTemplate.displayName.Project_ExtractionCascade_Metals_T5=Cascade Extraction: Metals Tier V
+TIProjectTemplate.summary.Project_ExtractionCascade_Metals_T5=Beyond state-of-the-art Cascade Extraction to dramatically increase metal yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Metals_T6=Cascade Extraction: Metals Tier VI
+TIProjectTemplate.summary.Project_ExtractionCascade_Metals_T6=Transcendent Cascade Extraction to maximize metal yield from deposits.
+
+TIProjectTemplate.displayName.Project_ExtractionCascade_NobleMetals_T5=Cascade Extraction: Noble Metals Tier V
+TIProjectTemplate.summary.Project_ExtractionCascade_NobleMetals_T5=Beyond state-of-the-art Cascade Extraction to dramatically increase noble metal yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_NobleMetals_T6=Cascade Extraction: Noble Metals Tier VI
+TIProjectTemplate.summary.Project_ExtractionCascade_NobleMetals_T6=Transcendent Cascade Extraction to maximize noble metal yield from deposits.
+
+TIProjectTemplate.displayName.Project_ExtractionCascade_Fissiles_T5=Cascade Extraction: Fissiles Tier V
+TIProjectTemplate.summary.Project_ExtractionCascade_Fissiles_T5=Beyond state-of-the-art Cascade Extraction to dramatically increase fissile yield.
+TIProjectTemplate.displayName.Project_ExtractionCascade_Fissiles_T6=Cascade Extraction: Fissiles Tier VI
+TIProjectTemplate.summary.Project_ExtractionCascade_Fissiles_T6=Transcendent Cascade Extraction to maximize fissile yield from deposits.

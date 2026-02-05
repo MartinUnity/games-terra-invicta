@@ -526,5 +526,306 @@
     "initialFactionsStr": ["AlienCouncil"],
     "contexts": ["GenericModuleTransferTime"],
     "_comment_calc_percentage": "1/0.5 = 2 = +100% module transfer time"
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Water_T1",
+    "operation": "Additive",
+    "value": 0.25,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Water_T2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Water_T3",
+    "operation": "Additive",
+    "value": 0.4,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Water_T4",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Volatiles_T1",
+    "operation": "Additive",
+    "value": 0.25,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Volatiles_T2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Volatiles_T3",
+    "operation": "Additive",
+    "value": 0.4,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Volatiles_T4",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Metals_T1",
+    "operation": "Additive",
+    "value": 0.25,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Metals_T2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Metals_T3",
+    "operation": "Additive",
+    "value": 0.4,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Metals_T4",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_NobleMetals_T1",
+    "operation": "Additive",
+    "value": 0.25,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_NobleMetals_T2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_NobleMetals_T3",
+    "operation": "Additive",
+    "value": 0.4,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_NobleMetals_T4",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Fissiles_T1",
+    "operation": "Additive",
+    "value": 0.25,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Fissiles_T2",
+    "operation": "Additive",
+    "value": 0.35,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Fissiles_T3",
+    "operation": "Additive",
+    "value": 0.4,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Fissiles_T4",
+    "operation": "Additive",
+    "value": 0.5,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  }
+  ,
+  {
+    "dataName": "Effect_ExtractionCascade_Water_T5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Water_T6",
+    "operation": "Additive",
+    "value": 1.0,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningWaterBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Volatiles_T5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Volatiles_T6",
+    "operation": "Additive",
+    "value": 1.0,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningVolatilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Metals_T5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Metals_T6",
+    "operation": "Additive",
+    "value": 1.0,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningMetalsBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_NobleMetals_T5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_NobleMetals_T6",
+    "operation": "Additive",
+    "value": 1.0,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningNoblesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Fissiles_T5",
+    "operation": "Additive",
+    "value": 0.8,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_ExtractionCascade_Fissiles_T6",
+    "operation": "Additive",
+    "value": 1.0,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": ["MiningFissilesBonus"]
   }
 ]

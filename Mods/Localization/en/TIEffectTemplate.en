@@ -59,3 +59,43 @@ TIEffectTemplate.description.Effect_GravitonRockets=-Reduces boost use for sendi
 TIEffectTemplate.description.Effect_ThermalFissionFreighters=-Thermal Fission-powered haulers accelerate delivery of hab modules by {18}
 TIEffectTemplate.description.Effect_StarLightFreighters=-Starlight-powered haulers accelerate delivery of hab modules by {18}
 TIEffectTemplate.description.Effect_GravitonFreighters=-Graviton-powered haulers accelerate delivery of hab modules by {18}
+
+TIEffectTemplate.description.Effect_ExtractionCascade_Water_T1=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="water"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Water_T2=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="water"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Water_T3=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="water"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Water_T4=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="water"></color>
+
+TIEffectTemplate.description.Effect_ExtractionCascade_Volatiles_T1=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="volatiles"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Volatiles_T2=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="volatiles"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Volatiles_T3=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="volatiles"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Volatiles_T4=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="volatiles"></color>
+
+TIEffectTemplate.description.Effect_ExtractionCascade_Metals_T1=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Metals_T2=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Metals_T3=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Metals_T4=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal"></color>
+
+TIEffectTemplate.description.Effect_ExtractionCascade_NobleMetals_T1=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal_noble"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_NobleMetals_T2=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal_noble"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_NobleMetals_T3=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal_noble"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_NobleMetals_T4=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal_noble"></color>
+
+TIEffectTemplate.description.Effect_ExtractionCascade_Fissiles_T1=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="radioactive"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Fissiles_T2=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="radioactive"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Fissiles_T3=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="radioactive"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Fissiles_T4=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="radioactive"></color>
+
+TIEffectTemplate.description.Effect_ExtractionCascade_Water_T5=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="water"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Water_T6=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="water"></color>
+
+TIEffectTemplate.description.Effect_ExtractionCascade_Volatiles_T5=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="volatiles"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Volatiles_T6=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="volatiles"></color>
+
+TIEffectTemplate.description.Effect_ExtractionCascade_Metals_T5=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Metals_T6=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal"></color>
+
+TIEffectTemplate.description.Effect_ExtractionCascade_NobleMetals_T5=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal_noble"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_NobleMetals_T6=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="metal_noble"></color>
+
+TIEffectTemplate.description.Effect_ExtractionCascade_Fissiles_T5=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="radioactive"></color>
+TIEffectTemplate.description.Effect_ExtractionCascade_Fissiles_T6=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="radioactive"></color>
