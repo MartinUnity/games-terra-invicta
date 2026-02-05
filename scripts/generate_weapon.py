@@ -544,6 +544,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                     args.damage,
                     args.cooldown,
                     args.efficiency,
+                    args.wavelength_nm,
                     args.mirror_cm,
                     args.beam_quality,
                     args.jitter,
