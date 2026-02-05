@@ -1,14 +1,28 @@
 TIGunTemplate.displayName.25mmAutocannon_LightRapid=25mm Light Rapid Autocannon
 TIGunTemplate.description.25mmAutocannon_LightRapid=25mm Light Rapid Autocannon with ETC.
-TIGunTemplate.displayName.155mmAutocannon_ETC=155mm Heavy Autocannon
-TIGunTemplate.description.155mmAutocannon_ETC=155mm Heavy Autocannon with ETC.
 TIGunTemplate.displayName.18mmMinigun_ETC=18mm Rapid Minigun
 TIGunTemplate.description.18mmMinigun_ETC=18mm Rapid Minigun with ETC.
+
 TIGunTemplate.displayName.HypervelocityKineticCannon_Maelstrom=Hypervelocity Kinetic Cannon "Maelstrom"
 TIGunTemplate.description.HypervelocityKineticCannon_Maelstrom=Unbridled rage embodied in the Hypervelocity Kinetic Cannon "Maelstrom".
 TIGunTemplate.displayName.HypervelocityKineticCannon_Maelstrom_Two=Hypervelocity Kinetic Cannon "Maelstrom". Version Two
 TIGunTemplate.description.HypervelocityKineticCannon_Maelstrom_Two=Questionable rage embodied in the Hypervelocity Kinetic Cannon "Maelstrom". Version Two with improved performance and reliability.
-TIGunTemplate.displayName.ResonantMaelstrom=Resonant Maelstrom Turrets
+TIGunTemplate.displayName.HypervelocityKineticCannon_Maelstrom_Three=Hypervelocity Kinetic Cannon "Maelstrom". Version Three
+TIGunTemplate.description.HypervelocityKineticCannon_Maelstrom_Three=Unleashed rage embodied in the Hypervelocity Kinetic Cannon "Maelstrom". Version Three with cutting-edge enhancements and unmatched power.
+
+TIGunTemplate.displayName.ResonantMaelstrom=Resonant Maelstrom Turret
 TIGunTemplate.description.ResonantMaelstrom=An advanced twin-barrel turret system inspired by the groundbreaking Hypervelocity Kinetic Cannon "Maelstrom." Dubbed the "Resonant Maelstrom," this innovative weapon platform leverages advancements in material science, electromagnetic acceleration, and harmonic resonance to deliver devastating kinetic strikes from multiple directions.
+TIGunTemplate.displayName.ResonantMaelstrom_Two=Resonant Maelstrom Turret. Version Two
+TIGunTemplate.description.ResonantMaelstrom_Two=An advanced twin-barrel turret system inspired by the groundbreaking Hypervelocity Kinetic Cannon "Maelstrom." Dubbed the "Resonant Maelstrom," this innovative weapon platform leverages advancements in material science, electromagnetic acceleration, and harmonic resonance to deliver devastating kinetic strikes from multiple directions.
+TIGunTemplate.displayName.ResonantMaelstrom_Three=Resonant Maelstrom Turret. Version Three
+TIGunTemplate.description.ResonantMaelstrom_Three=An advanced twin-barrel turret system inspired by the groundbreaking Hypervelocity Kinetic Cannon "Maelstrom." Dubbed the "Resonant Maelstrom," this innovative weapon platform leverages advancements in material science, electromagnetic acceleration, and harmonic resonance to deliver devastating kinetic strikes from multiple directions.
+
+TIGunTemplate.displayName.155mmAutocannon_ETC=155mm Heavy Autocannon
+TIGunTemplate.description.155mmAutocannon_ETC=155mm Heavy Autocannon with ETC.
 TIGunTemplate.displayName.140mmTungstenAutocannon_ETC=140mm Tungsten Autocannon ETC
 TIGunTemplate.description.140mmTungstenAutocannon_ETC=A 140mm autocannon that fires tungsten rounds using electromagnetic technology to achieve higher muzzle velocities and improved armor penetration.
+TIGunTemplate.displayName.220mmAutocannon_ETP=220mm Tungsten Autocannon ETP
+TIGunTemplate.description.220mmAutocannon_ETP=A 220mm autocannon that fires rounds using electromagnetic technology to achieve higher muzzle velocities and improved armor penetration.
+
+TIGunTemplate.displayName.280mmAutocannon_ETP=280mm Flux Powered LIPC Autocannon
+TIGunTemplate.description.280mmAutocannon_ETP=A LIPC (Laser‑Induced Plasma Channel) autocannon that utilizes flux energy to fire high-velocity projectiles with exceptional armor penetration capabilities.

@@ -304,6 +304,12 @@ def main(argv: Optional[List[str]] = None) -> int:
         default=False,
         help="Include Alien weapons in --scan-existing output (off by default; Alien weapons often considered cheat)",
     )
+    p.add_argument(
+        "--research-multiplier",
+        type=float,
+        default=0.75,
+        help="Multiplier applied to a reference research cost when inferring MOD research (default: 0.75)",
+    )
     args = p.parse_args(argv)
 
     # When using --compare we can infer types from the left/right strings;
@@ -348,6 +354,26 @@ def main(argv: Optional[List[str]] = None) -> int:
         # also scan Mods/ in the repo for custom templates
         repo_root = os.path.abspath(os.path.join(start, ".."))
         mods_dir = os.path.join(repo_root, "Mods")
+
+        # load project templates (for researchCost lookup)
+        project_costs: Dict[str, float] = {}
+        for proj_src in (base_dir, mods_dir):
+            proj_path = os.path.join(proj_src, "TIProjectTemplate.json")
+            if os.path.exists(proj_path):
+                try:
+                    with open(proj_path, "r", encoding="utf-8") as pf:
+                        p_items = json.load(pf)
+                        if isinstance(p_items, list):
+                            for it in p_items:
+                                dn = it.get("dataName") or it.get("name")
+                                rc = it.get("researchCost")
+                                try:
+                                    if dn and rc is not None:
+                                        project_costs[dn] = float(rc)
+                                except Exception:
+                                    pass
+                except Exception:
+                    pass
 
         sources = [(base_dir, ""), (mods_dir, "MOD")]
         for fname, wtype in mapping.items():
@@ -398,6 +424,56 @@ def main(argv: Optional[List[str]] = None) -> int:
                     mv_kps = entry.get("muzzleVelocity_kps") or entry.get("muzzleVelocity") or None
                     mag = entry.get("magazine") or None
 
+                    # try to read research cost if present in entry under common keys
+                    research_val = None
+                    for rk in ("researchCost", "research_cost", "research", "researchCostCredits"):
+                        if rk in entry and entry.get(rk) is not None:
+                            try:
+                                research_val = float(entry.get(rk))
+                            except Exception:
+                                try:
+                                    research_val = float(str(entry.get(rk)).strip())
+                                except Exception:
+                                    research_val = None
+                            break
+                    # fallback: try project mapping 'Project_<dataName>'
+                    if research_val is None:
+                        proj_key = f"Project_{name}"
+                        if proj_key in project_costs:
+                            research_val = project_costs[proj_key]
+
+                    # format rps, and if magazine present compute seconds-to-empty = magazine / rps
+                    try:
+                        rps_f = float(rps)
+                    except Exception:
+                        # fallback: try raw rps value
+                        try:
+                            rps_f = float(entry.get("rps") or 0)
+                        except Exception:
+                            rps_f = 0.0
+
+                    mag_val = None
+                    try:
+                        if mag is not None:
+                            mag_val = int(mag)
+                    except Exception:
+                        try:
+                            mag_val = int(float(str(mag)))
+                        except Exception:
+                            mag_val = None
+
+                    rps_cell = _fmt(rps_f)
+                    if mag_val and rps_f > 0:
+                        secs = int(round(mag_val / rps_f))
+                        mins = secs // 60
+                        s_rem = secs % 60
+                        # cap minutes at 60 and use two-digit minutes
+                        if mins > 60:
+                            mins = 60
+                            s_rem = 0
+                        time_str = f"{mins:02d}:{s_rem:02d}"
+                        rps_cell = f"{rps_cell} ({time_str})"
+
                     rows_all.append(
                         [
                             wtype,
@@ -406,15 +482,30 @@ def main(argv: Optional[List[str]] = None) -> int:
                             _fmt(damage_in_game) if damage_in_game is not None else "",
                             _fmt(energy) if energy is not None else "",
                             _fmt(dps) if dps is not None else "",
-                            _fmt(rps),
+                            rps_cell,
                             _fmt(war_kg) if war_kg is not None else "",
                             _fmt(mv_kps) if mv_kps is not None else "",
                             _fmt(cooldown),
                             str(int(salvo)) if salvo is not None else "",
                             str(mag) if mag is not None else "",
                             src_tag,
+                            (
+                                str(int(research_val))
+                                if isinstance(research_val, (int, float))
+                                else ("" if research_val is None else str(research_val))
+                            ),
                         ]
                     )
+
+        # Preserve an index of the unfiltered rows for reference-based research lookup
+        rows_meta = []
+        for idx, r in enumerate(rows_all):
+            t = r[0] if len(r) > 0 else ""
+            dn = r[1] if len(r) > 1 else ""
+            dps_s = r[5] if len(r) > 5 else ""
+            src_tag = r[12] if len(r) > 12 else ""
+            research_s = r[13] if len(r) > 13 else ""
+            rows_meta.append((idx, t, dn, dps_s, src_tag, research_s))
 
         # Apply filter if requested (comma-separated types)
         if args.filter_type:
@@ -467,6 +558,115 @@ def main(argv: Optional[List[str]] = None) -> int:
             new_rows.extend(others)
             rows_all = new_rows
 
+        # Assign researchCost for MOD entries by finding a nearby non-MOD's researchCost
+        # Use the unfiltered `rows_meta` mapping to search the entire dataset for a nearby
+        # non-MOD row with a numeric research cost, then apply a 25% discount.
+        for i, r in enumerate(rows_all):
+            # r structure: [..., mag, src_tag, research]
+            if len(r) < 14:
+                continue
+            src_tag = r[12]
+            research_s = r[13]
+            if src_tag == "MOD":
+                # if research already present, ensure it's normalized and skip
+                try:
+                    if research_s and float(research_s) > 0:
+                        r[13] = str(int(round(float(research_s))))
+                        r[12] = "MOD"
+                        continue
+                except Exception:
+                    pass
+
+                # find this row's index in the original unfiltered metadata
+                orig_idx = None
+                for meta in rows_meta:
+                    if meta[1] == r[0] and meta[2] == r[1]:
+                        orig_idx = meta[0]
+                        break
+
+                ref_cost = None
+                # Prefer to match by DPS: find non-MOD row in unfiltered set with numeric research and
+                # minimal absolute DPS difference.
+                try:
+                    cur_dps = float(r[5]) if r[5] else None
+                except Exception:
+                    cur_dps = None
+
+                if cur_dps is not None:
+                    best = None
+                    best_diff = None
+                    for _, _, _, cand_dps_s, cand_src, cand_re in rows_meta:
+                        if cand_src == "MOD" or not cand_re:
+                            continue
+                        try:
+                            cand_dps = float(cand_dps_s)
+                            cand_re_f = float(cand_re)
+                        except Exception:
+                            continue
+                        diff = abs(cur_dps - cand_dps)
+                        if best is None or diff < best_diff:
+                            best = cand_re_f
+                            best_diff = diff
+                    if best is not None:
+                        ref_cost = best
+
+                # if DPS-based match failed, fall back to neighbor search in unfiltered metadata
+                if ref_cost is None and orig_idx is not None:
+                    # forward search
+                    for j in range(orig_idx + 1, len(rows_meta)):
+                        _, _, _, _, cand_src, cand_re = rows_meta[j]
+                        if cand_src != "MOD" and cand_re:
+                            try:
+                                ref_cost = float(cand_re)
+                                break
+                            except Exception:
+                                continue
+                    # backward search if not found
+                    if ref_cost is None:
+                        for j in range(orig_idx - 1, -1, -1):
+                            _, _, _, _, cand_src, cand_re = rows_meta[j]
+                            if cand_src != "MOD" and cand_re:
+                                try:
+                                    ref_cost = float(cand_re)
+                                    break
+                                except Exception:
+                                    continue
+
+                # fallback: if we couldn't find a ref in unfiltered list, try the displayed rows
+                if ref_cost is None:
+                    for j in range(i + 1, len(rows_all)):
+                        cand = rows_all[j]
+                        if len(cand) < 14:
+                            continue
+                        cand_src = cand[12]
+                        cand_re = cand[13]
+                        if cand_src != "MOD" and cand_re:
+                            try:
+                                ref_cost = float(cand_re)
+                                break
+                            except Exception:
+                                continue
+                    if ref_cost is None:
+                        for j in range(i - 1, -1, -1):
+                            cand = rows_all[j]
+                            if len(cand) < 14:
+                                continue
+                            cand_src = cand[12]
+                            cand_re = cand[13]
+                            if cand_src != "MOD" and cand_re:
+                                try:
+                                    ref_cost = float(cand_re)
+                                    break
+                                except Exception:
+                                    continue
+
+                if ref_cost is not None:
+                    new_cost = int(round(ref_cost * args.research_multiplier))
+                    r[13] = str(new_cost)
+                    r[12] = "MOD"
+                else:
+                    r[12] = "MOD"
+
         # print table with fixed-width columns
         if rows_all:
             header = [
@@ -483,6 +683,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 "salvo",
                 "mag",
                 "src",
+                "research",
             ]
             cols = [header] + rows_all
             widths = [max(len(str(r[i])) for r in cols) for i in range(len(header))]
@@ -490,7 +691,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             print(sep.join(header[i].ljust(widths[i]) for i in range(len(header))))
             print("-" * (sum(widths) + len(sep) * (len(widths) - 1)))
             for r in rows_all:
-                print(sep.join(str(r[i]).ljust(widths[i]) for i in range(len(r))))
+                print(sep.join(str(r[i]).ljust(widths[i]) for i in range(len(header))))
         return 0
 
     def parse_kv_string(s: str) -> Dict[str, str]:

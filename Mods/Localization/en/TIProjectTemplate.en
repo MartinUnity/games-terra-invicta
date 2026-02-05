@@ -1,17 +1,28 @@
 TIProjectTemplate.displayName.Project_25mmAutocannon=25mm Light Rapid ETC Autocannon
 TIProjectTemplate.summary.Project_25mmAutocannon=Develop and manufacture a 25mm Light Rapid Autocannon with ETC propulsion system.
+TIProjectTemplate.displayName.Project_18mmMinigun_ETC=18mm Rapid ETC Minigun
+TIProjectTemplate.summary.Project_18mmMinigun_ETC=Develop and manufacture a 18mm Rapid Minigun with ETC propulsion system.
+
 TIProjectTemplate.displayName.Project_155mmAutocannon_ETC=155mm Heavy ETC Autocannon
 TIProjectTemplate.summary.Project_155mmAutocannon_ETC=Develop and manufacture a 155mm Heavy Autocannon with ETC propulsion system.
 TIProjectTemplate.displayName.Project_140mmTungstenAutocannon_ETC=140mm Tungsten Autocannon ETC
 TIProjectTemplate.summary.Project_140mmTungstenAutocannon_ETC=Develop and manufacture a 140mm Tungsten Autocannon with ETC propulsion system.
-TIProjectTemplate.displayName.Project_18mmMinigun_ETC=18mm Rapid ETC Minigun
-TIProjectTemplate.summary.Project_18mmMinigun_ETC=Develop and manufacture a 18mm Rapid Minigun with ETC propulsion system.
+TIProjectTemplate.displayName.Project_280mmAutocannon_LIPC=280mm Autocannon LIPC
+TIProjectTemplate.summary.Project_280mmAutocannon_LIPC=Develop and manufacture a 280mm Autocannon with LIPC propulsion system.
+
 TIProjectTemplate.displayName.Project_HypervelocityKineticCannon_Maelstrom=Hypervelocity Kinetic Cannon "Maelstrom"
 TIProjectTemplate.summary.Project_HypervelocityKineticCannon_Maelstrom=Develop and manufacture the Hypervelocity Kinetic Cannon "Maelstrom".
 TIProjectTemplate.displayName.Project_HypervelocityKineticCannon_Maelstrom_Two=Hypervelocity Kinetic Cannon "Maelstrom". Version Two
 TIProjectTemplate.summary.Project_HypervelocityKineticCannon_Maelstrom_Two=Develop and manufacture the Hypervelocity Kinetic Cannon "Maelstrom". Version Two with improved performance and reliability.
-TIProjectTemplate.displayName.Project_ResonantMaelstrom=Resonant Maelstrom Turrets
+TIProjectTemplate.displayName.Project_HypervelocityKineticCannon_Maelstrom_Three=Hypervelocity Kinetic Cannon "Maelstrom". Version Three
+TIProjectTemplate.summary.Project_HypervelocityKineticCannon_Maelstrom_Three=Develop and manufacture the Hypervelocity Kinetic Cannon "Maelstrom". Version Three with cutting-edge enhancements and unmatched power.
+
+TIProjectTemplate.displayName.Project_ResonantMaelstrom=Resonant Maelstrom Turrets - Dual-fire
 TIProjectTemplate.summary.Project_ResonantMaelstrom=An advanced twin-barrel turret system inspired by the groundbreaking Hypervelocity Kinetic Cannon "Maelstrom."
+TIProjectTemplate.displayName.Project_ResonantMaelstrom_Two=Resonant Maelstrom Turrets - Quad-fire
+TIProjectTemplate.summary.Project_ResonantMaelstrom_Two=An advanced twin-barrel turret system inspired by the groundbreaking Hypervelocity Kinetic Cannon "Maelstrom.". Version Two with improved performance.
+TIProjectTemplate.displayName.Project_ResonantMaelstrom_Three=Resonant Maelstrom Turrets - Okta-fire
+TIProjectTemplate.summary.Project_ResonantMaelstrom_Three=An advanced twin-barrel turret system inspired by the groundbreaking Hypervelocity Kinetic Cannon "Maelstrom.". Version Three with cutting-edge enhancements.
 
 TIProjectTemplate.displayName.Project_MicroMissileBayMRK1=Micro Missile Bay MRK1
 TIProjectTemplate.summary.Project_MicroMissileBayMRK1=Develop and manufacture a Micro Missile Bay MRK1 for swarming micro missiles.
