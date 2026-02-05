@@ -155,3 +155,5 @@ TIProjectTemplate.summary.Project_JunkrakerShip=An old salvaged vessel retrofitt
 TIProjectTemplate.displayName.Project_ScrappedAluminiumFinRadiator=Scrapped Aluminum Fin Radiator
 TIProjectTemplate.summary.Project_ScrappedAluminiumFinRadiator=Scrapped aluminum fin radiator salvaged from scrapyards. Provides minimal heat dissipation but is better than nothing.
 
+TIProjectTemplate.displayName.Project_AutomatedRefinery=Automated Refinery
+TIProjectTemplate.summary.Project_AutomatedRefinery=An automated refinery system that improves resource processing efficiency.

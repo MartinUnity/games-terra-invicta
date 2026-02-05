@@ -16,6 +16,7 @@ import argparse
 import json
 import math
 import random
+import shlex
 import sys
 from typing import Any, Dict, List, Optional
 
@@ -60,15 +61,25 @@ def make_gun_snippet(
     muzzle_kps: Optional[float],
     propellant_fraction: float = 0.4,
 ) -> Dict[str, Any]:
-    # Determine per-shot damage required
+
+    # Determine per-shot damage required. If DPS provided, derive per-shot damage.
     if dps is not None:
         rps = rps_from_timing(cooldown, salvo, intra)
         if rps == 0:
             raise ValueError("computed RPS is zero -- check timing/salvo values")
         per_shot_damage = dps / rps
         damage_in_game = per_shot_damage
+
+    # If neither damage nor dps was provided, but warhead mass and muzzle velocity are present,
+    # compute energy -> damageInGame from those values so existing weapons can be analyzed.
     if damage_in_game is None:
-        raise ValueError("either damage or dps must be provided for gun type")
+        if warhead_mass is not None and muzzle_kps is not None:
+            energy_mj = 0.5 * warhead_mass * (muzzle_kps**2)
+            damage_in_game = energy_mj / 20.0
+        else:
+            raise ValueError(
+                "either damage, dps, or both warheadMass+muzzleVelocity must be provided for gun/magnetic type"
+            )
 
     energy_mj = energy_from_damage(damage_in_game)
 
@@ -136,7 +147,13 @@ def make_laser_snippet(
     jitter: float,
     base_mass: float,
 ) -> Dict[str, Any]:
-    if damage_in_game is not None and shot_power_mj is None:
+    def _fmt(v: Any) -> str:
+        try:
+            return f"{float(v):.2f}"
+        except Exception:
+            return str(v)
+
+    if shot_power_mj is None:
         shot_power_mj = energy_from_damage(damage_in_game)
     if shot_power_mj is None:
         raise ValueError("Provide either shot_power_MJ or damage for laser type")
@@ -240,7 +257,7 @@ def generate_name_for(snippet: Dict[str, Any], wtype: str) -> str:
 
 def main(argv: Optional[List[str]] = None) -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--type", choices=["gun", "magnetic", "laser", "particle", "plasma"], required=True)
+    p.add_argument("--type", choices=["gun", "magnetic", "laser", "particle", "plasma"], required=False, default=None)
     p.add_argument("--damage", type=float, help="desired per-shot damageInGame")
     p.add_argument("--dps", type=float, help="desired DPS (will compute per-shot damage)")
     p.add_argument("--cooldown", type=float, default=6.0)
@@ -261,7 +278,30 @@ def main(argv: Optional[List[str]] = None) -> int:
     p.add_argument("--friendly", type=str, default=None)
     p.add_argument("--random", type=int, default=0, help="generate N random examples")
     p.add_argument("--output", choices=["json", "table"], default="json", help="output format for multiple examples")
+    p.add_argument("--compare", action="store_true", help="Compare two weapon parameter sets (--left and --right)")
+    p.add_argument(
+        "--left", type=str, default=None, help='Left param string: "type=gun cooldown=6 salvo=2 warheadMass=40 ..."'
+    )
+    p.add_argument("--right", type=str, default=None, help="Right param string")
     args = p.parse_args(argv)
+
+    # When using --compare we can infer types from the left/right strings;
+    # otherwise require --type to be present for normal operation.
+    if not args.compare and not args.type:
+        print("Error: --type is required unless --compare is used", file=sys.stderr)
+        return 2
+
+    def parse_kv_string(s: str) -> Dict[str, str]:
+        # parse space-separated key=val tokens, allow quoted values
+        res: Dict[str, str] = {}
+        if not s:
+            return res
+        toks = shlex.split(s)
+        for t in toks:
+            if "=" in t:
+                k, v = t.split("=", 1)
+                res[k] = v
+        return res
 
     results: List[Dict[str, Any]] = []
     if args.random and args.type in ("gun", "magnetic"):
@@ -293,7 +333,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 print("Error:", e, file=sys.stderr)
                 return 2
             results = [snippet]
-        else:
+        elif args.type in ("laser", "particle", "plasma"):
             try:
                 snippet = make_laser_snippet(
                     args.name,
@@ -302,7 +342,6 @@ def main(argv: Optional[List[str]] = None) -> int:
                     args.damage,
                     args.cooldown,
                     args.efficiency,
-                    args.wavelength_nm,
                     args.mirror_cm,
                     args.beam_quality,
                     args.jitter,
@@ -329,12 +368,12 @@ def main(argv: Optional[List[str]] = None) -> int:
             dps = dmg * rps
             stats.update(
                 {
-                    "damageInGame": round(dmg, 3),
-                    "energy_MJ": round(energy, 3),
-                    "muzzle_kps": round(mv, 6),
-                    "warhead_kg": round(war, 3),
-                    "rps": round(rps, 3),
-                    "dps": round(dps, 3),
+                    "damageInGame": round(dmg, 2),
+                    "energy_MJ": round(energy, 2),
+                    "muzzle_kps": round(mv, 2),
+                    "warhead_kg": round(war, 2),
+                    "rps": round(rps, 2),
+                    "dps": round(dps, 2),
                 }
             )
         else:
@@ -345,17 +384,138 @@ def main(argv: Optional[List[str]] = None) -> int:
             dps = dmg * rps
             stats.update(
                 {
-                    "damageInGame": round(dmg, 3),
-                    "shotPower_MJ": round(shot, 3),
-                    "rps": round(rps, 3),
-                    "dps": round(dps, 3),
+                    "damageInGame": round(dmg, 2),
+                    "shotPower_MJ": round(shot, 2),
+                    "energy_MJ": round(shot, 2),
+                    "rps": round(rps, 2),
+                    "dps": round(dps, 2),
                 }
             )
         return stats
 
+    # Compare mode: build two snippets from param strings and print side-by-side diffs
+    if args.compare:
+        if not args.left or not args.right:
+            print("Error: --compare requires --left and --right parameter strings", file=sys.stderr)
+            return 2
+        left_map = parse_kv_string(args.left)
+        right_map = parse_kv_string(args.right)
+
+        def build_from_map(m: Dict[str, str], default_type: Optional[str]) -> Dict[str, Any]:
+            t = m.get("type", default_type)
+            name = m.get("name", m.get("dataName", "LHS"))
+            friendly = m.get("friendly", name)
+
+            def gf(k: str, default: Optional[Any] = None) -> Optional[Any]:
+                if k in m:
+                    v = m[k]
+                    try:
+                        if isinstance(default, int):
+                            return int(float(v))
+                        return float(v)
+                    except Exception:
+                        return v
+                return default
+
+            if t in ("gun", "magnetic"):
+                return make_gun_snippet(
+                    name,
+                    friendly,
+                    gf("damage", None),
+                    gf("dps", None),
+                    gf("cooldown", 6.0) or 6.0,
+                    int(gf("salvo", 1) or 1),
+                    gf("intra", 0.0) or 0.0,
+                    gf("ammoMass", None),
+                    gf("warheadMass", None),
+                    gf("muzzleVelocity", None),
+                    gf("propellantFraction", 0.4) or 0.4,
+                )
+            else:
+                return make_laser_snippet(
+                    name,
+                    friendly,
+                    gf("shotPower_MJ", None),
+                    gf("damage", None),
+                    gf("cooldown", 6.0) or 6.0,
+                    gf("efficiency", 1.0) or 1.0,
+                    gf("wavelength_nm", 810.0) or 810.0,
+                    gf("mirror_cm", 60.0) or 60.0,
+                    gf("beam_quality", 1.2) or 1.2,
+                    gf("jitter", 9e-8) or 9e-8,
+                    gf("base_mass", 150.0) or 150.0,
+                )
+
+        left_snip = build_from_map(left_map, args.type)
+        right_snip = build_from_map(right_map, args.type)
+
+        l_stats = compute_stats(left_snip, left_map.get("type", args.type))
+        r_stats = compute_stats(right_snip, right_map.get("type", args.type))
+
+        if left_map.get("type", args.type) in ("gun", "magnetic"):
+            keys = ["damageInGame", "energy_MJ", "dps", "rps", "warhead_kg", "muzzle_kps", "cooldown_s"]
+            if "magazine" in left_map and "magazine" in right_map:
+                keys.insert(6, "magazine")
+        else:
+            keys = ["damageInGame", "energy_MJ", "dps", "rps", "shotPower_MJ", "baseWeaponMass_tons", "cooldown_s"]
+
+        def _fmt(v: Any) -> str:
+            try:
+                return f"{float(v):.2f}"
+            except Exception:
+                return str(v)
+
+        rows: List[List[str]] = []
+
+        def val(stats: Dict[str, Any], snip: Dict[str, Any], k: str) -> Any:
+            if k in stats:
+                return stats[k]
+            return snip.get(k, snip.get(k.replace("_", ""), ""))
+
+        header = [
+            "stat",
+            f"left ({left_snip.get('friendlyName')})",
+            f"right ({right_snip.get('friendlyName')})",
+            "diff",
+        ]
+
+        for k in keys:
+            lv = val(l_stats, left_snip, k)
+            rv = val(r_stats, right_snip, k)
+            try:
+                lfv = float(lv)
+                rfv = float(rv)
+                diff = lfv - rfv
+                if rfv == 0:
+                    pct_s = "(inf%)" if diff != 0 else "(+0.00%)"
+                else:
+                    pct = (diff / rfv) * 100.0
+                    pct_s = f" ({pct:+.2f}%)"
+                diff_s = f"{diff:+.2f} {pct_s}"
+            except Exception:
+                diff_s = ""
+            rows.append([k, _fmt(lv), _fmt(rv), diff_s])
+
+        cols = [header] + rows
+        widths = [max(len(str(r[i])) for r in cols) for i in range(len(header))]
+        sep = " | "
+        print(sep.join(header[i].ljust(widths[i]) for i in range(len(header))))
+        print("-" * (sum(widths) + len(sep) * (len(widths) - 1)))
+        for r in rows:
+            print(sep.join(str(r[i]).ljust(widths[i]) for i in range(len(r))))
+        return 0
+
     if args.output == "table":
         # Build table rows
         rows: List[List[str]] = []
+
+        # local formatter for table numeric columns (2 decimals)
+        def _fmt_local(v: Any) -> str:
+            try:
+                return f"{float(v):.2f}"
+            except Exception:
+                return "" if v == "" else str(v)
+
         if args.type in ("gun", "magnetic"):
             header = [
                 "name",
@@ -375,14 +535,14 @@ def main(argv: Optional[List[str]] = None) -> int:
                     [
                         sn.get("friendlyName", ""),
                         sn.get("dataName", ""),
-                        f"{stats['damageInGame']}",
-                        f"{stats['dps']}",
-                        f"{stats['rps']}",
-                        f"{stats.get('warhead_kg', '')}",
-                        f"{stats.get('muzzle_kps', '')}",
-                        f"{sn.get('cooldown_s', '')}",
-                        f"{sn.get('salvo_shots', '')}",
-                        f"{sn.get('magazine', '')}",
+                        _fmt_local(stats.get("damageInGame", "")),
+                        _fmt_local(stats.get("dps", "")),
+                        _fmt_local(stats.get("rps", "")),
+                        _fmt_local(stats.get("warhead_kg", "")),
+                        _fmt_local(stats.get("muzzle_kps", "")),
+                        _fmt_local(sn.get("cooldown_s", "")),
+                        _fmt_local(sn.get("salvo_shots", "")),
+                        _fmt_local(sn.get("magazine", "")),
                     ]
                 )
         else:
@@ -393,11 +553,11 @@ def main(argv: Optional[List[str]] = None) -> int:
                     [
                         sn.get("friendlyName", ""),
                         sn.get("dataName", ""),
-                        f"{stats['damageInGame']}",
-                        f"{stats['dps']}",
-                        f"{stats.get('shotPower_MJ', '')}",
-                        f"{sn.get('cooldown_s', '')}",
-                        f"{sn.get('baseWeaponMass_tons', '')}",
+                        _fmt_local(stats.get("damageInGame", "")),
+                        _fmt_local(stats.get("dps", "")),
+                        _fmt_local(stats.get("shotPower_MJ", "")),
+                        _fmt_local(sn.get("cooldown_s", "")),
+                        _fmt_local(sn.get("baseWeaponMass_tons", "")),
                     ]
                 )
 

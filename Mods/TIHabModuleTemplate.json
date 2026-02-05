@@ -275,5 +275,47 @@
     "alienModule": false,
     "objectiveModule": false,
     "disable": false
+  },
+  {
+    "dataName": "AutomatedRefinery",
+    "friendlyName": "Automated Refinery",
+    "coreModule": false,
+    "habType": "Any",
+    "onePerHab": true,
+    "automated": true,
+    "allowsShipConstruction": false,
+    "allowsResupply": false,
+    "mine": false,
+    "noBuild": false,
+    "destroyed": false,
+    "tier": 1,
+    "requiredProjectName": "Project_AutomatedRefinery",
+    "crew": 0,
+    "power": -5,
+    "baseMass_tons": 12,
+    "buildTime_Days": 30,
+    "constructionTimeModifier": 1,
+    "miningModifier": 0,
+    "controlPointCapacity": 0,
+    "techBonuses": [],
+    "specialRules": ["Efficiency"],
+    "specialRulesValue": 0.3,
+    "supportMaterials_month": {
+      "money": 0
+    },
+    "weightedBuildMaterials": {
+      "water": 0.12,
+      "volatiles": 0.46,
+      "metals": 0.4,
+      "nobleMetals": 0.02
+    },
+    "baseIconResource": "habmodules/base_T1_AutomatedSupplyDepot",
+    "stationIconResource": "habmodules/station_T1_AutomatedSupplyDepot",
+    "stationModelResource": "habmodules/station_T1_AutomatedSupplyDepot_Module",
+    "stationDestructionResource": "habmodules/stationdestruction_T1_large",
+    "alertWorthy": false,
+    "alienModule": false,
+    "objectiveModule": false,
+    "disable": false
   }
 ]

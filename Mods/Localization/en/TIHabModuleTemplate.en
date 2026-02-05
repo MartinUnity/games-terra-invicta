@@ -9,3 +9,6 @@ TIHabModuleTemplate.displayName.MiningRefiningModule_lvl2=Medium Mining & Refini
 TIHabModuleTemplate.description.MiningRefiningModule_lvl2=A medium and advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 30%
 TIHabModuleTemplate.displayName.MiningRefiningModule_lvl3=Large Mining & Refining Module
 TIHabModuleTemplate.description.MiningRefiningModule_lvl3=A large and advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 50%
+
+TIHabModuleTemplate.displayName.AutomatedRefinery=Small Automated  Mining & Refining Module
+TIHabModuleTemplate.description.AutomatedRefinery=A small and fully automated advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 30%
