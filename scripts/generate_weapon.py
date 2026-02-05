@@ -13,8 +13,10 @@ The script prints JSON snippets to stdout.
 from __future__ import annotations
 
 import argparse
+import glob
 import json
 import math
+import os
 import random
 import shlex
 import sys
@@ -283,13 +285,213 @@ def main(argv: Optional[List[str]] = None) -> int:
         "--left", type=str, default=None, help='Left param string: "type=gun cooldown=6 salvo=2 warheadMass=40 ..."'
     )
     p.add_argument("--right", type=str, default=None, help="Right param string")
+    p.add_argument("--scan-existing", action="store_true", help="Scan game template files and print one-line stats")
+    p.add_argument(
+        "--sort",
+        choices=["none", "dps", "grouped"],
+        default="none",
+        help="Sort results: 'dps' for global dps desc, 'grouped' to group by type then sort by dps",
+    )
+    p.add_argument(
+        "--filter-type",
+        type=str,
+        default=None,
+        help="Comma-separated list of types to include when using --scan-existing (e.g. 'gun,laser')",
+    )
+    p.add_argument(
+        "--include-alien",
+        action="store_true",
+        default=False,
+        help="Include Alien weapons in --scan-existing output (off by default; Alien weapons often considered cheat)",
+    )
     args = p.parse_args(argv)
 
     # When using --compare we can infer types from the left/right strings;
     # otherwise require --type to be present for normal operation.
-    if not args.compare and not args.type:
+    if not args.scan_existing and not args.compare and not args.type:
         print("Error: --type is required unless --compare is used", file=sys.stderr)
         return 2
+
+    # If user asked to scan existing template files, do that and exit
+    if args.scan_existing:
+        # try to locate the Templates folder by walking up a few levels
+        start = os.path.dirname(__file__)
+        base_dir = None
+        for up in range(0, 6):
+            cand = os.path.abspath(os.path.join(start, *([".."] * up), "Games", "TerraInvicta", "templates"))
+            if os.path.exists(cand):
+                base_dir = cand
+                break
+        if not base_dir:
+            # fallback to ~/Games/TerraInvicta/templates
+            cand = os.path.expanduser(os.path.join("~", "Games", "TerraInvicta", "templates"))
+            if os.path.exists(cand):
+                base_dir = cand
+        if not base_dir:
+            print("Templates directory not found; checked candidate locations", file=sys.stderr)
+            return 1
+        mapping = {
+            "TIGunTemplate.json": "gun",
+            "TILaserWeaponTemplate.json": "laser",
+            "TIMagneticGunTemplate.json": "magnetic",
+            "TIParticleWeaponTemplate.json": "particle",
+            "TIPlasmaWeaponTemplate.json": "plasma",
+        }
+
+        def _fmt(v):
+            try:
+                return f"{float(v):.2f}"
+            except Exception:
+                return ""
+
+        rows_all: List[List[str]] = []
+        # also scan Mods/ in the repo for custom templates
+        repo_root = os.path.abspath(os.path.join(start, ".."))
+        mods_dir = os.path.join(repo_root, "Mods")
+
+        sources = [(base_dir, ""), (mods_dir, "MOD")]
+        for fname, wtype in mapping.items():
+            for src_dir, src_tag in sources:
+                path = os.path.join(src_dir, fname)
+                if not os.path.exists(path):
+                    continue
+                try:
+                    with open(path, "r", encoding="utf-8") as fh:
+                        data = json.load(fh)
+                except Exception:
+                    continue
+                if not isinstance(data, list):
+                    continue
+                for entry in data:
+                    name = entry.get("dataName") or entry.get("name") or ""
+                    friendly = entry.get("friendlyName") or ""
+                    # determine per-shot energy (MJ)
+                    energy = None
+                    if "damage_MJ" in entry:
+                        energy = float(entry.get("damage_MJ") or 0)
+                    elif "shotPower_MJ" in entry:
+                        energy = float(entry.get("shotPower_MJ") or 0)
+                    elif entry.get("warheadMass_kg") and entry.get("muzzleVelocity_kps"):
+                        war = float(entry.get("warheadMass_kg") or 0)
+                        mv = float(entry.get("muzzleVelocity_kps") or 0)
+                        energy = 0.5 * war * (mv**2)
+
+                    damage_in_game = (energy / 20.0) if energy is not None else None
+
+                    # timing
+                    cooldown = entry.get("cooldown_s") or entry.get("cooldown") or 0
+                    salvo = entry.get("salvo_shots") or entry.get("salvo") or 1
+                    intra = (
+                        entry.get("intraSalvoCooldown_s") or entry.get("intraSalvoCooldown_s") or entry.get("intra", 0)
+                    )
+                    try:
+                        if wtype in ("gun", "magnetic"):
+                            rps = rps_from_timing(float(cooldown), int(salvo), float(intra))
+                        else:
+                            rps = 1.0 / float(cooldown) if float(cooldown) > 0 else 0.0
+                    except Exception:
+                        rps = 0.0
+
+                    dps = (damage_in_game * rps) if isinstance(damage_in_game, float) else None
+
+                    war_kg = entry.get("warheadMass_kg") or entry.get("warheadMass") or None
+                    mv_kps = entry.get("muzzleVelocity_kps") or entry.get("muzzleVelocity") or None
+                    mag = entry.get("magazine") or None
+
+                    rows_all.append(
+                        [
+                            wtype,
+                            name,
+                            friendly,
+                            _fmt(damage_in_game) if damage_in_game is not None else "",
+                            _fmt(energy) if energy is not None else "",
+                            _fmt(dps) if dps is not None else "",
+                            _fmt(rps),
+                            _fmt(war_kg) if war_kg is not None else "",
+                            _fmt(mv_kps) if mv_kps is not None else "",
+                            _fmt(cooldown),
+                            str(int(salvo)) if salvo is not None else "",
+                            str(mag) if mag is not None else "",
+                            src_tag,
+                        ]
+                    )
+
+        # Apply filter if requested (comma-separated types)
+        if args.filter_type:
+            allowed = {t.strip().lower() for t in args.filter_type.split(",") if t.strip()}
+            rows_all = [r for r in rows_all if (r[0] or "").lower() in allowed]
+
+        # Exclude generic base templates and region defense entries by name
+        # e.g. T1Base, T2Base, T3Base, RegionDefense (case-insensitive).
+        # Also exclude Alien weapons by default (they contain 'Alien' in name);
+        # pass --include-alien to show them.
+        exclude = ("t1base", "t2base", "t3base", "regiondefense")
+        filtered = []
+        for r in rows_all:
+            dn = (r[1] or "").lower()
+            fn = (r[2] or "").lower()
+            # skip base/regiondefense matches
+            if any((p in dn) or (p in fn) for p in exclude):
+                continue
+            # skip alien entries unless explicitly allowed
+            if not args.include_alien and ("alien" in dn or "alien" in fn):
+                continue
+            filtered.append(r)
+        rows_all = filtered
+
+        # apply sorting if requested
+        def _num_or_neginf(s: str) -> float:
+            try:
+                return float(s)
+            except Exception:
+                return float("-inf")
+
+        if args.sort == "dps":
+            rows_all.sort(key=lambda r: _num_or_neginf(r[5]), reverse=True)
+        elif args.sort == "grouped":
+            # preserve mapping order for groups
+            group_order = list(mapping.values())
+            groups = {t: [] for t in group_order}
+            others: List[List[str]] = []
+            for r in rows_all:
+                if r[0] in groups:
+                    groups[r[0]].append(r)
+                else:
+                    others.append(r)
+            new_rows: List[List[str]] = []
+            for t in group_order:
+                grp = groups.get(t, [])
+                grp.sort(key=lambda r: _num_or_neginf(r[5]), reverse=True)
+                new_rows.extend(grp)
+            # append any others unsorted
+            new_rows.extend(others)
+            rows_all = new_rows
+
+        # print table with fixed-width columns
+        if rows_all:
+            header = [
+                "type",
+                "dataName",
+                "friendly",
+                "dmg",
+                "MJ",
+                "dps",
+                "rps",
+                "warhead",
+                "muzzle",
+                "cd",
+                "salvo",
+                "mag",
+                "src",
+            ]
+            cols = [header] + rows_all
+            widths = [max(len(str(r[i])) for r in cols) for i in range(len(header))]
+            sep = " | "
+            print(sep.join(header[i].ljust(widths[i]) for i in range(len(header))))
+            print("-" * (sum(widths) + len(sep) * (len(widths) - 1)))
+            for r in rows_all:
+                print(sep.join(str(r[i]).ljust(widths[i]) for i in range(len(r))))
+        return 0
 
     def parse_kv_string(s: str) -> Dict[str, str]:
         # parse space-separated key=val tokens, allow quoted values
