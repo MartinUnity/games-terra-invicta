@@ -726,8 +726,7 @@
     "stackable": true,
     "duration_months": -1,
     "contexts": ["MiningFissilesBonus"]
-  }
-  ,
+  },
   {
     "dataName": "Effect_ExtractionCascade_Water_T5",
     "operation": "Additive",
@@ -827,5 +826,29 @@
     "stackable": true,
     "duration_months": -1,
     "contexts": ["MiningFissilesBonus"]
+  },
+  {
+    "dataName": "Effect_ArmyNeuralInterface",
+    "instantEffect": "NationMaxMiltechChange",
+    "value": 0.5,
+    "effectTarget": "AllNations",
+    "effectDuration": "instant",
+    "duration_months": -1
+  },
+  {
+    "dataName": "Effect_CommanderNeuralGlobalNetwork",
+    "instantEffect": "NationMaxMiltechChange",
+    "value": 0.5,
+    "effectTarget": "AllNations",
+    "effectDuration": "instant",
+    "duration_months": -1
+  },
+  {
+    "dataName": "Effect_CyborneticCommandIntegration",
+    "instantEffect": "NationMaxMiltechChange",
+    "value": 0.5,
+    "effectTarget": "AllHumanFactions",
+    "effectDuration": "instant",
+    "duration_months": -1
   }
 ]

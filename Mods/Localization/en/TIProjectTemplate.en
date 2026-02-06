@@ -170,10 +170,12 @@ TIProjectTemplate.summary.Project_QuantumFluxAccelerator_Mk6=Master quantum flux
 TIProjectTemplate.displayName.Project_MiniatureWaterHeatSink=Miniature Water Heat Sink
 TIProjectTemplate.summary.Project_MiniatureWaterHeatSink=A very small tank of water is heated while conditions prevent the ship from radiating heat into space.
 
-TIProjectTemplate.displayName.Project_ScrappedAluminiumFoamPlating=Scrapped Aluminium Foam Plating
-TIProjectTemplate.summary.Project_ScrappedAluminiumFoamPlating=Scavenged aluminium foam plating salvaged from scrapyards. Offers minimal protection but is better than nothing.
 TIProjectTemplate.displayName.Project_JunkrakerShip=Junkraker Ship
 TIProjectTemplate.summary.Project_JunkrakerShip=An old salvaged vessel retrofitted for basic space travel. Not much to look at, but it gets the job done.
+TIProjectTemplate.displayName.Project_Twinspire_Mk_II=Twinspire Mk II
+TIProjectTemplate.summary.Project_Twinspire_Mk_II=A Twin Nosed vessel with a single engine. A step up from the Junkraker, but still a far cry from modern designs.
+TIProjectTemplate.displayName.Project_ScrappedAluminiumFoamPlating=Scrapped Aluminium Foam Plating
+TIProjectTemplate.summary.Project_ScrappedAluminiumFoamPlating=Scavenged aluminium foam plating salvaged from scrapyards. Offers minimal protection but is better than nothing.
 TIProjectTemplate.displayName.Project_ScrappedAluminiumFinRadiator=Scrapped Aluminum Fin Radiator
 TIProjectTemplate.summary.Project_ScrappedAluminiumFinRadiator=Scrapped aluminum fin radiator salvaged from scrapyards. Provides minimal heat dissipation but is better than nothing.
 
@@ -248,3 +250,13 @@ TIProjectTemplate.displayName.Project_ExtractionCascade_Fissiles_T5=Cascade Extr
 TIProjectTemplate.summary.Project_ExtractionCascade_Fissiles_T5=Beyond state-of-the-art Cascade Extraction to dramatically increase fissile yield.
 TIProjectTemplate.displayName.Project_ExtractionCascade_Fissiles_T6=Cascade Extraction: Fissiles Tier VI
 TIProjectTemplate.summary.Project_ExtractionCascade_Fissiles_T6=Transcendent Cascade Extraction to maximize fissile yield from deposits.
+
+TIProjectTemplate.displayName.Project_NeuralComputingMilitaryApplications=Neural Computing: Military Applications
+TIProjectTemplate.summary.Project_NeuralComputingMilitaryApplications=Advanced neural computing techniques to enhance military capacity.
+TIProjectTemplate.displayName.Project_ArmyNeuralInterface=Neural Computing: Army Neural Interface
+TIProjectTemplate.summary.Project_ArmyNeuralInterface=Advanced neural computing techniques to enhance army capacity.
+TIProjectTemplate.displayName.Project_CommanderNeuralGlobalNetwork=Neural Computing: Commander Optimized Global Network
+TIProjectTemplate.summary.Project_CommanderNeuralGlobalNetwork=Very Advanced neural computing techniques to enhance military capacity.
+TIProjectTemplate.displayName.Project_CyborneticCommandIntegration=Neural Computing: Cybornetic Command Integration
+TIProjectTemplate.summary.Project_CyborneticCommandIntegration=Cutting-edge neural computing techniques to enhance military capacity.
+

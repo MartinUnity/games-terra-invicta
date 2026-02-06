@@ -53,3 +53,10 @@ my_nations:
   - Germany
   - Mauritius
 ```
+
+# Helpful commands
+
+```bash
+cat /home/martin/Games/TerraInvicta/templates/TITechTemplate.json | yq -r '.[] | .techCategory + "|" + .dataName + " - " + (.researchCost|tostring)' | grep -i "spaceScience" | sort -n -k 3
+
+```

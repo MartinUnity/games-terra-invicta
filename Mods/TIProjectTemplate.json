@@ -1542,6 +1542,24 @@
     "resourcesGranted": []
   },
   {
+    "dataName": "Project_Twinspire_Mk_II",
+    "friendlyName": "Twinspire Mk II",
+    "description": "A Twin Nosed vessel with a single engine. A step up from the Junkraker, but still a far cry from modern designs.  ",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 2750,
+    "prereqs": ["AdvancedHeatManagementConcepts"],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
     "friendlyName": "Automated Refinery",
     "dataName": "Project_AutomatedRefinery",
     "techCategory": "InformationScience",
@@ -2190,6 +2208,27 @@
       "Project_ExtractionCascade_Fissiles_T5"
     ],
     "effects": ["Effect_ExtractionCascade_Fissiles_T6"],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Neural Computing for Military Applications",
+    "dataName": "Project_NeuralComputingMilitaryApplications",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 3000,
+    "prereqs": ["DirectedEnergyWarfareDoctrine"],
+    "effects": [
+      "Effect_IncreaseMaxArmyTechLevel",
+      "Effect_ArmyNeuralInterface"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,

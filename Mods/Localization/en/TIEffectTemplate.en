@@ -99,3 +99,8 @@ TIEffectTemplate.description.Effect_ExtractionCascade_NobleMetals_T6=-Cascade Ex
 
 TIEffectTemplate.description.Effect_ExtractionCascade_Fissiles_T5=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="radioactive"></color>
 TIEffectTemplate.description.Effect_ExtractionCascade_Fissiles_T6=-Cascade Extraction processing increases mined {3} <color=#801f1f><sprite name="radioactive"></color>
+
+TIEffectTemplate.description.Effect_NeuralComputingMilitaryApplications=-Neural computing applications in military contexts increase military capacity by {0}
+TIEffectTemplate.description.Effect_ArmyNeuralInterface=-Dedicated neural interfaces for military personnel increase military capacity by {0}
+TIEffectTemplate.description.Effect_CommanderNeuralGlobalNetwork=-Commander neural interfaces with global network connectivity increase military capacity by {0}
+TIEffectTemplate.description.Effect_CyborneticCommandIntegration=-Cybernetic command integration increases military capacity by {0}

@@ -187,5 +187,99 @@
         "y": 0
       }
     ]
+  },
+  {
+    "dataName": "Twinspire_Mk_II",
+    "friendlyName": "Twinspire Mk II",
+    "noseHardpoints": 2,
+    "hullHardpoints": 0,
+    "internalModules": 2,
+    "consTier": 1,
+    "maxOfficers": 1,
+    "length_m": 50,
+    "toylength_cm": 7.1,
+    "width_m": 10,
+    "volume": 2163,
+    "thrusterMultiplier": 1,
+    "structuralIntegrity": 4,
+    "mass_tons": 188,
+    "crew": 4,
+    "alien": false,
+    "noShipyardBuild": false,
+    "simpleHull": false,
+    "monthlyIncome_Money": -1,
+    "missionControl": 1,
+    "baseConstructionTime_days": 70,
+    "shipyardyOffset": [0, 0, 0],
+    "modelResource": ["ships/Gunship", "ships/Gunship_1"],
+    "combatUIpath": [
+      "ui_spacecombat/OBJ_battle_earth_GS",
+      "ui_spacecombat/OBJ_battle_earth_GS_ALT"
+    ],
+    "path1": ["earth_GS/", "earth_GS_ALT/"],
+    "path2": ["OBJ_battle_earth_GS", "OBJ_battle_earth_GS_ALT"],
+    "requiredProjectName": "Project_Twinspire_Mk_II",
+    "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.7,
+      "nobleMetals": 0.2
+    },
+    "shipModuleSlots": [
+      {
+        "moduleSlotType": "Drive",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "PowerPlant",
+        "x": 3,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Utility",
+        "x": 5,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Radiator",
+        "x": 4,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "TailArmor",
+        "x": 2,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "LateralArmor",
+        "x": 4,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "NoseArmor",
+        "x": 7,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "NoseHardPoint",
+        "x": 7,
+        "y": 2
+      },
+      {
+        "moduleSlotType": "NoseHardPoint",
+        "x": 7,
+        "y": 4
+      },
+      {
+        "moduleSlotType": "Utility",
+        "x": 6,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Propellant",
+        "x": 2,
+        "y": 0
+      }
+    ]
   }
 ]

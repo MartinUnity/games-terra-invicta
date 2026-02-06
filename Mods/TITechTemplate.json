@@ -8,5 +8,33 @@
     "endGameTech": false,
     "researchCost": 5000,
     "prereqs": ["ElectromagneticPropulsion", "AdvancedHeatManagementConcepts"]
+  },
+  {
+    "friendlyName": "Commander Neural Global Network",
+    "dataName": "CommanderNeuralGlobalNetwork",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "EarthPolitics",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 18000,
+    "prereqs": ["TransInterfaceWarfare"],
+    "effects": [
+      "Effect_IncreaseMaxArmyTechLevel",
+      "Effect_CommanderNeuralGlobalNetwork"
+    ]
+  },
+  {
+    "friendlyName": "Cybornetic Command Integration",
+    "dataName": "CyborneticCommandIntegration",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "EarthPolitics",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 30000,
+    "prereqs": ["TransInterfaceWarfare"],
+    "effects": [
+      "Effect_IncreaseMaxArmyTechLevel",
+      "Effect_CyborneticCommandIntegration"
+    ]
   }
 ]
