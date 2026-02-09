@@ -43,6 +43,8 @@ TIEffectTemplate.description.Effect_ShipMagDamage_lvl1=-Magnetic Weapons do {8} 
 TIEffectTemplate.description.Effect_ShipMagDamage_lvl2=-Magnetic Weapons do {8} extra damage
 TIEffectTemplate.description.Effect_ShipMagDamage_lvl3=-Magnetic Weapons do {8} extra damage
 TIEffectTemplate.description.Effect_ShipMagDamage_lvl4=-Magnetic Weapons do {8} extra damage
+TIEffectTemplate.description.Effect_ShipMagDamage_lvl5=-Magnetic Weapons do {8} extra damage
+TIEffectTemplate.description.Effect_ShipMagDamage_lvl6=-Magnetic Weapons do {8} extra damage
 
 TIEffectTemplate.description.Effect_SpaceMineExtra2=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}
 TIEffectTemplate.description.Effect_SpaceMineExtra4=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}

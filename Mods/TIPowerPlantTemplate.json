@@ -1,0 +1,110 @@
+[
+  {
+    "dataName": "QuantumCoreFissionReactorI",
+    "friendlyName": "Quantum Core Fission Reactor I",
+    "maxOutput_GW": 560,
+    "specificPower_tGW": 1.6,
+    "powerPlantClass": "Solid_Core_Fission",
+    "requiredProjectName": "Project_QuantumCoreFissionReactorI",
+    "efficiency": 0.93,
+    "crew": 6,
+    "weightedBuildMaterials": {
+      "water": 0.1,
+      "volatiles": 0.2,
+      "metals": 0.5,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+    },
+    "iconResource": "shipbuildericons/ICO_FuelCellI"
+  },
+  {
+    "dataName": "QuantumCoreFissionReactorII",
+    "friendlyName": "Quantum Core Fission Reactor II",
+    "maxOutput_GW": 660,
+    "specificPower_tGW": 1.5,
+    "powerPlantClass": "Solid_Core_Fission",
+    "requiredProjectName": "Project_QuantumCoreFissionReactorII",
+    "efficiency": 0.935,
+    "crew": 6,
+    "weightedBuildMaterials": {
+      "water": 0.1,
+      "volatiles": 0.2,
+      "metals": 0.5,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+    },
+    "iconResource": "shipbuildericons/ICO_FuelCellI"
+  },
+  {
+    "dataName": "QuantumCoreFissionReactorIII",
+    "friendlyName": "Quantum Core Fission Reactor III",
+    "maxOutput_GW": 760,
+    "specificPower_tGW": 1.45,
+    "powerPlantClass": "Solid_Core_Fission",
+    "requiredProjectName": "Project_QuantumCoreFissionReactorIII",
+    "efficiency": 0.9475,
+    "crew": 6,
+    "weightedBuildMaterials": {
+      "water": 0.1,
+      "volatiles": 0.2,
+      "metals": 0.5,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+    },
+    "iconResource": "shipbuildericons/ICO_FuelCellI"
+  },
+  {
+    "dataName": "QuantumCoreFissionReactorI_Compact",
+    "friendlyName": "Compact Quantum Core Fission Reactor I",
+    "maxOutput_GW": 560,
+    "specificPower_tGW": 1.2,
+    "powerPlantClass": "Solid_Core_Fission",
+    "requiredProjectName": "Project_QuantumCoreFissionReactorI_Compact",
+    "efficiency": 0.94,
+    "crew": 6,
+    "weightedBuildMaterials": {
+      "water": 0.1,
+      "volatiles": 0.2,
+      "metals": 0.5,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+    },
+    "iconResource": "shipbuildericons/ICO_FuelCellI"
+  },
+  {
+    "dataName": "QuantumCoreFissionReactorII_Compact",
+    "friendlyName": "Compact Quantum Core Fission Reactor II",
+    "maxOutput_GW": 660,
+    "specificPower_tGW": 1.15,
+    "powerPlantClass": "Solid_Core_Fission",
+    "requiredProjectName": "Project_QuantumCoreFissionReactorII_Compact",
+    "efficiency": 0.945,
+    "crew": 6,
+    "weightedBuildMaterials": {
+      "water": 0.1,
+      "volatiles": 0.2,
+      "metals": 0.5,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+    },
+    "iconResource": "shipbuildericons/ICO_FuelCellI"
+  },
+  {
+    "dataName": "QuantumCoreFissionReactorIII_Compact",
+    "friendlyName": "Compact Quantum Core Fission Reactor III",
+    "maxOutput_GW": 760,
+    "specificPower_tGW": 1.1,
+    "powerPlantClass": "Solid_Core_Fission",
+    "requiredProjectName": "Project_QuantumCoreFissionReactorIII_Compact",
+    "efficiency": 0.955,
+    "crew": 6,
+    "weightedBuildMaterials": {
+      "water": 0.1,
+      "volatiles": 0.2,
+      "metals": 0.5,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+    },
+    "iconResource": "shipbuildericons/ICO_FuelCellI"
+  }
+]

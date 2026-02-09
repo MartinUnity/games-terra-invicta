@@ -1,6 +1,6 @@
 my_nations:
-    - Latvia
-    - Lithuania
+    #- Latvia
+    #- Lithuania
     - Nordic Federation
     #- Finland
     - Southern Africa Federation
@@ -11,6 +11,14 @@ my_nations:
     #- Mozambique
     #- Angola
     - East African Federation
+    - China
+    - South Korea
+    #- Austria
+    - Venezuela
+    #- France
+    #- United Kingdom
+    - European Union
+
     #- Zambia
     #- Malawi
     #- Madagascar
@@ -51,3 +59,5 @@ my_nations:
     #{
     #    "value": 105029
     #}
+    #
+    #"value": 60762

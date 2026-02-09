@@ -1,6 +1,6 @@
 [
   {
-    "friendlyName": "Quantum Flux Accelerator Mk I",
+    "friendlyName": "Quantum Flux Accelerator Mk1",
     "dataName": "QuantumFluxAccelerator_Mrk1",
     "techCategory": "SpaceScience",
     "AI_techRole": "none",
@@ -36,5 +36,16 @@
       "Effect_IncreaseMaxArmyTechLevel",
       "Effect_CyborneticCommandIntegration"
     ]
+  },
+  {
+    "friendlyName": "Phase-Shifting Coil Overrun Methology",
+    "dataName": "PhaseShiftingCoilOverrunMethology",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "EarthPolitics",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 50000,
+    "prereqs": ["MagneticNozzles", "PlasmaWeapons", "MolecularAssemblers"],
+    "effects": ["Effect_IncreaseMaxArmyTechLevel"]
   }
 ]

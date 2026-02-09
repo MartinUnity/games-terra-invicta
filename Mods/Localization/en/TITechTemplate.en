@@ -18,3 +18,10 @@ TITechTemplate.quote.CyborneticCommandIntegration="Cybornetics and quantum compu
 <align=right>{submitLeader}<align=left>
 <align=right>Commander Hafnir, Chief-in-charge of Cybornetic Command Integration<align=left>
 TITechTemplate.description.CyborneticCommandIntegration=A groundbreaking project that integrates advanced cybernetic systems with quantum computing to enhance command and control capabilities in space warfare.
+
+TITechTemplate.displayName.PhaseShiftingCoilOverrunMethology=Phase-Shifting Coil Overrun Methology
+TITechTemplate.summary.PhaseShiftingCoilOverrunMethology=A groundbreaking project that integrates advanced cybernetic systems with quantum computing to enhance command and control capabilities in space warfare.
+TITechTemplate.quote.PhaseShiftingCoilOverrunMethology="By synchronizing the phase-shifting coils with our cybernetic command systems, we can achieve a level of control and responsiveness that was previously thought impossible. This is the future of space warfare."
+<align=right>{submitLeader}<align=left>
+<align=right>Sentinel H. Akan, Chief Magnetic Engineer<align=left>
+TITechTemplate.description.PhaseShiftingCoilOverrunMethology=A revolutionary project that combines advanced cybernetic systems with quantum computing to enhance command and control capabilities in space warfare. By synchronizing phase-shifting coils with our cybernetic command systems, we can achieve unprecedented levels of control and responsiveness on the battlefield, allowing us to outmaneuver and outthink our enemies with unparalleled precision.

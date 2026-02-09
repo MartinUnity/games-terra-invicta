@@ -317,5 +317,48 @@
     "alienModule": false,
     "objectiveModule": false,
     "disable": false
+  },
+  {
+    "dataName": "AutomatedQuantumMiniReactor",
+    "friendlyName": "Automated Quantum Mini Reactor",
+    "coreModule": false,
+    "habType": "Any",
+    "onePerHab": false,
+    "automated": true,
+    "allowsShipConstruction": false,
+    "allowsResupply": false,
+    "mine": false,
+    "noBuild": false,
+    "destroyed": false,
+    "tier": 1,
+    "requiredProjectName": "Project_AutomatedQuantumMiniReactor",
+    "crew": 0,
+    "power": 30,
+    "baseMass_tons": 20,
+    "buildTime_Days": 30,
+    "constructionTimeModifier": 1,
+    "miningModifier": 0,
+    "controlPointCapacity": 0,
+    "techBonuses": [],
+    "supportMaterials_month": {
+      "money": 0,
+      "water": 0.5,
+      "fissiles": 0.05
+    },
+    "weightedBuildMaterials": {
+      "water": 0.075,
+      "volatiles": 0.3,
+      "metals": 0.475,
+      "nobleMetals": 0.1,
+      "fissiles": 0.05
+    },
+    "baseIconResource": "habmodules/base_T1_AutomatedFissionPile",
+    "stationIconResource": "habmodules/station_T1_AutomatedFissionPile",
+    "stationModelResource": "habmodules/station_T1_AutomatedFissionPile_Module",
+    "stationDestructionResource": "habmodules/stationdestruction_T1_generic",
+    "alertWorthy": false,
+    "alienModule": false,
+    "objectiveModule": false,
+    "disable": false
   }
 ]

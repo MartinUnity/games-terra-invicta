@@ -60,3 +60,27 @@ my_nations:
 cat /home/martin/Games/TerraInvicta/templates/TITechTemplate.json | yq -r '.[] | .techCategory + "|" + .dataName + " - " + (.researchCost|tostring)' | grep -i "spaceScience" | sort -n -k 3
 
 ```
+
+# Calculations for game data
+
+## Power usage for drives:
+
+**Formula:**
+```
+Required_GW = (Thrust_N × EV_kps) / 2,000 × Efficiency
+```
+
+**Example Calculation:**
+
+| Input/Step         | Operation           | Value                               |
+| ------------------ | ------------------- | ----------------------------------- |
+| Thrust             |                     | 58,752 N                            |
+| Exhaust Velocity   |                     | 672 km/s                            |
+| Efficiency         |                     | 0.994                               |
+| **Step 1**         | Thrust × EV         | 58,752 × 672 = **39,481,344**       |
+| **Step 2**         | Result ÷ 2,000      | 39,481,344 ÷ 2,000 = **19,740.672** |
+| **Step 3**         | Result × Efficiency | 19,740.672 × 0.994 = **19,622.23**  |
+| **Required Power** |                     | **19,622.23 GW**                    |
+
+
+

@@ -1,0 +1,13 @@
+TIPowerPlantTemplate.displayName.QuantumCoreFissionReactorI=Quantum Core Fission Reactor I
+TIPowerPlantTemplate.description.QuantumCoreFissionReactorI=A compact fission reactor utilizing quantum core technology to achieve high power output with improved efficiency. Suitable for small to medium-sized spacecraft.
+TIPowerPlantTemplate.displayName.QuantumCoreFissionReactorII=Quantum Core Fission Reactor II
+TIPowerPlantTemplate.description.QuantumCoreFissionReactorII=An advanced fission reactor that incorporates enhanced quantum core designs for significantly increased power output and efficiency. Ideal for medium to large spacecraft
+TIPowerPlantTemplate.displayName.QuantumCoreFissionReactorIII=Quantum Core Fission Reactor III
+TIPowerPlantTemplate.description.QuantumCoreFissionReactorIII=A state-of-the-art fission reactor featuring cutting-edge quantum core technology, delivering exceptional power output and efficiency. Designed for large spacecraft
+
+TIPowerPlantTemplate.displayName.QuantumCoreFissionReactorI_Compact=Quantum Core Fission Reactor I Compact
+TIPowerPlantTemplate.description.QuantumCoreFissionReactorI_Compact=A compact version of the Quantum Core Fission Reactor I, optimized for smaller spacecraft with limited space while still providing substantial power output.
+TIPowerPlantTemplate.displayName.QuantumCoreFissionReactorII_Compact=Quantum Core Fission Reactor II Compact
+TIPowerPlantTemplate.description.QuantumCoreFissionReactorII_Compact=A compact version of the Quantum Core Fission Reactor II, designed to fit within tighter spaces on medium-sized spacecraft while maintaining high power output and efficiency.
+TIPowerPlantTemplate.displayName.QuantumCoreFissionReactorIII_Compact=Quantum Core Fission Reactor III Compact
+TIPowerPlantTemplate.description.QuantumCoreFissionReactorIII_Compact=A compact version of the Quantum Core Fission Reactor III, engineered for large spacecraft that require exceptional power output but have constraints on available space, offering top-tier performance in a smaller form factor.

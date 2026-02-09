@@ -195,59 +195,59 @@
     "hullHardpoints": 0,
     "internalModules": 2,
     "consTier": 1,
-    "maxOfficers": 1,
-    "length_m": 50,
-    "toylength_cm": 7.1,
-    "width_m": 10,
-    "volume": 2163,
+    "maxOfficers": 2,
+    "length_m": 40,
+    "toylength_cm": 8.1,
+    "width_m": 8,
+    "volume": 1024,
     "thrusterMultiplier": 1,
-    "structuralIntegrity": 4,
-    "mass_tons": 188,
-    "crew": 4,
+    "structuralIntegrity": 8,
+    "mass_tons": 102,
+    "crew": 8,
     "alien": false,
     "noShipyardBuild": false,
-    "simpleHull": false,
-    "monthlyIncome_Money": -1,
+    "simpleHull": true,
+    "monthlyIncome_Money": -0.65,
     "missionControl": 1,
-    "baseConstructionTime_days": 70,
+    "baseConstructionTime_days": 45,
     "shipyardyOffset": [0, 0, 0],
-    "modelResource": ["ships/Gunship", "ships/Gunship_1"],
+    "modelResource": ["ships/Destroyer", "ships/Destroyer_1"],
     "combatUIpath": [
-      "ui_spacecombat/OBJ_battle_earth_GS",
-      "ui_spacecombat/OBJ_battle_earth_GS_ALT"
+      "ui_spacecombat/OBJ_battle_earth_DES",
+      "ui_spacecombat/OBJ_battle_earth_DES_ALT"
     ],
-    "path1": ["earth_GS/", "earth_GS_ALT/"],
-    "path2": ["OBJ_battle_earth_GS", "OBJ_battle_earth_GS_ALT"],
+    "path1": ["earth_DES/", "earth_DES_ALT/"],
+    "path2": ["OBJ_battle_earth_DES", "OBJ_battle_earth_DES_ALT"],
     "requiredProjectName": "Project_Twinspire_Mk_II",
     "weightedBuildMaterials": {
       "volatiles": 0.1,
-      "metals": 0.7,
-      "nobleMetals": 0.2
+      "metals": 0.8,
+      "nobleMetals": 0.1
     },
     "shipModuleSlots": [
       {
         "moduleSlotType": "Drive",
-        "x": 2,
+        "x": 1,
         "y": 3
       },
       {
         "moduleSlotType": "PowerPlant",
-        "x": 3,
+        "x": 2,
         "y": 3
       },
       {
         "moduleSlotType": "Utility",
-        "x": 5,
-        "y": 3
-      },
-      {
-        "moduleSlotType": "Radiator",
         "x": 4,
         "y": 3
       },
       {
+        "moduleSlotType": "Radiator",
+        "x": 3,
+        "y": 3
+      },
+      {
         "moduleSlotType": "TailArmor",
-        "x": 2,
+        "x": 1,
         "y": 6
       },
       {
@@ -262,22 +262,22 @@
       },
       {
         "moduleSlotType": "NoseHardPoint",
-        "x": 7,
+        "x": 6,
         "y": 2
       },
       {
         "moduleSlotType": "NoseHardPoint",
-        "x": 7,
+        "x": 6,
         "y": 4
       },
       {
         "moduleSlotType": "Utility",
-        "x": 6,
+        "x": 5,
         "y": 3
       },
       {
         "moduleSlotType": "Propellant",
-        "x": 2,
+        "x": 1,
         "y": 0
       }
     ]

@@ -115,6 +115,16 @@ TIProjectTemplate.displayName.Project_ShipMagDamage_lvl3=Quantum Destabilized Ma
 TIProjectTemplate.summary.Project_ShipMagDamage_lvl3=Research quantum destabilized mass driver technology to significantly increase the damage potential of magnetic weapons.
 TIProjectTemplate.displayName.Project_ShipMagDamage_lvl4=Quantum Destabilized Mass Drivers Advanced
 TIProjectTemplate.summary.Project_ShipMagDamage_lvl4=Research Advanced quantum destabilized mass driver technology to significantly increase the damage potential of magnetic weapons.
+TIProjectTemplate.displayName.Project_ShipMagDamage_lvl5=Merculite Enhanced Coil Optimization
+TIProjectTemplate.summary.Project_ShipMagDamage_lvl5=Research and develop Merculite enhanced coil optimization technology to further increase the damage output of magnetic weapons.
+TIProjectTemplate.displayName.Project_PhasedCoilshellTechnology_Exploration=Phased Coilshell Technology Exploration
+TIProjectTemplate.summary.Project_PhasedCoilshellTechnology_Exploration=Research and explore phased coilshell technology to enhance the performance of magnetic weapon projectiles.
+TIProjectTemplate.displayName.Project_PhasedCoilshellTechnology_Kinetics=Phased Coilshell Technology Kinetics
+TIProjectTemplate.summary.Project_PhasedCoilshellTechnology_Kinetics=Research and develop phased coilshell technology to enhance the performance of magnetic weapon projectiles.
+TIProjectTemplate.displayName.Project_PhasedCoilshellTechnology_AlphaParticleVacuum=Phased Coilshell Technology Alpha Particle Vacuum
+TIProjectTemplate.summary.Project_PhasedCoilshellTechnology_AlphaParticleVacuum=Research and develop phased coilshell technology with alpha particle vacuum enhancement to further improve the performance of magnetic weapon projectiles.
+TIProjectTemplate.displayName.Project_PhasedCoilshellTechnology_ImplosionVacuum=Phased Coilshell Technology Implosion Vacuum
+TIProjectTemplate.summary.Project_PhasedCoilshellTechnology_ImplosionVacuum=Research and develop phased coilshell technology with implosion vacuum enhancement to further improve the performance of magnetic weapon projectiles.
 
 TIProjectTemplate.displayName.Project_ThermalFissionFreighters=Thermal Fission Freighters
 TIProjectTemplate.summary.Project_ThermalFissionFreighters=Develop thermal fission propulsion systems for freighter-class ships to enhance their speed and efficiency.
@@ -136,6 +146,18 @@ TIProjectTemplate.displayName.Project_RegionalCommandStructure=Regional Command 
 TIProjectTemplate.summary.Project_RegionalCommandStructure=Research and develop regional command structure technology to enhance military coordination and effectiveness.
 TIProjectTemplate.displayName.Project_AugementedOrganizationalStructures=Augmented Organizational Structures
 TIProjectTemplate.summary.Project_AugementedOrganizationalStructures=Research and develop augmented organizational structure technology to enhance military coordination and effectiveness.
+TIProjectTemplate.displayName.Project_SovereignControlSystems=Sovereign Control Systems
+TIProjectTemplate.summary.Project_SovereignControlSystems=Research and develop sovereign control system technology to enhance military coordination and effectiveness.
+TIProjectTemplate.displayName.Project_PlanetaryAdministrativeSystems=Planetary Administrative Systems
+TIProjectTemplate.summary.Project_PlanetaryAdministrativeSystems=Research and develop planetary administrative system technology to enhance military coordination and effectiveness.
+TIProjectTemplate.displayName.Project_AIGovernedPlanetarySubsystems=AI-Governed Planetary Subsystems
+TIProjectTemplate.summary.Project_AIGovernedPlanetarySubsystems=Research and develop AI-governed planetary subsystem technology to enhance military coordination and effectiveness.
+TIProjectTemplate.displayName.Project_SolarSystemIntegratedGovernance=Solar System Integrated Governance
+TIProjectTemplate.summary.Project_SolarSystemIntegratedGovernance=Research and develop solar system integrated governance technology to enhance military coordination and effectiveness.
+TIProjectTemplate.displayName.Project_PlanetaryMonetaryGovernance_I=Planetary Monetary Governance I
+TIProjectTemplate.summary.Project_PlanetaryMonetaryGovernance_I=Research and develop basic planetary monetary governance technology to enhance military coordination and effectiveness.
+TIProjectTemplate.displayName.Project_PlanetaryMonetaryGovernance_II=Planetary Monetary Governance II
+TIProjectTemplate.summary.Project_PlanetaryMonetaryGovernance_II=Research and develop advanced planetary monetary governance technology to enhance military coordination and effectiveness.
 
 TIProjectTemplate.displayName.Project_OutpostMiningRefiningModule=TMP - Small Mining & Refining Module
 TIProjectTemplate.summary.Project_OutpostMiningRefiningModule=TMP - Small Research and develop outpost mining and refining module technology to enhance resource extraction and processing capabilities.
@@ -174,13 +196,21 @@ TIProjectTemplate.displayName.Project_JunkrakerShip=Junkraker Ship
 TIProjectTemplate.summary.Project_JunkrakerShip=An old salvaged vessel retrofitted for basic space travel. Not much to look at, but it gets the job done.
 TIProjectTemplate.displayName.Project_Twinspire_Mk_II=Twinspire Mk II
 TIProjectTemplate.summary.Project_Twinspire_Mk_II=A Twin Nosed vessel with a single engine. A step up from the Junkraker, but still a far cry from modern designs.
+
 TIProjectTemplate.displayName.Project_ScrappedAluminiumFoamPlating=Scrapped Aluminium Foam Plating
 TIProjectTemplate.summary.Project_ScrappedAluminiumFoamPlating=Scavenged aluminium foam plating salvaged from scrapyards. Offers minimal protection but is better than nothing.
+TIProjectTemplate.displayName.Project_NeutroniumPlating=Neutronium Plating
+TIProjectTemplate.summary.Project_NeutroniumPlating=Extremely dense neutronium plating that provides exceptional protection against various forms of attack.
+TIProjectTemplate.displayName.Project_XentroniumPlating=Xentronium Plating
+TIProjectTemplate.summary.Project_XentroniumPlating=A balanced armor option offering moderate protection and weight. Suitable for a variety of applications.
+
 TIProjectTemplate.displayName.Project_ScrappedAluminiumFinRadiator=Scrapped Aluminum Fin Radiator
 TIProjectTemplate.summary.Project_ScrappedAluminiumFinRadiator=Scrapped aluminum fin radiator salvaged from scrapyards. Provides minimal heat dissipation but is better than nothing.
 
 TIProjectTemplate.displayName.Project_AutomatedRefinery=Automated Refinery
 TIProjectTemplate.summary.Project_AutomatedRefinery=An automated refinery system that improves resource processing efficiency.
+TIProjectTemplate.displayName.Project_AutomatedQuantumMiniReactor=Automated Quantum Mini Reactor
+TIProjectTemplate.summary.Project_AutomatedQuantumMiniReactor=A compact and fully automated quantum mini reactor module designed to provide efficient and reliable power generation for outposts, ensuring continuous operation and supporting various energy needs with minimal maintenance.
 
 TIProjectTemplate.displayName.Project_ExtractionCascade_Water_T1=Cascade Extraction: Water Tier I
 TIProjectTemplate.summary.Project_ExtractionCascade_Water_T1=Develop Cascade Extraction processing for water deposits to boost water yield.
@@ -259,4 +289,26 @@ TIProjectTemplate.displayName.Project_CommanderNeuralGlobalNetwork=Neural Comput
 TIProjectTemplate.summary.Project_CommanderNeuralGlobalNetwork=Very Advanced neural computing techniques to enhance military capacity.
 TIProjectTemplate.displayName.Project_CyborneticCommandIntegration=Neural Computing: Cybornetic Command Integration
 TIProjectTemplate.summary.Project_CyborneticCommandIntegration=Cutting-edge neural computing techniques to enhance military capacity.
+
+
+TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk1=Quantum Flux Singularity Drive Mk I
+TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk1=An experimental singularity-coupled drive that harnesses controlled micro-singularities to boost thrust and exhaust velocity with excellent efficiency at small scales.
+TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk2=Quantum Flux Singularity Drive Mk II
+TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk2=A refined singularity drive with improved stability and power handling, delivering substantially higher thrust and performance than Mk I.
+TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk3=Quantum Flux Singularity Drive Mk III
+TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk3=A mature singularity drive implementation offering extreme thrust and exhaust velocity for advanced spacecraft.
+
+TIProjectTemplate.displayName.Project_QuantumCoreFissionReactorI=Quantum Core Fission Reactor I
+TIProjectTemplate.summary.Project_QuantumCoreFissionReactorI=An advanced compact fission reactor utilizing quantum core technology for enhanced power output and efficiency.
+TIProjectTemplate.displayName.Project_QuantumCoreFissionReactorII=Quantum Core Fission Reactor II
+TIProjectTemplate.summary.Project_QuantumCoreFissionReactorII=An improved quantum core fission reactor design with higher power output and better fuel efficiency.
+TIProjectTemplate.displayName.Project_QuantumCoreFissionReactorIII=Quantum Core Fission Reactor III
+TIProjectTemplate.summary.Project_QuantumCoreFissionReactorIII=A state-of-the-art quantum core fission reactor offering exceptional power output and efficiency for advanced spacecraft applications.
+
+TIProjectTemplate.displayName.Project_QuantumCoreFissionReactorI_Compact=Quantum Core Fission Reactor I - Compact
+TIProjectTemplate.summary.Project_QuantumCoreFissionReactorI_Compact=A compact version of the Quantum Core Fission Reactor I, designed for smaller vessels or applications with space constraints while maintaining high power output and efficiency.
+TIProjectTemplate.displayName.Project_QuantumCoreFissionReactorII_Compact=Quantum Core Fission Reactor II - Compact
+TIProjectTemplate.summary.Project_QuantumCoreFissionReactorII_Compact=A compact version of the Quantum Core Fission Reactor II, designed for smaller vessels or applications with space constraints while maintaining high power output and efficiency.
+TIProjectTemplate.displayName.Project_QuantumCoreFissionReactorIII_Compact=Quantum Core Fission Reactor III - Compact
+TIProjectTemplate.summary.Project_QuantumCoreFissionReactorIII_Compact=A compact version of the Quantum Core Fission Reactor III, designed for smaller vessels or applications with space constraints while maintaining high power output and efficiency
 

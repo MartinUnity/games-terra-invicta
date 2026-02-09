@@ -44,3 +44,28 @@ TIDriveTemplate.displayName.QuantumFluxAccelerator_Mk6x3=Quantum Flux Accelerato
 TIDriveTemplate.displayName.QuantumFluxAccelerator_Mk6x4=Quantum Flux Accelerator Mk6 x4
 TIDriveTemplate.displayName.QuantumFluxAccelerator_Mk6x5=Quantum Flux Accelerator Mk6 x5
 TIDriveTemplate.displayName.QuantumFluxAccelerator_Mk6x6=Quantum Flux Accelerator Mk6 x6
+
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk1x1=Quantum Flux Singularity Drive Mk I x1
+TIDriveTemplate.description.QuantumFluxSingularityDrive_Mk1x1=An experimental singularity-coupled drive that harnesses controlled micro-singularities to boost thrust and exhaust velocity with excellent efficiency at small scales.
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk1x2=Quantum Flux Singularity Drive Mk I x2
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk1x3=Quantum Flux Singularity Drive Mk I x3
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk1x4=Quantum Flux Singularity Drive Mk I x4
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk1x5=Quantum Flux Singularity Drive Mk I x5
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk1x6=Quantum Flux Singularity Drive Mk I x6
+
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk2x1=Quantum Flux Singularity Drive Mk II x1
+TIDriveTemplate.description.QuantumFluxSingularityDrive_Mk2x1=A refined singularity drive with improved stability and power handling, delivering substantially higher thrust and performance than Mk I.
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk2x2=Quantum Flux Singularity Drive Mk II x2
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk2x3=Quantum Flux Singularity Drive Mk II x3
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk2x4=Quantum Flux Singularity Drive Mk II x4
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk2x5=Quantum Flux Singularity Drive Mk II x5
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk2x6=Quantum Flux Singularity Drive Mk II x6
+
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk3x1=Quantum Flux Singularity Drive Mk III x1
+TIDriveTemplate.description.QuantumFluxSingularityDrive_Mk3x1=A mature singularity drive implementation offering extreme thrust and exhaust velocity for advanced spacecraft.
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk3x2=Quantum Flux Singularity Drive Mk III x2
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk3x3=Quantum Flux Singularity Drive Mk III x3
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk3x4=Quantum Flux Singularity Drive Mk III x4
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk3x5=Quantum Flux Singularity Drive Mk III x5
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk3x6=Quantum Flux Singularity Drive Mk III x6
+
