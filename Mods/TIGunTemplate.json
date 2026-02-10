@@ -439,12 +439,12 @@
     "intraSalvoCooldown_s": 3.0,
     "efficiency": 1,
     "flatChipping": 0.35,
-    "magazine": 350,
-    "ammoMass_kg": 210,
-    "muzzleVelocity_kps": 5.1,
+    "magazine": 400,
+    "ammoMass_kg": 140,
+    "muzzleVelocity_kps": 4.1,
     "bombardmentValue": 4,
-    "warheadMass_kg": 165,
-    "targetingRange_km": 850,
+    "warheadMass_kg": 130,
+    "targetingRange_km": 900,
     "pivotRange_deg": 60,
     "isPointDefenseTargetable": true,
     "weightedBuildMaterials": {
@@ -462,9 +462,9 @@
     "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Cannon",
     "impactVisualFXResource": "spaceCombat/ImpactOrange",
     "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid017MonoRR",
-    "_comment_damage": "E = 0.5 * 165 * (5.1)^2 = 2145.08 MJ per shot",
+    "_comment_damage": "E = 0.5 * 130 * (4.1)^2 = 1094.65 MJ per shot",
     "_comment_rps": "2 / (14 + (3.0 * (2 - 1))) = 2 / 17 = 0.12",
-    "_comment_dps": "2145.08 * 0.12 = 257.41 MJ/s",
-    "_comment_damageInGame": "2145.08 / 20 = 107.25 damage per shot in game (high penetration)"
+    "_comment_dps": "1094.65 * 0.12 = 131.36 MJ/s",
+    "_comment_damageInGame": "1094.65 / 20 = 54.73 damage per shot in game (high penetration)"
   }
 ]

@@ -14,7 +14,7 @@ my_nations:
     - China
     - South Korea
     #- Austria
-    - Venezuela
+    #- Venezuela
     #- France
     #- United Kingdom
     - European Union
@@ -59,5 +59,56 @@ my_nations:
     #{
     #    "value": 105029
     #}
-    #
-    #"value": 60762
+    ##
+    #"value": 60762#
+#
+#    {
+#        "value": 1403
+#    }
+#
+#    {
+#        "value": 3446
+#    },
+#    {
+#        "value": 3455
+#    },
+#    {
+#        "value": 3437
+#    },
+#    {
+#        "value": 3464
+#    },
+#    {
+#        "value": 3473
+#    },
+#    {
+#        "value": 3482
+#    }
+#"breakawayParent": {
+#    "value": 3734
+#},
+#"allies": [
+#    {
+#        "value": 4143
+#    }
+#],
+#
+#"breakawayParent": null,   // 429615
+#
+#
+#"breakawayParent": {
+#    "value": 3734
+#},
+
+# Gabon
+# South Korea
+# Liangguang
+# China
+# West Africa Community
+# united kingdom
+# equatorial
+
+#                    "federation": {
+#                        "value": 63213
+#                    },
+# 4242
