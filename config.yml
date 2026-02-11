@@ -12,12 +12,13 @@ my_nations:
     #- Angola
     - East African Federation
     - China
-    - South Korea
+    # - South Korea
     #- Austria
     #- Venezuela
     #- France
     #- United Kingdom
     - European Union
+    - West Africa Community
 
     #- Zambia
     #- Malawi
