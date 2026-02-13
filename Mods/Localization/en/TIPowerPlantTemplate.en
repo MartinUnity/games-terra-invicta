@@ -11,3 +11,12 @@ TIPowerPlantTemplate.displayName.QuantumCoreFissionReactorII_Compact=Quantum Cor
 TIPowerPlantTemplate.description.QuantumCoreFissionReactorII_Compact=A compact version of the Quantum Core Fission Reactor II, designed to fit within tighter spaces on medium-sized spacecraft while maintaining high power output and efficiency.
 TIPowerPlantTemplate.displayName.QuantumCoreFissionReactorIII_Compact=Quantum Core Fission Reactor III Compact
 TIPowerPlantTemplate.description.QuantumCoreFissionReactorIII_Compact=A compact version of the Quantum Core Fission Reactor III, engineered for large spacecraft that require exceptional power output but have constraints on available space, offering top-tier performance in a smaller form factor.
+
+TIPowerPlantTemplate.displayName.AdvancedQuantumCoreFissionReactorI=Advanced Quantum Core Fission Reactor I
+TIPowerPlantTemplate.description.AdvancedQuantumCoreFissionReactorI=An enhanced version of the Quantum Core Fission Reactor I, featuring improved quantum core designs and advanced cooling systems to deliver higher power output and efficiency. Suitable for small to medium-sized spacecraft.
+TIPowerPlantTemplate.displayName.AdvancedQuantumCoreFissionReactorII_Compact=Advanced Quantum Core Fission Reactor II
+TIPowerPlantTemplate.description.AdvancedQuantumCoreFissionReactorII_Compact=An enhanced version of the Quantum Core Fission Reactor II, featuring improved quantum core designs and advanced cooling systems to deliver higher power output and efficiency. Suitable for small to medium-sized spacecraft.
+TIPowerPlantTemplate.displayName.AdvancedQuantumCoreFissionReactorII=Advanced Quantum Core Fission Reactor II
+TIPowerPlantTemplate.description.AdvancedQuantumCoreFissionReactorII=An enhanced version of the Quantum Core Fission Reactor II, featuring improved quantum core designs and advanced cooling systems to deliver higher power output and efficiency. Suitable for small to medium-sized spacecraft.
+TIPowerPlantTemplate.displayName.AdvancedQuantumCoreFissionReactorIII=Advanced Quantum Core Fission Reactor III
+TIPowerPlantTemplate.description.AdvancedQuantumCoreFissionReactorIII=An enhanced version of the Quantum Core Fission Reactor I, featuring improved quantum core designs and advanced cooling systems to deliver higher power output and efficiency. Suitable for small to medium-sized spacecraft.

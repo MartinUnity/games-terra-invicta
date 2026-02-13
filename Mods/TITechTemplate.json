@@ -7,7 +7,26 @@
     "AI_criticalTech": false,
     "endGameTech": false,
     "researchCost": 5000,
-    "prereqs": ["ElectromagneticPropulsion", "AdvancedHeatManagementConcepts"]
+    "prereqs": [
+      "ElectromagneticPropulsion",
+      "AdvancedHeatManagementConcepts"
+    ]
+  },
+  {
+    "friendlyName": "Army Neural Interface Project",
+    "dataName": "ArmyNeuralInterface",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "EarthPolitics",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 18000,
+    "prereqs": [
+      "SpaceAssaultDoctrine"
+    ],
+    "effects": [
+      "Effect_IncreaseMaxArmyTechLevel",
+      "Effect_CommanderNeuralGlobalNetwork"
+    ]
   },
   {
     "friendlyName": "Commander Neural Global Network",
@@ -16,8 +35,10 @@
     "AI_techRole": "EarthPolitics",
     "AI_criticalTech": false,
     "endGameTech": false,
-    "researchCost": 18000,
-    "prereqs": ["TransInterfaceWarfare"],
+    "researchCost": 30000,
+    "prereqs": [
+      "TransInterfaceWarfare"
+    ],
     "effects": [
       "Effect_IncreaseMaxArmyTechLevel",
       "Effect_CommanderNeuralGlobalNetwork"
@@ -30,8 +51,10 @@
     "AI_techRole": "EarthPolitics",
     "AI_criticalTech": false,
     "endGameTech": false,
-    "researchCost": 30000,
-    "prereqs": ["TransInterfaceWarfare"],
+    "researchCost": 60000,
+    "prereqs": [
+      "TransInterfaceWarfare"
+    ],
     "effects": [
       "Effect_IncreaseMaxArmyTechLevel",
       "Effect_CyborneticCommandIntegration"
@@ -45,7 +68,111 @@
     "AI_criticalTech": false,
     "endGameTech": false,
     "researchCost": 50000,
-    "prereqs": ["MagneticNozzles", "PlasmaWeapons", "MolecularAssemblers"],
-    "effects": ["Effect_IncreaseMaxArmyTechLevel"]
+    "prereqs": [
+      "MagneticNozzles",
+      "PlasmaWeapons",
+      "MolecularAssemblers"
+    ],
+    "effects": [
+      "Effect_IncreaseMaxArmyTechLevel"
+    ]
+  },
+  {
+    "friendlyName": "Advanced Quantum Core Fission Reactor Technology",
+    "dataName": "AdvancedQuantumCoreFissionReactorTechnology",
+    "techCategory": "EnergyScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 60000,
+    "prereqs": [
+      "PlasmaWeapons",
+      "AdvancedFissionSystems"
+    ]
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Array",
+    "dataName": "MiniaturizedMassLaserDefenseArray",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 6000,
+    "prereqs": [
+      "InfraredCombatLasers"
+    ]
+  },
+  {
+    "friendlyName": "Rapid Fire Laser Batteries",
+    "dataName": "RapidFireLaserBatteries",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 6000,
+    "prereqs": [
+      "InfraredCombatLasers"
+    ]
+  },
+  {
+    "friendlyName": "Rapid Fire Particle Batteries",
+    "dataName": "RapidFireParticleBatteries",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 6000,
+    "prereqs": [
+      "ParticleCannon"
+    ]
+  },
+  {
+    "friendlyName": "Jitter Stream Particle Technology",
+    "dataName": "JitterStreamParticleTechnology",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 20000,
+    "prereqs": [
+      "ElectrostaticPlasmaConfinement"
+    ]
+  },
+  {
+    "friendlyName": "Plasmoid Streaker - Prototype",
+    "dataName": "PlasmoidStreakerPrototype",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 20000,
+    "prereqs": [
+      "AntimatterContainment"
+    ]
+  },
+  {
+    "friendlyName": "Plasmoid Streaker - Advanced Prototype",
+    "dataName": "PlasmoidStreakerAdvancedPrototype",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 40000,
+    "prereqs": [
+      "PlasmoidStreakerPrototype",
+      "MagneticPlasmaConfinementTechniques"
+    ]
+  },
+  {
+    "friendlyName": "Twinspire Hulls",
+    "dataName": "TwinspireHulls",
+    "techCategory": "Materials",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 1500,
+    "prereqs": [
+      "DeepSpacePropulsionConcepts"
+    ]
   }
 ]

@@ -8,7 +8,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 500,
-    "prereqs": ["Project_Warships", "PrinciplesofSpaceWarfare"],
+    "prereqs": [
+      "Project_Warships",
+      "PrinciplesofSpaceWarfare"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -26,7 +29,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 1000,
-    "prereqs": ["Project_Warships", "PrinciplesofSpaceWarfare"],
+    "prereqs": [
+      "Project_Warships",
+      "PrinciplesofSpaceWarfare"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -44,7 +50,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 5000,
-    "prereqs": ["KineticsWarfareDoctrine", "MassDrivers"],
+    "prereqs": [
+      "KineticsWarfareDoctrine",
+      "MassDrivers"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -62,7 +71,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 15000,
-    "prereqs": ["KineticsWarfareDoctrine", "Coilguns"],
+    "prereqs": [
+      "KineticsWarfareDoctrine",
+      "Coilguns"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -80,7 +92,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 500,
-    "prereqs": ["Project_Warships", "PrinciplesofSpaceWarfare"],
+    "prereqs": [
+      "Project_Warships",
+      "PrinciplesofSpaceWarfare"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -98,7 +113,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 2500,
-    "prereqs": ["Project_Warships", "PrinciplesofSpaceWarfare"],
+    "prereqs": [
+      "Project_Warships",
+      "PrinciplesofSpaceWarfare"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -116,7 +134,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 5000,
-    "prereqs": ["KineticsWarfareDoctrine", "MassDrivers"],
+    "prereqs": [
+      "KineticsWarfareDoctrine",
+      "MassDrivers"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -134,7 +155,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 15000,
-    "prereqs": ["Coilguns"],
+    "prereqs": [
+      "Coilguns"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -152,7 +175,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 2500,
-    "prereqs": ["KineticsWarfareDoctrine"],
+    "prereqs": [
+      "KineticsWarfareDoctrine"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -170,7 +195,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 5500,
-    "prereqs": ["KineticsWarfareDoctrine"],
+    "prereqs": [
+      "KineticsWarfareDoctrine"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -188,7 +215,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 12500,
-    "prereqs": ["KineticsWarfareDoctrine"],
+    "prereqs": [
+      "KineticsWarfareDoctrine"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -206,7 +235,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 500,
-    "prereqs": ["Project_Warships", "PrinciplesofSpaceWarfare"],
+    "prereqs": [
+      "Project_Warships",
+      "PrinciplesofSpaceWarfare"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -223,8 +255,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_MiningWaterBonus_lvl1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_MiningWaterBonus_lvl1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -241,8 +277,13 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 1000,
-    "prereqs": ["SpaceMiningandRefining", "Project_ExtractionCascade_Water_T1"],
-    "effects": ["Effect_MiningWaterBonus_lvl2"],
+    "prereqs": [
+      "SpaceMiningandRefining",
+      "Project_ExtractionCascade_Water_T1"
+    ],
+    "effects": [
+      "Effect_MiningWaterBonus_lvl2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -265,7 +306,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_Water_T2"
     ],
-    "effects": ["Effect_MiningWaterBonus_lvl3"],
+    "effects": [
+      "Effect_MiningWaterBonus_lvl3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -287,7 +330,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_Water_T3"
     ],
-    "effects": ["Effect_MiningWaterBonus_lvl4"],
+    "effects": [
+      "Effect_MiningWaterBonus_lvl4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -309,7 +354,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_Water_T4"
     ],
-    "effects": ["Effect_MiningWaterBonus_lvl5"],
+    "effects": [
+      "Effect_MiningWaterBonus_lvl5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -331,7 +378,9 @@
       "AdvancedAtomicManipulation",
       "Project_ExtractionCascade_Water_T5"
     ],
-    "effects": ["Effect_MiningWaterBonus_lvl6"],
+    "effects": [
+      "Effect_MiningWaterBonus_lvl6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -348,8 +397,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_MiningVolatilesBonus_lvl1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_MiningVolatilesBonus_lvl1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -370,7 +423,9 @@
       "SpaceMiningandRefining",
       "Project_ExtractionCascade_Volatiles_T1"
     ],
-    "effects": ["Effect_MiningVolatilesBonus_lvl2"],
+    "effects": [
+      "Effect_MiningVolatilesBonus_lvl2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -393,7 +448,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_Volatiles_T2"
     ],
-    "effects": ["Effect_MiningVolatilesBonus_lvl3"],
+    "effects": [
+      "Effect_MiningVolatilesBonus_lvl3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -415,7 +472,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_Volatiles_T3"
     ],
-    "effects": ["Effect_MiningVolatilesBonus_lvl4"],
+    "effects": [
+      "Effect_MiningVolatilesBonus_lvl4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -437,7 +496,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_Volatiles_T4"
     ],
-    "effects": ["Effect_MiningVolatilesBonus_lvl5"],
+    "effects": [
+      "Effect_MiningVolatilesBonus_lvl5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -459,7 +520,9 @@
       "AdvancedAtomicManipulation",
       "Project_ExtractionCascade_Volatiles_T5"
     ],
-    "effects": ["Effect_MiningVolatilesBonus_lvl6"],
+    "effects": [
+      "Effect_MiningVolatilesBonus_lvl6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -476,8 +539,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_MiningMetalsBonus_lvl1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_MiningMetalsBonus_lvl1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -498,7 +565,9 @@
       "SpaceMiningandRefining",
       "Project_ExtractionCascade_Metals_T1"
     ],
-    "effects": ["Effect_MiningMetalsBonus_lvl2"],
+    "effects": [
+      "Effect_MiningMetalsBonus_lvl2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -521,7 +590,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_Metals_T2"
     ],
-    "effects": ["Effect_MiningMetalsBonus_lvl3"],
+    "effects": [
+      "Effect_MiningMetalsBonus_lvl3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -543,7 +614,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_Metals_T3"
     ],
-    "effects": ["Effect_MiningMetalsBonus_lvl4"],
+    "effects": [
+      "Effect_MiningMetalsBonus_lvl4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -565,7 +638,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_Metals_T4"
     ],
-    "effects": ["Effect_MiningMetalsBonus_lvl5"],
+    "effects": [
+      "Effect_MiningMetalsBonus_lvl5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -587,7 +662,9 @@
       "AdvancedAtomicManipulation",
       "Project_ExtractionCascade_Metals_T5"
     ],
-    "effects": ["Effect_MiningMetalsBonus_lvl6"],
+    "effects": [
+      "Effect_MiningMetalsBonus_lvl6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -604,8 +681,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_MiningNobleMetalsBonus_lvl1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_MiningNobleMetalsBonus_lvl1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -626,7 +707,9 @@
       "SpaceMiningandRefining",
       "Project_ExtractionCascade_NobleMetals_T1"
     ],
-    "effects": ["Effect_MiningNobleMetalsBonus_lvl2"],
+    "effects": [
+      "Effect_MiningNobleMetalsBonus_lvl2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -649,7 +732,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_NobleMetals_T2"
     ],
-    "effects": ["Effect_MiningNobleMetalsBonus_lvl3"],
+    "effects": [
+      "Effect_MiningNobleMetalsBonus_lvl3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -671,7 +756,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_NobleMetals_T3"
     ],
-    "effects": ["Effect_MiningNobleMetalsBonus_lvl4"],
+    "effects": [
+      "Effect_MiningNobleMetalsBonus_lvl4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -693,7 +780,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_NobleMetals_T4"
     ],
-    "effects": ["Effect_MiningNobleMetalsBonus_lvl5"],
+    "effects": [
+      "Effect_MiningNobleMetalsBonus_lvl5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -715,7 +804,9 @@
       "AdvancedAtomicManipulation",
       "Project_ExtractionCascade_NobleMetals_T5"
     ],
-    "effects": ["Effect_MiningNobleMetalsBonus_lvl6"],
+    "effects": [
+      "Effect_MiningNobleMetalsBonus_lvl6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -732,8 +823,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_MiningFissilesBonus_lvl1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_MiningFissilesBonus_lvl1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -754,7 +849,9 @@
       "SpaceMiningandRefining",
       "Project_ExtractionCascade_Fissiles_T1"
     ],
-    "effects": ["Effect_MiningFissilesBonus_lvl2"],
+    "effects": [
+      "Effect_MiningFissilesBonus_lvl2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -777,7 +874,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_Fissiles_T2"
     ],
-    "effects": ["Effect_MiningFissilesBonus_lvl3"],
+    "effects": [
+      "Effect_MiningFissilesBonus_lvl3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -799,7 +898,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_Fissiles_T3"
     ],
-    "effects": ["Effect_MiningFissilesBonus_lvl4"],
+    "effects": [
+      "Effect_MiningFissilesBonus_lvl4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -821,7 +922,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_Fissiles_T4"
     ],
-    "effects": ["Effect_MiningFissilesBonus_lvl5"],
+    "effects": [
+      "Effect_MiningFissilesBonus_lvl5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -838,8 +941,13 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 20000,
-    "prereqs": ["MissiontoSaturn", "AdvancedAtomicManipulation"],
-    "effects": ["Effect_MiningFissilesBonus_lvl6"],
+    "prereqs": [
+      "MissiontoSaturn",
+      "AdvancedAtomicManipulation"
+    ],
+    "effects": [
+      "Effect_MiningFissilesBonus_lvl6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -856,8 +964,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Xenology",
     "researchCost": 500,
-    "prereqs": ["WeAreNotAlone"],
-    "effects": ["Effect_MCUsageMasking_Beginner"],
+    "prereqs": [
+      "WeAreNotAlone"
+    ],
+    "effects": [
+      "Effect_MCUsageMasking_Beginner"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -879,8 +991,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Xenology",
     "researchCost": 2500,
-    "prereqs": ["ArrivalSociology"],
-    "effects": ["Effect_MCUsageMasking_Intermediate"],
+    "prereqs": [
+      "ArrivalSociology"
+    ],
+    "effects": [
+      "Effect_MCUsageMasking_Intermediate"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -906,7 +1022,9 @@
       "ArrivalInternationalRelations",
       "Project_ZethrokHidingInPlainSight_Intermediate"
     ],
-    "effects": ["Effect_MCUsageMasking_Advanced"],
+    "effects": [
+      "Effect_MCUsageMasking_Advanced"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -928,8 +1046,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Xenology",
     "researchCost": 10000,
-    "prereqs": ["FallofEmpires"],
-    "effects": ["Effect_MCUsageMasking_Expert"],
+    "prereqs": [
+      "FallofEmpires"
+    ],
+    "effects": [
+      "Effect_MCUsageMasking_Expert"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -951,8 +1073,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Xenology",
     "researchCost": 35000,
-    "prereqs": ["ArrivalGovernance"],
-    "effects": ["Effect_MCUsageMasking_Master"],
+    "prereqs": [
+      "ArrivalGovernance"
+    ],
+    "effects": [
+      "Effect_MCUsageMasking_Master"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -974,7 +1100,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "HabDefense",
     "researchCost": 100,
-    "prereqs": ["Project_PlatformCore"],
+    "prereqs": [
+      "Project_PlatformCore"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -991,8 +1119,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Kinetics",
     "researchCost": 5000,
-    "prereqs": ["Railguns"],
-    "effects": ["Effect_ShipMagDamage_lvl1"],
+    "prereqs": [
+      "Railguns"
+    ],
+    "effects": [
+      "Effect_ShipMagDamage_lvl1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1009,8 +1141,13 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Kinetics",
     "researchCost": 10000,
-    "prereqs": ["Railguns", "Superalloys"],
-    "effects": ["Effect_ShipMagDamage_lvl2"],
+    "prereqs": [
+      "Railguns",
+      "Superalloys"
+    ],
+    "effects": [
+      "Effect_ShipMagDamage_lvl2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1027,8 +1164,13 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Kinetics",
     "researchCost": 20000,
-    "prereqs": ["Railguns", "SuperconductingMagnets"],
-    "effects": ["Effect_ShipMagDamage_lvl3"],
+    "prereqs": [
+      "Railguns",
+      "SuperconductingMagnets"
+    ],
+    "effects": [
+      "Effect_ShipMagDamage_lvl3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1045,8 +1187,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Kinetics",
     "researchCost": 30000,
-    "prereqs": ["Coilguns"],
-    "effects": ["Effect_ShipMagDamage_lvl4"],
+    "prereqs": [
+      "Coilguns"
+    ],
+    "effects": [
+      "Effect_ShipMagDamage_lvl4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1067,7 +1213,9 @@
       "TargetedBiologicalWarfare",
       "MagneticPlasmaConfinementTechniques"
     ],
-    "effects": ["Effect_ShipMagDamage_lvl5"],
+    "effects": [
+      "Effect_ShipMagDamage_lvl5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1084,8 +1232,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Kinetics",
     "researchCost": 50000,
-    "prereqs": ["PhaseShiftingCoilOverrunMethology"],
-    "effects": ["Effect_ShipMagDamage_lvl3"],
+    "prereqs": [
+      "PhaseShiftingCoilOverrunMethology"
+    ],
+    "effects": [
+      "Effect_ShipMagDamage_lvl3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1102,8 +1254,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Kinetics",
     "researchCost": 75000,
-    "prereqs": ["Project_PhasedCoilshellTechnology_Exploration"],
-    "effects": ["Effect_ShipMagDamage_lvl4"],
+    "prereqs": [
+      "Project_PhasedCoilshellTechnology_Exploration"
+    ],
+    "effects": [
+      "Effect_ShipMagDamage_lvl4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1120,8 +1276,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Kinetics",
     "researchCost": 125000,
-    "prereqs": ["Project_PhasedCoilshellTechnology_Kinetics"],
-    "effects": ["Effect_ShipMagDamage_lvl5"],
+    "prereqs": [
+      "Project_PhasedCoilshellTechnology_Kinetics"
+    ],
+    "effects": [
+      "Effect_ShipMagDamage_lvl5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1138,8 +1298,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Kinetics",
     "researchCost": 175000,
-    "prereqs": ["Project_PhasedCoilshellTechnology_AlphaParticleVacuum"],
-    "effects": ["Effect_ShipMagDamage_lvl6"],
+    "prereqs": [
+      "Project_PhasedCoilshellTechnology_AlphaParticleVacuum"
+    ],
+    "effects": [
+      "Effect_ShipMagDamage_lvl6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1156,7 +1320,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Exploration",
     "researchCost": 750,
-    "prereqs": ["ElectrothermalPropulsion"],
+    "prereqs": [
+      "ElectrothermalPropulsion"
+    ],
     "effects": [
       "Effect_ThermalFissionFreighters",
       "Effect_ThermalFissionRockets"
@@ -1177,8 +1343,13 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Exploration",
     "researchCost": 5000,
-    "prereqs": ["ElectrostaticPropulsion"],
-    "effects": ["Effect_StarLightFreighters", "Effect_StarLightRockets"],
+    "prereqs": [
+      "ElectrostaticPropulsion"
+    ],
+    "effects": [
+      "Effect_StarLightFreighters",
+      "Effect_StarLightRockets"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1195,8 +1366,13 @@
     "AI_criticalTech": false,
     "AI_projectRole": "Exploration",
     "researchCost": 22500,
-    "prereqs": ["Neutronics"],
-    "effects": ["Effect_GravitonFreighters", "Effect_GravitonRockets"],
+    "prereqs": [
+      "Neutronics"
+    ],
+    "effects": [
+      "Effect_GravitonFreighters",
+      "Effect_GravitonRockets"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1213,8 +1389,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "DevelopNation",
     "researchCost": 8000,
-    "prereqs": ["AdvancedNeuralNetworks"],
-    "effects": ["Effect_EconomyPriorityBonus05"],
+    "prereqs": [
+      "AdvancedNeuralNetworks"
+    ],
+    "effects": [
+      "Effect_EconomyPriorityBonus05"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 50,
@@ -1230,8 +1410,12 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "researchCost": 8000,
-    "prereqs": ["SelfRepairingSoftware"],
-    "effects": ["Effect_EconomyPriorityBonus05"],
+    "prereqs": [
+      "SelfRepairingSoftware"
+    ],
+    "effects": [
+      "Effect_EconomyPriorityBonus05"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 50,
@@ -1247,8 +1431,12 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "researchCost": 1500,
-    "prereqs": ["SpaceTourism"],
-    "effects": ["Effect_EconomyPriorityBonus05"],
+    "prereqs": [
+      "SpaceTourism"
+    ],
+    "effects": [
+      "Effect_EconomyPriorityBonus05"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1264,8 +1452,12 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "researchCost": 1250,
-    "prereqs": ["DeepSystemSkywatch"],
-    "effects": ["Effect_EconomyPriorityBonus05"],
+    "prereqs": [
+      "DeepSystemSkywatch"
+    ],
+    "effects": [
+      "Effect_EconomyPriorityBonus05"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1282,7 +1474,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 700,
-    "prereqs": ["DeepSystemSkywatch"],
+    "prereqs": [
+      "DeepSystemSkywatch"
+    ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus10",
       "Effect_EconomyPriorityBonus05"
@@ -1303,7 +1497,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 2500,
-    "prereqs": ["ArrivalSociology", "Project_RegionalCommandStructure"],
+    "prereqs": [
+      "ArrivalSociology",
+      "Project_RegionalCommandStructure"
+    ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus20",
       "Effect_EconomyPriorityBonus05"
@@ -1324,7 +1521,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 10000,
-    "prereqs": ["FallofEmpires", "Project_AugementedOrganizationalStructures"],
+    "prereqs": [
+      "FallofEmpires",
+      "Project_AugementedOrganizationalStructures"
+    ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus05",
@@ -1346,7 +1546,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 20000,
-    "prereqs": ["IndustrializationofSpace"],
+    "prereqs": [
+      "IndustrializationofSpace"
+    ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus05",
@@ -1368,7 +1570,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 30000,
-    "prereqs": ["SpaceCommerce", "Project_PlanetaryAdministrativeSystems"],
+    "prereqs": [
+      "SpaceCommerce",
+      "Project_PlanetaryAdministrativeSystems"
+    ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus05",
@@ -1415,7 +1620,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 1000,
-    "prereqs": ["Project_Spaceworks"],
+    "prereqs": [
+      "Project_Spaceworks"
+    ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus05",
@@ -1437,7 +1644,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 3000,
-    "prereqs": ["Project_PlanetaryMonetaryGovernance_I"],
+    "prereqs": [
+      "Project_PlanetaryMonetaryGovernance_I"
+    ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus05",
@@ -1459,7 +1668,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 1000,
-    "prereqs": ["Project_NeutronFluxTorch"],
+    "prereqs": [
+      "Project_NeutronFluxTorch"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1479,7 +1690,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 1000,
-    "prereqs": ["Project_OutpostMiningComplex"],
+    "prereqs": [
+      "Project_OutpostMiningComplex"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1496,7 +1709,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 7500,
-    "prereqs": ["Project_SettlementMiningComplex"],
+    "prereqs": [
+      "Project_SettlementMiningComplex"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1513,7 +1728,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
     "researchCost": 15000,
-    "prereqs": ["Project_ColonyMiningComplex"],
+    "prereqs": [
+      "Project_ColonyMiningComplex"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1530,8 +1747,13 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["Project_OutpostMiningComplex"],
-    "effects": ["Effect_SpaceMineExtra2", "Effect_SpaceMiningBonus03"],
+    "prereqs": [
+      "Project_OutpostMiningComplex"
+    ],
+    "effects": [
+      "Effect_SpaceMineExtra2",
+      "Effect_SpaceMiningBonus03"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1553,8 +1775,14 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 1250,
-    "prereqs": ["Project_OutpostMiningComplex", "SpaceMiningandRefining"],
-    "effects": ["Effect_SpaceMineExtra4", "Effect_SpaceMiningBonus07"],
+    "prereqs": [
+      "Project_OutpostMiningComplex",
+      "SpaceMiningandRefining"
+    ],
+    "effects": [
+      "Effect_SpaceMineExtra4",
+      "Effect_SpaceMiningBonus07"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1576,8 +1804,13 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 5000,
-    "prereqs": ["Project_ColonyMiningComplex"],
-    "effects": ["Effect_SpaceMineExtra8", "Effect_SpaceMiningBonus15"],
+    "prereqs": [
+      "Project_ColonyMiningComplex"
+    ],
+    "effects": [
+      "Effect_SpaceMineExtra8",
+      "Effect_SpaceMiningBonus15"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1599,7 +1832,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 1000,
-    "prereqs": ["AdvancedMagnetics", "QuantumFluxAccelerator_Mrk1"],
+    "prereqs": [
+      "AdvancedMagnetics",
+      "QuantumFluxAccelerator_Mrk1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1636,7 +1872,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 4000,
-    "prereqs": ["Project_QuantumFluxAccelerator_Mk2", "ParticleCannon"],
+    "prereqs": [
+      "Project_QuantumFluxAccelerator_Mk2",
+      "ParticleCannon"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1673,7 +1912,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 8000,
-    "prereqs": ["Project_QuantumFluxAccelerator_Mk4", "AntimatterContainment"],
+    "prereqs": [
+      "Project_QuantumFluxAccelerator_Mk4",
+      "AntimatterContainment"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1771,7 +2013,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 100,
-    "prereqs": ["Project_Warships"],
+    "prereqs": [
+      "Project_Warships"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1789,7 +2033,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 100,
-    "prereqs": ["Project_Warships"],
+    "prereqs": [
+      "Project_Warships"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1807,7 +2053,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 22500,
-    "prereqs": ["ImprovedShipbuildingTechniques"],
+    "prereqs": [
+      "ImprovedShipbuildingTechniques"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1825,7 +2073,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 50000,
-    "prereqs": ["HighTemperatureSuperconductors"],
+    "prereqs": [
+      "HighTemperatureSuperconductors"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1843,7 +2093,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 100,
-    "prereqs": ["Project_Warships"],
+    "prereqs": [
+      "Project_Warships"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1861,12 +2113,34 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 120,
-    "prereqs": ["OrbitalShipbuilding"],
+    "prereqs": [
+      "OrbitalShipbuilding"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
     "initialUnlockChance": 18,
     "deltaUnlockChance": 3,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Twinspire_Mk_I",
+    "friendlyName": "Twinspire Mk I",
+    "description": "A Twin Turret vessel with a single engine. A step up from the Junkraker, but still a far cry from modern designs.  ",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 1250,
+    "prereqs": [
+      "TwinspireHulls"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
     "maxUnlockChance": 100,
     "resourcesGranted": []
   },
@@ -1879,7 +2153,10 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 2750,
-    "prereqs": ["AdvancedHeatManagementConcepts"],
+    "prereqs": [
+      "Project_Twinspire_Mk_I",
+      "AdvancedHeatManagementConcepts"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1915,7 +2192,9 @@
     "AI_techRole": "None",
     "AI_projectRole": "HabInfrastructure",
     "researchCost": 200,
-    "prereqs": ["Project_AutomatedPlatformCore"],
+    "prereqs": [
+      "Project_AutomatedPlatformCore"
+    ],
     "altPrereq0": "Project_AutomatedOutpostCore",
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -1933,8 +2212,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_ExtractionCascade_Water_T1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_ExtractionCascade_Water_T1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1951,8 +2234,13 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 1000,
-    "prereqs": ["SpaceMiningandRefining", "Project_ExtractionCascade_Water_T1"],
-    "effects": ["Effect_ExtractionCascade_Water_T2"],
+    "prereqs": [
+      "SpaceMiningandRefining",
+      "Project_ExtractionCascade_Water_T1"
+    ],
+    "effects": [
+      "Effect_ExtractionCascade_Water_T2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1975,7 +2263,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_Water_T2"
     ],
-    "effects": ["Effect_ExtractionCascade_Water_T3"],
+    "effects": [
+      "Effect_ExtractionCascade_Water_T3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -1997,7 +2287,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_Water_T3"
     ],
-    "effects": ["Effect_ExtractionCascade_Water_T4"],
+    "effects": [
+      "Effect_ExtractionCascade_Water_T4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2014,8 +2306,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_ExtractionCascade_Volatiles_T1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_ExtractionCascade_Volatiles_T1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2036,7 +2332,9 @@
       "SpaceMiningandRefining",
       "Project_ExtractionCascade_Volatiles_T1"
     ],
-    "effects": ["Effect_ExtractionCascade_Volatiles_T2"],
+    "effects": [
+      "Effect_ExtractionCascade_Volatiles_T2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2059,7 +2357,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_Volatiles_T2"
     ],
-    "effects": ["Effect_ExtractionCascade_Volatiles_T3"],
+    "effects": [
+      "Effect_ExtractionCascade_Volatiles_T3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2081,7 +2381,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_Volatiles_T3"
     ],
-    "effects": ["Effect_ExtractionCascade_Volatiles_T4"],
+    "effects": [
+      "Effect_ExtractionCascade_Volatiles_T4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2098,8 +2400,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_ExtractionCascade_Metals_T1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_ExtractionCascade_Metals_T1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2120,7 +2426,9 @@
       "SpaceMiningandRefining",
       "Project_ExtractionCascade_Metals_T1"
     ],
-    "effects": ["Effect_ExtractionCascade_Metals_T2"],
+    "effects": [
+      "Effect_ExtractionCascade_Metals_T2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2143,7 +2451,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_Metals_T2"
     ],
-    "effects": ["Effect_ExtractionCascade_Metals_T3"],
+    "effects": [
+      "Effect_ExtractionCascade_Metals_T3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2165,7 +2475,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_Metals_T3"
     ],
-    "effects": ["Effect_ExtractionCascade_Metals_T4"],
+    "effects": [
+      "Effect_ExtractionCascade_Metals_T4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2182,8 +2494,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_ExtractionCascade_NobleMetals_T1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_ExtractionCascade_NobleMetals_T1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2204,7 +2520,9 @@
       "SpaceMiningandRefining",
       "Project_ExtractionCascade_NobleMetals_T1"
     ],
-    "effects": ["Effect_ExtractionCascade_NobleMetals_T2"],
+    "effects": [
+      "Effect_ExtractionCascade_NobleMetals_T2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2227,7 +2545,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_NobleMetals_T2"
     ],
-    "effects": ["Effect_ExtractionCascade_NobleMetals_T3"],
+    "effects": [
+      "Effect_ExtractionCascade_NobleMetals_T3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2249,7 +2569,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_NobleMetals_T3"
     ],
-    "effects": ["Effect_ExtractionCascade_NobleMetals_T4"],
+    "effects": [
+      "Effect_ExtractionCascade_NobleMetals_T4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2266,8 +2588,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "SpaceResources",
     "researchCost": 500,
-    "prereqs": ["MissiontotheMoon"],
-    "effects": ["Effect_ExtractionCascade_Fissiles_T1"],
+    "prereqs": [
+      "MissiontotheMoon"
+    ],
+    "effects": [
+      "Effect_ExtractionCascade_Fissiles_T1"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2288,7 +2614,9 @@
       "SpaceMiningandRefining",
       "Project_ExtractionCascade_Fissiles_T1"
     ],
-    "effects": ["Effect_ExtractionCascade_Fissiles_T2"],
+    "effects": [
+      "Effect_ExtractionCascade_Fissiles_T2"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2311,7 +2639,9 @@
       "MissiontoVenus",
       "Project_ExtractionCascade_Fissiles_T2"
     ],
-    "effects": ["Effect_ExtractionCascade_Fissiles_T3"],
+    "effects": [
+      "Effect_ExtractionCascade_Fissiles_T3"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2333,7 +2663,9 @@
       "MissiontotheInnerPlanets",
       "Project_ExtractionCascade_Fissiles_T3"
     ],
-    "effects": ["Effect_ExtractionCascade_Fissiles_T4"],
+    "effects": [
+      "Effect_ExtractionCascade_Fissiles_T4"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2355,7 +2687,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_Water_T4"
     ],
-    "effects": ["Effect_ExtractionCascade_Water_T5"],
+    "effects": [
+      "Effect_ExtractionCascade_Water_T5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2377,7 +2711,9 @@
       "AdvancedAtomicManipulation",
       "Project_ExtractionCascade_Water_T5"
     ],
-    "effects": ["Effect_ExtractionCascade_Water_T6"],
+    "effects": [
+      "Effect_ExtractionCascade_Water_T6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2399,7 +2735,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_Volatiles_T4"
     ],
-    "effects": ["Effect_ExtractionCascade_Volatiles_T5"],
+    "effects": [
+      "Effect_ExtractionCascade_Volatiles_T5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2421,7 +2759,9 @@
       "AdvancedAtomicManipulation",
       "Project_ExtractionCascade_Volatiles_T5"
     ],
-    "effects": ["Effect_ExtractionCascade_Volatiles_T6"],
+    "effects": [
+      "Effect_ExtractionCascade_Volatiles_T6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2443,7 +2783,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_Metals_T4"
     ],
-    "effects": ["Effect_ExtractionCascade_Metals_T5"],
+    "effects": [
+      "Effect_ExtractionCascade_Metals_T5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2465,7 +2807,9 @@
       "AdvancedAtomicManipulation",
       "Project_ExtractionCascade_Metals_T5"
     ],
-    "effects": ["Effect_ExtractionCascade_Metals_T6"],
+    "effects": [
+      "Effect_ExtractionCascade_Metals_T6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2487,7 +2831,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_NobleMetals_T4"
     ],
-    "effects": ["Effect_ExtractionCascade_NobleMetals_T5"],
+    "effects": [
+      "Effect_ExtractionCascade_NobleMetals_T5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2509,7 +2855,9 @@
       "AdvancedAtomicManipulation",
       "Project_ExtractionCascade_NobleMetals_T5"
     ],
-    "effects": ["Effect_ExtractionCascade_NobleMetals_T6"],
+    "effects": [
+      "Effect_ExtractionCascade_NobleMetals_T6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2531,7 +2879,9 @@
       "IndustrializationofSpace",
       "Project_ExtractionCascade_Fissiles_T4"
     ],
-    "effects": ["Effect_ExtractionCascade_Fissiles_T5"],
+    "effects": [
+      "Effect_ExtractionCascade_Fissiles_T5"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2553,7 +2903,9 @@
       "AdvancedAtomicManipulation",
       "Project_ExtractionCascade_Fissiles_T5"
     ],
-    "effects": ["Effect_ExtractionCascade_Fissiles_T6"],
+    "effects": [
+      "Effect_ExtractionCascade_Fissiles_T6"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
@@ -2570,10 +2922,81 @@
     "AI_criticalTech": false,
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 3000,
-    "prereqs": ["DirectedEnergyWarfareDoctrine"],
+    "prereqs": [
+      "DirectedEnergyWarfareDoctrine"
+    ],
     "effects": [
       "Effect_IncreaseMaxArmyTechLevel",
       "Effect_ArmyNeuralInterface"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Army Neural Interface Project",
+    "dataName": "Project_ArmyNeuralInterface",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 10000,
+    "prereqs": [
+      "ArmyNeuralInterface"
+    ],
+    "effects": [
+      "Effect_IncreaseMaxArmyTechLevel",
+      "Effect_ArmyNeuralInterface"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Commander Neural Global Network Project",
+    "dataName": "Project_CommanderNeuralGlobalNetwork",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 10000,
+    "prereqs": [
+      "CommanderNeuralGlobalNetwork"
+    ],
+    "effects": [
+      "Effect_IncreaseMaxArmyTechLevel",
+      "Effect_CommanderNeuralGlobalNetwork"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Cybornetic Command Integration",
+    "dataName": "Project_CyborneticCommandIntegration",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 20000,
+    "prereqs": [
+      "CyborneticCommandIntegration"
+    ],
+    "effects": [
+      "Effect_IncreaseMaxArmyTechLevel",
+      "Effect_CyborneticCommandIntegration"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -2591,7 +3014,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 17500,
-    "prereqs": ["GasCoreFissionSystems"],
+    "prereqs": [
+      "GasCoreFissionSystems"
+    ],
     "effects": [],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -2609,7 +3034,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 25000,
-    "prereqs": ["Project_QuantumCoreFissionReactorI"],
+    "prereqs": [
+      "Project_QuantumCoreFissionReactorI"
+    ],
     "effects": [],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -2627,7 +3054,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 32500,
-    "prereqs": ["Project_QuantumCoreFissionReactorII"],
+    "prereqs": [
+      "Project_QuantumCoreFissionReactorII"
+    ],
     "effects": [],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -2645,7 +3074,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 22500,
-    "prereqs": ["AdvancedFissionSystems"],
+    "prereqs": [
+      "AdvancedFissionSystems"
+    ],
     "effects": [],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -2663,7 +3094,9 @@
     "AI_criticalTech": false,
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 35000,
-    "prereqs": ["Project_QuantumCoreFissionReactorI_Compact"],
+    "prereqs": [
+      "Project_QuantumCoreFissionReactorI_Compact"
+    ],
     "effects": [],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -2681,13 +3114,521 @@
     "AI_criticalTech": false,
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 50000,
-    "prereqs": ["Project_QuantumCoreFissionReactorII_Compact"],
+    "prereqs": [
+      "Project_QuantumCoreFissionReactorII_Compact"
+    ],
     "effects": [],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
     "initialUnlockChance": 1,
     "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Advanced Quantum Core Fission Reactor I",
+    "dataName": "Project_AdvancedQuantumCoreFissionReactorI",
+    "techCategory": "Energy",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "EnergyEnhancement",
+    "researchCost": 37500,
+    "prereqs": [
+      "AdvancedQuantumCoreFissionReactorTechnology"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Advanced Quantum Core Fission Reactor II",
+    "dataName": "Project_AdvancedQuantumCoreFissionReactorII",
+    "techCategory": "Energy",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "EnergyEnhancement",
+    "researchCost": 52500,
+    "prereqs": [
+      "Project_AdvancedQuantumCoreFissionReactorI"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Advanced Quantum Core Fission Reactor III",
+    "dataName": "Project_AdvancedQuantumCoreFissionReactorIII",
+    "techCategory": "Energy",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "EnergyEnhancement",
+    "researchCost": 75000,
+    "prereqs": [
+      "Project_AdvancedQuantumCoreFissionReactorII"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Array I",
+    "dataName": "Project_MiniaturizedMassLaserDefenseArray_I",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 1500,
+    "prereqs": [
+      "MiniaturizedMassLaserDefenseArray"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Array II",
+    "dataName": "Project_MiniaturizedMassLaserDefenseArray_II",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 5000,
+    "prereqs": [
+      "Project_MiniaturizedMassLaserDefenseArray_I"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 20,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Array III",
+    "dataName": "Project_MiniaturizedMassLaserDefenseArray_III",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 15000,
+    "prereqs": [
+      "Project_MiniaturizedMassLaserDefenseArray_II"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "40cm IR Laser Battery Rapid Fire",
+    "dataName": "Project_40cmIRLaserBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 750,
+    "prereqs": [
+      "RapidFireLaserBatteries"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "40 cm IR Arc Laser Battery Rapid Fire",
+    "dataName": "Project_40cmIRArcLaserBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 2000,
+    "prereqs": [
+      "Project_60cmIRArcLaserBattery",
+      "Project_40cmIRLaserBattery_RapidFire"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "40 cm IR Phaser Battery Rapid Fire",
+    "dataName": "Project_40cmIRPhaserBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 3250,
+    "prereqs": [
+      "Project_60cmIRPhaserBattery",
+      "Project_40cmIRArcLaserBattery_RapidFire"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "40 cm Green Laser Battery Rapid Fire",
+    "dataName": "Project_40cmGreenLaserBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 5500,
+    "prereqs": [
+      "Project_60cmGreenLaserBattery"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "40 cm Green Arc Laser Battery Rapid Fire",
+    "dataName": "Project_40cmGreenArcLaserBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 8000,
+    "prereqs": [
+      "Project_60cmGreenArcLaserBattery",
+      "Project_40cmGreenLaserBattery_RapidFire"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "40 cm Green Phaser Battery Rapid Fire",
+    "dataName": "Project_40cmGreenPhaserBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 15000,
+    "prereqs": [
+      "Project_60cmGreenPhaserBattery",
+      "Project_40cmGreenArcLaserBattery_RapidFire"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "40 cm UV Laser Battery Rapid Fire",
+    "dataName": "Project_40cmUVLaserBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 8000,
+    "prereqs": [
+      "Project_60cmUVLaserBattery"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "40 cm UV Arc Laser Battery Rapid Fire",
+    "dataName": "Project_40cmUVArcLaserBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 12000,
+    "prereqs": [
+      "Project_60cmUVArcLaserBattery",
+      "Project_40cmUVLaserBattery_RapidFire"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "40 cm UV Phaser Battery Rapid Fire",
+    "dataName": "Project_40cmUVPhaserBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 22000,
+    "prereqs": [
+      "Project_60cmUVPhaserBattery",
+      "Project_40cmUVArcLaserBattery_RapidFire"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Light Ion Battery - Rapid Fire",
+    "dataName": "Project_LightIonBattery_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 750,
+    "prereqs": [
+      "RapidFireParticleBatteries"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 50,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "JitterStreamBattery_I",
+    "dataName": "Project_JitterStreamBattery_I",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 5500,
+    "prereqs": [
+      "JitterStreamParticleTechnology"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "JitterStreamBattery_II",
+    "dataName": "Project_JitterStreamBattery_II",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 12000,
+    "prereqs": [
+      "Project_JitterStreamBattery_I"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "JitterStreamBattery_III",
+    "dataName": "Project_JitterStreamBattery_III",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 18000,
+    "prereqs": [
+      "Project_JitterStreamBattery_II"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "PlasmoidStreakerBattery_Mk1",
+    "dataName": "Project_PlasmoidStreakerBattery_Mk1",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 10000,
+    "prereqs": [
+      "PlasmoidStreakerPrototype"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "PlasmoidStreakerBattery_Mk2",
+    "dataName": "Project_PlasmoidStreakerBattery_Mk2",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 14000,
+    "prereqs": [
+      "Project_PlasmoidStreakerBattery_Mk1"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "PlasmoidStreakerBattery_Mk3",
+    "dataName": "Project_PlasmoidStreakerBattery_Mk3",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 20000,
+    "prereqs": [
+      "Project_PlasmoidStreakerBattery_Mk2"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "PlasmoidStreakerBattery_Mk4",
+    "dataName": "Project_PlasmoidStreakerBattery_Mk4",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 40000,
+    "prereqs": [
+      "PlasmoidStreakerAdvancedPrototype"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "PlasmoidStreakerBattery_Mk5",
+    "dataName": "Project_PlasmoidStreakerBattery_Mk5",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 60000,
+    "prereqs": [
+      "Project_PlasmoidStreakerBattery_Mk4"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "PlasmoidStreakerBattery_Mk6",
+    "dataName": "Project_PlasmoidStreakerBattery_Mk6",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 80000,
+    "prereqs": [
+      "Project_PlasmoidStreakerBattery_Mk5"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
     "maxUnlockChance": 100,
     "resourcesGranted": []
   }

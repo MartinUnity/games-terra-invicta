@@ -5,6 +5,13 @@ TITechTemplate.quote.QuantumFluxAccelerator_Mrk1="The universe is made of storie
 <align=right>Dr. Ada Sterling, Chief Engineer of QFA Development<align=left>
 TITechTemplate.description.QuantumFluxAccelerator_Mrk1=Conventional rockets rely on explosive chemical reactions to generate thrust, a method that is both inefficient and hazardous. Our research has led us to explore the power of quantum mechanics and electromagnetism for propulsion.
 
+TITechTemplate.displayName.ArmyNeuralInterface=Army Neural Interface
+TITechTemplate.summary.ArmyNeuralInterface=A revolutionary neural-link infrastructure that creates a real-time tactical mesh between commanding officers across all theaters of operation through quantum-entangled syn
+TITechTemplate.quote.ArmyNeuralInterface="When every commander's mind is synchronized through the lattice, we don't just share information—we share instinct, experience, tactical genius. The enemy faces not one mind, but a singular consciousness of war itself."
+<align=right>{submitLeader}<align=left>
+<align=right>Ensign Marla Voss, Lead Neural Interface Engineer<align=left>
+TITechTemplate.description.ArmyNeuralInterface=Traditional command structures suffer from communication delays, hierarchical bottlenecks, and the inability to share experiential combat data in real-time. The Army Neural Interface eliminates these limitations by establishing a direct neural bridge between strategic commanders using bio-synthetic implants and quantum-encrypted thought transmission protocols. Each commander node contributes tactical awareness, battlefield intuition, and strategic analysis to the collective, creating an adaptive command intelligence that responds to threats with unprecedented coordination and speed.
+
 TITechTemplate.displayName.CommanderNeuralGlobalNetwork=Commander Neural Global Network
 TITechTemplate.summary.CommanderNeuralGlobalNetwork=A revolutionary neural-link infrastructure that creates a real-time tactical mesh between commanding officers across all theaters of operation through quantum-entangled synaptic interfaces.
 TITechTemplate.quote.CommanderNeuralGlobalNetwork="When every commander's mind is synchronized through the lattice, we don't just share information—we share instinct, experience, tactical genius. The enemy faces not one mind, but a singular consciousness of war itself."
@@ -25,3 +32,60 @@ TITechTemplate.quote.PhaseShiftingCoilOverrunMethology="By synchronizing the pha
 <align=right>{submitLeader}<align=left>
 <align=right>Sentinel H. Akan, Chief Magnetic Engineer<align=left>
 TITechTemplate.description.PhaseShiftingCoilOverrunMethology=A revolutionary project that combines advanced cybernetic systems with quantum computing to enhance command and control capabilities in space warfare. By synchronizing phase-shifting coils with our cybernetic command systems, we can achieve unprecedented levels of control and responsiveness on the battlefield, allowing us to outmaneuver and outthink our enemies with unparalleled precision.
+
+TITechTemplate.displayName.AdvancedQuantumCoreFissionReactorTechnology=Advanced Quantum Core Fission Reactor Technology
+TITechTemplate.summary.AdvancedQuantumCoreFissionReactorTechnology=A revolutionary project that combines advanced cybernetic systems with quantum computing to enhance command and control capabilities in space warfare. By synchronizing phase-shifting coils with our cybernetic command systems, we can achieve unprecedented levels of control and responsiveness on the battlefield, allowing us to outmaneuver and outthink our enemies with unparalleled precision.
+TITechTemplate.quote.AdvancedQuantumCoreFissionReactorTechnology="Incorporating modular quantum cores into our fission reactors allows us to dynamically adjust power output and efficiency in real-time, giving us a strategic advantage in energy management during combat operations."
+<align=right>{submitLeader}<align=left>
+<align=right>Dr. Morales, Lead Scientist - Quantum Engineering Division<align=left>
+TITechTemplate.description.AdvancedQuantumCoreFissionReactorTechnology=An advanced version of the Quantum Core Fission Reactor Technology, featuring improved quantum core designs and advanced cooling systems to deliver higher power output and efficiency. This technology allows for dynamic adjustment of power output in real-time, providing a strategic advantage in energy management during combat operations. Suitable for small to medium-sized spacecraft.
+
+TITechTemplate.displayName.MiniaturizedMassLaserDefenseArray=Miniaturized Mass Laser Defense Array
+TITechTemplate.summary.MiniaturizedMassLaserDefenseArray=A miniaturized version of the Point Defense Laser System - has higher rate of fire, shorter range and higher energy consumption, but is more effective against small, fast-moving targets like missiles and projectiles.
+TITechTemplate.quote.MiniaturizedMassLaserDefenseArray="Not all wars are won by brute force. Sometimes, it's the precision and speed of our defenses that make all the difference. The Miniaturized Mass Laser Defense Array is our answer to the ever-evolving threats we face in space combat."
+<align=right>{submitLeader}<align=left>
+<align=right>F. Nielsen, Sergeant in The First Space Corps<align=left>
+TITechTemplate.description.MiniaturizedMassLaserDefenseArray=A miniaturized version of the Point Defense Laser System - has higher rate of fire, shorter range and higher energy consumption, but is more effective against small, fast-moving targets like missiles and projectiles.
+
+TITechTemplate.displayName.RapidFireLaserBatteries=Rapid Fire Laser Batteries
+TITechTemplate.summary.RapidFireLaserBatteries=High rate of fire laser batteries designed for rapid engagement of multiple targets, sacrificing range and energy efficiency for increased firing speed.
+TITechTemplate.quote.RapidFireLaserBatteries="Light is pretty; more light is prettier. Let there be light for all!"
+<align=right>{submitLeader}<align=left>
+<align=right>Verna Szik, Photon Enthusiast<align=left>
+TITechTemplate.description.RapidFireLaserBatteries=High rate of fire laser batteries designed for rapid engagement of multiple targets, sacrificing range and energy efficiency for increased firing speed.
+
+TITechTemplate.displayName.RapidFireParticleBatteries=Rapid Fire Particle Batteries
+TITechTemplate.summary.RapidFireParticleBatteries=High rate of fire particle batteries designed for rapid engagement of multiple targets, sacrificing range and energy efficiency for increased firing speed.
+TITechTemplate.quote.RapidFireParticleBatteries="Particles may be small, but when unleashed in rapid succession, they can create a storm of destruction. The Rapid Fire Particle Batteries are our answer to overwhelming enemy defenses with sheer volume and speed."
+<align=right>{submitLeader}<align=left>
+<align=right>Charles M. Hudson, Professional Welder Extraordinary<align=left>
+TITechTemplate.description.RapidFireParticleBatteries=High rate of fire particle batteries designed for rapid engagement of multiple targets, sacrificing range and energy efficiency for increased firing speed.
+
+TITechTemplate.displayName.JitterStreamParticleTechnology=Cyclical Jitter Protocols
+TITechTemplate.summary.JitterStreamParticleTechnology=An improvised modification to standard particle accelerators. By bypassing the magnetic stabilization ring, the weapon produces a chaotic, wide-area 'spray' of charged particles. Extremely effective at saturation fire, though the emitter tends to glow white-hot after a single burst.
+TITechTemplate.quote.JitterStreamParticleTechnology="The manual says the magnetic bottle needs to be 'stable' to prevent the beam from collapsing. I say stability is predictable! If *I* don't know where the particles are going, the Aliens definitely can't dodge 'em. We just... loosen the bolts on the focusing lens and let 'er rip. Just, uh, give it a minute to stop glowing before you fire again. We're running through a lot of gloves."
+<align=right>{submitLeader}<align=left>
+<align=right>Steve "Safety" Dillon, Lead Scavenger (Self-Appointed)<align=left>
+TITechTemplate.description.JitterStreamParticleTechnology=Standard particle weapons use heavy, expensive focusing lenses to keep the beam tight. We found that if you simply remove the stabilization dampeners entirely, the beam enters a self-sustaining wobble. This 'Jitter Stream' covers a wider area and bypasses point defenses by sheer volume of fire. Note: The 60-second cooldown is mandatory to allow the barrel to resolidify from a semi-liquid state.
+
+TITechTemplate.displayName.PlasmoidStreakerPrototype=Plasmoid Streaker Prototype
+TITechTemplate.summary.PlasmoidStreakerPrototype=A prototype weapon that generates a high-velocity stream of superheated plasma. By removing the magnetic stabilization, the plasma stream becomes erratic and covers a wider area, making it effective against point defenses. However, the weapon requires a cooldown period to allow the barrel to cool down and resolidify.
+TITechTemplate.quote.PlasmoidStreakerPrototype="Heated plasmoid streams are great for melting through armor, but they can be easily dodged if the enemy knows where they're coming from. By removing the stabilization, we create a 'Jitter Stream' that sprays plasma in a wider area, making it much harder for enemies to evade. Just remember, after firing, give it a minute to cool down before you try to fire again. Safety first!"
+<align=right>{submitLeader}<align=left>
+<align=right>Dr. Manila Hiwkans, Magna-Plasma Specialist<align=left>
+TITechTemplate.description.PlasmoidStreakerPrototype=A prototype weapon that generates a high-velocity stream of superheated plasma. By removing the magnetic stabilization, the plasma stream becomes erratic and covers a wider area, making it effective against point defenses. However, the weapon requires a cooldown period to allow the barrel to cool down and resolidify.
+
+TITechTemplate.displayName.PlasmoidStreakerAdvancedPrototype=Plasmoid Streaker Advanced Prototype
+TITechTemplate.summary.PlasmoidStreakerAdvancedPrototype=An improved prototype weapon that generates a high-velocity stream of superheated plasma. By removing the magnetic stabilization, the plasma stream becomes erratic and covers a wider area, making it effective against point defenses. However, the weapon requires a cooldown period to allow the barrel to cool down and resolidify.
+TITechTemplate.quote.PlasmoidStreakerAdvancedPrototype="The original Plasmoid Streaker was a great proof of concept, but we knew we could do better. By refining the plasma generation process and optimizing the emitter design, we've created an advanced prototype that delivers even more devastating plasma streams with improved reliability. Just remember, after firing, give it a minute to cool down before you try to fire again. Safety first!"
+<align=right>{submitLeader}<align=left>
+<align=right>Dr. Manila Hiwkans, Magna-Plasma Specialist<align=left>
+TITechTemplate.description.PlasmoidStreakerAdvancedPrototype=An improved prototype weapon that generates a high-velocity stream of superheated plasma. By removing the magnetic stabilization, the plasma stream becomes erratic and covers a wider area, making it effective against point defenses. However, the weapon requires a cooldown period to allow the barrel to cool down and resolidify. This advanced prototype features enhanced plasma generation and optimized emitter design for increased damage output and reliability.
+
+TITechTemplate.displayName.TwinspireHulls=Twinspire Hulls
+TITechTemplate.summary.TwinspireHulls=New ship hulls designed with a unique twinspire configuration, offering improved structural integrity and enhanced modularity for advanced weapon and defense systems.
+TITechTemplate.quote.TwinspireHulls="The Twinspire Hulls represent a new era in ship design. By adopting a twinspire configuration, we've been able to significantly enhance the structural integrity of our vessels while also providing greater modularity for advanced weapon and defense systems. This design allows us to adapt to a wider range of combat scenarios and gives us a strategic edge in space warfare."
+<align=right>{submitLeader}<align=left>
+<align=right>Charles Von Dewmist, Anime Mecha Fan<align=left>
+TITechTemplate.description.TwinspireHulls=New ship hulls designed with a unique twinspire configuration, offering improved structural integrity and enhanced modularity for advanced weapon and defense systems. The twinspire design allows for better distribution of stress and damage, making our ships more resilient in combat while also providing flexible mounting points for a variety of modules.
+

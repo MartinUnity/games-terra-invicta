@@ -21,14 +21,27 @@
     "monthlyIncome_Money": -0.2,
     "missionControl": 0.25,
     "baseConstructionTime_days": 30,
-    "shipyardyOffset": [0, 0, 0],
-    "modelResource": ["ships/Escort", "ships/Escort_1"],
+    "shipyardyOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelResource": [
+      "ships/Escort",
+      "ships/Escort_1"
+    ],
     "combatUIpath": [
       "ui_spacecombat/OBJ_battle_earth_ES",
       "ui_spacecombat/OBJ_battle_earth_ES_ALT"
     ],
-    "path1": ["earth_ES/", "earth_ES_ALT/"],
-    "path2": ["OBJ_battle_earth_ES", "OBJ_battle_earth_ES_ALT"],
+    "path1": [
+      "earth_ES/",
+      "earth_ES_ALT/"
+    ],
+    "path2": [
+      "OBJ_battle_earth_ES",
+      "OBJ_battle_earth_ES_ALT"
+    ],
     "requiredProjectName": "Project_Warships",
     "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -113,14 +126,27 @@
     "monthlyIncome_Money": -0.4,
     "missionControl": 1,
     "baseConstructionTime_days": 40,
-    "shipyardyOffset": [0, 0, 0],
-    "modelResource": ["ships/Escort", "ships/Escort_1"],
+    "shipyardyOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelResource": [
+      "ships/Escort",
+      "ships/Escort_1"
+    ],
     "combatUIpath": [
       "ui_spacecombat/OBJ_battle_earth_ES",
       "ui_spacecombat/OBJ_battle_earth_ES_ALT"
     ],
-    "path1": ["earth_ES/", "earth_ES_ALT/"],
-    "path2": ["OBJ_battle_earth_ES", "OBJ_battle_earth_ES_ALT"],
+    "path1": [
+      "earth_ES/",
+      "earth_ES_ALT/"
+    ],
+    "path2": [
+      "OBJ_battle_earth_ES",
+      "OBJ_battle_earth_ES_ALT"
+    ],
     "requiredProjectName": "Project_JunkrakerShip",
     "weightedBuildMaterials": {
       "volatiles": 0.1,
@@ -189,6 +215,113 @@
     ]
   },
   {
+    "dataName": "Twinspire_Mk_I",
+    "friendlyName": "Twinspire Mk I",
+    "noseHardpoints": 0,
+    "hullHardpoints": 2,
+    "internalModules": 2,
+    "consTier": 1,
+    "maxOfficers": 2,
+    "length_m": 40,
+    "toylength_cm": 8.1,
+    "width_m": 8,
+    "volume": 1024,
+    "thrusterMultiplier": 1,
+    "structuralIntegrity": 8,
+    "mass_tons": 102,
+    "crew": 8,
+    "alien": false,
+    "noShipyardBuild": false,
+    "simpleHull": true,
+    "monthlyIncome_Money": -0.55,
+    "missionControl": 1,
+    "baseConstructionTime_days": 45,
+    "shipyardyOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelResource": [
+      "ships/Destroyer",
+      "ships/Destroyer_1"
+    ],
+    "combatUIpath": [
+      "ui_spacecombat/OBJ_battle_earth_DES",
+      "ui_spacecombat/OBJ_battle_earth_DES_ALT"
+    ],
+    "path1": [
+      "earth_DES/",
+      "earth_DES_ALT/"
+    ],
+    "path2": [
+      "OBJ_battle_earth_DES",
+      "OBJ_battle_earth_DES_ALT"
+    ],
+    "requiredProjectName": "Project_Twinspire_Mk_II",
+    "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.7,
+      "nobleMetals": 0.2
+    },
+    "shipModuleSlots": [
+      {
+        "moduleSlotType": "Drive",
+        "x": 1,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "PowerPlant",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Utility",
+        "x": 4,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Radiator",
+        "x": 3,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "TailArmor",
+        "x": 1,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "LateralArmor",
+        "x": 4,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "NoseArmor",
+        "x": 7,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "Utility",
+        "x": 5,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "HullHardPoint",
+        "x": 6,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "HullHardPoint",
+        "x": 7,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Propellant",
+        "x": 1,
+        "y": 0
+      }
+    ]
+  },
+  {
     "dataName": "Twinspire_Mk_II",
     "friendlyName": "Twinspire Mk II",
     "noseHardpoints": 2,
@@ -210,14 +343,27 @@
     "monthlyIncome_Money": -0.65,
     "missionControl": 1,
     "baseConstructionTime_days": 45,
-    "shipyardyOffset": [0, 0, 0],
-    "modelResource": ["ships/Destroyer", "ships/Destroyer_1"],
+    "shipyardyOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelResource": [
+      "ships/Destroyer",
+      "ships/Destroyer_1"
+    ],
     "combatUIpath": [
       "ui_spacecombat/OBJ_battle_earth_DES",
       "ui_spacecombat/OBJ_battle_earth_DES_ALT"
     ],
-    "path1": ["earth_DES/", "earth_DES_ALT/"],
-    "path2": ["OBJ_battle_earth_DES", "OBJ_battle_earth_DES_ALT"],
+    "path1": [
+      "earth_DES/",
+      "earth_DES_ALT/"
+    ],
+    "path2": [
+      "OBJ_battle_earth_DES",
+      "OBJ_battle_earth_DES_ALT"
+    ],
     "requiredProjectName": "Project_Twinspire_Mk_II",
     "weightedBuildMaterials": {
       "volatiles": 0.1,

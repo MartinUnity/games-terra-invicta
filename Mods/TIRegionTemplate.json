@@ -19,18 +19,60 @@
     "acc_asi": "EURO",
     "acc_eas": "EURO",
     "acc_eur": "EURO",
-    "afrPersonal": ["Ethiopian"],
-    "afrFamily": ["Ethiopian"],
-    "afrWeight": [1],
-    "asiPersonal": ["Muslim", "Kurdish", "Hindi"],
-    "asiFamily": ["Muslim", "Kurdish", "Hindi"],
-    "asiWeight": [3, 2, 1],
-    "easPersonal": ["Vietnamese", "Chinese"],
-    "easFamily": ["Vietnamese", "Chinese"],
-    "easWeight": [2, 1],
-    "eurPersonal": ["Danish", "Polish", "Romanian", "German"],
-    "eurFamily": ["Danish", "Polish", "Romanian", "German"],
-    "eurWeight": [86, 1, 1, 1],
+    "afrPersonal": [
+      "Ethiopian"
+    ],
+    "afrFamily": [
+      "Ethiopian"
+    ],
+    "afrWeight": [
+      1
+    ],
+    "asiPersonal": [
+      "Muslim",
+      "Kurdish",
+      "Hindi"
+    ],
+    "asiFamily": [
+      "Muslim",
+      "Kurdish",
+      "Hindi"
+    ],
+    "asiWeight": [
+      3,
+      2,
+      1
+    ],
+    "easPersonal": [
+      "Vietnamese",
+      "Chinese"
+    ],
+    "easFamily": [
+      "Vietnamese",
+      "Chinese"
+    ],
+    "easWeight": [
+      2,
+      1
+    ],
+    "eurPersonal": [
+      "Danish",
+      "Polish",
+      "Romanian",
+      "German"
+    ],
+    "eurFamily": [
+      "Danish",
+      "Polish",
+      "Romanian",
+      "German"
+    ],
+    "eurWeight": [
+      86,
+      1,
+      1,
+      1
+    ],
     "illustrationPathStrs": [
       "illustrations/illus_Denmark_0",
       "illustrations/illus_Denmark_1",
@@ -57,12 +99,24 @@
     "language": "ENG",
     "acc_asi": "AMER",
     "acc_eur": "EURO",
-    "asiPersonal": ["Danish"],
-    "asiFamily": ["Danish"],
-    "asiWeight": [1],
-    "eurPersonal": ["Danish"],
-    "eurFamily": ["Danish"],
-    "eurWeight": [1],
+    "asiPersonal": [
+      "Danish"
+    ],
+    "asiFamily": [
+      "Danish"
+    ],
+    "asiWeight": [
+      1
+    ],
+    "eurPersonal": [
+      "Danish"
+    ],
+    "eurFamily": [
+      "Danish"
+    ],
+    "eurWeight": [
+      1
+    ],
     "illustrationPathStrs": [
       "illustrations/illus_Greenland_0",
       "illustrations/illus_Greenland_1",

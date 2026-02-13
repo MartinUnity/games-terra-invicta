@@ -952,9 +952,13 @@
     "thrustCap": 26,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -974,9 +978,13 @@
     "thrustCap": 26,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -996,9 +1004,13 @@
     "thrustCap": 26,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1018,9 +1030,13 @@
     "thrustCap": 26,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1040,9 +1056,13 @@
     "thrustCap": 26,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1062,12 +1082,15 @@
     "thrustCap": 26,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
-
   {
     "dataName": "QuantumFluxSingularityDrive_Mk2x1",
     "friendlyName": "Quantum Flux Singularity Drive Mk II x1",
@@ -1085,9 +1108,13 @@
     "thrustCap": 28,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1107,9 +1134,13 @@
     "thrustCap": 28,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1129,9 +1160,13 @@
     "thrustCap": 28,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1151,9 +1186,13 @@
     "thrustCap": 28,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1173,9 +1212,13 @@
     "thrustCap": 28,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1195,12 +1238,15 @@
     "thrustCap": 28,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
-
   {
     "dataName": "QuantumFluxSingularityDrive_Mk3x1",
     "friendlyName": "Quantum Flux Singularity Drive Mk III x1",
@@ -1218,9 +1264,13 @@
     "thrustCap": 35,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1240,9 +1290,13 @@
     "thrustCap": 35,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1262,9 +1316,13 @@
     "thrustCap": 35,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1284,9 +1342,13 @@
     "thrustCap": 35,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1306,9 +1368,13 @@
     "thrustCap": 35,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   },
   {
@@ -1328,9 +1394,13 @@
     "thrustCap": 35,
     "cooling": "Closed",
     "powerGen": "DriveIdle",
-    "weightedBuildMaterials": { "metals": 1 },
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
     "propellant": "Hydrogen",
-    "perTankPropellantMaterials": { "water": 1 },
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
   }
 ]
