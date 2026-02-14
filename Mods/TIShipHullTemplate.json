@@ -427,5 +427,224 @@
         "y": 0
       }
     ]
+  },
+  {
+    "dataName": "Twinspire_Mk_III",
+    "friendlyName": "Twinspire Mk III",
+    "noseHardpoints": 0,
+    "hullHardpoints": 4,
+    "internalModules": 1,
+    "consTier": 1,
+    "maxOfficers": 2,
+    "length_m": 40,
+    "toylength_cm": 8.1,
+    "width_m": 8,
+    "volume": 1224,
+    "thrusterMultiplier": 1,
+    "structuralIntegrity": 8,
+    "mass_tons": 122,
+    "crew": 10,
+    "alien": false,
+    "noShipyardBuild": false,
+    "simpleHull": true,
+    "monthlyIncome_Money": -1,
+    "missionControl": 1,
+    "baseConstructionTime_days": 65,
+    "shipyardyOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelResource": [
+      "ships/Destroyer",
+      "ships/Destroyer_1"
+    ],
+    "combatUIpath": [
+      "ui_spacecombat/OBJ_battle_earth_DES",
+      "ui_spacecombat/OBJ_battle_earth_DES_ALT"
+    ],
+    "path1": [
+      "earth_DES/",
+      "earth_DES_ALT/"
+    ],
+    "path2": [
+      "OBJ_battle_earth_DES",
+      "OBJ_battle_earth_DES_ALT"
+    ],
+    "requiredProjectName": "Project_Twinspire_Mk_III",
+    "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.7,
+      "nobleMetals": 0.2
+    },
+    "shipModuleSlots": [
+      {
+        "moduleSlotType": "Drive",
+        "x": 1,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "PowerPlant",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Utility",
+        "x": 4,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Radiator",
+        "x": 3,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "TailArmor",
+        "x": 1,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "LateralArmor",
+        "x": 4,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "NoseArmor",
+        "x": 7,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "HullHardPoint",
+        "x": 5,
+        "y": 2
+      },
+      {
+        "moduleSlotType": "HullHardPoint",
+        "x": 5,
+        "y": 4
+      },
+      {
+        "moduleSlotType": "HullHardPoint",
+        "x": 6,
+        "y": 2
+      },
+      {
+        "moduleSlotType": "HullHardPoint",
+        "x": 6,
+        "y": 4
+      },
+      {
+        "moduleSlotType": "Propellant",
+        "x": 1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "dataName": "Twinspire_Mk_IV",
+    "friendlyName": "Twinspire Mk IV",
+    "noseHardpoints": 3,
+    "hullHardpoints": 0,
+    "internalModules": 1,
+    "consTier": 1,
+    "maxOfficers": 2,
+    "length_m": 40,
+    "toylength_cm": 8.1,
+    "width_m": 8,
+    "volume": 1424,
+    "thrusterMultiplier": 1,
+    "structuralIntegrity": 8,
+    "mass_tons": 142,
+    "crew": 12,
+    "alien": false,
+    "noShipyardBuild": false,
+    "simpleHull": true,
+    "monthlyIncome_Money": -1,
+    "missionControl": 1,
+    "baseConstructionTime_days": 65,
+    "shipyardyOffset": [
+      0,
+      0,
+      0
+    ],
+    "modelResource": [
+      "ships/Destroyer",
+      "ships/Destroyer_1"
+    ],
+    "combatUIpath": [
+      "ui_spacecombat/OBJ_battle_earth_DES",
+      "ui_spacecombat/OBJ_battle_earth_DES_ALT"
+    ],
+    "path1": [
+      "earth_DES/",
+      "earth_DES_ALT/"
+    ],
+    "path2": [
+      "OBJ_battle_earth_DES",
+      "OBJ_battle_earth_DES_ALT"
+    ],
+    "requiredProjectName": "Project_Twinspire_Mk_IV",
+    "weightedBuildMaterials": {
+      "volatiles": 0.1,
+      "metals": 0.8,
+      "nobleMetals": 0.1
+    },
+    "shipModuleSlots": [
+      {
+        "moduleSlotType": "Drive",
+        "x": 1,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "PowerPlant",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Utility",
+        "x": 4,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Radiator",
+        "x": 3,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "TailArmor",
+        "x": 1,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "LateralArmor",
+        "x": 4,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "NoseArmor",
+        "x": 7,
+        "y": 6
+      },
+      {
+        "moduleSlotType": "NoseHardPoint",
+        "x": 5,
+        "y": 2
+      },
+      {
+        "moduleSlotType": "NoseHardPoint",
+        "x": 5,
+        "y": 4
+      },
+      {
+        "moduleSlotType": "NoseHardPoint",
+        "x": 6,
+        "y": 3
+      },
+      {
+        "moduleSlotType": "Propellant",
+        "x": 1,
+        "y": 0
+      }
+    ]
   }
 ]

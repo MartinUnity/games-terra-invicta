@@ -19,10 +19,15 @@ TILaserWeaponTemplate.description.40cmGreenArcLaserBattery_RapidFire=A rapid-fir
 TILaserWeaponTemplate.displayName.40cmGreenPhaserBattery_RapidFire=40 cm Green Phaser Battery Rapid Fire
 TILaserWeaponTemplate.description.40cmGreenPhaserBattery_RapidFire=A rapid-fire green phaser battery with enhanced firing rate and efficiency.
 
-TILaserWeaponTemplate.displayName.40cmUVLaserBattery_RapidFire=40 cm UV Phaser Battery Rapid Fire
-TILaserWeaponTemplate.description.40cmUVLaserBattery_RapidFire=A rapid-fire ultraviolet phaser battery with enhanced firing rate and efficiency.
+TILaserWeaponTemplate.displayName.40cmUVLaserBattery_RapidFire=40 cm UV Laser Battery Rapid Fire
+TILaserWeaponTemplate.description.40cmUVLaserBattery_RapidFire=A rapid-fire ultraviolet laser battery with enhanced firing rate and efficiency.
 TILaserWeaponTemplate.displayName.40cmUVArcLaserBattery_RapidFire=40 cm UV Arc Laser Battery Rapid Fire
 TILaserWeaponTemplate.description.40cmUVArcLaserBattery_RapidFire=A rapid-fire ultraviolet arc laser battery with enhanced firing rate and efficiency.
 TILaserWeaponTemplate.displayName.40cmUVPhaserBattery_RapidFire=40 cm UV Phaser Battery Rapid Fire
 TILaserWeaponTemplate.description.40cmUVPhaserBattery_RapidFire=A rapid-fire ultraviolet phaser battery with enhanced firing rate and efficiency.
+
+TILaserWeaponTemplate.displayName.2048cmBaseVioletLaserCannon=2048 cm Gigantic Base Defense only Violet Laser Cannon
+TILaserWeaponTemplate.description.2048cmBaseVioletLaserCannon=A gigantic violet laser cannon designed for base defense, capable of firing powerful laser beams to protect against incoming threats. This weapon is a formidable addition to any planetary defense system, providing unparalleled firepower and range to safeguard critical infrastructure and population centers from spaceborne attacks.
+TILaserWeaponTemplate.displayName.4096cmBaseVioletLaserCannon=4096 cm Gigantic Base Defense only Violet Laser Cannon
+TILaserWeaponTemplate.description.4096cmBaseVioletLaserCannon=A gigantic violet laser cannon designed for base defense, capable of firing powerful laser beams to protect against incoming threats. This weapon is a formidable addition to any planetary defense system, providing unparalleled firepower and range to safeguard critical infrastructure and population centers from spaceborne attacks.
 

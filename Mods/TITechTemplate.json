@@ -174,5 +174,17 @@
     "prereqs": [
       "DeepSpacePropulsionConcepts"
     ]
+  },
+  {
+    "friendlyName": "Advanced Base Defense Systems",
+    "dataName": "AdvancedBaseDefenseSystems",
+    "techCategory": "Materials",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 15000,
+    "prereqs": [
+      "SpaceAssaultDoctrine"
+    ]
   }
 ]

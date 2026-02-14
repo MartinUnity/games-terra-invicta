@@ -2166,6 +2166,48 @@
     "resourcesGranted": []
   },
   {
+    "dataName": "Project_Twinspire_Mk_III",
+    "friendlyName": "Twinspire Mk III",
+    "description": "A Twin Nosed vessel with a single engine. Very similar to the Mk II with just 1 utility and a single 4x turret. Still a far cry from modern designs, but a solid step up from the Mk II.",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 12750,
+    "prereqs": [
+      "Project_Twinspire_Mk_II",
+      "SpaceNavies"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Twinspire_Mk_IV",
+    "friendlyName": "Twinspire Mk IV",
+    "description": "A Twin Nosed vessel with a single engine. An upgrade from the Mk II with 3x Nose turrets and a single utility. Still a far cry from modern designs, but a solid step up from the Mk II.",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 25000,
+    "prereqs": [
+      "Project_Twinspire_Mk_III",
+      "AdvancedFissionSystems"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
     "friendlyName": "Automated Refinery",
     "dataName": "Project_AutomatedRefinery",
     "techCategory": "InformationScience",
@@ -3433,6 +3475,49 @@
     "resourcesGranted": []
   },
   {
+    "friendlyName": "2048 cm Base Violet Laser Cannon",
+    "dataName": "Project_2048cmBaseVioletLaserCannon",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 9000,
+    "prereqs": [
+      "AdvancedBaseDefenseSystems",
+      "MoltenCoreFissionSystems"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "4096 cm Base Violet Laser Cannon",
+    "dataName": "Project_4096cmBaseVioletLaserCannon",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 32000,
+    "prereqs": [
+      "Project_2048cmBaseVioletLaserCannon",
+      "ArcLasers",
+      "Tokamaks"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
     "friendlyName": "Light Ion Battery - Rapid Fire",
     "dataName": "Project_LightIonBattery_RapidFire",
     "techCategory": "MilitaryScience",
@@ -3453,7 +3538,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "JitterStreamBattery_I",
+    "friendlyName": "JitterStreamBattery I",
     "dataName": "Project_JitterStreamBattery_I",
     "techCategory": "MilitaryScience",
     "AI_techRole": "None",
@@ -3473,7 +3558,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "JitterStreamBattery_II",
+    "friendlyName": "JitterStreamBattery II",
     "dataName": "Project_JitterStreamBattery_II",
     "techCategory": "MilitaryScience",
     "AI_techRole": "None",
@@ -3493,7 +3578,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "JitterStreamBattery_III",
+    "friendlyName": "JitterStreamBattery III",
     "dataName": "Project_JitterStreamBattery_III",
     "techCategory": "MilitaryScience",
     "AI_techRole": "None",
@@ -3513,7 +3598,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "PlasmoidStreakerBattery_Mk1",
+    "friendlyName": "Plasmoid Streaker Battery Mk1",
     "dataName": "Project_PlasmoidStreakerBattery_Mk1",
     "techCategory": "MilitaryScience",
     "AI_techRole": "None",
@@ -3533,7 +3618,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "PlasmoidStreakerBattery_Mk2",
+    "friendlyName": "Plasmoid Streaker Battery Mk2",
     "dataName": "Project_PlasmoidStreakerBattery_Mk2",
     "techCategory": "MilitaryScience",
     "AI_techRole": "None",
@@ -3553,7 +3638,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "PlasmoidStreakerBattery_Mk3",
+    "friendlyName": "Plasmoid Streaker Battery Mk3",
     "dataName": "Project_PlasmoidStreakerBattery_Mk3",
     "techCategory": "MilitaryScience",
     "AI_techRole": "None",
@@ -3573,7 +3658,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "PlasmoidStreakerBattery_Mk4",
+    "friendlyName": "Plasmoid Streaker Battery Mk4",
     "dataName": "Project_PlasmoidStreakerBattery_Mk4",
     "techCategory": "MilitaryScience",
     "AI_techRole": "None",
@@ -3593,7 +3678,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "PlasmoidStreakerBattery_Mk5",
+    "friendlyName": "Plasmoid Streaker Battery Mk5",
     "dataName": "Project_PlasmoidStreakerBattery_Mk5",
     "techCategory": "MilitaryScience",
     "AI_techRole": "None",
@@ -3613,7 +3698,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "PlasmoidStreakerBattery_Mk6",
+    "friendlyName": "Plasmoid Streaker Battery Mk6",
     "dataName": "Project_PlasmoidStreakerBattery_Mk6",
     "techCategory": "MilitaryScience",
     "AI_techRole": "None",
@@ -3622,6 +3707,71 @@
     "researchCost": 80000,
     "prereqs": [
       "Project_PlasmoidStreakerBattery_Mk5"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Phased Plasma Cannon Mk1",
+    "dataName": "Project_PhasedPlasmaCannon_Mk1",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 60000,
+    "prereqs": [
+      "InertialPlasmaConfinementTechniques",
+      "PhasedArrayLasers",
+      "NuclearFusioninSpace",
+      "Ultracapacitors"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Phased Plasma Cannon Mk2",
+    "dataName": "Project_PhasedPlasmaCannon_Mk2",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 90000,
+    "prereqs": [
+      "HeavyPulsedPropulsion",
+      "Project_PhasedPlasmaCannon_Mk1"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Phased Plasma Cannon Mk3",
+    "dataName": "Project_PhasedPlasmaCannon_Mk3",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 130000,
+    "prereqs": [
+      "Project_PhasedPlasmaCannon_Mk2",
+      "AneutronicFusion"
     ],
     "effects": [],
     "oneTimeGlobally": false,

@@ -89,3 +89,10 @@ TITechTemplate.quote.TwinspireHulls="The Twinspire Hulls represent a new era in 
 <align=right>Charles Von Dewmist, Anime Mecha Fan<align=left>
 TITechTemplate.description.TwinspireHulls=New ship hulls designed with a unique twinspire configuration, offering improved structural integrity and enhanced modularity for advanced weapon and defense systems. The twinspire design allows for better distribution of stress and damage, making our ships more resilient in combat while also providing flexible mounting points for a variety of modules.
 
+TITechTemplate.displayName.AdvancedBaseDefenseSystems=Certified 'Gigantuan' Siege Optics
+TITechTemplate.summary.AdvancedBaseDefenseSystems=Standardizes the construction of defense arrays using 20-meter and 40-meter apertures. These systems are massive, immobile, and officially rated as "Structural Hazards," but they offer the only reliable way to vaporize high-tonnage targets from the comfort of a habitat.
+TITechTemplate.quote.AdvancedBaseDefenseSystems="We submitted the forms. We checked the boxes. Yes, the lens is heavier than a battleship. Yes, the cooling system leaks liquid nitrogen into the hallway. But technically, nowhere in the regulations does it say a 'Point Defense' weapon can't be the size of a skyscraper. Stamp the form, Steve. We have aliens to melt."
+<align=right>{submitLeader}<align=left>
+<align=right>Laight P. Hoton, Chief of "Stationary" Gunnery<align=left>
+<align=right>(Approved by Safety Officer S. Dillon)<align=left>
+TITechTemplate.description.AdvancedBaseDefenseSystems=By abandoning all pretense of mobility, we can mount 2048cm and 4096cm laser arrays directly into the station's spine. These 'Magnifying Glasses of Doom' require gigawatts of power and add over a million tons of mass to the structure, making them impossible to mount on anything with an engine. However, they solve the problem of Station Defenses being ignored by the enemy. Now, the station ignores the enemy.
