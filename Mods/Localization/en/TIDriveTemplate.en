@@ -69,3 +69,51 @@ TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk3x4=Quantum Flux Singu
 TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk3x5=Quantum Flux Singularity Drive Mk III x5
 TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk3x6=Quantum Flux Singularity Drive Mk III x6
 
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk4x1=Quantum Flux Singularity Drive Mk IV x1
+TIDriveTemplate.description.QuantumFluxSingularityDrive_Mk4x1=An advanced singularity drive design with enhanced stability and power handling, delivering exceptional thrust and performance for high-end spacecraft.
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk4x2=Quantum Flux Singularity Drive Mk IV x2
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk4x3=Quantum Flux Singularity Drive Mk IV x3
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk4x4=Quantum Flux Singularity Drive Mk IV x4
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk4x5=Quantum Flux Singularity Drive Mk IV x5
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk4x6=Quantum Flux Singularity Drive Mk IV x6
+
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk5x1=Quantum Flux Singularity Drive Mk V x1
+TIDriveTemplate.description.QuantumFluxSingularityDrive_Mk5x1=A cutting-edge singularity drive implementation that pushes the boundaries of thrust and exhaust velocity for top-tier spacecraft.
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk5x2=Quantum Flux Singularity Drive Mk V x2
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk5x3=Quantum Flux Singularity Drive Mk V x3
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk5x4=Quantum Flux Singularity Drive Mk V x4
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk5x5=Quantum Flux Singularity Drive Mk V x5
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk5x6=Quantum Flux Singularity Drive Mk V x6
+
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk6x1=Quantum Flux Singularity Drive Mk VI x1
+TIDriveTemplate.description.QuantumFluxSingularityDrive_Mk6x1=The ultimate quantum flux singularity drive implementation; exceptional thrust and performance prior to fusion drives.
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk6x2=Quantum Flux Singularity Drive Mk VI x2
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk6x3=Quantum Flux Singularity Drive Mk VI x3
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk6x4=Quantum Flux Singularity Drive Mk VI x4
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk6x5=Quantum Flux Singularity Drive Mk VI x5
+TIDriveTemplate.displayName.QuantumFluxSingularityDrive_Mk6x6=Quantum Flux Singularity Drive Mk VI x6
+
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk1x1=Quantum Cascade Drive Mk I x1
+TIDriveTemplate.description.QuantumCascadeDrive_Mk1x1=A high-thrust electromagnetic drive optimized for rapid inner planet transit. Sacrifices fuel efficiency for powerful acceleration on short-distance routes between established supply stations.
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk1x2=Quantum Cascade Drive Mk I x2
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk1x3=Quantum Cascade Drive Mk I x3
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk1x4=Quantum Cascade Drive Mk I x4
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk1x5=Quantum Cascade Drive Mk I x5
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk1x6=Quantum Cascade Drive Mk I x6
+
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk2x1=Quantum Cascade Drive Mk II x1
+TIDriveTemplate.description.QuantumCascadeDrive_Mk2x1=An improved cascade drive with enhanced thrust and moderately better efficiency, delivering faster transit times for inner system logistics and rapid response missions.
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk2x2=Quantum Cascade Drive Mk II x2
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk2x3=Quantum Cascade Drive Mk II x3
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk2x4=Quantum Cascade Drive Mk II x4
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk2x5=Quantum Cascade Drive Mk II x5
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk2x6=Quantum Cascade Drive Mk II x6
+
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk3x1=Quantum Cascade Drive Mk III x1
+TIDriveTemplate.description.QuantumCascadeDrive_Mk3x1=An advanced cascade drive featuring exceptional thrust capabilities for rapid Earth-Mars-Venus-Mercury transit. The premier choice for high-speed inner system fleet operations where refueling infrastructure is available.
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk3x2=Quantum Cascade Drive Mk III x2
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk3x3=Quantum Cascade Drive Mk III x3
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk3x4=Quantum Cascade Drive Mk III x4
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk3x5=Quantum Cascade Drive Mk III x5
+TIDriveTemplate.displayName.QuantumCascadeDrive_Mk3x6=Quantum Cascade Drive Mk III x6
+

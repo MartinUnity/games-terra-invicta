@@ -5,6 +5,34 @@ TITechTemplate.quote.QuantumFluxAccelerator_Mrk1="The universe is made of storie
 <align=right>Dr. Ada Sterling, Chief Engineer of QFA Development<align=left>
 TITechTemplate.description.QuantumFluxAccelerator_Mrk1=Conventional rockets rely on explosive chemical reactions to generate thrust, a method that is both inefficient and hazardous. Our research has led us to explore the power of quantum mechanics and electromagnetism for propulsion.
 
+TITechTemplate.displayName.QuantumFluxSingularityDrive=Quantum Flux Singularity Drive
+TITechTemplate.summary.QuantumFluxSingularityDrive=An experimental singularity-coupled drive that harnesses controlled micro-singularities to boost thrust and exhaust velocity with excellent efficiency at small scales.
+TITechTemplate.quote.QuantumFluxSingularityDrive="Conventional rockets rely on explosive chemical reactions to generate thrust, a method that is both inefficient and hazardous. Our research has led us to explore the power of quantum mechanics and electromagnetism for propulsion."
+<align=right>{submitLeader}<align=left>
+<align=right>Jason F. Wornshouse, Master Diciple of Gerard Hanson, Quantum Flux Originator<align=left>
+TITechTemplate.description.QuantumFluxSingularityDrive=By coupling a quantum flux accelerator with a controlled micro-singularity generator, we can create a propulsion system that significantly enhances thrust and exhaust velocity. The singularity acts as a gravitational well that accelerates propellant ions to extreme speeds, while the quantum flux accelerator provides the necessary energy input. This drive is particularly effective for small to medium-sized spacecraft, offering a new frontier in non-fusion propulsion technology.
+
+TITechTemplate.displayName.QuantumCascadeDrive_Mk1=Quantum Cascade Drive Mk I
+TITechTemplate.summary.QuantumCascadeDrive_Mk1=A high-thrust electromagnetic drive optimized for rapid inner planet transit, trading fuel efficiency for powerful acceleration on short-range routes.
+TITechTemplate.quote.QuantumCascadeDrive_Mk1="Sometimes speed matters more than elegance. We stripped out half the efficiency coils, doubled the thrust multipliers, and bolted on what salvage we could find. Sure, it burns fuel like a bonfire, but it'll get you from Earth to Mars before the opposition even clears orbit. Just make sure there's a refueling depot on the other side."
+<align=right>{submitLeader}<align=left>
+<align=right>Marcus "Hotshot" Rivera, Scavenger Fleet Propulsion Chief<align=left>
+TITechTemplate.description.QuantumCascadeDrive_Mk1=The Cascade Drive represents a radical departure from traditional high-efficiency propulsion philosophy. By sacrificing exhaust velocity and fuel economy, we achieve thrust outputs that dwarf conventional electromagnetic drives of similar mass. The cascading plasma acceleration stages—cobbled together from surplus accelerator components—create a brute-force propulsion solution ideal for the inner solar system where refueling infrastructure is readily available. This is not a drive for exploration; it's a drive for logistics, rapid response, and getting heavy cargo where it needs to be, fast.
+
+TITechTemplate.displayName.QuantumCascadeDrive_Mk2=Quantum Cascade Drive Mk II
+TITechTemplate.summary.QuantumCascadeDrive_Mk2=An improved cascade drive with enhanced thrust and moderately better efficiency, delivering faster transit times for inner system operations.
+TITechTemplate.quote.QuantumCascadeDrive_Mk2="The Mk I proved the concept—now we refine it. Better magnetic containment, optimized cascade timing, and actual engineering drawings instead of napkin sketches. We've squeezed another 45% thrust out of the same mass budget and even managed to reduce fuel consumption slightly. It's still a fuel hog, but at least now it's a *sophisticated* fuel hog."
+<align=right>{submitLeader}<align=left>
+<align=right>Dr. Keiko Tanaka, Advanced Propulsion Systems Division<align=left>
+TITechTemplate.description.QuantumCascadeDrive_Mk2=The Mk II represents the maturation of cascade drive technology. By implementing proper containment field harmonics and synchronized plasma injection, we've achieved substantial performance improvements while maintaining the fundamental high-thrust, low-efficiency design philosophy. The enhanced magnetic bottle design reduces propellant waste, and improved cooling systems allow for sustained high-power operation without structural degradation. This drive is the workhorse of inner system fleet operations, equally suited to military rapid deployment and commercial freight logistics.
+
+TITechTemplate.displayName.QuantumCascadeDrive_Mk3=Quantum Cascade Drive Mk III
+TITechTemplate.summary.QuantumCascadeDrive_Mk3=An advanced cascade drive featuring exceptional thrust capabilities for rapid Earth-Mars-Venus-Mercury transit, the premier choice for high-speed inner system operations.
+TITechTemplate.quote.QuantumCascadeDrive_Mk3="This is it—the pinnacle of brute-force propulsion before you start talking fusion. We've pushed the cascade architecture to its theoretical limits. The thrust output is frankly absurd for an electromagnetic drive, and the exhaust velocity is actually respectable now. Earth to Mercury in under three weeks with full cargo load. The supply chain just collapsed into a straight line."
+<align=right>{submitLeader}<align=left>
+<align=right>Admiral Chen Wei, Inner System Fleet Command<align=left>
+TITechTemplate.description.QuantumCascadeDrive_Mk3=The Mk III represents the perfected cascade drive design—the absolute limit of non-fusion electromagnetic propulsion for short-range, high-thrust applications. By implementing quantum-stabilized plasma cascades and adaptive magnetic lensing, we've achieved thrust levels approaching early fusion drives while maintaining the operational simplicity and rapid refueling capability of chemical rockets. The drive's power requirements are substantial, but with modern compact reactors, it's no longer prohibitive. This is the dominant propulsion system for inner system dominance, whether military or logistical. When every hour counts, nothing else comes close.
+
 TITechTemplate.displayName.ArmyNeuralInterface=Army Neural Interface
 TITechTemplate.summary.ArmyNeuralInterface=A revolutionary neural-link infrastructure that creates a real-time tactical mesh between commanding officers across all theaters of operation through quantum-entangled syn
 TITechTemplate.quote.ArmyNeuralInterface="When every commander's mind is synchronized through the lattice, we don't just share information—we share instinct, experience, tactical genius. The enemy faces not one mind, but a singular consciousness of war itself."
@@ -96,3 +124,4 @@ TITechTemplate.quote.AdvancedBaseDefenseSystems="We submitted the forms. We chec
 <align=right>Laight P. Hoton, Chief of "Stationary" Gunnery<align=left>
 <align=right>(Approved by Safety Officer S. Dillon)<align=left>
 TITechTemplate.description.AdvancedBaseDefenseSystems=By abandoning all pretense of mobility, we can mount 2048cm and 4096cm laser arrays directly into the station's spine. These 'Magnifying Glasses of Doom' require gigawatts of power and add over a million tons of mass to the structure, making them impossible to mount on anything with an engine. However, they solve the problem of Station Defenses being ignored by the enemy. Now, the station ignores the enemy.
+

@@ -268,8 +268,8 @@
         "warheadMass_kg": 0.875,
         "weightedBuildMaterials": {
             "volatiles": 0.1,
-            "metals": 0.5,
-            "nobleMetals": 0.4
+            "metals": 0.4,
+            "nobleMetals": 0.5
         },
         "iconResource": "shipbuildericons/ICO_PlasmaCannonMk2",
         "modelResource": "shipweapons/large_plasma_cannon",
@@ -303,8 +303,8 @@
         "warheadMass_kg": 0.90,
         "weightedBuildMaterials": {
             "volatiles": 0.1,
-            "metals": 0.5,
-            "nobleMetals": 0.4
+            "metals": 0.3,
+            "nobleMetals": 0.6
         },
         "iconResource": "shipbuildericons/ICO_PlasmaCannonMk3",
         "modelResource": "shipweapons/large_plasma_cannon",

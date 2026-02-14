@@ -13,6 +13,59 @@
     ]
   },
   {
+    "friendlyName": "Quantum Flux Singularity Drive",
+    "dataName": "QuantumFluxSingularityDrive",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 50000,
+    "prereqs": [
+      "QuantumFluxAccelerator_Mrk1",
+      "MagneticPlasmaConfinementTechniques"
+    ]
+  },
+  {
+    "friendlyName": "Quantum Cascade Drive Mk I",
+    "dataName": "QuantumCascadeDrive_Mk1",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 15000,
+    "prereqs": [
+      "HighEnergyElectromagneticPropulsion",
+      "ElectrostaticPlasmaConfinement",
+      "MoltenCoreFissionSystems",
+      "AdvancedFissionSystems",
+      "Supercapacitors"
+    ]
+  },
+  {
+    "friendlyName": "Quantum Cascade Drive Mk II",
+    "dataName": "QuantumCascadeDrive_Mk2",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 30000,
+    "prereqs": [
+      "QuantumCascadeDrive_Mk1"
+    ]
+  },
+  {
+    "friendlyName": "Quantum Cascade Drive Mk III",
+    "dataName": "QuantumCascadeDrive_Mk3",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 50000,
+    "prereqs": [
+      "QuantumCascadeDrive_Mk2"
+    ]
+  },
+  {
     "friendlyName": "Army Neural Interface Project",
     "dataName": "ArmyNeuralInterface",
     "techCategory": "MilitaryScience",

@@ -1954,6 +1954,7 @@
     "researchCost": 15000,
     "prereqs": [
       "Project_QuantumFluxAccelerator_Mk6",
+      "QuantumFluxSingularityDrive",
       "ElectrostaticPlasmaConfinement"
     ],
     "oneTimeGlobally": false,
@@ -1995,6 +1996,125 @@
     "prereqs": [
       "Project_QuantumFluxSingularityDrive_Mk2",
       "AdvancedFissionSystems"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Quantum Flux Singularity Drive Mk IV",
+    "dataName": "Project_QuantumFluxSingularityDrive_Mk4",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 40000,
+    "prereqs": [
+      "Project_QuantumFluxSingularityDrive_Mk3",
+      "MagneticPlasmaConfinementTechniques"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Quantum Flux Singularity Drive Mk V",
+    "dataName": "Project_QuantumFluxSingularityDrive_Mk5",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 60000,
+    "prereqs": [
+      "Project_QuantumFluxSingularityDrive_Mk4",
+      "MagneticNozzles"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Quantum Flux Singularity Drive Mk VI",
+    "dataName": "Project_QuantumFluxSingularityDrive_Mk6",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 100000,
+    "prereqs": [
+      "Project_QuantumFluxSingularityDrive_Mk5",
+      "AneutronicFusion"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Quantum Cascade Drive Mk I",
+    "dataName": "Project_QuantumCascadeDrive_Mk1",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 6000,
+    "prereqs": [
+      "QuantumCascadeDrive_Mk1"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Quantum Cascade Drive Mk II",
+    "dataName": "Project_QuantumCascadeDrive_Mk2",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 15000,
+    "prereqs": [
+      "QuantumCascadeDrive_Mk2",
+      "Project_QuantumCascadeDrive_Mk1"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Quantum Cascade Drive Mk III",
+    "dataName": "Project_QuantumCascadeDrive_Mk3",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 25000,
+    "prereqs": [
+      "QuantumCascadeDrive_Mk3",
+      "Project_QuantumCascadeDrive_Mk2"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,

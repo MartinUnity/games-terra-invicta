@@ -297,13 +297,25 @@ TIProjectTemplate.summary.Project_CommanderNeuralGlobalNetwork=Very Advanced neu
 TIProjectTemplate.displayName.Project_CyborneticCommandIntegration=Neural Computing: Cybornetic Command Integration
 TIProjectTemplate.summary.Project_CyborneticCommandIntegration=Cutting-edge neural computing techniques to enhance military capacity.
 
-
 TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk1=Quantum Flux Singularity Drive Mk I
 TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk1=An experimental singularity-coupled drive that harnesses controlled micro-singularities to boost thrust and exhaust velocity with excellent efficiency at small scales.
 TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk2=Quantum Flux Singularity Drive Mk II
 TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk2=A refined singularity drive with improved stability and power handling, delivering substantially higher thrust and performance than Mk I.
 TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk3=Quantum Flux Singularity Drive Mk III
 TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk3=A mature singularity drive implementation offering extreme thrust and exhaust velocity for advanced spacecraft.
+TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk4=Quantum Flux Singularity Drive Mk IV
+TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk4=An advanced singularity drive design with enhanced stability and power handling, delivering exceptional thrust and performance for high-end spacecraft.
+TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk5=Quantum Flux Singularity Drive Mk V
+TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk5=A cutting-edge singularity drive implementation that pushes the boundaries of thrust and exhaust velocity for top-tier spacecraft.
+TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk6=Quantum Flux Singularity Drive Mk VI
+TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk6=Master singularity drive technology to achieve unparalleled thrust and exhaust velocity for the most advanced spacecraft.
+
+TIProjectTemplate.displayName.Project_QuantumCascadeDrive_Mk1=Quantum Cascade Drive Mk I
+TIProjectTemplate.summary.Project_QuantumCascadeDrive_Mk1=A high-thrust electromagnetic drive optimized for rapid inner planet transit, trading fuel efficiency for powerful acceleration on short-range routes where refueling stations are available.
+TIProjectTemplate.displayName.Project_QuantumCascadeDrive_Mk2=Quantum Cascade Drive Mk II
+TIProjectTemplate.summary.Project_QuantumCascadeDrive_Mk2=An improved cascade drive with enhanced thrust and moderately better efficiency, delivering faster transit times for inner system logistics and rapid response missions.
+TIProjectTemplate.displayName.Project_QuantumCascadeDrive_Mk3=Quantum Cascade Drive Mk III
+TIProjectTemplate.summary.Project_QuantumCascadeDrive_Mk3=An advanced cascade drive featuring exceptional thrust capabilities for rapid Earth-Mars-Venus-Mercury transit, the premier choice for high-speed inner system fleet operations.
 
 TIProjectTemplate.displayName.Project_QuantumCoreFissionReactorI=Quantum Core Fission Reactor I
 TIProjectTemplate.summary.Project_QuantumCoreFissionReactorI=An advanced compact fission reactor utilizing quantum core technology for enhanced power output and efficiency.

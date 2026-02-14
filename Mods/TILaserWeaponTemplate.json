@@ -279,9 +279,8 @@
     "isPointDefenseTargetable": false,
     "weightedBuildMaterials": {
       "volatiles": 0.1,
-      "metals": 0.525,
-      "nobleMetals": 0.35,
-      "exotics": 0.025
+      "metals": 0.55,
+      "nobleMetals": 0.35
     },
     "iconResource": "shipbuildericons/ICO_60cmGreenPhaserBattery",
     "modelResource": "shipweapons/small_laser_battery",
@@ -376,9 +375,8 @@
     "isPointDefenseTargetable": false,
     "weightedBuildMaterials": {
       "volatiles": 0.1,
-      "metals": 0.45,
-      "nobleMetals": 0.4,
-      "exotics": 0.05
+      "metals": 0.5,
+      "nobleMetals": 0.4
     },
     "iconResource": "shipbuildericons/ICO_60cmUVPhaserBattery",
     "modelResource": "shipweapons/small_laser_battery",

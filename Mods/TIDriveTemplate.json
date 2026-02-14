@@ -940,7 +940,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk I x1",
     "thrusters": 1,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxAccelerator_Mk6",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
     "thrust_N": 88128,
     "EV_kps": 712,
     "specificPower_kgMW": 0,
@@ -966,7 +966,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk I x2",
     "thrusters": 2,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxAccelerator_Mk6",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
     "thrust_N": 176256,
     "EV_kps": 712,
     "specificPower_kgMW": 0,
@@ -992,7 +992,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk I x3",
     "thrusters": 3,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxAccelerator_Mk6",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
     "thrust_N": 264384,
     "EV_kps": 712,
     "specificPower_kgMW": 0,
@@ -1018,7 +1018,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk I x4",
     "thrusters": 4,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxAccelerator_Mk6",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
     "thrust_N": 352512,
     "EV_kps": 712,
     "specificPower_kgMW": 0,
@@ -1044,7 +1044,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk I x5",
     "thrusters": 5,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxAccelerator_Mk6",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
     "thrust_N": 440640,
     "EV_kps": 712,
     "specificPower_kgMW": 0,
@@ -1070,7 +1070,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk I x6",
     "thrusters": 6,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxAccelerator_Mk6",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
     "thrust_N": 528768,
     "EV_kps": 672,
     "specificPower_kgMW": 0,
@@ -1096,7 +1096,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk II x1",
     "thrusters": 1,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
     "thrust_N": 176256,
     "EV_kps": 879,
     "specificPower_kgMW": 0,
@@ -1122,7 +1122,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk II x2",
     "thrusters": 2,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
     "thrust_N": 352512,
     "EV_kps": 879,
     "specificPower_kgMW": 0,
@@ -1148,7 +1148,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk II x3",
     "thrusters": 3,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
     "thrust_N": 528768,
     "EV_kps": 879,
     "specificPower_kgMW": 0,
@@ -1174,7 +1174,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk II x4",
     "thrusters": 4,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
     "thrust_N": 705024,
     "EV_kps": 879,
     "specificPower_kgMW": 0,
@@ -1200,7 +1200,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk II x5",
     "thrusters": 5,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
     "thrust_N": 881280,
     "EV_kps": 879,
     "specificPower_kgMW": 0,
@@ -1226,7 +1226,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk II x6",
     "thrusters": 6,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk1",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
     "thrust_N": 1057536,
     "EV_kps": 879,
     "specificPower_kgMW": 0,
@@ -1252,7 +1252,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk III x1",
     "thrusters": 1,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk3",
     "thrust_N": 264385,
     "EV_kps": 982,
     "specificPower_kgMW": 0,
@@ -1278,7 +1278,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk III x2",
     "thrusters": 2,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk3",
     "thrust_N": 528770,
     "EV_kps": 982,
     "specificPower_kgMW": 0,
@@ -1304,7 +1304,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk III x3",
     "thrusters": 3,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk3",
     "thrust_N": 793155,
     "EV_kps": 982,
     "specificPower_kgMW": 0,
@@ -1330,7 +1330,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk III x4",
     "thrusters": 4,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk3",
     "thrust_N": 1057540,
     "EV_kps": 982,
     "specificPower_kgMW": 0,
@@ -1356,7 +1356,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk III x5",
     "thrusters": 5,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk3",
     "thrust_N": 1321925,
     "EV_kps": 982,
     "specificPower_kgMW": 0,
@@ -1382,7 +1382,7 @@
     "friendlyName": "Quantum Flux Singularity Drive Mk III x6",
     "thrusters": 6,
     "driveClassification": "Electromagnetic",
-    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk2",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk3",
     "thrust_N": 1586310,
     "EV_kps": 982,
     "specificPower_kgMW": 0,
@@ -1402,5 +1402,941 @@
       "water": 1
     },
     "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk4x1",
+    "friendlyName": "Quantum Flux Singularity Drive Mk IV x1",
+    "thrusters": 1,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk4",
+    "thrust_N": 410000,
+    "EV_kps": 1522,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "59.940",
+    "req power": "5.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 37,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk4x2",
+    "friendlyName": "Quantum Flux Singularity Drive Mk IV x2",
+    "thrusters": 2,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk4",
+    "thrust_N": 820000,
+    "EV_kps": 1522,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "119.880",
+    "req power": "10.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 37,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk4x3",
+    "friendlyName": "Quantum Flux Singularity Drive Mk IV x3",
+    "thrusters": 3,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk4",
+    "thrust_N": 1230000,
+    "EV_kps": 1522,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "179.820",
+    "req power": "15.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 37,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk4x4",
+    "friendlyName": "Quantum Flux Singularity Drive Mk IV x4",
+    "thrusters": 4,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk4",
+    "thrust_N": 1640000,
+    "EV_kps": 1522,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "239.760",
+    "req power": "20.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 37,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk4x5",
+    "friendlyName": "Quantum Flux Singularity Drive Mk IV x5",
+    "thrusters": 5,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk4",
+    "thrust_N": 2050000,
+    "EV_kps": 1522,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "299.700",
+    "req power": "25.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 37,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk4x6",
+    "friendlyName": "Quantum Flux Singularity Drive Mk IV x6",
+    "thrusters": 6,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk4",
+    "thrust_N": 2460000,
+    "EV_kps": 1522,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "359.640",
+    "req power": "30.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 37,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk5x1",
+    "friendlyName": "Quantum Flux Singularity Drive Mk V x1",
+    "thrusters": 1,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk5",
+    "thrust_N": 656000,
+    "EV_kps": 2435,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "95.900",
+    "req power": "8.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 39,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk5x2",
+    "friendlyName": "Quantum Flux Singularity Drive Mk V x2",
+    "thrusters": 2,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk5",
+    "thrust_N": 1312000,
+    "EV_kps": 2435,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "191.800",
+    "req power": "16.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 39,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk5x3",
+    "friendlyName": "Quantum Flux Singularity Drive Mk V x3",
+    "thrusters": 3,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk5",
+    "thrust_N": 1968000,
+    "EV_kps": 2435,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "287.700",
+    "req power": "24.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 39,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk5x4",
+    "friendlyName": "Quantum Flux Singularity Drive Mk V x4",
+    "thrusters": 4,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk5",
+    "thrust_N": 2624000,
+    "EV_kps": 2435,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "383.600",
+    "req power": "32.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 39,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk5x5",
+    "friendlyName": "Quantum Flux Singularity Drive Mk V x5",
+    "thrusters": 5,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk5",
+    "thrust_N": 3280000,
+    "EV_kps": 2435,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "479.500",
+    "req power": "40.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 39,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk5x6",
+    "friendlyName": "Quantum Flux Singularity Drive Mk V x6",
+    "thrusters": 6,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk5",
+    "thrust_N": 3936000,
+    "EV_kps": 2435,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.999,
+    "thrustRating_GW": "575.400",
+    "req power": "48.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 39,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk6x1",
+    "friendlyName": "Quantum Flux Singularity Drive Mk VI x1",
+    "thrusters": 1,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk6",
+    "thrust_N": 1082400,
+    "EV_kps": 4018,
+    "specificPower_kgMW": 0,
+    "efficiency": 1.0,
+    "thrustRating_GW": "158.240",
+    "req power": "13.200",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 42,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk6x2",
+    "friendlyName": "Quantum Flux Singularity Drive Mk VI x2",
+    "thrusters": 2,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk6",
+    "thrust_N": 2164800,
+    "EV_kps": 4018,
+    "specificPower_kgMW": 0,
+    "efficiency": 1.0,
+    "thrustRating_GW": "316.480",
+    "req power": "26.400",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 42,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk6x3",
+    "friendlyName": "Quantum Flux Singularity Drive Mk VI x3",
+    "thrusters": 3,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk6",
+    "thrust_N": 3247200,
+    "EV_kps": 4018,
+    "specificPower_kgMW": 0,
+    "efficiency": 1.0,
+    "thrustRating_GW": "474.720",
+    "req power": "39.600",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 42,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk6x4",
+    "friendlyName": "Quantum Flux Singularity Drive Mk VI x4",
+    "thrusters": 4,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk6",
+    "thrust_N": 4329600,
+    "EV_kps": 4018,
+    "specificPower_kgMW": 0,
+    "efficiency": 1.0,
+    "thrustRating_GW": "632.960",
+    "req power": "52.800",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 42,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk6x5",
+    "friendlyName": "Quantum Flux Singularity Drive Mk VI x5",
+    "thrusters": 5,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk6",
+    "thrust_N": 5412000,
+    "EV_kps": 4018,
+    "specificPower_kgMW": 0,
+    "efficiency": 1.0,
+    "thrustRating_GW": "791.200",
+    "req power": "66.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 42,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumFluxSingularityDrive_Mk6x6",
+    "friendlyName": "Quantum Flux Singularity Drive Mk VI x6",
+    "thrusters": 6,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumFluxSingularityDrive_Mk6",
+    "thrust_N": 6494400,
+    "EV_kps": 4018,
+    "specificPower_kgMW": 0,
+    "efficiency": 1.0,
+    "thrustRating_GW": "949.440",
+    "req power": "79.200",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 42,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_AmplitronDrive"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk1x1",
+    "friendlyName": "Quantum Cascade Drive Mk I x1",
+    "thrusters": 1,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk1",
+    "thrust_N": 400000,
+    "EV_kps": 80,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.92,
+    "thrustRating_GW": "32.000",
+    "req power": "2.600",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 20,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk1x2",
+    "friendlyName": "Quantum Cascade Drive Mk I x2",
+    "thrusters": 2,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk1",
+    "thrust_N": 800000,
+    "EV_kps": 80,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.92,
+    "thrustRating_GW": "64.000",
+    "req power": "5.200",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 20,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk1x3",
+    "friendlyName": "Quantum Cascade Drive Mk I x3",
+    "thrusters": 3,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk1",
+    "thrust_N": 1200000,
+    "EV_kps": 80,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.92,
+    "thrustRating_GW": "96.000",
+    "req power": "7.800",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 20,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk1x4",
+    "friendlyName": "Quantum Cascade Drive Mk I x4",
+    "thrusters": 4,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk1",
+    "thrust_N": 1600000,
+    "EV_kps": 80,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.92,
+    "thrustRating_GW": "128.000",
+    "req power": "10.400",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 20,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk1x5",
+    "friendlyName": "Quantum Cascade Drive Mk I x5",
+    "thrusters": 5,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk1",
+    "thrust_N": 2000000,
+    "EV_kps": 80,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.92,
+    "thrustRating_GW": "160.000",
+    "req power": "13.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 20,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk1x6",
+    "friendlyName": "Quantum Cascade Drive Mk I x6",
+    "thrusters": 6,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk1",
+    "thrust_N": 2400000,
+    "EV_kps": 80,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.92,
+    "thrustRating_GW": "192.000",
+    "req power": "15.600",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 20,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk2x1",
+    "friendlyName": "Quantum Cascade Drive Mk II x1",
+    "thrusters": 1,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk2",
+    "thrust_N": 580000,
+    "EV_kps": 92,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.94,
+    "thrustRating_GW": "53.360",
+    "req power": "3.400",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 22,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk2x2",
+    "friendlyName": "Quantum Cascade Drive Mk II x2",
+    "thrusters": 2,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk2",
+    "thrust_N": 1160000,
+    "EV_kps": 92,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.94,
+    "thrustRating_GW": "106.720",
+    "req power": "6.800",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 22,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk2x3",
+    "friendlyName": "Quantum Cascade Drive Mk II x3",
+    "thrusters": 3,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk2",
+    "thrust_N": 1740000,
+    "EV_kps": 92,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.94,
+    "thrustRating_GW": "160.080",
+    "req power": "10.200",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 22,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk2x4",
+    "friendlyName": "Quantum Cascade Drive Mk II x4",
+    "thrusters": 4,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk2",
+    "thrust_N": 2320000,
+    "EV_kps": 92,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.94,
+    "thrustRating_GW": "213.440",
+    "req power": "13.600",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 22,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk2x5",
+    "friendlyName": "Quantum Cascade Drive Mk II x5",
+    "thrusters": 5,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk2",
+    "thrust_N": 2900000,
+    "EV_kps": 92,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.94,
+    "thrustRating_GW": "266.800",
+    "req power": "17.000",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 22,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk2x6",
+    "friendlyName": "Quantum Cascade Drive Mk II x6",
+    "thrusters": 6,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk2",
+    "thrust_N": 3480000,
+    "EV_kps": 92,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.94,
+    "thrustRating_GW": "320.160",
+    "req power": "20.400",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 22,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk3x1",
+    "friendlyName": "Quantum Cascade Drive Mk III x1",
+    "thrusters": 1,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk3",
+    "thrust_N": 775000,
+    "EV_kps": 108,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.96,
+    "thrustRating_GW": "83.700",
+    "req power": "4.320",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 24,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk3x2",
+    "friendlyName": "Quantum Cascade Drive Mk III x2",
+    "thrusters": 2,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk3",
+    "thrust_N": 1550000,
+    "EV_kps": 108,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.96,
+    "thrustRating_GW": "167.400",
+    "req power": "8.640",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 24,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk3x3",
+    "friendlyName": "Quantum Cascade Drive Mk III x3",
+    "thrusters": 3,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk3",
+    "thrust_N": 2325000,
+    "EV_kps": 108,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.96,
+    "thrustRating_GW": "251.100",
+    "req power": "12.960",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 24,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk3x4",
+    "friendlyName": "Quantum Cascade Drive Mk III x4",
+    "thrusters": 4,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk3",
+    "thrust_N": 3100000,
+    "EV_kps": 108,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.96,
+    "thrustRating_GW": "334.800",
+    "req power": "17.280",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 24,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk3x5",
+    "friendlyName": "Quantum Cascade Drive Mk III x5",
+    "thrusters": 5,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk3",
+    "thrust_N": 3875000,
+    "EV_kps": 108,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.96,
+    "thrustRating_GW": "418.500",
+    "req power": "21.600",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 24,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "QuantumCascadeDrive_Mk3x6",
+    "friendlyName": "Quantum Cascade Drive Mk III x6",
+    "thrusters": 6,
+    "driveClassification": "Electromagnetic",
+    "requiredProjectName": "Project_QuantumCascadeDrive_Mk3",
+    "thrust_N": 4650000,
+    "EV_kps": 108,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.96,
+    "thrustRating_GW": "502.200",
+    "req power": "25.920",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Any_General",
+    "thrustCap": 24,
+    "cooling": "Closed",
+    "powerGen": "DriveIdle",
+    "weightedBuildMaterials": {
+      "metals": 1
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 1
+    },
+    "iconResource": "shipbuildericons/ICO_VASIMR"
   }
 ]
