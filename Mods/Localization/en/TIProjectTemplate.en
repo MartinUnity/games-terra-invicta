@@ -388,6 +388,20 @@ TIProjectTemplate.summary.Project_2048cmBaseVioletLaserCannon=Research and devel
 TIProjectTemplate.displayName.Project_4096cmBaseVioletLaserCannon=4096cm Gigantic Base Violet Laser Cannon
 TIProjectTemplate.summary.Project_4096cmBaseVioletLaserCannon=Research and develop the 4096cm Gigantic Base Violet Laser Cannon, an enormous energy weapon designed for maximum damage output against large targets such as capital ships and fortified structures. This colossal laser cannon will utilize advanced violet laser technology to deliver devastating firepower, making it a formidable asset in space combat scenarios where overwhelming force is required to secure victory.
 
+TIProjectTemplate.displayName.Project_480cmIRArcLaserCannon_RapidFire=480cm IR Arc Laser Cannon - Rapid Fire
+TIProjectTemplate.summary.Project_480cmIRArcLaserCannon_RapidFire=Research and develop a rapid-fire variant of the 480cm IR Arc Laser Cannon, designed to deliver a high volume of fire for enhanced defensive capabilities against fast-moving targets.
+TIProjectTemplate.displayName.Project_480cmGreenArcLaserCannon_RapidFire=480cm Green Arc Laser Cannon - Rapid Fire
+TIProjectTemplate.summary.Project_480cmGreenArcLaserCannon_RapidFire=Research and develop a rapid-fire variant of the 480cm Green Arc Laser Cannon, designed to deliver a high volume of fire for enhanced defensive capabilities against fast-moving targets.
+TIProjectTemplate.displayName.Project_480cmUVArcLaserCannon_RapidFire=480cm UV Arc Laser Cannon - Rapid Fire
+TIProjectTemplate.summary.Project_480cmUVArcLaserCannon_RapidFire=Research and develop a rapid-fire variant of the 480cm UV Arc Laser Cannon, designed to deliver a high volume of fire for enhanced defensive capabilities against fast-moving targets.
+
+TIProjectTemplate.displayName.Project_720cmIRArcLaserCannon_RapidFire=720cm IR Arc Laser Cannon - Rapid Fire
+TIProjectTemplate.summary.Project_720cmIRArcLaserCannon_RapidFire=Research and develop a rapid-fire variant of the 720cm IR Arc Laser Cannon, designed to deliver a high volume of fire for enhanced defensive capabilities against fast-moving targets.
+TIProjectTemplate.displayName.Project_720cmGreenArcLaserCannon_RapidFire=720cm Green Arc Laser Cannon - Rapid Fire
+TIProjectTemplate.summary.Project_720cmGreenArcLaserCannon_RapidFire=Research and develop a rapid-fire variant of the 720cm Green Arc Laser Cannon, designed to deliver a high volume of fire for enhanced defensive capabilities against fast-moving targets.
+TIProjectTemplate.displayName.Project_720cmUVArcLaserCannon_RapidFire=720cm UV Arc Laser Cannon - Rapid Fire
+TIProjectTemplate.summary.Project_720cmUVArcLaserCannon_RapidFire=Research and develop a rapid-fire variant of the 720cm UV Arc Laser Cannon, designed to deliver a high volume of fire for enhanced defensive capabilities against fast-moving targets.
+
 TIProjectTemplate.displayName.Project_LightIonBattery_RapidFire=Ion Batteries - Rapid Fire
 TIProjectTemplate.summary.Project_LightIonBattery_RapidFire=Research and develop rapid-fire variants of ion batteries, designed to deliver a high volume of fire for enhanced defensive capabilities against fast-moving targets. These rapid-fire ion batteries will feature advanced ionization technology for increased damage output and improved performance against various threats.
 TIProjectTemplate.displayName.Project_JitterStreamBattery_I=Jitter Stream Battery I

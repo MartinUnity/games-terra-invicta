@@ -3798,6 +3798,133 @@
     "resourcesGranted": []
   },
   {
+    "friendlyName": "480 cm IR Arc Laser Cannon Rapid Fire",
+    "dataName": "Project_480cmIRArcLaserCannon_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 6000,
+    "prereqs": [
+      "InfraredCombatLasers",
+      "ArcLasers"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "480 cm Green Arc Laser Cannon Rapid Fire",
+    "dataName": "Project_480cmGreenArcLaserCannon_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 30000,
+    "prereqs": [
+      "Project_480cmIRArcLaserCannon_RapidFire",
+      "ArcLasers"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "480 cm UV Arc Laser Cannon Rapid Fire",
+    "dataName": "Project_480cmUVArcLaserCannon_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 80000,
+    "prereqs": [
+      "Project_480cmGreenArcLaserCannon_RapidFire",
+      "ArcLasers"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "720 cm IR Arc Laser Cannon Rapid Fire",
+    "dataName": "Project_720cmIRArcLaserCannon_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 30000,
+    "prereqs": [
+      "Project_480cmIRArcLaserCannon_RapidFire",
+      "InfraredCombatLasers",
+      "ArcLasers"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "720 cm Green Arc Laser Cannon Rapid Fire",
+    "dataName": "Project_720cmGreenArcLaserCannon_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 60000,
+    "prereqs": [
+      "Project_720cmIRArcLaserCannon_RapidFire",
+      "ArcLasers"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "720 cm UV Arc Laser Cannon Rapid Fire",
+    "dataName": "Project_720cmUVArcLaserCannon_RapidFire",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 90000,
+    "prereqs": [
+      "Project_720cmGreenArcLaserCannon_RapidFire",
+      "ArcLasers"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
     "friendlyName": "Light Ion Battery - Rapid Fire",
     "dataName": "Project_LightIonBattery_RapidFire",
     "techCategory": "MilitaryScience",
