@@ -1,54 +1,5 @@
 [
   {
-    "dataName": "PointDefenseArray",
-    "friendlyName": "Point Defense Array",
-    "coreModule": false,
-    "habType": "Any",
-    "onePerHab": false,
-    "automated": false,
-    "allowsShipConstruction": false,
-    "allowsResupply": false,
-    "mine": false,
-    "noBuild": false,
-    "destroyed": false,
-    "tier": 1,
-    "requiredProjectName": "Project_PointDefenseArray",
-    "crew": 3,
-    "power": -10,
-    "baseMass_tons": 100,
-    "buildTime_Days": 30,
-    "spaceCombatModule": true,
-    "constructionTimeModifier": 1,
-    "miningModifier": 0,
-    "controlPointCapacity": 0,
-    "techBonuses": [],
-    "specialRules": [
-      "PowerFirst",
-      "FleetTargeting",
-      "FleetECM"
-    ],
-    "specialRulesValue": 0.7,
-    "supportMaterials_month": {
-      "money": 2,
-      "volatiles": 0.1,
-      "metals": 0.1
-    },
-    "weightedBuildMaterials": {
-      "water": 0,
-      "volatiles": 0.22,
-      "metals": 0.76,
-      "nobleMetals": 0.02
-    },
-    "baseIconResource": "habmodules/base_T1_PointDefenseArray",
-    "stationIconResource": "habmodules/station_T1_PointDefenseArray",
-    "stationModelResource": "habmodules/station_T1_PointDefenseArray_Module",
-    "stationDestructionResource": "habmodules/stationdestruction_T1_generic",
-    "alertWorthy": true,
-    "alienModule": false,
-    "objectiveModule": false,
-    "disable": false
-  },
-  {
     "dataName": "LayeredDefenseArray",
     "friendlyName": "Layered Defense Array",
     "coreModule": false,
@@ -228,7 +179,7 @@
       "FleetTargeting",
       "FleetECM"
     ],
-    "specialRulesValue": 0.02,
+    "specialRulesValue": 0.07,
     "supportMaterials_month": {
       "money": 2,
       "volatiles": 0.1,
@@ -526,6 +477,55 @@
     "stationModelResource": "habmodules/station_T1_AutomatedFissionPile_Module",
     "stationDestructionResource": "habmodules/stationdestruction_T1_generic",
     "alertWorthy": false,
+    "alienModule": false,
+    "objectiveModule": false,
+    "disable": false
+  },
+  {
+    "dataName": "AutomatedPointDefenseArray",
+    "friendlyName": "Automated Point Defense Array",
+    "coreModule": false,
+    "habType": "Any",
+    "onePerHab": false,
+    "automated": true,
+    "allowsShipConstruction": false,
+    "allowsResupply": false,
+    "mine": false,
+    "noBuild": false,
+    "destroyed": false,
+    "tier": 1,
+    "requiredProjectName": "Project_AutomatedPointDefenseArray",
+    "crew": 1,
+    "power": -2,
+    "baseMass_tons": 10,
+    "buildTime_Days": 5,
+    "spaceCombatModule": true,
+    "constructionTimeModifier": 1,
+    "miningModifier": 0,
+    "controlPointCapacity": 0,
+    "techBonuses": [],
+    "specialRules": [
+      "PowerFirst",
+      "FleetTargeting",
+      "FleetECM"
+    ],
+    "specialRulesValue": 0.005,
+    "supportMaterials_month": {
+      "money": 1,
+      "volatiles": 0.01,
+      "metals": 0.01
+    },
+    "weightedBuildMaterials": {
+      "water": 0,
+      "volatiles": 0.1,
+      "metals": 0.2,
+      "nobleMetals": 0.002
+    },
+    "baseIconResource": "habmodules/base_T1_PointDefenseArray",
+    "stationIconResource": "habmodules/station_T1_PointDefenseArray",
+    "stationModelResource": "habmodules/station_T1_PointDefenseArray_Module",
+    "stationDestructionResource": "habmodules/stationdestruction_T1_generic",
+    "alertWorthy": true,
     "alienModule": false,
     "objectiveModule": false,
     "disable": false

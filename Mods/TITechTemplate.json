@@ -156,6 +156,19 @@
     ]
   },
   {
+    "friendlyName": "Miniaturized Mass Laser Defense Dome",
+    "dataName": "MiniaturizedMassLaserDefenseDome",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 6000,
+    "prereqs": [
+      "MiniaturizedMassLaserDefenseArray",
+      "SpaceNavies"
+    ]
+  },
+  {
     "friendlyName": "Rapid Fire Laser Batteries",
     "dataName": "RapidFireLaserBatteries",
     "techCategory": "MilitaryScience",

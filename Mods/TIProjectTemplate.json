@@ -1112,6 +1112,25 @@
     "resourcesGranted": []
   },
   {
+    "friendlyName": "Automated Point Defense Array",
+    "dataName": "Project_AutomatedPointDefenseArray",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "HabDefense",
+    "researchCost": 100,
+    "prereqs": [
+      "Project_AutomatedPlatformCore"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 0,
+    "deltaUnlockChance": 50,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
     "friendlyName": "Nano Optimized Shell Designing",
     "dataName": "Project_ShipMagDamage_lvl1",
     "techCategory": "InformationScience",
@@ -3398,6 +3417,147 @@
     "researchCost": 15000,
     "prereqs": [
       "Project_MiniaturizedMassLaserDefenseArray_II"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Dome I",
+    "dataName": "Project_MiniaturizedMassLaserDefenseDome_I",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 10000,
+    "prereqs": [
+      "MiniaturizedMassLaserDefenseDome",
+      "Project_MiniaturizedMassLaserDefenseArray_III"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Dome II",
+    "dataName": "Project_MiniaturizedMassLaserDefenseDome_II",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 15000,
+    "prereqs": [
+      "Project_MiniaturizedMassLaserDefenseDome_I"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Dome III",
+    "dataName": "Project_MiniaturizedMassLaserDefenseDome_III",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 25000,
+    "prereqs": [
+      "Project_MiniaturizedMassLaserDefenseDome_II"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Dome IV",
+    "dataName": "Project_MiniaturizedMassLaserDefenseDome_IV",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 35000,
+    "prereqs": [
+      "Project_MiniaturizedMassLaserDefenseDome_III"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Dome V",
+    "dataName": "Project_MiniaturizedMassLaserDefenseDome_V",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 50000,
+    "prereqs": [
+      "Project_MiniaturizedMassLaserDefenseDome_IV"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Dome VI",
+    "dataName": "Project_MiniaturizedMassLaserDefenseDome_VI",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 75000,
+    "prereqs": [
+      "Project_MiniaturizedMassLaserDefenseDome_V"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Miniaturized Mass Laser Defense Dome VII",
+    "dataName": "Project_MiniaturizedMassLaserDefenseDome_VII",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 100000,
+    "prereqs": [
+      "Project_MiniaturizedMassLaserDefenseDome_VI"
     ],
     "effects": [],
     "oneTimeGlobally": false,

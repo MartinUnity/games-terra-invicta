@@ -106,6 +106,8 @@ TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Master=Research and 
 
 TIProjectTemplate.displayName.Project_PointDefenseArray_T0=Point Defense Array - Tier 0
 TIProjectTemplate.summary.Project_PointDefenseArray_T0=<habmodule>
+TIProjectTemplate.displayName.Project_AutomatedPointDefenseArray=Automated Point Defense Array.
+TIProjectTemplate.summary.Project_AutomatedPointDefenseArray=<habmodule>
 
 TIProjectTemplate.displayName.Project_ShipMagDamage_lvl1=Nano Optimized Shell Designing
 TIProjectTemplate.summary.Project_ShipMagDamage_lvl1=Research nano-optimized shell designs to enhance the damage output of magnetic weapons.
@@ -344,6 +346,21 @@ TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseArray_II=Minia
 TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseArray_II=An improved version of the Miniaturized Mass Laser Defense Array I, featuring enhanced laser technology and targeting systems for superior defensive performance.
 TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseArray_III=Miniaturized Mass Laser Defense Array III
 TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseArray_III=A state-of-the-art iteration of the Miniaturized Mass Laser Defense Array, offering exceptional defensive capabilities with advanced laser technology and targeting systems for maximum protection against various threats.
+
+TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseDome_I=Miniaturized Mass Laser Defense Dome I
+TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseDome_I=A compact and efficient mass laser defense dome, designed for smaller vessels or applications with space constraints while maintaining high defensive capabilities.
+TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseDome_II=Miniaturized Mass Laser Defense Dome II
+TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseDome_II=An improved version of the Miniaturized Mass Laser Defense Dome I, featuring enhanced laser technology and targeting systems for superior defensive performance.
+TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseDome_III=Miniaturized Mass Laser Defense Dome III
+TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseDome_III=A highly advanced iteration of the Miniaturized Mass Laser Defense Dome, offering exceptional defensive capabilities with advanced laser technology and targeting systems for maximum protection against various threats.
+TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseDome_IV=Miniaturized Mass Laser Defense Dome IV
+TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseDome_IV=A optimized iteration of the Miniaturized Mass Laser Defense Dome, offering exceptional defensive capabilities with advanced laser technology and targeting systems for maximum protection against various threats.
+TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseDome_V=Miniaturized Mass Laser Defense Dome V
+TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseDome_V=A phased iteration of the Miniaturized Mass Laser Defense Dome, offering exceptional defensive capabilities with advanced laser technology and targeting systems for maximum protection against various threats.
+TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseDome_VI=Miniaturized Mass Laser Defense Dome VI
+TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseDome_VI=A mass-blooming iteration of the Miniaturized Mass Laser Defense Dome, offering exceptional defensive capabilities with advanced laser technology and targeting systems for maximum protection against various threats.
+TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseDome_VII=Miniaturized Mass Laser Defense Dome VII
+TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseDome_VII=A elite iteration of the Miniaturized Mass Laser Defense Dome, offering exceptional defensive capabilities with advanced laser technology and targeting systems for maximum protection against various threats.
 
 TIProjectTemplate.displayName.Project_40cmIRLaserBattery_RapidFire=40cm IR Laser Battery - Rapid Fire
 TIProjectTemplate.summary.Project_40cmIRLaserBattery_RapidFire=Research and develop a rapid-fire variant of the 40cm IR Laser Battery, designed to deliver a high volume of fire for enhanced defensive capabilities against fast-moving targets.

@@ -75,6 +75,13 @@ TITechTemplate.quote.MiniaturizedMassLaserDefenseArray="Not all wars are won by 
 <align=right>F. Nielsen, Sergeant in The First Space Corps<align=left>
 TITechTemplate.description.MiniaturizedMassLaserDefenseArray=A miniaturized version of the Point Defense Laser System - has higher rate of fire, shorter range and higher energy consumption, but is more effective against small, fast-moving targets like missiles and projectiles.
 
+TITechTemplate.displayName.MiniaturizedMassLaserDefenseDome=Miniaturized Mass Laser Defense Dome
+TITechTemplate.summary.MiniaturizedMassLaserDefenseDome=A miniaturized version of the Point Defense Laser System - has higher rate of fire, shorter range and higher energy consumption, but is more effective against small, fast-moving targets like missiles and projectiles.
+TITechTemplate.quote.MiniaturizedMassLaserDefenseDome="In the chaos of space combat, every second counts. The Miniaturized Mass Laser Defense Dome provides a rapid-fire solution to intercept incoming threats, giving our pilots the edge they need to survive and prevail against increasingly sophisticated enemy weaponry."
+<align=right>{submitLeader}<align=left>
+<align=right>Jhesia Von Arnim, Tactical Systems Specialist<align=left>
+TITechTemplate.description.MiniaturizedMassLaserDefenseDome=A miniaturized version of the Point Defense Laser System - has higher rate of fire, shorter range and higher energy consumption, but is more effective against small, fast-moving targets like missiles and projectiles.
+
 TITechTemplate.displayName.RapidFireLaserBatteries=Rapid Fire Laser Batteries
 TITechTemplate.summary.RapidFireLaserBatteries=High rate of fire laser batteries designed for rapid engagement of multiple targets, sacrificing range and energy efficiency for increased firing speed.
 TITechTemplate.quote.RapidFireLaserBatteries="Light is pretty; more light is prettier. Let there be light for all!"
