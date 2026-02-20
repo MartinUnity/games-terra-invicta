@@ -21,6 +21,198 @@
     "resourcesGranted": []
   },
   {
+    "friendlyName": "Civic Resource Stabilization I",
+    "dataName": "Project_CivicResourceStabilization_I",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 1200,
+    "prereqs": [
+      "Project_Spaceworks"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_EconomyPriorityBonus05",
+      "Effect_WelfarePriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 30,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Civic Resource Stabilization II",
+    "dataName": "Project_CivicResourceStabilization_II",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 3200,
+    "prereqs": [
+      "Project_CivicResourceStabilization_I"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_EconomyPriorityBonus05",
+      "Effect_WelfarePriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Interplanetary Welfare Ledger I",
+    "dataName": "Project_InterplanetaryWelfareLedger_I",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 1500,
+    "prereqs": [
+      "Project_Spaceworks"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_EconomyPriorityBonus05",
+      "Effect_WelfarePriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 40,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Interplanetary Welfare Ledger II",
+    "dataName": "Project_InterplanetaryWelfareLedger_II",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 3600,
+    "prereqs": [
+      "Project_InterplanetaryWelfareLedger_I"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_EconomyPriorityBonus05",
+      "Effect_WelfarePriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 12,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Imperial Economic Harmonization",
+    "dataName": "Project_ImperialEconomicHarmonization",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 2200,
+    "prereqs": [
+      "Project_Spaceworks"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_EconomyPriorityBonus05",
+      "Effect_WelfarePriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 25,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Chartered Municipal Investment Program",
+    "dataName": "Project_CharteredMunicipalInvestment",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 1800,
+    "prereqs": [
+      "Project_Spaceworks"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_EconomyPriorityBonus05",
+      "Effect_WelfarePriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 35,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Universal Basic Support Initiative",
+    "dataName": "Project_UniversalBasicSupport",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 2600,
+    "prereqs": [
+      "Project_Spaceworks"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_EconomyPriorityBonus05",
+      "Effect_WelfarePriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 20,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Official Credit Redistribution Protocol",
+    "dataName": "Project_OfficialCreditRedistribution",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "ControlPointCap",
+    "researchCost": 4000,
+    "prereqs": [
+      "Project_UniversalBasicSupport"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_EconomyPriorityBonus05",
+      "Effect_WelfarePriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 6,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
     "dataName": "Project_155mmAutocannon_ETC",
     "friendlyName": "155mm Heavy ETC Autocannon",
     "description": "A secret prototype recovered from the archives. Unlocks a heavy 155mm ETC cannon.",
