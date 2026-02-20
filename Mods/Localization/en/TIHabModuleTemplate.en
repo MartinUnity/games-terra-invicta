@@ -16,3 +16,12 @@ TIHabModuleTemplate.displayName.AutomatedRefinery=Small Automated Mining & Refin
 TIHabModuleTemplate.description.AutomatedRefinery=A small and fully automated advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 30%
 TIHabModuleTemplate.displayName.AutomatedQuantumMiniReactor=Automated Quantum Mini Reactor
 TIHabModuleTemplate.description.AutomatedQuantumMiniReactor=A compact and fully automated quantum mini reactor module designed to provide efficient and reliable power generation for outposts, ensuring continuous operation and supporting various energy needs with minimal maintenance.
+TIHabModuleTemplate.displayName.AutomatedQuantumSingularityReactor=Automated Quantum Singularity Reactor
+TIHabModuleTemplate.description.AutomatedQuantumSingularityReactor=A compact and fully automated quantum singularity reactor module designed to provide efficient and reliable power generation for outposts, ensuring continuous operation and supporting various energy needs with minimal maintenance.
+
+TIHabModuleTemplate.displayName.SingularityPile=Singularity Pile
+TIHabModuleTemplate.description.SingularityPile=A basic singularity pile module that harnesses the power of micro-singularities to generate energy. This module serves as an entry-level power source for hab modules, providing a stable and efficient energy supply for various operations while we develop more advanced technologies.
+TIHabModuleTemplate.displayName.SingularityReactorArray=Singularity Reactor Array
+TIHabModuleTemplate.description.SingularityReactorArray=A basic singularity reactor array module that harnesses the power of micro-singularities to generate energy. This module serves as an entry-level power source for hab modules, providing a stable and efficient energy supply for various operations while we develop more advanced technologies.
+TIHabModuleTemplate.displayName.SingularityReactorFarm=Singularity Reactor Farm
+TIHabModuleTemplate.description.SingularityReactorFarm=A basic singularity reactor farm module that harnesses the power of micro-singularities to generate energy. This module serves as an entry-level power source for hab modules, providing a stable and efficient energy supply for various operations while we develop more advanced technologies.

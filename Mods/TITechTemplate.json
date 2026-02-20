@@ -255,5 +255,17 @@
     "prereqs": [
       "SpaceAssaultDoctrine"
     ]
+  },
+  {
+    "friendlyName": "Singularity Power Source Technology",
+    "dataName": "SingularityPowerSourceTechnology",
+    "techCategory": "Materials",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 80000,
+    "prereqs": [
+      "CleanEnergy"
+    ]
   }
 ]

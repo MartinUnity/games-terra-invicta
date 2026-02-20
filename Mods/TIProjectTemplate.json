@@ -4485,5 +4485,82 @@
     "deltaUnlockChance": 5,
     "maxUnlockChance": 100,
     "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Automated Quantum Singularity Reactor",
+    "dataName": "Project_AutomatedQuantumSingularityReactor",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_projectRole": "HabInfrastructure",
+    "researchCost": 25000,
+    "prereqs": [
+      "Project_AutomatedPlatformCore",
+      "SingularityPowerSourceTechnology"
+    ],
+    "altPrereq0": "Project_AutomatedOutpostCore",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Singularity Pile",
+    "dataName": "Project_SingularityPile",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_projectRole": "HabInfrastructure",
+    "researchCost": 15000,
+    "prereqs": [
+      "SingularityPowerSourceTechnology"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Singularity Reactor Array",
+    "dataName": "Project_SingularityReactorArray",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_projectRole": "HabInfrastructure",
+    "researchCost": 35000,
+    "prereqs": [
+      "Project_SingularityPile"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Singularity Reactor Farm",
+    "dataName": "Project_SingularityReactorFarm",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_projectRole": "HabInfrastructure",
+    "researchCost": 55000,
+    "prereqs": [
+      "Project_SingularityReactorArray"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
   }
 ]
