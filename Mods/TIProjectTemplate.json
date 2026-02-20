@@ -23,17 +23,17 @@
   {
     "friendlyName": "Civic Resource Stabilization I",
     "dataName": "Project_CivicResourceStabilization_I",
-    "techCategory": "SpaceScience",
+    "techCategory": "SocialScience",
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 1200,
+    "researchCost": 2500,
     "prereqs": [
-      "Project_Spaceworks"
+      "ArrivalDomesticPolitics"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus40",
-      "Effect_EconomyPriorityBonus05",
+      "Effect_ControlPointMaintenanceBonus3",
+      "Effect_EconomyPriorityBonus02",
       "Effect_WelfarePriorityBonus05"
     ],
     "oneTimeGlobally": false,
@@ -47,18 +47,18 @@
   {
     "friendlyName": "Civic Resource Stabilization II",
     "dataName": "Project_CivicResourceStabilization_II",
-    "techCategory": "SpaceScience",
+    "techCategory": "SocialScience",
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 3200,
+    "researchCost": 3500,
     "prereqs": [
       "Project_CivicResourceStabilization_I"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus40",
-      "Effect_EconomyPriorityBonus05",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_ControlPointMaintenanceBonus10",
+      "Effect_EconomyPriorityBonus02",
+      "Effect_KnowledgePriorityBonus02"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -71,17 +71,18 @@
   {
     "friendlyName": "Interplanetary Welfare Ledger I",
     "dataName": "Project_InterplanetaryWelfareLedger_I",
-    "techCategory": "SpaceScience",
+    "techCategory": "SocialScience",
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 1500,
+    "researchCost": 2800,
     "prereqs": [
-      "Project_Spaceworks"
+      "ArrivalEconomics",
+      "Project_CivicResourceStabilization_II"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus40",
-      "Effect_EconomyPriorityBonus05",
+      "Effect_ControlPointMaintenanceBonus10",
+      "Effect_EconomyPriorityBonus02",
       "Effect_WelfarePriorityBonus05"
     ],
     "oneTimeGlobally": false,
@@ -95,7 +96,7 @@
   {
     "friendlyName": "Interplanetary Welfare Ledger II",
     "dataName": "Project_InterplanetaryWelfareLedger_II",
-    "techCategory": "SpaceScience",
+    "techCategory": "SocialScience",
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
@@ -104,8 +105,8 @@
       "Project_InterplanetaryWelfareLedger_I"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus40",
-      "Effect_EconomyPriorityBonus05",
+      "Effect_ControlPointMaintenanceBonus20",
+      "Effect_EconomyPriorityBonus02",
       "Effect_WelfarePriorityBonus05"
     ],
     "oneTimeGlobally": false,
@@ -119,18 +120,20 @@
   {
     "friendlyName": "Imperial Economic Harmonization",
     "dataName": "Project_ImperialEconomicHarmonization",
-    "techCategory": "SpaceScience",
+    "techCategory": "SocialScience",
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 2200,
+    "researchCost": 4000,
     "prereqs": [
-      "Project_Spaceworks"
+      "ArrivalSociology",
+      "Project_InterplanetaryWelfareLedger_II"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_ControlPointMaintenanceBonus20",
       "Effect_EconomyPriorityBonus05",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus05",
+      "Effect_KnowledgePriorityBonus05"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -143,18 +146,20 @@
   {
     "friendlyName": "Chartered Municipal Investment Program",
     "dataName": "Project_CharteredMunicipalInvestment",
-    "techCategory": "SpaceScience",
+    "techCategory": "SocialScience",
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 1800,
+    "researchCost": 7500,
     "prereqs": [
-      "Project_Spaceworks"
+      "SpaceResearch",
+      "Project_ImperialEconomicHarmonization"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus40",
+      "Effect_ControlPointMaintenanceBonus20",
       "Effect_EconomyPriorityBonus05",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus05",
+      "Effect_KnowledgePriorityBonus05"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -167,18 +172,20 @@
   {
     "friendlyName": "Universal Basic Support Initiative",
     "dataName": "Project_UniversalBasicSupport",
-    "techCategory": "SpaceScience",
+    "techCategory": "SocialScience",
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 2600,
+    "researchCost": 6500,
     "prereqs": [
-      "Project_Spaceworks"
+      "AdAstra",
+      "Project_CharteredMunicipalInvestment"
     ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
-      "Effect_EconomyPriorityBonus05",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_EconomyPriorityBonus1",
+      "Effect_WelfarePriorityBonus05",
+      "Effect_KnowledgePriorityBonus05"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -191,18 +198,20 @@
   {
     "friendlyName": "Official Credit Redistribution Protocol",
     "dataName": "Project_OfficialCreditRedistribution",
-    "techCategory": "SpaceScience",
+    "techCategory": "SocialScience",
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 4000,
+    "researchCost": 7500,
     "prereqs": [
+      "ArrivalInternationalDevelopment",
       "Project_UniversalBasicSupport"
     ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
-      "Effect_EconomyPriorityBonus05",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_EconomyPriorityBonus1",
+      "Effect_WelfarePriorityBonus05",
+      "Effect_KnowledgePriorityBonus1"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -283,7 +292,7 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "None",
-    "researchCost": 500,
+    "researchCost": 1250,
     "prereqs": [
       "Project_Warships",
       "PrinciplesofSpaceWarfare"
@@ -328,7 +337,8 @@
     "researchCost": 5000,
     "prereqs": [
       "KineticsWarfareDoctrine",
-      "MassDrivers"
+      "MassDrivers",
+      "Project_HypervelocityKineticCannon_Maelstrom"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -346,9 +356,10 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "None",
-    "researchCost": 15000,
+    "researchCost": 8000,
     "prereqs": [
-      "Coilguns"
+      "Project_HeavyFissionReactorFarm",
+      "Project_HypervelocityKineticCannon_Maelstrom_Two"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -368,7 +379,8 @@
     "AI_projectRole": "None",
     "researchCost": 2500,
     "prereqs": [
-      "KineticsWarfareDoctrine"
+      "KineticsWarfareDoctrine",
+      "Project_HypervelocityKineticCannon_Maelstrom"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -388,7 +400,9 @@
     "AI_projectRole": "None",
     "researchCost": 5500,
     "prereqs": [
-      "KineticsWarfareDoctrine"
+      "Project_RailCannonMk3",
+      "Project_HypervelocityKineticCannon_Maelstrom_Two",
+      "Project_ResonantMaelstrom"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -408,7 +422,9 @@
     "AI_projectRole": "None",
     "researchCost": 12500,
     "prereqs": [
-      "KineticsWarfareDoctrine"
+      "Project_RapidRepairingMaterials",
+      "Project_HypervelocityKineticCannon_Maelstrom_Three",
+      "Project_ResonantMaelstrom_Two"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -471,7 +487,7 @@
     "researchCost": 1000,
     "prereqs": [
       "SpaceMiningandRefining",
-      "Project_ExtractionCascade_Water_T1"
+      "Project_ZethrokWaterBonus_L1"
     ],
     "effects": [
       "Effect_MiningWaterBonus_lvl2"
@@ -496,7 +512,7 @@
       "MissiontoMars",
       "MissiontotheAsteroids",
       "MissiontoVenus",
-      "Project_ExtractionCascade_Water_T2"
+      "Project_ZethrokWaterBonus_L2"
     ],
     "effects": [
       "Effect_MiningWaterBonus_lvl3"
@@ -520,7 +536,7 @@
     "prereqs": [
       "SettlementHabs",
       "MissiontotheInnerPlanets",
-      "Project_ExtractionCascade_Water_T3"
+      "Project_ZethrokWaterBonus_L3"
     ],
     "effects": [
       "Effect_MiningWaterBonus_lvl4"
@@ -544,7 +560,7 @@
     "prereqs": [
       "MissiontoSaturn",
       "IndustrializationofSpace",
-      "Project_ExtractionCascade_Water_T4"
+      "Project_ZethrokWaterBonus_L4"
     ],
     "effects": [
       "Effect_MiningWaterBonus_lvl5"
@@ -568,7 +584,7 @@
     "prereqs": [
       "MissiontoSaturn",
       "AdvancedAtomicManipulation",
-      "Project_ExtractionCascade_Water_T5"
+      "Project_ZethrokWaterBonus_L5"
     ],
     "effects": [
       "Effect_MiningWaterBonus_lvl6"
@@ -613,7 +629,7 @@
     "researchCost": 1000,
     "prereqs": [
       "SpaceMiningandRefining",
-      "Project_ExtractionCascade_Volatiles_T1"
+      "Project_ZethrokVolatilesBonus_L1"
     ],
     "effects": [
       "Effect_MiningVolatilesBonus_lvl2"
@@ -638,7 +654,7 @@
       "MissiontoMars",
       "MissiontotheAsteroids",
       "MissiontoVenus",
-      "Project_ExtractionCascade_Volatiles_T2"
+      "Project_ZethrokVolatilesBonus_L2"
     ],
     "effects": [
       "Effect_MiningVolatilesBonus_lvl3"
@@ -662,7 +678,7 @@
     "prereqs": [
       "SettlementHabs",
       "MissiontotheInnerPlanets",
-      "Project_ExtractionCascade_Volatiles_T3"
+      "Project_ZethrokVolatilesBonus_L3"
     ],
     "effects": [
       "Effect_MiningVolatilesBonus_lvl4"
@@ -686,7 +702,7 @@
     "prereqs": [
       "MissiontoSaturn",
       "IndustrializationofSpace",
-      "Project_ExtractionCascade_Volatiles_T4"
+      "Project_ZethrokVolatilesBonus_L4"
     ],
     "effects": [
       "Effect_MiningVolatilesBonus_lvl5"
@@ -710,7 +726,7 @@
     "prereqs": [
       "MissiontoSaturn",
       "AdvancedAtomicManipulation",
-      "Project_ExtractionCascade_Volatiles_T5"
+      "Project_ZethrokVolatilesBonus_L5"
     ],
     "effects": [
       "Effect_MiningVolatilesBonus_lvl6"
@@ -755,7 +771,7 @@
     "researchCost": 1000,
     "prereqs": [
       "SpaceMiningandRefining",
-      "Project_ExtractionCascade_Metals_T1"
+      "Project_ZethrokMetalsBonus_L1"
     ],
     "effects": [
       "Effect_MiningMetalsBonus_lvl2"
@@ -780,7 +796,7 @@
       "MissiontoMars",
       "MissiontotheAsteroids",
       "MissiontoVenus",
-      "Project_ExtractionCascade_Metals_T2"
+      "Project_ZethrokMetalsBonus_L2"
     ],
     "effects": [
       "Effect_MiningMetalsBonus_lvl3"
@@ -804,7 +820,7 @@
     "prereqs": [
       "SettlementHabs",
       "MissiontotheInnerPlanets",
-      "Project_ExtractionCascade_Metals_T3"
+      "Project_ZethrokMetalsBonus_L3"
     ],
     "effects": [
       "Effect_MiningMetalsBonus_lvl4"
@@ -828,7 +844,7 @@
     "prereqs": [
       "MissiontoSaturn",
       "IndustrializationofSpace",
-      "Project_ExtractionCascade_Metals_T4"
+      "Project_ZethrokMetalsBonus_L4"
     ],
     "effects": [
       "Effect_MiningMetalsBonus_lvl5"
@@ -852,7 +868,7 @@
     "prereqs": [
       "MissiontoSaturn",
       "AdvancedAtomicManipulation",
-      "Project_ExtractionCascade_Metals_T5"
+      "Project_ZethrokMetalsBonus_L5"
     ],
     "effects": [
       "Effect_MiningMetalsBonus_lvl6"
@@ -897,7 +913,7 @@
     "researchCost": 1000,
     "prereqs": [
       "SpaceMiningandRefining",
-      "Project_ExtractionCascade_NobleMetals_T1"
+      "Project_ZethrokNobleMetalsBonus_L1"
     ],
     "effects": [
       "Effect_MiningNobleMetalsBonus_lvl2"
@@ -922,7 +938,7 @@
       "MissiontoMars",
       "MissiontotheAsteroids",
       "MissiontoVenus",
-      "Project_ExtractionCascade_NobleMetals_T2"
+      "Project_ZethrokNobleMetalsBonus_L2"
     ],
     "effects": [
       "Effect_MiningNobleMetalsBonus_lvl3"
@@ -946,7 +962,7 @@
     "prereqs": [
       "SettlementHabs",
       "MissiontotheInnerPlanets",
-      "Project_ExtractionCascade_NobleMetals_T3"
+      "Project_ZethrokNobleMetalsBonus_L3"
     ],
     "effects": [
       "Effect_MiningNobleMetalsBonus_lvl4"
@@ -970,7 +986,7 @@
     "prereqs": [
       "MissiontoSaturn",
       "IndustrializationofSpace",
-      "Project_ExtractionCascade_NobleMetals_T4"
+      "Project_ZethrokNobleMetalsBonus_L4"
     ],
     "effects": [
       "Effect_MiningNobleMetalsBonus_lvl5"
@@ -994,7 +1010,7 @@
     "prereqs": [
       "MissiontoSaturn",
       "AdvancedAtomicManipulation",
-      "Project_ExtractionCascade_NobleMetals_T5"
+      "Project_ZethrokNobleMetalsBonus_L5"
     ],
     "effects": [
       "Effect_MiningNobleMetalsBonus_lvl6"
@@ -1039,7 +1055,7 @@
     "researchCost": 1000,
     "prereqs": [
       "SpaceMiningandRefining",
-      "Project_ExtractionCascade_Fissiles_T1"
+      "Project_ZethrokFissilesBonus_L1"
     ],
     "effects": [
       "Effect_MiningFissilesBonus_lvl2"
@@ -1112,7 +1128,7 @@
     "prereqs": [
       "MissiontoSaturn",
       "IndustrializationofSpace",
-      "Project_ExtractionCascade_Fissiles_T4"
+      "Project_ZethrokFissilesBonus_L4"
     ],
     "effects": [
       "Effect_MiningFissilesBonus_lvl5"
@@ -1135,7 +1151,7 @@
     "researchCost": 20000,
     "prereqs": [
       "MissiontoSaturn",
-      "AdvancedAtomicManipulation"
+      "Project_ZethrokFissilesBonus_L5"
     ],
     "effects": [
       "Effect_MiningFissilesBonus_lvl6"
@@ -1184,7 +1200,8 @@
     "AI_projectRole": "Xenology",
     "researchCost": 2500,
     "prereqs": [
-      "ArrivalSociology"
+      "ArrivalSociology",
+      "Project_ZethrokHidingInPlainSight_Beginner"
     ],
     "effects": [
       "Effect_MCUsageMasking_Intermediate"
@@ -1239,7 +1256,8 @@
     "AI_projectRole": "Xenology",
     "researchCost": 10000,
     "prereqs": [
-      "FallofEmpires"
+      "FallofEmpires",
+      "Project_ZethrokHidingInPlainSight_Advanced"
     ],
     "effects": [
       "Effect_MCUsageMasking_Expert"
@@ -1266,7 +1284,8 @@
     "AI_projectRole": "Xenology",
     "researchCost": 35000,
     "prereqs": [
-      "ArrivalGovernance"
+      "ArrivalGovernance",
+      "Project_ZethrokHidingInPlainSight_Expert"
     ],
     "effects": [
       "Effect_MCUsageMasking_Master"
@@ -1354,7 +1373,8 @@
     "researchCost": 10000,
     "prereqs": [
       "Railguns",
-      "Superalloys"
+      "Superalloys",
+      "Project_ShipMagDamage_lvl1"
     ],
     "effects": [
       "Effect_ShipMagDamage_lvl2"
@@ -1377,7 +1397,8 @@
     "researchCost": 20000,
     "prereqs": [
       "Railguns",
-      "SuperconductingMagnets"
+      "SuperconductingMagnets",
+      "Project_ShipMagDamage_lvl2"
     ],
     "effects": [
       "Effect_ShipMagDamage_lvl3"
@@ -1399,7 +1420,8 @@
     "AI_projectRole": "Kinetics",
     "researchCost": 30000,
     "prereqs": [
-      "Coilguns"
+      "Coilguns",
+      "Project_ShipMagDamage_lvl3"
     ],
     "effects": [
       "Effect_ShipMagDamage_lvl4"
@@ -1422,7 +1444,8 @@
     "researchCost": 45000,
     "prereqs": [
       "TargetedBiologicalWarfare",
-      "MagneticPlasmaConfinementTechniques"
+      "MagneticPlasmaConfinementTechniques",
+      "Project_ShipMagDamage_lvl4"
     ],
     "effects": [
       "Effect_ShipMagDamage_lvl5"
@@ -1444,7 +1467,8 @@
     "AI_projectRole": "Kinetics",
     "researchCost": 50000,
     "prereqs": [
-      "PhaseShiftingCoilOverrunMethology"
+      "PhaseShiftingCoilOverrunMethology",
+      "Project_ShipMagDamage_lvl5"
     ],
     "effects": [
       "Effect_ShipMagDamage_lvl3"
@@ -1555,7 +1579,8 @@
     "AI_projectRole": "Exploration",
     "researchCost": 5000,
     "prereqs": [
-      "ElectrostaticPropulsion"
+      "AdvancedSuperconductors",
+      "Project_ThermalFissionFreighters"
     ],
     "effects": [
       "Effect_StarLightFreighters",
@@ -1578,7 +1603,8 @@
     "AI_projectRole": "Exploration",
     "researchCost": 22500,
     "prereqs": [
-      "Neutronics"
+      "Neutronics",
+      "Project_SuperHeatedGravitonDrives"
     ],
     "effects": [
       "Effect_GravitonFreighters",
@@ -1758,7 +1784,8 @@
     "AI_projectRole": "ControlPointCap",
     "researchCost": 20000,
     "prereqs": [
-      "IndustrializationofSpace"
+      "IndustrializationofSpace",
+      "Project_SovereignControlSystems"
     ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
@@ -1878,16 +1905,16 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 1000,
+    "researchCost": 1000000,
     "prereqs": [
       "Project_NeutronFluxTorch"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 8,
-    "deltaUnlockChance": 12,
-    "maxUnlockChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 2,
     "resourcesGranted": [],
     "_meta_": {
       "comments": "Duplicate entry found. Remove this in new plays."
@@ -1921,6 +1948,7 @@
     "AI_projectRole": "ControlPointCap",
     "researchCost": 7500,
     "prereqs": [
+      "Project_MiningRefiningModule_lvl1",
       "Project_SettlementMiningComplex"
     ],
     "oneTimeGlobally": false,
@@ -1940,7 +1968,8 @@
     "AI_projectRole": "ControlPointCap",
     "researchCost": 15000,
     "prereqs": [
-      "Project_ColonyMiningComplex"
+      "Project_ColonyMiningComplex",
+      "Project_MiningRefiningModule_lvl2"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -1988,7 +2017,8 @@
     "researchCost": 1250,
     "prereqs": [
       "Project_OutpostMiningComplex",
-      "SpaceMiningandRefining"
+      "SpaceMiningandRefining",
+      "Project_BronzeRush"
     ],
     "effects": [
       "Effect_SpaceMineExtra4",
@@ -2016,7 +2046,8 @@
     "AI_projectRole": "SpaceResources",
     "researchCost": 5000,
     "prereqs": [
-      "Project_ColonyMiningComplex"
+      "Project_ColonyMiningComplex",
+      "Project_SilverRush"
     ],
     "effects": [
       "Effect_SpaceMineExtra8",
@@ -3319,7 +3350,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 10000,
     "prereqs": [
-      "ArmyNeuralInterface"
+      "ArmyNeuralInterface",
+      "Project_NeuralComputingMilitaryApplications"
     ],
     "effects": [
       "Effect_IncreaseMaxArmyTechLevel",
@@ -3342,7 +3374,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 10000,
     "prereqs": [
-      "CommanderNeuralGlobalNetwork"
+      "CommanderNeuralGlobalNetwork",
+      "Project_NeuralComputingMilitaryApplications"
     ],
     "effects": [
       "Effect_IncreaseMaxArmyTechLevel",
@@ -3365,7 +3398,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 20000,
     "prereqs": [
-      "CyborneticCommandIntegration"
+      "CyborneticCommandIntegration",
+      "Project_NeuralComputingMilitaryApplications"
     ],
     "effects": [
       "Effect_IncreaseMaxArmyTechLevel",
@@ -3448,6 +3482,7 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 22500,
     "prereqs": [
+      "Project_QuantumCoreFissionReactorIII",
       "AdvancedFissionSystems"
     ],
     "effects": [],
@@ -3508,7 +3543,8 @@
     "AI_projectRole": "EnergyEnhancement",
     "researchCost": 37500,
     "prereqs": [
-      "AdvancedQuantumCoreFissionReactorTechnology"
+      "AdvancedQuantumCoreFissionReactorTechnology",
+      "Project_QuantumCoreFissionReactorIII_Compact"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -3568,7 +3604,8 @@
     "AI_projectRole": "EnergyEnhancement",
     "researchCost": 90000,
     "prereqs": [
-      "CleanEnergy"
+      "CleanEnergy",
+      "Project_AdvancedQuantumCoreFissionReactorIII"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4225,7 +4262,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 12000,
     "prereqs": [
-      "Project_JitterStreamBattery_I"
+      "Project_JitterStreamBattery_I",
+      "Project_AdvancedLaserEngine"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4245,7 +4283,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 18000,
     "prereqs": [
-      "Project_JitterStreamBattery_II"
+      "Project_JitterStreamBattery_II",
+      "Project_ParticleCollider"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4265,7 +4304,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 10000,
     "prereqs": [
-      "PlasmoidStreakerPrototype"
+      "PlasmoidStreakerPrototype",
+      "Project_SpaceScienceInstitute"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4283,9 +4323,10 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "MilitaryEnhancement",
-    "researchCost": 14000,
+    "researchCost": 15000,
     "prereqs": [
-      "Project_PlasmoidStreakerBattery_Mk1"
+      "Project_PlasmoidStreakerBattery_Mk1",
+      "Project_ParticleCollider"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4305,7 +4346,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 20000,
     "prereqs": [
-      "Project_PlasmoidStreakerBattery_Mk2"
+      "Project_PlasmoidStreakerBattery_Mk2",
+      "Project_RapidFissileEnrichment"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4325,7 +4367,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 40000,
     "prereqs": [
-      "PlasmoidStreakerAdvancedPrototype"
+      "PlasmoidStreakerAdvancedPrototype",
+      "Project_Atomsmasher"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4345,7 +4388,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 60000,
     "prereqs": [
-      "Project_PlasmoidStreakerBattery_Mk4"
+      "Project_PlasmoidStreakerBattery_Mk4",
+      "Project_TransnationalManagement"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4365,7 +4409,8 @@
     "AI_projectRole": "MilitaryEnhancement",
     "researchCost": 80000,
     "prereqs": [
-      "Project_PlasmoidStreakerBattery_Mk5"
+      "Project_PlasmoidStreakerBattery_Mk5",
+      "AdvancedQuantumCoreFissionReactorTechnology"
     ],
     "effects": [],
     "oneTimeGlobally": false,
