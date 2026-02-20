@@ -46,3 +46,16 @@ TILaserWeaponTemplate.description.2048cmBaseVioletLaserCannon=A gigantic violet 
 TILaserWeaponTemplate.displayName.4096cmBaseVioletLaserCannon=4096 cm Gigantic Base Defense only Violet Laser Cannon
 TILaserWeaponTemplate.description.4096cmBaseVioletLaserCannon=A gigantic violet laser cannon designed for base defense, capable of firing powerful laser beams to protect against incoming threats. This weapon is a formidable addition to any planetary defense system, providing unparalleled firepower and range to safeguard critical infrastructure and population centers from spaceborne attacks.
 
+TILaserWeaponTemplate.displayName.480cmIRArcLaserCannon_RapidFire=480 cm IR Arc Laser Cannon Rapid Fire
+TILaserWeaponTemplate.description.480cmIRArcLaserCannon_RapidFire=A rapid-fire infrared arc laser cannon with enhanced firing rate and efficiency.
+TILaserWeaponTemplate.displayName.480cmGreenArcLaserCannon_rapidFire=480 cm Green Arc Laser Cannon Rapid Fire
+TILaserWeaponTemplate.description.480cmGreenArcLaserCannon_rapidFire=A rapid-fire green arc laser cannon with enhanced firing rate and efficiency.
+TILaserWeaponTemplate.displayName.480cmUVArcLaserCannon_rapidFire=480 cm UV Arc Laser Cannon Rapid Fire
+TILaserWeaponTemplate.description.480cmUVArcLaserCannon_rapidFire=A rapid-fire ultraviolet arc laser cannon with enhanced firing rate and efficiency.
+
+TILaserWeaponTemplate.displayName.720cmIRArcLaserCannon_rapidFire=720 cm IR Arc Laser Cannon Rapid Fire
+TILaserWeaponTemplate.description.720cmIRArcLaserCannon_rapidFire=A rapid-fire infrared arc laser cannon with enhanced firing rate and efficiency.
+TILaserWeaponTemplate.displayName.720cmGreenArcLaserCannon_rapidFire=720 cm Green Arc Laser Cannon Rapid Fire
+TILaserWeaponTemplate.description.720cmGreenArcLaserCannon_rapidFire=A rapid-fire green arc laser cannon with enhanced firing rate and efficiency.
+TILaserWeaponTemplate.displayName.720cmUVArcLaserCannon_rapidFire=720 cm UV Arc Laser Cannon Rapid Fire
+TILaserWeaponTemplate.description.720cmUVArcLaserCannon_rapidFire=A rapid-fire ultraviolet arc laser cannon with enhanced firing rate and efficiency.
