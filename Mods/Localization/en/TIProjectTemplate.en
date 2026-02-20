@@ -107,6 +107,14 @@ TIProjectTemplate.displayName.Project_PointDefenseArray_T0=Point Defense Array -
 TIProjectTemplate.summary.Project_PointDefenseArray_T0=<habmodule>
 TIProjectTemplate.displayName.Project_AutomatedPointDefenseArray=Automated Point Defense Array.
 TIProjectTemplate.summary.Project_AutomatedPointDefenseArray=<habmodule>
+TIProjectTemplate.displayName.Project_AutomatedQuantumSingularityReactor=Automated Quantum Singularity Reactor
+TIProjectTemplate.summary.Project_AutomatedQuantumSingularityReactor=<habmodule>
+TIProjectTemplate.displayName.Project_SingularityPile=Singularity Pile
+TIProjectTemplate.summary.Project_SingularityPile=<habmodule>
+TIProjectTemplate.displayName.Project_SingularityReactorArray=Singularity Reactor Array
+TIProjectTemplate.summary.Project_SingularityReactorArray=<habmodule>
+TIProjectTemplate.displayName.Project_SingularityReactorFarm=Singularity Reactor Farm
+TIProjectTemplate.summary.Project_SingularityReactorFarm=<habmodule>
 
 TIProjectTemplate.displayName.Project_ShipMagDamage_lvl1=Nano Optimized Shell Designing
 TIProjectTemplate.summary.Project_ShipMagDamage_lvl1=Research nano-optimized shell designs to enhance the damage output of magnetic weapons.

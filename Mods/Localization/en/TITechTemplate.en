@@ -132,3 +132,10 @@ TITechTemplate.quote.AdvancedBaseDefenseSystems="We submitted the forms. We chec
 <align=right>(Approved by Safety Officer S. Dillon)<align=left>
 TITechTemplate.description.AdvancedBaseDefenseSystems=By abandoning all pretense of mobility, we can mount 2048cm and 4096cm laser arrays directly into the station's spine. These 'Magnifying Glasses of Doom' require gigawatts of power and add over a million tons of mass to the structure, making them impossible to mount on anything with an engine. However, they solve the problem of Station Defenses being ignored by the enemy. Now, the station ignores the enemy.
 
+TITechTemplate.displayName.SingularityPowerSourceTechnology=Singularity Power Source Technology
+TITechTemplate.summary.SingularityPowerSourceTechnology=Develops a compact and highly efficient power source based on singularity technology, capable of providing immense energy output for advanced spacecraft and station systems.
+TITechTemplate.quote.SingularityPowerSourceTechnology="With the advent of singularity power sources, we've unlocked a new era of energy generation. These compact yet incredibly powerful devices allow us to power our most ambitious projects without the limitations of conventional energy sources."
+<align=right>{submitLeader}<align=left>
+<align=right>Preben G. Horf, Singularities Research Division<align=left>
+TITechTemplate.description.SingularityPowerSourceTechnology=By harnessing the power of singularities, we can generate vast amounts of energy in a compact form factor. This technology enables the operation of advanced spacecraft and station systems that were previously impossible due to energy constraints.
+
