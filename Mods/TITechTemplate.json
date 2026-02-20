@@ -90,7 +90,8 @@
     "endGameTech": false,
     "researchCost": 30000,
     "prereqs": [
-      "TransInterfaceWarfare"
+      "TransInterfaceWarfare",
+      "ArmyNeuralInterface"
     ],
     "effects": [
       "Effect_IncreaseMaxArmyTechLevel",
@@ -106,7 +107,8 @@
     "endGameTech": false,
     "researchCost": 60000,
     "prereqs": [
-      "TransInterfaceWarfare"
+      "TransInterfaceWarfare",
+      "CommanderNeuralGlobalNetwork"
     ],
     "effects": [
       "Effect_IncreaseMaxArmyTechLevel",
@@ -124,7 +126,8 @@
     "prereqs": [
       "MagneticNozzles",
       "PlasmaWeapons",
-      "MolecularAssemblers"
+      "MolecularAssemblers",
+      "CyborneticCommandIntegration"
     ],
     "effects": [
       "Effect_IncreaseMaxArmyTechLevel"
@@ -162,10 +165,10 @@
     "AI_techRole": "none",
     "AI_criticalTech": false,
     "endGameTech": false,
-    "researchCost": 6000,
+    "researchCost": 26000,
     "prereqs": [
       "MiniaturizedMassLaserDefenseArray",
-      "SpaceNavies"
+      "ArcLasers"
     ]
   },
   {
