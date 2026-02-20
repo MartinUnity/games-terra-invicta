@@ -333,6 +333,10 @@ def main(argv: Optional[List[str]] = None) -> int:
             cand = os.path.expanduser(os.path.join("~", "Games", "TerraInvicta", "templates"))
             if os.path.exists(cand):
                 base_dir = cand
+            # Also check if there is a symlink called templates in the root repo folder
+            cand = os.path.abspath(os.path.join(start, "..", "templates"))
+            if os.path.exists(cand):
+                base_dir = cand
         if not base_dir:
             print("Templates directory not found; checked candidate locations", file=sys.stderr)
             return 1
