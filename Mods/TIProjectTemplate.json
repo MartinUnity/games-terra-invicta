@@ -3368,6 +3368,66 @@
     "resourcesGranted": []
   },
   {
+    "friendlyName": "Quantum Singularity Fusion Reactor I",
+    "dataName": "Project_QuantumSingularityFusionReactorI",
+    "techCategory": "Energy",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "EnergyEnhancement",
+    "researchCost": 90000,
+    "prereqs": [
+      "CleanEnergy"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Quantum Singularity Fusion Reactor II",
+    "dataName": "Project_QuantumSingularityFusionReactorII",
+    "techCategory": "Energy",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "EnergyEnhancement",
+    "researchCost": 120000,
+    "prereqs": [
+      "Project_QuantumSingularityFusionReactorI"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Quantum Singularity Fusion Reactor III",
+    "dataName": "Project_QuantumSingularityFusionReactorIII",
+    "techCategory": "Energy",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "EnergyEnhancement",
+    "researchCost": 150000,
+    "prereqs": [
+      "Project_QuantumSingularityFusionReactorII"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
     "friendlyName": "Miniaturized Mass Laser Defense Array I",
     "dataName": "Project_MiniaturizedMassLaserDefenseArray_I",
     "techCategory": "MilitaryScience",

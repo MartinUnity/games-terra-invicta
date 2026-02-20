@@ -92,7 +92,6 @@ TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L5=Research and implement
 TIProjectTemplate.displayName.Project_ZethrokFissilesBonus_L6=Heuristic Fissile Optimization L6
 TIProjectTemplate.summary.Project_ZethrokFissilesBonus_L6=Research and implement Heuristic Fissile Optimization Level 6 to improve material efficiency in weapon systems.
 
-
 TIProjectTemplate.displayName.Project_ZethrokHidingInPlainSight_Beginner=Mission Control Usage Masked - Basic
 TIProjectTemplate.summary.Project_ZethrokHidingInPlainSight_Beginner=Learn to mask the usage of mission control systems to reduce the effectiveness of enemy detection methods.
 TIProjectTemplate.displayName.Project_ZethrokHidingInPlainSight_Intermediate=Mission Control Usage Masked - Intermediate
@@ -204,7 +203,6 @@ TIProjectTemplate.displayName.Project_Twinspire_Mk_III=Twinspire Mk III
 TIProjectTemplate.summary.Project_Twinspire_Mk_III=A Twin Nosed vessel with a single engine. Very similar to the Mk II with just 1 utility and a single 4x turret. Still a far cry from modern designs, but a solid step up from the Mk II.
 TIProjectTemplate.displayName.Project_Twinspire_Mk_IV=Twinspire Mk IV
 TIProjectTemplate.summary.Project_Twinspire_Mk_IV=A Twin Nosed vessel with a single engine. An upgrade from the Mk II with 3x Nose turrets and a single utility. Still a far cry from modern designs, but a solid step up from the Mk II.
-
 
 TIProjectTemplate.displayName.Project_ScrappedAluminiumFoamPlating=Scrapped Aluminium Foam Plating
 TIProjectTemplate.summary.Project_ScrappedAluminiumFoamPlating=Scavenged aluminium foam plating salvaged from scrapyards. Offers minimal protection but is better than nothing.
@@ -339,6 +337,13 @@ TIProjectTemplate.displayName.Project_AdvancedQuantumCoreFissionReactorII=Advanc
 TIProjectTemplate.summary.Project_AdvancedQuantumCoreFissionReactorII=An improved version of the Quantum Core Fission Reactor II, incorporating cutting-edge advancements in quantum core design for superior performance.
 TIProjectTemplate.displayName.Project_AdvancedQuantumCoreFissionReactorIII=Advanced Quantum Core Fission Reactor III
 TIProjectTemplate.summary.Project_AdvancedQuantumCoreFissionReactorIII=A state-of-the-art iteration of the Quantum Core Fission Reactor III, offering unparalleled power
+
+TIProjectTemplate.displayName.Project_QuantumSingularityFusionReactorI=Quantum Singularity Fusion Reactor I
+TIProjectTemplate.summary.Project_QuantumSingularityFusionReactorI=An advanced iteration of the Quantum Singularity Fusion Reactor I, featuring enhanced quantum core technology for even greater power output and efficiency.
+TIProjectTemplate.displayName.Project_QuantumSingularityFusionReactorII=Quantum Singularity Fusion Reactor II
+TIProjectTemplate.summary.Project_QuantumSingularityFusionReactorII=An improved version of the Quantum Singularity Fusion Reactor II, incorporating cutting-edge advancements in quantum core design for superior performance.
+TIProjectTemplate.displayName.Project_QuantumSingularityFusionReactorIII=Quantum Singularity Fusion Reactor III
+TIProjectTemplate.summary.Project_QuantumSingularityFusionReactorIII=A state-of-the-art iteration of the Quantum Singularity Fusion Reactor III, offering unparalleled power output and efficiency for the most advanced spacecraft applications.
 
 TIProjectTemplate.displayName.Project_MiniaturizedMassLaserDefenseArray_I=Miniaturized Mass Laser Defense Array I
 TIProjectTemplate.summary.Project_MiniaturizedMassLaserDefenseArray_I=A compact and efficient mass laser defense array, designed for smaller vessels or applications with space constraints while maintaining high defensive capabilities.

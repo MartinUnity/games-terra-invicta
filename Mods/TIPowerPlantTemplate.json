@@ -110,7 +110,7 @@
   {
     "dataName": "AdvancedQuantumCoreFissionReactorI",
     "friendlyName": "Advanced Quantum Core Fission Reactor I",
-    "maxOutput_GW": 1660,
+    "maxOutput_GW": 2660,
     "specificPower_tGW": 1.1,
     "powerPlantClass": "Solid_Core_Fission",
     "requiredProjectName": "Project_AdvancedQuantumCoreFissionReactorI",
@@ -129,7 +129,7 @@
     "dataName": "AdvancedQuantumCoreFissionReactorII_Compact",
     "_meta_fixup_dataName": "AdvancedQuantumCoreFissionReactorII",
     "friendlyName": "Advanced Quantum Core Fission Reactor II",
-    "maxOutput_GW": 2160,
+    "maxOutput_GW": 4160,
     "specificPower_tGW": 0.95,
     "powerPlantClass": "Solid_Core_Fission",
     "requiredProjectName": "Project_AdvancedQuantumCoreFissionReactorII",
@@ -147,12 +147,66 @@
   {
     "dataName": "AdvancedQuantumCoreFissionReactorIII",
     "friendlyName": "Advanced Quantum Core Fission Reactor III",
-    "maxOutput_GW": 2960,
+    "maxOutput_GW": 8960,
     "specificPower_tGW": 0.8,
     "powerPlantClass": "Solid_Core_Fission",
     "requiredProjectName": "Project_AdvancedQuantumCoreFissionReactorIII",
     "efficiency": 0.96,
     "crew": 12,
+    "weightedBuildMaterials": {
+      "water": 0.2,
+      "volatiles": 0.2,
+      "metals": 0.4,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+    },
+    "iconResource": "shipbuildericons/ICO_FuelCellIII"
+  },
+  {
+    "dataName": "QuantumSingularityFusionReactorI",
+    "friendlyName": "Quantum Singularity Fusion Reactor I",
+    "maxOutput_GW": 38960,
+    "specificPower_tGW": 0.75,
+    "powerPlantClass": "Solid_Core_Fission",
+    "requiredProjectName": "Project_QuantumSingularityFusionReactorI",
+    "efficiency": 0.96,
+    "crew": 12,
+    "weightedBuildMaterials": {
+      "water": 0.2,
+      "volatiles": 0.2,
+      "metals": 0.4,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+    },
+    "iconResource": "shipbuildericons/ICO_FuelCellI"
+  },
+  {
+    "dataName": "QuantumSingularityFusionReactorII",
+    "friendlyName": "Quantum Singularity Fusion Reactor II",
+    "maxOutput_GW": 74960,
+    "specificPower_tGW": 0.65,
+    "powerPlantClass": "Solid_Core_Fission",
+    "requiredProjectName": "Project_QuantumSingularityFusionReactorII",
+    "efficiency": 0.965,
+    "crew": 14,
+    "weightedBuildMaterials": {
+      "water": 0.2,
+      "volatiles": 0.2,
+      "metals": 0.4,
+      "nobleMetals": 0.15,
+      "fissiles": 0.05
+    },
+    "iconResource": "shipbuildericons/ICO_FuelCellII"
+  },
+  {
+    "dataName": "QuantumSingularityFusionReactorIII",
+    "friendlyName": "Quantum Singularity Fusion Reactor III",
+    "maxOutput_GW": 108960,
+    "specificPower_tGW": 0.5,
+    "powerPlantClass": "Solid_Core_Fission",
+    "requiredProjectName": "Project_QuantumSingularityFusionReactorIII",
+    "efficiency": 0.97,
+    "crew": 16,
     "weightedBuildMaterials": {
       "water": 0.2,
       "volatiles": 0.2,
