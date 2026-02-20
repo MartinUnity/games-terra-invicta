@@ -299,6 +299,23 @@ TIProjectTemplate.summary.Project_CommanderNeuralGlobalNetwork=Very Advanced neu
 TIProjectTemplate.displayName.Project_CyborneticCommandIntegration=Neural Computing: Cybornetic Command Integration
 TIProjectTemplate.summary.Project_CyborneticCommandIntegration=Cutting-edge neural computing techniques to enhance military capacity.
 
+TIProjectTemplate.displayName.Project_CivicResourceStabilization_I=Stabilization of Civic Resource Systems I
+TIProjectTemplate.summary.Project_CivicResourceStabilization_I=Advanced techniques to stabilize and optimize civic resource systems.
+TIProjectTemplate.displayName.Project_CivicResourceStabilization_II=Stabilization of Civic Resource Systems II
+TIProjectTemplate.summary.Project_CivicResourceStabilization_II=Very advanced techniques to stabilize and optimize civic resource systems.
+TIProjectTemplate.displayName.Project_InterplanetaryWelfareLedger_I=Interplanetary Welfare Ledger I
+TIProjectTemplate.summary.Project_InterplanetaryWelfareLedger_I=Advanced techniques to manage and optimize interplanetary welfare systems.
+TIProjectTemplate.displayName.Project_InterplanetaryWelfareLedger_II=Interplanetary Welfare Ledger II
+TIProjectTemplate.summary.Project_InterplanetaryWelfareLedger_II=Very advanced techniques to manage and optimize interplanetary welfare systems.
+TIProjectTemplate.displayName.Project_ImperialEconomicHarmonization=Imperial Economic Harmonization
+TIProjectTemplate.summary.Project_ImperialEconomicHarmonization=Very advanced techniques to harmonize and optimize interplanetary economic systems.
+TIProjectTemplate.displayName.Project_CharteredMunicipalInvestment=Chartered Municipal Investment
+TIProjectTemplate.summary.Project_CharteredMunicipalInvestment=Very advanced techniques to manage and optimize municipal investments.
+TIProjectTemplate.displayName.Project_UniversalBasicSupport=Universal Basic Support
+TIProjectTemplate.summary.Project_UniversalBasicSupport=Very advanced techniques to provide and optimize universal basic support.
+TIProjectTemplate.displayName.Project_OfficialCreditRedistribution=Official Credit Redistribution
+TIProjectTemplate.summary.Project_OfficialCreditRedistribution=Very advanced techniques to manage and optimize official credit redistribution.
+
 TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk1=Quantum Flux Singularity Drive Mk I
 TIProjectTemplate.summary.Project_QuantumFluxSingularityDrive_Mk1=An experimental singularity-coupled drive that harnesses controlled micro-singularities to boost thrust and exhaust velocity with excellent efficiency at small scales.
 TIProjectTemplate.displayName.Project_QuantumFluxSingularityDrive_Mk2=Quantum Flux Singularity Drive Mk II
