@@ -4562,5 +4562,256 @@
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Array Mk1",
+    "dataName": "Project_ProtoPlasmaArray_Mk1",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 1000,
+    "prereqs": [
+      "ProtoPlasmaArray_Model01"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Array Mk2",
+    "dataName": "Project_ProtoPlasmaArray_Mk2",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 1500,
+    "prereqs": [
+      "Project_ProtoPlasmaArray_Mk1",
+      "Project_FissionFragDrive"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Array Mk3",
+    "dataName": "Project_ProtoPlasmaArray_Mk3",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 2250,
+    "prereqs": [
+      "Project_EnergyResearchCenter",
+      "Project_ProtoPlasmaArray_Mk2"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Array Mk4",
+    "dataName": "Project_ProtoPlasmaArray_Mk4",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 3250,
+    "prereqs": [
+      "ProtoPlasmaArray_Model02",
+      "Project_ProtoPlasmaArray_Mk3",
+      "Project_SolarMirror"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Array Mk5",
+    "dataName": "Project_ProtoPlasmaArray_Mk5",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 4150,
+    "prereqs": [
+      "Project_ProtoPlasmaArray_Mk4",
+      "Project_IonBatteries"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Array Mk6",
+    "dataName": "Project_ProtoPlasmaArray_Mk6",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 5500,
+    "prereqs": [
+      "Project_ProtoPlasmaArray_Mk5",
+      "Project_FissionReactorFarm"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Cannon Mk1",
+    "dataName": "Project_ProtoPlasmaCannon_Mk1",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 1000,
+    "prereqs": [
+      "ProtoPlasmaCannon_Model01"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Cannon Mk2",
+    "dataName": "Project_ProtoPlasmaCannon_Mk2",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 1500,
+    "prereqs": [
+      "Project_ProtoPlasmaCannon_Mk1",
+      "Project_GrapheneBattery"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Cannon Mk3",
+    "dataName": "Project_ProtoPlasmaCannon_Mk3",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 2250,
+    "prereqs": [
+      "Project_ProtoPlasmaCannon_Mk2"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Cannon Mk4",
+    "dataName": "Project_ProtoPlasmaCannon_Mk4",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 3250,
+    "prereqs": [
+      "ProtoPlasmaCannon_Model02",
+      "Project_ProtoPlasmaCannon_Mk3",
+      "Project_ElectronLance"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Cannon Mk5",
+    "dataName": "Project_ProtoPlasmaCannon_Mk5",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 4150,
+    "prereqs": [
+      "Project_ProtoPlasmaCannon_Mk4",
+      "Project_Shipyard"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "friendlyName": "Prototype Plasma Cannon Mk6",
+    "dataName": "Project_ProtoPlasmaCannon_Mk6",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "MilitaryEnhancement",
+    "researchCost": 5500,
+    "prereqs": [
+      "Project_ProtoPlasmaCannon_Mk5",
+      "Project_IonCannon"
+    ],
+    "effects": [],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
   }
 ]

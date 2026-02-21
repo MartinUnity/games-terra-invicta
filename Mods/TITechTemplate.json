@@ -257,15 +257,66 @@
     ]
   },
   {
-    "friendlyName": "Singularity Power Source Technology",
-    "dataName": "SingularityPowerSourceTechnology",
-    "techCategory": "Materials",
+    "friendlyName": "Prototype Plasma Array - Model 01",
+    "dataName": "ProtoPlasmaArray_Model01",
+    "techCategory": "MilitaryScience",
     "AI_techRole": "none",
     "AI_criticalTech": false,
     "endGameTech": false,
-    "researchCost": 80000,
+    "researchCost": 1750,
     "prereqs": [
-      "CleanEnergy"
-    ]
+      "ElectromagneticPropulsion"
+    ],
+    "_meta_": {
+      "notes": "Covers Mk1-Mk3 Prototype Plasma Arrays."
+    }
+  },
+  {
+    "friendlyName": "Prototype Plasma Array - Model 02",
+    "dataName": "ProtoPlasmaArray_Model02",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 3250,
+    "prereqs": [
+      "AdvancedSuperconductors",
+      "ProtoPlasmaArray_Model01"
+    ],
+    "_meta_": {
+      "notes": "Covers Mk4-Mk6 Prototype Plasma Arrays."
+    }
+  },
+  {
+    "friendlyName": "Prototype Plasma Cannon - Model 01",
+    "dataName": "ProtoPlasmaCannon_Model01",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 2250,
+    "prereqs": [
+      "MagneticForceManipulation",
+      "ProtoPlasmaArray_Model01"
+    ],
+    "_meta_": {
+      "notes": "Covers Mk1-Mk3 Prototype Plasma Cannons."
+    }
+  },
+  {
+    "friendlyName": "Prototype Plasma Cannon - Model 02",
+    "dataName": "ProtoPlasmaCannon_Model02",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 3750,
+    "prereqs": [
+      "AdvancedSuperconductors",
+      "ProtoPlasmaCannon_Model01"
+    ],
+    "_meta_": {
+      "notes": "Covers Mk4-Mk6 Prototype Plasma Cannons."
+    }
   }
 ]
