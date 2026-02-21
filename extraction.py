@@ -2,6 +2,8 @@ import gzip
 import json
 import logging as logger
 import os
+import shutil
+import tempfile
 import threading
 import time
 from datetime import datetime
@@ -18,6 +20,10 @@ WATCH_DIRECTORY = "/home/martin/.steam/steam/steamapps/compatdata/1176470/pfx/dr
 DEBOUNCE_SECONDS = 2.0  # Wait this long after the file stops changing before reading
 CONFIG_PATH = "config.yml"
 CONFIG_RELOAD_INTERVAL = 60  # seconds
+
+# Code-level default: whether to auto-persist detected `my_nations` into `config.yml`.
+# This can be overridden by the `auto_persist_my_nations` key in `config.yml`.
+AUTO_PERSIST_MY_NATIONS = True
 
 # in-memory config (kept up-to-date by a watcher thread)
 CURRENT_CONFIG = {}
@@ -305,6 +311,117 @@ def run_mc_calibration(data):
         print(f"{row[0]},{row[1]}")
 
 
+def detect_my_nations(data):
+    """Attempt to auto-detect which nations the player controls from the save data.
+
+    Heuristics used (in order):
+    - Look for `playerFactionName` in TIMetadataState and search each nation blob
+      for that name.
+    - Attempt to match a top-level `currentID.value` against nation IDs.
+    - Inspect common fields like `controller`, `faction`, `owner` for matches.
+    Returns a list of nation display names (may be empty).
+    """
+    root = "gamestates"
+    prefix = "PavonisInteractive.TerraInvicta"
+
+    if root in data:
+        game_states = data[root]
+    else:
+        game_states = data
+
+    # Find player faction/name in metadata
+    player_name = None
+    meta = game_states.get(f"{prefix}.TIMetadataState", [])
+    for m in meta:
+        val = m.get("Value", m)
+        if isinstance(val, dict) and "playerFactionName" in val:
+            player_name = val.get("playerFactionName")
+            break
+        # some saves may use different keys
+        if isinstance(val, dict):
+            for k, v in val.items():
+                if isinstance(v, str) and "player" in k.lower() and "faction" in k.lower():
+                    player_name = v
+                    break
+        if player_name:
+            break
+
+    # Try top-level currentID as a fallback identifier
+    current_id = None
+    top_current = data.get("currentID")
+    if isinstance(top_current, dict):
+        current_id = top_current.get("value")
+
+    raw_nations = game_states.get(f"{prefix}.TINationState", [])
+    detected = []
+
+    # Build nation -> region count map so we only return nations that actually
+    # own land (this filters out absorbed or phantom entries).
+    raw_regions = game_states.get(f"{prefix}.TIRegionState", [])
+    nation_region_count = {}
+    for rentry in raw_regions:
+        r = rentry.get("Value", rentry)
+        owner = r.get("nation", {})
+        nid = owner.get("value")
+        if nid is None:
+            continue
+        nation_region_count[nid] = nation_region_count.get(nid, 0) + 1
+
+    # Attempt to find the player's faction ID from TIFactionState
+    faction_id = None
+    raw_factions = game_states.get(f"{prefix}.TIFactionState", [])
+    for fentry in raw_factions:
+        f = fentry.get("Value", fentry)
+        if player_name and f.get("displayName") == player_name:
+            faction_id = f.get("ID", {}).get("value")
+            break
+
+    for entry in raw_nations:
+        nation = entry.get("Value", entry)
+        name = nation.get("displayName", "Unknown")
+        nid = nation.get("ID", {}).get("value")
+
+        if name == "Alien Administration":
+            continue
+
+        matched = False
+
+        # 1) If we have faction_id, check authoritative executive/ruling fields
+        if faction_id is not None:
+            lec = nation.get("lastExecutiveChange")
+            if isinstance(lec, dict):
+                newexec = lec.get("newExecutive")
+                if isinstance(newexec, dict) and newexec.get("value") == faction_id:
+                    matched = True
+            ce = nation.get("currentExecutive")
+            if isinstance(ce, dict) and ce.get("value") == faction_id:
+                matched = True
+            rf = nation.get("rulingFaction")
+            if isinstance(rf, dict) and rf.get("value") == faction_id:
+                matched = True
+
+        # 2) Fallback: if we have a player faction name, do a text search
+        if not matched and player_name:
+            try:
+                blob = json.dumps(nation, ensure_ascii=False).lower()
+                if player_name.lower() in blob:
+                    matched = True
+            except Exception:
+                pass
+
+        # 3) Fallback: match top-level currentID (rare)
+        if not matched and current_id is not None and nid == current_id:
+            matched = True
+
+        if matched:
+            # Only consider nations that actually own >=1 region
+            if nation_region_count.get(nid, 0) > 0:
+                detected.append(name)
+
+    # Deduplicate and sort
+    return sorted(set(detected))
+
+
 class SaveWatcher(FileSystemEventHandler):
     def __init__(self):
         self.timer = None
@@ -337,6 +454,8 @@ def run_extraction_pipeline(specific_file_path=None):
     Refactored your main logic into a function so it can be called
     both on startup and by the watcher.
     """
+    global CURRENT_CONFIG
+
     try:
         # If the watcher passed a specific file, use it. Otherwise find the latest.
         if specific_file_path:
@@ -359,8 +478,88 @@ def run_extraction_pipeline(specific_file_path=None):
         # Load nation filter from the in-memory CURRENT_CONFIG (kept updated by watcher)
         my_nations = CURRENT_CONFIG.get("my_nations") if isinstance(CURRENT_CONFIG, dict) else None
         if not my_nations:
-            logger.error("No valid 'my_nations' configured; skipping this extraction run.")
-            return
+            logger.info("No 'my_nations' in config; attempting auto-detect from save")
+            my_nations = detect_my_nations(data)
+            if my_nations:
+                logger.info(f"Auto-detected my_nations: {my_nations}")
+                # keep in-memory so subsequent runs use the detected list
+                if isinstance(CURRENT_CONFIG, dict):
+                    CURRENT_CONFIG["my_nations"] = my_nations
+                # Persist to config.yml (safe write with backup) if enabled in config
+                try:
+                    # Default to the code-level constant, but allow config.yml to override
+                    auto_persist = AUTO_PERSIST_MY_NATIONS
+                    if isinstance(CURRENT_CONFIG, dict):
+                        auto_persist = CURRENT_CONFIG.get("auto_persist_my_nations", AUTO_PERSIST_MY_NATIONS)
+                    if auto_persist:
+
+                        def persist_my_nations(my_nations_list, path=CONFIG_PATH):
+                            """Atomically replace `path` with a minimal config containing only
+                            `my_nations` (and keep a backup of the previous file).
+                            This deliberately does not merge or preserve comments/old keys.
+                            """
+                            new_cfg = {"my_nations": my_nations_list}
+
+                            # Write atomically: tmp -> replace, keep a backup of old
+                            tmp_fd, tmp_path = tempfile.mkstemp(prefix="config-", suffix=".yml", dir=".")
+                            os.close(tmp_fd)
+                            try:
+                                with open(tmp_path, "w", encoding="utf-8") as tf:
+                                    yaml.safe_dump(
+                                        new_cfg, tf, default_flow_style=False, sort_keys=False, allow_unicode=True
+                                    )
+                                if os.path.isfile(path):
+                                    try:
+                                        shutil.copy2(path, path + ".bak")
+                                    except Exception:
+                                        # don't fail the whole flow if backup can't be made
+                                        pass
+                                os.replace(tmp_path, path)
+                                return True
+                            finally:
+                                if os.path.exists(tmp_path):
+                                    try:
+                                        os.remove(tmp_path)
+                                    except Exception:
+                                        pass
+
+                        if persist_my_nations(my_nations, CONFIG_PATH):
+                            logger.info(f"Wrote detected nations to {CONFIG_PATH}")
+                            # reload into CURRENT_CONFIG
+                            cfg = load_and_validate_config(CONFIG_PATH)
+                            if cfg is not None:
+                                CURRENT_CONFIG = cfg
+                            else:
+                                # If the written file doesn't validate (race/replace oddness),
+                                # force a second overwrite to ensure the minimal config lands.
+                                try:
+                                    forced_cfg = {"my_nations": my_nations}
+                                    tmp_fd2, tmp_path2 = tempfile.mkstemp(
+                                        prefix="config-force-", suffix=".yml", dir="."
+                                    )
+                                    os.close(tmp_fd2)
+                                    with open(tmp_path2, "w", encoding="utf-8") as tf2:
+                                        yaml.safe_dump(
+                                            forced_cfg,
+                                            tf2,
+                                            default_flow_style=False,
+                                            sort_keys=False,
+                                            allow_unicode=True,
+                                        )
+                                    os.replace(tmp_path2, CONFIG_PATH)
+                                    logger.info(f"Force-wrote {CONFIG_PATH} to ensure contents")
+                                    cfg2 = load_and_validate_config(CONFIG_PATH)
+                                    if cfg2 is not None:
+                                        CURRENT_CONFIG = cfg2
+                                except Exception as e:
+                                    logger.error(f"Failed forced write of {CONFIG_PATH}: {e}")
+                except Exception as e:
+                    logger.error(f"Failed to persist detected nations: {e}")
+            else:
+                logger.error(
+                    "No valid 'my_nations' configured and auto-detection failed; skipping this extraction run."
+                )
+                return
 
         df_filtered = df[df["nation_name"].isin(my_nations)]
 
