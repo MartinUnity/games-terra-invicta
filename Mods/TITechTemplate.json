@@ -257,6 +257,18 @@
     ]
   },
   {
+    "friendlyName": "Singularity Power Source Technology",
+    "dataName": "SingularityPowerSourceTechnology",
+    "techCategory": "Materials",
+    "AI_techRole": "none",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 15000,
+    "prereqs": [
+      "HighTemperatureSuperconductors"
+    ]
+  },
+  {
     "friendlyName": "Prototype Plasma Array - Model 01",
     "dataName": "ProtoPlasmaArray_Model01",
     "techCategory": "MilitaryScience",

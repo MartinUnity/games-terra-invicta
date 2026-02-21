@@ -1604,7 +1604,7 @@
     "researchCost": 22500,
     "prereqs": [
       "Neutronics",
-      "Project_SuperHeatedGravitonDrives"
+      "Project_EarthTransferOptimization"
     ],
     "effects": [
       "Effect_GravitonFreighters",
