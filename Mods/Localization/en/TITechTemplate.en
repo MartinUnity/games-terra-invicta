@@ -139,3 +139,30 @@ TITechTemplate.quote.SingularityPowerSourceTechnology="With the advent of singul
 <align=right>Preben G. Horf, Singularities Research Division<align=left>
 TITechTemplate.description.SingularityPowerSourceTechnology=By harnessing the power of singularities, we can generate vast amounts of energy in a compact form factor. This technology enables the operation of advanced spacecraft and station systems that were previously impossible due to energy constraints.
 
+TITechTemplate.displayName.ProtoPlasmaArray_Model01=Prototype Plasma Array - Model 01
+TITechTemplate.summary.ProtoPlasmaArray_Model01=Develops a compact and highly efficient plasma array based on advanced plasma technology, capable of providing immense energy output for advanced spacecraft and station systems.
+TITechTemplate.quote.ProtoPlasmaArray_Model01="With the advent of prototype plasma arrays, we've unlocked a new era of energy generation. These compact yet incredibly powerful devices allow us to power our most ambitious projects without the limitations of conventional energy sources."
+<align=right>{submitLeader}<align=left>
+<align=right>Phas. M. Anderson, Plasma Research Division<align=left>
+TITechTemplate.description.ProtoPlasmaArray_Model01=By harnessing the power of prototype plasma arrays, we can generate vast amounts of energy in a compact form factor. This technology enables the operation of advanced spacecraft and station systems that were previously impossible due to energy constraints.
+
+TITechTemplate.displayName.ProtoPlasmaArray_Model02=Prototype Plasma Array - Model 02
+TITechTemplate.summary.ProtoPlasmaArray_Model02=Develops a compact and highly efficient plasma array based on advanced plasma technology, capable of providing immense energy output for advanced spacecraft and station systems.
+TITechTemplate.quote.ProtoPlasmaArray_Model02="With the advent of prototype plasma arrays, we've unlocked a new era of energy generation. These compact yet incredibly powerful devices allow us to power our most ambitious projects without the limitations of conventional energy sources."
+<align=right>{submitLeader}<align=left>
+<align=right>Phas. M. Anderson Junior, Plasma Research Division<align=left>
+TITechTemplate.description.ProtoPlasmaArray_Model02=By harnessing the power of prototype plasma arrays, we can generate vast amounts of energy in a compact form factor. This technology enables the operation of advanced spacecraft and station systems that were previously impossible due to energy constraints.
+
+TITechTemplate.displayName.ProtoPlasmaCannon_Model01=Prototype Plasma Cannon - Model 01
+TITechTemplate.summary.ProtoPlasmaCannon_Model01=Develops a compact and highly efficient plasma cannon based on advanced plasma technology, capable of providing immense energy output for advanced spacecraft and station systems.
+TITechTemplate.quote.ProtoPlasmaCannon_Model01="With the advent of prototype plasma cannons, we've unlocked a new era of energy generation. These compact yet incredibly powerful devices allow us to power our most ambitious projects without the limitations of conventional energy sources."
+<align=right>{submitLeader}<align=left>
+<align=right>Sighart Verheer, Magnetic Enthusiast<align=left>
+TITechTemplate.description.ProtoPlasmaCannon_Model01=By harnessing the power of prototype plasma cannons, we can generate vast amounts of energy in a compact form factor. This technology enables the operation of advanced spacecraft and station systems that were previously impossible due to energy constraints.
+
+TITechTemplate.displayName.ProtoPlasmaCannon_Model02=Prototype Plasma Cannon - Model 02
+TITechTemplate.summary.ProtoPlasmaCannon_Model02=Develops a compact and highly efficient plasma cannon based on advanced plasma technology, capable of providing immense energy output for advanced spacecraft and station systems.
+TITechTemplate.quote.ProtoPlasmaCannon_Model02="With the advent of prototype plasma cannons, we've unlocked a new era of energy generation. These compact yet incredibly powerful devices allow us to power our most ambitious projects without the limitations of conventional energy sources."
+<align=right>{submitLeader}<align=left>
+<align=right>James Calhoon, Plasmoid Overlord<align=left>
+TITechTemplate.description.ProtoPlasmaCannon_Model02=By harnessing the power of prototype plasma cannons, we can generate vast amounts of energy in a compact form factor. This technology enables the operation of advanced spacecraft and station systems that were previously impossible due to energy constraints.
