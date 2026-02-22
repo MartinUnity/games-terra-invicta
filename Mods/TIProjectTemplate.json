@@ -2103,7 +2103,7 @@
     "researchCost": 1250,
     "prereqs": [
       "Project_OutpostMiningComplex",
-      "SpaceMiningandRefining",
+      "Superalloys",
       "Project_BronzeRush"
     ],
     "effects": [
@@ -2133,7 +2133,8 @@
     "researchCost": 5000,
     "prereqs": [
       "Project_ColonyMiningComplex",
-      "Project_SilverRush"
+      "Project_SilverRush",
+      "MolecularAssemblers"
     ],
     "effects": [
       "Effect_SpaceMineExtra8",
