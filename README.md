@@ -1,4 +1,6 @@
-# games-terra-invicta
+# Overview
+
+**Terra Invicta Progress graph + optional Mod**
 
 This repository contains tools to extract and visualize savegame data from the game "Terra Invicta".
 
@@ -24,18 +26,37 @@ Total GDP over time: a time-series plot of total GDP for selected entities, usef
 
 Per-capita (highest): highlights the top per-capita performers and how they trend over time. Good for spotting rising powers with high productivity per person.
 
-Main scripts
+# Scripts
+
+Three main scripts exists:
+
 - `extraction.py`: parses Terra Invicta savegames and outputs structured CSV/JSON datasets for analysis.
 - `show-data.py`: Streamlit app that loads the extracted datasets and provides interactive charts and filters.
+- `scripts/cleanup_saves.py`: Script that will archive/delete/tidy up save-games. When save-games > 50 it impacts performance speed of the load/save screen quite a lot.
 
 See `requirements.txt` for Python dependencies and the `docs/` folder for additional exported charts and artifacts.
 
-**Getting Started**
+# Getting Started
 
-Install dependencies and run the extractor (example):
+**Install dependencies**
 
 ```bash
 python3 -m pip install -r requirements.txt
+```
+
+**Run all scripts via control-script**
+
+To run all 3x scripts, use the control-script for this
+```bash
+# check script for more options
+./runme.sh start|stop
+```
+
+**Run scripts individually**
+
+Run the extraction script:
+
+```bash
 python3 extraction.py
 ```
 
