@@ -66,7 +66,24 @@ Run the Streamlit viewer:
 streamlit run show-data.py
 ```
 
-Edit `config.yml` and add in the nations you control
+# Add nations the script will capture economic data for
+
+## Automatic way
+
+In the `extraction.py` script, ensure these configs are set to true:
+
+```bash
+AUTO_PERSIST_MY_NATIONS = True
+ALWAYS_OVERWRITE_MY_NATIONS = True
+```
+
+The script will auto-detect which nations a player owns and update the yaml file.
+
+## Manual way
+
+Ensure the above configs are `False` - then add in Nation names manually in the  `config.yml`
+
+Example:
 
 ```yaml
 my_nations:
