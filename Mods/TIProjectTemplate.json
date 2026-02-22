@@ -1980,6 +1980,92 @@
     "resourcesGranted": []
   },
   {
+    "friendlyName": "Heat Optimized Mining Techniques",
+    "dataName": "Project_HeatOptimizedMiningTechniques",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 1500,
+    "prereqs": [
+      "AdvancedHeatManagementConcepts"
+    ],
+    "effects": [
+      "Effect_SpaceMineExtra2",
+      "Effect_SpaceMiningBonus03"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": [
+      {
+        "resource": "MissionControl",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "friendlyName": "Magnetic Optimized Mining Techniques",
+    "dataName": "Project_MagneticOptimizedMiningTechniques",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 12500,
+    "prereqs": [
+      "Project_HeatOptimizedMiningTechniques",
+      "SuperconductingMagnets"
+    ],
+    "effects": [
+      "Effect_SpaceMineExtra4",
+      "Effect_SpaceMiningBonus03"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": [
+      {
+        "resource": "MissionControl",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "friendlyName": "Thermal Nanotube Enhanced Mining Techniques",
+    "dataName": "Project_ThermalNanotubeEnhancedMiningTechniques",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 12500,
+    "prereqs": [
+      "Project_MagneticOptimizedMiningTechniques",
+      "Project_NanofacturingComplex"
+    ],
+    "effects": [
+      "Effect_SpaceMineExtra8",
+      "Effect_SpaceMiningBonus03"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100,
+    "resourcesGranted": [
+      {
+        "resource": "MissionControl",
+        "value": 24
+      }
+    ]
+  },
+  {
     "friendlyName": "Bronze Rush",
     "dataName": "Project_BronzeRush",
     "techCategory": "Materials",
