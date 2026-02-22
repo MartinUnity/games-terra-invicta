@@ -2,7 +2,7 @@
   {
     "dataName": "Effect_MiningWaterBonus_lvl1",
     "operation": "Additive",
-    "value": 0.2,
+    "value": 0.025,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -14,7 +14,7 @@
   {
     "dataName": "Effect_MiningWaterBonus_lvl2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.05,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -26,7 +26,7 @@
   {
     "dataName": "Effect_MiningWaterBonus_lvl3",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.075,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -38,7 +38,7 @@
   {
     "dataName": "Effect_MiningWaterBonus_lvl4",
     "operation": "Additive",
-    "value": 0.65,
+    "value": 0.1,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -50,7 +50,7 @@
   {
     "dataName": "Effect_MiningWaterBonus_lvl5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.14,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -62,7 +62,7 @@
   {
     "dataName": "Effect_MiningWaterBonus_lvl6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.18,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -74,7 +74,7 @@
   {
     "dataName": "Effect_MiningVolatilesBonus_lvl1",
     "operation": "Additive",
-    "value": 0.2,
+    "value": 0.025,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -86,7 +86,7 @@
   {
     "dataName": "Effect_MiningVolatilesBonus_lvl2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.05,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -98,7 +98,7 @@
   {
     "dataName": "Effect_MiningVolatilesBonus_lvl3",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.075,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -110,7 +110,7 @@
   {
     "dataName": "Effect_MiningVolatilesBonus_lvl4",
     "operation": "Additive",
-    "value": 0.65,
+    "value": 0.1,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -122,7 +122,7 @@
   {
     "dataName": "Effect_MiningVolatilesBonus_lvl5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.14,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -134,7 +134,7 @@
   {
     "dataName": "Effect_MiningVolatilesBonus_lvl6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.18,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -146,7 +146,7 @@
   {
     "dataName": "Effect_MiningMetalsBonus_lvl1",
     "operation": "Additive",
-    "value": 0.2,
+    "value": 0.025,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -158,7 +158,7 @@
   {
     "dataName": "Effect_MiningMetalsBonus_lvl2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.05,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -170,7 +170,7 @@
   {
     "dataName": "Effect_MiningMetalsBonus_lvl3",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.075,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -182,7 +182,7 @@
   {
     "dataName": "Effect_MiningMetalsBonus_lvl4",
     "operation": "Additive",
-    "value": 0.65,
+    "value": 0.1,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -194,7 +194,7 @@
   {
     "dataName": "Effect_MiningMetalsBonus_lvl5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.14,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -206,7 +206,7 @@
   {
     "dataName": "Effect_MiningMetalsBonus_lvl6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.18,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -218,7 +218,7 @@
   {
     "dataName": "Effect_MiningNobleMetalsBonus_lvl1",
     "operation": "Additive",
-    "value": 0.2,
+    "value": 0.025,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -230,7 +230,7 @@
   {
     "dataName": "Effect_MiningNobleMetalsBonus_lvl2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.05,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -242,7 +242,7 @@
   {
     "dataName": "Effect_MiningNobleMetalsBonus_lvl3",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.075,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -254,7 +254,7 @@
   {
     "dataName": "Effect_MiningNobleMetalsBonus_lvl4",
     "operation": "Additive",
-    "value": 0.65,
+    "value": 0.1,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -266,7 +266,7 @@
   {
     "dataName": "Effect_MiningNobleMetalsBonus_lvl5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.14,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -278,7 +278,7 @@
   {
     "dataName": "Effect_MiningNobleMetalsBonus_lvl6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.18,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -290,7 +290,7 @@
   {
     "dataName": "Effect_MiningFissilesBonus_lvl1",
     "operation": "Additive",
-    "value": 0.2,
+    "value": 0.025,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -302,7 +302,7 @@
   {
     "dataName": "Effect_MiningFissilesBonus_lvl2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.05,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -314,7 +314,7 @@
   {
     "dataName": "Effect_MiningFissilesBonus_lvl3",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.075,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -326,7 +326,7 @@
   {
     "dataName": "Effect_MiningFissilesBonus_lvl4",
     "operation": "Additive",
-    "value": 0.65,
+    "value": 0.1,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -338,7 +338,7 @@
   {
     "dataName": "Effect_MiningFissilesBonus_lvl5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.14,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -350,7 +350,7 @@
   {
     "dataName": "Effect_MiningFissilesBonus_lvl6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.18,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -664,7 +664,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Water_T1",
     "operation": "Additive",
-    "value": 0.25,
+    "value": 0.03,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -676,7 +676,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Water_T2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.06,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -688,7 +688,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Water_T3",
     "operation": "Additive",
-    "value": 0.4,
+    "value": 0.09,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -700,7 +700,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Water_T4",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.12,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -712,7 +712,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Volatiles_T1",
     "operation": "Additive",
-    "value": 0.25,
+    "value": 0.03,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -724,7 +724,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Volatiles_T2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.06,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -736,7 +736,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Volatiles_T3",
     "operation": "Additive",
-    "value": 0.4,
+    "value": 0.09,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -748,7 +748,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Volatiles_T4",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.12,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -760,7 +760,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Metals_T1",
     "operation": "Additive",
-    "value": 0.25,
+    "value": 0.03,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -772,7 +772,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Metals_T2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.06,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -784,7 +784,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Metals_T3",
     "operation": "Additive",
-    "value": 0.4,
+    "value": 0.09,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -796,7 +796,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Metals_T4",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.12,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -808,7 +808,7 @@
   {
     "dataName": "Effect_ExtractionCascade_NobleMetals_T1",
     "operation": "Additive",
-    "value": 0.25,
+    "value": 0.03,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -820,7 +820,7 @@
   {
     "dataName": "Effect_ExtractionCascade_NobleMetals_T2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.06,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -832,7 +832,7 @@
   {
     "dataName": "Effect_ExtractionCascade_NobleMetals_T3",
     "operation": "Additive",
-    "value": 0.4,
+    "value": 0.09,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -844,7 +844,7 @@
   {
     "dataName": "Effect_ExtractionCascade_NobleMetals_T4",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.12,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -856,7 +856,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Fissiles_T1",
     "operation": "Additive",
-    "value": 0.25,
+    "value": 0.03,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -868,7 +868,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Fissiles_T2",
     "operation": "Additive",
-    "value": 0.35,
+    "value": 0.06,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -880,7 +880,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Fissiles_T3",
     "operation": "Additive",
-    "value": 0.4,
+    "value": 0.09,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -892,7 +892,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Fissiles_T4",
     "operation": "Additive",
-    "value": 0.5,
+    "value": 0.12,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -904,7 +904,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Water_T5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.15,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -916,7 +916,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Water_T6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.20,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -928,7 +928,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Volatiles_T5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.15,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -940,7 +940,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Volatiles_T6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.20,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -952,7 +952,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Metals_T5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.15,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -964,7 +964,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Metals_T6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.20,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -976,7 +976,7 @@
   {
     "dataName": "Effect_ExtractionCascade_NobleMetals_T5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.15,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -988,7 +988,7 @@
   {
     "dataName": "Effect_ExtractionCascade_NobleMetals_T6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.20,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -1000,7 +1000,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Fissiles_T5",
     "operation": "Additive",
-    "value": 0.8,
+    "value": 0.15,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -1012,7 +1012,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Fissiles_T6",
     "operation": "Additive",
-    "value": 1.0,
+    "value": 0.20,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
