@@ -99,6 +99,36 @@ cat /home/martin/Games/TerraInvicta/templates/TITechTemplate.json | yq -r '.[] |
 
 ```
 
+# Generate AI LLM projects + descriptions
+
+Check README.md in the ai-worker folder
+
+Run with model + temperature of choosing; example
+
+```bash
+python3 scripts/ai_worker.py --once --print-output --generate-localization --model gemma3:12b --temperature 0.15 --loc-attempts 6 --auto-apply
+```
+
+
+## Temperature determine how random/creative it is.
+
+0.0 — near-greedy/deterministic (very consistent, low creativity).
+0.1–0.3 — conservative (safe, small variation).
+0.4–0.7 — moderate creativity (more variety).
+~1.0+ — high randomness (unpredictable).
+
+## LLM Models
+
+### Best models
+
+Generally 12B+ works best for this, lower than 7B produces non-cohesive garbage.
+
+### Find local models using
+
+```bash
+ollama list
+```
+
 # Calculations for game data
 
 ## Power usage for drives:
