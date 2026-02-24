@@ -1899,28 +1899,6 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Mining - Refining Module Small (TMP)",
-    "dataName": "Project_OutpostMiningRefiningModule",
-    "techCategory": "SpaceScience",
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "ControlPointCap",
-    "researchCost": 1000000,
-    "prereqs": [
-      "Project_NeutronFluxTorch"
-    ],
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
-    "deltaUnlockChance": 1,
-    "maxUnlockChance": 2,
-    "resourcesGranted": [],
-    "_meta_": {
-      "comments": "Duplicate entry found. Remove this in new plays."
-    }
-  },
-  {
     "friendlyName": "Mining - Refining Module Small",
     "dataName": "Project_MiningRefiningModule_lvl1",
     "techCategory": "SpaceScience",
@@ -4900,5 +4878,225 @@
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Asteroid_Claim",
+    "friendlyName": "Asteroid Claim",
+    "techCategory": "SpaceScience",
+    "researchCost": 1942,
+    "prereqs": [
+      "Project_Dumbo"
+    ],
+    "effects": [
+      "Effect_SpaceMiningBonus5"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 18,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Resource_Focus",
+    "friendlyName": "Resource Focus",
+    "techCategory": "Materials",
+    "researchCost": 12485,
+    "prereqs": [
+      "ArrivalInternationalDevelopment"
+    ],
+    "effects": [
+      "Effect_EconomyPriorityBonus05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 7,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Nexus_Stability",
+    "friendlyName": "Nexus Stability",
+    "techCategory": "SocialScience",
+    "researchCost": 64388,
+    "prereqs": [
+      "Accelerando"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus160"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Nexus_Sustain",
+    "friendlyName": "Nexus Sustain",
+    "techCategory": "Xenology",
+    "researchCost": 2627,
+    "prereqs": [
+      "Project_Pherocytes"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 7,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Kinetic_Shielding",
+    "friendlyName": "Kinetic Shielding",
+    "techCategory": "SocialScience",
+    "researchCost": 6029,
+    "prereqs": [
+      "ArrivalEconomics"
+    ],
+    "effects": [
+      "Effect_ShipMagDamageMinor"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 3,
+    "deltaUnlockChance": 8,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Metal_Bloom",
+    "friendlyName": "Metal Bloom",
+    "techCategory": "Xenology",
+    "researchCost": 25830,
+    "prereqs": [
+      "Project_TheirTechnology"
+    ],
+    "effects": [
+      "Effect_MiningMetalsBonus"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 6,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Focused_Beam",
+    "friendlyName": "Focused Beam",
+    "techCategory": "SocialScience",
+    "researchCost": 18394,
+    "prereqs": [
+      "GreatNations"
+    ],
+    "effects": [
+      "Effect_ParticleLaserDamageMinor"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Trade_Nexus",
+    "friendlyName": "Trade Nexus",
+    "techCategory": "SocialScience",
+    "researchCost": 712,
+    "prereqs": [
+      "Project_TheirSignatures"
+    ],
+    "effects": [
+      "Effect_SpaceMarketEfficiency1"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 11,
+    "deltaUnlockChance": 9,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Nexus_Oversight",
+    "friendlyName": "Nexus Oversight",
+    "techCategory": "InformationScience",
+    "researchCost": 1307,
+    "prereqs": [
+      "Project_OutpostMiningComplex"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 17,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Cosmic_Insight",
+    "friendlyName": "Cosmic Insight",
+    "techCategory": "LifeScience",
+    "researchCost": 12125,
+    "prereqs": [
+      "AppliedArtificialIntelligence"
+    ],
+    "effects": [
+      "Effect_SpaceResearchBoost05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 11,
+    "deltaUnlockChance": 8,
+    "maxUnlockChance": 100
   }
 ]
