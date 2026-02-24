@@ -5098,5 +5098,665 @@
     "initialUnlockChance": 11,
     "deltaUnlockChance": 8,
     "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Subjugation_Protocols",
+    "friendlyName": "Subjugation Protocols",
+    "techCategory": "MilitaryScience",
+    "researchCost": 10502,
+    "prereqs": [
+      "Project_EliteMarineAssaultUnit"
+    ],
+    "effects": [
+      "Effect_OppressionPriority10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 3,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Orebloom",
+    "friendlyName": "Orebloom",
+    "techCategory": "LifeScience",
+    "researchCost": 5624,
+    "prereqs": [
+      "Project_OrbitalCore"
+    ],
+    "effects": [
+      "Effect_MiningMetalsBonus"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 9,
+    "deltaUnlockChance": 4,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Symbiotic_Shield",
+    "friendlyName": "Symbiotic Shield",
+    "techCategory": "LifeScience",
+    "researchCost": 380,
+    "prereqs": [
+      "Project_PlatformCore"
+    ],
+    "effects": [
+      "Effect_PherocyteResistance"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 4,
+    "deltaUnlockChance": 4,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Salvage_Protocols",
+    "friendlyName": "Salvage Protocols",
+    "techCategory": "Energy",
+    "researchCost": 28630,
+    "prereqs": [
+      "AneutronicFusion"
+    ],
+    "effects": [
+      "Effect_SpoilsPriorityGlobalBonus10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 17,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Mobilization_Protocols",
+    "friendlyName": "Mobilization Protocols",
+    "techCategory": "InformationScience",
+    "researchCost": 607,
+    "prereqs": [
+      "Project_Warships"
+    ],
+    "effects": [
+      "Effect_BuildArmyPriorityBonus05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 16,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Flux_Lance",
+    "friendlyName": "Flux Lance",
+    "techCategory": "Energy",
+    "researchCost": 29308,
+    "prereqs": [
+      "AntimatterMassProduction"
+    ],
+    "effects": [
+      "Effect_ParticleLaserDamage"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 17,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Kinetic_Barrage",
+    "friendlyName": "Kinetic Barrage",
+    "techCategory": "SocialScience",
+    "researchCost": 1312,
+    "prereqs": [
+      "UnityMovements"
+    ],
+    "effects": [
+      "Effect_ShipConvMissileDamage"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 19,
+    "deltaUnlockChance": 6,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Warpath_Initiative",
+    "friendlyName": "Warpath Initiative",
+    "techCategory": "SocialScience",
+    "researchCost": 1443,
+    "prereqs": [
+      "IndependenceMovements"
+    ],
+    "effects": [
+      "Effect_MilitaryPriorityBonus05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 20,
+    "deltaUnlockChance": 7,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Cognitive_Resonance",
+    "friendlyName": "Cognitive Resonance",
+    "techCategory": "InformationScience",
+    "researchCost": 11089,
+    "prereqs": [
+      "NetworkedPropaganda"
+    ],
+    "effects": [
+      "Effect_SpaceResearchBoost05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 11,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Kinetic_Resonance",
+    "friendlyName": "Kinetic Resonance",
+    "techCategory": "SocialScience",
+    "researchCost": 60312,
+    "prereqs": [
+      "GreatNations"
+    ],
+    "effects": [
+      "Effect_ShipMagDamageMinor"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 7,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Strategic_Allocation",
+    "friendlyName": "Strategic Allocation",
+    "techCategory": "MilitaryScience",
+    "researchCost": 13625,
+    "prereqs": [
+      "NetworkedGlobalDefense"
+    ],
+    "effects": [
+      "Effect_MilitaryPriorityBonus05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 8,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Genesis_Bloom",
+    "friendlyName": "Genesis Bloom",
+    "techCategory": "SpaceScience",
+    "researchCost": 1352148,
+    "prereqs": [
+      "Project_ProtiumNovaTorch"
+    ],
+    "effects": [
+      "Effect_LifeExtension10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 13,
+    "deltaUnlockChance": 4,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Prosperity_Nexus",
+    "friendlyName": "Prosperity Nexus",
+    "techCategory": "MilitaryScience",
+    "researchCost": 54014,
+    "prereqs": [
+      "Project_ParticleLance"
+    ],
+    "effects": [
+      "Effect_EconomyPriorityBonus05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 9,
+    "deltaUnlockChance": 6,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Asteroid_Bloom",
+    "friendlyName": "Asteroid Bloom",
+    "techCategory": "SocialScience",
+    "researchCost": 68580,
+    "prereqs": [
+      "GreatNations"
+    ],
+    "effects": [
+      "Effect_SpaceMineFreebies1"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 9,
+    "deltaUnlockChance": 8,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Mobilization_Protocol",
+    "friendlyName": "Mobilization Protocol",
+    "techCategory": "Xenology",
+    "researchCost": 26570,
+    "prereqs": [
+      "WhiteCollarAutomation"
+    ],
+    "effects": [
+      "Effect_BuildArmyPriorityBonus05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 8,
+    "deltaUnlockChance": 4,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Cognitive_Cartography",
+    "friendlyName": "Cognitive Cartography",
+    "techCategory": "MilitaryScience",
+    "researchCost": 10624,
+    "prereqs": [
+      "Project_PlasmaBatteryMk1"
+    ],
+    "effects": [
+      "Effect_SpaceResearchBoost1"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 6,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Imperial_Mandate",
+    "friendlyName": "Imperial Mandate",
+    "techCategory": "SpaceScience",
+    "researchCost": 24927,
+    "prereqs": [
+      "Project_GasCoreFissionReactorVI"
+    ],
+    "effects": [
+      "Effect_OppressionPriority10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 12,
+    "deltaUnlockChance": 4,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Kinetic_Lance",
+    "friendlyName": "Kinetic Lance",
+    "techCategory": "SpaceScience",
+    "researchCost": 1096,
+    "prereqs": [
+      "Project_VaporCoreFissionReactorI"
+    ],
+    "effects": [
+      "Effect_ShipConvMissileDamage"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 8,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Neural_Resilience",
+    "friendlyName": "Neural Resilience",
+    "techCategory": "SpaceScience",
+    "researchCost": 3192,
+    "prereqs": [
+      "Project_OrbitalCore"
+    ],
+    "effects": [
+      "Effect_PherocyteResistance"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 11,
+    "deltaUnlockChance": 7,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Citadel_Sustainment",
+    "friendlyName": "Citadel Sustainment",
+    "techCategory": "Materials",
+    "researchCost": 3528,
+    "prereqs": [
+      "ArrivalInternationalDevelopment"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus3"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 4,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Asteroid_Yield",
+    "friendlyName": "Asteroid Yield",
+    "techCategory": "MilitaryScience",
+    "researchCost": 7152,
+    "prereqs": [
+      "Project_SolidCoreFissionReactorVII"
+    ],
+    "effects": [
+      "Effect_SpaceMiningBonus5"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 4,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Nexus_Consolidation",
+    "friendlyName": "Nexus Consolidation",
+    "techCategory": "InformationScience",
+    "researchCost": 10623,
+    "prereqs": [
+      "Project_InformationScienceResearchCenter"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus20"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 20,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Material_Focus",
+    "friendlyName": "Material Focus",
+    "techCategory": "Materials",
+    "researchCost": 22422,
+    "prereqs": [
+      "AdministrationAlgorithms"
+    ],
+    "effects": [
+      "Effect_EconomyPriorityBonus1"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 18,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Harmonic_Concord",
+    "friendlyName": "Harmonic Concord",
+    "techCategory": "SocialScience",
+    "researchCost": 8076,
+    "prereqs": [
+      "ArrivalLaw"
+    ],
+    "effects": [
+      "Effect_UnityPriorityBonus25"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 15,
+    "deltaUnlockChance": 7,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Waste_Reclamation",
+    "friendlyName": "Waste Reclamation",
+    "techCategory": "Materials",
+    "researchCost": 6226,
+    "prereqs": [
+      "ArrivalInternationalDevelopment"
+    ],
+    "effects": [
+      "Effect_SpoilsPriorityGlobalPenalty10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 8,
+    "deltaUnlockChance": 7,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Nexus_Stabilization",
+    "friendlyName": "Nexus Stabilization",
+    "techCategory": "Energy",
+    "researchCost": 1032,
+    "prereqs": [
+      "Project_MoltenCoreFissionReactorI"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus20"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 1,
+    "deltaUnlockChance": 6,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Chronos_Initiative",
+    "friendlyName": "Chronos Initiative",
+    "techCategory": "LifeScience",
+    "researchCost": 87602,
+    "prereqs": [
+      "Project_DNARepairs"
+    ],
+    "effects": [
+      "Effect_LifeExtension10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 12,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Deepscan_Prospector",
+    "friendlyName": "Deepscan Prospector",
+    "techCategory": "Energy",
+    "researchCost": 78781,
+    "prereqs": [
+      "Project_AntimatterPlasmaCoreReactorI"
+    ],
+    "effects": [
+      "Effect_SpaceMiningBonus5"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 9,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Collective_Accord",
+    "friendlyName": "Collective Accord",
+    "techCategory": "InformationScience",
+    "researchCost": 13885,
+    "prereqs": [
+      "NetworkedPropaganda"
+    ],
+    "effects": [
+      "Effect_UnityPriorityBonus05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 11,
+    "deltaUnlockChance": 9,
+    "maxUnlockChance": 100
+  },
+  {
+    "dataName": "Project_Bastion_Protocols",
+    "friendlyName": "Bastion Protocols",
+    "techCategory": "Xenology",
+    "researchCost": 24681,
+    "prereqs": [
+      "WhiteCollarAutomation"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 17,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 100
   }
 ]

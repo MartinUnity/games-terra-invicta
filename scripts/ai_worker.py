@@ -574,6 +574,9 @@ def cleanup_staging(staging_root: str, keep: int = 5):
 
 def run_cycle(args):
     # Try deterministic template selection + multi-attempt name generation
+    # Ensure these are defined early to avoid UnboundLocalError in error paths
+    staging_root = getattr(args, "staging_dir", os.path.join(AI_DIR, "staging"))
+    candidate_path = None
     requirements_md = load_text(REQUIREMENTS_MD)
     prompt_template = load_text(PROMPT_TEMPLATE)
     project_template_path = "/home/martin/Games/TerraInvicta/templates/TIProjectTemplate.json"
@@ -821,7 +824,9 @@ def run_cycle(args):
                     dn = final_candidate.get("dataName")
                     fn = final_candidate.get("friendlyName")
                     loc_text = f"TIProjectTemplate.displayName.{dn}={fn}\nTIProjectTemplate.summary.{dn}=\n"
-                ok, apply_errors = apply_candidate_to_mods(final_candidate, loc_text, mods_path, mods_loc_path, args.backup_dir)
+                ok, apply_errors = apply_candidate_to_mods(
+                    final_candidate, loc_text, mods_path, mods_loc_path, args.backup_dir
+                )
                 if ok:
                     print("Auto-applied candidate to Mods and localization (backups created).")
                 else:
@@ -833,6 +838,12 @@ def run_cycle(args):
 def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--once", action="store_true", help="Run a single cycle and exit")
+    p.add_argument(
+        "--count",
+        type=int,
+        default=1,
+        help="When used with --once, run this many cycles sequentially (default 1).",
+    )
     p.add_argument("--dry-run", action="store_true", help="Do not auto-apply; write staged output only")
     p.add_argument("--model", default="gemma2:2b")
     p.add_argument("--temperature", type=float, default=0.5)
@@ -872,11 +883,14 @@ def main():
     os.makedirs(args.staging_dir, exist_ok=True)
     os.makedirs(os.path.dirname(args.backup_dir), exist_ok=True)
     if args.once:
-        try:
-            run_cycle(args)
-        except Exception as e:
-            print("Error during run:", e)
-            sys.exit(1)
+        count = max(1, getattr(args, "count", 1))
+        for i in range(count):
+            try:
+                print(f"Run {i+1}/{count}")
+                run_cycle(args)
+            except Exception as e:
+                print("Error during run:", e)
+                sys.exit(1)
         return
     # long running loop
     while True:

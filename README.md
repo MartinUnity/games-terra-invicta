@@ -106,7 +106,7 @@ Check README.md in the ai-worker folder
 Run with model + temperature of choosing; example
 
 ```bash
-python3 scripts/ai_worker.py --once --print-output --generate-localization --model gemma3:12b --temperature 0.15 --loc-attempts 6 --auto-apply
+python3 scripts/ai_worker.py --once --print-output --generate-localization --model gemma3:12b --temperature 0.15 --loc-attempts 6 --auto-apply --count 1
 ```
 
 
