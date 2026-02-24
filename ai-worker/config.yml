@@ -1,0 +1,8 @@
+model: gemma2:2b
+temperature: 0.5
+dry_run: true
+interval_hours: 12
+staging_dir: ai-worker/staging
+backup_dir: LocalSaves/ai-backups
+prompt_template_file: ai-worker/prompt_templates.md
+max_attempts: 3

@@ -2,3 +2,6 @@ pandas
 streamlit
 watchdog
 pyyaml
+requests
+jsonschema
+

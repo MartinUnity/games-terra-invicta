@@ -1,0 +1,18 @@
+[
+    {
+        "file": "Mods/TIProjectTemplate.json",
+        "dataName": "Zethrok*",
+        "operation": "Modify",
+        "changes": {
+            "dataName": "<remove_prefix>Zethrok"
+        }
+    },
+    {
+        "file": "Mods/TIEffectTemplate.json",
+        "dataName": "MagDamageBonus",
+        "operation": "Modify",
+        "changes": {
+            "dataName": "Adjust values downwards for all levels of MagDamageBonus to balance the mod's weapon damage increases. For example, if the original values were 0.05, 0.1, 0.15, 0.2, 0.25, 0.3 for levels 1-6, we could adjust them to 0.04, 0.08, 0.12, 0.16, 0.2, 0.24 respectively."
+        }
+    }
+]

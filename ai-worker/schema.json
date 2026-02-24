@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "TI Project Candidate",
+    "type": "object",
+    "required": [
+        "dataName",
+        "friendlyName",
+        "techCategory",
+        "researchCost",
+        "prereqs"
+    ],
+    "properties": {
+        "dataName": {
+            "type": "string",
+            "minLength": 3
+        },
+        "friendlyName": {
+            "type": "string",
+            "minLength": 3
+        },
+        "techCategory": {
+            "type": "string"
+        },
+        "researchCost": {
+            "type": "number",
+            "minimum": 1
+        },
+        "prereqs": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "oneTimeGlobally": {
+            "type": "boolean"
+        },
+        "repeatable": {
+            "type": "boolean"
+        },
+        "factionAvailableChance": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "initialUnlockChance": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "deltaUnlockChance": {
+            "type": "number"
+        },
+        "maxUnlockChance": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "resourcesGranted": {
+            "type": "array"
+        },
+        "effects": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "additionalProperties": true,
+    "anyOf": [
+        {
+            "required": [
+                "effects"
+            ]
+        },
+        {
+            "required": [
+                "resourcesGranted"
+            ]
+        }
+    ]
+}
