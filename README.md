@@ -112,10 +112,12 @@ python3 scripts/ai_worker.py --once --print-output --generate-localization --mod
 
 ## Temperature determine how random/creative it is.
 
-0.0 — near-greedy/deterministic (very consistent, low creativity).
-0.1–0.3 — conservative (safe, small variation).
-0.4–0.7 — moderate creativity (more variety).
-~1.0+ — high randomness (unpredictable).
+| Temperature | Expected outcome                                             |
+| ----------- | ------------------------------------------------------------ |
+| 0.0         | near-greedy/deterministic (very consistent, low creativity). |
+| 0.1 - 0.3   | conservative (safe, small variation).                        |
+| 0.4 - 0.7   | moderate creativity (more variety).                          |
+| ~1.0+       | high randomness (unpredictable).                             |
 
 ## LLM Models
 
