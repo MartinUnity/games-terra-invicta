@@ -547,7 +547,7 @@ def enforce_candidate_defaults(candidate: dict):
         candidate["initialUnlockChance"] = random.randint(1, 20)
     if "deltaUnlockChance" not in candidate:
         candidate["deltaUnlockChance"] = random.randint(1, 10)
-    candidate.setdefault("maxUnlockChance", 100)
+    candidate.setdefault("maxUnlockChance", random.randint(20, 100))
     return candidate
 
 
