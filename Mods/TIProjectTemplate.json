@@ -5039,7 +5039,7 @@
     "techCategory": "SocialScience",
     "researchCost": 712,
     "prereqs": [
-      "Project_TheirSignatures"
+      "Skywatch"
     ],
     "effects": [
       "Effect_SpaceMarketEfficiency1"
@@ -5149,7 +5149,7 @@
     "techCategory": "LifeScience",
     "researchCost": 380,
     "prereqs": [
-      "Project_PlatformCore"
+      "WeAreNotAlone"
     ],
     "effects": [
       "Effect_PherocyteResistance"
@@ -6007,7 +6007,7 @@
     "techCategory": "InformationScience",
     "researchCost": 1432,
     "prereqs": [
-      "Project_PlatformCore"
+      "SpaceTourism"
     ],
     "effects": [
       "Effect_EconomyPriorityBonus05"
@@ -6029,7 +6029,7 @@
     "techCategory": "Materials",
     "researchCost": 13211,
     "prereqs": [
-      "Project_Exotics"
+      "WeAreNotAlone"
     ],
     "effects": [
       "Effect_ArmyDamageBonustoMegafauna"
@@ -6446,7 +6446,9 @@
     "friendlyName": "Fissile Bloom",
     "techCategory": "SocialScience",
     "researchCost": 120,
-    "prereqs": [],
+    "prereqs": [
+      "Project_FlyingVehicles"
+    ],
     "effects": [
       "Effect_MiningFissilesBonus"
     ],
@@ -7325,7 +7327,7 @@
     "techCategory": "SpaceScience",
     "researchCost": 113,
     "prereqs": [
-      "Project_Liquid-FuelRockets"
+      "SpaceMiningandRefining"
     ],
     "effects": [
       "Effect_KnowledgePriorityBonus1"
@@ -7369,7 +7371,7 @@
     "techCategory": "Materials",
     "researchCost": 1441,
     "prereqs": [
-      "Project_PlatformCore"
+      "HighEnergyLasers"
     ],
     "effects": [
       "Effect_ShipLaserDamage"
@@ -8007,7 +8009,7 @@
     "techCategory": "Energy",
     "researchCost": 21366,
     "prereqs": [
-      "Project_PlatformCore"
+      "DeepSystemSkywatch"
     ],
     "effects": [
       "Effect_EconomyPriorityGlobalBonus10"
@@ -8865,7 +8867,7 @@
     "techCategory": "Materials",
     "researchCost": 1291,
     "prereqs": [
-      "Project_PlatformCore"
+      "MassDrivers"
     ],
     "effects": [
       "Effect_SpaceMiningBonus10"
@@ -8997,7 +8999,7 @@
     "techCategory": "InformationScience",
     "researchCost": 1054,
     "prereqs": [
-      "Project_PlatformCore"
+      "AdvancedSuperconductors"
     ],
     "effects": [
       "Effect_ShipMagDamageMinor"
@@ -9151,7 +9153,7 @@
     "techCategory": "Energy",
     "researchCost": 21359,
     "prereqs": [
-      "Project_InertialConfinementFusionReactorII"
+      "SolidCoreFissionSystems"
     ],
     "effects": [
       "Effect_BuildArmyPriorityBonus05"
@@ -9238,7 +9240,9 @@
     "friendlyName": "Harmonic Convergence",
     "techCategory": "Xenology",
     "researchCost": 395,
-    "prereqs": [],
+    "prereqs": [
+      "Project_AIControlledFlyingVehicles"
+    ],
     "effects": [
       "Effect_UnityPriorityBonus25"
     ],
@@ -9412,7 +9416,9 @@
     "friendlyName": "Voidstrike Protocol",
     "techCategory": "Xenology",
     "researchCost": 23813,
-    "prereqs": [],
+    "prereqs": [
+      "Project_SpaceInfusedAugmentedRealityTours"
+    ],
     "effects": [
       "Effect_ShipMagDamage"
     ],
@@ -9433,7 +9439,7 @@
     "techCategory": "MilitaryScience",
     "researchCost": 416,
     "prereqs": [
-      "Project_PlatformCore"
+      "ParticleCannon"
     ],
     "effects": [
       "Effect_ShipMagDamage"
@@ -9719,7 +9725,7 @@
     "techCategory": "LifeScience",
     "researchCost": 391,
     "prereqs": [
-      "Project_PlatformCore"
+      "AdvancedCarbonManipulation"
     ],
     "effects": [
       "Effect_ShipLaserDamage"
@@ -10467,7 +10473,7 @@
     "techCategory": "SocialScience",
     "researchCost": 330,
     "prereqs": [
-      "Project_PlatformCore"
+      "PhotonicComputing"
     ],
     "effects": [
       "Effect_ArmyDamageBonustoMegafauna"
@@ -11347,7 +11353,7 @@
     "techCategory": "SpaceScience",
     "researchCost": 617,
     "prereqs": [
-      "Project_TheirSignatures"
+      "HighEnergyLasers"
     ],
     "effects": [
       "Effect_MiningMetalsBonus"
@@ -11457,7 +11463,7 @@
     "techCategory": "Xenology",
     "researchCost": 434,
     "prereqs": [
-      "Project_TheirSignatures"
+      "WeAreNotAlone"
     ],
     "effects": [
       "Effect_GovernmentPriority10"
@@ -11589,7 +11595,7 @@
     "techCategory": "MilitaryScience",
     "researchCost": 19225,
     "prereqs": [
-      "Project_Exotics"
+      "WeAreNotAlone"
     ],
     "effects": [
       "Effect_EconomyPriorityBonus1"
@@ -11874,7 +11880,9 @@
     "friendlyName": "Apex Predator Protocols",
     "techCategory": "Xenology",
     "researchCost": 23447,
-    "prereqs": [],
+    "prereqs": [
+      "Project_RegionalCommandStructure"
+    ],
     "effects": [
       "Effect_ArmyDamageBonustoMegafauna"
     ],
@@ -12115,7 +12123,7 @@
     "techCategory": "SpaceScience",
     "researchCost": 18317,
     "prereqs": [
-      "Project_InertialConfinementFusionReactorI"
+      "HighEnergyElectromagneticPropulsion"
     ],
     "effects": [
       "Effect_UnityPriorityBonus05"
@@ -12225,7 +12233,7 @@
     "techCategory": "InformationScience",
     "researchCost": 235,
     "prereqs": [
-      "Project_SolarCollector"
+      "AdvancedNeuralNetworks"
     ],
     "effects": [
       "Effect_PherocyteResistance"
@@ -12489,7 +12497,7 @@
     "techCategory": "MilitaryScience",
     "researchCost": 2759,
     "prereqs": [
-      "Project_Liquid-FuelRockets"
+      "MissileWarfareDoctrine-FuelRockets"
     ],
     "effects": [
       "Effect_UnityPriorityBonus05"
@@ -12511,7 +12519,7 @@
     "techCategory": "Materials",
     "researchCost": 14687,
     "prereqs": [
-      "Project_Exotics"
+      "Skywatch"
     ],
     "effects": [
       "Effect_ShipMagDamageMinor"
@@ -13215,7 +13223,7 @@
     "techCategory": "MilitaryScience",
     "researchCost": 655,
     "prereqs": [
-      "Project_TheirSignatures"
+      "MassDrivers"
     ],
     "effects": [
       "Effect_ShipMagDamageMinor"
@@ -13413,7 +13421,7 @@
     "techCategory": "MilitaryScience",
     "researchCost": 22209,
     "prereqs": [
-      "Project_Exotics"
+      "Skywatch"
     ],
     "effects": [
       "Effect_WelfarePriorityBonus05"
@@ -14469,7 +14477,7 @@
     "techCategory": "Energy",
     "researchCost": 10772,
     "prereqs": [
-      "Project_SaltWaterCoreReactorI"
+      "ElectrothermalPropulsion"
     ],
     "effects": [
       "Effect_EnvironmentPriority10"
@@ -14557,7 +14565,7 @@
     "techCategory": "SocialScience",
     "researchCost": 393,
     "prereqs": [
-      "Project_PlatformCore"
+      "ArrivalEconomics"
     ],
     "effects": [
       "Effect_EnvironmentPriority05"
@@ -14953,7 +14961,7 @@
     "techCategory": "LifeScience",
     "researchCost": 379,
     "prereqs": [
-      "Project_PlatformCore"
+      "SpaceMedicine"
     ],
     "effects": [
       "Effect_SpaceResearchBoost05"
@@ -15261,7 +15269,7 @@
     "techCategory": "MilitaryScience",
     "researchCost": 18798,
     "prereqs": [
-      "Project_Exotics"
+      "Biotechnology"
     ],
     "effects": [
       "Effect_SpaceMineFreebies4"
@@ -15679,7 +15687,7 @@
     "techCategory": "Energy",
     "researchCost": 17337,
     "prereqs": [
-      "Project_InertialConfinementFusionReactorI"
+      "AntimatterContainment"
     ],
     "effects": [
       "Effect_ParticleLaserDamageMinor"
@@ -15701,7 +15709,7 @@
     "techCategory": "SpaceScience",
     "researchCost": 490,
     "prereqs": [
-      "Project_SolarCollector"
+      "Superalloys"
     ],
     "effects": [
       "Effect_MiningVolatilesBonus"
@@ -15723,7 +15731,7 @@
     "techCategory": "Energy",
     "researchCost": 13047,
     "prereqs": [
-      "Project_SaltWaterCoreReactorI"
+      "AdvancedMagnetics"
     ],
     "effects": [
       "Effect_MiningWaterBonus"
@@ -15788,7 +15796,9 @@
     "friendlyName": "Xeno-Synthesis",
     "techCategory": "Xenology",
     "researchCost": 26751,
-    "prereqs": [],
+    "prereqs": [
+      "Project_AugementedOrganizationalStructures"
+    ],
     "effects": [
       "Effect_SpaceResearchBoost1"
     ],
@@ -16007,7 +16017,7 @@
     "techCategory": "SocialScience",
     "researchCost": 403,
     "prereqs": [
-      "Project_PlatformCore"
+      "DirectedEnergyWarfareDoctrine"
     ],
     "effects": [
       "Effect_ShipLaserDamage"
@@ -16072,7 +16082,9 @@
     "friendlyName": "Cognitive Echoes",
     "techCategory": "Xenology",
     "researchCost": 5921,
-    "prereqs": [],
+    "prereqs": [
+      "Project_CyborneticCommandIntegration"
+    ],
     "effects": [
       "Effect_KnowledgePriorityBonus02"
     ],
@@ -16379,7 +16391,7 @@
     "techCategory": "MilitaryScience",
     "researchCost": 375,
     "prereqs": [
-      "Project_PlatformCore"
+      "MissiontoMars"
     ],
     "effects": [
       "Effect_MiningVolatilesBonus"
@@ -17171,7 +17183,7 @@
     "techCategory": "LifeScience",
     "researchCost": 416,
     "prereqs": [
-      "Project_PlatformCore"
+      "KineticsWarfareDoctrine"
     ],
     "effects": [
       "Effect_ParticleLaserDamageMinor"
@@ -17963,7 +17975,7 @@
     "techCategory": "Energy",
     "researchCost": 3169,
     "prereqs": [
-      "Project_PlatformCore"
+      "SpaceResearch"
     ],
     "effects": [
       "Effect_SpaceMarketEfficiency2"
@@ -19305,7 +19317,7 @@
     "techCategory": "LifeScience",
     "researchCost": 449,
     "prereqs": [
-      "Project_PlatformCore"
+      "Cybernetics"
     ],
     "effects": [
       "Effect_MiningNoblesBonus"
@@ -19408,27 +19420,5 @@
     "initialUnlockChance": 6,
     "deltaUnlockChance": 4,
     "maxUnlockChance": 58
-  },
-  {
-    "dataName": "Project_Habitable_Zones",
-    "friendlyName": "Habitable Zones",
-    "techCategory": "MilitaryScience",
-    "researchCost": 5260,
-    "prereqs": [
-      "Project_IonBatteries"
-    ],
-    "effects": [
-      "Effect_EnvironmentPriority10"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 100,
-    "initialUnlockChance": 17,
-    "deltaUnlockChance": 10,
-    "maxUnlockChance": 27
   }
 ]

@@ -354,7 +354,7 @@ def load_project_templates(path: str):
         return []
 
 
-def select_template_and_effect(projects: list, tieffects_map: dict, whitelist: list, category: str = None):
+def select_template_and_effect(projects: list, tieffects_map: dict, whitelist: list, category: str = None, require_prereq: bool = False):
     # pick a category if not provided
     candidates = projects
     if category:
@@ -363,7 +363,22 @@ def select_template_and_effect(projects: list, tieffects_map: dict, whitelist: l
         candidates = projects
     if not candidates:
         return (None, None)
-    template = random.choice(candidates)
+    # Prefer templates that have a non-empty prereqs list when requested
+    if require_prereq:
+        pref = [p for p in candidates if isinstance(p, dict) and isinstance(p.get("prereqs"), list) and p.get("prereqs")]
+        if pref:
+            template = random.choice(pref)
+        else:
+            # fallback and log that we had no templates with prereqs
+            try:
+                logpath = os.path.join(AI_DIR, "generation_issues.log")
+                with open(logpath, "a", encoding="utf-8") as lf:
+                    lf.write(f"{datetime.now(timezone.utc).isoformat()} - no templates with prereqs for category={category!r}; candidates={len(candidates)}\n")
+            except Exception:
+                pass
+            template = random.choice(candidates)
+    else:
+        template = random.choice(candidates)
     # try to pick an effect from the template or from global tieffects by checking contexts against whitelist
     chosen_effect = None
     # gather effects referenced in template
@@ -585,7 +600,29 @@ def run_cycle(args):
     tieffects_map = collect_tieffects(tieffect_path)
     whitelist = load_effect_whitelist(REQUIREMENTS_MD)
 
-    template, chosen_effect = select_template_and_effect(projects, tieffects_map, whitelist, category=args.category)
+    template, chosen_effect = select_template_and_effect(projects, tieffects_map, whitelist, category=args.category, require_prereq=True)
+    # Hard reroll: if the selected template has empty prereqs, try reselecting a few times
+    def has_prereqs(t):
+        return isinstance(t, dict) and isinstance(t.get("prereqs"), list) and bool(t.get("prereqs"))
+
+    if not has_prereqs(template):
+        max_template_attempts = 10
+        found = False
+        for _ in range(max_template_attempts):
+            t, e = select_template_and_effect(projects, tieffects_map, whitelist, category=args.category, require_prereq=True)
+            if has_prereqs(t):
+                template, chosen_effect = t, e
+                found = True
+                break
+        if not found:
+            # log that we couldn't find a template with prereqs after several attempts
+            try:
+                logpath = os.path.join(AI_DIR, "generation_issues.log")
+                with open(logpath, "a", encoding="utf-8") as lf:
+                    lf.write(f"{datetime.now(timezone.utc).isoformat()} - failed to find template with prereqs after {max_template_attempts} attempts; proceeding with fallback template {template.get('dataName')!r}\n")
+            except Exception:
+                pass
+            print("WARNING: no template with prereqs found after multiple attempts; proceeding with current template", file=sys.stderr)
     # existing dataName set for uniqueness checks (include template + mods)
     existing_data_names = set()
     for p in projects:
@@ -692,9 +729,50 @@ def run_cycle(args):
         candidate["researchCost"] = target_cost
         # prereqs: pick one from template.prereqs if available
         prereqs = []
-        if isinstance(template.get("prereqs"), list) and template.get("prereqs"):
-            prereqs = [random.choice(template.get("prereqs"))]
+        # blacklist starting techs so we don't make them prereqs (they're available at start)
+        prereq_blacklist = {
+            "Project_Exotics",
+            "Project_SaltWaterCoreReactorI",
+            "Project_TheirSignatures",
+            "Project_PlatformCore",
+            "Project_SolarCollector",
+            "Project_Liquid-FuelRockets",
+            "Project_InertialConfinementFusionReactorI",
+        }
+        tpl_prereqs = template.get("prereqs") if isinstance(template.get("prereqs"), list) else []
+        if tpl_prereqs:
+            # Try up to N times to pick a prereq not in the blacklist
+            for _ in range(10):
+                cand = random.choice(tpl_prereqs)
+                if cand not in prereq_blacklist:
+                    prereqs = [cand]
+                    break
+            if not prereqs:
+                # All candidate prereqs are blacklisted (rare). Log and fall back to a random choice.
+                try:
+                    logpath = os.path.join(AI_DIR, "generation_issues.log")
+                    with open(logpath, "a", encoding="utf-8") as lf:
+                        lf.write(
+                            f"{datetime.now(timezone.utc).isoformat()} - all template.prereqs blacklisted for template={template.get('dataName')!r}; tpl_prereqs={tpl_prereqs!r}\n"
+                        )
+                except Exception:
+                    pass
+                prereqs = [random.choice(tpl_prereqs)]
         candidate["prereqs"] = prereqs
+        # Diagnostic: if we produced an empty prereqs list, log context for debugging
+        if not candidate["prereqs"]:
+            try:
+                logpath = os.path.join(AI_DIR, "generation_issues.log")
+                with open(logpath, "a", encoding="utf-8") as lf:
+                    lf.write(
+                        f"{datetime.now(timezone.utc).isoformat()} - empty prereqs for template: {template.get('dataName')!r} template_prereqs={template.get('prereqs')!r}\n"
+                    )
+            except Exception:
+                pass
+            print(
+                f"WARNING: generated candidate with empty prereqs (template={template.get('dataName')})",
+                file=sys.stderr,
+            )
         # effects: use chosen_effect
         candidate["effects"] = [chosen_effect] if chosen_effect else []
 
