@@ -1816,3 +1816,5 @@ TIProjectTemplate.displayName.Project_Warpath_Augmentation=Warpath Augmentation
 TIProjectTemplate.summary.Project_Warpath_Augmentation=Leveraging Advanced Atomic Manipulation, this augmentation optimizes fleet deployment protocols, prioritizing offensive capabilities and accelerating response times in military engagements.
 TIProjectTemplate.displayName.Project_Habitable_Zones=Habitable Zones
 TIProjectTemplate.summary.Project_Habitable_Zones=Build upon Ion Battery research to identify and prioritize systems exhibiting optimal conditions for terrestrial habitability, accelerating colony development.
+TIProjectTemplate.displayName.Project_Focused_Array=Focused Array
+TIProjectTemplate.summary.Project_Focused_Array=Utilizing PlatformCore principles, this energy array concentrates laser emissions for improved targeting and minor damage amplification against hostile vessels.
