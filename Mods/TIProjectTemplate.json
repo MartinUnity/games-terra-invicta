@@ -5127,7 +5127,7 @@
     "techCategory": "LifeScience",
     "researchCost": 5624,
     "prereqs": [
-      "Project_OrbitalCore"
+      "OutpostHabs"
     ],
     "effects": [
       "Effect_MiningMetalsBonus"
@@ -5501,7 +5501,7 @@
     "techCategory": "SpaceScience",
     "researchCost": 3192,
     "prereqs": [
-      "Project_OrbitalCore"
+      "MissiontotheMoon"
     ],
     "effects": [
       "Effect_PherocyteResistance"
@@ -6931,7 +6931,7 @@
     "techCategory": "Energy",
     "researchCost": 1355,
     "prereqs": [
-      "Project_OrbitalCore"
+      "ElectromagneticPropulsion"
     ],
     "effects": [
       "Effect_ShipLaserDamage"
@@ -8031,7 +8031,7 @@
     "techCategory": "SocialScience",
     "researchCost": 2564,
     "prereqs": [
-      "Project_OrbitalCore"
+      "ArrivalSociology"
     ],
     "effects": [
       "Effect_MiningMetalsBonus"
@@ -8735,7 +8735,7 @@
     "techCategory": "InformationScience",
     "researchCost": 2215,
     "prereqs": [
-      "Project_OrbitalCore"
+      "AdvancedNeuralNetworks"
     ],
     "effects": [
       "Effect_ParticleLaserDamageMinor"
@@ -9461,7 +9461,7 @@
     "techCategory": "LifeScience",
     "researchCost": 1382,
     "prereqs": [
-      "Project_OrbitalCore"
+      "ArrivalPsychology"
     ],
     "effects": [
       "Effect_MiningFissilesBonus"
@@ -10407,7 +10407,7 @@
     "techCategory": "SocialScience",
     "researchCost": 1597,
     "prereqs": [
-      "Project_OrbitalCore"
+      "SpaceResearch"
     ],
     "effects": [
       "Effect_SpoilsPriorityGlobalPenalty10"
@@ -12409,7 +12409,7 @@
     "techCategory": "Energy",
     "researchCost": 2167,
     "prereqs": [
-      "Project_OrbitalCore"
+      "SolidCoreFissionSystems"
     ],
     "effects": [
       "Effect_GovernmentPriority05"
@@ -14059,7 +14059,7 @@
     "techCategory": "SocialScience",
     "researchCost": 1967,
     "prereqs": [
-      "Project_OrbitalCore"
+      "MissiontoMars"
     ],
     "effects": [
       "Effect_KnowledgePriorityGlobalBonus10"
@@ -14191,7 +14191,7 @@
     "techCategory": "MilitaryScience",
     "researchCost": 1640,
     "prereqs": [
-      "Project_OrbitalCore"
+      "MissiontoVenus"
     ],
     "effects": [
       "Effect_SpaceMineFreebies1"
@@ -18547,7 +18547,7 @@
     "techCategory": "SocialScience",
     "researchCost": 1433,
     "prereqs": [
-      "Project_OrbitalCore"
+      "IndependenceMovements"
     ],
     "effects": [
       "Effect_MiningWaterBonus"
@@ -23497,7 +23497,7 @@
     "techCategory": "Energy",
     "researchCost": 880,
     "prereqs": [
-      "Project_OrbitalCore"
+      "MassDrivers"
     ],
     "effects": [
       "Effect_KnowledgePriorityBonus05"
@@ -26225,7 +26225,7 @@
     "techCategory": "SpaceScience",
     "researchCost": 115,
     "prereqs": [
-      "Project_Liquid-FuelRockets"
+      "Project_SolarArray"
     ],
     "effects": [
       "Effect_GovernmentPriority05"
@@ -28381,7 +28381,7 @@
     "techCategory": "SocialScience",
     "researchCost": 1842,
     "prereqs": [
-      "Project_OrbitalCore"
+      "AdvancedMagnetics"
     ],
     "effects": [
       "Effect_GovernmentPriority05"
@@ -29525,7 +29525,7 @@
     "techCategory": "LifeScience",
     "researchCost": 1188,
     "prereqs": [
-      "Project_OrbitalCore"
+      "Biotechnology"
     ],
     "effects": [
       "Effect_LifeExtension10"
