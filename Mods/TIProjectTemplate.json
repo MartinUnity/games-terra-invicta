@@ -5636,7 +5636,7 @@
       "ArrivalInternationalDevelopment"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -6648,7 +6648,7 @@
       "AppliedArtificialIntelligence"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus3"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7088,7 +7088,7 @@
       "Project_TheChokePoint"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7198,7 +7198,7 @@
       "Project_ReconnaissanceArray"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus20"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7462,7 +7462,7 @@
       "Project_Pherocytes"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7880,7 +7880,7 @@
       "PhasedArrayLasers"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -8474,7 +8474,7 @@
       "Project_CovertOperations"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -8584,7 +8584,7 @@
       "ArrivalInternationalDevelopment"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -9662,7 +9662,7 @@
       "DirectedSpaceResearch"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -9948,7 +9948,7 @@
       "ArrivalMassCommunications"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10256,7 +10256,7 @@
       "Project_SolidCoreFissionReactorII"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10410,7 +10410,7 @@
       "SpaceResearch"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10564,7 +10564,7 @@
       "AdvancedHydrogenContainment"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10608,7 +10608,7 @@
       "UnityMovements"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10762,7 +10762,7 @@
       "Project_FlowStabilizedZPinchFusionReactor"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -11708,7 +11708,7 @@
       "MoltenCoreFissionSystems"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus3"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -11906,7 +11906,7 @@
       "SolidCoreFissionSystems"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus3"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12038,7 +12038,7 @@
       "Project_SlavicCommonwealth"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12390,7 +12390,7 @@
       "ArrivalGovernance"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12786,7 +12786,7 @@
       "WeAreNotAlone"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12808,7 +12808,7 @@
       "AppliedArtificialIntelligence"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12874,7 +12874,7 @@
       "Project_FissionReactorFarm"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -13006,7 +13006,7 @@
       "ElectrothermalPropulsion"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -13534,7 +13534,7 @@
       "GreatNations"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -13644,7 +13644,7 @@
       "Project_ClandestineCells"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus20"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -13666,7 +13666,7 @@
       "OrbitalShipbuilding"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -15096,7 +15096,7 @@
       "AppliedArtificialIntelligence"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus20"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -15360,7 +15360,7 @@
       "CarbonNanotubes"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -16372,7 +16372,7 @@
       "ArrivalEconomics"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -16526,7 +16526,7 @@
       "IndependenceMovements"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -17010,7 +17010,7 @@
       "SpaceCommerce"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -17208,7 +17208,7 @@
       "Project_SettlementMiningComplex"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -17252,7 +17252,7 @@
       "InfraredCombatLasers"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -17736,7 +17736,7 @@
       "Biotechnology"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -18660,7 +18660,7 @@
       "MilitarizationofSpace"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -18836,7 +18836,7 @@
       "Project_MegafaunaNecropsy"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19254,7 +19254,7 @@
       "MagneticNozzles"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19276,7 +19276,7 @@
       "Project_TheirOperations"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19738,7 +19738,7 @@
       "ArrivalDomesticPolitics"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19980,7 +19980,7 @@
       "ArrivalInternationalDevelopment"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20046,7 +20046,7 @@
       "Project_PointDefenseArray"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20200,7 +20200,7 @@
       "UltravioletCombatLasers"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20266,7 +20266,7 @@
       "ArrivalSecurity"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21014,7 +21014,7 @@
       "Tokamaks"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21212,7 +21212,7 @@
       "Project_SolidCoreFissionReactorIV"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21454,7 +21454,7 @@
       "ElectromagneticPropulsion"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22026,7 +22026,7 @@
       "Project_CovertOperations"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus40"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22092,7 +22092,7 @@
       "DirectedSpaceResearch"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22246,7 +22246,7 @@
       "Superalloys"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22972,7 +22972,7 @@
       "Project_Warships"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -23456,7 +23456,7 @@
       "Project_AlienFlora"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -24138,7 +24138,7 @@
       "ArrivalDomesticPolitics"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus40"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -24402,7 +24402,7 @@
       "MagneticNozzles"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -24688,7 +24688,7 @@
       "MagneticNozzles"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25282,7 +25282,7 @@
       "AdvancedHydrogenContainment"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25590,7 +25590,7 @@
       "ElectrostaticPropulsion"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus3"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25678,7 +25678,7 @@
       "Project_GasCoreFissionReactorIII"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25898,7 +25898,7 @@
       "VisibleCombatLasers"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -26184,7 +26184,7 @@
       "UnityMovements"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27108,7 +27108,7 @@
       "WeAreNotAlone"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27504,7 +27504,7 @@
       "ArrivalLaw"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27636,7 +27636,7 @@
       "Project_Pherocytes"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus3"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28142,7 +28142,7 @@
       "Project_ExoticHybridSystems"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28274,7 +28274,7 @@
       "PhasedArrayLasers"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityPenalty10"
+      "Effect_BuildArmyPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28296,7 +28296,7 @@
       "Project_TargetingComputer1"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28318,7 +28318,7 @@
       "Project_AutomatedMiningComplex"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28824,7 +28824,7 @@
       "Project_NervaDrive"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28846,7 +28846,7 @@
       "Project_ClimateLab"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -29154,7 +29154,7 @@
       "Project_TheirOperations"
     ],
     "effects": [
-      "Effect_MilitaryPriorityPenalty10"
+      "Effect_MilitaryPriorityBonus02"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -29308,7 +29308,7 @@
       "InfraredCombatLasers"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus160"
+      "Effect_ControlPointMaintenanceBonus3"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -29616,7 +29616,7 @@
       "SuperconductingMagnets"
     ],
     "effects": [
-      "Effect_SpoilsPriorityGlobalPenalty10"
+      "Effect_WelfarePriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
