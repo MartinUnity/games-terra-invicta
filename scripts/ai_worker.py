@@ -64,6 +64,13 @@ def effect_matches_whitelist(contexts, whitelist):
     return False
 
 
+def is_penalty_effect(name: str) -> bool:
+    """Return True if the effect name contains the word 'penalty' (case-insensitive)."""
+    if not name or not isinstance(name, str):
+        return False
+    return "penalty" in name.lower()
+
+
 # Pydantic removed: we prefer JSON Schema validation (schema.json)
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -312,7 +319,8 @@ def build_prompt(requirements_md: str, prompt_template: str):
                         contexts = obj.get("contexts") or obj.get("context") or []
                         if isinstance(contexts, str):
                             contexts = [contexts]
-                        if effect_matches_whitelist(contexts, whitelist):
+                        # exclude penalty effects
+                        if not is_penalty_effect(obj["dataName"]) and effect_matches_whitelist(contexts, whitelist):
                             effect_names.append(obj["dataName"])
                     for v in obj.values():
                         collect_effects(v)
@@ -387,27 +395,32 @@ def select_template_and_effect(projects: list, tieffects_map: dict, whitelist: l
         for k, v in template.items():
             if isinstance(v, str) and v.startswith("Effect_"):
                 # accept only if in tieffects_map and matches whitelist
-                if v in tieffects_map and effect_matches_whitelist(tieffects_map.get(v, []), whitelist):
-                    chosen_effect = v
-                    break
+                    if (
+                        not is_penalty_effect(v)
+                        and v in tieffects_map
+                        and effect_matches_whitelist(tieffects_map.get(v, []), whitelist)
+                    ):
+                        chosen_effect = v
+                        break
         # maybe template has an effects array
         if not chosen_effect:
             for v in template.values():
                 if isinstance(v, list):
                     for it in v:
-                        if (
-                            isinstance(it, str)
-                            and it.startswith("Effect_")
-                            and it in tieffects_map
-                            and effect_matches_whitelist(tieffects_map.get(it, []), whitelist)
-                        ):
-                            chosen_effect = it
-                            break
+                                if (
+                                    isinstance(it, str)
+                                    and it.startswith("Effect_")
+                                    and (not is_penalty_effect(it))
+                                    and it in tieffects_map
+                                    and effect_matches_whitelist(tieffects_map.get(it, []), whitelist)
+                                ):
+                                    chosen_effect = it
+                                    break
                     if chosen_effect:
                         break
     # fallback: random tieffect
     if not chosen_effect and tieffects_map:
-        valid = [e for e, ctxs in tieffects_map.items() if effect_matches_whitelist(ctxs, whitelist)]
+        valid = [e for e, ctxs in tieffects_map.items() if (not is_penalty_effect(e)) and effect_matches_whitelist(ctxs, whitelist)]
         if valid:
             chosen_effect = random.choice(valid)
         else:
