@@ -50,10 +50,10 @@ def gather_template_issues(templates: List[Dict]) -> Tuple[set, List[Tuple[str, 
             issues.append((ctx, "missing friendlyName"))
 
         if "AI_techRole" not in entry:
-            issues.append((ctx, "missing AI_techRole"))
+            issues.append((ctx, f"missing AI_techRole :: dataName={dn}, friendlyName={fn}"))
 
         if "AI_criticalTech" not in entry:
-            issues.append((ctx, "missing AI_criticalTech"))
+            issues.append((ctx, f"missing AI_criticalTech :: dataName={dn}, friendlyName={fn}"))
 
     return names, issues
 
