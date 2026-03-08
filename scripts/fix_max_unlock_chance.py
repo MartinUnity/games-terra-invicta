@@ -5,19 +5,22 @@ import random
 import sys
 from pathlib import Path
 
+DRY_RUN = False
+
 
 def walk_and_fix(obj, changes):
     if isinstance(obj, dict):
-        if "maxUnlockChance" in obj:
+        if "factionAvailableChance" in obj:
             try:
-                val = obj["maxUnlockChance"]
+                val = obj["factionAvailableChance"]
             except Exception:
                 val = None
             if isinstance(val, (int, float)) and val >= 100:
-                newv = random.randint(20, 100)
+                newv = random.randint(40, 100)
                 data_name = obj.get("dataName") or obj.get("DataName") or "<unknown>"
                 changes.append((data_name, int(val), newv))
-                obj["maxUnlockChance"] = newv
+                if not DRY_RUN:
+                    obj["factionAvailableChance"] = newv
         for k, v in obj.items():
             walk_and_fix(v, changes)
     elif isinstance(obj, list):
@@ -26,10 +29,13 @@ def walk_and_fix(obj, changes):
 
 
 def main():
-    p = argparse.ArgumentParser(description="Fix maxUnlockChance >=100 to random 20-100")
+    p = argparse.ArgumentParser(description="Fix factionAvailableChance >=100 to random 20-100")
+    p.add_argument("--dry-run", action="store_true", help="Print changes without modifying file")
     p.add_argument("file", help="Path to TIProjectTemplate.json")
     p.add_argument("--start-dataName", dest="start", help="dataName to start from (inclusive)")
     args = p.parse_args()
+    global DRY_RUN
+    DRY_RUN = args.dry_run
 
     path = Path(args.file)
     if not path.exists():
@@ -56,8 +62,9 @@ def main():
 
     if changes:
         bak = path.with_suffix(path.suffix + ".bak")
-        path.rename(bak)
-        path.write_text(json.dumps(data, ensure_ascii=False, indent=4) + "\n")
+        if not DRY_RUN:
+            path.rename(bak)
+            path.write_text(json.dumps(data, ensure_ascii=False, indent=4) + "\n")
         print(f"Updated {len(changes)} entries. Backup saved to {bak}")
         for dn, old, new in changes[:50]:
             print(f"{dn}: {old} -> {new}")

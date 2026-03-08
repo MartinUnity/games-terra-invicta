@@ -3,8 +3,6 @@ TIHabModuleTemplate.description.PointDefenseArray_T0=A super basic (Tier 0) batt
 TIHabModuleTemplate.displayName.AutomatedPointDefenseArray=Automated Point Defense Array - only for small autonomous bases or platforms.
 TIHabModuleTemplate.description.AutomatedPointDefenseArray=A fully automated point defense array designed for small bases or platforms, providing continuous protection against incoming threats without the need for manual operation. This module is ideal for remote outposts or unmanned installations, ensuring the safety of critical infrastructure with minimal maintenance requirements.
 
-TIHabModuleTemplate.displayName.OutpostMiningRefiningModule=TMP - Small Mining & Refining Module
-TIHabModuleTemplate.description.OutpostMiningRefiningModule=TMP - A small and advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 15%
 TIHabModuleTemplate.displayName.MiningRefiningModule_lvl1=Small Mining & Refining Module
 TIHabModuleTemplate.description.MiningRefiningModule_lvl1=A small and advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 15%
 TIHabModuleTemplate.displayName.MiningRefiningModule_lvl2=Medium Mining & Refining Module
