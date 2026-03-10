@@ -23674,8 +23674,8 @@
     "maxUnlockChance": 28
   },
   {
-    "dataName": "Project_VolatilesHarvestingUpgrade",
-    "friendlyName": "VolatilesHarvestingUpgrade",
+    "dataName": "Project_ChemicalAntiAgingAgents",
+    "friendlyName": "Chemical Anti Aging Agents",
     "techCategory": "Energy",
     "researchCost": 687,
     "prereqs": [
