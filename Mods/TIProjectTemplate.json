@@ -29766,5 +29766,181 @@
     "initialUnlockChance": 18,
     "deltaUnlockChance": 2,
     "maxUnlockChance": 45
+  },
+  {
+    "dataName": "Project_Focused_Laser_Matrix",
+    "friendlyName": "Focused Laser Matrix",
+    "techCategory": "MilitaryScience",
+    "researchCost": 8677,
+    "prereqs": [
+      "UltravioletCombatLasers"
+    ],
+    "effects": [
+      "Effect_ShipLaserDamageMinor"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 80,
+    "initialUnlockChance": 18,
+    "deltaUnlockChance": 9,
+    "maxUnlockChance": 29
+  },
+  {
+    "dataName": "Project_Quantum_Research_Initiative",
+    "friendlyName": "Quantum Research Initiative",
+    "techCategory": "SpaceScience",
+    "researchCost": 462,
+    "prereqs": [
+      "ElectromagneticPropulsion"
+    ],
+    "effects": [
+      "Effect_SpaceResearchBoost1"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 75,
+    "initialUnlockChance": 2,
+    "deltaUnlockChance": 1,
+    "maxUnlockChance": 59
+  },
+  {
+    "dataName": "Project_Nexus_Stability_Protocols",
+    "friendlyName": "Nexus Stability Protocols",
+    "techCategory": "Materials",
+    "researchCost": 357,
+    "prereqs": [
+      "OrbitalShipbuilding"
+    ],
+    "effects": [
+      "Effect_ControlPointMaintenanceBonus40"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 67,
+    "initialUnlockChance": 12,
+    "deltaUnlockChance": 7,
+    "maxUnlockChance": 39
+  },
+  {
+    "dataName": "Project_Bureaucratic_Momentum",
+    "friendlyName": "Bureaucratic Momentum",
+    "techCategory": "InformationScience",
+    "researchCost": 11815,
+    "prereqs": [
+      "Project_RingCore"
+    ],
+    "effects": [
+      "Effect_GovernmentPriority10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 90,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 32
+  },
+  {
+    "dataName": "Project_Planetary_Fiscal_Accord",
+    "friendlyName": "Planetary Fiscal Accord",
+    "techCategory": "Energy",
+    "researchCost": 10878,
+    "prereqs": [
+      "DeuteriumDeuteriumFusion"
+    ],
+    "effects": [
+      "Effect_EconomyPriorityBonus02"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 56,
+    "initialUnlockChance": 13,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 74
+  },
+  {
+    "dataName": "Project_Alloy_Refinement_Protocols",
+    "friendlyName": "Alloy Refinement Protocols",
+    "techCategory": "MilitaryScience",
+    "researchCost": 64973,
+    "prereqs": [
+      "FleetLogistics"
+    ],
+    "effects": [
+      "Effect_MiningMetalsBonus"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 40,
+    "initialUnlockChance": 18,
+    "deltaUnlockChance": 8,
+    "maxUnlockChance": 99
+  },
+  {
+    "dataName": "Project_Fleet_Mobilization_Protocols",
+    "friendlyName": "Fleet Mobilization Protocols",
+    "techCategory": "Energy",
+    "researchCost": 171072,
+    "prereqs": [
+      "Diamondoids"
+    ],
+    "effects": [
+      "Effect_MilitaryPriorityBonus02"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 75,
+    "initialUnlockChance": 14,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 81
+  },
+  {
+    "dataName": "Project_Theoretical_Breakthroughs",
+    "friendlyName": "Theoretical Breakthroughs",
+    "techCategory": "SpaceScience",
+    "researchCost": 128,
+    "prereqs": [
+      "Project_Solid-FuelSpaceRockets"
+    ],
+    "effects": [
+      "Effect_SpaceResearchBoost1"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 57,
+    "initialUnlockChance": 17,
+    "deltaUnlockChance": 10,
+    "maxUnlockChance": 57
   }
 ]
