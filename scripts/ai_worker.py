@@ -362,7 +362,9 @@ def load_project_templates(path: str):
         return []
 
 
-def select_template_and_effect(projects: list, tieffects_map: dict, whitelist: list, category: str = None, require_prereq: bool = False):
+def select_template_and_effect(
+    projects: list, tieffects_map: dict, whitelist: list, category: str = None, require_prereq: bool = False
+):
     # pick a category if not provided
     candidates = projects
     if category:
@@ -373,7 +375,9 @@ def select_template_and_effect(projects: list, tieffects_map: dict, whitelist: l
         return (None, None)
     # Prefer templates that have a non-empty prereqs list when requested
     if require_prereq:
-        pref = [p for p in candidates if isinstance(p, dict) and isinstance(p.get("prereqs"), list) and p.get("prereqs")]
+        pref = [
+            p for p in candidates if isinstance(p, dict) and isinstance(p.get("prereqs"), list) and p.get("prereqs")
+        ]
         if pref:
             template = random.choice(pref)
         else:
@@ -381,7 +385,9 @@ def select_template_and_effect(projects: list, tieffects_map: dict, whitelist: l
             try:
                 logpath = os.path.join(AI_DIR, "generation_issues.log")
                 with open(logpath, "a", encoding="utf-8") as lf:
-                    lf.write(f"{datetime.now(timezone.utc).isoformat()} - no templates with prereqs for category={category!r}; candidates={len(candidates)}\n")
+                    lf.write(
+                        f"{datetime.now(timezone.utc).isoformat()} - no templates with prereqs for category={category!r}; candidates={len(candidates)}\n"
+                    )
             except Exception:
                 pass
             template = random.choice(candidates)
@@ -395,32 +401,36 @@ def select_template_and_effect(projects: list, tieffects_map: dict, whitelist: l
         for k, v in template.items():
             if isinstance(v, str) and v.startswith("Effect_"):
                 # accept only if in tieffects_map and matches whitelist
-                    if (
-                        not is_penalty_effect(v)
-                        and v in tieffects_map
-                        and effect_matches_whitelist(tieffects_map.get(v, []), whitelist)
-                    ):
-                        chosen_effect = v
-                        break
+                if (
+                    not is_penalty_effect(v)
+                    and v in tieffects_map
+                    and effect_matches_whitelist(tieffects_map.get(v, []), whitelist)
+                ):
+                    chosen_effect = v
+                    break
         # maybe template has an effects array
         if not chosen_effect:
             for v in template.values():
                 if isinstance(v, list):
                     for it in v:
-                                if (
-                                    isinstance(it, str)
-                                    and it.startswith("Effect_")
-                                    and (not is_penalty_effect(it))
-                                    and it in tieffects_map
-                                    and effect_matches_whitelist(tieffects_map.get(it, []), whitelist)
-                                ):
-                                    chosen_effect = it
-                                    break
+                        if (
+                            isinstance(it, str)
+                            and it.startswith("Effect_")
+                            and (not is_penalty_effect(it))
+                            and it in tieffects_map
+                            and effect_matches_whitelist(tieffects_map.get(it, []), whitelist)
+                        ):
+                            chosen_effect = it
+                            break
                     if chosen_effect:
                         break
     # fallback: random tieffect
     if not chosen_effect and tieffects_map:
-        valid = [e for e, ctxs in tieffects_map.items() if (not is_penalty_effect(e)) and effect_matches_whitelist(ctxs, whitelist)]
+        valid = [
+            e
+            for e, ctxs in tieffects_map.items()
+            if (not is_penalty_effect(e)) and effect_matches_whitelist(ctxs, whitelist)
+        ]
         if valid:
             chosen_effect = random.choice(valid)
         else:
@@ -569,7 +579,7 @@ def enforce_candidate_defaults(candidate: dict):
     candidate.setdefault("oneTimeGlobally", False)
     candidate.setdefault("repeatable", False)
     candidate.setdefault("resourcesGranted", [])
-    candidate.setdefault("factionAvailableChance", 100)
+    candidate.setdefault("factionAvailableChance", random.randint(20, 100))
     # randomize initialUnlockChance 1-20 and deltaUnlockChance 1-10 if not provided
     if "initialUnlockChance" not in candidate:
         candidate["initialUnlockChance"] = random.randint(1, 20)
@@ -613,7 +623,10 @@ def run_cycle(args):
     tieffects_map = collect_tieffects(tieffect_path)
     whitelist = load_effect_whitelist(REQUIREMENTS_MD)
 
-    template, chosen_effect = select_template_and_effect(projects, tieffects_map, whitelist, category=args.category, require_prereq=True)
+    template, chosen_effect = select_template_and_effect(
+        projects, tieffects_map, whitelist, category=args.category, require_prereq=True
+    )
+
     # Hard reroll: if the selected template has empty prereqs, try reselecting a few times
     def has_prereqs(t):
         return isinstance(t, dict) and isinstance(t.get("prereqs"), list) and bool(t.get("prereqs"))
@@ -622,7 +635,9 @@ def run_cycle(args):
         max_template_attempts = 10
         found = False
         for _ in range(max_template_attempts):
-            t, e = select_template_and_effect(projects, tieffects_map, whitelist, category=args.category, require_prereq=True)
+            t, e = select_template_and_effect(
+                projects, tieffects_map, whitelist, category=args.category, require_prereq=True
+            )
             if has_prereqs(t):
                 template, chosen_effect = t, e
                 found = True
@@ -632,10 +647,15 @@ def run_cycle(args):
             try:
                 logpath = os.path.join(AI_DIR, "generation_issues.log")
                 with open(logpath, "a", encoding="utf-8") as lf:
-                    lf.write(f"{datetime.now(timezone.utc).isoformat()} - failed to find template with prereqs after {max_template_attempts} attempts; proceeding with fallback template {template.get('dataName')!r}\n")
+                    lf.write(
+                        f"{datetime.now(timezone.utc).isoformat()} - failed to find template with prereqs after {max_template_attempts} attempts; proceeding with fallback template {template.get('dataName')!r}\n"
+                    )
             except Exception:
                 pass
-            print("WARNING: no template with prereqs found after multiple attempts; proceeding with current template", file=sys.stderr)
+            print(
+                "WARNING: no template with prereqs found after multiple attempts; proceeding with current template",
+                file=sys.stderr,
+            )
     # existing dataName set for uniqueness checks (include template + mods)
     existing_data_names = set()
     for p in projects:
