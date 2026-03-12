@@ -29634,5 +29634,137 @@
     "initialUnlockChance": 7,
     "deltaUnlockChance": 9,
     "maxUnlockChance": 82
+  },
+  {
+    "dataName": "Project_Astrognosis",
+    "friendlyName": "Astrognosis",
+    "techCategory": "Xenology",
+    "researchCost": 6463,
+    "prereqs": [
+      "MissionToSpace"
+    ],
+    "effects": [
+      "Effect_SpaceResearchBoost05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 80,
+    "initialUnlockChance": 19,
+    "deltaUnlockChance": 7,
+    "maxUnlockChance": 28
+  },
+  {
+    "dataName": "Project_Civic_Harmonization",
+    "friendlyName": "Civic Harmonization",
+    "techCategory": "MilitaryScience",
+    "researchCost": 14321,
+    "prereqs": [
+      "Project_PlasmaBatteryMk2"
+    ],
+    "effects": [
+      "Effect_GovernmentPriority05"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 77,
+    "initialUnlockChance": 18,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 28
+  },
+  {
+    "dataName": "Project_Salvage_Priority",
+    "friendlyName": "Salvage Priority",
+    "techCategory": "SpaceScience",
+    "researchCost": 324,
+    "prereqs": [
+      "ElectrostaticPropulsion"
+    ],
+    "effects": [
+      "Effect_SpoilsPriorityGlobalBonus10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 44,
+    "initialUnlockChance": 14,
+    "deltaUnlockChance": 3,
+    "maxUnlockChance": 23
+  },
+  {
+    "dataName": "Project_AquaGenesis",
+    "friendlyName": "AquaGenesis",
+    "techCategory": "Materials",
+    "researchCost": 12557,
+    "prereqs": [
+      "Project_ExoticArmor"
+    ],
+    "effects": [
+      "Effect_MiningWaterBonus"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 55,
+    "initialUnlockChance": 15,
+    "deltaUnlockChance": 4,
+    "maxUnlockChance": 86
+  },
+  {
+    "dataName": "Project_Beastfall_Tactics",
+    "friendlyName": "Beastfall Tactics",
+    "techCategory": "MilitaryScience",
+    "researchCost": 5554,
+    "prereqs": [
+      "TerrestrialMilitaryScience"
+    ],
+    "effects": [
+      "Effect_ArmyDamageBonustoMegafauna"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 67,
+    "initialUnlockChance": 17,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 48
+  },
+  {
+    "dataName": "Project_Legacy_Dividend",
+    "friendlyName": "Legacy Dividend",
+    "techCategory": "SocialScience",
+    "researchCost": 318,
+    "prereqs": [
+      "IndependenceMovements"
+    ],
+    "effects": [
+      "Effect_SpoilsPriorityGlobalBonus10"
+    ],
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "resourcesGranted": [],
+    "factionAvailableChance": 56,
+    "initialUnlockChance": 18,
+    "deltaUnlockChance": 2,
+    "maxUnlockChance": 45
   }
 ]
