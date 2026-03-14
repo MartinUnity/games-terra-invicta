@@ -182,3 +182,20 @@ This PR normalizes mining bonus effect identifiers by adding a _lvl1-6 suffix ba
 ## Notes
 - Buckets determined by equal‑count quantiles of the matched projects' researchCost. See scripts/one-off/apply_mining_lvl_suffixes.py for exact thresholds.
 - A backup was created: `Mods/TIProjectTemplate.json.bak-20260314T081110Z`.
+
+## PR details (for GitHub)
+
+Title: feat: normalize mining bonus effects and use leveled mining effects in generator
+
+Body:
+This PR ensures mining bonus effects are normalized across the template and generator:
+
+- Mods/TIProjectTemplate.json: updated 126 mining bonus effect identifiers to include a `_lvl1`..`_lvl6` suffix based on researchCost quantiles (backup created under `Mods/TIProjectTemplate.json.bak-20260314T081110Z`).
+- scripts/utils/mining_leveler.py: new helper that maps researchCost to level and applies `_lvlN` suffixes.
+- Integration into generator: `scripts/utils/ai_selection.py` and `scripts/ai_worker.py` use the centralized helper so generated candidates immediately reference the leveled effect tokens.
+
+Testing notes:
+- Use the repo virtualenv: `. .venv/bin/activate`
+- Run dry-run smoke tests: `python3 scripts/ai_worker.py --once --dry-run --count 3` and inspect `ai-worker/staging/<ts>/candidate.json` for mining effects using `_lvlN` when appropriate.
+
+Please review the changes and the one-off diff in `scripts/one-off/mining_lvl_patch.diff` for exact template edits.
