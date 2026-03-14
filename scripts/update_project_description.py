@@ -553,14 +553,26 @@ def make_prompt(display: str, current_summary: Optional[str], data_name: Optiona
         m = re.search(r"(?:_level[_\-]?|\blevel\s*[_\-]?\s*)([1-6])\b", dn)
     if m:
         lvl = int(m.group(1))
-        # Provide concrete, short guidance and examples so the model uses
-        # tier-appropriate wording rather than generic rewrites.
+        # Provide concrete, short guidance so the model uses tier-appropriate
+        # wording. Also include two compact illustrative examples (Level 1 vs
+        # Level 6) using the project's topic to show the desired contrast.
+        # Derive a short topic by removing common level/mark markers from the
+        # display name.
+        topic = display or "this feature"
+        topic = re.sub(r"\s*Level\s*[1-6]\b", "", topic, flags=re.IGNORECASE)
+        topic = re.sub(r"_lvl[_\-]?[1-6]\b", "", topic, flags=re.IGNORECASE)
+        topic = re.sub(r"_mk[_\-]?(i|ii|iii|iv|v|vi)\b", "", topic, flags=re.IGNORECASE)
+        topic = topic.strip()
+        if not topic:
+            topic = "this feature"
+        low_example = f"Basic {topic} improves material efficiency."
+        high_example = f"State-of-the-art {topic} applies advanced heuristics to maximize material efficiency."
         level_hint = (
             f"\n\nNOTE: This project is Level {lvl} of 6 in a progression. Use wording that reflects the tier. "
             "Begin the summary with a short tier descriptor (one word) or leading adjective to indicate level: "
             "Level 1 -> 'Basic', Level 2-3 -> 'Improved' or 'Enhanced', Level 4-5 -> 'Advanced' or 'Optimized', Level 6 -> 'State-of-the-art'. "
-            "Examples: \n  Level 1: 'Basic water optimization improves material efficiency.' \n  Level 6: 'State-of-the-art water optimization applies advanced heuristics to maximize material efficiency.' "
             "Keep the final summary concise (single line) and do not include reasoning."
+            f"\n\nExamples:\n  Level 1: '{low_example}'\n  Level 6: '{high_example}'\n"
         )
     else:
         # detect mk I..VI (e.g. _mkI, _mki) and variants like _mk_I or _mk-I
@@ -608,7 +620,24 @@ def make_strict_prompt(display: str, current_summary: Optional[str], data_name: 
         "the final summary. Any extra text will be rejected.\n"
         "If you must, refuse with a single line: 'Unable to produce summary.'"
     )
-    return base + extra
+    # Also include the same compact examples (Level 1 vs Level 6) to reinforce
+    # the contrast when the strict prompt is used for retries.
+    examples = ""
+    try:
+        topic = display or "this feature"
+        topic = re.sub(r"\s*Level\s*[1-6]\b", "", topic, flags=re.IGNORECASE)
+        topic = re.sub(r"_lvl[_\-]?[1-6]\b", "", topic, flags=re.IGNORECASE)
+        topic = re.sub(r"_mk[_\-]?(i|ii|iii|iv|v|vi)\b", "", topic, flags=re.IGNORECASE)
+        topic = topic.strip()
+        if not topic:
+            topic = "this feature"
+        low_example = f"Basic {topic} improves material efficiency."
+        high_example = f"State-of-the-art {topic} applies advanced heuristics to maximize material efficiency."
+        examples = f"\n\nExamples:\n- Level 1 (Basic): '{low_example}'\n- Level 6 (State-of-the-art): '{high_example}'\n"
+    except Exception:
+        examples = ""
+
+    return base + extra + examples
 
 
 def extract_final_summary(text: str) -> str:
@@ -1154,84 +1183,90 @@ def main(argv: Optional[List[str]] = None) -> int:
             dbg(f"Skipping {name}: no displayName found")
             continue
 
-        # Try generating, with retries if the model emits reasoning/meta-text
+        # Skip LLM calls for placeholder summaries like '<habmodule>' - these
+        # are intentional markers in the EN file and should not be overwritten.
+        placeholder_hab = isinstance(summary, str) and summary.strip() == "<habmodule>"
         attempts = 0
         new_summary = ""
         last_out = ""
-        while attempts <= args.retries:
-            attempts += 1
-            prompt = make_prompt(display, summary, name) if attempts == 1 else make_strict_prompt(display, summary, name)
-            try:
-                out, source = call_ollama(
-                    args.model,
-                    prompt,
-                    args.temperature,
-                    args.top_p,
-                    args.top_k,
-                    args.presence_penalty,
-                    timeout=args.timeout,
-                    ollama_url=args.ollama,
-                    storage_service=args.storage_service,
-                    storage_run_dir=storage_run_dir,
-                    max_extraction_size=args.max_extraction_size,
-                )
-            except RuntimeError as e:
-                print(f"Error generating for {name}: {e}", file=sys.stderr)
-                return 3
+        if not placeholder_hab:
+            # Try generating, with retries if the model emits reasoning/meta-text
+            while attempts <= args.retries:
+                attempts += 1
+                prompt = make_prompt(display, summary, name) if attempts == 1 else make_strict_prompt(display, summary, name)
+                try:
+                    out, source = call_ollama(
+                        args.model,
+                        prompt,
+                        args.temperature,
+                        args.top_p,
+                        args.top_k,
+                        args.presence_penalty,
+                        timeout=args.timeout,
+                        ollama_url=args.ollama,
+                        storage_service=args.storage_service,
+                        storage_run_dir=storage_run_dir,
+                        max_extraction_size=args.max_extraction_size,
+                    )
+                except RuntimeError as e:
+                    print(f"Error generating for {name}: {e}", file=sys.stderr)
+                    return 3
 
-            last_out = out
-            # sanitize result: keep single-line, strip surrounding quotes
-            out_line = extract_final_summary(out)
-            out_line = out_line.strip('"')
-
-            # If the model returned token artifact fragments like <unused41>,
-            # try to strip them and re-extract a cleaner summary before
-            # deciding if the output is suspicious.
-            try:
-                if contains_token_artifacts(out) or contains_token_artifacts(out_line):
-                    dbg(f"Token artifacts detected for {name}; attempting to strip tokens and re-extract.")
-                    cleaned = strip_token_artifacts(out)
-                    cleaned_line = extract_final_summary(cleaned).strip('"')
-                    # also detect bracketed tags like [multimodal] which some
-                    # servers emit; strip those too and re-extract.
-                    if contains_bracket_tag(cleaned) and not contains_token_artifacts(cleaned_line):
-                        cleaned = re.sub(r"\[[^\]]+\]", " ", cleaned)
+                last_out = out
+                # sanitize result: keep single-line, strip surrounding quotes
+                out_line = extract_final_summary(out)
+                out_line = out_line.strip('"')
+                # If the model returned token artifact fragments like <unused41>,
+                # try to strip them and re-extract a cleaner summary before
+                # deciding if the output is suspicious.
+                try:
+                    if contains_token_artifacts(out) or contains_token_artifacts(out_line):
+                        dbg(f"Token artifacts detected for {name}; attempting to strip tokens and re-extract.")
+                        cleaned = strip_token_artifacts(out)
                         cleaned_line = extract_final_summary(cleaned).strip('"')
-                    # prefer cleaned candidate if it looks plausible
-                    if cleaned_line and not looks_suspicious(cleaned_line):
-                        out_line = cleaned_line
-                        out = cleaned
-                        dbg(f"Recovered cleaned summary for {name}: '{out_line[:120]}'")
-                    else:
-                        # if HTTP source and cleaned is reasonably long, accept it
-                        if source == "http" and cleaned_line and len(cleaned_line) >= args.min_http_length:
+                        # also detect bracketed tags like [multimodal] which some
+                        # servers emit; strip those too and re-extract.
+                        if contains_bracket_tag(cleaned) and not contains_token_artifacts(cleaned_line):
+                            cleaned = re.sub(r"\[[^\]]+\]", " ", cleaned)
+                            cleaned_line = extract_final_summary(cleaned).strip('"')
+                        # prefer cleaned candidate if it looks plausible
+                        if cleaned_line and not looks_suspicious(cleaned_line):
                             out_line = cleaned_line
                             out = cleaned
-                            dbg(f"Accepted cleaned HTTP summary for {name}: '{out_line[:120]}'")
-            except Exception:
-                pass
+                            dbg(f"Recovered cleaned summary for {name}: '{out_line[:120]}'")
+                        else:
+                            # if HTTP source and cleaned is reasonably long, accept it
+                            if source == "http" and cleaned_line and len(cleaned_line) >= args.min_http_length:
+                                out_line = cleaned_line
+                                out = cleaned
+                                dbg(f"Accepted cleaned HTTP summary for {name}: '{out_line[:120]}'")
+                except Exception:
+                    pass
 
-            # If the HTTP path produced this output, be more permissive: accept
-            # reasonably short but valid-looking summaries from the HTTP API.
-            # However, avoid accepting tokenized or bracket-tag outputs as-is.
-            if (
-                source == "http"
-                and len(out_line) >= args.min_http_length
-                and not (contains_token_artifacts(out_line) or contains_bracket_tag(out_line))
-            ):
-                new_summary = out_line
-                break
-
-            if not looks_suspicious(out_line):
-                new_summary = out_line
-                break
-            else:
-                dbg(f"Suspicious output for {name} on attempt {attempts}: '{out_line[:80]}'")
-                if attempts > args.retries:
-                    dbg(f"Giving up on {name} after {attempts} attempts; leaving unchanged.")
-                    new_summary = summary or ""
+                # If the HTTP path produced this output, be more permissive: accept
+                # reasonably short but valid-looking summaries from the HTTP API.
+                # However, avoid accepting tokenized or bracket-tag outputs as-is.
+                if (
+                    source == "http"
+                    and len(out_line) >= args.min_http_length
+                    and not (contains_token_artifacts(out_line) or contains_bracket_tag(out_line))
+                ):
+                    new_summary = out_line
                     break
-                dbg(f"Retrying {name} (strict prompt)...")
+
+                if not looks_suspicious(out_line):
+                    new_summary = out_line
+                    break
+                else:
+                    dbg(f"Suspicious output for {name} on attempt {attempts}: '{out_line[:80]}'")
+                    if attempts > args.retries:
+                        dbg(f"Giving up on {name} after {attempts} attempts; leaving unchanged.")
+                        new_summary = summary or ""
+                        break
+                    dbg(f"Retrying {name} (strict prompt)...")
+        else:
+            dbg(f"Skipping LLM for {name}: summary is '<habmodule>' placeholder")
+            new_summary = summary or ""
         summary_key = f"TIProjectTemplate.summary.{name}="
 
         if summary_idx is not None and summary_idx >= 0:
