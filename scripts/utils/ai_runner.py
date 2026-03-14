@@ -35,6 +35,10 @@ try:
         is_penalty_effect,
         roll_research_cost,
         generate_and_extract,
+        estimate_base_cost,
+        find_project_by_friendlyname,
+        next_level_for_base,
+        build_leveled_candidate,
     )
     from utils.ai_prompts import build_fill_prompt, build_localization_prompt, build_prompt
     from utils.ai_selection import select_template_and_effect
@@ -52,6 +56,10 @@ except Exception:
         is_penalty_effect,
         roll_research_cost,
         generate_and_extract,
+        estimate_base_cost,
+        find_project_by_friendlyname,
+        next_level_for_base,
+        build_leveled_candidate,
     )
     from scripts.utils.ai_prompts import build_fill_prompt, build_localization_prompt, build_prompt
     from scripts.utils.ai_selection import select_template_and_effect
@@ -66,13 +74,21 @@ def run_cycle(args) -> dict:
     candidate_path: Optional[str] = None
     # shared candidate variable (typed for static checkers)
     candidate: Dict[str, Any] = {}
+    # ensure mod_projects exists for static analyzers and downstream logic
+    mod_projects: List[Any] = []
     requirements_md = load_text(os.path.join(AI_DIR, "requirements.md"))
     prompt_template = load_text(os.path.join(AI_DIR, "prompt_templates.md"))
     project_template_path = "/home/martin/Games/TerraInvicta/templates/TIProjectTemplate.json"
     tieffect_path = "/home/martin/Games/TerraInvicta/templates/TIEffectTemplate.json"
     projects = load_project_templates(project_template_path)
     tieffects_map = collect_tieffects(tieffect_path)
-    whitelist = load_effect_whitelist(os.path.join(AI_DIR, "requirements.md"))
+    # Prefer an explicit whitelist file to avoid parsing unrelated lines in requirements.md.
+    wl_file = os.path.join(AI_DIR, "effect_whitelist.txt")
+    if os.path.exists(wl_file):
+        whitelist = load_effect_whitelist(wl_file)
+    else:
+        # fallback for compatibility: parse the requirements.md if no whitelist file present
+        whitelist = load_effect_whitelist(os.path.join(AI_DIR, "requirements.md"))
 
     template, chosen_effect = select_template_and_effect(
         projects,
@@ -121,11 +137,24 @@ def run_cycle(args) -> dict:
         for mp in mod_projects:
             if isinstance(mp, dict) and "dataName" in mp:
                 existing_data_names.add(mp["dataName"])
+        # include user Mods/TIProjectTemplate.json projects when estimating base costs
+        try:
+            # avoid duplicating entries by dataName
+            mod_map = {mp.get("dataName"): mp for mp in mod_projects if isinstance(mp, dict) and mp.get("dataName")}
+            projects = [p for p in projects if not (isinstance(p, dict) and p.get("dataName") in mod_map)] + list(mod_map.values())
+        except Exception:
+            pass
+
+    # ensure mod_projects variable exists for later use
+    if 'mod_projects' not in locals():
+        mod_projects = []
 
     if template is None:
         prompt = build_prompt(requirements_md, prompt_template)
         print("Calling model", args.model)
         try:
+            probe_wait = getattr(args, "probe_wait", 6.0)
+            retry_sleep_base = getattr(args, "retry_sleep_base", 0.25)
             out, candidate = generate_and_extract(
                 args.model,
                 prompt,
@@ -135,6 +164,8 @@ def run_cycle(args) -> dict:
                 simplified_prompt=None,
                 ai_dir=AI_DIR,
                 debug=getattr(args, "debug", False),
+                probe_wait=probe_wait,
+                retry_sleep_base=retry_sleep_base,
             )
         except Exception:
             candidate = {"error": "model output not JSON"}
@@ -198,24 +229,35 @@ def run_cycle(args) -> dict:
                 print("Backed up staging to", b)
             except Exception as e:
                 print("Backup failed:", e)
+        # prune staging/backups/debug files to keep disk usage bounded
         try:
-            # simple cleanup: keep last 5
-            entries = [d for d in os.listdir(staging_root) if os.path.isdir(os.path.join(staging_root, d))]
-            if len(entries) > 5:
-                entries.sort()
-                to_remove = entries[0 : max(0, len(entries) - 5)]
-                for d in to_remove:
-                    shutil.rmtree(os.path.join(staging_root, d))
+            from utils.ai_worker_helpers import prune_dir, prune_debug_log
+
+            prune_dir(staging_root, keep=200)
+            prune_dir(args.backup_dir, keep=200)
+            prune_debug_log(os.path.join(AI_DIR, "debug_logs.txt"), keep_blocks=200)
         except Exception:
-            pass
+            try:
+                from scripts.utils.ai_worker_helpers import prune_dir, prune_debug_log
+
+                prune_dir(staging_root, keep=200)
+                prune_dir(args.backup_dir, keep=200)
+                prune_debug_log(os.path.join(AI_DIR, "debug_logs.txt"), keep_blocks=200)
+            except Exception:
+                pass
         return result
 
     # template must be non-None here (we returned earlier if it was); assert for static checkers
     assert template is not None
-    base_cost = cast(Any, template).get("researchCost", cast(Any, template).get("cost", 1000))
-    target_cost = roll_research_cost(base_cost)
+    # Estimate a base cost informed by existing projects/effects, then roll
+    try:
+        base_est = estimate_base_cost(template, chosen_effect, projects)
+    except Exception:
+        base_est = cast(Any, template).get("researchCost", cast(Any, template).get("cost", 1000))
+    target_cost = roll_research_cost(base_est)
     attempts = max(1, getattr(args, "attempts", 3))
     last_errors: List[str] = []
+    promotion_count = 0
     final_candidate: Optional[Dict[str, Any]] = None
     final_ok = False
     final_meta: Optional[Dict[str, Any]] = None
@@ -232,6 +274,9 @@ def run_cycle(args) -> dict:
             simplified = build_simplified_fill_prompt(chosen_effect, target_cost)
 
         try:
+            # pass probe_wait and retry_sleep_base from CLI args if provided
+            probe_wait = getattr(args, "probe_wait", 6.0)
+            retry_sleep_base = getattr(args, "retry_sleep_base", 0.25)
             out, small = generate_and_extract(
                 args.model,
                 small_prompt,
@@ -241,6 +286,8 @@ def run_cycle(args) -> dict:
                 simplified_prompt=simplified,
                 ai_dir=AI_DIR,
                 debug=getattr(args, "debug", False),
+                probe_wait=probe_wait,
+                retry_sleep_base=retry_sleep_base,
             )
         except Exception:
             small = {"error": "model output not JSON"}
@@ -255,8 +302,46 @@ def run_cycle(args) -> dict:
             continue
         data_name = "Project_" + "".join([c if c.isalnum() else "_" for c in fname.replace(" ", "_")])
         if data_name in existing_data_names:
-            last_errors.append(f"dataName already exists: {data_name}")
-            continue
+            # attempt to find the base project by friendlyName and create a leveled
+            # candidate (II..V) instead of re-calling the model. This follows
+            # docs/add_projects_with_levels.md behavior.
+            try:
+                base = find_project_by_friendlyname(projects + mod_projects, fname)
+            except Exception:
+                base = None
+            if base is not None:
+                # determine next available level (cap at V)
+                base_dn = base.get("dataName") or ""
+                lvl = next_level_for_base(base_dn, projects + mod_projects, cap=5)
+                if lvl is None:
+                    last_errors.append(f"max level reached for base project: {base.get('dataName')}")
+                    continue
+                # build derived candidate and write staged file
+                try:
+                    derived = build_leveled_candidate(base, lvl, model_rolls=None, tieffects_map=tieffects_map)
+                    # meta should record derivation
+                    meta = {
+                        "derived_from": base.get("dataName"),
+                        "derived_level": lvl,
+                        "original_friendlyName": fname,
+                        "model": args.model,
+                    }
+                    candidate_path = write_staged(derived, staging_root, raw_output=out, meta=meta)
+                    result = {"candidate_path": candidate_path, "valid": True, "errors": []}
+                    print("Wrote staged candidate (derived level) to", candidate_path)
+                    if args.backup_dir:
+                        try:
+                            b = backup_staged(staging_root, args.backup_dir)
+                            print("Backed up staging to", b)
+                        except Exception as e:
+                            print("Backup failed:", e)
+                    return result
+                except Exception as e:
+                    last_errors.append(f"failed to build derived candidate: {e}")
+                    continue
+            else:
+                last_errors.append(f"dataName already exists: {data_name}")
+                continue
         candidate["dataName"] = data_name
         candidate["friendlyName"] = fname
         candidate["techCategory"] = template.get("techCategory", "Unknown")
@@ -334,11 +419,43 @@ def run_cycle(args) -> dict:
         if candidate_path is not None:
             with open(candidate_path + ".result.json", "w", encoding="utf-8") as f:
                 json.dump(result, f, indent=2)
+        # if the candidate we wrote included effect upgrades, mirror them into the meta file
+        try:
+            candidate_full = None
+            with open(candidate_path, "r", encoding="utf-8") as cf:
+                candidate_full = json.load(cf)
+            upgrades = candidate_full.get("__derived_effect_upgrades") if isinstance(candidate_full, dict) else None
+            if upgrades:
+                meta_path = candidate_path + ".meta.json"
+                try:
+                    if os.path.exists(meta_path):
+                        with open(meta_path, "r", encoding="utf-8") as mf:
+                            m = json.load(mf)
+                    else:
+                        m = {}
+                    m["derived_effect_upgrades"] = upgrades
+                    with open(meta_path, "w", encoding="utf-8") as mf:
+                        json.dump(m, mf, indent=2)
+                except Exception:
+                    pass
+        except Exception:
+            pass
         print("Wrote staged candidate to", candidate_path)
         if ok:
             final_candidate = candidate
             final_ok = True
             final_meta = meta
+            # count promotions if present in the staged file
+            try:
+                cp = candidate_path
+                if cp and os.path.exists(cp):
+                    with open(cp, "r", encoding="utf-8") as cf:
+                        cfj = json.load(cf)
+                    ups = cfj.get("__derived_effect_upgrades") if isinstance(cfj, dict) else None
+                    if ups and isinstance(ups, list):
+                        promotion_count += len(ups)
+            except Exception:
+                pass
             break
         else:
             last_errors.extend(errors)
@@ -349,15 +466,22 @@ def run_cycle(args) -> dict:
             print("Backed up staging to", b)
         except Exception as e:
             print("Backup failed:", e)
+    # prune staging/backups/debug files to keep disk usage bounded
     try:
-        entries = [d for d in os.listdir(staging_root) if os.path.isdir(os.path.join(staging_root, d))]
-        if len(entries) > 5:
-            entries.sort()
-            to_remove = entries[0 : max(0, len(entries) - 5)]
-            for d in to_remove:
-                shutil.rmtree(os.path.join(staging_root, d))
+        from utils.ai_worker_helpers import prune_dir, prune_debug_log
+
+        prune_dir(staging_root, keep=200)
+        prune_dir(args.backup_dir, keep=200)
+        prune_debug_log(os.path.join(AI_DIR, "debug_logs.txt"), keep_blocks=200)
     except Exception:
-        pass
+        try:
+            from scripts.utils.ai_worker_helpers import prune_dir, prune_debug_log
+
+            prune_dir(staging_root, keep=200)
+            prune_dir(args.backup_dir, keep=200)
+            prune_debug_log(os.path.join(AI_DIR, "debug_logs.txt"), keep_blocks=200)
+        except Exception:
+            pass
 
     if final_ok:
         # final_candidate is set when final_ok is True; help static analyzers by asserting it here
@@ -392,6 +516,8 @@ def run_cycle(args) -> dict:
                         simplified_prompt=simplified_loc,
                         ai_dir=AI_DIR,
                         debug=getattr(args, "debug", False),
+                        probe_wait=getattr(args, "probe_wait", 6.0),
+                        retry_sleep_base=getattr(args, "retry_sleep_base", 0.25),
                     )
                 except Exception:
                     loc_obj = {"error": "model output not JSON"}
@@ -466,4 +592,7 @@ def run_cycle(args) -> dict:
                 else:
                     print("Auto-apply failed:", apply_errors)
         return {"candidate_path": candidate_path, "valid": True, "errors": []}
+    # report promotion_count in the non-success case as well via result errors/log
+    if promotion_count > 0:
+        last_errors.append(f"promotions_detected={promotion_count}")
     return {"candidate_path": candidate_path if not final_candidate else None, "valid": False, "errors": last_errors}

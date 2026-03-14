@@ -347,6 +347,18 @@ def parse_args():
         help="When used with --dry-run, also print the generated candidate and localization to the console",
     )
     p.add_argument("--debug", action="store_true", help="Enable debug logging of raw model outputs and extraction attempts")
+    p.add_argument(
+        "--probe-wait",
+        type=float,
+        default=6.0,
+        help="Seconds to probe Ollama for model readiness before HTTP call (default 6.0)",
+    )
+    p.add_argument(
+        "--retry-sleep-base",
+        type=float,
+        default=0.25,
+        help="Base seconds used for exponential backoff between retries (default 0.25)",
+    )
     return p.parse_args()
 
 
