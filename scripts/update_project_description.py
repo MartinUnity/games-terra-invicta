@@ -533,8 +533,64 @@ def call_ollama(
     return proc.stdout.strip(), "cli"
 
 
-def make_prompt(display: str, current_summary: Optional[str]) -> str:
+def make_prompt(display: str, current_summary: Optional[str], data_name: Optional[str] = None) -> str:
     s = current_summary or ""
+    # If the data name indicates a tiered progression (lvl1..lvl6 or mkI..mkVI)
+    # provide a small contextual hint so the model uses wording appropriate
+    # for the item's tier within a progression.
+    level_hint = ""
+    # consider both data_name and display text when detecting tier markers
+    combined = ""
+    if data_name:
+        combined += data_name + " "
+    if display:
+        combined += display
+    dn = combined.lower()
+    # detect numeric levels like _lvl1 .. _lvl6, _lvl_1, _lvl-1
+    m = re.search(r"_lvl[_\-]?([1-6])\b", dn)
+    if not m:
+        # also accept forms like '_level1', 'level1', or 'level 1' in dataName/display
+        m = re.search(r"(?:_level[_\-]?|\blevel\s*[_\-]?\s*)([1-6])\b", dn)
+    if m:
+        lvl = int(m.group(1))
+        # Provide concrete, short guidance so the model uses tier-appropriate
+        # wording. Also include two compact illustrative examples (Level 1 vs
+        # Level 6) using the project's topic to show the desired contrast.
+        # Derive a short topic by removing common level/mark markers from the
+        # display name.
+        topic = display or "this feature"
+        topic = re.sub(r"\s*Level\s*[1-6]\b", "", topic, flags=re.IGNORECASE)
+        topic = re.sub(r"_lvl[_\-]?[1-6]\b", "", topic, flags=re.IGNORECASE)
+        topic = re.sub(r"_mk[_\-]?(i|ii|iii|iv|v|vi)\b", "", topic, flags=re.IGNORECASE)
+        topic = topic.strip()
+        if not topic:
+            topic = "this feature"
+        low_example = f"Basic {topic} improves material efficiency."
+        high_example = f"State-of-the-art {topic} applies advanced heuristics to maximize material efficiency."
+        level_hint = (
+            f"\n\nNOTE: This project is Level {lvl} of 6 in a progression. Use wording that reflects the tier. "
+            "Begin the summary with a short tier descriptor (one word) or leading adjective to indicate level: "
+            "Level 1 -> 'Basic', Level 2-3 -> 'Improved' or 'Enhanced', Level 4-5 -> 'Advanced' or 'Optimized', Level 6 -> 'State-of-the-art'. "
+            "Keep the final summary concise (single line) and do not include reasoning."
+            f"\n\nExamples:\n  Level 1: '{low_example}'\n  Level 6: '{high_example}'\n"
+        )
+    else:
+        # detect mk I..VI (e.g. _mkI, _mki) and variants like _mk_I or _mk-I
+        m2 = re.search(r"_mk[_\-]?(i|ii|iii|iv|v|vi)\b", dn)
+        if m2:
+            # map roman to number for message clarity
+            roman = m2.group(1).upper()
+            roman_map = {"I":1,"II":2,"III":3,"IV":4,"V":5,"VI":6}
+            num = roman_map.get(roman, None)
+            if num:
+                level_hint = (
+                    f"\n\nNOTE: This project is Mark {roman} of VI in a progression. Use wording that reflects the tier. "
+                    "Begin the summary with a short tier descriptor (one word) or leading adjective to indicate mark: "
+                    "Mark I -> 'Basic', Mark II-III -> 'Improved' or 'Enhanced', Mark IV-V -> 'Advanced' or 'Optimized', Mark VI -> 'State-of-the-art'. "
+                    "Examples: \n  Mark I: 'Basic micro-missile bay provides simple swarming capability.' \n  Mark VI: 'State-of-the-art micro-missile bay delivers best-in-class swarming performance.' "
+                    "Keep the final summary concise (single line) and do not include reasoning."
+                )
+
     prompt = (
         "You are an assistant that rewrites short project summaries for a game. "
         "Given the project display name and current summary, return an improved, concise summary (one or two sentences) "
@@ -543,19 +599,19 @@ def make_prompt(display: str, current_summary: Optional[str]) -> str:
         "Output must be a single line containing only the final summary.\n\n"
         f"Project name: {display}\n"
         f"Current summary: {s}\n\n"
-        "New summary:"
+        "New summary:" + level_hint
     )
     return prompt
 
 
-def make_strict_prompt(display: str, current_summary: Optional[str]) -> str:
+def make_strict_prompt(display: str, current_summary: Optional[str], data_name: Optional[str] = None) -> str:
     """Stricter prompt used for retries when model emits reasoning/artifacts.
 
     This reminds the model explicitly that any chain-of-thought or meta
     commentary will be rejected and that output must be a single-line
     summary only.
     """
-    base = make_prompt(display, current_summary)
+    base = make_prompt(display, current_summary, data_name)
     extra = (
         "\n\nIMPORTANT: If your previous response included any internal\n"
         "reasoning, chain-of-thought, or commentary (for example: '<think>',\n"
@@ -564,7 +620,24 @@ def make_strict_prompt(display: str, current_summary: Optional[str]) -> str:
         "the final summary. Any extra text will be rejected.\n"
         "If you must, refuse with a single line: 'Unable to produce summary.'"
     )
-    return base + extra
+    # Also include the same compact examples (Level 1 vs Level 6) to reinforce
+    # the contrast when the strict prompt is used for retries.
+    examples = ""
+    try:
+        topic = display or "this feature"
+        topic = re.sub(r"\s*Level\s*[1-6]\b", "", topic, flags=re.IGNORECASE)
+        topic = re.sub(r"_lvl[_\-]?[1-6]\b", "", topic, flags=re.IGNORECASE)
+        topic = re.sub(r"_mk[_\-]?(i|ii|iii|iv|v|vi)\b", "", topic, flags=re.IGNORECASE)
+        topic = topic.strip()
+        if not topic:
+            topic = "this feature"
+        low_example = f"Basic {topic} improves material efficiency."
+        high_example = f"State-of-the-art {topic} applies advanced heuristics to maximize material efficiency."
+        examples = f"\n\nExamples:\n- Level 1 (Basic): '{low_example}'\n- Level 6 (State-of-the-art): '{high_example}'\n"
+    except Exception:
+        examples = ""
+
+    return base + extra + examples
 
 
 def extract_final_summary(text: str) -> str:
@@ -893,6 +966,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     p.add_argument("--timeout", type=int, default=600, help="Timeout seconds for each ollama call")
     p.add_argument("--dry-run", action="store_true", help="Do not write file; just print intended updates")
     p.add_argument("--health-check", action="store_true", help="Enable pre-flight Ollama health check (disabled by default)")
+    p.add_argument("--commit-every", type=int, default=1, help="Write updates to the EN file every N entries (default 1). Set to 0 to write only at end of run.)")
     p.add_argument("--retries", type=int, default=2, help="Number of retry attempts when output looks like chain-of-thought")
     p.add_argument("--ollama", help="Ollama server URL (overrides OLLAMA_URL env var), e.g. http://localhost:11434")
     p.add_argument("--save-diff", action="store_true", help="Store a unified diff of the changes in scripts/storage/<service>/")
@@ -1098,90 +1172,101 @@ def main(argv: Optional[List[str]] = None) -> int:
     updated = []
 
     total = end_idx - start_idx
+    # commit bookkeeping
+    commit_every = int(args.commit_every)
+    first_backup_created = False
+    first_backup_path: Optional[str] = None
+    last_commit_count = 0
     for seq, i in enumerate(range(start_idx, end_idx), start=1):
         name, display, summary, display_idx, summary_idx = entries[i]
         if display is None:
             dbg(f"Skipping {name}: no displayName found")
             continue
 
-        # Try generating, with retries if the model emits reasoning/meta-text
+        # Skip LLM calls for placeholder summaries like '<habmodule>' - these
+        # are intentional markers in the EN file and should not be overwritten.
+        placeholder_hab = isinstance(summary, str) and summary.strip() == "<habmodule>"
         attempts = 0
         new_summary = ""
         last_out = ""
-        while attempts <= args.retries:
-            attempts += 1
-            prompt = make_prompt(display, summary) if attempts == 1 else make_strict_prompt(display, summary)
-            try:
-                out, source = call_ollama(
-                    args.model,
-                    prompt,
-                    args.temperature,
-                    args.top_p,
-                    args.top_k,
-                    args.presence_penalty,
-                    timeout=args.timeout,
-                    ollama_url=args.ollama,
-                    storage_service=args.storage_service,
-                    storage_run_dir=storage_run_dir,
-                    max_extraction_size=args.max_extraction_size,
-                )
-            except RuntimeError as e:
-                print(f"Error generating for {name}: {e}", file=sys.stderr)
-                return 3
+        if not placeholder_hab:
+            # Try generating, with retries if the model emits reasoning/meta-text
+            while attempts <= args.retries:
+                attempts += 1
+                prompt = make_prompt(display, summary, name) if attempts == 1 else make_strict_prompt(display, summary, name)
+                try:
+                    out, source = call_ollama(
+                        args.model,
+                        prompt,
+                        args.temperature,
+                        args.top_p,
+                        args.top_k,
+                        args.presence_penalty,
+                        timeout=args.timeout,
+                        ollama_url=args.ollama,
+                        storage_service=args.storage_service,
+                        storage_run_dir=storage_run_dir,
+                        max_extraction_size=args.max_extraction_size,
+                    )
+                except RuntimeError as e:
+                    print(f"Error generating for {name}: {e}", file=sys.stderr)
+                    return 3
 
-            last_out = out
-            # sanitize result: keep single-line, strip surrounding quotes
-            out_line = extract_final_summary(out)
-            out_line = out_line.strip('"')
-
-            # If the model returned token artifact fragments like <unused41>,
-            # try to strip them and re-extract a cleaner summary before
-            # deciding if the output is suspicious.
-            try:
-                if contains_token_artifacts(out) or contains_token_artifacts(out_line):
-                    dbg(f"Token artifacts detected for {name}; attempting to strip tokens and re-extract.")
-                    cleaned = strip_token_artifacts(out)
-                    cleaned_line = extract_final_summary(cleaned).strip('"')
-                    # also detect bracketed tags like [multimodal] which some
-                    # servers emit; strip those too and re-extract.
-                    if contains_bracket_tag(cleaned) and not contains_token_artifacts(cleaned_line):
-                        cleaned = re.sub(r"\[[^\]]+\]", " ", cleaned)
+                last_out = out
+                # sanitize result: keep single-line, strip surrounding quotes
+                out_line = extract_final_summary(out)
+                out_line = out_line.strip('"')
+                # If the model returned token artifact fragments like <unused41>,
+                # try to strip them and re-extract a cleaner summary before
+                # deciding if the output is suspicious.
+                try:
+                    if contains_token_artifacts(out) or contains_token_artifacts(out_line):
+                        dbg(f"Token artifacts detected for {name}; attempting to strip tokens and re-extract.")
+                        cleaned = strip_token_artifacts(out)
                         cleaned_line = extract_final_summary(cleaned).strip('"')
-                    # prefer cleaned candidate if it looks plausible
-                    if cleaned_line and not looks_suspicious(cleaned_line):
-                        out_line = cleaned_line
-                        out = cleaned
-                        dbg(f"Recovered cleaned summary for {name}: '{out_line[:120]}'")
-                    else:
-                        # if HTTP source and cleaned is reasonably long, accept it
-                        if source == "http" and cleaned_line and len(cleaned_line) >= args.min_http_length:
+                        # also detect bracketed tags like [multimodal] which some
+                        # servers emit; strip those too and re-extract.
+                        if contains_bracket_tag(cleaned) and not contains_token_artifacts(cleaned_line):
+                            cleaned = re.sub(r"\[[^\]]+\]", " ", cleaned)
+                            cleaned_line = extract_final_summary(cleaned).strip('"')
+                        # prefer cleaned candidate if it looks plausible
+                        if cleaned_line and not looks_suspicious(cleaned_line):
                             out_line = cleaned_line
                             out = cleaned
-                            dbg(f"Accepted cleaned HTTP summary for {name}: '{out_line[:120]}'")
-            except Exception:
-                pass
+                            dbg(f"Recovered cleaned summary for {name}: '{out_line[:120]}'")
+                        else:
+                            # if HTTP source and cleaned is reasonably long, accept it
+                            if source == "http" and cleaned_line and len(cleaned_line) >= args.min_http_length:
+                                out_line = cleaned_line
+                                out = cleaned
+                                dbg(f"Accepted cleaned HTTP summary for {name}: '{out_line[:120]}'")
+                except Exception:
+                    pass
 
-            # If the HTTP path produced this output, be more permissive: accept
-            # reasonably short but valid-looking summaries from the HTTP API.
-            # However, avoid accepting tokenized or bracket-tag outputs as-is.
-            if (
-                source == "http"
-                and len(out_line) >= args.min_http_length
-                and not (contains_token_artifacts(out_line) or contains_bracket_tag(out_line))
-            ):
-                new_summary = out_line
-                break
-
-            if not looks_suspicious(out_line):
-                new_summary = out_line
-                break
-            else:
-                dbg(f"Suspicious output for {name} on attempt {attempts}: '{out_line[:80]}'")
-                if attempts > args.retries:
-                    dbg(f"Giving up on {name} after {attempts} attempts; leaving unchanged.")
-                    new_summary = summary or ""
+                # If the HTTP path produced this output, be more permissive: accept
+                # reasonably short but valid-looking summaries from the HTTP API.
+                # However, avoid accepting tokenized or bracket-tag outputs as-is.
+                if (
+                    source == "http"
+                    and len(out_line) >= args.min_http_length
+                    and not (contains_token_artifacts(out_line) or contains_bracket_tag(out_line))
+                ):
+                    new_summary = out_line
                     break
-                dbg(f"Retrying {name} (strict prompt)...")
+
+                if not looks_suspicious(out_line):
+                    new_summary = out_line
+                    break
+                else:
+                    dbg(f"Suspicious output for {name} on attempt {attempts}: '{out_line[:80]}'")
+                    if attempts > args.retries:
+                        dbg(f"Giving up on {name} after {attempts} attempts; leaving unchanged.")
+                        new_summary = summary or ""
+                        break
+                    dbg(f"Retrying {name} (strict prompt)...")
+        else:
+            dbg(f"Skipping LLM for {name}: summary is '<habmodule>' placeholder")
+            new_summary = summary or ""
         summary_key = f"TIProjectTemplate.summary.{name}="
 
         if summary_idx is not None and summary_idx >= 0:
@@ -1201,6 +1286,48 @@ def main(argv: Optional[List[str]] = None) -> int:
             print(line)
         else:
             dbg(f"Updated: {name}")
+
+        # Commit (write) logic: write the EN file every `commit_every` entries
+        if commit_every != 0 and (seq % commit_every == 0 or seq == total):
+            # determine which entries were included in this commit
+            commit_entries = updated[last_commit_count:]
+            last_commit_count = len(updated)
+            ts_commit = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            try:
+                if args.dry_run:
+                    info(f"Dry-run: would write EN file at seq={seq} (would include {len(commit_entries)} entries)")
+                else:
+                    # create backup on first commit
+                    if not first_backup_created and os.path.exists(enpath):
+                        try:
+                            first_backup_path = backup_file(enpath)
+                            first_backup_created = True
+                            info(f"Created backup: {first_backup_path}")
+                        except Exception as e:
+                            info(f"Failed to create backup before first commit: {e}")
+                    # atomic write
+                    try:
+                        safe_write(enpath, new_lines)
+                        info(f"Wrote EN file after seq={seq}")
+                    except Exception as e:
+                        info(f"Failed to write EN file at seq={seq}: {e}")
+                    # write per-commit metadata into run folder
+                    try:
+                        meta = {
+                            "timestamp": ts_commit,
+                            "seq": seq,
+                            "entries_in_commit": [ {"name": n, "old": old, "new": new} for (n, old, new) in commit_entries ],
+                            "backup": first_backup_path,
+                        }
+                        commit_name = f"commit_{seq:04d}.json"
+                        commit_path = os.path.join(storage_run_dir, commit_name)
+                        with open(commit_path, "w", encoding="utf-8") as cf:
+                            json.dump(meta, cf, ensure_ascii=False, indent=2)
+                        info(f"Saved commit metadata: {commit_path}")
+                    except Exception:
+                        pass
+            except Exception:
+                pass
 
     next_idx = end_idx
     next_name = entries[next_idx][0] if next_idx < len(entries) else ""
