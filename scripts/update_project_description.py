@@ -533,8 +533,52 @@ def call_ollama(
     return proc.stdout.strip(), "cli"
 
 
-def make_prompt(display: str, current_summary: Optional[str]) -> str:
+def make_prompt(display: str, current_summary: Optional[str], data_name: Optional[str] = None) -> str:
     s = current_summary or ""
+    # If the data name indicates a tiered progression (lvl1..lvl6 or mkI..mkVI)
+    # provide a small contextual hint so the model uses wording appropriate
+    # for the item's tier within a progression.
+    level_hint = ""
+    # consider both data_name and display text when detecting tier markers
+    combined = ""
+    if data_name:
+        combined += data_name + " "
+    if display:
+        combined += display
+    dn = combined.lower()
+    # detect numeric levels like _lvl1 .. _lvl6, _lvl_1, _lvl-1
+    m = re.search(r"_lvl[_\-]?([1-6])\b", dn)
+    if not m:
+        # also accept forms like '_level1', 'level1', or 'level 1' in dataName/display
+        m = re.search(r"(?:_level[_\-]?|\blevel\s*[_\-]?\s*)([1-6])\b", dn)
+    if m:
+        lvl = int(m.group(1))
+        # Provide concrete, short guidance and examples so the model uses
+        # tier-appropriate wording rather than generic rewrites.
+        level_hint = (
+            f"\n\nNOTE: This project is Level {lvl} of 6 in a progression. Use wording that reflects the tier. "
+            "Begin the summary with a short tier descriptor (one word) or leading adjective to indicate level: "
+            "Level 1 -> 'Basic', Level 2-3 -> 'Improved' or 'Enhanced', Level 4-5 -> 'Advanced' or 'Optimized', Level 6 -> 'State-of-the-art'. "
+            "Examples: \n  Level 1: 'Basic water optimization improves material efficiency.' \n  Level 6: 'State-of-the-art water optimization applies advanced heuristics to maximize material efficiency.' "
+            "Keep the final summary concise (single line) and do not include reasoning."
+        )
+    else:
+        # detect mk I..VI (e.g. _mkI, _mki) and variants like _mk_I or _mk-I
+        m2 = re.search(r"_mk[_\-]?(i|ii|iii|iv|v|vi)\b", dn)
+        if m2:
+            # map roman to number for message clarity
+            roman = m2.group(1).upper()
+            roman_map = {"I":1,"II":2,"III":3,"IV":4,"V":5,"VI":6}
+            num = roman_map.get(roman, None)
+            if num:
+                level_hint = (
+                    f"\n\nNOTE: This project is Mark {roman} of VI in a progression. Use wording that reflects the tier. "
+                    "Begin the summary with a short tier descriptor (one word) or leading adjective to indicate mark: "
+                    "Mark I -> 'Basic', Mark II-III -> 'Improved' or 'Enhanced', Mark IV-V -> 'Advanced' or 'Optimized', Mark VI -> 'State-of-the-art'. "
+                    "Examples: \n  Mark I: 'Basic micro-missile bay provides simple swarming capability.' \n  Mark VI: 'State-of-the-art micro-missile bay delivers best-in-class swarming performance.' "
+                    "Keep the final summary concise (single line) and do not include reasoning."
+                )
+
     prompt = (
         "You are an assistant that rewrites short project summaries for a game. "
         "Given the project display name and current summary, return an improved, concise summary (one or two sentences) "
@@ -543,19 +587,19 @@ def make_prompt(display: str, current_summary: Optional[str]) -> str:
         "Output must be a single line containing only the final summary.\n\n"
         f"Project name: {display}\n"
         f"Current summary: {s}\n\n"
-        "New summary:"
+        "New summary:" + level_hint
     )
     return prompt
 
 
-def make_strict_prompt(display: str, current_summary: Optional[str]) -> str:
+def make_strict_prompt(display: str, current_summary: Optional[str], data_name: Optional[str] = None) -> str:
     """Stricter prompt used for retries when model emits reasoning/artifacts.
 
     This reminds the model explicitly that any chain-of-thought or meta
     commentary will be rejected and that output must be a single-line
     summary only.
     """
-    base = make_prompt(display, current_summary)
+    base = make_prompt(display, current_summary, data_name)
     extra = (
         "\n\nIMPORTANT: If your previous response included any internal\n"
         "reasoning, chain-of-thought, or commentary (for example: '<think>',\n"
@@ -893,6 +937,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     p.add_argument("--timeout", type=int, default=600, help="Timeout seconds for each ollama call")
     p.add_argument("--dry-run", action="store_true", help="Do not write file; just print intended updates")
     p.add_argument("--health-check", action="store_true", help="Enable pre-flight Ollama health check (disabled by default)")
+    p.add_argument("--commit-every", type=int, default=1, help="Write updates to the EN file every N entries (default 1). Set to 0 to write only at end of run.)")
     p.add_argument("--retries", type=int, default=2, help="Number of retry attempts when output looks like chain-of-thought")
     p.add_argument("--ollama", help="Ollama server URL (overrides OLLAMA_URL env var), e.g. http://localhost:11434")
     p.add_argument("--save-diff", action="store_true", help="Store a unified diff of the changes in scripts/storage/<service>/")
@@ -1098,6 +1143,11 @@ def main(argv: Optional[List[str]] = None) -> int:
     updated = []
 
     total = end_idx - start_idx
+    # commit bookkeeping
+    commit_every = int(args.commit_every)
+    first_backup_created = False
+    first_backup_path: Optional[str] = None
+    last_commit_count = 0
     for seq, i in enumerate(range(start_idx, end_idx), start=1):
         name, display, summary, display_idx, summary_idx = entries[i]
         if display is None:
@@ -1110,7 +1160,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         last_out = ""
         while attempts <= args.retries:
             attempts += 1
-            prompt = make_prompt(display, summary) if attempts == 1 else make_strict_prompt(display, summary)
+            prompt = make_prompt(display, summary, name) if attempts == 1 else make_strict_prompt(display, summary, name)
             try:
                 out, source = call_ollama(
                     args.model,
@@ -1201,6 +1251,48 @@ def main(argv: Optional[List[str]] = None) -> int:
             print(line)
         else:
             dbg(f"Updated: {name}")
+
+        # Commit (write) logic: write the EN file every `commit_every` entries
+        if commit_every != 0 and (seq % commit_every == 0 or seq == total):
+            # determine which entries were included in this commit
+            commit_entries = updated[last_commit_count:]
+            last_commit_count = len(updated)
+            ts_commit = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            try:
+                if args.dry_run:
+                    info(f"Dry-run: would write EN file at seq={seq} (would include {len(commit_entries)} entries)")
+                else:
+                    # create backup on first commit
+                    if not first_backup_created and os.path.exists(enpath):
+                        try:
+                            first_backup_path = backup_file(enpath)
+                            first_backup_created = True
+                            info(f"Created backup: {first_backup_path}")
+                        except Exception as e:
+                            info(f"Failed to create backup before first commit: {e}")
+                    # atomic write
+                    try:
+                        safe_write(enpath, new_lines)
+                        info(f"Wrote EN file after seq={seq}")
+                    except Exception as e:
+                        info(f"Failed to write EN file at seq={seq}: {e}")
+                    # write per-commit metadata into run folder
+                    try:
+                        meta = {
+                            "timestamp": ts_commit,
+                            "seq": seq,
+                            "entries_in_commit": [ {"name": n, "old": old, "new": new} for (n, old, new) in commit_entries ],
+                            "backup": first_backup_path,
+                        }
+                        commit_name = f"commit_{seq:04d}.json"
+                        commit_path = os.path.join(storage_run_dir, commit_name)
+                        with open(commit_path, "w", encoding="utf-8") as cf:
+                            json.dump(meta, cf, ensure_ascii=False, indent=2)
+                        info(f"Saved commit metadata: {commit_path}")
+                    except Exception:
+                        pass
+            except Exception:
+                pass
 
     next_idx = end_idx
     next_name = entries[next_idx][0] if next_idx < len(entries) else ""
