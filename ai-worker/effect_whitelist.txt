@@ -1,8 +1,10 @@
+# Effect contexts whitelist for AI worker
+# One token per line; used to match effect 'contexts' via prefix matching.
+
 EconomyPriority
 MCFreeSpaceMineNetwork
 ControlPointMaintenance
 KnowledgePriority
-EconomyPriority
 MilitaryPriority
 UnityPriority
 SpoilsPriority
