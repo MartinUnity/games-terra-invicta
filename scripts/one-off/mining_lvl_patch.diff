@@ -1,0 +1,1141 @@
+--- Mods/TIProjectTemplate.json
++++ Mods/TIProjectTemplate.json.modified
+@@ -5004,7 +5004,7 @@
+       "Project_TheirTechnology"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -5136,7 +5136,7 @@
+       "OutpostHabs"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -5818,7 +5818,7 @@
+       "UnityMovements"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -6170,7 +6170,7 @@
+       "MolecularAssemblers"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -6192,7 +6192,7 @@
+       "InfraredCombatLasers"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -6280,7 +6280,7 @@
+       "Project_SolidCoreFissionReactorIX"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -6302,7 +6302,7 @@
+       "Project_SolidCoreFissionReactorII"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -6324,7 +6324,7 @@
+       "IndustrializationofSpace"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -6412,7 +6412,7 @@
+       "IndependenceMovements"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -6456,7 +6456,7 @@
+       "Project_FlyingVehicles"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -6852,7 +6852,7 @@
+       "SpaceMiningandRefining"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -7600,7 +7600,7 @@
+       "ElectromagneticPropulsion"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -7864,7 +7864,7 @@
+       "Project_HeavyFusionPile"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -8040,7 +8040,7 @@
+       "ArrivalSociology"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -8062,7 +8062,7 @@
+       "FissionPulseDrives"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -8524,7 +8524,7 @@
+       "SpaceMiningandRefining"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -8546,7 +8546,7 @@
+       "SpaceMiningandRefining"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -8788,7 +8788,7 @@
+       "MindandMachine"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -8898,7 +8898,7 @@
+       "Superalloys"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -8942,7 +8942,7 @@
+       "Project_TheirTechnology"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -9228,7 +9228,7 @@
+       "Project_HydraInterrogation"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -9470,7 +9470,7 @@
+       "ArrivalPsychology"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -9866,7 +9866,7 @@
+       "Project_ExoticHybridSystems"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -9888,7 +9888,7 @@
+       "SpaceCommerce"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -10636,7 +10636,7 @@
+       "WeAreNotAlone"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -10746,7 +10746,7 @@
+       "WhiteCollarAutomation"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -11340,7 +11340,7 @@
+       "SpaceCommerce"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -11362,7 +11362,7 @@
+       "HighEnergyLasers"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -11428,7 +11428,7 @@
+       "AdvancedChemicalRocketry"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -11494,7 +11494,7 @@
+       "Project_TheirPurpose"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -12198,7 +12198,7 @@
+       "PhasedArrayLasers"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -12572,7 +12572,7 @@
+       "OrbitalShipbuilding"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -12682,7 +12682,7 @@
+       "SpaceResearch"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -12858,7 +12858,7 @@
+       "VisibleCombatLasers"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -12902,7 +12902,7 @@
+       "IndustrializationofSpace"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -13188,7 +13188,7 @@
+       "Project_TheirPurpose"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -13254,7 +13254,7 @@
+       "TitanicSpacecraft"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -13320,7 +13320,7 @@
+       "WeAreNotAlone"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -13364,7 +13364,7 @@
+       "ElectrostaticPlasmaConfinement"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -13496,7 +13496,7 @@
+       "Project_MegafaunaNecropsy"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -13716,7 +13716,7 @@
+       "AdvancedMissileWarfareDoctrine"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -13892,7 +13892,7 @@
+       "DesignerLifeforms"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -13958,7 +13958,7 @@
+       "Project_AutomatedOutpostCore"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -14024,7 +14024,7 @@
+       "OrbitalShipbuilding"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -14046,7 +14046,7 @@
+       "Project_UltracoldNeutronContainment"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -14266,7 +14266,7 @@
+       "NetworkedPropaganda"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -14332,7 +14332,7 @@
+       "Project_DirectedFocus"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -14508,7 +14508,7 @@
+       "SpaceMiningandRefining"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -14640,7 +14640,7 @@
+       "Project_InertialConfinementFusionReactorV"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -14992,7 +14992,7 @@
+       "ArrivalDomesticPolitics"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -15036,7 +15036,7 @@
+       "ArrivalEconomics"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -15080,7 +15080,7 @@
+       "FissionPulseDrives"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -15300,7 +15300,7 @@
+       "ElectromagneticPropulsion"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -15410,7 +15410,7 @@
+       "AppliedArtificialIntelligence"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -15542,7 +15542,7 @@
+       "DeuteriumTritiumFusion"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -15718,7 +15718,7 @@
+       "Superalloys"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -15740,7 +15740,7 @@
+       "AdvancedMagnetics"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -16004,7 +16004,7 @@
+       "Project_XenofloraDefoliants"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -16202,7 +16202,7 @@
+       "OutpostHabs"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -16246,7 +16246,7 @@
+       "Project_RapidResponseTeams"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -16400,7 +16400,7 @@
+       "MissiontoMars"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -16576,7 +16576,7 @@
+       "Project_RapidResponseTeams"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -16884,7 +16884,7 @@
+       "GreatNations"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -16928,7 +16928,7 @@
+       "Project_Pan-AsianCooperative"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -17148,7 +17148,7 @@
+       "TransformPhages"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -17346,7 +17346,7 @@
+       "SpaceMiningandRefining"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -17456,7 +17456,7 @@
+       "ArrivalLaw"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -17654,7 +17654,7 @@
+       "Project_AutomatedPlatformCore"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -17852,7 +17852,7 @@
+       "ImprovedShipbuildingTechniques"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -17874,7 +17874,7 @@
+       "ArrivalEconomics"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -18116,7 +18116,7 @@
+       "Project_ExoticHybridSystems"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -18160,7 +18160,7 @@
+       "SpaceMiningandRefining"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -18204,7 +18204,7 @@
+       "IndependenceMovements"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -18314,7 +18314,7 @@
+       "SpaceCommerce"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -18534,7 +18534,7 @@
+       "SuperconductingMagnets"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -18556,7 +18556,7 @@
+       "IndependenceMovements"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -18644,7 +18644,7 @@
+       "Biotechnology"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -18864,7 +18864,7 @@
+       "ElectrostaticPlasmaConfinement"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -18886,7 +18886,7 @@
+       "SpaceMiningandRefining"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -19172,7 +19172,7 @@
+       "Superalloys"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -19326,7 +19326,7 @@
+       "Cybernetics"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -19700,7 +19700,7 @@
+       "MolecularAssemblers"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -19766,7 +19766,7 @@
+       "TerrestrialMilitaryScience"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -19788,7 +19788,7 @@
+       "Project_RailCannonMk1"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -20426,7 +20426,7 @@
+       "Project_LaserEngine"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -20690,7 +20690,7 @@
+       "AppliedArtificialIntelligence"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -20932,7 +20932,7 @@
+       "ArrivalInternationalDevelopment"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -21152,7 +21152,7 @@
+       "ArrivalInternationalRelations"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -21504,7 +21504,7 @@
+       "Coilguns"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -21680,7 +21680,7 @@
+       "Project_UltracoldNeutronContainment"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -21834,7 +21834,7 @@
+       "Project_Pan-AsianCooperative"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -22318,7 +22318,7 @@
+       "ArrivalInternationalDevelopment"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -22538,7 +22538,7 @@
+       "SpaceMiningandRefining"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -22560,7 +22560,7 @@
+       "Project_ThermalMiningTechniques"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -22626,7 +22626,7 @@
+       "Project_ImprovedInterplanetaryRockets"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -23132,7 +23132,7 @@
+       "AppliedArtificialIntelligence"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -23418,7 +23418,7 @@
+       "SpaceTourism"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -23770,7 +23770,7 @@
+       "NetworkedGlobalDefense"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -24078,7 +24078,7 @@
+       "Project_CopperheadMissileBay"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -24254,7 +24254,7 @@
+       "ArrivalInternationalDevelopment"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -24298,7 +24298,7 @@
+       "Project_MegafaunaNecropsy"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -24386,7 +24386,7 @@
+       "ArrivalInternationalDevelopment"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -24518,7 +24518,7 @@
+       "Project_RingCore"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -24650,7 +24650,7 @@
+       "ImprovedShipbuildingTechniques"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -24716,7 +24716,7 @@
+       "SpaceCommerce"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -24782,7 +24782,7 @@
+       "Project_GasCoreFissionReactorV"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -25882,7 +25882,7 @@
+       "ExtendedSpaceSurvival"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -26036,7 +26036,7 @@
+       "SpaceMiningandRefining"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -26410,7 +26410,7 @@
+       "UnityMovements"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -26564,7 +26564,7 @@
+       "Project_SolidCoreFissionReactorX"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -26630,7 +26630,7 @@
+       "Project_IonDrive"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -26960,7 +26960,7 @@
+       "AppliedArtificialIntelligence"
+     ],
+     "effects": [
+-      "Effect_MiningFissilesBonus"
++      "Effect_MiningFissilesBonus_lvl5"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -27268,7 +27268,7 @@
+       "Project_PatrolVessels"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -27312,7 +27312,7 @@
+       "OrbitalShipbuilding"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl3"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -27488,7 +27488,7 @@
+       "WeAreNotAlone"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -27972,7 +27972,7 @@
+       "AdvancedHeatManagementConcepts"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -28170,7 +28170,7 @@
+       "SpaceTourism"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl1"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -28236,7 +28236,7 @@
+       "ArrivalGovernance"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -28456,7 +28456,7 @@
+       "ArcLasers"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -28566,7 +28566,7 @@
+       "TerawattFusionReactors"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -28632,7 +28632,7 @@
+       "Project_FusionReactorFarm"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -29116,7 +29116,7 @@
+       "IndependenceMovements"
+     ],
+     "effects": [
+-      "Effect_MiningNoblesBonus"
++      "Effect_MiningNoblesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -29358,7 +29358,7 @@
+       "Project_RocketScientists"
+     ],
+     "effects": [
+-      "Effect_MiningVolatilesBonus"
++      "Effect_MiningVolatilesBonus_lvl2"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -29710,7 +29710,7 @@
+       "Project_ExoticArmor"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl4"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -29886,7 +29886,7 @@
+       "FleetLogistics"
+     ],
+     "effects": [
+-      "Effect_MiningMetalsBonus"
++      "Effect_MiningMetalsBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -30326,7 +30326,7 @@
+       "Project_GasCoreFissionReactorVI"
+     ],
+     "effects": [
+-      "Effect_MiningWaterBonus"
++      "Effect_MiningWaterBonus_lvl6"
+     ],
+     "AI_techRole": "None",
+     "AI_criticalTech": false,
+@@ -30427,4 +30427,4 @@
+     "deltaUnlockChance": 3,
+     "maxUnlockChance": 40
+   }
+-]+]
