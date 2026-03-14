@@ -228,7 +228,31 @@ def select_template_and_effect(
             chosen_effect = random.choice(valid)
         else:
             chosen_effect = None
+    # If we selected an effect, and it's a mining bonus without a level,
+    # apply centralized level suffixing based on the template's researchCost
+    # so generated candidates immediately use the correct _lvlN variant.
+    if chosen_effect:
+        try:
+            chosen_effect = _maybe_apply_mining_leveler(chosen_effect, template.get("researchCost") if isinstance(template, dict) else None)
+        except Exception:
+            # best-effort: if the helper is unavailable or fails, keep original
+            pass
+
     return (template, chosen_effect)
+
+
+def _maybe_apply_mining_leveler(effect_name: str, research_cost: int | float | None) -> str:
+    """Apply _lvlN suffix to mining bonus effects using centralized helper if available."""
+    try:
+        from utils.mining_leveler import apply_mining_level_suffix as _ams
+    except Exception:
+        try:
+            from scripts.utils.mining_leveler import apply_mining_level_suffix as _ams
+        except Exception:
+            _ams = None
+    if not _ams:
+        return effect_name
+    return _ams(effect_name, research_cost)
 
 
 def collect_tieffects(path: str):

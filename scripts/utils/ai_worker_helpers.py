@@ -476,6 +476,18 @@ def estimate_base_cost(template: Any, chosen_effect: Optional[str], projects: Li
     return 1000.0
 
 
+# expose mining level helper for other scripts
+try:
+    from .mining_leveler import apply_mining_level_suffix, level_for_cost  # type: ignore
+except Exception:
+    # fallback when imported as module from different working dir
+    try:
+        from scripts.utils.mining_leveler import apply_mining_level_suffix, level_for_cost  # type: ignore
+    except Exception:
+        apply_mining_level_suffix = None  # type: ignore
+        level_for_cost = None  # type: ignore
+
+
 def write_staged(candidate: Dict[str, Any], staging_root: str, raw_output: Optional[str] = None, meta: Optional[Dict[str, Any]] = None) -> str:
     ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     dest = os.path.join(staging_root, ts)
