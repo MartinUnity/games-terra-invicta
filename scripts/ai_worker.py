@@ -231,6 +231,20 @@ def select_template_and_effect(
     return (template, chosen_effect)
 
 
+def _maybe_apply_mining_leveler(effect_name: str, research_cost: int | float | None) -> str:
+    """Apply _lvlN suffix to mining bonus effects using centralized helper if available."""
+    try:
+        from utils.mining_leveler import apply_mining_level_suffix as _ams
+    except Exception:
+        try:
+            from scripts.utils.mining_leveler import apply_mining_level_suffix as _ams
+        except Exception:
+            _ams = None
+    if not _ams:
+        return effect_name
+    return _ams(effect_name, research_cost)
+
+
 def collect_tieffects(path: str):
     try:
         from utils.ai_worker_helpers import collect_tieffects as _ct
