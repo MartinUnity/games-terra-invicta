@@ -163,6 +163,3 @@ Required_GW = (Thrust_N × EV_kps) / 2,000 × Efficiency
 | **Step 2**         | Result ÷ 2,000      | 39,481,344 ÷ 2,000 = **19,740.672** |
 | **Step 3**         | Result × Efficiency | 19,740.672 × 0.994 = **19,622.23**  |
 | **Required Power** |                     | **19,622.23 GW**                    |
-
-
-
