@@ -28,11 +28,23 @@ Per-capita (highest): highlights the top per-capita performers and how they tren
 
 # Scripts
 
-Three main scripts exists:
+Three main scripts exist:
 
 - `extraction.py`: parses Terra Invicta savegames and outputs structured CSV/JSON datasets for analysis.
 - `show-data.py`: Streamlit app that loads the extracted datasets and provides interactive charts and filters.
-- `scripts/cleanup_saves.py`: Script that will archive/delete/tidy up save-games. When save-games > 50 it impacts performance speed of the load/save screen quite a lot.
+- `scripts/cleanup_saves.py`: archive/delete/tidy up save-games (keeps newest N per type, moves older saves to `archive/`). Useful when save count slows the game's load/save screen.
+
+Other helpful scripts (one-liners) in the `scripts/` directory:
+
+- `scripts/ai_swarm.py`: Swarm AI worker that orchestrates multiple Ollama models for Terra Invicta project generation.
+- `scripts/ai_worker.py`: Prototype AI worker that calls a local Ollama model and writes a staged candidate.
+- `scripts/check_project_localization.py`: Check Mods/TIProjectTemplate.json entries against localization file.
+- `scripts/cleanup_saves.py`: Cleanup Terra Invicta savefiles.
+- `scripts/fix_max_unlock_chance.py`: (no top-level docstring or leading comment)
+- `scripts/generate_weapon.py`: Generate weapon template snippets from desired damage/DPS parameters.
+- `scripts/scan_effects.py`: Scan TIProjectTemplate.json starting at a marker and count effect occurrences.
+- `scripts/update_project_description.py`: Update TIProjectTemplate.en summaries using a local Ollama model.
+- `scripts/validate_mods.py`: Read-only validator for Mods/TI*.json files.
 
 See `requirements.txt` for Python dependencies and the `docs/` folder for additional exported charts and artifacts.
 
@@ -151,6 +163,3 @@ Required_GW = (Thrust_N × EV_kps) / 2,000 × Efficiency
 | **Step 2**         | Result ÷ 2,000      | 39,481,344 ÷ 2,000 = **19,740.672** |
 | **Step 3**         | Result × Efficiency | 19,740.672 × 0.994 = **19,622.23**  |
 | **Required Power** |                     | **19,622.23 GW**                    |
-
-
-

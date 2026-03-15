@@ -214,3 +214,8 @@ runme.pids/
 config.yml.bak
 
 keys/
+
+# Runtime / local artifacts
+ai-worker/staging/
+scripts/logs/
+scripts/storage/
