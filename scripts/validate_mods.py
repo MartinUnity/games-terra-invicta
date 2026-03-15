@@ -280,8 +280,6 @@ def main() -> int:
         help="Path to built-in game TIProjectTemplate.json",
     )
     p.add_argument("--table", action="store_true", help="Show table-like summary")
-    p.add_argument("--all", action="store_true", help="Show all files instead of only issues (default shows issues)")
-    p.add_argument("--omit", type=str, default=None, help="Comma-separated filenames to omit from validation")
     p.add_argument(
         "--all",
         action="store_true",
