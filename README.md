@@ -28,7 +28,7 @@ Per-capita (highest): highlights the top per-capita performers and how they tren
 
 # Scripts
 
-Three main scripts exists:
+Three main scripts exist:
 
 - `extraction.py`: parses Terra Invicta savegames and outputs structured CSV/JSON datasets for analysis.
 - `show-data.py`: Streamlit app that loads the extracted datasets and provides interactive charts and filters.
