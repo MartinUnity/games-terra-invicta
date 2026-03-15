@@ -2,6 +2,9 @@
 
 **Terra Invicta Progress graph + optional Mod**
 
+> [!IMPORTANT]
+> This setup uses a rsync action inside [The Workspace File](terra-invicta.code-workspace) - if this is not set, then one must sync files to games Mods directory another way.
+
 This repository contains tools to extract and visualize savegame data from the game "Terra Invicta".
 
 Below are screenshots produced by the `show-data.py` Streamlit app. Each image shows a typical view you can generate after running `extraction.py` on a savegame and loading the results into the app.
