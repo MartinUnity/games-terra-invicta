@@ -10,10 +10,10 @@ Usage examples:
 
 The script prints JSON snippets to stdout.
 """
+
 from __future__ import annotations
 
 import argparse
-import glob
 import json
 import math
 import os
@@ -116,14 +116,18 @@ def make_gun_snippet(
         "crew": 3,
         "attackMode": True,
         "defenseMode": False,
-        "baseWeaponMass_tons": max(1, int((warhead_mass + (ammo_mass or warhead_mass)) / 100.0)),
+        "baseWeaponMass_tons": max(
+            1, int((warhead_mass + (ammo_mass or warhead_mass)) / 100.0)
+        ),
         "cooldown_s": cooldown,
         "salvo_shots": salvo,
         "intraSalvoCooldown_s": intra,
         "efficiency": 1,
         "flatChipping": round(1.0 + (warhead_mass / 100.0), 3),
         "magazine": int(max(10, (ammo_mass or 100) * 5)),
-        "ammoMass_kg": round(ammo_mass or (warhead_mass * (1.0 + propellant_fraction)), 2),
+        "ammoMass_kg": round(
+            ammo_mass or (warhead_mass * (1.0 + propellant_fraction)), 2
+        ),
         "muzzleVelocity_kps": round(muzzle_kps, 6),
         "bombardmentValue": 1,
         "warheadMass_kg": round(warhead_mass, 3),
@@ -208,11 +212,66 @@ def random_gun_examples(n: int) -> List[Dict[str, Any]]:
 def generate_name_for(snippet: Dict[str, Any], wtype: str) -> str:
     # Small keyword pools by type
     prefixes = {
-        "gun": ["Siege", "Thunder", "Iron", "Rupture", "Breaker", "Breach", "Mael", "Pound", "Rivet", "Anvil"],
-        "magnetic": ["Gauss", "Rail", "Vector", "Magna", "Shock", "Pull", "Stride", "Impulse", "Prime", "Null"],
-        "laser": ["Lumen", "Solar", "Photon", "Pulse", "Raster", "Aurora", "Prism", "Haze", "Quanta", "Beam"],
-        "particle": ["Flux", "Ion", "Spatter", "Vortex", "Corona", "Ionize", "Cascade", "Fermion", "Quark", "Nova"],
-        "plasma": ["Plasma", "Torch", "Helion", "Blaze", "Inferno", "Corona", "Cinder", "Scorch", "Flux", "Torch"],
+        "gun": [
+            "Siege",
+            "Thunder",
+            "Iron",
+            "Rupture",
+            "Breaker",
+            "Breach",
+            "Mael",
+            "Pound",
+            "Rivet",
+            "Anvil",
+        ],
+        "magnetic": [
+            "Gauss",
+            "Rail",
+            "Vector",
+            "Magna",
+            "Shock",
+            "Pull",
+            "Stride",
+            "Impulse",
+            "Prime",
+            "Null",
+        ],
+        "laser": [
+            "Lumen",
+            "Solar",
+            "Photon",
+            "Pulse",
+            "Raster",
+            "Aurora",
+            "Prism",
+            "Haze",
+            "Quanta",
+            "Beam",
+        ],
+        "particle": [
+            "Flux",
+            "Ion",
+            "Spatter",
+            "Vortex",
+            "Corona",
+            "Ionize",
+            "Cascade",
+            "Fermion",
+            "Quark",
+            "Nova",
+        ],
+        "plasma": [
+            "Plasma",
+            "Torch",
+            "Helion",
+            "Blaze",
+            "Inferno",
+            "Corona",
+            "Cinder",
+            "Scorch",
+            "Flux",
+            "Torch",
+        ],
     }
     middles = [
         "Breaker",
@@ -226,7 +285,18 @@ def generate_name_for(snippet: Dict[str, Any], wtype: str) -> str:
         "Launcher",
         "Core",
     ]
-    suffixes = ["Mark I", "Mk II", "Prime", "Alpha", "Beta", "Omega", "Vanguard", "Aegis", "X", "V"]
+    suffixes = [
+        "Mark I",
+        "Mk II",
+        "Prime",
+        "Alpha",
+        "Beta",
+        "Omega",
+        "Vanguard",
+        "Aegis",
+        "X",
+        "V",
+    ]
 
     pref = random.choice(prefixes.get(wtype, prefixes["gun"]))
 
@@ -252,16 +322,28 @@ def generate_name_for(snippet: Dict[str, Any], wtype: str) -> str:
     suff = random.choice(suffixes)
 
     # build variations
-    patterns = [f"{pref} {mid}", f"{adjective} {mid}", f"{pref} {adjective}", f"{pref}-{adjective} {suff}"]
+    patterns = [
+        f"{pref} {mid}",
+        f"{adjective} {mid}",
+        f"{pref} {adjective}",
+        f"{pref}-{adjective} {suff}",
+    ]
     name = random.choice(patterns)
     return name
 
 
 def main(argv: Optional[List[str]] = None) -> int:
     p = argparse.ArgumentParser()
-    p.add_argument("--type", choices=["gun", "magnetic", "laser", "particle", "plasma"], required=False, default=None)
+    p.add_argument(
+        "--type",
+        choices=["gun", "magnetic", "laser", "particle", "plasma"],
+        required=False,
+        default=None,
+    )
     p.add_argument("--damage", type=float, help="desired per-shot damageInGame")
-    p.add_argument("--dps", type=float, help="desired DPS (will compute per-shot damage)")
+    p.add_argument(
+        "--dps", type=float, help="desired DPS (will compute per-shot damage)"
+    )
     p.add_argument("--cooldown", type=float, default=6.0)
     p.add_argument("--salvo", type=int, default=1)
     p.add_argument("--intra", type=float, default=0.0)
@@ -269,7 +351,9 @@ def main(argv: Optional[List[str]] = None) -> int:
     p.add_argument("--warheadMass", type=float, help="warhead mass kg")
     p.add_argument("--muzzleVelocity", type=float, help="muzzle velocity kps")
     p.add_argument("--propellantFraction", type=float, default=0.4)
-    p.add_argument("--shotPower_MJ", type=float, help="shot energy for laser-type weapons")
+    p.add_argument(
+        "--shotPower_MJ", type=float, help="shot energy for laser-type weapons"
+    )
     p.add_argument("--efficiency", type=float, default=1.0)
     p.add_argument("--wavelength_nm", type=float, default=810.0)
     p.add_argument("--mirror_cm", type=float, default=60.0)
@@ -279,13 +363,29 @@ def main(argv: Optional[List[str]] = None) -> int:
     p.add_argument("--name", type=str, default="GeneratedWeapon")
     p.add_argument("--friendly", type=str, default=None)
     p.add_argument("--random", type=int, default=0, help="generate N random examples")
-    p.add_argument("--output", choices=["json", "table"], default="json", help="output format for multiple examples")
-    p.add_argument("--compare", action="store_true", help="Compare two weapon parameter sets (--left and --right)")
     p.add_argument(
-        "--left", type=str, default=None, help='Left param string: "type=gun cooldown=6 salvo=2 warheadMass=40 ..."'
+        "--output",
+        choices=["json", "table"],
+        default="json",
+        help="output format for multiple examples",
+    )
+    p.add_argument(
+        "--compare",
+        action="store_true",
+        help="Compare two weapon parameter sets (--left and --right)",
+    )
+    p.add_argument(
+        "--left",
+        type=str,
+        default=None,
+        help='Left param string: "type=gun cooldown=6 salvo=2 warheadMass=40 ..."',
     )
     p.add_argument("--right", type=str, default=None, help="Right param string")
-    p.add_argument("--scan-existing", action="store_true", help="Scan game template files and print one-line stats")
+    p.add_argument(
+        "--scan-existing",
+        action="store_true",
+        help="Scan game template files and print one-line stats",
+    )
     p.add_argument(
         "--sort",
         choices=["none", "dps", "grouped"],
@@ -324,13 +424,19 @@ def main(argv: Optional[List[str]] = None) -> int:
         start = os.path.dirname(__file__)
         base_dir = None
         for up in range(0, 6):
-            cand = os.path.abspath(os.path.join(start, *([".."] * up), "Games", "TerraInvicta", "templates"))
+            cand = os.path.abspath(
+                os.path.join(
+                    start, *([".."] * up), "Games", "TerraInvicta", "templates"
+                )
+            )
             if os.path.exists(cand):
                 base_dir = cand
                 break
         if not base_dir:
             # fallback to ~/Games/TerraInvicta/templates
-            cand = os.path.expanduser(os.path.join("~", "Games", "TerraInvicta", "templates"))
+            cand = os.path.expanduser(
+                os.path.join("~", "Games", "TerraInvicta", "templates")
+            )
             if os.path.exists(cand):
                 base_dir = cand
             # Also check if there is a symlink called templates in the root repo folder
@@ -338,7 +444,10 @@ def main(argv: Optional[List[str]] = None) -> int:
             if os.path.exists(cand):
                 base_dir = cand
         if not base_dir:
-            print("Templates directory not found; checked candidate locations", file=sys.stderr)
+            print(
+                "Templates directory not found; checked candidate locations",
+                file=sys.stderr,
+            )
             return 1
         mapping = {
             "TIGunTemplate.json": "gun",
@@ -401,7 +510,9 @@ def main(argv: Optional[List[str]] = None) -> int:
                         energy = float(entry.get("damage_MJ") or 0)
                     elif "shotPower_MJ" in entry:
                         energy = float(entry.get("shotPower_MJ") or 0)
-                    elif entry.get("warheadMass_kg") and entry.get("muzzleVelocity_kps"):
+                    elif entry.get("warheadMass_kg") and entry.get(
+                        "muzzleVelocity_kps"
+                    ):
                         war = float(entry.get("warheadMass_kg") or 0)
                         mv = float(entry.get("muzzleVelocity_kps") or 0)
                         energy = 0.5 * war * (mv**2)
@@ -412,25 +523,44 @@ def main(argv: Optional[List[str]] = None) -> int:
                     cooldown = entry.get("cooldown_s") or entry.get("cooldown") or 0
                     salvo = entry.get("salvo_shots") or entry.get("salvo") or 1
                     intra = (
-                        entry.get("intraSalvoCooldown_s") or entry.get("intraSalvoCooldown_s") or entry.get("intra", 0)
+                        entry.get("intraSalvoCooldown_s")
+                        or entry.get("intraSalvoCooldown_s")
+                        or entry.get("intra", 0)
                     )
                     try:
                         if wtype in ("gun", "magnetic"):
-                            rps = rps_from_timing(float(cooldown), int(salvo), float(intra))
+                            rps = rps_from_timing(
+                                float(cooldown), int(salvo), float(intra)
+                            )
                         else:
                             rps = 1.0 / float(cooldown) if float(cooldown) > 0 else 0.0
                     except Exception:
                         rps = 0.0
 
-                    dps = (damage_in_game * rps) if isinstance(damage_in_game, float) else None
+                    dps = (
+                        (damage_in_game * rps)
+                        if isinstance(damage_in_game, float)
+                        else None
+                    )
 
-                    war_kg = entry.get("warheadMass_kg") or entry.get("warheadMass") or None
-                    mv_kps = entry.get("muzzleVelocity_kps") or entry.get("muzzleVelocity") or None
+                    war_kg = (
+                        entry.get("warheadMass_kg") or entry.get("warheadMass") or None
+                    )
+                    mv_kps = (
+                        entry.get("muzzleVelocity_kps")
+                        or entry.get("muzzleVelocity")
+                        or None
+                    )
                     mag = entry.get("magazine") or None
 
                     # try to read research cost if present in entry under common keys
                     research_val = None
-                    for rk in ("researchCost", "research_cost", "research", "researchCostCredits"):
+                    for rk in (
+                        "researchCost",
+                        "research_cost",
+                        "research",
+                        "researchCostCredits",
+                    ):
                         if rk in entry and entry.get(rk) is not None:
                             try:
                                 research_val = float(entry.get(rk))
@@ -513,7 +643,9 @@ def main(argv: Optional[List[str]] = None) -> int:
 
         # Apply filter if requested (comma-separated types)
         if args.filter_type:
-            allowed = {t.strip().lower() for t in args.filter_type.split(",") if t.strip()}
+            allowed = {
+                t.strip().lower() for t in args.filter_type.split(",") if t.strip()
+            }
             rows_all = [r for r in rows_all if (r[0] or "").lower() in allowed]
 
         # Exclude generic base templates and region defense entries by name
@@ -804,12 +936,17 @@ def main(argv: Optional[List[str]] = None) -> int:
     # Compare mode: build two snippets from param strings and print side-by-side diffs
     if args.compare:
         if not args.left or not args.right:
-            print("Error: --compare requires --left and --right parameter strings", file=sys.stderr)
+            print(
+                "Error: --compare requires --left and --right parameter strings",
+                file=sys.stderr,
+            )
             return 2
         left_map = parse_kv_string(args.left)
         right_map = parse_kv_string(args.right)
 
-        def build_from_map(m: Dict[str, str], default_type: Optional[str]) -> Dict[str, Any]:
+        def build_from_map(
+            m: Dict[str, str], default_type: Optional[str]
+        ) -> Dict[str, Any]:
             t = m.get("type", default_type)
             name = m.get("name", m.get("dataName", "LHS"))
             friendly = m.get("friendly", name)
@@ -861,11 +998,27 @@ def main(argv: Optional[List[str]] = None) -> int:
         r_stats = compute_stats(right_snip, right_map.get("type", args.type))
 
         if left_map.get("type", args.type) in ("gun", "magnetic"):
-            keys = ["damageInGame", "energy_MJ", "dps", "rps", "warhead_kg", "muzzle_kps", "cooldown_s"]
+            keys = [
+                "damageInGame",
+                "energy_MJ",
+                "dps",
+                "rps",
+                "warhead_kg",
+                "muzzle_kps",
+                "cooldown_s",
+            ]
             if "magazine" in left_map and "magazine" in right_map:
                 keys.insert(6, "magazine")
         else:
-            keys = ["damageInGame", "energy_MJ", "dps", "rps", "shotPower_MJ", "baseWeaponMass_tons", "cooldown_s"]
+            keys = [
+                "damageInGame",
+                "energy_MJ",
+                "dps",
+                "rps",
+                "shotPower_MJ",
+                "baseWeaponMass_tons",
+                "cooldown_s",
+            ]
 
         def _fmt(v: Any) -> str:
             try:
@@ -954,7 +1107,15 @@ def main(argv: Optional[List[str]] = None) -> int:
                     ]
                 )
         else:
-            header = ["name", "dataName", "dmg", "dps", "shot_MJ", "cooldown", "mass_tons"]
+            header = [
+                "name",
+                "dataName",
+                "dmg",
+                "dps",
+                "shot_MJ",
+                "cooldown",
+                "mass_tons",
+            ]
             for sn in results:
                 stats = compute_stats(sn, args.type)
                 rows.append(
