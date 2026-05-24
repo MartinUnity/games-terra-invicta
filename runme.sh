@@ -10,7 +10,9 @@
 
 set -euo pipefail
 
-BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+# Default BASE_DIR is the script's directory (where runme.sh lives)
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+BASE_DIR="$SCRIPT_DIR"
 PID_DIR="$BASE_DIR/runme.pids"
 LOG_DIR="$BASE_DIR/runme.logs"
 mkdir -p "$PID_DIR" "$LOG_DIR"
@@ -23,13 +25,42 @@ else
 	PYTHON="python"
 fi
 
+# Allow overriding the BASE_DIR using (in order of precedence):
+# 1) Environment variable TERRA_INV_DIR
+# 2) The `BASE_DIR` value from config.py (read via the selected Python)
+# 3) The script's directory (fallback already set)
+if [[ -n "${TERRA_INV_DIR:-}" ]]; then
+	BASE_DIR="$TERRA_INV_DIR"
+else
+	# Try to read config.BASE_DIR using the chosen Python interpreter
+	if command -v "$PYTHON" >/dev/null 2>&1; then
+		cfg_base=$($PYTHON - <<PYCODE 2>/dev/null
+import sys
+try:
+	import config
+	print(config.BASE_DIR)
+except Exception:
+	sys.exit(1)
+PYCODE
+		) || true
+		if [[ -n "$cfg_base" ]]; then
+			BASE_DIR="$cfg_base"
+		fi
+	fi
+fi
+
+# Ensure BASE_DIR is absolute and exists; fall back to script dir if not
+if [[ ! -d "$BASE_DIR" ]]; then
+	BASE_DIR="$SCRIPT_DIR"
+fi
+
 declare -A CMD
 declare -A PIDFILE
 declare -A LOGFILE
 
-CMD[extraction]="$PYTHON $BASE_DIR/extraction.py"
-CMD[cleanup]="$PYTHON $BASE_DIR/scripts/cleanup_saves.py"
-CMD[streamlit]="$PYTHON -m streamlit run $BASE_DIR/show-data.py"
+CMD[extraction]="cd \"$BASE_DIR\" && PYTHONPATH=\"$BASE_DIR\" $PYTHON $BASE_DIR/extraction.py"
+CMD[cleanup]="cd \"$BASE_DIR\" && PYTHONPATH=\"$BASE_DIR\" $PYTHON $BASE_DIR/scripts/cleanup_saves.py"
+CMD[streamlit]="cd \"$BASE_DIR\" && PYTHONPATH=\"$BASE_DIR\" $PYTHON -m streamlit run show-data.py --server.headless true"
 
 PIDFILE[extraction]="$PID_DIR/extraction.pid"
 PIDFILE[cleanup]="$PID_DIR/cleanup.pid"

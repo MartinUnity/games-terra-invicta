@@ -4,6 +4,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
+import config
 from dateutil.relativedelta import relativedelta
 from streamlit_autorefresh import st_autorefresh
 
@@ -40,7 +41,7 @@ COL_NAMES = [
 @st.cache_data(ttl=5)
 def load_data():
     try:
-        df = pd.read_csv("campaign_history.csv", header=0, names=COL_NAMES, encoding="utf-8-sig")
+        df = pd.read_csv(config.CAMPAIGN_HISTORY, header=0, names=COL_NAMES, encoding="utf-8-sig")
         df = df[df["nation_name"] != "nation_name"]  # Filter repeat headers
 
         numeric_cols = [

@@ -13,12 +13,14 @@ import pandas as pd
 import yaml
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
+import config
 
 # CONFIG
-SAVE_DIR = "terra-invicta-save/Saves"
+# Use fixed repository paths from config.py so scripts work regardless of CWD
+SAVE_DIR = config.SAVE_DIR
 WATCH_DIRECTORY = "/home/martin/.steam/steam/steamapps/compatdata/1176470/pfx/drive_c/users/steamuser/Documents/My Games/TerraInvicta/Saves/"
 DEBOUNCE_SECONDS = 2.0  # Wait this long after the file stops changing before reading
-CONFIG_PATH = "config.yml"
+CONFIG_PATH = config.CONFIG_YML
 CONFIG_RELOAD_INTERVAL = 60  # seconds
 
 # Code-level default: whether to auto-persist detected `my_nations` into `config.yml`.
@@ -593,13 +595,11 @@ def run_extraction_pipeline(specific_file_path=None):
             logger.warning("No nation data found. Skipping write.")
             return
 
-        # Write to CSV
-        # Note: Added checking if file exists to determine if we need a header
-        file_exists = os.path.isfile("campaign_history.csv")
+        # Write to CSV in the fixed repo location
+        file_exists = os.path.isfile(config.CAMPAIGN_HISTORY)
 
         # If it's a new file, write headers. If appending, don't.
-        # (You might want to ensure your extract function returns consistent columns)
-        df_filtered.to_csv("campaign_history.csv", mode="a", header=not file_exists, index=False)
+        df_filtered.to_csv(config.CAMPAIGN_HISTORY, mode="a", header=not file_exists, index=False)
 
         logger.info("Successfully updated campaign_history.csv")
         print(df_filtered.head())
