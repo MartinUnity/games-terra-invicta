@@ -219,3 +219,10 @@ keys/
 ai-worker/staging/
 scripts/logs/
 scripts/storage/
+runme.logs/
+campaign_history.csv
+ai-worker/generation_issues.log
+docs/fix-for-next-run.json
+docs/*.png
+docs/Projects_Outline.md
+scripts/one-off/

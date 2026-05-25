@@ -482,7 +482,7 @@ try:
 except Exception:
     # fallback when imported as module from different working dir
     try:
-        from scripts.utils.mining_leveler import apply_mining_level_suffix, level_for_cost  # type: ignore
+        from .mining_leveler import apply_mining_level_suffix, level_for_cost  # type: ignore
     except Exception:
         apply_mining_level_suffix = None  # type: ignore
         level_for_cost = None  # type: ignore

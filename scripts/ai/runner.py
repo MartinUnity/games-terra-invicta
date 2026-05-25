@@ -17,12 +17,12 @@ from datetime import datetime, timezone
 from typing import Any, Optional, cast, Dict, List
 
 # compute repo root and ai-worker dir relative to this file
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 AI_DIR = os.path.join(ROOT, "ai-worker")
 
 # import helpers (try short path first)
 try:
-    from utils.ai_worker_helpers import (
+    from scripts.ai.helpers import (
         load_text,
         minimal_validate,
         write_staged,
@@ -40,10 +40,10 @@ try:
         next_level_for_base,
         build_leveled_candidate,
     )
-    from utils.ai_prompts import build_fill_prompt, build_localization_prompt, build_prompt
-    from utils.ai_selection import select_template_and_effect
+    from scripts.ai.prompts import build_fill_prompt, build_localization_prompt, build_prompt
+    from scripts.ai.selection import select_template_and_effect
 except Exception:
-    from scripts.utils.ai_worker_helpers import (
+    from .helpers import (
         load_text,
         minimal_validate,
         write_staged,
@@ -61,8 +61,8 @@ except Exception:
         next_level_for_base,
         build_leveled_candidate,
     )
-    from scripts.utils.ai_prompts import build_fill_prompt, build_localization_prompt, build_prompt
-    from scripts.utils.ai_selection import select_template_and_effect
+    from .prompts import build_fill_prompt, build_localization_prompt, build_prompt
+    from .selection import select_template_and_effect
 
 
 def run_cycle(args) -> dict:
@@ -76,19 +76,19 @@ def run_cycle(args) -> dict:
     candidate: Dict[str, Any] = {}
     # ensure mod_projects exists for static analyzers and downstream logic
     mod_projects: List[Any] = []
-    requirements_md = load_text(os.path.join(AI_DIR, "requirements.md"))
-    prompt_template = load_text(os.path.join(AI_DIR, "prompt_templates.md"))
+    requirements_md = load_text(os.path.join(AI_DIR, "prompts.md"))
+    prompt_template = load_text(os.path.join(AI_DIR, "prompts.md"))
     project_template_path = "/home/martin/Games/TerraInvicta/templates/TIProjectTemplate.json"
     tieffect_path = "/home/martin/Games/TerraInvicta/templates/TIEffectTemplate.json"
     projects = load_project_templates(project_template_path)
     tieffects_map = collect_tieffects(tieffect_path)
-    # Prefer an explicit whitelist file to avoid parsing unrelated lines in requirements.md.
+    # Prefer an explicit whitelist file to avoid parsing unrelated lines in prompts.md.
     wl_file = os.path.join(AI_DIR, "effect_whitelist.txt")
     if os.path.exists(wl_file):
         whitelist = load_effect_whitelist(wl_file)
     else:
-        # fallback for compatibility: parse the requirements.md if no whitelist file present
-        whitelist = load_effect_whitelist(os.path.join(AI_DIR, "requirements.md"))
+        # fallback for compatibility: parse the prompts.md if no whitelist file present
+        whitelist = load_effect_whitelist(os.path.join(AI_DIR, "prompts.md"))
 
     template, chosen_effect = select_template_and_effect(
         projects,
@@ -231,14 +231,14 @@ def run_cycle(args) -> dict:
                 print("Backup failed:", e)
         # prune staging/backups/debug files to keep disk usage bounded
         try:
-            from utils.ai_worker_helpers import prune_dir, prune_debug_log
+            from scripts.ai.helpers import prune_dir, prune_debug_log
 
             prune_dir(staging_root, keep=200)
             prune_dir(args.backup_dir, keep=200)
             prune_debug_log(os.path.join(AI_DIR, "debug_logs.txt"), keep_blocks=200)
         except Exception:
             try:
-                from scripts.utils.ai_worker_helpers import prune_dir, prune_debug_log
+                from .helpers import prune_dir, prune_debug_log
 
                 prune_dir(staging_root, keep=200)
                 prune_dir(args.backup_dir, keep=200)
@@ -265,11 +265,11 @@ def run_cycle(args) -> dict:
         small_prompt = build_fill_prompt(template, chosen_effect, target_cost)
         try:
             # use a simplified strict prompt as a fallback to improve JSON extraction
-            from utils.ai_prompts import build_simplified_fill_prompt
+            from scripts.ai.prompts import build_simplified_fill_prompt
 
             simplified = build_simplified_fill_prompt(chosen_effect, target_cost)
         except Exception:
-            from scripts.utils.ai_prompts import build_simplified_fill_prompt
+            from .prompts import build_simplified_fill_prompt
 
             simplified = build_simplified_fill_prompt(chosen_effect, target_cost)
 
@@ -468,14 +468,14 @@ def run_cycle(args) -> dict:
             print("Backup failed:", e)
     # prune staging/backups/debug files to keep disk usage bounded
     try:
-        from utils.ai_worker_helpers import prune_dir, prune_debug_log
+        from scripts.ai.helpers import prune_dir, prune_debug_log
 
         prune_dir(staging_root, keep=200)
         prune_dir(args.backup_dir, keep=200)
         prune_debug_log(os.path.join(AI_DIR, "debug_logs.txt"), keep_blocks=200)
     except Exception:
         try:
-            from scripts.utils.ai_worker_helpers import prune_dir, prune_debug_log
+            from .helpers import prune_dir, prune_debug_log
 
             prune_dir(staging_root, keep=200)
             prune_dir(args.backup_dir, keep=200)
@@ -499,11 +499,11 @@ def run_cycle(args) -> dict:
                 try:
                     # build a tiny fallback simplified prompt for localization
                     try:
-                        from utils.ai_prompts import build_simplified_localization_prompt
+                        from scripts.ai.prompts import build_simplified_localization_prompt
 
                         simplified_loc = build_simplified_localization_prompt()
                     except Exception:
-                        from scripts.utils.ai_prompts import build_simplified_localization_prompt
+                        from .prompts import build_simplified_localization_prompt
 
                         simplified_loc = build_simplified_localization_prompt()
 
