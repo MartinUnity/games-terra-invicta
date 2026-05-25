@@ -25,23 +25,23 @@ from jsonschema import Draft7Validator
 
 # local helpers (refactored)
 try:
-    # When running the script directly from repo root, try short import paths first
-    from utils.ai_worker_helpers import extract_json as helpers_extract_json, load_text as helpers_load_text
-    from utils.ai_prompts import (
+    # Running as module from repo root
+    from scripts.ai.helpers import extract_json as helpers_extract_json, load_text as helpers_load_text
+    from scripts.ai.prompts import (
         build_fill_prompt as helpers_build_fill_prompt,
         build_localization_prompt as helpers_build_localization_prompt,
         build_prompt as helpers_build_prompt,
     )
-    from utils.ai_worker_helpers import call_model as helpers_call_model, generate_and_extract as helpers_generate_and_extract
+    from scripts.ai.helpers import call_model as helpers_call_model, generate_and_extract as helpers_generate_and_extract
 except Exception:
-    # Fallback when executed from a different working dir or module path
-    from scripts.utils.ai_worker_helpers import extract_json as helpers_extract_json, load_text as helpers_load_text
-    from scripts.utils.ai_prompts import (
+    # Running from scripts/ai/ directly
+    from .helpers import extract_json as helpers_extract_json, load_text as helpers_load_text
+    from .prompts import (
         build_fill_prompt as helpers_build_fill_prompt,
         build_localization_prompt as helpers_build_localization_prompt,
         build_prompt as helpers_build_prompt,
     )
-    from scripts.utils.ai_worker_helpers import call_model as helpers_call_model, generate_and_extract as helpers_generate_and_extract
+    from .helpers import call_model as helpers_call_model, generate_and_extract as helpers_generate_and_extract
 
 
 def load_effect_whitelist(path: str):
@@ -51,9 +51,9 @@ def load_effect_whitelist(path: str):
     """
     # delegate to refactored helper
     try:
-        from utils.ai_worker_helpers import load_effect_whitelist as _hel
+        from scripts.ai.helpers import load_effect_whitelist as _hel
     except Exception:
-        from scripts.utils.ai_worker_helpers import load_effect_whitelist as _hel
+        from .helpers import load_effect_whitelist as _hel
 
     return _hel(path)
 
@@ -68,28 +68,27 @@ def get_effect_whitelist():
 
 def effect_matches_whitelist(contexts, whitelist):
     try:
-        from utils.ai_worker_helpers import effect_matches_whitelist as _emw
+        from scripts.ai.helpers import effect_matches_whitelist as _emw
     except Exception:
-        from scripts.utils.ai_worker_helpers import effect_matches_whitelist as _emw
+        from .helpers import effect_matches_whitelist as _emw
     return _emw(contexts, whitelist)
 
 
 def is_penalty_effect(name: str) -> bool:
     """Return True if the effect name contains the word 'penalty' (case-insensitive)."""
     try:
-        from utils.ai_worker_helpers import is_penalty_effect as _ipe
+        from scripts.ai.helpers import is_penalty_effect as _ipe
     except Exception:
-        from scripts.utils.ai_worker_helpers import is_penalty_effect as _ipe
+        from .helpers import is_penalty_effect as _ipe
     return _ipe(name)
 
 
 # Pydantic removed: we prefer JSON Schema validation (schema.json)
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 AI_DIR = os.path.join(ROOT, "ai-worker")
-DEFAULT_CONFIG = os.path.join(AI_DIR, "config.yml")
-REQUIREMENTS_MD = os.path.join(AI_DIR, "requirements.md")
-PROMPT_TEMPLATE = os.path.join(AI_DIR, "prompt_templates.md")
+DEFAULT_CONFIG = os.path.join(AI_DIR, "llm-config.yml")
+PROMPTS_MD = os.path.join(AI_DIR, "prompts.md")
 
 
 def load_text(path):
@@ -109,25 +108,25 @@ def extract_json(text: str):
 
 def minimal_validate(candidate: dict, schema_path: Optional[str] = None) -> Tuple[bool, List[str]]:
     try:
-        from utils.ai_worker_helpers import minimal_validate as _mv
+        from scripts.ai.helpers import minimal_validate as _mv
     except Exception:
-        from scripts.utils.ai_worker_helpers import minimal_validate as _mv
+        from .helpers import minimal_validate as _mv
     return _mv(candidate, schema_path=schema_path)
 
 
 def write_staged(candidate: dict, staging_root: str, raw_output: Optional[str] = None, meta: Optional[dict] = None) -> str:
     try:
-        from utils.ai_worker_helpers import write_staged as _ws
+        from scripts.ai.helpers import write_staged as _ws
     except Exception:
-        from scripts.utils.ai_worker_helpers import write_staged as _ws
+        from .helpers import write_staged as _ws
     return _ws(candidate, staging_root, raw_output=raw_output, meta=meta)
 
 
 def backup_staged(staging_root: str, backup_root: str):
     try:
-        from utils.ai_worker_helpers import backup_staged as _bs
+        from scripts.ai.helpers import backup_staged as _bs
     except Exception:
-        from scripts.utils.ai_worker_helpers import backup_staged as _bs
+        from .helpers import backup_staged as _bs
     return _bs(staging_root, backup_root)
 
 
@@ -136,9 +135,9 @@ def apply_candidate_to_mods(candidate: dict, localization_text: str, mods_path: 
     Create backups of both files under backup_root with a timestamp. Returns (ok, errors).
     """
     try:
-        from utils.ai_worker_helpers import apply_candidate_to_mods as _ac
+        from scripts.ai.helpers import apply_candidate_to_mods as _ac
     except Exception:
-        from scripts.utils.ai_worker_helpers import apply_candidate_to_mods as _ac
+        from .helpers import apply_candidate_to_mods as _ac
     return _ac(candidate, localization_text, mods_path, loc_path, backup_root)
 
 
@@ -148,9 +147,9 @@ def build_prompt(requirements_md: str, prompt_template: str):
 
 def load_project_templates(path: str):
     try:
-        from utils.ai_worker_helpers import load_project_templates as _lpt
+        from scripts.ai.helpers import load_project_templates as _lpt
     except Exception:
-        from scripts.utils.ai_worker_helpers import load_project_templates as _lpt
+        from .helpers import load_project_templates as _lpt
 
     return _lpt(path)
 
@@ -244,10 +243,10 @@ def select_template_and_effect(
 def _maybe_apply_mining_leveler(effect_name: str, research_cost: int | float | None) -> str:
     """Apply _lvlN suffix to mining bonus effects using centralized helper if available."""
     try:
-        from utils.mining_leveler import apply_mining_level_suffix as _ams
+        from scripts.ai.mining_leveler import apply_mining_level_suffix as _ams
     except Exception:
         try:
-            from scripts.utils.mining_leveler import apply_mining_level_suffix as _ams
+            from .mining_leveler import apply_mining_level_suffix as _ams
         except Exception:
             _ams = None
     if not _ams:
@@ -257,17 +256,17 @@ def _maybe_apply_mining_leveler(effect_name: str, research_cost: int | float | N
 
 def collect_tieffects(path: str):
     try:
-        from utils.ai_worker_helpers import collect_tieffects as _ct
+        from scripts.ai.helpers import collect_tieffects as _ct
     except Exception:
-        from scripts.utils.ai_worker_helpers import collect_tieffects as _ct
+        from .helpers import collect_tieffects as _ct
     return _ct(path)
 
 
 def roll_research_cost(base_cost):
     try:
-        from utils.ai_worker_helpers import roll_research_cost as _rrc
+        from scripts.ai.helpers import roll_research_cost as _rrc
     except Exception:
-        from scripts.utils.ai_worker_helpers import roll_research_cost as _rrc
+        from .helpers import roll_research_cost as _rrc
     return _rrc(base_cost)
 
 
@@ -323,9 +322,9 @@ def cleanup_staging(staging_root: str, keep: int = 5):
 def run_cycle(args):
     # delegate to refactored runner module
     try:
-        from utils.ai_runner import run_cycle as _run
+        from scripts.ai.runner import run_cycle as _run
     except Exception:
-        from scripts.utils.ai_runner import run_cycle as _run
+        from .runner import run_cycle as _run
 
     return _run(args)
 
