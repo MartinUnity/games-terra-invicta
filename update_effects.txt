@@ -1,0 +1,10 @@
+Effect_EconomyPriorityBonus02
+Effect_KnowledgePriorityBonus02
+Effect_MilitaryPriorityBonus02
+Effect_ParticleLaserDamageMinor
+Effect_ShipConvMissileDamageMinor
+Effect_ShipLaserDamageMinor
+Effect_ShipMagDamageMinor
+Effect_SpaceMineFreebies1
+Effect_SpaceMineExtra2
+
