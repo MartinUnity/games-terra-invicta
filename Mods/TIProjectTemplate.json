@@ -4977,7 +4977,7 @@
     "dataName": "Project_Kinetic_Shielding",
     "friendlyName": "Kinetic Shielding",
     "techCategory": "SocialScience",
-    "researchCost": 6029,
+    "researchCost": 3119,
     "prereqs": [
       "ArrivalEconomics"
     ],
@@ -5021,7 +5021,7 @@
     "dataName": "Project_Focused_Beam",
     "friendlyName": "Focused Beam",
     "techCategory": "SocialScience",
-    "researchCost": 18394,
+    "researchCost": 956,
     "prereqs": [
       "GreatNations"
     ],
@@ -5307,7 +5307,7 @@
     "dataName": "Project_Kinetic_Resonance",
     "friendlyName": "Kinetic Resonance",
     "techCategory": "SocialScience",
-    "researchCost": 60312,
+    "researchCost": 602,
     "prereqs": [
       "GreatNations"
     ],
@@ -5351,7 +5351,7 @@
     "dataName": "Project_Genesis_Bloom",
     "friendlyName": "Genesis Bloom",
     "techCategory": "SpaceScience",
-    "researchCost": 1352148,
+    "researchCost": 361800,
     "prereqs": [
       "Project_ProtiumNovaTorch"
     ],
@@ -5395,7 +5395,7 @@
     "dataName": "Project_Asteroid_Bloom",
     "friendlyName": "Asteroid Bloom",
     "techCategory": "SocialScience",
-    "researchCost": 68580,
+    "researchCost": 3537,
     "prereqs": [
       "GreatNations"
     ],
@@ -5835,7 +5835,7 @@
     "dataName": "Project_War_College",
     "friendlyName": "War College",
     "techCategory": "SocialScience",
-    "researchCost": 5843,
+    "researchCost": 1626,
     "prereqs": [
       "UnityMovements"
     ],
@@ -5901,7 +5901,7 @@
     "dataName": "Project_Kinetic_Accelerator",
     "friendlyName": "Kinetic Accelerator",
     "techCategory": "SocialScience",
-    "researchCost": 13751,
+    "researchCost": 1503,
     "prereqs": [
       "ArrivalSecurity"
     ],
@@ -6121,7 +6121,7 @@
     "dataName": "Project_Cognitive_Focus",
     "friendlyName": "Cognitive Focus",
     "techCategory": "SpaceScience",
-    "researchCost": 99742,
+    "researchCost": 1414,
     "prereqs": [
       "Project_HybridConfinementFusionReactorIV"
     ],
@@ -6429,7 +6429,7 @@
     "dataName": "Project_Strategic_Focus",
     "friendlyName": "Strategic Focus",
     "techCategory": "Xenology",
-    "researchCost": 70822,
+    "researchCost": 1071,
     "prereqs": [
       "Project_AlienFlora"
     ],
@@ -6473,7 +6473,7 @@
     "dataName": "Project_Trade_Winds",
     "friendlyName": "Trade Winds",
     "techCategory": "Energy",
-    "researchCost": 11939,
+    "researchCost": 3516,
     "prereqs": [
       "Ultracapacitors"
     ],
@@ -6605,7 +6605,7 @@
     "dataName": "Project_Kinetic_Focus",
     "friendlyName": "Kinetic Focus",
     "techCategory": "SpaceScience",
-    "researchCost": 74483,
+    "researchCost": 919,
     "prereqs": [
       "AntimatterPropulsion"
     ],
@@ -7045,7 +7045,7 @@
     "dataName": "Project_Nexus_Cognition",
     "friendlyName": "Nexus Cognition",
     "techCategory": "SocialScience",
-    "researchCost": 13047,
+    "researchCost": 3271,
     "prereqs": [
       "UnityMovements"
     ],
@@ -7507,7 +7507,7 @@
     "dataName": "Project_Vanguard_Initiative",
     "friendlyName": "Vanguard Initiative",
     "techCategory": "Xenology",
-    "researchCost": 6213,
+    "researchCost": 3533,
     "prereqs": [
       "Project_AlienFlora"
     ],
@@ -7749,7 +7749,7 @@
     "dataName": "Project_Focus_Beam",
     "friendlyName": "Focus Beam",
     "techCategory": "Energy",
-    "researchCost": 6285,
+    "researchCost": 2733,
     "prereqs": [
       "AneutronicFusion"
     ],
@@ -8277,7 +8277,7 @@
     "dataName": "Project_Kinetic_Pulse_Array",
     "friendlyName": "Kinetic Pulse Array",
     "techCategory": "Xenology",
-    "researchCost": 13884,
+    "researchCost": 856,
     "prereqs": [
       "PredictiveGenetics"
     ],
@@ -8387,7 +8387,7 @@
     "dataName": "Project_Void_Salvage",
     "friendlyName": "Void Salvage",
     "techCategory": "Xenology",
-    "researchCost": 35381,
+    "researchCost": 2918,
     "prereqs": [
       "Project_PherocyteDeconOperations"
     ],
@@ -8651,7 +8651,7 @@
     "dataName": "Project_Voidborn_Resilience",
     "friendlyName": "Voidborn Resilience",
     "techCategory": "Xenology",
-    "researchCost": 12876,
+    "researchCost": 2228,
     "prereqs": [
       "Project_TheirTechnology"
     ],
@@ -9179,7 +9179,7 @@
     "dataName": "Project_Focused_Fire",
     "friendlyName": "Focused Fire",
     "techCategory": "MilitaryScience",
-    "researchCost": 6189,
+    "researchCost": 630,
     "prereqs": [
       "VisibleCombatLasers"
     ],
@@ -9289,7 +9289,7 @@
     "dataName": "Project_Scatterseed_Protocol",
     "friendlyName": "Scatterseed Protocol",
     "techCategory": "MilitaryScience",
-    "researchCost": 18143,
+    "researchCost": 622,
     "prereqs": [
       "Ultracapacitors"
     ],
@@ -9333,7 +9333,7 @@
     "dataName": "Project_Prosperity_Bloom",
     "friendlyName": "Prosperity Bloom",
     "techCategory": "LifeScience",
-    "researchCost": 23322,
+    "researchCost": 883,
     "prereqs": [
       "Project_AccelerationPharmaceuticals"
     ],
@@ -10147,7 +10147,7 @@
     "dataName": "Project_Minefield_Protocol",
     "friendlyName": "Minefield Protocol",
     "techCategory": "MilitaryScience",
-    "researchCost": 9724,
+    "researchCost": 1395,
     "prereqs": [
       "Project_GuerrillaWarfare"
     ],
@@ -10455,7 +10455,7 @@
     "dataName": "Project_Kinetic_Interceptor",
     "friendlyName": "Kinetic Interceptor",
     "techCategory": "SpaceScience",
-    "researchCost": 9002,
+    "researchCost": 1452,
     "prereqs": [
       "Project_AutomatedFissionPile"
     ],
@@ -10587,7 +10587,7 @@
     "dataName": "Project_Kinetic_Volley",
     "friendlyName": "Kinetic Volley",
     "techCategory": "Energy",
-    "researchCost": 14279,
+    "researchCost": 2569,
     "prereqs": [
       "Project_NuclearFreighters"
     ],
@@ -11291,7 +11291,7 @@
     "dataName": "Project_Focused_Photonics",
     "friendlyName": "Focused Photonics",
     "techCategory": "Xenology",
-    "researchCost": 10570,
+    "researchCost": 2965,
     "prereqs": [
       "Biotechnology"
     ],
@@ -11379,7 +11379,7 @@
     "dataName": "Project_Economic_Nexus",
     "friendlyName": "Economic Nexus",
     "techCategory": "Materials",
-    "researchCost": 57452,
+    "researchCost": 608,
     "prereqs": [
       "MagneticPlasmaConfinementTechniques"
     ],
@@ -11511,7 +11511,7 @@
     "dataName": "Project_Focused_Beam_Array",
     "friendlyName": "Focused Beam Array",
     "techCategory": "Energy",
-    "researchCost": 12247,
+    "researchCost": 2798,
     "prereqs": [
       "Ultracapacitors"
     ],
@@ -11819,7 +11819,7 @@
     "dataName": "Project_Focused_Arrays",
     "friendlyName": "Focused Arrays",
     "techCategory": "SpaceScience",
-    "researchCost": 7099,
+    "researchCost": 1314,
     "prereqs": [
       "Superalloys"
     ],
@@ -12479,7 +12479,7 @@
     "dataName": "Project_Kinetic_Burst",
     "friendlyName": "Kinetic Burst",
     "techCategory": "LifeScience",
-    "researchCost": 12700,
+    "researchCost": 3432,
     "prereqs": [
       "Project_CovertOperations"
     ],
@@ -12523,7 +12523,7 @@
     "dataName": "Project_Kinetic_Lances",
     "friendlyName": "Kinetic Lances",
     "techCategory": "Materials",
-    "researchCost": 14687,
+    "researchCost": 3161,
     "prereqs": [
       "Skywatch"
     ],
@@ -12721,7 +12721,7 @@
     "dataName": "Project_Focused_Discharge",
     "friendlyName": "Focused Discharge",
     "techCategory": "Xenology",
-    "researchCost": 16203,
+    "researchCost": 3372,
     "prereqs": [
       "Project_XenofloraDefoliants"
     ],
@@ -12743,7 +12743,7 @@
     "dataName": "Project_Economic_Hub",
     "friendlyName": "Economic Hub",
     "techCategory": "Energy",
-    "researchCost": 11710,
+    "researchCost": 2732,
     "prereqs": [
       "AdvancedFissionSystems"
     ],
@@ -13337,7 +13337,7 @@
     "dataName": "Project_Flux_Dispersal",
     "friendlyName": "Flux Dispersal",
     "techCategory": "Energy",
-    "researchCost": 6863,
+    "researchCost": 2218,
     "prereqs": [
       "Project_FusionPile"
     ],
@@ -13865,7 +13865,7 @@
     "dataName": "Project_Command_Nexus",
     "friendlyName": "Command Nexus",
     "techCategory": "InformationScience",
-    "researchCost": 14102,
+    "researchCost": 1402,
     "prereqs": [
       "Project_ECM2"
     ],
@@ -14085,7 +14085,7 @@
     "dataName": "Project_Focused_Radiance",
     "friendlyName": "Focused Radiance",
     "techCategory": "Xenology",
-    "researchCost": 73224,
+    "researchCost": 2339,
     "prereqs": [
       "IntegratedEarthSpaceEconomy"
     ],
@@ -14151,7 +14151,7 @@
     "dataName": "Project_Claim_Bounty",
     "friendlyName": "Claim Bounty",
     "techCategory": "SocialScience",
-    "researchCost": 5947,
+    "researchCost": 2913,
     "prereqs": [
       "UnityMovements"
     ],
@@ -14415,7 +14415,7 @@
     "dataName": "Project_Academic_Ascendancy",
     "friendlyName": "Academic Ascendancy",
     "techCategory": "SocialScience",
-    "researchCost": 6496,
+    "researchCost": 1639,
     "prereqs": [
       "UnityMovements"
     ],
@@ -15449,7 +15449,7 @@
     "dataName": "Project_Kinetic_Lance_Systems",
     "friendlyName": "Kinetic Lance Systems",
     "techCategory": "SpaceScience",
-    "researchCost": 8945,
+    "researchCost": 3815,
     "prereqs": [
       "Project_AutomatedFissionPile"
     ],
@@ -15515,7 +15515,7 @@
     "dataName": "Project_Precision_Targeting",
     "friendlyName": "Precision Targeting",
     "techCategory": "InformationScience",
-    "researchCost": 14889,
+    "researchCost": 526,
     "prereqs": [
       "Project_InformationScienceResearchCenter"
     ],
@@ -15691,7 +15691,7 @@
     "dataName": "Project_Kinetic_Lance_Array",
     "friendlyName": "Kinetic Lance Array",
     "techCategory": "Energy",
-    "researchCost": 17337,
+    "researchCost": 3608,
     "prereqs": [
       "AntimatterContainment"
     ],
@@ -15757,7 +15757,7 @@
     "dataName": "Project_Warfleet_Focus",
     "friendlyName": "Warfleet Focus",
     "techCategory": "Materials",
-    "researchCost": 10922,
+    "researchCost": 3800,
     "prereqs": [
       "Project_ExoticHybridSystems"
     ],
@@ -16087,7 +16087,7 @@
     "dataName": "Project_Cognitive_Echoes",
     "friendlyName": "Cognitive Echoes",
     "techCategory": "Xenology",
-    "researchCost": 5921,
+    "researchCost": 1153,
     "prereqs": [
       "Project_CyborneticCommandIntegration"
     ],
@@ -16175,7 +16175,7 @@
     "dataName": "Project_Fleet_Command",
     "friendlyName": "Fleet Command",
     "techCategory": "Materials",
-    "researchCost": 13643,
+    "researchCost": 3359,
     "prereqs": [
       "Diamondoids"
     ],
@@ -16351,7 +16351,7 @@
     "dataName": "Project_Voidbloom",
     "friendlyName": "Voidbloom",
     "techCategory": "Xenology",
-    "researchCost": 10764,
+    "researchCost": 2231,
     "prereqs": [
       "Project_TheirTechnology"
     ],
@@ -16461,7 +16461,7 @@
     "dataName": "Project_Particle_Lance_Array",
     "friendlyName": "Particle Lance Array",
     "techCategory": "SpaceScience",
-    "researchCost": 29447,
+    "researchCost": 1893,
     "prereqs": [
       "AntimatterPropulsion"
     ],
@@ -17077,7 +17077,7 @@
     "dataName": "Project_Quantum_Lance",
     "friendlyName": "Quantum Lance",
     "techCategory": "SpaceScience",
-    "researchCost": 13714,
+    "researchCost": 1638,
     "prereqs": [
       "Project_FissionSpinnerDrive"
     ],
@@ -17363,7 +17363,7 @@
     "dataName": "Project_Void_Resonance",
     "friendlyName": "Void Resonance",
     "techCategory": "Xenology",
-    "researchCost": 22610,
+    "researchCost": 1136,
     "prereqs": [
       "NextGenerationAerospace"
     ],
@@ -18089,7 +18089,7 @@
     "dataName": "Project_Focused_Optics",
     "friendlyName": "Focused Optics",
     "techCategory": "SocialScience",
-    "researchCost": 52120,
+    "researchCost": 1381,
     "prereqs": [
       "ArrivalGovernance"
     ],
@@ -18243,7 +18243,7 @@
     "dataName": "Project_Ecosystem_Augmentation",
     "friendlyName": "Ecosystem Augmentation",
     "techCategory": "Energy",
-    "researchCost": 543889,
+    "researchCost": 349624,
     "prereqs": [
       "Project_InertialConfinementFusionReactorVI"
     ],
@@ -18287,7 +18287,7 @@
     "dataName": "Project_Focused_Beam_Research",
     "friendlyName": "Focused Beam Research",
     "techCategory": "SpaceScience",
-    "researchCost": 1454367,
+    "researchCost": 3627,
     "prereqs": [
       "Project_ProtiumNovaTorch"
     ],
@@ -19585,7 +19585,7 @@
     "dataName": "Project_Economic_Pinnacle",
     "friendlyName": "Economic Pinnacle",
     "techCategory": "InformationScience",
-    "researchCost": 19096,
+    "researchCost": 1878,
     "prereqs": [
       "MindandMachine"
     ],
@@ -19849,7 +19849,7 @@
     "dataName": "Project_Plasma_Drill_Enhancement",
     "friendlyName": "Plasma Drill Enhancement",
     "techCategory": "SocialScience",
-    "researchCost": 6101,
+    "researchCost": 918,
     "prereqs": [
       "ArrivalEconomics"
     ],
@@ -20069,7 +20069,7 @@
     "dataName": "Project_Strategic_Surge",
     "friendlyName": "Strategic Surge",
     "techCategory": "Materials",
-    "researchCost": 37502,
+    "researchCost": 879,
     "prereqs": [
       "Project_MolecularBenefication"
     ],
@@ -20663,7 +20663,7 @@
     "dataName": "Project_Orbital_Laser_Enhancement",
     "friendlyName": "Orbital Laser Enhancement",
     "techCategory": "Energy",
-    "researchCost": 17675,
+    "researchCost": 2056,
     "prereqs": [
       "AntimatterContainment"
     ],
@@ -20773,7 +20773,7 @@
     "dataName": "Project_Galactic_Defense_Accelerator",
     "friendlyName": "Galactic Defense Accelerator",
     "techCategory": "SpaceScience",
-    "researchCost": 17915,
+    "researchCost": 896,
     "prereqs": [
       "MagneticNozzles"
     ],
@@ -20971,7 +20971,7 @@
     "dataName": "Project_Particle_Laser_Pinnacle",
     "friendlyName": "Particle Laser Pinnacle",
     "techCategory": "MilitaryScience",
-    "researchCost": 14979,
+    "researchCost": 1970,
     "prereqs": [
       "Project_CadreDevelopmentPrograms"
     ],
@@ -21917,7 +21917,7 @@
     "dataName": "Project_Orbital_Strike_Enhancer",
     "friendlyName": "Orbital Strike Enhancer",
     "techCategory": "SpaceScience",
-    "researchCost": 18671,
+    "researchCost": 3971,
     "prereqs": [
       "Project_ElectrostaticConfinementFusionReactorIII"
     ],
@@ -22005,7 +22005,7 @@
     "dataName": "Project_Ion_Pulse_Intensifier",
     "friendlyName": "Ion Pulse Intensifier",
     "techCategory": "MilitaryScience",
-    "researchCost": 7212,
+    "researchCost": 1908,
     "prereqs": [
       "Supercapacitors"
     ],
@@ -22247,7 +22247,7 @@
     "dataName": "Project_Galactic_Defense_Initiative",
     "friendlyName": "Galactic Defense Initiative",
     "techCategory": "Materials",
-    "researchCost": 5635,
+    "researchCost": 2972,
     "prereqs": [
       "Superalloys"
     ],
@@ -22665,7 +22665,7 @@
     "dataName": "Project_Asteroid_Abundance",
     "friendlyName": "Asteroid Abundance",
     "techCategory": "InformationScience",
-    "researchCost": 14936,
+    "researchCost": 1583,
     "prereqs": [
       "Project_TargetingComputer2"
     ],
@@ -23105,7 +23105,7 @@
     "dataName": "Project_Galactic_Windfall",
     "friendlyName": "Galactic Windfall",
     "techCategory": "SpaceScience",
-    "researchCost": 83136,
+    "researchCost": 3805,
     "prereqs": [
       "Project_FusionTokamakV"
     ],
@@ -23171,7 +23171,7 @@
     "dataName": "Project_Ethereal_Tachyon_Harvest",
     "friendlyName": "Ethereal Tachyon Harvest",
     "techCategory": "Energy",
-    "researchCost": 49847,
+    "researchCost": 677,
     "prereqs": [
       "Project_FusionTokamakIV"
     ],
@@ -23259,7 +23259,7 @@
     "dataName": "Project_Cosmic_Knowledge_Enhancement",
     "friendlyName": "Cosmic Knowledge Enhancement",
     "techCategory": "Xenology",
-    "researchCost": 6258,
+    "researchCost": 3488,
     "prereqs": [
       "QuantumComputing"
     ],
@@ -23479,7 +23479,7 @@
     "dataName": "Project_Economic_Pulse",
     "friendlyName": "Economic Pulse",
     "techCategory": "Energy",
-    "researchCost": 5688,
+    "researchCost": 2381,
     "prereqs": [
       "DeuteriumDeuteriumFusion"
     ],
@@ -23633,7 +23633,7 @@
     "dataName": "Project_Ion_Pulse_Weaponry",
     "friendlyName": "Ion Pulse Weaponry",
     "techCategory": "SpaceScience",
-    "researchCost": 81724,
+    "researchCost": 2696,
     "prereqs": [
       "Project_ZPinchFusionReactorIV"
     ],
@@ -23721,7 +23721,7 @@
     "dataName": "Project_Particle_Laser_Efficacy_Upgrade",
     "friendlyName": "Particle Laser Efficacy Upgrade",
     "techCategory": "Xenology",
-    "researchCost": 29260,
+    "researchCost": 1011,
     "prereqs": [
       "Project_HydraInterrogation"
     ],
@@ -23831,7 +23831,7 @@
     "dataName": "Project_Cosmic_Vein_Tapping",
     "friendlyName": "Cosmic Vein Tapping",
     "techCategory": "SocialScience",
-    "researchCost": 44798,
+    "researchCost": 2050,
     "prereqs": [
       "Project_UnitedNorthAmerica"
     ],
@@ -24337,7 +24337,7 @@
     "dataName": "Project_Strategic_Deployment_Accelerator",
     "friendlyName": "Strategic Deployment Accelerator",
     "techCategory": "MilitaryScience",
-    "researchCost": 10548,
+    "researchCost": 822,
     "prereqs": [
       "MagneticPlasmaConfinementTechniques"
     ],
@@ -24425,7 +24425,7 @@
     "dataName": "Project_Galactic_Triage_Beacon",
     "friendlyName": "Galactic Triage Beacon",
     "techCategory": "LifeScience",
-    "researchCost": 7377,
+    "researchCost": 2761,
     "prereqs": [
       "Project_RingCore"
     ],
@@ -24447,7 +24447,7 @@
     "dataName": "Project_Cosmic_Particle_Accelerator",
     "friendlyName": "Cosmic Particle Accelerator",
     "techCategory": "Xenology",
-    "researchCost": 22025,
+    "researchCost": 1700,
     "prereqs": [
       "Project_HydraInterrogation"
     ],
@@ -25019,7 +25019,7 @@
     "dataName": "Project_Crimson_Cascade_Missiles",
     "friendlyName": "Crimson Cascade Missiles",
     "techCategory": "Energy",
-    "researchCost": 7879,
+    "researchCost": 3897,
     "prereqs": [
       "Project_HeavyFissionReactorArray"
     ],
@@ -25173,7 +25173,7 @@
     "dataName": "Project_Galactic_Prospector_s_Boon",
     "friendlyName": "Galactic Prospector's Boon",
     "techCategory": "SocialScience",
-    "researchCost": 12212,
+    "researchCost": 3074,
     "prereqs": [
       "ArrivalSecurity"
     ],
@@ -25305,7 +25305,7 @@
     "dataName": "Project_Cosmic_Knowledge_Expansion",
     "friendlyName": "Cosmic Knowledge Expansion",
     "techCategory": "Xenology",
-    "researchCost": 6045,
+    "researchCost": 3033,
     "prereqs": [
       "QuantumComputing"
     ],
@@ -26449,7 +26449,7 @@
     "dataName": "Project_Iron_Starfall_Doctrine",
     "friendlyName": "Iron Starfall Doctrine",
     "techCategory": "SpaceScience",
-    "researchCost": 28692,
+    "researchCost": 1981,
     "prereqs": [
       "Project_InertialConfinementFusionReactorII"
     ],
@@ -26493,7 +26493,7 @@
     "dataName": "Project_Razorpoint_Strike_Array",
     "friendlyName": "Razorpoint Strike Array",
     "techCategory": "Energy",
-    "researchCost": 639318,
+    "researchCost": 2864,
     "prereqs": [
       "Project_InertialConfinementFusionReactorVI"
     ],
@@ -26713,7 +26713,7 @@
     "dataName": "Project_Tactical_Ascendancy_Protocol",
     "friendlyName": "Tactical Ascendancy Protocol",
     "techCategory": "Xenology",
-    "researchCost": 5625,
+    "researchCost": 1287,
     "prereqs": [
       "IndustrializationofSpace"
     ],
@@ -27659,7 +27659,7 @@
     "dataName": "Project_Razor_Starfall",
     "friendlyName": "Razor Starfall",
     "techCategory": "Energy",
-    "researchCost": 21462,
+    "researchCost": 3385,
     "prereqs": [
       "AntimatterContainment"
     ],
@@ -27879,7 +27879,7 @@
     "dataName": "Project_Tactical_Strike_Horizon",
     "friendlyName": "Tactical Strike Horizon",
     "techCategory": "Xenology",
-    "researchCost": 13983,
+    "researchCost": 784,
     "prereqs": [
       "Biotechnology"
     ],
@@ -28517,7 +28517,7 @@
     "dataName": "Project_Nebula_Strikebolt",
     "friendlyName": "Nebula Strikebolt",
     "techCategory": "SpaceScience",
-    "researchCost": 62757,
+    "researchCost": 687,
     "prereqs": [
       "Project_HybridConfinementFusionReactorIII"
     ],
@@ -28583,7 +28583,7 @@
     "dataName": "Project_Tactical_Beam_Forging",
     "friendlyName": "Tactical Beam Forging",
     "techCategory": "MilitaryScience",
-    "researchCost": 14021,
+    "researchCost": 3208,
     "prereqs": [
       "ImprovedShipbuildingTechniques"
     ],
@@ -28979,7 +28979,7 @@
     "dataName": "Project_Precision_Strike_Matrix",
     "friendlyName": "Precision Strike Matrix",
     "techCategory": "Xenology",
-    "researchCost": 24122,
+    "researchCost": 1433,
     "prereqs": [
       "AdministrationAlgorithms"
     ],
@@ -29001,7 +29001,7 @@
     "dataName": "Project_Global_Prosperity_Nexus",
     "friendlyName": "Global Prosperity Nexus",
     "techCategory": "Energy",
-    "researchCost": 543034,
+    "researchCost": 254897,
     "prereqs": [
       "Project_AntimatterPlasmaCoreReactorIII"
     ],
@@ -29067,7 +29067,7 @@
     "dataName": "Project_Celestial_Mine_Bounty",
     "friendlyName": "Celestial Mine Bounty",
     "techCategory": "SpaceScience",
-    "researchCost": 67067,
+    "researchCost": 3666,
     "prereqs": [
       "Project_AntimatterPlasmaCoreReactorII"
     ],
@@ -29155,7 +29155,7 @@
     "dataName": "Project_Tactical_Attrition_Protocol",
     "friendlyName": "Tactical Attrition Protocol",
     "techCategory": "SocialScience",
-    "researchCost": 6938,
+    "researchCost": 1685,
     "prereqs": [
       "Project_TheirOperations"
     ],
@@ -29771,7 +29771,7 @@
     "dataName": "Project_Focused_Laser_Matrix",
     "friendlyName": "Focused Laser Matrix",
     "techCategory": "MilitaryScience",
-    "researchCost": 8677,
+    "researchCost": 826,
     "prereqs": [
       "UltravioletCombatLasers"
     ],
@@ -29859,7 +29859,7 @@
     "dataName": "Project_Planetary_Fiscal_Accord",
     "friendlyName": "Planetary Fiscal Accord",
     "techCategory": "Energy",
-    "researchCost": 10878,
+    "researchCost": 1453,
     "prereqs": [
       "DeuteriumDeuteriumFusion"
     ],
@@ -29903,7 +29903,7 @@
     "dataName": "Project_Fleet_Mobilization_Protocols",
     "friendlyName": "Fleet Mobilization Protocols",
     "techCategory": "Energy",
-    "researchCost": 171072,
+    "researchCost": 913,
     "prereqs": [
       "Diamondoids"
     ],
@@ -30211,7 +30211,7 @@
     "dataName": "Project_Cognitive_Uplink",
     "friendlyName": "Cognitive Uplink",
     "techCategory": "MilitaryScience",
-    "researchCost": 24121,
+    "researchCost": 2056,
     "prereqs": [
       "PhasedArrayLasers"
     ],
@@ -30233,7 +30233,7 @@
     "dataName": "Project_Magnetic_Lance_Arrays",
     "friendlyName": "Magnetic Lance Arrays",
     "techCategory": "SpaceScience",
-    "researchCost": 17265,
+    "researchCost": 1638,
     "prereqs": [
       "Project_ElectrostaticConfinementFusionReactorIII"
     ],
@@ -30277,7 +30277,7 @@
     "dataName": "Project_Fleet_Command_Priority",
     "friendlyName": "Fleet Command Priority",
     "techCategory": "MilitaryScience",
-    "researchCost": 29052,
+    "researchCost": 2357,
     "prereqs": [
       "Project_SolidCoreFissionReactorIX"
     ],
