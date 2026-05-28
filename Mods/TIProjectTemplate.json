@@ -27,14 +27,14 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 2500,
+    "researchCost": 4000,
     "prereqs": [
       "ArrivalDomesticPolitics"
     ],
     "effects": [
       "Effect_ControlPointMaintenanceBonus3",
       "Effect_EconomyPriorityBonus02",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -75,7 +75,7 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 2800,
+    "researchCost": 4900,
     "prereqs": [
       "ArrivalEconomics",
       "Project_CivicResourceStabilization_II"
@@ -83,7 +83,7 @@
     "effects": [
       "Effect_ControlPointMaintenanceBonus10",
       "Effect_EconomyPriorityBonus02",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -176,7 +176,7 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 6500,
+    "researchCost": 8125,
     "prereqs": [
       "AdAstra",
       "Project_CharteredMunicipalInvestment"
@@ -184,7 +184,7 @@
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus1",
-      "Effect_WelfarePriorityBonus05",
+      "Effect_WelfarePriorityBonus10",
       "Effect_KnowledgePriorityBonus05"
     ],
     "oneTimeGlobally": false,
@@ -1757,7 +1757,7 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 10000,
+    "researchCost": 13000,
     "prereqs": [
       "FallofEmpires",
       "Project_AugementedOrganizationalStructures"
@@ -1765,7 +1765,7 @@
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus05",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -1782,7 +1782,7 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 20000,
+    "researchCost": 34000,
     "prereqs": [
       "IndustrializationofSpace",
       "Project_SovereignControlSystems"
@@ -1790,7 +1790,7 @@
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus05",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -1807,7 +1807,7 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 30000,
+    "researchCost": 49500,
     "prereqs": [
       "SpaceCommerce",
       "Project_PlanetaryAdministrativeSystems"
@@ -1815,7 +1815,7 @@
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus05",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -1832,7 +1832,7 @@
     "AI_techRole": "None",
     "AI_criticalTech": false,
     "AI_projectRole": "ControlPointCap",
-    "researchCost": 50000,
+    "researchCost": 65000,
     "prereqs": [
       "IntegratedEarthSpaceEconomy",
       "Project_AIGovernedPlanetarySubsystems"
@@ -1840,7 +1840,7 @@
     "effects": [
       "Effect_ControlPointMaintenanceBonus40",
       "Effect_EconomyPriorityBonus05",
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -2676,7 +2676,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Water — Tier I",
+    "friendlyName": "Cascade Extraction - Water - Tier I",
     "dataName": "Project_ExtractionCascade_Water_T1",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2698,7 +2698,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Water — Tier II",
+    "friendlyName": "Cascade Extraction - Water - Tier II",
     "dataName": "Project_ExtractionCascade_Water_T2",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2721,7 +2721,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Water — Tier III",
+    "friendlyName": "Cascade Extraction - Water - Tier III",
     "dataName": "Project_ExtractionCascade_Water_T3",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2746,7 +2746,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Water — Tier IV",
+    "friendlyName": "Cascade Extraction - Water - Tier IV",
     "dataName": "Project_ExtractionCascade_Water_T4",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2770,7 +2770,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Volatiles — Tier I",
+    "friendlyName": "Cascade Extraction - Volatiles - Tier I",
     "dataName": "Project_ExtractionCascade_Volatiles_T1",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2792,7 +2792,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Volatiles — Tier II",
+    "friendlyName": "Cascade Extraction - Volatiles - Tier II",
     "dataName": "Project_ExtractionCascade_Volatiles_T2",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2815,7 +2815,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Volatiles — Tier III",
+    "friendlyName": "Cascade Extraction - Volatiles - Tier III",
     "dataName": "Project_ExtractionCascade_Volatiles_T3",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2840,7 +2840,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Volatiles — Tier IV",
+    "friendlyName": "Cascade Extraction - Volatiles - Tier IV",
     "dataName": "Project_ExtractionCascade_Volatiles_T4",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2864,7 +2864,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Metals — Tier I",
+    "friendlyName": "Cascade Extraction - Metals - Tier I",
     "dataName": "Project_ExtractionCascade_Metals_T1",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2886,7 +2886,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Metals — Tier II",
+    "friendlyName": "Cascade Extraction - Metals - Tier II",
     "dataName": "Project_ExtractionCascade_Metals_T2",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2909,7 +2909,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Metals — Tier III",
+    "friendlyName": "Cascade Extraction - Metals - Tier III",
     "dataName": "Project_ExtractionCascade_Metals_T3",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2934,7 +2934,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Metals — Tier IV",
+    "friendlyName": "Cascade Extraction - Metals - Tier IV",
     "dataName": "Project_ExtractionCascade_Metals_T4",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2958,7 +2958,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Noble Metals — Tier I",
+    "friendlyName": "Cascade Extraction - Noble Metals - Tier I",
     "dataName": "Project_ExtractionCascade_NobleMetals_T1",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -2980,7 +2980,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Noble Metals — Tier II",
+    "friendlyName": "Cascade Extraction - Noble Metals - Tier II",
     "dataName": "Project_ExtractionCascade_NobleMetals_T2",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3003,7 +3003,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Noble Metals — Tier III",
+    "friendlyName": "Cascade Extraction - Noble Metals - Tier III",
     "dataName": "Project_ExtractionCascade_NobleMetals_T3",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3028,7 +3028,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Noble Metals — Tier IV",
+    "friendlyName": "Cascade Extraction - Noble Metals - Tier IV",
     "dataName": "Project_ExtractionCascade_NobleMetals_T4",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3052,7 +3052,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Fissiles — Tier I",
+    "friendlyName": "Cascade Extraction - Fissiles - Tier I",
     "dataName": "Project_ExtractionCascade_Fissiles_T1",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3074,7 +3074,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Fissiles — Tier II",
+    "friendlyName": "Cascade Extraction - Fissiles - Tier II",
     "dataName": "Project_ExtractionCascade_Fissiles_T2",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3097,7 +3097,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Fissiles — Tier III",
+    "friendlyName": "Cascade Extraction - Fissiles - Tier III",
     "dataName": "Project_ExtractionCascade_Fissiles_T3",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3122,7 +3122,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Fissiles — Tier IV",
+    "friendlyName": "Cascade Extraction - Fissiles - Tier IV",
     "dataName": "Project_ExtractionCascade_Fissiles_T4",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3146,7 +3146,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Water — Tier V",
+    "friendlyName": "Cascade Extraction - Water - Tier V",
     "dataName": "Project_ExtractionCascade_Water_T5",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3170,7 +3170,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Water — Tier VI",
+    "friendlyName": "Cascade Extraction - Water - Tier VI",
     "dataName": "Project_ExtractionCascade_Water_T6",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3194,7 +3194,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Volatiles — Tier V",
+    "friendlyName": "Cascade Extraction - Volatiles - Tier V",
     "dataName": "Project_ExtractionCascade_Volatiles_T5",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3218,7 +3218,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Volatiles — Tier VI",
+    "friendlyName": "Cascade Extraction - Volatiles - Tier VI",
     "dataName": "Project_ExtractionCascade_Volatiles_T6",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3242,7 +3242,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Metals — Tier V",
+    "friendlyName": "Cascade Extraction - Metals - Tier V",
     "dataName": "Project_ExtractionCascade_Metals_T5",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3266,7 +3266,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Metals — Tier VI",
+    "friendlyName": "Cascade Extraction - Metals - Tier VI",
     "dataName": "Project_ExtractionCascade_Metals_T6",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3290,7 +3290,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Noble Metals — Tier V",
+    "friendlyName": "Cascade Extraction - Noble Metals - Tier V",
     "dataName": "Project_ExtractionCascade_NobleMetals_T5",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3314,7 +3314,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Noble Metals — Tier VI",
+    "friendlyName": "Cascade Extraction - Noble Metals - Tier VI",
     "dataName": "Project_ExtractionCascade_NobleMetals_T6",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3338,7 +3338,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Fissiles — Tier V",
+    "friendlyName": "Cascade Extraction - Fissiles - Tier V",
     "dataName": "Project_ExtractionCascade_Fissiles_T5",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -3362,7 +3362,7 @@
     "resourcesGranted": []
   },
   {
-    "friendlyName": "Cascade Extraction — Fissiles — Tier VI",
+    "friendlyName": "Cascade Extraction - Fissiles - Tier VI",
     "dataName": "Project_ExtractionCascade_Fissiles_T6",
     "techCategory": "Materials",
     "AI_techRole": "None",
@@ -5197,12 +5197,12 @@
     "dataName": "Project_Mobilization_Protocols",
     "friendlyName": "Mobilization Protocols",
     "techCategory": "InformationScience",
-    "researchCost": 607,
+    "researchCost": 1062,
     "prereqs": [
       "Project_Warships"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -5417,12 +5417,12 @@
     "dataName": "Project_Mobilization_Protocol",
     "friendlyName": "Mobilization Protocol",
     "techCategory": "Xenology",
-    "researchCost": 26570,
+    "researchCost": 43840,
     "prereqs": [
       "WhiteCollarAutomation"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -5835,12 +5835,12 @@
     "dataName": "Project_War_College",
     "friendlyName": "War College",
     "techCategory": "SocialScience",
-    "researchCost": 1626,
+    "researchCost": 1919,
     "prereqs": [
       "UnityMovements"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -6429,12 +6429,12 @@
     "dataName": "Project_Strategic_Focus",
     "friendlyName": "Strategic Focus",
     "techCategory": "Xenology",
-    "researchCost": 1071,
+    "researchCost": 1553,
     "prereqs": [
       "Project_AlienFlora"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7221,12 +7221,12 @@
     "dataName": "Project_Fleet_Mobilization",
     "friendlyName": "Fleet Mobilization",
     "techCategory": "Energy",
-    "researchCost": 1169,
+    "researchCost": 1987,
     "prereqs": [
       "NextGenerationAerospace"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7265,12 +7265,12 @@
     "dataName": "Project_Expeditionary_Command",
     "friendlyName": "Expeditionary Command",
     "techCategory": "Energy",
-    "researchCost": 11991,
+    "researchCost": 20385,
     "prereqs": [
       "InertialPlasmaConfinementTechniques"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7507,12 +7507,12 @@
     "dataName": "Project_Vanguard_Initiative",
     "friendlyName": "Vanguard Initiative",
     "techCategory": "Xenology",
-    "researchCost": 3533,
+    "researchCost": 5017,
     "prereqs": [
       "Project_AlienFlora"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7881,12 +7881,12 @@
     "dataName": "Project_Strategic_Imperative",
     "friendlyName": "Strategic Imperative",
     "techCategory": "MilitaryScience",
-    "researchCost": 3413,
+    "researchCost": 4949,
     "prereqs": [
       "PhasedArrayLasers"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7969,12 +7969,12 @@
     "dataName": "Project_ChronoGenesis",
     "friendlyName": "ChronoGenesis",
     "techCategory": "SpaceScience",
-    "researchCost": 33510,
+    "researchCost": 43563,
     "prereqs": [
       "MagneticNozzles"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -8431,12 +8431,12 @@
     "dataName": "Project_Vitality_Bloom",
     "friendlyName": "Vitality Bloom",
     "techCategory": "InformationScience",
-    "researchCost": 1093,
+    "researchCost": 1476,
     "prereqs": [
       "Project_TheirOperations"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -8475,12 +8475,12 @@
     "dataName": "Project_Decay_Mitigation",
     "friendlyName": "Decay Mitigation",
     "techCategory": "LifeScience",
-    "researchCost": 13150,
+    "researchCost": 18410,
     "prereqs": [
       "Project_CovertOperations"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -8607,12 +8607,12 @@
     "dataName": "Project_Chronos_Bloom",
     "friendlyName": "Chronos Bloom",
     "techCategory": "SpaceScience",
-    "researchCost": 2726,
+    "researchCost": 3408,
     "prereqs": [
       "Project_MoltenCoreFissionReactorII"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -8629,12 +8629,12 @@
     "dataName": "Project_Prolonged_Bloom",
     "friendlyName": "Prolonged Bloom",
     "techCategory": "SocialScience",
-    "researchCost": 12518,
+    "researchCost": 16273,
     "prereqs": [
       "Project_EndofAmerica"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -9157,12 +9157,12 @@
     "dataName": "Project_Strategic_Reserves",
     "friendlyName": "Strategic Reserves",
     "techCategory": "Energy",
-    "researchCost": 21359,
+    "researchCost": 35242,
     "prereqs": [
       "SolidCoreFissionSystems"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -9663,12 +9663,12 @@
     "dataName": "Project_Salvage_Mandate",
     "friendlyName": "Salvage Mandate",
     "techCategory": "Materials",
-    "researchCost": 1649,
+    "researchCost": 2721,
     "prereqs": [
       "DirectedSpaceResearch"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -9927,12 +9927,12 @@
     "dataName": "Project_Citizen_s_Dividend",
     "friendlyName": "Citizen's Dividend",
     "techCategory": "Energy",
-    "researchCost": 34025,
+    "researchCost": 44232,
     "prereqs": [
       "AntimatterMassProduction"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10059,12 +10059,12 @@
     "dataName": "Project_Strategic_Mobilization",
     "friendlyName": "Strategic Mobilization",
     "techCategory": "SocialScience",
-    "researchCost": 3733,
+    "researchCost": 5189,
     "prereqs": [
       "ArrivalInternationalRelations"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10081,12 +10081,12 @@
     "dataName": "Project_Rapid_Mobilization",
     "friendlyName": "Rapid Mobilization",
     "techCategory": "Materials",
-    "researchCost": 3060,
+    "researchCost": 4131,
     "prereqs": [
       "ArrivalInternationalDevelopment"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10257,12 +10257,12 @@
     "dataName": "Project_Deployment_Protocols",
     "friendlyName": "Deployment Protocols",
     "techCategory": "SpaceScience",
-    "researchCost": 1661,
+    "researchCost": 2575,
     "prereqs": [
       "Project_SolidCoreFissionReactorII"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10411,12 +10411,12 @@
     "dataName": "Project_Social_Fracture",
     "friendlyName": "Social Fracture",
     "techCategory": "SocialScience",
-    "researchCost": 1597,
+    "researchCost": 2316,
     "prereqs": [
       "SpaceResearch"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10521,12 +10521,12 @@
     "dataName": "Project_Suppressor_Fields",
     "friendlyName": "Suppressor Fields",
     "techCategory": "SpaceScience",
-    "researchCost": 2748,
+    "researchCost": 4809,
     "prereqs": [
       "FissionPulseDrives"
     ],
     "effects": [
-      "Effect_OppressionPriority05"
+      "Effect_OppressionPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10609,12 +10609,12 @@
     "dataName": "Project_Strategic_Reserve",
     "friendlyName": "Strategic Reserve",
     "techCategory": "SocialScience",
-    "researchCost": 3003,
+    "researchCost": 4264,
     "prereqs": [
       "UnityMovements"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -10961,12 +10961,12 @@
     "dataName": "Project_Civic_Accordance",
     "friendlyName": "Civic Accordance",
     "techCategory": "Energy",
-    "researchCost": 10945,
+    "researchCost": 13681,
     "prereqs": [
       "Project_GasCoreFissionReactorV"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -11225,12 +11225,12 @@
     "dataName": "Project_Rapid_Deployment",
     "friendlyName": "Rapid Deployment",
     "techCategory": "Materials",
-    "researchCost": 411,
+    "researchCost": 514,
     "prereqs": [
       "Project_FuelCellII"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -11445,12 +11445,12 @@
     "dataName": "Project_Administrative_Efficiency",
     "friendlyName": "Administrative Efficiency",
     "techCategory": "MilitaryScience",
-    "researchCost": 6143,
+    "researchCost": 8293,
     "prereqs": [
       "VisibleCombatLasers"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -11533,12 +11533,12 @@
     "dataName": "Project_Chronal_Resilience",
     "friendlyName": "Chronal Resilience",
     "techCategory": "Energy",
-    "researchCost": 4030,
+    "researchCost": 5038,
     "prereqs": [
       "OrbitalShipbuilding"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -11643,12 +11643,12 @@
     "dataName": "Project_Compliance_Engines",
     "friendlyName": "Compliance Engines",
     "techCategory": "Energy",
-    "researchCost": 1289,
+    "researchCost": 2191,
     "prereqs": [
       "Project_SolidCoreFissionReactorIX"
     ],
     "effects": [
-      "Effect_OppressionPriority05"
+      "Effect_OppressionPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -11797,12 +11797,12 @@
     "dataName": "Project_Reinforcement_Protocols",
     "friendlyName": "Reinforcement Protocols",
     "techCategory": "Materials",
-    "researchCost": 6702,
+    "researchCost": 10053,
     "prereqs": [
       "Project_ExoticHybridSystems"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12061,12 +12061,12 @@
     "dataName": "Project_Mobilization_Hub",
     "friendlyName": "Mobilization Hub",
     "techCategory": "LifeScience",
-    "researchCost": 2127,
+    "researchCost": 2978,
     "prereqs": [
       "ArrivalInternationalDevelopment"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12303,12 +12303,12 @@
     "dataName": "Project_Social_Harmony",
     "friendlyName": "Social Harmony",
     "techCategory": "Xenology",
-    "researchCost": 28602,
+    "researchCost": 50054,
     "prereqs": [
       "WhiteCollarAutomation"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12325,12 +12325,12 @@
     "dataName": "Project_Legion_s_Advance",
     "friendlyName": "Legion's Advance",
     "techCategory": "Xenology",
-    "researchCost": 37281,
+    "researchCost": 65242,
     "prereqs": [
       "QuantumComputing"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12589,12 +12589,12 @@
     "dataName": "Project_Legionary_Focus",
     "friendlyName": "Legionary Focus",
     "techCategory": "MilitaryScience",
-    "researchCost": 6166,
+    "researchCost": 8632,
     "prereqs": [
       "Project_PatrolVessels"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12787,12 +12787,12 @@
     "dataName": "Project_War_Effort_Focus",
     "friendlyName": "War Effort Focus",
     "techCategory": "MilitaryScience",
-    "researchCost": 656,
+    "researchCost": 794,
     "prereqs": [
       "WeAreNotAlone"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12831,12 +12831,12 @@
     "dataName": "Project_Citizen_s_Uplift",
     "friendlyName": "Citizen's Uplift",
     "techCategory": "Materials",
-    "researchCost": 13262,
+    "researchCost": 21219,
     "prereqs": [
       "Project_MegafaunaNecropsy"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12941,12 +12941,12 @@
     "dataName": "Project_Warforged_Refinement",
     "friendlyName": "Warforged Refinement",
     "techCategory": "Materials",
-    "researchCost": 2809,
+    "researchCost": 3989,
     "prereqs": [
       "ArrivalInternationalDevelopment"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -12963,12 +12963,12 @@
     "dataName": "Project_Civic_Catalyst",
     "friendlyName": "Civic Catalyst",
     "techCategory": "MilitaryScience",
-    "researchCost": 5530,
+    "researchCost": 7189,
     "prereqs": [
       "MilitarizationofSpace"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -13029,12 +13029,12 @@
     "dataName": "Project_Civic_Advancement",
     "friendlyName": "Civic Advancement",
     "techCategory": "SocialScience",
-    "researchCost": 1157,
+    "researchCost": 1504,
     "prereqs": [
       "UnityMovements"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -13535,12 +13535,12 @@
     "dataName": "Project_Expeditionary_Mandate",
     "friendlyName": "Expeditionary Mandate",
     "techCategory": "SocialScience",
-    "researchCost": 14925,
+    "researchCost": 19402,
     "prereqs": [
       "GreatNations"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -13667,12 +13667,12 @@
     "dataName": "Project_Salvage_Directive",
     "friendlyName": "Salvage Directive",
     "techCategory": "Materials",
-    "researchCost": 3460,
+    "researchCost": 5363,
     "prereqs": [
       "OrbitalShipbuilding"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -13777,12 +13777,12 @@
     "dataName": "Project_Longevity_Protocols",
     "friendlyName": "Longevity Protocols",
     "techCategory": "SocialScience",
-    "researchCost": 28637,
+    "researchCost": 50115,
     "prereqs": [
       "GreatNations"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -13865,12 +13865,12 @@
     "dataName": "Project_Command_Nexus",
     "friendlyName": "Command Nexus",
     "techCategory": "InformationScience",
-    "researchCost": 1402,
+    "researchCost": 2033,
     "prereqs": [
       "Project_ECM2"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -14107,12 +14107,12 @@
     "dataName": "Project_Public_Works_Initiative",
     "friendlyName": "Public Works Initiative",
     "techCategory": "Energy",
-    "researchCost": 7281,
+    "researchCost": 9829,
     "prereqs": [
       "Project_ElectrostaticConfinementFusionReactorI"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -14833,12 +14833,12 @@
     "dataName": "Project_Citizen_s_Ascent",
     "friendlyName": "Citizen's Ascent",
     "techCategory": "SpaceScience",
-    "researchCost": 1884,
+    "researchCost": 3203,
     "prereqs": [
       "Project_MoltenCoreFissionReactorI"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -15361,12 +15361,12 @@
     "dataName": "Project_Scavenger_s_Focus",
     "friendlyName": "Scavenger's Focus",
     "techCategory": "Energy",
-    "researchCost": 2031,
+    "researchCost": 3453,
     "prereqs": [
       "CarbonNanotubes"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -15757,12 +15757,12 @@
     "dataName": "Project_Warfleet_Focus",
     "friendlyName": "Warfleet Focus",
     "techCategory": "Materials",
-    "researchCost": 3800,
+    "researchCost": 4484,
     "prereqs": [
       "Project_ExoticHybridSystems"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -15845,12 +15845,12 @@
     "dataName": "Project_Subjugation_Matrix",
     "friendlyName": "Subjugation Matrix",
     "techCategory": "Energy",
-    "researchCost": 20099,
+    "researchCost": 27134,
     "prereqs": [
       "DeuteriumHelium3Fusion"
     ],
     "effects": [
-      "Effect_OppressionPriority05"
+      "Effect_OppressionPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -16175,12 +16175,12 @@
     "dataName": "Project_Fleet_Command",
     "friendlyName": "Fleet Command",
     "techCategory": "Materials",
-    "researchCost": 3359,
+    "researchCost": 4669,
     "prereqs": [
       "Diamondoids"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -16483,12 +16483,12 @@
     "dataName": "Project_Public_Mandate",
     "friendlyName": "Public Mandate",
     "techCategory": "SocialScience",
-    "researchCost": 555,
+    "researchCost": 777,
     "prereqs": [
       "ArrivalMassCommunications"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -16527,12 +16527,12 @@
     "dataName": "Project_Mobilization_Mandate",
     "friendlyName": "Mobilization Mandate",
     "techCategory": "SocialScience",
-    "researchCost": 563,
+    "researchCost": 844,
     "prereqs": [
       "IndependenceMovements"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -17209,12 +17209,12 @@
     "dataName": "Project_Strategic_Assessment",
     "friendlyName": "Strategic Assessment",
     "techCategory": "SpaceScience",
-    "researchCost": 3878,
+    "researchCost": 5041,
     "prereqs": [
       "Project_SettlementMiningComplex"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -17253,12 +17253,12 @@
     "dataName": "Project_Salvage_Dividend",
     "friendlyName": "Salvage Dividend",
     "techCategory": "MilitaryScience",
-    "researchCost": 733,
+    "researchCost": 1173,
     "prereqs": [
       "InfraredCombatLasers"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -17561,12 +17561,12 @@
     "dataName": "Project_Prolonged_Vitality",
     "friendlyName": "Prolonged Vitality",
     "techCategory": "SocialScience",
-    "researchCost": 36311,
+    "researchCost": 56282,
     "prereqs": [
       "ArrivalGovernance"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -17891,12 +17891,12 @@
     "dataName": "Project_Sustained_Vitality",
     "friendlyName": "Sustained Vitality",
     "techCategory": "SpaceScience",
-    "researchCost": 5652,
+    "researchCost": 9891,
     "prereqs": [
       "Project_LarsDrive"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -18661,12 +18661,12 @@
     "dataName": "Project_Expeditionary_Logistics",
     "friendlyName": "Expeditionary Logistics",
     "techCategory": "MilitaryScience",
-    "researchCost": 391,
+    "researchCost": 567,
     "prereqs": [
       "MilitarizationofSpace"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -18837,12 +18837,12 @@
     "dataName": "Project_Bio_Convergence",
     "friendlyName": "Bio-Convergence",
     "techCategory": "Xenology",
-    "researchCost": 59152,
+    "researchCost": 76898,
     "prereqs": [
       "Project_MegafaunaNecropsy"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19013,12 +19013,12 @@
     "dataName": "Project_Diplomatic_Mandate",
     "friendlyName": "Diplomatic Mandate",
     "techCategory": "Xenology",
-    "researchCost": 28438,
+    "researchCost": 36969,
     "prereqs": [
       "NetworkedGlobalDefense"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19189,12 +19189,12 @@
     "dataName": "Project_Assembly_Line",
     "friendlyName": "Assembly Line",
     "techCategory": "LifeScience",
-    "researchCost": 4337,
+    "researchCost": 6289,
     "prereqs": [
       "InterplanetaryPolities"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19409,12 +19409,12 @@
     "dataName": "Project_Warpath_Augmentation",
     "friendlyName": "Warpath Augmentation",
     "techCategory": "MilitaryScience",
-    "researchCost": 2714,
+    "researchCost": 3284,
     "prereqs": [
       "AdvancedAtomicManipulation"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19717,12 +19717,12 @@
     "dataName": "Project_Galactic_Ore_Harvest",
     "friendlyName": "Galactic Ore Harvest",
     "techCategory": "InformationScience",
-    "researchCost": 12828,
+    "researchCost": 19242,
     "prereqs": [
       "QuantumComputing"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19739,12 +19739,12 @@
     "dataName": "Project_Galactic_Excavation",
     "friendlyName": "Galactic Excavation",
     "techCategory": "SocialScience",
-    "researchCost": 1185,
+    "researchCost": 1683,
     "prereqs": [
       "ArrivalDomesticPolitics"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19981,12 +19981,12 @@
     "dataName": "Project_Efficient_Volatile_Extraction",
     "friendlyName": "Efficient Volatile Extraction",
     "techCategory": "Materials",
-    "researchCost": 3349,
+    "researchCost": 4521,
     "prereqs": [
       "ArrivalInternationalDevelopment"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20047,12 +20047,12 @@
     "dataName": "Project_Volatile_Vortex",
     "friendlyName": "Volatile Vortex",
     "techCategory": "MilitaryScience",
-    "researchCost": 1164,
+    "researchCost": 1804,
     "prereqs": [
       "Project_PointDefenseArray"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20069,12 +20069,12 @@
     "dataName": "Project_Strategic_Surge",
     "friendlyName": "Strategic Surge",
     "techCategory": "Materials",
-    "researchCost": 879,
+    "researchCost": 1248,
     "prereqs": [
       "Project_MolecularBenefication"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20135,12 +20135,12 @@
     "dataName": "Project_Vitae_Boost",
     "friendlyName": "Vitae Boost",
     "techCategory": "Energy",
-    "researchCost": 595,
+    "researchCost": 744,
     "prereqs": [
       "NuclearFissioninSpace"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20267,12 +20267,12 @@
     "dataName": "Project_Strategic_Restraint_Initiative",
     "friendlyName": "Strategic Restraint Initiative",
     "techCategory": "SocialScience",
-    "researchCost": 3287,
+    "researchCost": 3780,
     "prereqs": [
       "ArrivalSecurity"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20575,12 +20575,12 @@
     "dataName": "Project_Soldier_Surge",
     "friendlyName": "Soldier Surge",
     "techCategory": "InformationScience",
-    "researchCost": 18498,
+    "researchCost": 24047,
     "prereqs": [
       "Project_NeuralEngineering"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20773,12 +20773,12 @@
     "dataName": "Project_Galactic_Defense_Accelerator",
     "friendlyName": "Galactic Defense Accelerator",
     "techCategory": "SpaceScience",
-    "researchCost": 896,
+    "researchCost": 1245,
     "prereqs": [
       "MagneticNozzles"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20839,12 +20839,12 @@
     "dataName": "Project_Advanced_Warhead_Design",
     "friendlyName": "Advanced Warhead Design",
     "techCategory": "MilitaryScience",
-    "researchCost": 1387,
+    "researchCost": 1637,
     "prereqs": [
       "Project_CryogenicLiquid-FuelRockets"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20949,12 +20949,12 @@
     "dataName": "Project_Community_Wellbeing_Enhancer",
     "friendlyName": "Community Wellbeing Enhancer",
     "techCategory": "SocialScience",
-    "researchCost": 644,
+    "researchCost": 1030,
     "prereqs": [
       "ArrivalSociology"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21015,12 +21015,12 @@
     "dataName": "Project_Advanced_Recruitment_Protocol",
     "friendlyName": "Advanced Recruitment Protocol",
     "techCategory": "Energy",
-    "researchCost": 7012,
+    "researchCost": 11219,
     "prereqs": [
       "Tokamaks"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21081,12 +21081,12 @@
     "dataName": "Project_Extended_Life_Projections",
     "friendlyName": "Extended Life Projections",
     "techCategory": "MilitaryScience",
-    "researchCost": 438,
+    "researchCost": 745,
     "prereqs": [
       "Project_Magazine"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21103,12 +21103,12 @@
     "dataName": "Project_Tactical_Swarm_Deployment",
     "friendlyName": "Tactical Swarm Deployment",
     "techCategory": "MilitaryScience",
-    "researchCost": 5713,
+    "researchCost": 8284,
     "prereqs": [
       "Project_TheirRobotics"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21213,12 +21213,12 @@
     "dataName": "Project_Nebula_Defense_Initiative",
     "friendlyName": "Nebula Defense Initiative",
     "techCategory": "Energy",
-    "researchCost": 852,
+    "researchCost": 1031,
     "prereqs": [
       "Project_SolidCoreFissionReactorIV"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21455,12 +21455,12 @@
     "dataName": "Project_Armada_Accelerator",
     "friendlyName": "Armada Accelerator",
     "techCategory": "SpaceScience",
-    "researchCost": 298,
+    "researchCost": 477,
     "prereqs": [
       "ElectromagneticPropulsion"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21587,12 +21587,12 @@
     "dataName": "Project_Galactic_Recruitment_Drive",
     "friendlyName": "Galactic Recruitment Drive",
     "techCategory": "Xenology",
-    "researchCost": 30741,
+    "researchCost": 43037,
     "prereqs": [
       "QuantumComputing"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22093,12 +22093,12 @@
     "dataName": "Project_Army_Priority_Shift",
     "friendlyName": "Army Priority Shift",
     "techCategory": "Materials",
-    "researchCost": 2139,
+    "researchCost": 2674,
     "prereqs": [
       "DirectedSpaceResearch"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22247,12 +22247,12 @@
     "dataName": "Project_Galactic_Defense_Initiative",
     "friendlyName": "Galactic Defense Initiative",
     "techCategory": "Materials",
-    "researchCost": 2972,
+    "researchCost": 3774,
     "prereqs": [
       "Superalloys"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22423,12 +22423,12 @@
     "dataName": "Project_Volatile_Extraction_Enhancement",
     "friendlyName": "Volatile Extraction Enhancement",
     "techCategory": "InformationScience",
-    "researchCost": 1209,
+    "researchCost": 1753,
     "prereqs": [
       "AppliedArtificialIntelligence"
     ],
     "effects": [
-      "Effect_OppressionPriority05"
+      "Effect_OppressionPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22445,12 +22445,12 @@
     "dataName": "Project_Military_Vanguard",
     "friendlyName": "Military Vanguard",
     "techCategory": "SocialScience",
-    "researchCost": 684,
+    "researchCost": 1094,
     "prereqs": [
       "IndependenceMovements"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22643,12 +22643,12 @@
     "dataName": "Project_Galactic_Legion_Foundry",
     "friendlyName": "Galactic Legion Foundry",
     "techCategory": "SpaceScience",
-    "researchCost": 2813,
+    "researchCost": 4782,
     "prereqs": [
       "ArcLasers"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22885,12 +22885,12 @@
     "dataName": "Project_Tyrant_s_Grip",
     "friendlyName": "Tyrant's Grip",
     "techCategory": "Materials",
-    "researchCost": 29213,
+    "researchCost": 48201,
     "prereqs": [
       "Project_RingCore"
     ],
     "effects": [
-      "Effect_OppressionPriority05"
+      "Effect_OppressionPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22929,12 +22929,12 @@
     "dataName": "Project_Advanced_War_Machine",
     "friendlyName": "Advanced War Machine",
     "techCategory": "MilitaryScience",
-    "researchCost": 1310,
+    "researchCost": 1585,
     "prereqs": [
       "SpaceAssaultDoctrine"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -23215,12 +23215,12 @@
     "dataName": "Project_Galactic_Infantry_Initiative",
     "friendlyName": "Galactic Infantry Initiative",
     "techCategory": "SocialScience",
-    "researchCost": 71858,
+    "researchCost": 111380,
     "prereqs": [
       "GreatNations"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -23457,12 +23457,12 @@
     "dataName": "Project_Cosmic_Vein_Tap",
     "friendlyName": "Cosmic Vein Tap",
     "techCategory": "Xenology",
-    "researchCost": 12981,
+    "researchCost": 19472,
     "prereqs": [
       "Project_AlienFlora"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -23523,12 +23523,12 @@
     "dataName": "Project_Government_Priority_Boost",
     "friendlyName": "Government Priority Boost",
     "techCategory": "Materials",
-    "researchCost": 3505,
+    "researchCost": 5608,
     "prereqs": [
       "ArrivalInternationalDevelopment"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -23677,12 +23677,12 @@
     "dataName": "Project_ChemicalAntiAgingAgents",
     "friendlyName": "Chemical Anti Aging Agents",
     "techCategory": "Energy",
-    "researchCost": 687,
+    "researchCost": 893,
     "prereqs": [
       "AdvancedChemicalRocketry"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -23787,12 +23787,12 @@
     "dataName": "Project_Armed_Expansion",
     "friendlyName": "Armed Expansion",
     "techCategory": "SocialScience",
-    "researchCost": 7340,
+    "researchCost": 9542,
     "prereqs": [
       "UnityMovements"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -24161,12 +24161,12 @@
     "dataName": "Project_Social_Harmony_Initiative",
     "friendlyName": "Social Harmony Initiative",
     "techCategory": "SocialScience",
-    "researchCost": 14006,
+    "researchCost": 21709,
     "prereqs": [
       "UnityMovements"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -24227,12 +24227,12 @@
     "dataName": "Project_Vitae_Prolongation",
     "friendlyName": "Vitae Prolongation",
     "techCategory": "InformationScience",
-    "researchCost": 221,
+    "researchCost": 354,
     "prereqs": [
       "Project_AutomatedPlatformCore"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -24337,12 +24337,12 @@
     "dataName": "Project_Strategic_Deployment_Accelerator",
     "friendlyName": "Strategic Deployment Accelerator",
     "techCategory": "MilitaryScience",
-    "researchCost": 822,
+    "researchCost": 1192,
     "prereqs": [
       "MagneticPlasmaConfinementTechniques"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -24535,12 +24535,12 @@
     "dataName": "Project_Efficient_Volatile_Harvest",
     "friendlyName": "Efficient Volatile Harvest",
     "techCategory": "SocialScience",
-    "researchCost": 3551,
+    "researchCost": 5504,
     "prereqs": [
       "UnityMovements"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25085,12 +25085,12 @@
     "dataName": "Project_Longevity_Enhancement_Array",
     "friendlyName": "Longevity Enhancement Array",
     "techCategory": "Energy",
-    "researchCost": 1229,
+    "researchCost": 1659,
     "prereqs": [
       "Project_FissionPile"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25173,12 +25173,12 @@
     "dataName": "Project_Galactic_Prospector_s_Boon",
     "friendlyName": "Galactic Prospector's Boon",
     "techCategory": "SocialScience",
-    "researchCost": 3074,
+    "researchCost": 3535,
     "prereqs": [
       "ArrivalSecurity"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25679,12 +25679,12 @@
     "dataName": "Project_Galactic_Defense_Enhancer",
     "friendlyName": "Galactic Defense Enhancer",
     "techCategory": "SpaceScience",
-    "researchCost": 2541,
+    "researchCost": 3227,
     "prereqs": [
       "Project_GasCoreFissionReactorIII"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25852,8 +25852,8 @@
     "maxUnlockChance": 92
   },
   {
-    "dataName": "Project_Galactic_Prosper맹",
-    "friendlyName": "Galactic Prosper맹",
+    "dataName": "Project_Galactic_Prosper",
+    "friendlyName": "Galactic Prosper",
     "techCategory": "InformationScience",
     "researchCost": 4356,
     "prereqs": [
@@ -25899,12 +25899,12 @@
     "dataName": "Project_Army_Forerunner",
     "friendlyName": "Army Forerunner",
     "techCategory": "MilitaryScience",
-    "researchCost": 5549,
+    "researchCost": 6936,
     "prereqs": [
       "VisibleCombatLasers"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -26119,12 +26119,12 @@
     "dataName": "Project_Army_Expansion",
     "friendlyName": "Army Expansion",
     "techCategory": "MilitaryScience",
-    "researchCost": 7130,
+    "researchCost": 8912,
     "prereqs": [
       "TerrestrialMilitaryScience"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -26185,12 +26185,12 @@
     "dataName": "Project_Military_Expansion_Initiative",
     "friendlyName": "Military Expansion Initiative",
     "techCategory": "SocialScience",
-    "researchCost": 25269,
+    "researchCost": 32850,
     "prereqs": [
       "UnityMovements"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -26251,12 +26251,12 @@
     "dataName": "Project_Harmonic_Ascendancy",
     "friendlyName": "Harmonic Ascendancy",
     "techCategory": "Xenology",
-    "researchCost": 114690,
+    "researchCost": 189238,
     "prereqs": [
       "Project_TheirDemands"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -26427,12 +26427,12 @@
     "dataName": "Project_Tactical_Mobilization_Accelerator",
     "friendlyName": "Tactical Mobilization Accelerator",
     "techCategory": "MilitaryScience",
-    "researchCost": 5683,
+    "researchCost": 8809,
     "prereqs": [
       "TerrestrialMilitaryScience"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -26449,12 +26449,12 @@
     "dataName": "Project_Iron_Starfall_Doctrine",
     "friendlyName": "Iron Starfall Doctrine",
     "techCategory": "SpaceScience",
-    "researchCost": 1981,
+    "researchCost": 2813,
     "prereqs": [
       "Project_InertialConfinementFusionReactorII"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -26645,7 +26645,7 @@
   },
   {
     "dataName": "Project_Sentinel_s_Bounty",
-    "friendlyName": "Sentinel’s Bounty",
+    "friendlyName": "Sentinel\u2019s Bounty",
     "techCategory": "MilitaryScience",
     "researchCost": 2247,
     "prereqs": [
@@ -26713,12 +26713,12 @@
     "dataName": "Project_Tactical_Ascendancy_Protocol",
     "friendlyName": "Tactical Ascendancy Protocol",
     "techCategory": "Xenology",
-    "researchCost": 1287,
+    "researchCost": 1480,
     "prereqs": [
       "IndustrializationofSpace"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27043,12 +27043,12 @@
     "dataName": "Project_Ironclad_Mobilization",
     "friendlyName": "Ironclad Mobilization",
     "techCategory": "MilitaryScience",
-    "researchCost": 7127,
+    "researchCost": 8909,
     "prereqs": [
       "WhiteCollarAutomation"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27109,12 +27109,12 @@
     "dataName": "Project_Nebula_Tides",
     "friendlyName": "Nebula Tides",
     "techCategory": "SocialScience",
-    "researchCost": 619,
+    "researchCost": 1021,
     "prereqs": [
       "WeAreNotAlone"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27241,12 +27241,12 @@
     "dataName": "Project_Iron_Fist_Ascendancy",
     "friendlyName": "Iron Fist Ascendancy",
     "techCategory": "SocialScience",
-    "researchCost": 6164,
+    "researchCost": 8938,
     "prereqs": [
       "FallofEmpires"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27285,12 +27285,12 @@
     "dataName": "Project_Nebula_Forge",
     "friendlyName": "Nebula Forge",
     "techCategory": "LifeScience",
-    "researchCost": 347,
+    "researchCost": 451,
     "prereqs": [
       "Project_Farm"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27505,12 +27505,12 @@
     "dataName": "Project_Strategic_Attrition_Protocol",
     "friendlyName": "Strategic Attrition Protocol",
     "techCategory": "SocialScience",
-    "researchCost": 8446,
+    "researchCost": 14358,
     "prereqs": [
       "ArrivalLaw"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27527,12 +27527,12 @@
     "dataName": "Project_Ironclad_Ascendancy",
     "friendlyName": "Ironclad Ascendancy",
     "techCategory": "SpaceScience",
-    "researchCost": 2173,
+    "researchCost": 2695,
     "prereqs": [
       "Project_PebbleDrive"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27549,12 +27549,12 @@
     "dataName": "Project_Iron_Fist_Nexus",
     "friendlyName": "Iron Fist Nexus",
     "techCategory": "Materials",
-    "researchCost": 17898,
+    "researchCost": 23267,
     "prereqs": [
       "MolecularAssemblers"
     ],
     "effects": [
-      "Effect_OppressionPriority05"
+      "Effect_OppressionPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27725,12 +27725,12 @@
     "dataName": "Project_Eternal_Vanguard",
     "friendlyName": "Eternal Vanguard",
     "techCategory": "MilitaryScience",
-    "researchCost": 5405,
+    "researchCost": 7026,
     "prereqs": [
       "Project_LayeredDefenseArray"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -27813,12 +27813,12 @@
     "dataName": "Project_Harmonic_Prosperity_Initiative",
     "friendlyName": "Harmonic Prosperity Initiative",
     "techCategory": "Energy",
-    "researchCost": 11650,
+    "researchCost": 18058,
     "prereqs": [
       "Ultracapacitors"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28033,12 +28033,12 @@
     "dataName": "Project_Nexus_Longevity_Protocol",
     "friendlyName": "Nexus Longevity Protocol",
     "techCategory": "MilitaryScience",
-    "researchCost": 681,
+    "researchCost": 885,
     "prereqs": [
       "Project_Warships"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28187,12 +28187,12 @@
     "dataName": "Project_Iron_Will_Forge",
     "friendlyName": "Iron Will Forge",
     "techCategory": "Materials",
-    "researchCost": 6954,
+    "researchCost": 10779,
     "prereqs": [
       "ImprovedShipbuildingTechniques"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28363,12 +28363,12 @@
     "dataName": "Project_Tactical_Mobilization_Forge",
     "friendlyName": "Tactical Mobilization Forge",
     "techCategory": "Energy",
-    "researchCost": 3929,
+    "researchCost": 6483,
     "prereqs": [
       "Project_RingCore"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28385,12 +28385,12 @@
     "dataName": "Project_Celestial_Sovereignty",
     "friendlyName": "Celestial Sovereignty",
     "techCategory": "SocialScience",
-    "researchCost": 1842,
+    "researchCost": 2487,
     "prereqs": [
       "AdvancedMagnetics"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28649,12 +28649,12 @@
     "dataName": "Project_Nexus_Vitae",
     "friendlyName": "Nexus Vitae",
     "techCategory": "MilitaryScience",
-    "researchCost": 7319,
+    "researchCost": 12076,
     "prereqs": [
       "SpaceNavies"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28781,12 +28781,12 @@
     "dataName": "Project_Nexus_Vitae_Extension",
     "friendlyName": "Nexus Vitae Extension",
     "techCategory": "Energy",
-    "researchCost": 128614,
+    "researchCost": 180060,
     "prereqs": [
       "ProtonProtonFusion"
     ],
     "effects": [
-      "Effect_LifeExtension05"
+      "Effect_LifeExtension10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28825,12 +28825,12 @@
     "dataName": "Project_Garrison_Veil",
     "friendlyName": "Garrison Veil",
     "techCategory": "SpaceScience",
-    "researchCost": 960,
+    "researchCost": 1363,
     "prereqs": [
       "Project_NervaDrive"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28847,12 +28847,12 @@
     "dataName": "Project_Nebula_Blight",
     "friendlyName": "Nebula Blight",
     "techCategory": "LifeScience",
-    "researchCost": 2050,
+    "researchCost": 2972,
     "prereqs": [
       "Project_ClimateLab"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -28869,12 +28869,12 @@
     "dataName": "Project_Tactical_Ascendancy_Forge",
     "friendlyName": "Tactical Ascendancy Forge",
     "techCategory": "MilitaryScience",
-    "researchCost": 1672,
+    "researchCost": 2224,
     "prereqs": [
       "Project_MilitaryScienceLab"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -29045,12 +29045,12 @@
     "dataName": "Project_Tactical_Mobilization",
     "friendlyName": "Tactical Mobilization",
     "techCategory": "SocialScience",
-    "researchCost": 1791,
+    "researchCost": 2866,
     "prereqs": [
       "QuantumEncryption"
     ],
     "effects": [
-      "Effect_BuildArmyPriorityBonus05"
+      "Effect_BuildArmyPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -29155,12 +29155,12 @@
     "dataName": "Project_Tactical_Attrition_Protocol",
     "friendlyName": "Tactical Attrition Protocol",
     "techCategory": "SocialScience",
-    "researchCost": 1685,
+    "researchCost": 1938,
     "prereqs": [
       "Project_TheirOperations"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -29243,12 +29243,12 @@
     "dataName": "Project_Harmony_Ascendant",
     "friendlyName": "Harmony Ascendant",
     "techCategory": "Xenology",
-    "researchCost": 31379,
+    "researchCost": 45500,
     "prereqs": [
       "Project_TheChokePoint"
     ],
     "effects": [
-      "Effect_WelfarePriorityBonus05"
+      "Effect_WelfarePriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -29593,7 +29593,7 @@
   },
   {
     "dataName": "Project_Scholar_s_Ascendancy",
-    "friendlyName": "Scholar’s Ascendancy",
+    "friendlyName": "Scholar's Ascendancy",
     "techCategory": "MilitaryScience",
     "researchCost": 5643,
     "prereqs": [
@@ -29661,12 +29661,12 @@
     "dataName": "Project_Civic_Harmonization",
     "friendlyName": "Civic Harmonization",
     "techCategory": "MilitaryScience",
-    "researchCost": 14321,
+    "researchCost": 19333,
     "prereqs": [
       "Project_PlasmaBatteryMk2"
     ],
     "effects": [
-      "Effect_GovernmentPriority05"
+      "Effect_GovernmentPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -29903,12 +29903,12 @@
     "dataName": "Project_Fleet_Mobilization_Protocols",
     "friendlyName": "Fleet Mobilization Protocols",
     "techCategory": "Energy",
-    "researchCost": 913,
+    "researchCost": 1160,
     "prereqs": [
       "Diamondoids"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -29969,12 +29969,12 @@
     "dataName": "Project_Xenological_Control_Matrix",
     "friendlyName": "Xenological Control Matrix",
     "techCategory": "Xenology",
-    "researchCost": 6954,
+    "researchCost": 12170,
     "prereqs": [
       "Project_TheirOperations"
     ],
     "effects": [
-      "Effect_OppressionPriority05"
+      "Effect_OppressionPriority10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -30277,12 +30277,12 @@
     "dataName": "Project_Fleet_Command_Priority",
     "friendlyName": "Fleet Command Priority",
     "techCategory": "MilitaryScience",
-    "researchCost": 2357,
+    "researchCost": 2781,
     "prereqs": [
       "Project_SolidCoreFissionReactorIX"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -30409,12 +30409,12 @@
     "dataName": "Project_Warfront_Logistics",
     "friendlyName": "Warfront Logistics",
     "techCategory": "MilitaryScience",
-    "researchCost": 2945,
+    "researchCost": 3828,
     "prereqs": [
       "PhasedArrayLasers"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus02"
+      "Effect_MilitaryPriorityBonus05"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,

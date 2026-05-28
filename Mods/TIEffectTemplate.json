@@ -916,7 +916,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Water_T6",
     "operation": "Additive",
-    "value": 0.20,
+    "value": 0.2,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -940,7 +940,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Volatiles_T6",
     "operation": "Additive",
-    "value": 0.20,
+    "value": 0.2,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -964,7 +964,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Metals_T6",
     "operation": "Additive",
-    "value": 0.20,
+    "value": 0.2,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -988,7 +988,7 @@
   {
     "dataName": "Effect_ExtractionCascade_NobleMetals_T6",
     "operation": "Additive",
-    "value": 0.20,
+    "value": 0.2,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -1012,7 +1012,7 @@
   {
     "dataName": "Effect_ExtractionCascade_Fissiles_T6",
     "operation": "Additive",
-    "value": 0.20,
+    "value": 0.2,
     "effectTarget": "SourceFaction",
     "effectDuration": "permanent",
     "stackable": true,
@@ -1044,5 +1044,53 @@
     "effectTarget": "AllNations",
     "effectDuration": "instant",
     "duration_months": -1
+  },
+  {
+    "dataName": "Effect_BuildArmyPriorityBonus02",
+    "operation": "Additive",
+    "value": 0.02,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "BuildArmyPriority"
+    ]
+  },
+  {
+    "dataName": "Effect_BuildArmyPriorityBonus10",
+    "operation": "Additive",
+    "value": 0.1,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "BuildArmyPriority"
+    ]
+  },
+  {
+    "dataName": "Effect_WelfarePriorityBonus02",
+    "operation": "Additive",
+    "value": 0.02,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "WelfarePriority"
+    ]
+  },
+  {
+    "dataName": "Effect_WelfarePriorityBonus10",
+    "operation": "Additive",
+    "value": 0.1,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "WelfarePriority"
+    ]
   }
 ]
