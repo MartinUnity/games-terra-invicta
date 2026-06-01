@@ -4,9 +4,10 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
-import config
 from dateutil.relativedelta import relativedelta
 from streamlit_autorefresh import st_autorefresh
+
+import config
 
 # -----------------------------------------------------------------------------
 # 1. CONFIG & SETUP
@@ -82,7 +83,7 @@ with st.sidebar:
     st.header("⚙️ Dashboard Settings")
 
     # Auto-Refresh
-    use_autorefresh = st.checkbox(f"📡 Live Auto-Refresh ({RELOAD_TIMESEC}s)", value=False, key="sidebar_autorefresh")
+    use_autorefresh = st.checkbox(f"📡 Live Auto-Refresh ({RELOAD_TIMESEC}s)", value=True, key="sidebar_autorefresh")
     if use_autorefresh:
         st_autorefresh(interval=RELOAD_TIMESEC * 1000, key="dataframerefresh")
         st.caption(f"✅ Data fetched at: **{datetime.now().strftime('%H:%M:%S')}**")
@@ -118,6 +119,7 @@ with st.sidebar:
         preset = st.radio(
             "Quick Select:",
             ["All Time", "Last 1 Month", "Last 3 Months", "Last 6 Months", "Last 1 Year"],
+            index=1,
             horizontal=True,
             key="date_preset",
         )
@@ -178,11 +180,13 @@ with tab1:
             # Controls
             c_view, c_sort = st.columns(2)
             with c_view:
-                view_mode = st.radio("Metric:", ["Per Capita ($)", "Total GDP ($B)", "Efficiency"], key="gdp_view")
+                view_mode = st.radio(
+                    "Metric:", ["Per Capita ($)", "Total GDP ($B)", "Efficiency"], index=1, key="gdp_view"
+                )
             with c_sort:
                 sort_mode = st.radio("Sort:", ["Value", "Gain ($)", "Growth (%)"], index=1, key="gdp_sort")
 
-            show_delta_only = st.checkbox("Focus on Change", value=False, key="gdp_delta")
+            show_delta_only = st.checkbox("Focus on Change", value=True, key="gdp_delta")
 
             # Data Prep
             gdp_trends = (
@@ -292,9 +296,9 @@ with tab1:
 
             c1, c2 = st.columns(2)
             with c1:
-                show_tiny = st.checkbox("Show Tiny (Cap<=2)", value=False, key="mc_tiny")
+                show_tiny = st.checkbox("Show Tiny (Cap<=2)", value=True, key="mc_tiny")
             with c2:
-                hide_capped = st.checkbox("Hide Capped", value=False, key="mc_hide")
+                hide_capped = st.checkbox("Hide Capped", value=True, key="mc_hide")
 
             mc_subset = latest_snapshot.copy()
             if not show_tiny:
