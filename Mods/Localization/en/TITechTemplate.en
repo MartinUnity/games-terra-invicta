@@ -166,3 +166,5 @@ TITechTemplate.quote.ProtoPlasmaCannon_Model02="With the advent of prototype pla
 <align=right>{submitLeader}<align=left>
 <align=right>James Calhoon, Plasmoid Overlord<align=left>
 TITechTemplate.description.ProtoPlasmaCannon_Model02=By harnessing the power of prototype plasma cannons, we can generate vast amounts of energy in a compact form factor. This technology enables the operation of advanced spacecraft and station systems that were previously impossible due to energy constraints.
+TITechTemplate.displayName.OrbitalTacticalDoctrine=Orbital Tactical Doctrine
+TITechTemplate.summary.OrbitalTacticalDoctrine=Advanced fleet coordination and combat protocols designed to maximize capital ship effectiveness in deep space engagements.

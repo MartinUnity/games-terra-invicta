@@ -37,7 +37,7 @@ Notes
   Kill mid-run safely; resume with the same command.
 - Ship hulls are intentionally excluded (Unity hardpoint mismatch crashes).
 - The AI endpoint may be slow (thinking model, 3-5 t/s). Default timeout
-  is 1800 s. The proxy at ai.skytech.dk handles wake-on-LAN automatically.
+  is 18000 s. The proxy at ai.skytech.dk handles wake-on-LAN automatically.
 """
 
 from __future__ import annotations
@@ -68,9 +68,12 @@ CACHE_FILE = Path(__file__).resolve().parent / ".generate_cache.json"
 # ---------------------------------------------------------------------------
 # AI
 # ---------------------------------------------------------------------------
-DEFAULT_AI_ENDPOINT = "https://ai.skytech.dk/v1"
-DEFAULT_MODEL = "Qwen3.6-27B-Q6_K.gguf"
-DEFAULT_TIMEOUT = 1800  # 30 min — thinking model + WoL wake delay
+DEFAULT_AI_ENDPOINT = "http://192.168.0.197:8000/v1"
+DEFAULT_MODEL = "Qwen3.6-27B-Q4_K_M.gguf"
+
+#DEFAULT_AI_ENDPOINT = "https://ai.skytech.dk/v1"
+#DEFAULT_MODEL = "Qwen3.6-27B-Q6_K.gguf"
+DEFAULT_TIMEOUT = 18000  # 30 min — thinking model + WoL wake delay
 
 # ---------------------------------------------------------------------------
 # Equipment type → file mapping
@@ -592,15 +595,15 @@ def generate_easy(
             f"TIProjectTemplate.summary.{dn}={ai.get('summary', '')}\n"
         )
 
-        # Register name as used
-        game_data.all_mod_names.add(dn)
-
         errs = validate_project(project, game_data)
         warns = [e for e in errs if e.startswith("WARN")]
         errs = [e for e in errs if not e.startswith("WARN")]
         if errs:
             print(f"INVALID: {errs}")
             continue
+
+        # Register name as used only after successful validation
+        game_data.all_mod_names.add(dn)
 
         result = {"project": project, "loc_project": loc_project, "warns": warns}
         cache["easy"][cache_key] = result
@@ -715,18 +718,26 @@ def generate_middle(
 
         prereq_sample = random.sample(prereqs, min(25, len(prereqs)))
         effect_sample = random.sample(effects, min(30, len(effects)))
+        name_hint = _build_name_hint(game_data)
 
-        prompt = _MIDDLE_USER.format(
-            theme=theme,
-            prereq_sample="\n".join(prereq_sample),
-            effect_sample="\n".join(
-                f"  {e['dataName']}  (value={e.get('value')}, contexts={e.get('contexts',[])})" for e in effect_sample
-            ),
-        )
+        def _make_middle_prompt(hint: str) -> str:
+            return _MIDDLE_USER.format(
+                theme=theme,
+                prereq_sample="\n".join(prereq_sample),
+                effect_sample="\n".join(
+                    f"  {e['dataName']}  (value={e.get('value')}, contexts={e.get('contexts',[])})"
+                    for e in effect_sample
+                ),
+                name_hint=hint,
+            )
+
         print(f"  Generating middle tech {generated+1}/{count} (theme: {theme})...", end=" ", flush=True)
         try:
             raw = call_ai(
-                [{"role": "system", "content": _MIDDLE_SYSTEM}, {"role": "user", "content": prompt}],
+                [
+                    {"role": "system", "content": _MIDDLE_SYSTEM},
+                    {"role": "user", "content": _make_middle_prompt(name_hint)},
+                ],
                 endpoint=endpoint,
                 model=model,
                 timeout=timeout,

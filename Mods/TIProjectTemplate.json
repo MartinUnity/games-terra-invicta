@@ -26645,7 +26645,7 @@
   },
   {
     "dataName": "Project_Sentinel_s_Bounty",
-    "friendlyName": "Sentinel\u2019s Bounty",
+    "friendlyName": "Sentinel’s Bounty",
     "techCategory": "MilitaryScience",
     "researchCost": 2247,
     "prereqs": [
@@ -30426,5 +30426,162 @@
     "initialUnlockChance": 19,
     "deltaUnlockChance": 3,
     "maxUnlockChance": 40
+  },
+  {
+    "dataName": "Project_CryoExtractionOptimization",
+    "friendlyName": "Deep Ice Fracturing",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 3200,
+    "prereqs": [
+      "MissiontotheInnerPlanets"
+    ],
+    "effects": [
+      "Effect_MiningWaterBonus_lvl5"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 60,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 50,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_SalvageStreamAnalytics",
+    "friendlyName": "Salvage Stream Analytics",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 4500,
+    "prereqs": [
+      "DeepSystemSkywatch"
+    ],
+    "effects": [
+      "Effect_SpoilsBonus20"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 60,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 50,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_CryoExtractionLattice",
+    "friendlyName": "Cryo Extraction Lattice",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 3500,
+    "prereqs": [
+      "MissiontoMars"
+    ],
+    "effects": [
+      "Effect_ExtractionCascade_Water_T2"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 60,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 50,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_FleetResilienceProtocols",
+    "friendlyName": "Fleet Resilience Protocols",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 25000,
+    "prereqs": [
+      "OrbitalTacticalDoctrine"
+    ],
+    "effects": [
+      "Effect_ImprovedSpaceCombatDamageControlMinor"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 60,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 50,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_CapitalShipArmament",
+    "friendlyName": "Capital Ship Armament",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 30000,
+    "prereqs": [
+      "OrbitalTacticalDoctrine"
+    ],
+    "effects": [
+      "Effect_ShipLaserDamageMinor",
+      "Effect_ShipMagDamage_lvl4"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 60,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 50,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_TacticalCyberOps",
+    "friendlyName": "Tactical Cyber Operations",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 20000,
+    "prereqs": [
+      "OrbitalTacticalDoctrine"
+    ],
+    "effects": [
+      "Effect_HackProject_Steal",
+      "Effect_InterrogationTechniques100"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 60,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 50,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_GreenArcLaserBattery",
+    "friendlyName": "Green Arc Laser Battery Project",
+    "techCategory": "Lasers",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "None",
+    "researchCost": 28000,
+    "prereqs": [
+      "AdvancedMagnetics"
+    ],
+    "effects": [
+      "240cmGreenArcLaserBattery",
+      "480cmGreenArcLaserBattery"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 60,
+    "initialUnlockChance": 5,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 50,
+    "resourcesGranted": []
   }
 ]

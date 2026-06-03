@@ -1,0 +1,306 @@
+{
+  "easy": {
+    "effect_Effect_AllRecruitsAdministration2_0": {
+      "project": {
+        "dataName": "Project_AdministrativeCadreForging",
+        "friendlyName": "Bureaucratic Excellence Program",
+        "techCategory": "SocialScience",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 2200,
+        "prereqs": [
+          "ArrivalGovernance"
+        ],
+        "effects": [
+          "Effect_AllRecruitsAdministration2"
+        ],
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_AdministrativeCadreForging=Bureaucratic Excellence Program\nTIProjectTemplate.summary.Project_AdministrativeCadreForging=Standardizes recruitment protocols to rapidly elevate administrative competencies across all new personnel.\n",
+      "warns": []
+    },
+    "effect_Effect_MiningWaterBonus_lvl5_0": {
+      "project": {
+        "dataName": "Project_CryoExtractionOptimization",
+        "friendlyName": "Deep Ice Fracturing",
+        "techCategory": "Materials",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 3200,
+        "prereqs": [
+          "MissiontotheInnerPlanets"
+        ],
+        "effects": [
+          "Effect_MiningWaterBonus_lvl5"
+        ],
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_CryoExtractionOptimization=Deep Ice Fracturing\nTIProjectTemplate.summary.Project_CryoExtractionOptimization=Advanced thermal fracturing techniques boost water ice yield from asteroid mining operations.\n",
+      "warns": []
+    },
+    "effect_Effect_SpoilsBonus20_1": {
+      "project": {
+        "dataName": "Project_SalvageStreamAnalytics",
+        "friendlyName": "Salvage Stream Analytics",
+        "techCategory": "InformationScience",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 4500,
+        "prereqs": [
+          "DeepSystemSkywatch"
+        ],
+        "effects": [
+          "Effect_SpoilsBonus20"
+        ],
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_SalvageStreamAnalytics=Salvage Stream Analytics\nTIProjectTemplate.summary.Project_SalvageStreamAnalytics=AI-driven tracking and automated routing systems maximize recovery yields from orbital debris and contested salvage zones.\n",
+      "warns": []
+    },
+    "effect_Effect_ExtractionCascade_Water_T2_2": {
+      "project": {
+        "dataName": "Project_CryoExtractionLattice",
+        "friendlyName": "Cryo Extraction Lattice",
+        "techCategory": "SpaceScience",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 3500,
+        "prereqs": [
+          "MissiontoMars"
+        ],
+        "effects": [
+          "Effect_ExtractionCascade_Water_T2"
+        ],
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_CryoExtractionLattice=Cryo-Extraction Lattice\nTIProjectTemplate.summary.Project_CryoExtractionLattice=Advanced thermal resonance drills fracture deep ice deposits, boosting faction-wide water yields by six percent.\n",
+      "warns": []
+    }
+  },
+  "middle": {
+    "middle_military doctrine_0": {
+      "tech": {
+        "dataName": "OrbitalTacticalDoctrine",
+        "friendlyName": "Orbital Tactical Doctrine",
+        "techCategory": "MilitaryScience",
+        "AI_techRole": "SpaceWar",
+        "AI_criticalTech": false,
+        "endGameTech": false,
+        "researchCost": 45000,
+        "prereqs": [
+          "TransInterfaceWarfare",
+          "HighEnergyLasers",
+          "Railguns"
+        ],
+        "effects": []
+      },
+      "loc_tech": "TITechTemplate.displayName.OrbitalTacticalDoctrine=Orbital Tactical Doctrine\nTITechTemplate.summary.OrbitalTacticalDoctrine=Advanced fleet coordination and combat protocols designed to maximize capital ship effectiveness in deep space engagements.\n",
+      "projects": [
+        {
+          "dataName": "Project_FleetResilienceProtocols",
+          "friendlyName": "Fleet Resilience Protocols",
+          "techCategory": "MilitaryScience",
+          "AI_techRole": "None",
+          "AI_criticalTech": false,
+          "AI_projectRole": "None",
+          "researchCost": 25000,
+          "prereqs": [
+            "OrbitalTacticalDoctrine"
+          ],
+          "effects": [
+            "Effect_ImprovedSpaceCombatDamageControlMinor"
+          ],
+          "oneTimeGlobally": false,
+          "repeatable": false,
+          "factionAvailableChance": 60,
+          "initialUnlockChance": 5,
+          "deltaUnlockChance": 5,
+          "maxUnlockChance": 50,
+          "resourcesGranted": []
+        },
+        {
+          "dataName": "Project_CapitalShipArmament",
+          "friendlyName": "Capital Ship Armament",
+          "techCategory": "MilitaryScience",
+          "AI_techRole": "None",
+          "AI_criticalTech": false,
+          "AI_projectRole": "None",
+          "researchCost": 30000,
+          "prereqs": [
+            "OrbitalTacticalDoctrine"
+          ],
+          "effects": [
+            "Effect_ShipLaserDamageMinor",
+            "Effect_ShipMagDamage_lvl4"
+          ],
+          "oneTimeGlobally": false,
+          "repeatable": false,
+          "factionAvailableChance": 60,
+          "initialUnlockChance": 5,
+          "deltaUnlockChance": 5,
+          "maxUnlockChance": 50,
+          "resourcesGranted": []
+        },
+        {
+          "dataName": "Project_TacticalCyberOps",
+          "friendlyName": "Tactical Cyber Operations",
+          "techCategory": "MilitaryScience",
+          "AI_techRole": "None",
+          "AI_criticalTech": false,
+          "AI_projectRole": "None",
+          "researchCost": 20000,
+          "prereqs": [
+            "OrbitalTacticalDoctrine"
+          ],
+          "effects": [
+            "Effect_HackProject_Steal",
+            "Effect_InterrogationTechniques100"
+          ],
+          "oneTimeGlobally": false,
+          "repeatable": false,
+          "factionAvailableChance": 60,
+          "initialUnlockChance": 5,
+          "deltaUnlockChance": 5,
+          "maxUnlockChance": 50,
+          "resourcesGranted": []
+        }
+      ],
+      "loc_projects": [
+        "TIProjectTemplate.displayName.Project_FleetResilienceProtocols=Fleet Resilience Protocols\nTIProjectTemplate.summary.Project_FleetResilienceProtocols=Standardizes rapid hull patching and reactor stabilization procedures across all naval vessels.\n",
+        "TIProjectTemplate.displayName.Project_CapitalShipArmament=Capital Ship Armament\nTIProjectTemplate.summary.Project_CapitalShipArmament=Integrates synchronized firing solutions for heavy laser and magnetic accelerator batteries.\n",
+        "TIProjectTemplate.displayName.Project_TacticalCyberOps=Tactical Cyber Operations\nTIProjectTemplate.summary.Project_TacticalCyberOps=Employs advanced signal interception and psychological pressure techniques to extract strategic data from enemy commanders.\n"
+      ]
+    }
+  },
+  "full": {
+    "full_laser_0": {
+      "concept_name": "GreenArcLaserBattery",
+      "tmpl_name": "TILaserWeaponTemplate",
+      "equip_type": "laser",
+      "items": [
+        {
+          "dataName": "240cmGreenArcLaserBattery",
+          "friendlyName": "240 cm Green Arc Laser Battery",
+          "mount": "TwoHullHoriz",
+          "crew": 4,
+          "sortOrder": 35,
+          "requiredProjectName": "Project_GreenArcLaserBattery",
+          "attackMode": true,
+          "defenseMode": true,
+          "hp": 4,
+          "baseWeaponMass_tons": 95,
+          "cooldown_s": 22,
+          "efficiency": 0.32,
+          "shotPower_MJ": 160,
+          "wavelength_nm": 532,
+          "mirrorRadius_cm": 240,
+          "beam_quality": 1.08,
+          "jitter_Rad": 3e-08,
+          "bombardmentValue": 1.5,
+          "targetingRange_km": 700,
+          "pivotRange_deg": 90,
+          "isPointDefenseTargetable": false,
+          "weightedBuildMaterials": {
+            "volatiles": 0.1,
+            "metals": 0.65,
+            "nobleMetals": 0.25
+          },
+          "iconResource": "shipbuildericons/ICO_120cmGreenArcLaserBattery",
+          "modelResource": "shipweapons/alien_medium_laser_battery",
+          "effectResource": "spaceCombat/Arc Laser Beam Green",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Lasers/trig_SFX_Arc_Laser_Cannon"
+        },
+        {
+          "dataName": "480cmGreenArcLaserBattery",
+          "friendlyName": "480 cm Green Arc Laser Battery",
+          "mount": "FourHull",
+          "crew": 6,
+          "sortOrder": 60,
+          "requiredProjectName": "Project_GreenArcLaserBattery",
+          "attackMode": true,
+          "defenseMode": true,
+          "hp": 6,
+          "baseWeaponMass_tons": 420,
+          "cooldown_s": 55,
+          "efficiency": 0.26,
+          "shotPower_MJ": 480,
+          "wavelength_nm": 532,
+          "mirrorRadius_cm": 480,
+          "beam_quality": 1.05,
+          "jitter_Rad": 2e-08,
+          "bombardmentValue": 4,
+          "targetingRange_km": 1400,
+          "pivotRange_deg": 45,
+          "isPointDefenseTargetable": false,
+          "weightedBuildMaterials": {
+            "volatiles": 0.1,
+            "metals": 0.6,
+            "nobleMetals": 0.3
+          },
+          "iconResource": "shipbuildericons/ICO_120cmGreenArcLaserBattery",
+          "modelResource": "shipweapons/alien_large_laser_battery",
+          "effectResource": "spaceCombat/Arc Laser Beam Green",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Lasers/trig_SFX_Arc_Laser_Cannon"
+        }
+      ],
+      "loc_items": [
+        "TILaserWeaponTemplate.displayName.240cmGreenArcLaserBattery=240 cm Green Arc Laser Battery\n",
+        "TILaserWeaponTemplate.displayName.480cmGreenArcLaserBattery=480 cm Green Arc Laser Battery\n"
+      ],
+      "project": {
+        "dataName": "Project_GreenArcLaserBattery",
+        "friendlyName": "Green Arc Laser Battery Project",
+        "techCategory": "Lasers",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 28000,
+        "prereqs": [
+          "AdvancedMagnetics"
+        ],
+        "effects": {
+          "unlockPart": [
+            "240cmGreenArcLaserBattery",
+            "480cmGreenArcLaserBattery"
+          ]
+        },
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_GreenArcLaserBattery=Green Arc Laser Battery Project\nTIProjectTemplate.summary.Project_GreenArcLaserBattery=Develops magnetically confined arc-discharge lasers that deliver highly focused green-spectrum beams with exceptional thermal management and rapid cycling.\n"
+    }
+  }
+}

@@ -59,3 +59,7 @@ TILaserWeaponTemplate.displayName.720cmGreenArcLaserCannon_rapidFire=720 cm Gree
 TILaserWeaponTemplate.description.720cmGreenArcLaserCannon_rapidFire=A rapid-fire green arc laser cannon with enhanced firing rate and efficiency.
 TILaserWeaponTemplate.displayName.720cmUVArcLaserCannon_rapidFire=720 cm UV Arc Laser Cannon Rapid Fire
 TILaserWeaponTemplate.description.720cmUVArcLaserCannon_rapidFire=A rapid-fire ultraviolet arc laser cannon with enhanced firing rate and efficiency.
+TILaserWeaponTemplate.displayName.240cmGreenArcLaserBattery=240 cm Green Arc Laser Battery
+TILaserWeaponTemplate.description.240cmGreenArcLaserBattery=A green arc laser battery with improved firing rate and efficiency.
+TILaserWeaponTemplate.displayName.480cmGreenArcLaserBattery=480 cm Green Arc Laser Battery
+TILaserWeaponTemplate.description.480cmGreenArcLaserBattery=A green arc laser battery with improved firing rate and efficiency.
