@@ -814,11 +814,28 @@ def main() -> None:
     mod_only = [p for p in mod_data if p["dataName"] not in base_names]
     mod_names: Set[str] = {p["dataName"] for p in mod_only}
 
-    print(f"  Base techs: {len(base_techs)}, Base projects: {len(base_projects)}, " f"Mod-only: {len(mod_only)}")
+    # Filter out disabled, geopolitical, faction-exclusive, and objective-gated projects.
+    # Objective-gated (requiredObjectiveName / requiredMilestone) are invisible until a
+    # specific alien event fires — using them as prereqs hides downstream projects.
+    _BAD_PREREQ_ROLES = {"NeutralizeNation", "AlienSignature", "AlienMethods", "AlienOperations"}
+    base_projects_valid = [
+        p for p in base_projects
+        if not p.get("disable")
+        and p.get("AI_projectRole") not in _BAD_PREREQ_ROLES
+        and not ("factionAlways" in p and "factionPrereq" not in p)
+        and not p.get("requiredObjectiveName")
+        and not p.get("requiredMilestone")
+    ]
+    n_excluded = len(base_projects) - len(base_projects_valid)
+    print(
+        f"  Base techs: {len(base_techs)}, Base projects: {len(base_projects)} "
+        f"({n_excluded} disabled/geopolitical excluded), "
+        f"Mod-only: {len(mod_only)}"
+    )
 
     # --- Build base graph and depths ---
     print("Building dependency graph and computing depths/costs...")
-    base_nodes = build_base_graph(base_techs, base_projects)
+    base_nodes = build_base_graph(base_techs, base_projects_valid)
     base_depths = compute_depths(base_nodes)
     cum_costs = compute_cumulative_costs(base_nodes)
     max_depth = max(base_depths.values())

@@ -301,6 +301,1266 @@
         "resourcesGranted": []
       },
       "loc_project": "TIProjectTemplate.displayName.Project_GreenArcLaserBattery=Green Arc Laser Battery Project\nTIProjectTemplate.summary.Project_GreenArcLaserBattery=Develops magnetically confined arc-discharge lasers that deliver highly focused green-spectrum beams with exceptional thermal management and rapid cycling.\n"
+    },
+    "full_gun_0": {
+      "concept_name": "RailDriver",
+      "tmpl_name": "TIGunTemplate",
+      "equip_type": "gun",
+      "items": [
+        {
+          "dataName": "RailDriver_Small",
+          "friendlyName": "Rail Driver (Small)",
+          "mount": "OneHull",
+          "requiredProjectName": "Project_RailDriver",
+          "crew": 1,
+          "attackMode": true,
+          "defenseMode": true,
+          "baseWeaponMass_tons": 15,
+          "cooldown_s": 6,
+          "salvo_shots": 8,
+          "intraSalvoCooldown_s": 0.2,
+          "efficiency": 1,
+          "flatChipping": 0.05,
+          "magazine": 1000,
+          "ammoMass_kg": 10,
+          "muzzleVelocity_kps": 4.5,
+          "bombardmentValue": 0,
+          "warheadMass_kg": 8,
+          "targetingRange_km": 400,
+          "pivotRange_deg": 120,
+          "isPointDefenseTargetable": false,
+          "weightedBuildMaterials": {
+            "volatiles": 0.05,
+            "metals": 0.85,
+            "nobleMetals": 0.1
+          },
+          "ammoMaterials": {
+            "volatiles": 0.5,
+            "metals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_8-InchCannon",
+          "modelResource": "shipweapons/12-Inch_Cannon",
+          "effectResource": "spaceCombat/MuzzleFlashFlame",
+          "shotModelResource": "spaceCombat/BulletGun",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Cannon",
+          "impactVisualFXResource": "spaceCombat/ImpactOrange",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid017MonoRR",
+          "damage_MJ": 81,
+          "_comment_calc_damage": "Damage is calculated using kinetic energy formula: E = 0.5 * m * v^2",
+          "_comment_calc_rps": "RPS = salvo_shots / (cooldown_s + (intraSalvoCooldown_s * (salvo_shots - 1)))",
+          "_comment_calc_dps": "DPS = ROUND(1, damage_MJ * RPS)",
+          "_comment_calc_EnergeToDamageInGame": "Energy / 20 = Damage in game",
+          "_comment_m": "m = warheadMass_kg = 8 kg",
+          "_comment_v": "v = muzzleVelocity_kps * 1000 = 4.5 kps",
+          "_comment_damage": "E = 0.5 * 8 * (4.5)^2 = 81 MJ per shot",
+          "_comment_rps": "8 / (6 + (0.2 * (8 - 1))) = 8 / 7.4 = 1.08",
+          "_comment_dps": "81 * 1.08 = 87.48 MJ/s",
+          "_comment_damageInGame": "81 / 20 = 4.05 damage per shot in game"
+        },
+        {
+          "dataName": "RailDriver_Medium",
+          "friendlyName": "Rail Driver (Medium)",
+          "mount": "TwoHullHoriz",
+          "requiredProjectName": "Project_RailDriver",
+          "crew": 2,
+          "attackMode": true,
+          "defenseMode": false,
+          "baseWeaponMass_tons": 45,
+          "cooldown_s": 10,
+          "salvo_shots": 6,
+          "intraSalvoCooldown_s": 0.5,
+          "efficiency": 1,
+          "flatChipping": 0.1,
+          "magazine": 800,
+          "ammoMass_kg": 25,
+          "muzzleVelocity_kps": 4.2,
+          "bombardmentValue": 1,
+          "warheadMass_kg": 15,
+          "targetingRange_km": 600,
+          "pivotRange_deg": 90,
+          "isPointDefenseTargetable": true,
+          "weightedBuildMaterials": {
+            "volatiles": 0.05,
+            "metals": 0.85,
+            "nobleMetals": 0.1
+          },
+          "ammoMaterials": {
+            "volatiles": 0.5,
+            "metals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_8-InchCannon",
+          "modelResource": "shipweapons/12-Inch_Cannon",
+          "effectResource": "spaceCombat/MuzzleFlashFlame",
+          "shotModelResource": "spaceCombat/BulletGun",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Cannon",
+          "impactVisualFXResource": "spaceCombat/ImpactOrange",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid017MonoRR",
+          "damage_MJ": 132.3,
+          "_comment_calc_damage": "Damage is calculated using kinetic energy formula: E = 0.5 * m * v^2",
+          "_comment_calc_rps": "RPS = salvo_shots / (cooldown_s + (intraSalvoCooldown_s * (salvo_shots - 1)))",
+          "_comment_calc_dps": "DPS = ROUND(1, damage_MJ * RPS)",
+          "_comment_calc_EnergeToDamageInGame": "Energy / 20 = Damage in game",
+          "_comment_m": "m = warheadMass_kg = 15 kg",
+          "_comment_v": "v = muzzleVelocity_kps * 1000 = 4.2 kps",
+          "_comment_damage": "E = 0.5 * 15 * (4.2)^2 = 132.3 MJ per shot",
+          "_comment_rps": "6 / (10 + (0.5 * (6 - 1))) = 6 / 12.5 = 0.48",
+          "_comment_dps": "132.3 * 0.48 = 63.5 MJ/s",
+          "_comment_damageInGame": "132.3 / 20 = 6.62 damage per shot in game"
+        },
+        {
+          "dataName": "RailDriver_Large",
+          "friendlyName": "Rail Driver (Large)",
+          "mount": "FourHull",
+          "requiredProjectName": "Project_RailDriver",
+          "crew": 3,
+          "attackMode": true,
+          "defenseMode": false,
+          "baseWeaponMass_tons": 120,
+          "cooldown_s": 18,
+          "salvo_shots": 4,
+          "intraSalvoCooldown_s": 1.0,
+          "efficiency": 1,
+          "flatChipping": 0.2,
+          "magazine": 400,
+          "ammoMass_kg": 50,
+          "muzzleVelocity_kps": 2.8,
+          "bombardmentValue": 2,
+          "warheadMass_kg": 40,
+          "targetingRange_km": 800,
+          "pivotRange_deg": 45,
+          "isPointDefenseTargetable": true,
+          "weightedBuildMaterials": {
+            "volatiles": 0.05,
+            "metals": 0.85,
+            "nobleMetals": 0.1
+          },
+          "ammoMaterials": {
+            "volatiles": 0.5,
+            "metals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_8-InchCannon",
+          "modelResource": "shipweapons/12-Inch_Cannon",
+          "effectResource": "spaceCombat/MuzzleFlashFlame",
+          "shotModelResource": "spaceCombat/BulletGun",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Cannon",
+          "impactVisualFXResource": "spaceCombat/ImpactOrange",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid017MonoRR",
+          "damage_MJ": 156.8,
+          "_comment_calc_damage": "Damage is calculated using kinetic energy formula: E = 0.5 * m * v^2",
+          "_comment_calc_rps": "RPS = salvo_shots / (cooldown_s + (intraSalvoCooldown_s * (salvo_shots - 1)))",
+          "_comment_calc_dps": "DPS = ROUND(1, damage_MJ * RPS)",
+          "_comment_calc_EnergeToDamageInGame": "Energy / 20 = Damage in game",
+          "_comment_m": "m = warheadMass_kg = 40 kg",
+          "_comment_v": "v = muzzleVelocity_kps * 1000 = 2.8 kps",
+          "_comment_damage": "E = 0.5 * 40 * (2.8)^2 = 156.8 MJ per shot",
+          "_comment_rps": "4 / (18 + (1.0 * (4 - 1))) = 4 / 21 = 0.19",
+          "_comment_dps": "156.8 * 0.19 = 29.8 MJ/s",
+          "_comment_damageInGame": "156.8 / 20 = 7.84 damage per shot in game"
+        }
+      ],
+      "loc_items": [
+        "TIGunTemplate.displayName.RailDriver_Small=Rail Driver (Small)\n",
+        "TIGunTemplate.displayName.RailDriver_Medium=Rail Driver (Medium)\n",
+        "TIGunTemplate.displayName.RailDriver_Large=Rail Driver (Large)\n"
+      ],
+      "project": {
+        "dataName": "Project_RailDriver",
+        "friendlyName": "Rail Driver Program",
+        "techCategory": "Weaponry",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 12500,
+        "prereqs": [
+          "AdvancedSuperconductors"
+        ],
+        "effects": {
+          "unlockPart": [
+            "RailDriver_Small",
+            "RailDriver_Medium",
+            "RailDriver_Large"
+          ]
+        },
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_RailDriver=Rail Driver Program\nTIProjectTemplate.summary.Project_RailDriver=Electromagnetic acceleration technology repurposed for high-velocity kinetic artillery.\n"
+    },
+    "full_gun_1": {
+      "concept_name": "RotaryKineticDriver",
+      "tmpl_name": "TIGunTemplate",
+      "equip_type": "gun",
+      "items": [
+        {
+          "dataName": "RotaryKineticDriver_Small",
+          "friendlyName": "Rotary Kinetic Driver - Light",
+          "mount": "OneHull",
+          "requiredProjectName": "Project_RotaryKineticDriver",
+          "crew": 1,
+          "attackMode": 1,
+          "defenseMode": 1,
+          "baseWeaponMass_tons": 5,
+          "cooldown_s": 6,
+          "salvo_shots": 8,
+          "intraSalvoCooldown_s": 0.4,
+          "efficiency": 1,
+          "flatChipping": 0.1,
+          "magazine": 2000,
+          "ammoMass_kg": 4.5,
+          "muzzleVelocity_kps": 2.8,
+          "bombardmentValue": 0,
+          "warheadMass_kg": 3.5,
+          "targetingRange_km": 300,
+          "pivotRange_deg": 120,
+          "isPointDefenseTargetable": 0,
+          "weightedBuildMaterials": {
+            "volatiles": 0.05,
+            "metals": 0.85,
+            "nobleMetals": 0.1
+          },
+          "ammoMaterials": {
+            "volatiles": 0.5,
+            "metals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_12-InchCannon",
+          "modelResource": "shipweapons/16-Inch_Cannon",
+          "effectResource": "spaceCombat/MuzzleFlashFlame",
+          "shotModelResource": "spaceCombat/BulletGun",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Cannon",
+          "impactVisualFXResource": "spaceCombat/ImpactOrange",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid017MonoRR",
+          "damage_MJ": 13.72,
+          "_comment_calc_damage": "Damage is calculated using kinetic energy formula: E = 0.5 * m * v^2",
+          "_comment_calc_rps": "RPS = salvo_shots / (cooldown_s + (intraSalvoCooldown_s * (salvo_shots - 1)))",
+          "_comment_calc_dps": "DPS = ROUND(1, damage_MJ * RPS)",
+          "_comment_calc_EnergeToDamageInGame": "Energy / 20 = Damage in game",
+          "_comment_m": "m = warheadMass_kg = 3.5 kg",
+          "_comment_v": "v = muzzleVelocity_kps * 1000 = 2.8 kps",
+          "_comment_damage": "E = 0.5 * 3.5 * (2.8)^2 = 13.72 MJ per shot",
+          "_comment_rps": "8 / (6 + (0.4 * (8 - 1))) = 8 / 8.8 = 0.91",
+          "_comment_dps": "13.72 * 0.91 = 12.49 MJ/s",
+          "_comment_damageInGame": "13.72 / 20 = 0.69 damage per shot in game"
+        },
+        {
+          "dataName": "RotaryKineticDriver_Medium",
+          "friendlyName": "Rotary Kinetic Driver - Standard",
+          "mount": "TwoHullHoriz",
+          "requiredProjectName": "Project_RotaryKineticDriver",
+          "crew": 2,
+          "attackMode": 1,
+          "defenseMode": 1,
+          "baseWeaponMass_tons": 25,
+          "cooldown_s": 10,
+          "salvo_shots": 6,
+          "intraSalvoCooldown_s": 1.5,
+          "efficiency": 1,
+          "flatChipping": 0.15,
+          "magazine": 1000,
+          "ammoMass_kg": 15,
+          "muzzleVelocity_kps": 3.5,
+          "bombardmentValue": 0,
+          "warheadMass_kg": 12,
+          "targetingRange_km": 450,
+          "pivotRange_deg": 90,
+          "isPointDefenseTargetable": 0,
+          "weightedBuildMaterials": {
+            "volatiles": 0.05,
+            "metals": 0.85,
+            "nobleMetals": 0.1
+          },
+          "ammoMaterials": {
+            "volatiles": 0.5,
+            "metals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_12-InchCannon",
+          "modelResource": "shipweapons/16-Inch_Cannon",
+          "effectResource": "spaceCombat/MuzzleFlashFlame",
+          "shotModelResource": "spaceCombat/BulletGun",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Cannon",
+          "impactVisualFXResource": "spaceCombat/ImpactOrange",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid017MonoRR",
+          "damage_MJ": 73.5,
+          "_comment_calc_damage": "Damage is calculated using kinetic energy formula: E = 0.5 * m * v^2",
+          "_comment_calc_rps": "RPS = salvo_shots / (cooldown_s + (intraSalvoCooldown_s * (salvo_shots - 1)))",
+          "_comment_calc_dps": "DPS = ROUND(1, damage_MJ * RPS)",
+          "_comment_calc_EnergeToDamageInGame": "Energy / 20 = Damage in game",
+          "_comment_m": "m = warheadMass_kg = 12 kg",
+          "_comment_v": "v = muzzleVelocity_kps * 1000 = 3.5 kps",
+          "_comment_damage": "E = 0.5 * 12 * (3.5)^2 = 73.5 MJ per shot",
+          "_comment_rps": "6 / (10 + (1.5 * (6 - 1))) = 6 / 17.5 = 0.34",
+          "_comment_dps": "73.5 * 0.34 = 25.0 MJ/s",
+          "_comment_damageInGame": "73.5 / 20 = 3.68 damage per shot in game"
+        },
+        {
+          "dataName": "RotaryKineticDriver_Large",
+          "friendlyName": "Rotary Kinetic Driver - Heavy",
+          "mount": "FourHull",
+          "requiredProjectName": "Project_RotaryKineticDriver",
+          "crew": 3,
+          "attackMode": 1,
+          "defenseMode": 1,
+          "baseWeaponMass_tons": 80,
+          "cooldown_s": 18,
+          "salvo_shots": 4,
+          "intraSalvoCooldown_s": 3,
+          "efficiency": 1,
+          "flatChipping": 0.25,
+          "magazine": 400,
+          "ammoMass_kg": 60,
+          "muzzleVelocity_kps": 3.8,
+          "bombardmentValue": 0,
+          "warheadMass_kg": 20,
+          "targetingRange_km": 600,
+          "pivotRange_deg": 60,
+          "isPointDefenseTargetable": 0,
+          "weightedBuildMaterials": {
+            "volatiles": 0.05,
+            "metals": 0.85,
+            "nobleMetals": 0.1
+          },
+          "ammoMaterials": {
+            "volatiles": 0.5,
+            "metals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_12-InchCannon",
+          "modelResource": "shipweapons/16-Inch_Cannon",
+          "effectResource": "spaceCombat/MuzzleFlashFlame",
+          "shotModelResource": "spaceCombat/BulletGun",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Cannon",
+          "impactVisualFXResource": "spaceCombat/ImpactOrange",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid017MonoRR",
+          "damage_MJ": 144.4,
+          "_comment_calc_damage": "Damage is calculated using kinetic energy formula: E = 0.5 * m * v^2",
+          "_comment_calc_rps": "RPS = salvo_shots / (cooldown_s + (intraSalvoCooldown_s * (salvo_shots - 1)))",
+          "_comment_calc_dps": "DPS = ROUND(1, damage_MJ * RPS)",
+          "_comment_calc_EnergeToDamageInGame": "Energy / 20 = Damage in game",
+          "_comment_m": "m = warheadMass_kg = 20 kg",
+          "_comment_v": "v = muzzleVelocity_kps * 1000 = 3.8 kps",
+          "_comment_damage": "E = 0.5 * 20 * (3.8)^2 = 144.4 MJ per shot",
+          "_comment_rps": "4 / (18 + (3 * (4 - 1))) = 4 / 27 = 0.15",
+          "_comment_dps": "144.4 * 0.15 = 21.66 MJ/s",
+          "_comment_damageInGame": "144.4 / 20 = 7.22 damage per shot in game"
+        }
+      ],
+      "loc_items": [
+        "TIGunTemplate.displayName.RotaryKineticDriver_Small=Rotary Kinetic Driver - Light\n",
+        "TIGunTemplate.displayName.RotaryKineticDriver_Medium=Rotary Kinetic Driver - Standard\n",
+        "TIGunTemplate.displayName.RotaryKineticDriver_Large=Rotary Kinetic Driver - Heavy\n"
+      ],
+      "project": {
+        "dataName": "Project_RotaryKineticDriver",
+        "friendlyName": "Rotary Kinetic Driver Systems",
+        "techCategory": "KineticWeapons",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 18500,
+        "prereqs": [
+          "AdvancedSuperconductors"
+        ],
+        "effects": {
+          "unlockPart": [
+            "RotaryKineticDriver_Small",
+            "RotaryKineticDriver_Medium",
+            "RotaryKineticDriver_Large"
+          ]
+        },
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_RotaryKineticDriver=Rotary Kinetic Driver Systems\nTIProjectTemplate.summary.Project_RotaryKineticDriver=High-velocity electromagnetic acceleration systems for rapid kinetic engagement across multiple hull configurations.\n"
+    },
+    "full_drive_0": {
+      "concept_name": "HelixCavityDrive",
+      "tmpl_name": "TIDriveTemplate",
+      "equip_type": "drive",
+      "items": [
+        {
+          "dataName": "HelixCavityDrivex1",
+          "friendlyName": "Helix Cavity Drive x1",
+          "thrusters": 1,
+          "notes": "Helix Cavity Electrothermal Drive x1",
+          "driveClassification": "Electrothermal",
+          "requiredProjectName": "Project_HelicalCavityPropulsion",
+          "thrust_N": 450000,
+          "EV_kps": 8500,
+          "specificPower_kgMW": 12.5,
+          "efficiency": 0.82,
+          "thrustRating_GW": "38.25",
+          "req power": "12.500",
+          "flatMass_tons": 45,
+          "requiredPowerPlant": "Solid_Core_Fission",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.85,
+            "exotics": 0.15
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.6,
+            "volatiles": 0.4
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+        },
+        {
+          "dataName": "HelixCavityDrivex2",
+          "friendlyName": "Helix Cavity Drive x2",
+          "thrusters": 2,
+          "notes": "Helix Cavity Electrothermal Drive x1",
+          "driveClassification": "Electrothermal",
+          "requiredProjectName": "Project_HelicalCavityPropulsion",
+          "thrust_N": 900000,
+          "EV_kps": 8500,
+          "specificPower_kgMW": 12.5,
+          "efficiency": 0.82,
+          "thrustRating_GW": "76.5",
+          "req power": "12.500",
+          "flatMass_tons": 45,
+          "requiredPowerPlant": "Solid_Core_Fission",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.85,
+            "exotics": 0.15
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.6,
+            "volatiles": 0.4
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+        },
+        {
+          "dataName": "HelixCavityDrivex3",
+          "friendlyName": "Helix Cavity Drive x3",
+          "thrusters": 3,
+          "notes": "Helix Cavity Electrothermal Drive x1",
+          "driveClassification": "Electrothermal",
+          "requiredProjectName": "Project_HelicalCavityPropulsion",
+          "thrust_N": 1350000,
+          "EV_kps": 8500,
+          "specificPower_kgMW": 12.5,
+          "efficiency": 0.82,
+          "thrustRating_GW": "114.75",
+          "req power": "12.500",
+          "flatMass_tons": 45,
+          "requiredPowerPlant": "Solid_Core_Fission",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.85,
+            "exotics": 0.15
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.6,
+            "volatiles": 0.4
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+        },
+        {
+          "dataName": "HelixCavityDrivex4",
+          "friendlyName": "Helix Cavity Drive x4",
+          "thrusters": 4,
+          "notes": "Helix Cavity Electrothermal Drive x1",
+          "driveClassification": "Electrothermal",
+          "requiredProjectName": "Project_HelicalCavityPropulsion",
+          "thrust_N": 1800000,
+          "EV_kps": 8500,
+          "specificPower_kgMW": 12.5,
+          "efficiency": 0.82,
+          "thrustRating_GW": "153.0",
+          "req power": "12.500",
+          "flatMass_tons": 45,
+          "requiredPowerPlant": "Solid_Core_Fission",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.85,
+            "exotics": 0.15
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.6,
+            "volatiles": 0.4
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+        },
+        {
+          "dataName": "HelixCavityDrivex5",
+          "friendlyName": "Helix Cavity Drive x5",
+          "thrusters": 5,
+          "notes": "Helix Cavity Electrothermal Drive x1",
+          "driveClassification": "Electrothermal",
+          "requiredProjectName": "Project_HelicalCavityPropulsion",
+          "thrust_N": 2250000,
+          "EV_kps": 8500,
+          "specificPower_kgMW": 12.5,
+          "efficiency": 0.82,
+          "thrustRating_GW": "191.25",
+          "req power": "12.500",
+          "flatMass_tons": 45,
+          "requiredPowerPlant": "Solid_Core_Fission",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.85,
+            "exotics": 0.15
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.6,
+            "volatiles": 0.4
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+        },
+        {
+          "dataName": "HelixCavityDrivex6",
+          "friendlyName": "Helix Cavity Drive x6",
+          "thrusters": 6,
+          "notes": "Helix Cavity Electrothermal Drive x1",
+          "driveClassification": "Electrothermal",
+          "requiredProjectName": "Project_HelicalCavityPropulsion",
+          "thrust_N": 2700000,
+          "EV_kps": 8500,
+          "specificPower_kgMW": 12.5,
+          "efficiency": 0.82,
+          "thrustRating_GW": "229.5",
+          "req power": "12.500",
+          "flatMass_tons": 45,
+          "requiredPowerPlant": "Solid_Core_Fission",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.85,
+            "exotics": 0.15
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.6,
+            "volatiles": 0.4
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+        }
+      ],
+      "loc_items": [
+        "TIDriveTemplate.displayName.HelixCavityDrivex1=Helix Cavity Drive x1\n",
+        "TIDriveTemplate.displayName.HelixCavityDrivex2=Helix Cavity Drive x2\n",
+        "TIDriveTemplate.displayName.HelixCavityDrivex3=Helix Cavity Drive x3\n",
+        "TIDriveTemplate.displayName.HelixCavityDrivex4=Helix Cavity Drive x4\n",
+        "TIDriveTemplate.displayName.HelixCavityDrivex5=Helix Cavity Drive x5\n",
+        "TIDriveTemplate.displayName.HelixCavityDrivex6=Helix Cavity Drive x6\n"
+      ],
+      "project": {
+        "dataName": "Project_HelicalCavityPropulsion",
+        "friendlyName": "Helical Cavity Propulsion",
+        "techCategory": "Propulsion",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 8500,
+        "prereqs": [
+          "AdvancedSuperconductors"
+        ],
+        "effects": {
+          "unlockPart": [
+            "HelixCavityDrivex1",
+            "HelixCavityDrivex2",
+            "HelixCavityDrivex3",
+            "HelixCavityDrivex4",
+            "HelixCavityDrivex5",
+            "HelixCavityDrivex6"
+          ]
+        },
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_HelicalCavityPropulsion=Helical Cavity Propulsion\nTIProjectTemplate.summary.Project_HelicalCavityPropulsion=Develops a high-efficiency electrothermal cavity drive utilizing superconducting magnetic confinement for sustained deep-space operations.\n"
+    },
+    "full_drive_1": {
+      "concept_name": "PebbleBedTorch",
+      "tmpl_name": "TIDriveTemplate",
+      "equip_type": "drive",
+      "items": [
+        {
+          "dataName": "PebbleBedTorchx1",
+          "friendlyName": "Pebble Bed Torch x1",
+          "thrusters": 1,
+          "notes": "Pebble Bed Fusion Torch",
+          "driveClassification": "Fusion_Thermal",
+          "requiredProjectName": "Project_PebbleBedDrive",
+          "thrust_N": 450000,
+          "EV_kps": 2500,
+          "specificPower_kgMW": 0,
+          "efficiency": 0.85,
+          "thrustRating_GW": "562.5",
+          "req power": "661.765",
+          "flatMass_tons": 0,
+          "requiredPowerPlant": "Pebble_Bed_Fusion",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.8,
+            "exotics": 0.2
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.9,
+            "volatiles": 0.1
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+        },
+        {
+          "dataName": "PebbleBedTorchx2",
+          "friendlyName": "Pebble Bed Torch x2",
+          "thrusters": 2,
+          "notes": "Pebble Bed Fusion Torch",
+          "driveClassification": "Fusion_Thermal",
+          "requiredProjectName": "Project_PebbleBedDrive",
+          "thrust_N": 900000,
+          "EV_kps": 2500,
+          "specificPower_kgMW": 0,
+          "efficiency": 0.85,
+          "thrustRating_GW": "1125.0",
+          "req power": "661.765",
+          "flatMass_tons": 0,
+          "requiredPowerPlant": "Pebble_Bed_Fusion",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.8,
+            "exotics": 0.2
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.9,
+            "volatiles": 0.1
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+        },
+        {
+          "dataName": "PebbleBedTorchx3",
+          "friendlyName": "Pebble Bed Torch x3",
+          "thrusters": 3,
+          "notes": "Pebble Bed Fusion Torch",
+          "driveClassification": "Fusion_Thermal",
+          "requiredProjectName": "Project_PebbleBedDrive",
+          "thrust_N": 1350000,
+          "EV_kps": 2500,
+          "specificPower_kgMW": 0,
+          "efficiency": 0.85,
+          "thrustRating_GW": "1687.5",
+          "req power": "661.765",
+          "flatMass_tons": 0,
+          "requiredPowerPlant": "Pebble_Bed_Fusion",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.8,
+            "exotics": 0.2
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.9,
+            "volatiles": 0.1
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+        },
+        {
+          "dataName": "PebbleBedTorchx4",
+          "friendlyName": "Pebble Bed Torch x4",
+          "thrusters": 4,
+          "notes": "Pebble Bed Fusion Torch",
+          "driveClassification": "Fusion_Thermal",
+          "requiredProjectName": "Project_PebbleBedDrive",
+          "thrust_N": 1800000,
+          "EV_kps": 2500,
+          "specificPower_kgMW": 0,
+          "efficiency": 0.85,
+          "thrustRating_GW": "2250.0",
+          "req power": "661.765",
+          "flatMass_tons": 0,
+          "requiredPowerPlant": "Pebble_Bed_Fusion",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.8,
+            "exotics": 0.2
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.9,
+            "volatiles": 0.1
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+        },
+        {
+          "dataName": "PebbleBedTorchx5",
+          "friendlyName": "Pebble Bed Torch x5",
+          "thrusters": 5,
+          "notes": "Pebble Bed Fusion Torch",
+          "driveClassification": "Fusion_Thermal",
+          "requiredProjectName": "Project_PebbleBedDrive",
+          "thrust_N": 2250000,
+          "EV_kps": 2500,
+          "specificPower_kgMW": 0,
+          "efficiency": 0.85,
+          "thrustRating_GW": "2812.5",
+          "req power": "661.765",
+          "flatMass_tons": 0,
+          "requiredPowerPlant": "Pebble_Bed_Fusion",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.8,
+            "exotics": 0.2
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.9,
+            "volatiles": 0.1
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+        },
+        {
+          "dataName": "PebbleBedTorchx6",
+          "friendlyName": "Pebble Bed Torch x6",
+          "thrusters": 6,
+          "notes": "Pebble Bed Fusion Torch",
+          "driveClassification": "Fusion_Thermal",
+          "requiredProjectName": "Project_PebbleBedDrive",
+          "thrust_N": 2700000,
+          "EV_kps": 2500,
+          "specificPower_kgMW": 0,
+          "efficiency": 0.85,
+          "thrustRating_GW": "3375.0",
+          "req power": "661.765",
+          "flatMass_tons": 0,
+          "requiredPowerPlant": "Pebble_Bed_Fusion",
+          "thrustCap": 40,
+          "cooling": "Closed",
+          "powerGen": "DriveActive",
+          "weightedBuildMaterials": {
+            "metals": 0.8,
+            "exotics": 0.2
+          },
+          "propellant": "Hydrogen",
+          "perTankPropellantMaterials": {
+            "water": 0.9,
+            "volatiles": 0.1
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+        }
+      ],
+      "loc_items": [
+        "TIDriveTemplate.displayName.PebbleBedTorchx1=Pebble Bed Torch x1\n",
+        "TIDriveTemplate.displayName.PebbleBedTorchx2=Pebble Bed Torch x2\n",
+        "TIDriveTemplate.displayName.PebbleBedTorchx3=Pebble Bed Torch x3\n",
+        "TIDriveTemplate.displayName.PebbleBedTorchx4=Pebble Bed Torch x4\n",
+        "TIDriveTemplate.displayName.PebbleBedTorchx5=Pebble Bed Torch x5\n",
+        "TIDriveTemplate.displayName.PebbleBedTorchx6=Pebble Bed Torch x6\n"
+      ],
+      "project": {
+        "dataName": "Project_PebbleBedDrive",
+        "friendlyName": "Pebble Bed Drive",
+        "techCategory": "Propulsion",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 12500,
+        "prereqs": [
+          "TerawattFusionReactors"
+        ],
+        "effects": {
+          "unlockPart": [
+            "PebbleBedTorchx1",
+            "PebbleBedTorchx2",
+            "PebbleBedTorchx3",
+            "PebbleBedTorchx4",
+            "PebbleBedTorchx5",
+            "PebbleBedTorchx6"
+          ]
+        },
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_PebbleBedDrive=Pebble Bed Drive\nTIProjectTemplate.summary.Project_PebbleBedDrive=Compact pebble-bed fusion reactors enable sustained high-thrust thermal propulsion for deep-system logistics and combat vessels.\n"
+    },
+    "full_magnetic_0": {
+      "concept_name": "FluxRail",
+      "tmpl_name": "TIMagneticGunTemplate",
+      "equip_type": "magnetic",
+      "items": [
+        {
+          "dataName": "FluxRailBatteryMk1",
+          "friendlyName": "Flux Rail Battery Mk1",
+          "mount": "OneHull",
+          "crew": 2,
+          "sort": 15,
+          "requiredProjectName": "Project_FluxRailBattery",
+          "attackMode": true,
+          "defenseMode": true,
+          "baseWeaponMass_tons": 30,
+          "cooldown_s": 25,
+          "efficiency": 0.5,
+          "flatChipping": 0.25,
+          "magazine": 800,
+          "ammoMass_kg": 15,
+          "muzzleVelocity_kps": 8.0,
+          "warheadMass_kg": 10,
+          "bombardmentValue": 2,
+          "targetingRange_km": 600,
+          "pivotRange_deg": 180,
+          "isPointDefenseTargetable": true,
+          "weightedBuildMaterials": {
+            "volatiles": 0.3,
+            "metals": 0.35,
+            "nobleMetals": 0.35
+          },
+          "ammoMaterials": {
+            "volatiles": 0.1,
+            "metals": 0.5,
+            "nobleMetals": 0.4
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedAlienLightMagBattery",
+          "modelResource": "shipweapons/alien_small_coilgun_battery",
+          "shotModelResource": "spaceCombat/BulletMagAlien",
+          "impactVisualFXResource": "spaceCombat/ImpactOrange",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Alien_Turrent",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongAverageLow001MonoRR"
+        },
+        {
+          "dataName": "FluxRailBatteryMk2",
+          "friendlyName": "Flux Rail Battery Mk2",
+          "mount": "TwoHullHoriz",
+          "crew": 3,
+          "sort": 25,
+          "requiredProjectName": "Project_FluxRailBattery",
+          "attackMode": true,
+          "defenseMode": true,
+          "baseWeaponMass_tons": 150,
+          "cooldown_s": 30,
+          "efficiency": 0.6,
+          "flatChipping": 0.3,
+          "magazine": 500,
+          "ammoMass_kg": 50,
+          "muzzleVelocity_kps": 10.0,
+          "warheadMass_kg": 40,
+          "bombardmentValue": 4,
+          "targetingRange_km": 750,
+          "pivotRange_deg": 120,
+          "isPointDefenseTargetable": true,
+          "weightedBuildMaterials": {
+            "volatiles": 0.3,
+            "metals": 0.35,
+            "nobleMetals": 0.34,
+            "exotics": 0.01
+          },
+          "ammoMaterials": {
+            "volatiles": 0.1,
+            "metals": 0.4,
+            "nobleMetals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedAlienMagBattery",
+          "modelResource": "shipweapons/alien_medium_coilgun_battery",
+          "shotModelResource": "spaceCombat/BulletMagAlien",
+          "impactVisualFXResource": "spaceCombat/ImpactWhite",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Alien_Turrent",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid012MonoRR"
+        },
+        {
+          "dataName": "FluxRailBatteryMk3",
+          "friendlyName": "Flux Rail Battery Mk3",
+          "mount": "FourHull",
+          "crew": 5,
+          "sort": 40,
+          "requiredProjectName": "Project_FluxRailBattery",
+          "attackMode": true,
+          "defenseMode": true,
+          "baseWeaponMass_tons": 600,
+          "cooldown_s": 45,
+          "efficiency": 0.7,
+          "flatChipping": 0.35,
+          "magazine": 200,
+          "ammoMass_kg": 200,
+          "muzzleVelocity_kps": 12.0,
+          "warheadMass_kg": 150,
+          "bombardmentValue": 6,
+          "targetingRange_km": 900,
+          "pivotRange_deg": 60,
+          "isPointDefenseTargetable": true,
+          "weightedBuildMaterials": {
+            "volatiles": 0.3,
+            "metals": 0.5,
+            "nobleMetals": 0.2
+          },
+          "ammoMaterials": {
+            "volatiles": 0.1,
+            "metals": 0.6,
+            "nobleMetals": 0.3
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedAlienHeavyMagBattery",
+          "modelResource": "shipweapons/alien_large_coilgun_battery",
+          "shotModelResource": "spaceCombat/BulletMagAlien",
+          "impactVisualFXResource": "spaceCombat/ImpactOrange",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Alien_Cannon",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid017MonoRR"
+        }
+      ],
+      "loc_items": [
+        "TIMagneticGunTemplate.displayName.FluxRailBatteryMk1=Flux Rail Battery Mk1\n",
+        "TIMagneticGunTemplate.displayName.FluxRailBatteryMk2=Flux Rail Battery Mk2\n",
+        "TIMagneticGunTemplate.displayName.FluxRailBatteryMk3=Flux Rail Battery Mk3\n"
+      ],
+      "project": {
+        "dataName": "Project_FluxRailBattery",
+        "friendlyName": "Flux Rail Battery",
+        "techCategory": "Weaponry",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 150000,
+        "prereqs": [
+          "ElectromagneticPropulsion"
+        ],
+        "effects": {
+          "unlockPart": [
+            "FluxRailBatteryMk1",
+            "FluxRailBatteryMk2",
+            "FluxRailBatteryMk3"
+          ]
+        },
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_FluxRailBattery=Flux Rail Battery\nTIProjectTemplate.summary.Project_FluxRailBattery=Advanced magnetic acceleration systems utilizing exotic confinement fields to fire high-velocity kinetic slugs.\n"
+    },
+    "full_magnetic_1": {
+      "concept_name": "FluxAccelerator",
+      "tmpl_name": "TIMagneticGunTemplate",
+      "equip_type": "magnetic",
+      "items": [
+        {
+          "dataName": "FluxAcceleratorBatteryMk1",
+          "friendlyName": "Flux Accelerator Battery Mk1",
+          "mount": "OneHull",
+          "crew": 2,
+          "sort": 12,
+          "requiredProjectName": "Project_FluxAcceleratorMk1",
+          "attackMode": true,
+          "defenseMode": true,
+          "baseWeaponMass_tons": 45,
+          "cooldown_s": 24,
+          "efficiency": 0.55,
+          "flatChipping": 0.3,
+          "magazine": 900,
+          "ammoMass_kg": 18,
+          "muzzleVelocity_kps": 8.5,
+          "warheadMass_kg": 14,
+          "bombardmentValue": 2,
+          "targetingRange_km": 600,
+          "pivotRange_deg": 180,
+          "isPointDefenseTargetable": true,
+          "weightedBuildMaterials": {
+            "volatiles": 0.3,
+            "metals": 0.35,
+            "nobleMetals": 0.34,
+            "exotics": 0.01
+          },
+          "ammoMaterials": {
+            "volatiles": 0.1,
+            "metals": 0.4,
+            "nobleMetals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedAlienLightMagBattery",
+          "modelResource": "shipweapons/alien_small_coilgun_battery",
+          "shotModelResource": "spaceCombat/BulletCoil",
+          "impactVisualFXResource": "spaceCombat/ImpactWhite",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_CoilGun_Turret",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid010MonoRR"
+        },
+        {
+          "dataName": "FluxAcceleratorCannonMk1",
+          "friendlyName": "Flux Accelerator Cannon Mk1",
+          "mount": "TwoHullHoriz",
+          "crew": 4,
+          "sort": 25,
+          "requiredProjectName": "Project_FluxAcceleratorMk1",
+          "attackMode": true,
+          "defenseMode": true,
+          "baseWeaponMass_tons": 180,
+          "cooldown_s": 32,
+          "salvo_shots": 4,
+          "intraSalvoCooldown_s": 12,
+          "efficiency": 0.65,
+          "flatChipping": 0.3,
+          "magazine": 500,
+          "ammoMass_kg": 75,
+          "muzzleVelocity_kps": 11.0,
+          "warheadMass_kg": 65,
+          "bombardmentValue": 5,
+          "targetingRange_km": 750,
+          "pivotRange_deg": 120,
+          "isPointDefenseTargetable": true,
+          "weightedBuildMaterials": {
+            "volatiles": 0.3,
+            "metals": 0.35,
+            "nobleMetals": 0.34,
+            "exotics": 0.01
+          },
+          "ammoMaterials": {
+            "volatiles": 0.1,
+            "metals": 0.4,
+            "nobleMetals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedAlienMagCannon",
+          "modelResource": "shipweapons/alien_medium_coilgun_cannon",
+          "shotModelResource": "spaceCombat/BulletCoil",
+          "impactVisualFXResource": "spaceCombat/ImpactWhite",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_CoilGun_Cannon",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid012MonoRR"
+        },
+        {
+          "dataName": "SpinalFluxAcceleratorMk1",
+          "friendlyName": "Spinal Flux Accelerator Mk1",
+          "mount": "FourHull",
+          "crew": 6,
+          "sort": 40,
+          "requiredProjectName": "Project_FluxAcceleratorMk1",
+          "attackMode": true,
+          "defenseMode": false,
+          "baseWeaponMass_tons": 850,
+          "cooldown_s": 48,
+          "salvo_shots": 3,
+          "intraSalvoCooldown_s": 18,
+          "efficiency": 0.7,
+          "flatChipping": 0.3,
+          "magazine": 180,
+          "ammoMass_kg": 350,
+          "muzzleVelocity_kps": 13.5,
+          "warheadMass_kg": 300,
+          "bombardmentValue": 8,
+          "targetingRange_km": 900,
+          "pivotRange_deg": 30,
+          "isPointDefenseTargetable": true,
+          "weightedBuildMaterials": {
+            "volatiles": 0.3,
+            "metals": 0.35,
+            "nobleMetals": 0.34,
+            "exotics": 0.01
+          },
+          "ammoMaterials": {
+            "volatiles": 0.1,
+            "metals": 0.4,
+            "nobleMetals": 0.5
+          },
+          "iconResource": "shipbuildericons/ICO_AdvancedAlienSpinalMagCannon",
+          "modelResource": "shipweapons/alien_huge_coilgun_cannon",
+          "shotModelResource": "spaceCombat/BulletCoil",
+          "impactVisualFXResource": "spaceCombat/ImpactOrange",
+          "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_CoilGun_Cannon",
+          "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongLoudMid019MonoRR"
+        }
+      ],
+      "loc_items": [
+        "TIMagneticGunTemplate.displayName.FluxAcceleratorBatteryMk1=Flux Accelerator Battery Mk1\n",
+        "TIMagneticGunTemplate.displayName.FluxAcceleratorCannonMk1=Flux Accelerator Cannon Mk1\n",
+        "TIMagneticGunTemplate.displayName.SpinalFluxAcceleratorMk1=Spinal Flux Accelerator Mk1\n"
+      ],
+      "project": {
+        "dataName": "Project_FluxAcceleratorMk1",
+        "friendlyName": "Flux Accelerator Mk1",
+        "techCategory": "Weapons",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 18500,
+        "prereqs": [
+          "SuperconductingMagnets"
+        ],
+        "effects": {
+          "unlockPart": [
+            "FluxAcceleratorBatteryMk1",
+            "FluxAcceleratorCannonMk1",
+            "SpinalFluxAcceleratorMk1"
+          ]
+        },
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_FluxAcceleratorMk1=Flux Accelerator Mk1\nTIProjectTemplate.summary.Project_FluxAcceleratorMk1=A high-yield electromagnetic accelerator system utilizing superconducting coils to launch dense kinetic projectiles at extreme velocities.\n"
+    },
+    "full_armor_0": {
+      "concept_name": "CeramicCompositeArmor",
+      "tmpl_name": "TIShipArmorTemplate",
+      "equip_type": "armor",
+      "items": [
+        {
+          "dataName": "CeramicCompositeArmor",
+          "friendlyName": "Ceramic Composite Armor",
+          "weightedBuildMaterials": {
+            "volatiles": 0.4,
+            "metals": 0.5,
+            "nobleMetals": 0.1,
+            "exotics": 0
+          },
+          "xRayHalfValue_cm": 15,
+          "baryonicHalfValue_cm": 110,
+          "density_kgm3": 2500,
+          "heatofVaporization_MJkg": 45,
+          "specialties": [
+            {
+              "armorSpecialty": "XRayResistance",
+              "value": 2.5
+            },
+            {
+              "armorSpecialty": "BaryonicResistance",
+              "value": 15.0
+            },
+            {
+              "armorSpecialty": "ChippingResistance",
+              "value": 0.85
+            }
+          ],
+          "iconResource": "shipbuildericons/ICO_CompositeArmor",
+          "requiredProjectName": "Project_CeramicCompositeArmor"
+        }
+      ],
+      "loc_items": [
+        "TIShipArmorTemplate.displayName.CeramicCompositeArmor=Ceramic Composite Armor\n"
+      ],
+      "project": {
+        "dataName": "Project_CeramicCompositeArmor",
+        "friendlyName": "Ceramic Composite Armor",
+        "techCategory": "Armor",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 12500,
+        "prereqs": [
+          "AdvancedAtomicManipulation"
+        ],
+        "effects": {
+          "unlockPart": [
+            "CeramicCompositeArmor"
+          ]
+        },
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_CeramicCompositeArmor=Ceramic Composite Armor\nTIProjectTemplate.summary.Project_CeramicCompositeArmor=A layered armor system combining ceramic tiles with a polymer backing to effectively dissipate kinetic impacts and resist chipping.\n"
+    },
+    "full_armor_1": {
+      "concept_name": "MetamaterialArmor",
+      "tmpl_name": "TIShipArmorTemplate",
+      "equip_type": "armor",
+      "items": [
+        {
+          "dataName": "MetamaterialArmor",
+          "friendlyName": "Metamaterial Armor",
+          "weightedBuildMaterials": {
+            "volatiles": 0.05,
+            "metals": 0.3,
+            "nobleMetals": 0.15,
+            "exotics": 0.5
+          },
+          "requiredProjectName": "Project_MetamaterialArmor",
+          "xRayHalfValue_cm": 18.5,
+          "baryonicHalfValue_cm": 110.0,
+          "density_kgm3": 1200,
+          "heatofVaporization_MJkg": 85.0,
+          "specialties": [
+            {
+              "armorSpecialty": "XRayResistance",
+              "value": 2.8
+            },
+            {
+              "armorSpecialty": "BaryonicResistance",
+              "value": 18.5
+            },
+            {
+              "armorSpecialty": "ChippingResistance",
+              "value": 0.8
+            }
+          ],
+          "iconResource": "shipbuildericons/ICO_ExoticArmor"
+        }
+      ],
+      "loc_items": [
+        "TIShipArmorTemplate.displayName.MetamaterialArmor=Metamaterial Armor\n"
+      ],
+      "project": {
+        "dataName": "Project_MetamaterialArmor",
+        "friendlyName": "Metamaterial Armor",
+        "techCategory": "Materials",
+        "AI_techRole": "None",
+        "AI_criticalTech": false,
+        "AI_projectRole": "None",
+        "researchCost": 1200,
+        "prereqs": [
+          "FutureTechMaterials"
+        ],
+        "effects": {
+          "unlockPart": [
+            "MetamaterialArmor"
+          ]
+        },
+        "oneTimeGlobally": false,
+        "repeatable": false,
+        "factionAvailableChance": 60,
+        "initialUnlockChance": 5,
+        "deltaUnlockChance": 5,
+        "maxUnlockChance": 50,
+        "resourcesGranted": []
+      },
+      "loc_project": "TIProjectTemplate.displayName.Project_MetamaterialArmor=Metamaterial Armor\nTIProjectTemplate.summary.Project_MetamaterialArmor=Engineers develop programmable matter structures that dynamically dissipate kinetic and thermal energy upon impact.\n"
     }
   }
 }

@@ -71,8 +71,8 @@ CACHE_FILE = Path(__file__).resolve().parent / ".generate_cache.json"
 DEFAULT_AI_ENDPOINT = "http://192.168.0.197:8000/v1"
 DEFAULT_MODEL = "Qwen3.6-27B-Q4_K_M.gguf"
 
-#DEFAULT_AI_ENDPOINT = "https://ai.skytech.dk/v1"
-#DEFAULT_MODEL = "Qwen3.6-27B-Q6_K.gguf"
+# DEFAULT_AI_ENDPOINT = "https://ai.skytech.dk/v1"
+# DEFAULT_MODEL = "Qwen3.6-27B-Q6_K.gguf"
 DEFAULT_TIMEOUT = 18000  # 30 min — thinking model + WoL wake delay
 
 # ---------------------------------------------------------------------------
@@ -154,12 +154,31 @@ def load_loc(path: Path) -> str:
 
 
 def append_loc(path: Path, lines: str) -> None:
-    """Append localization lines, ensuring a trailing newline."""
+    """Append localization lines, skipping keys that already exist in the file."""
     existing = load_loc(path)
+    existing_keys: Set[str] = set()
+    for ln in existing.splitlines():
+        ln = ln.strip()
+        if ln and not ln.startswith("#") and "=" in ln:
+            k, _ = ln.split("=", 1)
+            existing_keys.add(k.strip())
+
+    new_lines = []
+    for ln in lines.strip().splitlines():
+        stripped = ln.strip()
+        if not stripped or stripped.startswith("#") or "=" not in stripped:
+            new_lines.append(ln)
+            continue
+        k, _ = stripped.split("=", 1)
+        if k.strip() not in existing_keys:
+            new_lines.append(ln)
+
+    if not new_lines:
+        return
     if existing and not existing.endswith("\n"):
         existing += "\n"
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(existing + lines.strip() + "\n", encoding="utf-8")
+    path.write_text(existing + "\n".join(new_lines).strip() + "\n", encoding="utf-8")
 
 
 # ---------------------------------------------------------------------------
@@ -238,8 +257,31 @@ class GameData:
         return name not in self.all_mod_names and name not in self.all_base_names
 
     def all_valid_prereqs(self) -> List[str]:
-        """All base-game tech/project names that can be used as prereqs."""
-        return list(self.base_tech_names | self.base_project_names)
+        """All base-game tech/project names that can be used as prereqs.
+
+        Excludes:
+        - Projects with disable:true (game silently ignores/cascades errors on these)
+        - Geopolitical project roles the game rejects as tech-tree prereqs
+          (NeutralizeNation and related types)
+        - Faction-exclusive projects (factionAlways without factionPrereq)
+          — invisible to other factions, break downstream project visibility
+        - Objective/milestone-gated projects (requiredObjectiveName / requiredMilestone)
+          — hidden until a specific alien event fires; using one as a prereq makes the
+          downstream project invisible for the whole early/mid-game.  Transitive chains
+          through base-game projects (e.g. PlasmaBatteryMk3 -> Exotics) are intentional
+          game design and are left alone; we just avoid DIRECTLY referencing gated nodes.
+        """
+        _BAD_ROLES = {"NeutralizeNation", "AlienSignature", "AlienMethods", "AlienOperations"}
+        valid_projects = {
+            p["dataName"]
+            for p in self.base_projects
+            if not p.get("disable")
+            and p.get("AI_projectRole") not in _BAD_ROLES
+            and not ("factionAlways" in p and "factionPrereq" not in p)
+            and not p.get("requiredObjectiveName")
+            and not p.get("requiredMilestone")
+        }
+        return list(self.base_tech_names | valid_projects)
 
     def usable_effects(self) -> List[Dict]:
         """Effects suitable for 'easy' tier (permanent, additive, numeric value)."""
@@ -377,8 +419,11 @@ def validate_project(entry: Dict, game_data: GameData) -> List[str]:
         errors.append(f"dataName '{dn}' already exists")
     if not entry.get("friendlyName"):
         errors.append("Missing friendlyName")
-    if not entry.get("techCategory"):
+    cat = entry.get("techCategory", "")
+    if not cat:
         errors.append("Missing techCategory")
+    elif cat not in VALID_TECH_CATEGORIES:
+        errors.append(f"Invalid techCategory '{cat}' (must be one of {sorted(VALID_TECH_CATEGORIES)})")
     # Validate prereqs reference known names
     valid_prereqs = game_data.all_valid_prereqs()
     for pr in entry.get("prereqs") or []:
@@ -410,6 +455,18 @@ _SYSTEM_JSON = (
 )
 
 
+VALID_TECH_CATEGORIES = {
+    "Energy",
+    "InformationScience",
+    "LifeScience",
+    "Materials",
+    "MilitaryScience",
+    "SocialScience",
+    "SpaceScience",
+    "Xenology",
+}
+
+
 def _project_defaults(
     data_name: str,
     friendly_name: str,
@@ -430,10 +487,10 @@ def _project_defaults(
         "effects": effects,
         "oneTimeGlobally": False,
         "repeatable": False,
-        "factionAvailableChance": 60,
-        "initialUnlockChance": 5,
-        "deltaUnlockChance": 5,
-        "maxUnlockChance": 50,
+        "factionAvailableChance": random.randint(20, 100),
+        "initialUnlockChance": random.randint(5, 50),
+        "deltaUnlockChance": random.randint(2, 5),
+        "maxUnlockChance": random.randint(20, 100),
         "resourcesGranted": [],
     }
 
@@ -469,6 +526,7 @@ Reply with a JSON object containing ONLY these fields:
   prereq          (string, one prereq dataName from the provided list)
   displayName     (string, same as friendlyName or slightly different)
   summary         (string, 1 sentence flavour description, max 150 chars)
+  description     (string, 2-3 sentence lore/technical description)
 """
 
 _EASY_USER = """
@@ -490,7 +548,8 @@ Respond with JSON:
   "researchCost": ...,
   "prereq": "...",
   "displayName": "...",
-  "summary": "..."
+  "summary": "...",
+  "description": "..."
 }}
 """
 
@@ -585,14 +644,20 @@ def generate_easy(
         project = _project_defaults(
             data_name=dn,
             friendly_name=ai.get("friendlyName", dn),
-            tech_category=ai.get("techCategory", "SocialScience"),
+            tech_category=(
+                ai.get("techCategory", "SocialScience")
+                if ai.get("techCategory") in VALID_TECH_CATEGORIES
+                else "SocialScience"
+            ),
             effects=[effect["dataName"]],
             prereqs=[prereq],
             research_cost=int(ai.get("researchCost", 1000)),
         )
+        easy_summary = ai.get("summary", "")
         loc_project = (
             f"TIProjectTemplate.displayName.{dn}={ai.get('displayName', ai.get('friendlyName', dn))}\n"
-            f"TIProjectTemplate.summary.{dn}={ai.get('summary', '')}\n"
+            f"TIProjectTemplate.summary.{dn}={easy_summary}\n"
+            f"TIProjectTemplate.description.{dn}={ai.get('description', easy_summary)}\n"
         )
 
         errs = validate_project(project, game_data)
@@ -639,7 +704,9 @@ Reply with a JSON object:
   },
   "tech_loc": {
     "displayName": "...",
-    "summary":     "(1-2 sentences)"
+    "summary":     "(1-2 sentences)",
+    "quote":       "(an in-universe quote from a character, 1-3 sentences, include attribution on a new line starting with --)",
+    "description": "(2-4 sentences of technical/lore detail)"
   },
   "projects": [
     {
@@ -648,7 +715,8 @@ Reply with a JSON object:
       "techCategory":  "...",
       "researchCost":  (integer),
       "effects":       ["Effect_ExistingEffectName"],
-      "summary":       "(1 sentence)"
+      "summary":       "(1 sentence)",
+      "description":   "(2-3 sentence lore/technical detail)"
     },
     ... (2-4 projects total)
   ]
@@ -776,6 +844,8 @@ def generate_middle(
         loc_tech = (
             f"TITechTemplate.displayName.{tech_dn}={tech_loc.get('displayName', tech.get('friendlyName', tech_dn))}\n"
             f"TITechTemplate.summary.{tech_dn}={tech_loc.get('summary', '')}\n"
+            f"TITechTemplate.quote.{tech_dn}={tech_loc.get('quote', '')}\n"
+            f"TITechTemplate.description.{tech_dn}={tech_loc.get('description', '')}\n"
         )
 
         game_data.all_mod_names.add(tech_dn)
@@ -792,6 +862,12 @@ def generate_middle(
             if not p_effects:
                 p_effects = [random.choice(effects)["dataName"]]
             p_cat = p_ai.get("techCategory", tech.get("techCategory", "SocialScience"))
+            if p_cat not in VALID_TECH_CATEGORIES:
+                p_cat = (
+                    tech.get("techCategory", "SocialScience")
+                    if tech.get("techCategory") in VALID_TECH_CATEGORIES
+                    else "SocialScience"
+                )
             proj = _project_defaults(
                 data_name=p_dn,
                 friendly_name=p_ai.get("friendlyName", p_dn),
@@ -806,9 +882,11 @@ def generate_middle(
                 continue
             game_data.all_mod_names.add(p_dn)
             built_projects.append(proj)
+            mid_summary = p_ai.get("summary", "")
             loc_projects.append(
                 f"TIProjectTemplate.displayName.{p_dn}={p_ai.get('friendlyName', p_dn)}\n"
-                f"TIProjectTemplate.summary.{p_dn}={p_ai.get('summary', '')}\n"
+                f"TIProjectTemplate.summary.{p_dn}={mid_summary}\n"
+                f"TIProjectTemplate.description.{p_dn}={p_ai.get('description', mid_summary)}\n"
             )
 
         if not built_projects:
@@ -859,9 +937,11 @@ Reply with JSON:
     "prereq":        (one prereq dataName from provided list)
   },
   "loc": {
-    "item_displayNames": {"DataName": "Friendly Name", ...},
+    "item_displayNames":   {"DataName": "Friendly Name", ...},
+    "item_descriptions":   {"DataName": "(1-2 sentence description of this item)", ...},
     "project_displayName": "...",
-    "project_summary":     "(1 sentence)"
+    "project_summary":     "(1 sentence)",
+    "project_description": "(2-3 sentence lore/technical description)"
   }
 }
 """
@@ -1065,14 +1145,20 @@ def generate_full(
             game_data.all_mod_names.add(dn)
             valid_items.append(item)
             fn = dn_names.get(dn, item.get("friendlyName", dn))
-            loc_items.append(f"{tmpl_name}.displayName.{dn}={fn}\n")
+            desc_map = ai_loc.get("item_descriptions", {})
+            desc = desc_map.get(dn, "")
+            loc_entry = f"{tmpl_name}.displayName.{dn}={fn}\n"
+            if desc and item.get("thrusters", 1) == 1:  # drives: only x1 gets description
+                loc_entry += f"{tmpl_name}.description.{dn}={desc}\n"
+            elif desc and equip_type != "drive":
+                loc_entry += f"{tmpl_name}.description.{dn}={desc}\n"
+            loc_items.append(loc_entry)
 
         if not valid_items:
             print("SKIP (no valid items after validation)")
             continue
 
-        # Build the linking project (effects: {unlockPart: [...]})
-        unlock_names = [item["dataName"] for item in valid_items]
+        # The project itself needs no effects — items reference it via requiredProjectName
         prereq = ai_proj.get("prereq", "")
         if prereq not in game_data.all_valid_prereqs():
             prereq = random.choice(prereq_sample)
@@ -1080,8 +1166,12 @@ def generate_full(
         project = _project_defaults(
             data_name=project_dn,
             friendly_name=ai_proj.get("friendlyName", concept),
-            tech_category=ai_proj.get("techCategory", "MilitaryScience"),
-            effects={"unlockPart": unlock_names},
+            tech_category=(
+                ai_proj.get("techCategory", "MilitaryScience")
+                if ai_proj.get("techCategory") in VALID_TECH_CATEGORIES
+                else "MilitaryScience"
+            ),
+            effects=[],
             prereqs=[prereq],
             research_cost=int(ai_proj.get("researchCost", 5000)),
         )
@@ -1092,9 +1182,12 @@ def generate_full(
 
         game_data.all_mod_names.add(project_dn)
 
+        proj_summary = ai_loc.get("project_summary", "")
+        proj_desc = ai_loc.get("project_description", proj_summary)
         loc_project = (
             f"TIProjectTemplate.displayName.{project_dn}={ai_loc.get('project_displayName', ai_proj.get('friendlyName', concept))}\n"
-            f"TIProjectTemplate.summary.{project_dn}={ai_loc.get('project_summary', '')}\n"
+            f"TIProjectTemplate.summary.{project_dn}={proj_summary}\n"
+            f"TIProjectTemplate.description.{project_dn}={proj_desc}\n"
         )
 
         result = {
@@ -1193,11 +1286,19 @@ def _apply_easy(results: List[Dict]) -> None:
     loc_path = MOD_LOC_DIR / "TIProjectTemplate.en"
     _backup(proj_path)
     data = load_json(proj_path)
+    existing = {p.get("dataName") for p in data}
+    added = 0
     for r in results:
+        dn = r["project"].get("dataName")
+        if dn in existing:
+            print(f"  Skip duplicate: {dn}")
+            continue
         data.append(r["project"])
+        existing.add(dn)
         append_loc(loc_path, r["loc_project"])
+        added += 1
     save_json(proj_path, data)
-    print(f"  Written {len(results)} projects to {proj_path.name}")
+    print(f"  Written {added} projects to {proj_path.name} ({len(results)-added} already present)")
     print(f"  Appended localization to {loc_path.name}")
 
 
@@ -1210,16 +1311,31 @@ def _apply_middle(results: List[Dict]) -> None:
     _backup(tech_path)
     projs = load_json(proj_path)
     techs = load_json(tech_path)
+    existing_projs = {p.get("dataName") for p in projs}
+    existing_techs = {t.get("dataName") for t in techs}
+    added_techs = 0
+    added_projs = 0
     for r in results:
+        tdn = r["tech"].get("dataName")
+        if tdn in existing_techs:
+            print(f"  Skip duplicate tech: {tdn}")
+            continue
         techs.append(r["tech"])
+        existing_techs.add(tdn)
         append_loc(tech_loc, r["loc_tech"])
-        for p in r["projects"]:
+        added_techs += 1
+        for p, lp in zip(r["projects"], r["loc_projects"]):
+            pdn = p.get("dataName")
+            if pdn in existing_projs:
+                print(f"  Skip duplicate project: {pdn}")
+                continue
             projs.append(p)
-        for lp in r["loc_projects"]:
+            existing_projs.add(pdn)
             append_loc(proj_loc, lp)
+            added_projs += 1
     save_json(tech_path, techs)
     save_json(proj_path, projs)
-    print(f"  Written {len(results)} techs + projects")
+    print(f"  Written {added_techs} techs, {added_projs} projects ({len(results)-added_techs} techs already present)")
 
 
 def _apply_full(results: List[Dict]) -> None:
@@ -1227,6 +1343,7 @@ def _apply_full(results: List[Dict]) -> None:
     proj_loc = MOD_LOC_DIR / "TIProjectTemplate.en"
     _backup(proj_path)
     projs = load_json(proj_path)
+    existing_projs = {p.get("dataName") for p in projs}
 
     # Group results by tmpl_name so we do one backup per file
     by_tmpl: Dict[str, List[Dict]] = defaultdict(list)
@@ -1238,15 +1355,27 @@ def _apply_full(results: List[Dict]) -> None:
         equip_loc_path = MOD_LOC_DIR / f"{tmpl_name}.en"
         _backup(equip_path)
         equip_data = load_json(equip_path)
+        existing_equip = {e.get("dataName") for e in equip_data}
+        added_items = 0
         for r in tmpl_results:
-            for item in r["items"]:
+            for item, loc_line in zip(r["items"], r["loc_items"]):
+                idn = item.get("dataName")
+                if idn in existing_equip:
+                    print(f"  Skip duplicate item: {idn}")
+                    continue
                 equip_data.append(item)
-            for loc_line in r["loc_items"]:
+                existing_equip.add(idn)
                 append_loc(equip_loc_path, loc_line)
+                added_items += 1
+            pdn = r["project"].get("dataName")
+            if pdn in existing_projs:
+                print(f"  Skip duplicate project: {pdn}")
+                continue
             projs.append(r["project"])
+            existing_projs.add(pdn)
             append_loc(proj_loc, r["loc_project"])
         save_json(equip_path, equip_data)
-        print(f"  Written to {equip_path.name} ({len(tmpl_results)} sets)")
+        print(f"  Written to {equip_path.name} ({added_items} items added)")
 
     save_json(proj_path, projs)
     print(f"  Written linking projects to TIProjectTemplate.json")

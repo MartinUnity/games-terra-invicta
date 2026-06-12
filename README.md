@@ -9,6 +9,7 @@ Extract, visualize, and mod Terra Invicta savegame data.
 
 - `extraction.py` - Parse savegames into structured CSV/JSON datasets
 - `show-data.py` - Streamlit app with interactive charts and filters
+- `config.py` - Centralized workspace paths and data file constants
 - `scripts/cleanup_saves.py` - Archive/tidy save games (keeps newest N per type)
 
 ## Script Organization
@@ -34,6 +35,13 @@ Extract, visualize, and mod Terra Invicta savegame data.
 - `mining_bonus.sh` - Get full mining bonus data
 - `project_list.sh` - Generate project list for AI worker
 - `generate_outline.py` - Generate project outline documentation
+
+### One-Off Scripts (`scripts/one_off/`)
+- `generate_content.py` - AI-driven content generator for mod projects
+- `balance_prereqs.py` - Redistribute project prerequisites for even progression spread
+- `balance_effects.py` - Balance effect category totals into target range
+- `analyze_effects.py` - Analyze effect distribution across all projects
+- `update_research_costs.py` - Adjust research costs for matched projects
 
 ## Getting Started
 

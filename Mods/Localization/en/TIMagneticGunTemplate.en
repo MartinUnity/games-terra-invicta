@@ -1,0 +1,12 @@
+TIMagneticGunTemplate.displayName.FluxRailBatteryMk1=Flux Rail Battery Mk1
+TIMagneticGunTemplate.displayName.FluxRailBatteryMk2=Flux Rail Battery Mk2
+TIMagneticGunTemplate.displayName.FluxRailBatteryMk3=Flux Rail Battery Mk3
+TIMagneticGunTemplate.displayName.FluxAcceleratorBatteryMk1=Flux Accelerator Battery Mk1
+TIMagneticGunTemplate.displayName.FluxAcceleratorCannonMk1=Flux Accelerator Cannon Mk1
+TIMagneticGunTemplate.displayName.SpinalFluxAcceleratorMk1=Spinal Flux Accelerator Mk1
+TIMagneticGunTemplate.description.FluxRailBatteryMk1=A first-generation flux rail battery that uses pulsed magnetic flux to accelerate ferromagnetic slugs to extreme velocities, delivering high kinetic energy on target.
+TIMagneticGunTemplate.description.FluxRailBatteryMk2=An improved flux rail battery with reinforced flux coils and enhanced cooling, offering greater muzzle velocity and sustained-fire capability over Mk I.
+TIMagneticGunTemplate.description.FluxRailBatteryMk3=The third-generation flux rail battery, featuring advanced coil geometry and superconducting rails that push projectile velocities to near-theoretical limits.
+TIMagneticGunTemplate.description.FluxAcceleratorBatteryMk1=A flux accelerator battery optimised for rapid-fire engagement, trading peak projectile velocity for a much higher rate of fire to overwhelm point-defence systems.
+TIMagneticGunTemplate.description.FluxAcceleratorCannonMk1=A heavy flux accelerator cannon that concentrates full coil output into a single massive shot, capable of punching through substantial armour plating.
+TIMagneticGunTemplate.description.SpinalFluxAcceleratorMk1=A ship-spinal flux accelerator that runs the length of the vessel, using the full hull as a launch rail to deliver catastrophic kinetic energy over extreme engagement distances.
