@@ -88,5 +88,65 @@
       }
     ],
     "iconResource": "shipbuildericons/ICO_BoronCarbideArmor"
+  },
+  {
+    "dataName": "CeramicCompositeArmor",
+    "friendlyName": "Ceramic Composite Armor",
+    "weightedBuildMaterials": {
+      "volatiles": 0.4,
+      "metals": 0.5,
+      "nobleMetals": 0.1,
+      "exotics": 0
+    },
+    "xRayHalfValue_cm": 15,
+    "baryonicHalfValue_cm": 110,
+    "density_kgm3": 2500,
+    "heatofVaporization_MJkg": 45,
+    "specialties": [
+      {
+        "armorSpecialty": "XRayResistance",
+        "value": 2.5
+      },
+      {
+        "armorSpecialty": "BaryonicResistance",
+        "value": 15.0
+      },
+      {
+        "armorSpecialty": "ChippingResistance",
+        "value": 0.85
+      }
+    ],
+    "iconResource": "shipbuildericons/ICO_CompositeArmor",
+    "requiredProjectName": "Project_CeramicCompositeArmor"
+  },
+  {
+    "dataName": "MetamaterialArmor",
+    "friendlyName": "Metamaterial Armor",
+    "weightedBuildMaterials": {
+      "volatiles": 0.05,
+      "metals": 0.3,
+      "nobleMetals": 0.15,
+      "exotics": 0.5
+    },
+    "requiredProjectName": "Project_MetamaterialArmor",
+    "xRayHalfValue_cm": 18.5,
+    "baryonicHalfValue_cm": 110.0,
+    "density_kgm3": 1200,
+    "heatofVaporization_MJkg": 85.0,
+    "specialties": [
+      {
+        "armorSpecialty": "XRayResistance",
+        "value": 2.8
+      },
+      {
+        "armorSpecialty": "BaryonicResistance",
+        "value": 18.5
+      },
+      {
+        "armorSpecialty": "ChippingResistance",
+        "value": 0.8
+      }
+    ],
+    "iconResource": "shipbuildericons/ICO_ExoticArmor"
   }
 ]

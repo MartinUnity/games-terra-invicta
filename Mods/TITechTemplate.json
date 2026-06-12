@@ -330,5 +330,20 @@
     "_meta_": {
       "notes": "Covers Mk4-Mk6 Prototype Plasma Cannons."
     }
+  },
+  {
+    "dataName": "OrbitalTacticalDoctrine",
+    "friendlyName": "Orbital Tactical Doctrine",
+    "techCategory": "MilitaryScience",
+    "AI_techRole": "SpaceWar",
+    "AI_criticalTech": false,
+    "endGameTech": false,
+    "researchCost": 45000,
+    "prereqs": [
+      "TransInterfaceWarfare",
+      "HighEnergyLasers",
+      "Railguns"
+    ],
+    "effects": []
   }
 ]

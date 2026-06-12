@@ -4,3 +4,7 @@ TIShipArmorTemplate.displayName.NeutroniumPlating=Neutronium Plating
 TIShipArmorTemplate.description.NeutroniumPlating=Extremely dense neutronium plating that provides exceptional protection against various forms of attack.
 TIShipArmorTemplate.displayName.XentroniumPlating=Xentronium Plating
 TIShipArmorTemplate.description.XentroniumPlating=A balanced armor option offering moderate protection and weight. Suitable for a variety of applications.
+TIShipArmorTemplate.displayName.CeramicCompositeArmor=Ceramic Composite Armor
+TIShipArmorTemplate.displayName.MetamaterialArmor=Metamaterial Armor
+TIShipArmorTemplate.description.CeramicCompositeArmor=Layered ceramic matrix composite plating that disperses impact energy and resists both kinetic penetrators and thermal radiation damage.
+TIShipArmorTemplate.description.MetamaterialArmor=Engineered metamaterial lattice armor that exploits negative-index structures to redirect incoming energy, providing exceptional protection at reduced mass.

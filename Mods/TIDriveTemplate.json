@@ -2338,5 +2338,353 @@
       "water": 1
     },
     "iconResource": "shipbuildericons/ICO_VASIMR"
+  },
+  {
+    "dataName": "HelixCavityDrivex1",
+    "friendlyName": "Helix Cavity Drive x1",
+    "thrusters": 1,
+    "notes": "Helix Cavity Electrothermal Drive x1",
+    "driveClassification": "Electrothermal",
+    "requiredProjectName": "Project_HelicalCavityPropulsion",
+    "thrust_N": 450000,
+    "EV_kps": 8500,
+    "specificPower_kgMW": 12.5,
+    "efficiency": 0.82,
+    "thrustRating_GW": "38.25",
+    "req power": "12.500",
+    "flatMass_tons": 45,
+    "requiredPowerPlant": "Solid_Core_Fission",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.85,
+      "exotics": 0.15
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 0.6,
+      "volatiles": 0.4
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+  },
+  {
+    "dataName": "HelixCavityDrivex2",
+    "friendlyName": "Helix Cavity Drive x2",
+    "thrusters": 2,
+    "notes": "Helix Cavity Electrothermal Drive x1",
+    "driveClassification": "Electrothermal",
+    "requiredProjectName": "Project_HelicalCavityPropulsion",
+    "thrust_N": 900000,
+    "EV_kps": 8500,
+    "specificPower_kgMW": 12.5,
+    "efficiency": 0.82,
+    "thrustRating_GW": "76.5",
+    "req power": "12.500",
+    "flatMass_tons": 45,
+    "requiredPowerPlant": "Solid_Core_Fission",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.85,
+      "exotics": 0.15
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 0.6,
+      "volatiles": 0.4
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+  },
+  {
+    "dataName": "HelixCavityDrivex3",
+    "friendlyName": "Helix Cavity Drive x3",
+    "thrusters": 3,
+    "notes": "Helix Cavity Electrothermal Drive x1",
+    "driveClassification": "Electrothermal",
+    "requiredProjectName": "Project_HelicalCavityPropulsion",
+    "thrust_N": 1350000,
+    "EV_kps": 8500,
+    "specificPower_kgMW": 12.5,
+    "efficiency": 0.82,
+    "thrustRating_GW": "114.75",
+    "req power": "12.500",
+    "flatMass_tons": 45,
+    "requiredPowerPlant": "Solid_Core_Fission",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.85,
+      "exotics": 0.15
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 0.6,
+      "volatiles": 0.4
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+  },
+  {
+    "dataName": "HelixCavityDrivex4",
+    "friendlyName": "Helix Cavity Drive x4",
+    "thrusters": 4,
+    "notes": "Helix Cavity Electrothermal Drive x1",
+    "driveClassification": "Electrothermal",
+    "requiredProjectName": "Project_HelicalCavityPropulsion",
+    "thrust_N": 1800000,
+    "EV_kps": 8500,
+    "specificPower_kgMW": 12.5,
+    "efficiency": 0.82,
+    "thrustRating_GW": "153.0",
+    "req power": "12.500",
+    "flatMass_tons": 45,
+    "requiredPowerPlant": "Solid_Core_Fission",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.85,
+      "exotics": 0.15
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 0.6,
+      "volatiles": 0.4
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+  },
+  {
+    "dataName": "HelixCavityDrivex5",
+    "friendlyName": "Helix Cavity Drive x5",
+    "thrusters": 5,
+    "notes": "Helix Cavity Electrothermal Drive x1",
+    "driveClassification": "Electrothermal",
+    "requiredProjectName": "Project_HelicalCavityPropulsion",
+    "thrust_N": 2250000,
+    "EV_kps": 8500,
+    "specificPower_kgMW": 12.5,
+    "efficiency": 0.82,
+    "thrustRating_GW": "191.25",
+    "req power": "12.500",
+    "flatMass_tons": 45,
+    "requiredPowerPlant": "Solid_Core_Fission",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.85,
+      "exotics": 0.15
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 0.6,
+      "volatiles": 0.4
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+  },
+  {
+    "dataName": "HelixCavityDrivex6",
+    "friendlyName": "Helix Cavity Drive x6",
+    "thrusters": 6,
+    "notes": "Helix Cavity Electrothermal Drive x1",
+    "driveClassification": "Electrothermal",
+    "requiredProjectName": "Project_HelicalCavityPropulsion",
+    "thrust_N": 2700000,
+    "EV_kps": 8500,
+    "specificPower_kgMW": 12.5,
+    "efficiency": 0.82,
+    "thrustRating_GW": "229.5",
+    "req power": "12.500",
+    "flatMass_tons": 45,
+    "requiredPowerPlant": "Solid_Core_Fission",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.85,
+      "exotics": 0.15
+    },
+    "propellant": "Hydrogen",
+    "perTankPropellantMaterials": {
+      "water": 0.6,
+      "volatiles": 0.4
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedCavityDrive"
+  },
+  {
+    "dataName": "PebbleBedTorchx1",
+    "friendlyName": "Pebble Bed Torch x1",
+    "thrusters": 1,
+    "notes": "Pebble Bed Fusion Torch",
+    "driveClassification": "Fusion_Thermal",
+    "requiredProjectName": "Project_PebbleBedDrive",
+    "thrust_N": 450000,
+    "EV_kps": 2500,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.85,
+    "thrustRating_GW": "562.5",
+    "req power": "661.765",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Z_Pinch_Fusion",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.8,
+      "exotics": 0.2
+    },
+    "propellant": "ReactionProducts",
+    "perTankPropellantMaterials": {
+      "water": 0.9,
+      "volatiles": 0.1
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+  },
+  {
+    "dataName": "PebbleBedTorchx2",
+    "friendlyName": "Pebble Bed Torch x2",
+    "thrusters": 2,
+    "notes": "Pebble Bed Fusion Torch",
+    "driveClassification": "Fusion_Thermal",
+    "requiredProjectName": "Project_PebbleBedDrive",
+    "thrust_N": 900000,
+    "EV_kps": 2500,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.85,
+    "thrustRating_GW": "1125.0",
+    "req power": "661.765",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Z_Pinch_Fusion",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.8,
+      "exotics": 0.2
+    },
+    "propellant": "ReactionProducts",
+    "perTankPropellantMaterials": {
+      "water": 0.9,
+      "volatiles": 0.1
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+  },
+  {
+    "dataName": "PebbleBedTorchx3",
+    "friendlyName": "Pebble Bed Torch x3",
+    "thrusters": 3,
+    "notes": "Pebble Bed Fusion Torch",
+    "driveClassification": "Fusion_Thermal",
+    "requiredProjectName": "Project_PebbleBedDrive",
+    "thrust_N": 1350000,
+    "EV_kps": 2500,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.85,
+    "thrustRating_GW": "1687.5",
+    "req power": "661.765",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Z_Pinch_Fusion",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.8,
+      "exotics": 0.2
+    },
+    "propellant": "ReactionProducts",
+    "perTankPropellantMaterials": {
+      "water": 0.9,
+      "volatiles": 0.1
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+  },
+  {
+    "dataName": "PebbleBedTorchx4",
+    "friendlyName": "Pebble Bed Torch x4",
+    "thrusters": 4,
+    "notes": "Pebble Bed Fusion Torch",
+    "driveClassification": "Fusion_Thermal",
+    "requiredProjectName": "Project_PebbleBedDrive",
+    "thrust_N": 1800000,
+    "EV_kps": 2500,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.85,
+    "thrustRating_GW": "2250.0",
+    "req power": "661.765",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Z_Pinch_Fusion",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.8,
+      "exotics": 0.2
+    },
+    "propellant": "ReactionProducts",
+    "perTankPropellantMaterials": {
+      "water": 0.9,
+      "volatiles": 0.1
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+  },
+  {
+    "dataName": "PebbleBedTorchx5",
+    "friendlyName": "Pebble Bed Torch x5",
+    "thrusters": 5,
+    "notes": "Pebble Bed Fusion Torch",
+    "driveClassification": "Fusion_Thermal",
+    "requiredProjectName": "Project_PebbleBedDrive",
+    "thrust_N": 2250000,
+    "EV_kps": 2500,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.85,
+    "thrustRating_GW": "2812.5",
+    "req power": "661.765",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Z_Pinch_Fusion",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.8,
+      "exotics": 0.2
+    },
+    "propellant": "ReactionProducts",
+    "perTankPropellantMaterials": {
+      "water": 0.9,
+      "volatiles": 0.1
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
+  },
+  {
+    "dataName": "PebbleBedTorchx6",
+    "friendlyName": "Pebble Bed Torch x6",
+    "thrusters": 6,
+    "notes": "Pebble Bed Fusion Torch",
+    "driveClassification": "Fusion_Thermal",
+    "requiredProjectName": "Project_PebbleBedDrive",
+    "thrust_N": 2700000,
+    "EV_kps": 2500,
+    "specificPower_kgMW": 0,
+    "efficiency": 0.85,
+    "thrustRating_GW": "3375.0",
+    "req power": "661.765",
+    "flatMass_tons": 0,
+    "requiredPowerPlant": "Z_Pinch_Fusion",
+    "thrustCap": 40,
+    "cooling": "Closed",
+    "powerGen": "DriveActive",
+    "weightedBuildMaterials": {
+      "metals": 0.8,
+      "exotics": 0.2
+    },
+    "propellant": "ReactionProducts",
+    "perTankPropellantMaterials": {
+      "water": 0.9,
+      "volatiles": 0.1
+    },
+    "iconResource": "shipbuildericons/ICO_AdvancedPebbleDrive"
   }
 ]

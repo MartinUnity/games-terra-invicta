@@ -56,14 +56,10 @@ def gather_template_issues(templates: List[Dict]) -> Tuple[set, List[Tuple[str, 
             issues.append((ctx, "missing friendlyName"))
 
         if "AI_techRole" not in entry:
-            issues.append(
-                (ctx, f"missing AI_techRole :: dataName={dn}, friendlyName={fn}")
-            )
+            issues.append((ctx, f"missing AI_techRole :: dataName={dn}, friendlyName={fn}"))
 
         if "AI_criticalTech" not in entry:
-            issues.append(
-                (ctx, f"missing AI_criticalTech :: dataName={dn}, friendlyName={fn}")
-            )
+            issues.append((ctx, f"missing AI_criticalTech :: dataName={dn}, friendlyName={fn}"))
 
     return names, issues
 
@@ -106,9 +102,7 @@ def check_file(
                 matched_game += 1
             else:
                 unmatched += 1
-                msgs.append(
-                    f"{ctx}requiredProjectName '{req}' not found in TIProjectTemplate.json or game templates"
-                )
+                msgs.append(f"{ctx}requiredProjectName '{req}' not found in TIProjectTemplate.json or game templates")
 
     if isinstance(obj, list):
         for idx, itm in enumerate(obj):
@@ -153,11 +147,7 @@ def check_file(
             try:
                 gobj = load_json(gs)
                 if isinstance(gobj, list):
-                    game_specific_names = {
-                        t.get("dataName")
-                        for t in gobj
-                        if isinstance(t, dict) and t.get("dataName")
-                    }
+                    game_specific_names = {t.get("dataName") for t in gobj if isinstance(t, dict) and t.get("dataName")}
             except Exception as e:
                 msgs.append(f"Failed to read localization file {loc_file}: {e}")
 
@@ -198,12 +188,7 @@ def check_file(
                 if not has("abbr"):
                     msgs.append(f"Missing localization key: {base}.abbr.{dn}")
         elif base == "TITechTemplate":
-            if (
-                has("displayName")
-                and has("summary")
-                and has("quote")
-                and has("description")
-            ):
+            if has("displayName") and has("summary") and has("quote") and has("description"):
                 ok = True
             else:
                 # Report specific missing keys for better debugging
@@ -221,9 +206,7 @@ def check_file(
                 ok = True
             else:
                 # Report missing keys for better debugging
-                msgs.append(
-                    f"Missing localization key: {base}.displayName.{dn} or {base}.description.{dn}"
-                )
+                msgs.append(f"Missing localization key: {base}.displayName.{dn} or {base}.description.{dn}")
         if ok:
             loc_ok_local += 1
         else:
@@ -235,12 +218,8 @@ def check_file(
                 if len(loc_missing_examples) < 8:
                     loc_missing_examples.append(dn)
 
-    msgs.append(
-        f"matched_local={matched_local}; matched_game={matched_game}; unmatched={unmatched}"
-    )
-    msgs.append(
-        f"loc_ok_local={loc_ok_local}; loc_ok_game={loc_ok_game}; loc_missing={loc_missing}"
-    )
+    msgs.append(f"matched_local={matched_local}; matched_game={matched_game}; unmatched={unmatched}")
+    msgs.append(f"loc_ok_local={loc_ok_local}; loc_ok_game={loc_ok_game}; loc_missing={loc_missing}")
     if loc_missing_examples:
         msgs.append("loc_missing_examples=" + ",".join(loc_missing_examples))
     return (
@@ -270,9 +249,7 @@ def print_table(results: List[Tuple[str, bool, List[str]]]) -> None:
 def main() -> int:
     p = argparse.ArgumentParser(description="Validate Mods TI JSON files (read-only)")
     p.add_argument("--mods-dir", type=Path, default=None, help="Path to Mods directory")
-    p.add_argument(
-        "--templates", type=Path, default=None, help="Path to TIProjectTemplate.json"
-    )
+    p.add_argument("--templates", type=Path, default=None, help="Path to TIProjectTemplate.json")
     p.add_argument(
         "--game-templates",
         type=Path,
@@ -331,9 +308,7 @@ def main() -> int:
         return 2
 
     # Load built-in game templates (optional)
-    default_game_template = (
-        Path.home() / "Games" / "TerraInvicta" / "templates" / "TIProjectTemplate.json"
-    )
+    default_game_template = Path.home() / "Games" / "TerraInvicta" / "templates" / "TIProjectTemplate.json"
     game_template_file = args.game_templates or default_game_template
     game_template_names: set = set()
     game_templates_dir: Path | None = None
@@ -344,18 +319,12 @@ def main() -> int:
             # if a specific file was given, treat its parent as the templates directory
             game_templates_dir = game_template_file.parent
 
-    if (
-        game_template_file
-        and game_template_file.exists()
-        and game_template_file.is_file()
-    ):
+    if game_template_file and game_template_file.exists() and game_template_file.is_file():
         try:
             game_templates = load_json(game_template_file)
             if isinstance(game_templates, list):
                 game_template_names = {
-                    t.get("dataName")
-                    for t in game_templates
-                    if isinstance(t, dict) and t.get("dataName")
+                    t.get("dataName") for t in game_templates if isinstance(t, dict) and t.get("dataName")
                 }
         except Exception:
             game_template_names = set()
@@ -448,9 +417,7 @@ def main() -> int:
     )
 
     # Optionally list or dump overrides: where a local TI*.json contains the same dataName as the game's matching template file
-    if (
-        args.list_overrides or args.dump_overrides or args.dump_overrides_full
-    ) and game_templates_dir:
+    if (args.list_overrides or args.dump_overrides or args.dump_overrides_full) and game_templates_dir:
         for fp in sorted(mods_dir.glob("TI*.json")):
             if fp.resolve() == template_file.resolve():
                 continue
@@ -464,16 +431,8 @@ def main() -> int:
                 continue
             if not isinstance(local_obj, list) or not isinstance(game_obj, list):
                 continue
-            local_map = {
-                o.get("dataName"): o
-                for o in local_obj
-                if isinstance(o, dict) and o.get("dataName")
-            }
-            game_map = {
-                o.get("dataName"): o
-                for o in game_obj
-                if isinstance(o, dict) and o.get("dataName")
-            }
+            local_map = {o.get("dataName"): o for o in local_obj if isinstance(o, dict) and o.get("dataName")}
+            game_map = {o.get("dataName"): o for o in game_obj if isinstance(o, dict) and o.get("dataName")}
             overlap = sorted(k for k in local_map.keys() & game_map.keys())
             if not overlap:
                 continue
@@ -513,8 +472,83 @@ def main() -> int:
 
                                 print(f"  {k}: local={trunc(lv)} | game={trunc(gv)}")
 
+    # --- deep validation: project prereqs and effects ---
+    deep_errors: list[str] = []
+
+    # Build valid prereq set: tech nodes + non-disabled, non-geopolitical, non-faction-exclusive research projects
+    BAD_PREREQ_ROLES = {"NeutralizeNation", "AlienSignature", "AlienMethods", "AlienOperations"}
+    game_tech_names: set = set()
+    game_proj_names_valid: set = set()
+    if game_templates_dir:
+        tech_fp = game_templates_dir / "TITechTemplate.json"
+        if tech_fp.exists():
+            try:
+                game_tech_names = {
+                    t["dataName"] for t in load_json(tech_fp) if isinstance(t, dict) and t.get("dataName")
+                }
+            except Exception:
+                pass
+        proj_fp = game_templates_dir / "TIProjectTemplate.json"
+        if proj_fp.exists():
+            try:
+                game_proj_names_valid = {
+                    t["dataName"]
+                    for t in load_json(proj_fp)
+                    if isinstance(t, dict)
+                    and t.get("dataName")
+                    and not t.get("disable")
+                    and t.get("AI_projectRole") not in BAD_PREREQ_ROLES
+                    # Exclude faction-exclusive projects (factionAlways without factionPrereq)
+                    # — these are invisible to other factions and break downstream visibility
+                    and not ("factionAlways" in t and "factionPrereq" not in t)
+                }
+            except Exception:
+                pass
+
+    mod_proj_names = {p["dataName"] for p in templates if isinstance(p, dict) and p.get("dataName")}
+    valid_prereq_names = game_tech_names | game_proj_names_valid | mod_proj_names
+
+    # Build valid effect set: base game + mod TIEffectTemplate
+    valid_effect_names: set = set()
+    if game_templates_dir:
+        eff_fp = game_templates_dir / "TIEffectTemplate.json"
+        if eff_fp.exists():
+            try:
+                valid_effect_names = {
+                    e["dataName"] for e in load_json(eff_fp) if isinstance(e, dict) and e.get("dataName")
+                }
+            except Exception:
+                pass
+    mod_eff_fp = mods_dir / "TIEffectTemplate.json"
+    if mod_eff_fp.exists():
+        try:
+            valid_effect_names |= {
+                e["dataName"] for e in load_json(mod_eff_fp) if isinstance(e, dict) and e.get("dataName")
+            }
+        except Exception:
+            pass
+
+    if valid_prereq_names or valid_effect_names:
+        for p in templates:
+            if not isinstance(p, dict):
+                continue
+            dn = p.get("dataName", "?")
+            for pr in p.get("prereqs", []):
+                if pr and pr not in valid_prereq_names:
+                    deep_errors.append(f"Bad prereq '{pr}' in {dn}")
+            for eff in p.get("effects", []):
+                if isinstance(eff, str) and eff and eff not in valid_effect_names:
+                    deep_errors.append(f"Bad effect '{eff}' in {dn}")
+
+        if deep_errors:
+            print(f"\nDeep validation errors ({len(deep_errors)}):")
+            for err in deep_errors:
+                print(f"  {err}")
+        else:
+            print("\nDeep validation: all prereqs and effects are valid.")
+
     # exit code
-    any_errors = any(not ok for _, ok, _ in results)
+    any_errors = any(not ok for _, ok, _ in results) or bool(deep_errors)
     return 0 if not any_errors else 1
 
 

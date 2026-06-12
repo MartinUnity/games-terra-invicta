@@ -117,3 +117,17 @@ TIDriveTemplate.displayName.QuantumCascadeDrive_Mk3x4=Quantum Cascade Drive Mk I
 TIDriveTemplate.displayName.QuantumCascadeDrive_Mk3x5=Quantum Cascade Drive Mk III x5
 TIDriveTemplate.displayName.QuantumCascadeDrive_Mk3x6=Quantum Cascade Drive Mk III x6
 
+TIDriveTemplate.displayName.HelixCavityDrivex1=Helix Cavity Drive x1
+TIDriveTemplate.displayName.HelixCavityDrivex2=Helix Cavity Drive x2
+TIDriveTemplate.displayName.HelixCavityDrivex3=Helix Cavity Drive x3
+TIDriveTemplate.displayName.HelixCavityDrivex4=Helix Cavity Drive x4
+TIDriveTemplate.displayName.HelixCavityDrivex5=Helix Cavity Drive x5
+TIDriveTemplate.displayName.HelixCavityDrivex6=Helix Cavity Drive x6
+TIDriveTemplate.displayName.PebbleBedTorchx1=Pebble Bed Torch x1
+TIDriveTemplate.displayName.PebbleBedTorchx2=Pebble Bed Torch x2
+TIDriveTemplate.displayName.PebbleBedTorchx3=Pebble Bed Torch x3
+TIDriveTemplate.displayName.PebbleBedTorchx4=Pebble Bed Torch x4
+TIDriveTemplate.displayName.PebbleBedTorchx5=Pebble Bed Torch x5
+TIDriveTemplate.displayName.PebbleBedTorchx6=Pebble Bed Torch x6
+TIDriveTemplate.description.HelixCavityDrivex1=An electrothermal drive that superheats propellant inside a resonant helical cavity, achieving high exhaust velocity for deep-space missions while requiring only fission-grade power.
+TIDriveTemplate.description.PebbleBedTorchx1=A high-thrust fusion thermal torch that uses a pebble-bed confinement stage to ignite and sustain a continuous fusion burn, delivering enormous thrust at significant power cost.

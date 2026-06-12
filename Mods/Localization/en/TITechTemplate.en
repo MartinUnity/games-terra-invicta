@@ -166,3 +166,10 @@ TITechTemplate.quote.ProtoPlasmaCannon_Model02="With the advent of prototype pla
 <align=right>{submitLeader}<align=left>
 <align=right>James Calhoon, Plasmoid Overlord<align=left>
 TITechTemplate.description.ProtoPlasmaCannon_Model02=By harnessing the power of prototype plasma cannons, we can generate vast amounts of energy in a compact form factor. This technology enables the operation of advanced spacecraft and station systems that were previously impossible due to energy constraints.
+
+TITechTemplate.displayName.OrbitalTacticalDoctrine=Orbital Tactical Doctrine
+TITechTemplate.summary.OrbitalTacticalDoctrine=Advanced fleet coordination and combat protocols designed to maximize capital ship effectiveness in deep space engagements.
+TITechTemplate.quote.OrbitalTacticalDoctrine="Space is not a theater — it is a geometry problem. Whoever controls the angles controls the engagement."
+<align=right>{submitLeader}<align=left>
+<align=right>Admiral Chen Wei, Inner System Fleet Command<align=left>
+TITechTemplate.description.OrbitalTacticalDoctrine=Orbital Tactical Doctrine formalizes the lessons learned from decades of space combat into a comprehensive framework for capital ship operations. It covers firing solutions at extreme range, multi-vector engagement coordination, and the integration of heavy beam weapons with kinetic strike packages to overwhelm enemy point defenses.

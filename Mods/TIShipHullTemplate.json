@@ -257,7 +257,7 @@
       "OBJ_battle_earth_DES",
       "OBJ_battle_earth_DES_ALT"
     ],
-    "requiredProjectName": "Project_Twinspire_Mk_II",
+    "requiredProjectName": "Project_Twinspire_Mk_I",
     "weightedBuildMaterials": {
       "volatiles": 0.1,
       "metals": 0.7,
