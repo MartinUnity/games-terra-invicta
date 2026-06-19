@@ -25,7 +25,6 @@ from typing import Any, Dict, List, Tuple
 
 # Files to omit from validation (names only)
 OMIT_FILES = [
-    "TIEffectTemplate.json",
     "TIRegionTemplate.json",
 ]
 
@@ -85,6 +84,8 @@ def check_file(
     loc_ok_game = 0
     loc_missing = 0
 
+    base = fp.stem
+
     def check_item(item: Any, ctx: str = "") -> None:
         nonlocal matched_local, matched_game, unmatched
         if not isinstance(item, dict):
@@ -92,7 +93,8 @@ def check_file(
             return
         if "dataName" not in item:
             msgs.append(f"{ctx}missing dataName")
-        if "friendlyName" not in item:
+        # TIEffectTemplate entries don't have friendlyName
+        if base != "TIEffectTemplate" and "friendlyName" not in item:
             msgs.append(f"{ctx}missing friendlyName")
         req = item.get("requiredProjectName")
         if req:
@@ -113,7 +115,6 @@ def check_file(
         msgs.append("top-level JSON is neither object nor array")
 
     # localization checks
-    base = fp.stem
     loc_file = mods_dir / "Localization" / "en" / f"{base}.en"
     loc_keys = set()
     if loc_file.exists():
@@ -200,6 +201,12 @@ def check_file(
                     msgs.append(f"Missing localization key: {base}.quote.{dn}")
                 if not has("description"):
                     msgs.append(f"Missing localization key: {base}.description.{dn}")
+        elif base == "TIEffectTemplate":
+            # Effects only require description
+            if has("description"):
+                ok = True
+            else:
+                msgs.append(f"Missing localization key: {base}.description.{dn}")
         else:
             # generic: either displayName or description required
             if has("displayName") or has("description"):

@@ -106,3 +106,8 @@ TIEffectTemplate.description.Effect_NeuralComputingMilitaryApplications=-Neural 
 TIEffectTemplate.description.Effect_ArmyNeuralInterface=-Dedicated neural interfaces for military personnel increase military capacity by {0}
 TIEffectTemplate.description.Effect_CommanderNeuralGlobalNetwork=-Commander neural interfaces with global network connectivity increase military capacity by {0}
 TIEffectTemplate.description.Effect_CyborneticCommandIntegration=-Cybernetic command integration increases military capacity by {0}
+
+TIEffectTemplate.description.Effect_BuildArmyPriorityBonus02=-Grants {3} extra Build Army priority
+TIEffectTemplate.description.Effect_BuildArmyPriorityBonus10=-Grants {3} extra Build Army priority
+TIEffectTemplate.description.Effect_WelfarePriorityBonus02=-Grants {3} extra Welfare priority
+TIEffectTemplate.description.Effect_WelfarePriorityBonus10=-Grants {3} extra Welfare priority
