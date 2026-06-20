@@ -1906,7 +1906,12 @@
     "AI_criticalTech": false,
     "AI_projectRole": "None",
     "researchCost": 1000,
-    "prereqs": ["Project_PebbleDrive"],
+    "prereqs": [
+      "Project_PebbleDrive",
+      "SuperconductingMagnets",
+      "HighEnergyElectromagneticPropulsion",
+      "Supercapacitors"
+    ],
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
