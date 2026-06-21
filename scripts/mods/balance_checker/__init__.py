@@ -98,3 +98,20 @@ def load_drive_templates(directory: Path, source: str) -> list[dict]:
         except (json.JSONDecodeError, FileNotFoundError):
             pass
     return drives
+
+
+def load_armor_templates(directory: Path, source: str) -> list[dict]:
+    """Load all armor templates from a directory."""
+    armors: list[dict] = []
+    for fp in directory.glob("*ArmorTemplate.json"):
+        try:
+            with fp.open("r", encoding="utf-8") as f:
+                items = json.load(f)
+            if isinstance(items, list):
+                for item in items:
+                    if isinstance(item, dict) and "dataName" in item:
+                        item["_source"] = source
+                        armors.append(item)
+        except (json.JSONDecodeError, FileNotFoundError):
+            pass
+    return armors
