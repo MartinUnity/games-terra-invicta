@@ -465,7 +465,7 @@
     "mirrorRadius_cm": 40,
     "beam_quality": 1.2,
     "jitter_Rad": 9e-08,
-    "bombardmentValue": 0.1,
+    "bombardmentValue": 0.2,
     "targetingRange_km": 600,
     "pivotRange_deg": 180,
     "isPointDefenseTargetable": false,
