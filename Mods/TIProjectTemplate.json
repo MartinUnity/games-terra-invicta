@@ -3854,7 +3854,7 @@
     "researchCost": 90000,
     "prereqs": [
       "Project_720cmGreenArcLaserCannon_RapidFire",
-      "TargetedBiologicalWarfare"
+      "UltravioletCombatLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
