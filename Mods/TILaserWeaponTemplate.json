@@ -192,38 +192,6 @@
     "fireSoundFXResource": "event:/SFX/Game_SFX/Lasers/trig_SFX_Basic_Laser_Turret"
   },
   {
-    "dataName": "MiniaturizedMassLaserDefenseDome_III",
-    "friendlyName": "Miniaturized Mass Laser Defense Dome III",
-    "mount": "OneHull",
-    "crew": 1,
-    "sortOrder": 3,
-    "requiredProjectName": "Project_MiniaturizedMassLaserDefenseDome_III",
-    "attackMode": false,
-    "defenseMode": true,
-    "hp": 1,
-    "baseWeaponMass_tons": 9,
-    "cooldown_s": 1.35,
-    "efficiency": 0.45,
-    "shotPower_MJ": 120,
-    "wavelength_nm": 350,
-    "mirrorRadius_cm": 28,
-    "beam_quality": 1.05,
-    "jitter_Rad": 1e-07,
-    "bombardmentValue": 0,
-    "targetingRange_km": 350,
-    "pivotRange_deg": 360,
-    "isPointDefenseTargetable": false,
-    "weightedBuildMaterials": {
-      "volatiles": 0.1,
-      "metals": 0.8,
-      "nobleMetals": 0.1
-    },
-    "iconResource": "shipbuildericons/ICO_PointDefenseLaserTurret",
-    "modelResource": "shipweapons/point_defense_laser_battery",
-    "effectResource": "spaceCombat/Standard Laser Beam Red",
-    "fireSoundFXResource": "event:/SFX/Game_SFX/Lasers/trig_SFX_Basic_Laser_Turret"
-  },
-  {
     "dataName": "MiniaturizedMassLaserDefenseDome_IV",
     "friendlyName": "Miniaturized Mass Laser Defense Dome IV",
     "mount": "OneHull",
