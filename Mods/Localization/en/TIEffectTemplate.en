@@ -106,3 +106,23 @@ TIEffectTemplate.description.Effect_NeuralComputingMilitaryApplications=-Neural 
 TIEffectTemplate.description.Effect_ArmyNeuralInterface=-Dedicated neural interfaces for military personnel increase military capacity by {0}
 TIEffectTemplate.description.Effect_CommanderNeuralGlobalNetwork=-Commander neural interfaces with global network connectivity increase military capacity by {0}
 TIEffectTemplate.description.Effect_CyborneticCommandIntegration=-Cybernetic command integration increases military capacity by {0}
+
+TIEffectTemplate.description.Effect_BuildArmyPriorityBonus10=-Grants {3} extra Build Army priority
+
+TIEffectTemplate.description.Effect_ShipLaserDamage3=-Ship Lasers do {3} extra damage
+TIEffectTemplate.description.Effect_ShipLaserDamage5=-Ship Lasers do {3} extra damage
+TIEffectTemplate.description.Effect_ShipLaserDamage12=-Ship Lasers do {3} extra damage
+TIEffectTemplate.description.Effect_ParticleLaserDamage3=-Particle Lasers do {3} extra damage
+TIEffectTemplate.description.Effect_ParticleLaserDamage5=-Particle Lasers do {3} extra damage
+TIEffectTemplate.description.Effect_ShipConvMissileDamage3=-Conv Missiles do {3} extra damage
+TIEffectTemplate.description.Effect_ShipConvMissileDamage5=-Conv Missiles do {3} extra damage
+TIEffectTemplate.description.Effect_ShipConvMissileDamage15=-Conv Missiles do {3} extra damage
+TIEffectTemplate.description.Effect_ShipConvMissileDamage20=-Conv Missiles do {3} extra damage
+TIEffectTemplate.description.Effect_ShipLaserDamage15=-Ship Lasers do {3} extra damage
+TIEffectTemplate.description.Effect_ShipLaserDamage20=-Ship Lasers do {3} extra damage
+TIEffectTemplate.description.Effect_ParticleLaserDamage15=-Particle Lasers do {3} extra damage
+TIEffectTemplate.description.Effect_ParticleLaserDamage20=-Particle Lasers do {3} extra damage
+TIEffectTemplate.description.Effect_ShipMagDamage3=-Magnetic Weapons do {3} extra damage
+TIEffectTemplate.description.Effect_ShipMagDamage5=-Magnetic Weapons do {3} extra damage
+TIEffectTemplate.description.Effect_ImprovedSpaceCombatDamageControl3=-Improved Space Combat Damage Control by {3}
+TIEffectTemplate.description.Effect_ImprovedSpaceCombatDamageControl5=-Improved Space Combat Damage Control by {3}

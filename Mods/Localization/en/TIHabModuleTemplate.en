@@ -1,7 +1,13 @@
 TIHabModuleTemplate.displayName.PointDefenseArray_T0=Point Defense Array - Tier 0
 TIHabModuleTemplate.description.PointDefenseArray_T0=A super basic (Tier 0) battery of defensive weaponry to protect the hab from attack. It will automatically upgrade weapons and armor as we develop new technologies.
+TIHabModuleTemplate.displayName.PointDefenseArray=Point Defense Array - Tier 1
+TIHabModuleTemplate.description.PointDefenseArray=An improved battery of defensive weaponry to protect the hab from attack. Provides enhanced point defense coverage with upgraded systems and improved targeting.
 TIHabModuleTemplate.displayName.AutomatedPointDefenseArray=Automated Point Defense Array - only for small autonomous bases or platforms.
 TIHabModuleTemplate.description.AutomatedPointDefenseArray=A fully automated point defense array designed for small bases or platforms, providing continuous protection against incoming threats without the need for manual operation. This module is ideal for remote outposts or unmanned installations, ensuring the safety of critical infrastructure with minimal maintenance requirements.
+TIHabModuleTemplate.displayName.LayeredDefenseArray=Layered Defense Array
+TIHabModuleTemplate.description.LayeredDefenseArray=An advanced multi-layered defensive platform that integrates overlapping weapon systems and point defense networks to protect the hab from coordinated attacks. Provides superior coverage against both missile and kinetic threats.
+TIHabModuleTemplate.displayName.Battlestations=Battlestations
+TIHabModuleTemplate.description.Battlestations=A massive orbital fortress module equipped with devastating heavy weapons arrays, layered armor plating, and advanced targeting systems. Transforms a habitat into an impregnable stronghold capable of engaging entire enemy fleets.
 
 TIHabModuleTemplate.displayName.MiningRefiningModule_lvl1=Small Mining & Refining Module
 TIHabModuleTemplate.description.MiningRefiningModule_lvl1=A small and advanced module designed to enhance mining and refining operations at outposts, improving resource extraction and processing efficiency by 15%

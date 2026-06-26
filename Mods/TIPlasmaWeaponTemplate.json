@@ -32,7 +32,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 135
+        "expectedDamage_MJ": 135,
+        "friendlyName": "Plasmoid Streaker Battery Mk1"
     },
     {
         "dataName": "PlasmoidStreakerBattery_Mk2",
@@ -67,7 +68,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 135
+        "expectedDamage_MJ": 135,
+        "friendlyName": "Plasmoid Streaker Battery Mk2"
     },
     {
         "dataName": "PlasmoidStreakerBattery_Mk3",
@@ -102,7 +104,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 135
+        "expectedDamage_MJ": 135,
+        "friendlyName": "Plasmoid Streaker Battery Mk3"
     },
     {
         "dataName": "PlasmoidStreakerBattery_Mk4",
@@ -137,7 +140,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 135
+        "expectedDamage_MJ": 135,
+        "friendlyName": "Plasmoid Streaker Battery Mk4"
     },
     {
         "dataName": "PlasmoidStreakerBattery_Mk5",
@@ -172,7 +176,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 135
+        "expectedDamage_MJ": 135,
+        "friendlyName": "Plasmoid Streaker Battery Mk5"
     },
     {
         "dataName": "PlasmoidStreakerBattery_Mk6",
@@ -207,7 +212,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 135
+        "expectedDamage_MJ": 135,
+        "friendlyName": "Plasmoid Streaker Battery Mk6"
     },
     {
         "dataName": "PhasedPlasmaCannon_Mk1",
@@ -242,7 +248,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Cannon",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow008MonoRR",
-        "expectedDamage_MJ": 428.75
+        "expectedDamage_MJ": 428.75,
+        "friendlyName": "Phased Plasma Cannon Mk 1"
     },
     {
         "dataName": "PhasedPlasmaCannon_Mk2",
@@ -277,7 +284,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Cannon",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow008MonoRR",
-        "expectedDamage_MJ": 428.75
+        "expectedDamage_MJ": 428.75,
+        "friendlyName": "Phased Plasma Cannon Mk 2"
     },
     {
         "dataName": "PhasedPlasmaCannon_Mk3",
@@ -300,7 +308,7 @@
         "targetingRange_km": 1150,
         "pivotRange_deg": 30,
         "isPointDefenseTargetable": false,
-        "warheadMass_kg": 0.90,
+        "warheadMass_kg": 0.9,
         "weightedBuildMaterials": {
             "volatiles": 0.1,
             "metals": 0.3,
@@ -312,7 +320,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Cannon",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow008MonoRR",
-        "expectedDamage_MJ": 428.75
+        "expectedDamage_MJ": 428.75,
+        "friendlyName": "Phased Plasma Cannon Mk 3"
     },
     {
         "dataName": "ProtoPlasmaArray_Mk1",
@@ -347,7 +356,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 88.0
+        "expectedDamage_MJ": 88.0,
+        "friendlyName": "Prototype Plasma Array Mk1"
     },
     {
         "dataName": "ProtoPlasmaArray_Mk2",
@@ -382,7 +392,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 88.0
+        "expectedDamage_MJ": 88.0,
+        "friendlyName": "Prototype Plasma Array Mk2"
     },
     {
         "dataName": "ProtoPlasmaArray_Mk3",
@@ -417,7 +428,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 88.0
+        "expectedDamage_MJ": 88.0,
+        "friendlyName": "Prototype Plasma Array Mk3"
     },
     {
         "dataName": "ProtoPlasmaArray_Mk4",
@@ -452,7 +464,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 88.0
+        "expectedDamage_MJ": 88.0,
+        "friendlyName": "Prototype Plasma Array Mk4"
     },
     {
         "dataName": "ProtoPlasmaArray_Mk5",
@@ -487,7 +500,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 88.0
+        "expectedDamage_MJ": 88.0,
+        "friendlyName": "Prototype Plasma Array Mk5"
     },
     {
         "dataName": "ProtoPlasmaArray_Mk6",
@@ -522,7 +536,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Turret",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow003MonoRR",
-        "expectedDamage_MJ": 88.0
+        "expectedDamage_MJ": 88.0,
+        "friendlyName": "Prototype Plasma Array Mk6"
     },
     {
         "dataName": "ProtoPlasmaCannon_Mk1",
@@ -557,7 +572,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Cannon",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow008MonoRR",
-        "expectedDamage_MJ": 175.0
+        "expectedDamage_MJ": 175.0,
+        "friendlyName": "Prototype Plasma Cannon Mk1"
     },
     {
         "dataName": "ProtoPlasmaCannon_Mk2",
@@ -592,7 +608,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Cannon",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow008MonoRR",
-        "expectedDamage_MJ": 175.0
+        "expectedDamage_MJ": 175.0,
+        "friendlyName": "Prototype Plasma Cannon Mk2"
     },
     {
         "dataName": "ProtoPlasmaCannon_Mk3",
@@ -627,7 +644,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Cannon",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow008MonoRR",
-        "expectedDamage_MJ": 175.0
+        "expectedDamage_MJ": 175.0,
+        "friendlyName": "Prototype Plasma Cannon Mk3"
     },
     {
         "dataName": "ProtoPlasmaCannon_Mk4",
@@ -662,7 +680,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Cannon",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow008MonoRR",
-        "expectedDamage_MJ": 175.0
+        "expectedDamage_MJ": 175.0,
+        "friendlyName": "Prototype Plasma Cannon Mk4"
     },
     {
         "dataName": "ProtoPlasmaCannon_Mk5",
@@ -697,7 +716,8 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Cannon",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow008MonoRR",
-        "expectedDamage_MJ": 175.0
+        "expectedDamage_MJ": 175.0,
+        "friendlyName": "Prototype Plasma Cannon Mk5"
     },
     {
         "dataName": "ProtoPlasmaCannon_Mk6",
@@ -732,6 +752,7 @@
         "impactVisualFXResource": "spaceCombat/ImpactGreen",
         "fireSoundFXResource": "event:/SFX/Game_SFX/Guns/trig_SFX_Plasma_Cannon",
         "impactSoundFXResource": "event:/SFX/Game_SFX/Ship_Fire_Impacts/trig_SFX_BlasterLongMuffledLow008MonoRR",
-        "expectedDamage_MJ": 175.0
+        "expectedDamage_MJ": 175.0,
+        "friendlyName": "Prototype Plasma Cannon Mk6"
     }
 ]

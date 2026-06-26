@@ -1092,5 +1092,209 @@
     "contexts": [
       "WelfarePriority"
     ]
+  },
+  {
+    "dataName": "Effect_ShipLaserDamage3",
+    "operation": "Multiplicative",
+    "value": 1.03,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipLaserDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipLaserDamage5",
+    "operation": "Multiplicative",
+    "value": 1.05,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipLaserDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipLaserDamage12",
+    "operation": "Multiplicative",
+    "value": 1.12,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipLaserDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ParticleLaserDamage3",
+    "operation": "Multiplicative",
+    "value": 1.03,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ParticleLaserDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ParticleLaserDamage5",
+    "operation": "Multiplicative",
+    "value": 1.05,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ParticleLaserDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipConvMissileDamage3",
+    "operation": "Multiplicative",
+    "value": 1.03,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipConvMissileDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipConvMissileDamage5",
+    "operation": "Multiplicative",
+    "value": 1.05,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipConvMissileDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipLaserDamage15",
+    "operation": "Multiplicative",
+    "value": 1.15,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipLaserDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipLaserDamage20",
+    "operation": "Multiplicative",
+    "value": 1.2,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipLaserDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ParticleLaserDamage15",
+    "operation": "Multiplicative",
+    "value": 1.15,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ParticleLaserDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ParticleLaserDamage20",
+    "operation": "Multiplicative",
+    "value": 1.2,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ParticleLaserDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipConvMissileDamage15",
+    "operation": "Multiplicative",
+    "value": 1.15,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipConvMissileDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipConvMissileDamage20",
+    "operation": "Multiplicative",
+    "value": 1.2,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipConvMissileDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipMagDamage3",
+    "operation": "Multiplicative",
+    "value": 1.03,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipMagDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ShipMagDamage5",
+    "operation": "Multiplicative",
+    "value": 1.05,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "ShipMagDamage"
+    ]
+  },
+  {
+    "dataName": "Effect_ImprovedSpaceCombatDamageControl3",
+    "operation": "Multiplicative",
+    "value": 1.03,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "Combat_ShipRepairSpeed"
+    ]
+  },
+  {
+    "dataName": "Effect_ImprovedSpaceCombatDamageControl5",
+    "operation": "Multiplicative",
+    "value": 1.05,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "Combat_ShipRepairSpeed"
+    ]
   }
 ]

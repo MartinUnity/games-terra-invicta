@@ -25,7 +25,6 @@ from typing import Any, Dict, List, Tuple
 
 # Files to omit from validation (names only)
 OMIT_FILES = [
-    "TIEffectTemplate.json",
     "TIRegionTemplate.json",
 ]
 
@@ -85,6 +84,8 @@ def check_file(
     loc_ok_game = 0
     loc_missing = 0
 
+    base = fp.stem
+
     def check_item(item: Any, ctx: str = "") -> None:
         nonlocal matched_local, matched_game, unmatched
         if not isinstance(item, dict):
@@ -92,7 +93,8 @@ def check_file(
             return
         if "dataName" not in item:
             msgs.append(f"{ctx}missing dataName")
-        if "friendlyName" not in item:
+        # TIEffectTemplate entries don't have friendlyName
+        if base != "TIEffectTemplate" and "friendlyName" not in item:
             msgs.append(f"{ctx}missing friendlyName")
         req = item.get("requiredProjectName")
         if req:
@@ -113,7 +115,6 @@ def check_file(
         msgs.append("top-level JSON is neither object nor array")
 
     # localization checks
-    base = fp.stem
     loc_file = mods_dir / "Localization" / "en" / f"{base}.en"
     loc_keys = set()
     if loc_file.exists():
@@ -200,6 +201,12 @@ def check_file(
                     msgs.append(f"Missing localization key: {base}.quote.{dn}")
                 if not has("description"):
                     msgs.append(f"Missing localization key: {base}.description.{dn}")
+        elif base == "TIEffectTemplate":
+            # Effects only require description
+            if has("description"):
+                ok = True
+            else:
+                msgs.append(f"Missing localization key: {base}.description.{dn}")
         else:
             # generic: either displayName or description required
             if has("displayName") or has("description"):
@@ -282,6 +289,11 @@ def main() -> int:
         "--dump-overrides-full",
         action="store_true",
         help="Dump full local and game JSON objects for overridden dataNames",
+    )
+    p.add_argument(
+        "--check-descriptions",
+        action="store_true",
+        help="Check for projects/techs missing description (inline or localization)",
     )
     args = p.parse_args()
 
@@ -506,7 +518,19 @@ def main() -> int:
                 pass
 
     mod_proj_names = {p["dataName"] for p in templates if isinstance(p, dict) and p.get("dataName")}
-    valid_prereq_names = game_tech_names | game_proj_names_valid | mod_proj_names
+
+    # Include mod-defined tech names from TITechTemplate.json as valid prereqs
+    mod_tech_names: set = set()
+    mod_tech_fp = mods_dir / "TITechTemplate.json"
+    if mod_tech_fp.exists():
+        try:
+            mod_tech_names = {
+                t["dataName"] for t in load_json(mod_tech_fp) if isinstance(t, dict) and t.get("dataName")
+            }
+        except Exception:
+            pass
+
+    valid_prereq_names = game_tech_names | game_proj_names_valid | mod_proj_names | mod_tech_names
 
     # Build valid effect set: base game + mod TIEffectTemplate
     valid_effect_names: set = set()
@@ -546,6 +570,130 @@ def main() -> int:
                 print(f"  {err}")
         else:
             print("\nDeep validation: all prereqs and effects are valid.")
+
+    # --- description validation ---
+    if args.check_descriptions:
+        desc_warnings: list[str] = []
+
+        # Helper to load .en localization keys/values for a given base name
+        def load_loc_keys(base: str) -> tuple[set, dict[str, str]]:
+            loc_f = mods_dir / "Localization" / "en" / f"{base}.en"
+            keys: set = set()
+            values: dict[str, str] = {}
+            if loc_f.exists():
+                try:
+                    with loc_f.open("r", encoding="utf-8") as lf:
+                        for ln in lf:
+                            ln = ln.strip()
+                            if not ln or ln.startswith("#"):
+                                continue
+                            if "=" in ln:
+                                k, v = ln.split("=", 1)
+                                keys.add(k.strip())
+                                values[k.strip()] = v.strip()
+                except Exception:
+                    pass
+            return keys, values
+
+        # Check TIProjectTemplate entries
+        proj_keys, proj_values = load_loc_keys("TIProjectTemplate")
+        for p in templates:
+            if not isinstance(p, dict):
+                continue
+            dn = p.get("dataName")
+            fn = p.get("friendlyName", "?")
+            if not dn:
+                continue
+
+            has_inline = bool(p.get("description"))
+            loc_key = f"TIProjectTemplate.description.{dn}"
+            loc_value = proj_values.get(loc_key, "")
+            # <habmodule> and <shipmodule> are valid placeholders - game uses module's own description
+            has_loc = loc_key in proj_keys and loc_value != ""
+
+            if not has_inline and not has_loc:
+                desc_warnings.append(f"  Project: {dn} ({fn}) - no inline or localization description")
+
+        # Check TITechTemplate entries
+        tech_fp = mods_dir / "TITechTemplate.json"
+        if tech_fp.exists():
+            try:
+                techs = load_json(tech_fp)
+            except Exception:
+                techs = []
+            tech_keys, tech_values = load_loc_keys("TITechTemplate")
+            for t in techs:
+                if not isinstance(t, dict):
+                    continue
+                dn = t.get("dataName")
+                fn = t.get("friendlyName", "?")
+                if not dn:
+                    continue
+
+                loc_key = f"TITechTemplate.description.{dn}"
+                has_loc = loc_key in tech_keys
+
+                if not has_loc:
+                    desc_warnings.append(f"  Tech:    {dn} ({fn}) - missing localization description")
+
+        # Check other TI*.json templates for missing descriptions
+        # Ship hulls require displayName + abbr (not description)
+        for fp in sorted(mods_dir.glob("TI*.json")):
+            if fp.name in OMIT_FILES or fp.name in ("TIProjectTemplate.json", "TITechTemplate.json"):
+                continue
+            base = fp.stem
+            try:
+                obj = load_json(fp)
+            except Exception:
+                continue
+            if not isinstance(obj, list):
+                continue
+
+            item_keys, item_values = load_loc_keys(base)
+            for item in obj:
+                if not isinstance(item, dict):
+                    continue
+                dn = item.get("dataName")
+                fn = item.get("friendlyName", "?")
+                if not dn:
+                    continue
+
+                has_inline = bool(item.get("description"))
+                loc_display_key = f"{base}.displayName.{dn}"
+                has_display = loc_display_key in item_keys
+
+                if base == "TIShipHullTemplate":
+                    # Ship hulls need displayName + abbr
+                    loc_abbr_key = f"{base}.abbr.{dn}"
+                    has_abbr = loc_abbr_key in item_keys
+                    if not has_display and not has_abbr:
+                        desc_warnings.append(
+                            f"  {base}: {dn} ({fn}) - missing displayName and abbr"
+                        )
+                    elif not has_abbr:
+                        desc_warnings.append(
+                            f"  {base}: {dn} ({fn}) - has displayName but missing abbr"
+                        )
+                else:
+                    # Other templates: displayName + description
+                    loc_desc_key = f"{base}.description.{dn}"
+                    has_desc = loc_desc_key in item_keys
+
+                    if not has_display and not has_desc and not has_inline:
+                        desc_warnings.append(
+                            f"  {base}: {dn} ({fn}) - missing displayName and description"
+                        )
+                    elif not has_desc and not has_inline:
+                        desc_warnings.append(
+                            f"  {base}: {dn} ({fn}) - has displayName but missing description"
+                        )
+
+        if desc_warnings:
+            print(f"\nMissing descriptions ({len(desc_warnings)}):")
+            for w in desc_warnings:
+                print(w)
+        else:
+            print("\nAll projects, techs, and templates have descriptions.")
 
     # exit code
     any_errors = any(not ok for _, ok, _ in results) or bool(deep_errors)

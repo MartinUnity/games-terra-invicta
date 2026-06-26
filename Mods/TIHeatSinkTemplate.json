@@ -9,6 +9,7 @@
     "weightedBuildMaterials": {
       "water": 1
     },
-    "iconResource": "shipbuildericons/ICO_WaterHeatSink"
+    "iconResource": "shipbuildericons/ICO_WaterHeatSink",
+    "friendlyName": "Miniature Water Heat Sink for small crafts"
   }
 ]
