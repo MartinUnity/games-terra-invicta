@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """
-Phase 2: Analyze distribution of effects across all projects in TIProjectTemplate.json.
-Produces per-effect counts, cumulative percentages, and category totals.
+Phase 2: Analyze distribution of tracked priority effects across projects.
+Uses project_effects.txt to determine which effects to track.
+
+For comprehensive analysis of ALL effects (including weapons, mining, etc.),
+use analyze_all_effects.py instead.
 """
 
 import json
