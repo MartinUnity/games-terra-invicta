@@ -5255,7 +5255,7 @@
       "NextGenerationAerospace"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -5685,28 +5685,6 @@
     "initialUnlockChance": 6,
     "deltaUnlockChance": 5,
     "maxUnlockChance": 67
-  },
-  {
-    "dataName": "Project_War_College",
-    "friendlyName": "War College",
-    "techCategory": "SocialScience",
-    "researchCost": 1919,
-    "prereqs": [
-      "Project_RestoredWarsawPact"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 81,
-    "initialUnlockChance": 19,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 60
   },
   {
     "dataName": "Project_Chitinous_Resilience",
@@ -6575,7 +6553,7 @@
       "Project_SpaceHotel"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -6993,7 +6971,7 @@
       "Project_AlienContainment"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7015,7 +6993,7 @@
       "Project_AlienContainment"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -7027,28 +7005,6 @@
     "initialUnlockChance": 5,
     "deltaUnlockChance": 2,
     "maxUnlockChance": 25
-  },
-  {
-    "dataName": "Project_Vanguard_Initiative",
-    "friendlyName": "Vanguard Initiative",
-    "techCategory": "Xenology",
-    "researchCost": 5017,
-    "prereqs": [
-      "Project_AlienContainment"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 95,
-    "initialUnlockChance": 3,
-    "deltaUnlockChance": 9,
-    "maxUnlockChance": 69
   },
   {
     "dataName": "Project_Cognitive_Accelerator",
@@ -7367,7 +7323,7 @@
       "Project_RailCannonMk3"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -8291,7 +8247,7 @@
       "MissileWarfareDoctrine"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -8965,28 +8921,6 @@
     "maxUnlockChance": 74
   },
   {
-    "dataName": "Project_Containment_Protocols",
-    "friendlyName": "Containment Protocols",
-    "techCategory": "Xenology",
-    "researchCost": 13188,
-    "prereqs": [
-      "Project_EscapeVictory"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 53,
-    "initialUnlockChance": 12,
-    "deltaUnlockChance": 7,
-    "maxUnlockChance": 49
-  },
-  {
     "dataName": "Project_Civic_Alignment",
     "friendlyName": "Civic Alignment",
     "techCategory": "SpaceScience",
@@ -9073,28 +9007,6 @@
     "initialUnlockChance": 17,
     "deltaUnlockChance": 2,
     "maxUnlockChance": 77
-  },
-  {
-    "dataName": "Project_Strategic_Mobilization",
-    "friendlyName": "Strategic Mobilization",
-    "techCategory": "SocialScience",
-    "researchCost": 5189,
-    "prereqs": [
-      "Project_RegulatoryCapture"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 79,
-    "initialUnlockChance": 15,
-    "deltaUnlockChance": 5,
-    "maxUnlockChance": 92
   },
   {
     "dataName": "Project_Rapid_Mobilization",
@@ -9339,28 +9251,6 @@
     "maxUnlockChance": 96
   },
   {
-    "dataName": "Project_Command_Beacon",
-    "friendlyName": "Command Beacon",
-    "techCategory": "Energy",
-    "researchCost": 60359,
-    "prereqs": [
-      "Project_ParticleCollider"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 48,
-    "initialUnlockChance": 18,
-    "deltaUnlockChance": 1,
-    "maxUnlockChance": 20
-  },
-  {
     "dataName": "Project_Social_Fracture",
     "friendlyName": "Social Fracture",
     "techCategory": "SocialScience",
@@ -9501,7 +9391,7 @@
       "Project_LarsDrive"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -9513,28 +9403,6 @@
     "initialUnlockChance": 15,
     "deltaUnlockChance": 4,
     "maxUnlockChance": 95
-  },
-  {
-    "dataName": "Project_Strategic_Reserve",
-    "friendlyName": "Strategic Reserve",
-    "techCategory": "SocialScience",
-    "researchCost": 4264,
-    "prereqs": [
-      "Project_GulfCooperationCouncil"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 60,
-    "initialUnlockChance": 15,
-    "deltaUnlockChance": 8,
-    "maxUnlockChance": 51
   },
   {
     "dataName": "Project_Aristocratic_Yield",
@@ -11033,28 +10901,6 @@
     "maxUnlockChance": 88
   },
   {
-    "dataName": "Project_Strategic_Reassessment",
-    "friendlyName": "Strategic Reassessment",
-    "techCategory": "SocialScience",
-    "researchCost": 37161,
-    "prereqs": [
-      "Project_GulfCooperationCouncil"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 81,
-    "initialUnlockChance": 1,
-    "deltaUnlockChance": 7,
-    "maxUnlockChance": 85
-  },
-  {
     "dataName": "Project_Civic_Accelerator",
     "friendlyName": "Civic Accelerator",
     "techCategory": "Energy",
@@ -11097,28 +10943,6 @@
     "initialUnlockChance": 10,
     "deltaUnlockChance": 9,
     "maxUnlockChance": 40
-  },
-  {
-    "dataName": "Project_Strategic_Command",
-    "friendlyName": "Strategic Command",
-    "techCategory": "Materials",
-    "researchCost": 2617,
-    "prereqs": [
-      "Supercapacitors"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 41,
-    "initialUnlockChance": 2,
-    "deltaUnlockChance": 3,
-    "maxUnlockChance": 57
   },
   {
     "dataName": "Project_Kinetic_Burst",
@@ -11459,7 +11283,7 @@
       "Project_FissionReactorArray"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -11517,28 +11341,6 @@
     "maxUnlockChance": 97
   },
   {
-    "dataName": "Project_Warforged_Refinement",
-    "friendlyName": "Warforged Refinement",
-    "techCategory": "Materials",
-    "researchCost": 3989,
-    "prereqs": [
-      "Project_CompositeArmor"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 75,
-    "initialUnlockChance": 5,
-    "deltaUnlockChance": 6,
-    "maxUnlockChance": 39
-  },
-  {
     "dataName": "Project_Civic_Catalyst",
     "friendlyName": "Civic Catalyst",
     "techCategory": "MilitaryScience",
@@ -11559,28 +11361,6 @@
     "initialUnlockChance": 1,
     "deltaUnlockChance": 3,
     "maxUnlockChance": 72
-  },
-  {
-    "dataName": "Project_Strategic_Dispatch",
-    "friendlyName": "Strategic Dispatch",
-    "techCategory": "InformationScience",
-    "researchCost": 6173,
-    "prereqs": [
-      "Project_GlobalListeningNetwork"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 48,
-    "initialUnlockChance": 14,
-    "deltaUnlockChance": 3,
-    "maxUnlockChance": 89
   },
   {
     "dataName": "Project_Salvage_Initiative",
@@ -11679,7 +11459,7 @@
       "Project_RestoredWarsawPact"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -11713,28 +11493,6 @@
     "initialUnlockChance": 17,
     "deltaUnlockChance": 7,
     "maxUnlockChance": 93
-  },
-  {
-    "dataName": "Project_Fleet_Command_Nexus",
-    "friendlyName": "Fleet Command Nexus",
-    "techCategory": "SpaceScience",
-    "researchCost": 3513,
-    "prereqs": [
-      "MissiontotheAsteroids"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 70,
-    "initialUnlockChance": 11,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 92
   },
   {
     "dataName": "Project_Metalflux",
@@ -12199,28 +11957,6 @@
     "maxUnlockChance": 21
   },
   {
-    "dataName": "Project_Expedited_Production",
-    "friendlyName": "Expedited Production",
-    "techCategory": "Materials",
-    "researchCost": 10755,
-    "prereqs": [
-      "Project_SlushHydrogenTankage"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 53,
-    "initialUnlockChance": 14,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 100
-  },
-  {
     "dataName": "Project_Terraform_Initiative",
     "friendlyName": "Terraform Initiative",
     "techCategory": "MilitaryScience",
@@ -12307,28 +12043,6 @@
     "initialUnlockChance": 3,
     "deltaUnlockChance": 5,
     "maxUnlockChance": 85
-  },
-  {
-    "dataName": "Project_Command_Nexus",
-    "friendlyName": "Command Nexus",
-    "techCategory": "InformationScience",
-    "researchCost": 2033,
-    "prereqs": [
-      "Project_CyberneticImplants"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 81,
-    "initialUnlockChance": 17,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 34
   },
   {
     "dataName": "Project_Subterrane_Excavation",
@@ -13055,28 +12769,6 @@
     "initialUnlockChance": 19,
     "deltaUnlockChance": 5,
     "maxUnlockChance": 63
-  },
-  {
-    "dataName": "Project_Swift_Response",
-    "friendlyName": "Swift Response",
-    "techCategory": "MilitaryScience",
-    "researchCost": 12632,
-    "prereqs": [
-      "Project_ElectronLance"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 62,
-    "initialUnlockChance": 12,
-    "deltaUnlockChance": 6,
-    "maxUnlockChance": 46
   },
   {
     "dataName": "Project_Custodian_Protocols",
@@ -13967,7 +13659,7 @@
       "Project_QuantumBattery"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -14289,28 +13981,6 @@
     "maxUnlockChance": 21
   },
   {
-    "dataName": "Project_Fleet_Command",
-    "friendlyName": "Fleet Command",
-    "techCategory": "Materials",
-    "researchCost": 4669,
-    "prereqs": [
-      "Project_StraitofGibraltarCrossing"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 93,
-    "initialUnlockChance": 3,
-    "deltaUnlockChance": 3,
-    "maxUnlockChance": 75
-  },
-  {
     "dataName": "Project_Asteroid_Surveyor",
     "friendlyName": "Asteroid Surveyor",
     "techCategory": "SpaceScience",
@@ -14441,28 +14111,6 @@
     "initialUnlockChance": 9,
     "deltaUnlockChance": 2,
     "maxUnlockChance": 50
-  },
-  {
-    "dataName": "Project_War_Council",
-    "friendlyName": "War Council",
-    "techCategory": "SocialScience",
-    "researchCost": 3714,
-    "prereqs": [
-      "Project_Proscription"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 55,
-    "initialUnlockChance": 18,
-    "deltaUnlockChance": 5,
-    "maxUnlockChance": 32
   },
   {
     "dataName": "Project_Voidbloom",
@@ -15177,7 +14825,7 @@
       "Project_PonderomotiveVASIMR"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -15631,28 +15279,6 @@
     "maxUnlockChance": 22
   },
   {
-    "dataName": "Project_Xeno_Strain_Mitigation",
-    "friendlyName": "Xeno-Strain Mitigation",
-    "techCategory": "Xenology",
-    "researchCost": 6997,
-    "prereqs": [
-      "Project_AlienContainment"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 75,
-    "initialUnlockChance": 2,
-    "deltaUnlockChance": 9,
-    "maxUnlockChance": 42
-  },
-  {
     "dataName": "Project_Ecosystem_Survey",
     "friendlyName": "Ecosystem Survey",
     "techCategory": "MilitaryScience",
@@ -16027,28 +15653,6 @@
     "maxUnlockChance": 47
   },
   {
-    "dataName": "Project_Strategic_Initiative",
-    "friendlyName": "Strategic Initiative",
-    "techCategory": "Energy",
-    "researchCost": 12012,
-    "prereqs": [
-      "GasCoreFissionSystems"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 58,
-    "initialUnlockChance": 11,
-    "deltaUnlockChance": 7,
-    "maxUnlockChance": 48
-  },
-  {
     "dataName": "Project_Noble_Vein_Reclamation",
     "friendlyName": "Noble Vein Reclamation",
     "techCategory": "Materials",
@@ -16069,28 +15673,6 @@
     "initialUnlockChance": 9,
     "deltaUnlockChance": 4,
     "maxUnlockChance": 24
-  },
-  {
-    "dataName": "Project_Command_Surge",
-    "friendlyName": "Command Surge",
-    "techCategory": "MilitaryScience",
-    "researchCost": 14197,
-    "prereqs": [
-      "Project_HarlequinMissileBay"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 55,
-    "initialUnlockChance": 8,
-    "deltaUnlockChance": 3,
-    "maxUnlockChance": 67
   },
   {
     "dataName": "Project_Kinetic_Armor",
@@ -17061,28 +16643,6 @@
     "maxUnlockChance": 24
   },
   {
-    "dataName": "Project_Warpath_Augmentation",
-    "friendlyName": "Warpath Augmentation",
-    "techCategory": "MilitaryScience",
-    "researchCost": 3284,
-    "prereqs": [
-      "NextGenerationAerospace"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 96,
-    "initialUnlockChance": 6,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 58
-  },
-  {
     "dataName": "Project_Galactic_Knowledge_Expansion",
     "friendlyName": "Galactic Knowledge Expansion",
     "techCategory": "SpaceScience",
@@ -17333,7 +16893,7 @@
       "Project_RegulatoryCapture"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -17721,28 +17281,6 @@
     "maxUnlockChance": 28
   },
   {
-    "dataName": "Project_Strategic_Restraint_Initiative",
-    "friendlyName": "Strategic Restraint Initiative",
-    "techCategory": "SocialScience",
-    "researchCost": 3780,
-    "prereqs": [
-      "Project_GulfCooperationCouncil"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 80,
-    "initialUnlockChance": 6,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 57
-  },
-  {
     "dataName": "Project_Orbital_Station_Upgrade",
     "friendlyName": "Orbital Station Upgrade",
     "techCategory": "MilitaryScience",
@@ -17795,7 +17333,7 @@
       "Project_PlasmaCannonMk1"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -18159,28 +17697,6 @@
     "initialUnlockChance": 13,
     "deltaUnlockChance": 8,
     "maxUnlockChance": 79
-  },
-  {
-    "dataName": "Project_Advanced_Warhead_Design",
-    "friendlyName": "Advanced Warhead Design",
-    "techCategory": "MilitaryScience",
-    "researchCost": 1637,
-    "prereqs": [
-      "TerrestrialMilitaryScience"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 64,
-    "initialUnlockChance": 20,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 29
   },
   {
     "dataName": "Project_Quantum_Knowledge_Hub",
@@ -18975,28 +18491,6 @@
     "maxUnlockChance": 43
   },
   {
-    "dataName": "Project_Strategic_Defense_Initiative",
-    "friendlyName": "Strategic Defense Initiative",
-    "techCategory": "SocialScience",
-    "researchCost": 3162,
-    "prereqs": [
-      "Project_RegulatoryCapture"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 66,
-    "initialUnlockChance": 20,
-    "deltaUnlockChance": 8,
-    "maxUnlockChance": 74
-  },
-  {
     "dataName": "Project_Nebula_Knowledge_Mining",
     "friendlyName": "Nebula Knowledge Mining",
     "techCategory": "Materials",
@@ -19313,7 +18807,7 @@
       "SuperconductingMagnets"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -19885,7 +19379,7 @@
       "TerrestrialMilitaryScience"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -20017,7 +19511,7 @@
       "Project_QuantumBattery"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -21087,28 +20581,6 @@
     "maxUnlockChance": 40
   },
   {
-    "dataName": "Project_Strategic_Suppression",
-    "friendlyName": "Strategic Suppression",
-    "techCategory": "SpaceScience",
-    "researchCost": 8077,
-    "prereqs": [
-      "Project_SettlementMiningComplex"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 87,
-    "initialUnlockChance": 14,
-    "deltaUnlockChance": 5,
-    "maxUnlockChance": 95
-  },
-  {
     "dataName": "Project_Galactic_Triage_Beacon",
     "friendlyName": "Galactic Triage Beacon",
     "techCategory": "LifeScience",
@@ -21527,28 +20999,6 @@
     "maxUnlockChance": 63
   },
   {
-    "dataName": "Project_Strategic_Offensive_Initiative",
-    "friendlyName": "Strategic Offensive Initiative",
-    "techCategory": "Xenology",
-    "researchCost": 22678,
-    "prereqs": [
-      "Project_AlienContainment"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 97,
-    "initialUnlockChance": 8,
-    "deltaUnlockChance": 3,
-    "maxUnlockChance": 65
-  },
-  {
     "dataName": "Project_Galactic_Nurture",
     "friendlyName": "Galactic Nurture",
     "techCategory": "Xenology",
@@ -21755,7 +21205,7 @@
       "Project_SouthernCross"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22173,7 +21623,7 @@
       "Project_HeavyDumbo"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22305,7 +21755,7 @@
       "Project_PlasmaCannonMk1"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -22877,7 +22327,7 @@
       "Project_HeavyDumbo"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -23779,7 +23229,7 @@
       "Project_PebbleDrive"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -24167,28 +23617,6 @@
     "maxUnlockChance": 61
   },
   {
-    "dataName": "Project_Non_Aggression_Protocol",
-    "friendlyName": "Non-Aggression Protocol",
-    "techCategory": "Energy",
-    "researchCost": 147086,
-    "prereqs": [
-      "SolidCoreFissionSystems"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 91,
-    "initialUnlockChance": 8,
-    "deltaUnlockChance": 5,
-    "maxUnlockChance": 50
-  },
-  {
     "dataName": "Project_Metallic_Harvest",
     "friendlyName": "Metallic Harvest",
     "techCategory": "SocialScience",
@@ -24351,7 +23779,7 @@
       "Project_AutomatedSolarPlatformKit"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -24363,28 +23791,6 @@
     "initialUnlockChance": 8,
     "deltaUnlockChance": 2,
     "maxUnlockChance": 67
-  },
-  {
-    "dataName": "Project_Xeno_Forge_Priority",
-    "friendlyName": "Xeno-Forge Priority",
-    "techCategory": "Xenology",
-    "researchCost": 11870,
-    "prereqs": [
-      "Project_TheirWeakness"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 46,
-    "initialUnlockChance": 19,
-    "deltaUnlockChance": 8,
-    "maxUnlockChance": 75
   },
   {
     "dataName": "Project_Tactical_Mobilization_Forge",
@@ -24770,7 +24176,7 @@
       "NextGenerationAerospace"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25012,7 +24418,7 @@
       "Project_SpaceHotel"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus10"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,
@@ -25928,28 +25334,6 @@
     "maxUnlockChance": 88
   },
   {
-    "dataName": "Project_Fleet_Command_Priority",
-    "friendlyName": "Fleet Command Priority",
-    "techCategory": "MilitaryScience",
-    "researchCost": 2781,
-    "prereqs": [
-      "Project_RailCannonMk3"
-    ],
-    "effects": [
-      "Effect_MilitaryPriorityBonus05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 66,
-    "initialUnlockChance": 2,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 91
-  },
-  {
     "dataName": "Project_Civic_Stewardship",
     "friendlyName": "Civic Stewardship",
     "techCategory": "LifeScience",
@@ -26068,7 +25452,7 @@
       "Project_LayeredDefenseArray"
     ],
     "effects": [
-      "Effect_MilitaryPriorityBonus05"
+      "Effect_MilitaryPriorityBonus15"
     ],
     "AI_techRole": "None",
     "AI_criticalTech": false,

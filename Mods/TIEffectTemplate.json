@@ -1380,5 +1380,29 @@
     "contexts": [
       "HumanLifespan"
     ]
+  },
+  {
+    "dataName": "Effect_MilitaryPriorityBonus10",
+    "operation": "Additive",
+    "value": 0.1,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "MilitaryPriority"
+    ]
+  },
+  {
+    "dataName": "Effect_MilitaryPriorityBonus15",
+    "operation": "Additive",
+    "value": 0.15,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "MilitaryPriority"
+    ]
   }
 ]
