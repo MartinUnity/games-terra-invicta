@@ -1296,5 +1296,113 @@
     "contexts": [
       "Combat_ShipRepairSpeed"
     ]
+  },
+  {
+    "dataName": "Effect_SpaceMineFreebies12",
+    "operation": "Additive",
+    "value": 12,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "MCFreeSpaceMineNetwork"
+    ]
+  },
+  {
+    "dataName": "Effect_SpaceMineFreebies15",
+    "operation": "Additive",
+    "value": 15,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "MCFreeSpaceMineNetwork"
+    ]
+  },
+  {
+    "dataName": "Effect_SpaceMineFreebies18",
+    "operation": "Additive",
+    "value": 18,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "MCFreeSpaceMineNetwork"
+    ]
+  },
+  {
+    "dataName": "Effect_SpaceMineFreebies20",
+    "operation": "Additive",
+    "value": 20,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "MCFreeSpaceMineNetwork"
+    ]
+  },
+  {
+    "dataName": "Effect_LifeExtension45",
+    "operation": "Additive",
+    "value": 45,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "HumanLifespan"
+    ]
+  },
+  {
+    "dataName": "Effect_LifeExtension55",
+    "operation": "Additive",
+    "value": 55,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "HumanLifespan"
+    ]
+  },
+  {
+    "dataName": "Effect_LifeExtension60",
+    "operation": "Additive",
+    "value": 60,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "HumanLifespan"
+    ]
+  },
+  {
+    "dataName": "Effect_MilitaryPriorityBonus10",
+    "operation": "Additive",
+    "value": 0.1,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "MilitaryPriority"
+    ]
+  },
+  {
+    "dataName": "Effect_MilitaryPriorityBonus15",
+    "operation": "Additive",
+    "value": 0.15,
+    "effectTarget": "SourceFaction",
+    "effectDuration": "permanent",
+    "stackable": true,
+    "duration_months": -1,
+    "contexts": [
+      "MilitaryPriority"
+    ]
   }
 ]

@@ -37,11 +37,22 @@ Extract, visualize, and mod Terra Invicta savegame data.
 - `generate_outline.py` - Generate project outline documentation
 
 ### One-Off Scripts (`scripts/one_off/`)
-- `generate_content.py` - AI-driven content generator for mod projects
-- `balance_prereqs.py` - Redistribute project prerequisites for even progression spread
-- `balance_effects.py` - Balance effect category totals into target range
-- `analyze_effects.py` - Analyze effect distribution across all projects
-- `update_research_costs.py` - Adjust research costs for matched projects
+
+#### Analysis (read-only, no side effects)
+- `analyze_weapon_balance.py` — Correlate weapon DPS with research cost, mount slots, and PD vulnerability. Reads all weapon template files plus project research costs. Use to find over/under-powered weapons.
+- `analyze_heatsink_balance.py` — Compare heat sink capacity/mass ratio against base game entries. Key metric: `heatCapacity_GJ / mass_tons`. Mod entries flagged if capacity/ton is >150% or <50% of base game average.
+- `analyze_radiator_balance.py` — Compare radiator specific power, operating temp, vulnerability, and collector status against base game. Key metrics: `specificPower_2s_KWkg`, `operatingTemp_K`, `vulnerability`. Includes vulnerability tier breakdown.
+- `analyze_powerplant_balance.py` — Compare power plant output, efficiency, and power density against base game. Key metrics: `maxOutput_GW`, `efficiency`, `specificPower_tGW`. Shows per-class comparison between mod and base entries.
+- `analyze_all_effects.py` — Analyze **all** effects across every project, grouped by context with value conversion (percentages, raw, multiplicative). Supports `--ctx <context>` filter and `--raw` mode. Use to see what effect totals look like before balancing.
+- `analyze_effects.py` — Narrower analysis of tracked priority effects only (from `project_effects.txt`). Use for quick checks on the effect categories you're actively balancing.
+
+#### Balancing (modify mod files, prompts before writing)
+- `balance_effects.py` — Bump effect tiers for categories below 400% total into the 400–700% target range. Increases research cost proportionally. Tracks effects from `project_effects.txt`.
+- `balance_prereqs.py` — Redistribute project prerequisites for even game-progression spread. Uses AI value scoring (1–10) and cumulative research cost as placement signal. Modes: `--analyze`, `--dry-run`, `--apply`. Results cached in `.balance_cache.json`.
+- `update_research_costs.py` — Reduce research cost for effect-matched projects (from `update_effects.txt`) and clamp extreme outliers.
+
+#### Content generation (AI-driven, modify mod files)
+- `generate_content.py` — Generate mod content in three tiers: `easy` (reuse existing effects), `middle` (new tech + child projects), `full` (new equipment + project). Supports `--type heatsink`, `--type radiator`, `--type laser`, `--type drive`, etc. Results cached in `.generate_cache.json`. Use `--dry-run` first, then `--apply`.
 
 ## Getting Started
 
