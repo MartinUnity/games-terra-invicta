@@ -1299,7 +1299,7 @@
     "AI_projectRole": "HabDefense",
     "researchCost": 100,
     "prereqs": [
-      "TerrestrialMilitaryScience"
+      "OrbitalShipbuilding"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,

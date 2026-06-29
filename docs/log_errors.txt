@@ -1,0 +1,198 @@
+[INFO ] Logger ready
+[INFO ] TerraInvicta v1.0.32
+[INFO ] Initializing global bindings
+[INFO ] <color=#00cc00>LoadTime:</color> Load All Templates: 3.074s
+[INFO ] Loaded 14 languages
+[INFO ] <color=#00cc00>LoadTime:</color> Initialize Localization: 2.707s
+[INFO ] <color=#00cc00>LoadTime:</color> AssetBundleManager Initialize: 143.178ms
+[INFO ] <color=#00cc00>LoadTime:</color> Load Namelists: 337.355ms
+[INFO ] GameControl Injected
+[INFO ] Developer Terminal Injected
+[DEBUG] StartScreen Install Bindings
+[INFO ] <color=#00cc00>LoadTime:</color> Load All Templates: 2.587s
+[INFO ] <color=#00cc00>LoadTime:</color> Solar System Bootstrap:: 2.606s
+[INFO ] Loading FullScenario
+[INFO ] <color=#00cc00>LoadTime:</color> Load MetaTemplates: 147.797ms
+[INFO ] <color=#00cc00>LoadTime:</color> Initialize GameTime: 1.923ms
+[INFO ] Campaign Start Version: 1.0.32 Current Version: 1.0.32
+[INFO ] <color=#00cc00>LoadTime:</color> PostGlobalInit2: 6.579s
+[INFO ] <color=#00cc00>LoadTime:</color> Load Players: 16.525ms
+[INFO ] <color=#00cc00>LoadTime:</color> CalculateHabStats: 104.157ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas General Controls Canvas: 29.999ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas OptionsScreen: 1.724ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas Notification Screen Canvas: 36.743ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas SpaceCombatCanvas: 21.240ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas PreCombatCanvas: 1.099ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas CouncilorMissionControlsCanvas: 7.416ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas OperationsControlsCanvas: 9.720ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas SpaceObjectDetailCanvas: 16.571ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas NationInfoCanvas: 40.634ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas ArmyDetailCanvas: 0.671ms
+[INFO ] <color=#00cc00>LoadTime:</color> Initialize Councilor Customization: 499.664ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas CouncilManagementCanvas: 542.969ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas NationsScreenCanvas: 0.809ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas HabitatsScreenCanvas: 33.157ms
+[INFO ] <color=#00cc00>LoadTime:</color> CacheAllShipModules: 1.819s
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas FleetsScreenCanvas: 2.537s
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas ResearchScreenCanvas: 16.586ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas ObjectivesScreenCanvas: 0.290ms
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas IntelScreenCanvas: 2.534s
+[INFO ] <color=#00cc00>LoadTime:</color> Init Canvas CodexCanvas: 36.224ms
+[WARN ] No ICanvas found on MagnifierCanvas
+[INFO ] Set Alien Proxy Faction as the Servants
+[INFO ] <color=#00cc00>LoadTime:</color> LoadAllCanvases: 8.109s
+[INFO ] <color=#00cc00>LoadTime:</color> PostCanvasInit3: 1.884s
+[INFO ] <color=#00cc00>LoadTime:</color> Initialize Nations: 6.851ms
+[INFO ] <color=#00cc00>LoadTime:</color> Initialize Factions: 236.618ms
+[INFO ] <color=#00cc00>LoadTime:</color> PostInit4: 26.825ms
+[INFO ] <color=#00cc00>LoadTime:</color> PostStartUpInit5: 10.036s
+[INFO ] <color=#00cc00>LoadTime:</color> ViewControlInit: 3.830ms
+[INFO ] <color=#00cc00>LoadTime:</color> InitNewCampaignAI: 8.774ms
+[INFO ] Execute Game Control Initialize Cycle
+[INFO ] <color=#00cc00>LoadTime:</color> Init All Visualizers and Warm Shaders (Bad data in public build due to coroutine) : 0.427ms
+[ERROR] Bad tech prereq in json: Project_FirstNation in template Project_Apex_Predator_Tactics
+[ERROR] Bad tech prereq in json: Project_OurOwnWay in template Project_Biosphere_Initiative
+[ERROR] Bad tech prereq in json: Project_PatagoniaIndependenceMovement in template Project_Veridian_Accord
+[ERROR] Bad tech prereq in json: Project_FirstNation in template Project_Cognitive_Acceleration
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Galactic_Wealth_Accumulation
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Veridian_Bloom
+[ERROR] Bad tech prereq in json: Project_OurOwnWay in template Project_Pherocyte_Resilience
+[ERROR] Bad tech prereq in json: Project_FirstNation in template Project_Kinetic_Resonance
+[ERROR] Bad tech prereq in json: Project_FirstNation in template Project_Orbital_Telescope_Array
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Verdant_Bloom
+[ERROR] Bad tech prereq in json: Project_KatangaIndependenceMovement in template Project_Aristocratic_Yield
+[ERROR] Bad tech prereq in json: Project_OurOwnWay in template Project_Expeditionary_Focus
+[ERROR] Bad tech prereq in json: Project_OurOwnWay in template Project_Focused_Beam
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Community_Wellbeing_Enhancer
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Economic_Ascendancy
+[ERROR] Bad tech prereq in json: Project_OurOwnWay in template Project_Ironclad_Mandate
+[ERROR] Bad tech prereq in json: Project_FrenchIndependenceMovements in template Project_Irish_Solidarity
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Voidshock_Protocols
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Nebula_Harvest
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Precision_Guidance
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Warpath_Initiative
+[ERROR] Bad tech prereq in json: Project_FrenchIndependenceMovements in template Project_Academic_Ascendancy
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Galactic_Excavation
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Civic_Nexus
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Strategic_Defense_Initiative
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Vanguard_Shielding
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Asteroid_Bloom
+[ERROR] Bad tech prereq in json: Project_FrenchIndependenceMovements in template Project_Asteroid_Boon
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Strategic_Mobilization
+[ERROR] Bad tech prereq in json: Project_ExoticNanowireBattery in template Project_Aquifer_Harvest
+[ERROR] Bad tech prereq in json: Project_ExoticNanowireBattery in template Project_WaterHarvesterOptimization_L5
+[ERROR] Bad tech prereq in json: Project_FrenchIndependenceMovements in template Project_Social_Compact
+[ERROR] Bad tech prereq in json: Project_FrenchIndependenceMovements in template Project_Expeditionary_Mandate
+[ERROR] Bad tech prereq in json: Project_ExoticNanowireBattery in template Project_FissilesHarvesterOptimization_L6
+[ERROR] Bad tech prereq in json: Project_ExoticNanowireBattery in template Project_Nuclear_Fissile_Harvest
+[ERROR] Bad tech prereq in json: Project_BreakupofPakistan in template Project_Dissidence_Protocols
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, BuildTree: 51.575ms
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, PlaceTechsBehindPrereqs: 1.412s
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, PlaceTechsBehindSameTierPrereqs: 8.613s
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, HandleEndGameTechs: 4.547ms
+[INFO ] <color=#00cc00>LoadTime:</color> Initialize Full Tech Tree: 11.299s
+[INFO ] <color=#00cc00>LoadTime:</color> BakeJourneyHeuristic: 0.076ms
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, SetupSpacing: 4.088s
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, BuildTree: 13.596ms
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, PlaceTechsBehindPrereqs: 92.545ms
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, PlaceTechsBehindSameTierPrereqs: 65.491ms
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, HandleEndGameTechs: 4.562ms
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, ToggleTechVisibility: 930.557ms
+[INFO ] <color=#00cc00>LoadTime:</color> MapController InitializeMap: 1.538s
+[INFO ] <color=#00cc00>LoadTime:</color> SpaceObjectController Create MapController: 1.554s
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, SetupSpacing: 12.787ms
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, ToggleTechVisibility: 0.229ms
+[INFO ] <color=#00cc00>LoadTime:</color> PostVisualizerInit6: 20.691ms
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Vein_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Harvest
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Yield
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Extraction
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Vein_Harvesting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Aristocratic_Yield
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Vein_Extraction
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl3 in template Project_Noble_Vein
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Yield_Enhancement
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Aristocratic_Veins
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Aristocratic_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospector
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Noble_Reclamation
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Vein_Reclamation
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Claim
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Reserves_Unlocked
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl3 in template Project_Noble_Ore_Extraction
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl4 in template Project_Noble_Ore_Harvester
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl4 in template Project_Elite_Miner_s_Aura
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Aristocratic_Extraction
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl3 in template Project_Lordly_Ore_Yield
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Deposit_Enhancement
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Noble_Veins
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Vein_Harvest
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Vein_Harvester
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Noble_Ore_Sovereignty
+[ERROR] Bad effect Name in json: 240cmGreenArcLaserBattery in template Project_GreenArcLaserBattery
+[ERROR] Bad effect Name in json: 480cmGreenArcLaserBattery in template Project_GreenArcLaserBattery
+[INFO ] <color=#00cc00>LoadTime:</color> CacheAllTechTooltipStrings: 1.285s
+[INFO ] <color=#00cc00>LoadTime:</color> PostVisualizerInit7: 1.451s
+[INFO ] <color=#00cc00>LoadTime:</color> PostEverything Save Repair: 4.913ms
+[INFO ] Number of GameStates: 6401
+[INFO ] Visualizer Loader Complete: Complete Init
+[INFO ] <color=#00cc00>LoadTime:</color> Campaign total load time was 68.91457 seconds.
+[INFO ] <color=#00cc00>LoadTime:</color> TechTree, ToggleTechVisibility: 5.280ms
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Vein_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Aristocratic_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospector
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospector
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl3 in template Project_Noble_Ore_Extraction
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl4 in template Project_Noble_Ore_Harvester
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl3 in template Project_Lordly_Ore_Yield
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Noble_Ore_Sovereignty
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Vein_Harvest
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Vein_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Aristocratic_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospector
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Deposit_Enhancement
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Vein_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Yield
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Vein_Harvesting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Aristocratic_Yield
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Vein_Extraction
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl3 in template Project_Noble_Vein
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Yield_Enhancement
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Aristocratic_Veins
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Aristocratic_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospector
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Noble_Reclamation
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Vein_Reclamation
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Claim
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Reserves_Unlocked
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl3 in template Project_Noble_Ore_Extraction
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl4 in template Project_Noble_Ore_Harvester
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl4 in template Project_Elite_Miner_s_Aura
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Aristocratic_Extraction
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl3 in template Project_Lordly_Ore_Yield
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl5 in template Project_Noble_Deposit_Enhancement
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Noble_Veins
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Vein_Harvest
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Vein_Harvester
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl2 in template Project_Noble_Ore_Sovereignty
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl4 in template Project_Noble_Ore_Harvester
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Noble_Vein_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Aristocratic_Prospecting
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl1 in template Project_Noble_Prospector
+[ERROR] Bad effect Name in json: Effect_MiningNoblesBonus_lvl6 in template Project_Orbital_Prospector_Upgrade

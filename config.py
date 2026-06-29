@@ -9,5 +9,6 @@ def data_path(filename: str) -> str:
 
 # Common paths used by extraction.py and show-data.py
 CAMPAIGN_HISTORY = data_path("campaign_history.csv")
+SPACE_INFRA = data_path("space_infrastructure.csv")
 CONFIG_YML = data_path("config.yml")
 SAVE_DIR = data_path("terra-invicta-save/Saves")

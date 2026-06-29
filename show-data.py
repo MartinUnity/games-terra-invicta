@@ -33,6 +33,9 @@ COL_NAMES = [
     "mc_built",
     "mc_cap",
     "mc_utilization",
+    "military_tech_level",
+    "max_military_tech_level",
+    "space_funding_year",
 ]
 
 
@@ -42,8 +45,22 @@ COL_NAMES = [
 @st.cache_data(ttl=5)
 def load_data():
     try:
-        df = pd.read_csv(config.CAMPAIGN_HISTORY, header=0, names=COL_NAMES, encoding="utf-8-sig")
-        df = df[df["nation_name"] != "nation_name"]  # Filter repeat headers
+        df = pd.read_csv(config.CAMPAIGN_HISTORY, header=None, encoding="utf-8-sig")
+        # CSV has no header row; assign names to existing columns only
+        num_cols = len(df.columns)
+        df.columns = COL_NAMES[:num_cols]
+
+        # Filter repeat headers (from old extraction runs)
+        if "nation_name" in df.columns:
+            df = df[df["nation_name"] != "nation_name"]
+
+        # Add missing columns (e.g. military tech, space funding added after CSV existed)
+        for col in COL_NAMES:
+            if col not in df.columns:
+                if any(x in col for x in ("military", "space")):
+                    df[col] = 0
+                else:
+                    df[col] = None
 
         numeric_cols = [
             "gdp_capita",
@@ -61,6 +78,9 @@ def load_data():
             "mc_built",
             "mc_cap",
             "mc_utilization",
+            "military_tech_level",
+            "max_military_tech_level",
+            "space_funding_year",
         ]
         for col in numeric_cols:
             if col in df.columns:
@@ -152,7 +172,7 @@ with st.sidebar:
 # -----------------------------------------------------------------------------
 # 4. MAIN TABS
 # -----------------------------------------------------------------------------
-tab1, tab2 = st.tabs(["📊 Global Meta Analysis", "🌍 Nation Detailed View"])
+tab1, tab2, tab3 = st.tabs(["📊 Global Meta Analysis", "🌍 Nation Detailed View", "🚀 Space"])
 
 if not df_filtered.empty:
     latest_snapshot = df_filtered.sort_values("date").groupby("nation_name").tail(1)
@@ -167,8 +187,10 @@ with tab1:
     if df.empty:
         st.error("No data available.")
     else:
-        # Create two columns for the side-by-side layout
-        col_eco, col_mc = st.columns(2)
+        # ---------------------------------------------------------
+        # ROW 1: ECONOMIC VELOCITY + MILITARY TECH LEVEL
+        # ---------------------------------------------------------
+        col_eco, col_mil = st.columns(2)
 
         # ---------------------------------------------------------
         # COLUMN 1: ECONOMIC VELOCITY
@@ -288,7 +310,93 @@ with tab1:
             st.altair_chart(final_chart.properties(height=100 + len(gdp_subset) * 30), use_container_width=True)
 
         # ---------------------------------------------------------
-        # COLUMN 2: MISSION CONTROL
+        # COLUMN 2: MILITARY TECH LEVEL
+        # ---------------------------------------------------------
+        with col_mil:
+            st.markdown("### ⚔️ Military Tech Level")
+            st.info("Gray = Max Level. **Green = Gain**. **Red = Loss**.")
+
+            c1, c2 = st.columns(2)
+            with c1:
+                mil_focus_delta = st.checkbox("Focus on Change", value=False, key="mil_delta")
+            with c2:
+                mil_hide_capped = st.checkbox("Hide Fully Upgraded", value=True, key="mil_cap")
+
+            mil_trends = (
+                df.sort_values("date")
+                .groupby("nation_name")
+                .agg(
+                    old_mil=("military_tech_level", "first"),
+                    new_mil=("military_tech_level", "last"),
+                    max_mil=("max_military_tech_level", "last"),
+                )
+                .reset_index()
+            )
+
+            mil_trends["delta"] = mil_trends["new_mil"] - mil_trends["old_mil"]
+            mil_trends["status"] = mil_trends["delta"].apply(lambda x: "Gain" if x >= 0 else "Loss")
+
+            def _mil_label(r):
+                sign = "+" if r["delta"] >= 0 else ""
+                if mil_focus_delta:
+                    return f"{sign}{r['delta']:.2f}"
+                return f"{r['new_mil']:.2f} / {r['max_mil']:.0f} ({sign}{r['delta']:.2f})"
+
+            mil_trends["label"] = mil_trends.apply(_mil_label, axis=1)
+
+            mil_subset = mil_trends[mil_trends["new_mil"] > 0].copy()
+            if mil_hide_capped:
+                mil_subset = mil_subset[mil_subset["new_mil"] < mil_subset["max_mil"]]
+            if not mil_subset.empty:
+                mil_subset = mil_subset.sort_values("new_mil" if not mil_focus_delta else "delta", ascending=False)
+
+                base_mil = alt.Chart(mil_subset).encode(y=alt.Y("nation_name", sort=None, title=None))
+
+                if mil_focus_delta:
+                    fg_mil = base_mil.mark_bar().encode(
+                        x=alt.X("delta", title="Change in Tech Level"),
+                        color=alt.Color(
+                            "status",
+                            scale=alt.Scale(domain=["Gain", "Loss"], range=["#2ecc71", "#e74c3c"]),
+                            legend=None,
+                        ),
+                        tooltip=["nation_name", "new_mil", "max_mil", "delta"],
+                    )
+                    txt_mil = base_mil.mark_text(align="right", dx=-5, fontWeight="bold").encode(
+                        x="delta", text="label", color=alt.value("black")
+                    )
+                    final_mil = fg_mil + txt_mil
+                else:
+                    bg_mil = base_mil.mark_bar(color="#444").encode(x=alt.X("max_mil", title="Tech Level"))
+                    fg_mil = base_mil.mark_bar().encode(
+                        x="new_mil",
+                        color=alt.Color(
+                            "status",
+                            scale=alt.Scale(domain=["Gain", "Loss"], range=["#2ecc71", "#e74c3c"]),
+                            legend=None,
+                        ),
+                        tooltip=["nation_name", "new_mil", "max_mil", "delta"],
+                    )
+                    txt_mil = base_mil.mark_text(align="right", dx=-5, fontWeight="bold").encode(
+                        x="new_mil", text="label", color=alt.value("black")
+                    )
+                    final_mil = bg_mil + fg_mil + txt_mil
+
+                st.altair_chart(
+                    final_mil.properties(height=100 + len(mil_subset) * 30), use_container_width=True
+                )
+            else:
+                st.info("No military tech data available.")
+
+        st.divider()
+
+        # ---------------------------------------------------------
+        # ROW 2: MISSION CONTROL + STRATEGIC EFFICIENCY
+        # ---------------------------------------------------------
+        col_mc, col_eff = st.columns(2)
+
+        # ---------------------------------------------------------
+        # COLUMN 1: MISSION CONTROL
         # ---------------------------------------------------------
         with col_mc:
             st.markdown("### 🛰️ Mission Control")
@@ -342,33 +450,32 @@ with tab1:
             else:
                 st.success("All Optimized.")
 
-        st.divider()
-
         # ---------------------------------------------------------
-        # SCATTER PLOT (Full Width Below)
+        # COLUMN 2: STRATEGIC EFFICIENCY
         # ---------------------------------------------------------
-        st.subheader("📊 Strategic Efficiency")
-        color_metric = st.radio("Color By:", ["Democracy", "Unrest", "Inequality"], index=1, horizontal=True)
+        with col_eff:
+            st.markdown("### 📊 Strategic Efficiency")
+            color_metric = st.radio("Color By:", ["Democracy", "Unrest", "Inequality"], index=1, horizontal=True)
 
-        scale_opts = (
-            alt.Scale(scheme="turbo")
-            if color_metric == "Democracy"
-            else alt.Scale(scheme="reds") if color_metric == "Unrest" else alt.Scale(scheme="magma")
-        )
-
-        c_res = (
-            alt.Chart(latest_snapshot)
-            .mark_circle(size=120)
-            .encode(
-                x=alt.X("cp_maintenance_cost", title="Nation Size (CP Cost)"),
-                y=alt.Y("efficiency_research", title="Science Yield per CP"),
-                color=alt.Color(color_metric.lower(), scale=scale_opts),
-                tooltip=["nation_name", "monthly_research", "efficiency_research", color_metric.lower()],
+            scale_opts = (
+                alt.Scale(scheme="turbo")
+                if color_metric == "Democracy"
+                else alt.Scale(scheme="reds") if color_metric == "Unrest" else alt.Scale(scheme="magma")
             )
-            .interactive()
-        )
 
-        st.altair_chart(c_res, use_container_width=True)
+            c_res = (
+                alt.Chart(latest_snapshot)
+                .mark_circle(size=120)
+                .encode(
+                    x=alt.X("cp_maintenance_cost", title="Nation Size (CP Cost)"),
+                    y=alt.Y("efficiency_research", title="Science Yield per CP"),
+                    color=alt.Color(color_metric.lower(), scale=scale_opts),
+                    tooltip=["nation_name", "monthly_research", "efficiency_research", color_metric.lower()],
+                )
+                .interactive()
+            )
+
+            st.altair_chart(c_res, use_container_width=True)
 
 # =============================================================================
 # TAB 2: DATA DETAILS
@@ -383,3 +490,96 @@ with tab2:
             .style.format({"gdp_capita": "${:,.0f}", "population_millions": "{:.1f} M", "monthly_research": "{:.1f}"}),
             use_container_width=True,
         )
+
+# =============================================================================
+# TAB 3: SPACE
+# =============================================================================
+with tab3:
+    st.markdown("### 🚀 Space Operations")
+
+    # Load space infrastructure data
+    space_df = None
+    try:
+        space_df = pd.read_csv(config.SPACE_INFRA, header=None, encoding="utf-8-sig")
+        space_df.columns = [
+            "orbit_name", "body_name", "orbit_id",
+            "pending_habs", "destroyed_assets",
+            "habs_in_orbit", "fleets_in_orbit",
+        ][:len(space_df.columns)]
+        if space_df.empty:
+            space_df = None
+    except Exception:
+        space_df = None
+
+    col_fund, col_infra = st.columns(2)
+
+    # ---------------------------------------------------------
+    # COLUMN 1: SPACE FUNDING
+    # ---------------------------------------------------------
+    with col_fund:
+        st.markdown("### 💰 Annual Space Funding")
+        st.info("Annual funding in $M per nation.")
+
+        if not df.empty and "space_funding_year" in latest_snapshot.columns:
+            fund_subset = latest_snapshot[latest_snapshot["space_funding_year"] > 0].copy()
+            if not fund_subset.empty:
+                fund_subset = fund_subset.sort_values("space_funding_year", ascending=False)
+                fund_subset["label"] = fund_subset.apply(
+                    lambda x: f"${x['space_funding_year']:,.0f}M", axis=1
+                )
+
+                base_fund = alt.Chart(fund_subset).encode(y=alt.Y("nation_name", sort=None, title=None))
+                bar_fund = base_fund.mark_bar().encode(
+                    x=alt.X("space_funding_year", title="Annual Funding ($M)"),
+                    color=alt.value("#9b59b6"),
+                    tooltip=["nation_name", "space_funding_year"],
+                )
+                txt_fund = base_fund.mark_text(align="left", dx=5).encode(
+                    x="space_funding_year", text="label", color=alt.value("white")
+                )
+
+                st.altair_chart(
+                    (bar_fund + txt_fund).properties(height=100 + len(fund_subset) * 30), use_container_width=True
+                )
+            else:
+                st.info("No nations are funding space programs.")
+        else:
+            st.info("Space funding data unavailable.")
+
+    # ---------------------------------------------------------
+    # COLUMN 2: SPACE INFRASTRUCTURE
+    # ---------------------------------------------------------
+    with col_infra:
+        st.markdown("### 🛸 Space Infrastructure")
+        st.info("Habs, Fleets, Pending, and Destroyed per orbit.")
+
+        if space_df is not None and not space_df.empty:
+            has_content = space_df["habs_in_orbit"].sum() > 0 or space_df["pending_habs"].sum() > 0
+            if has_content:
+                infra_display = space_df.copy()
+                infra_display = infra_display[
+                    (infra_display["habs_in_orbit"] > 0) |
+                    (infra_display["fleets_in_orbit"] > 0) |
+                    (infra_display["pending_habs"] > 0) |
+                    (infra_display["destroyed_assets"] > 0)
+                ]
+
+                if not infra_display.empty:
+                    infra_display = infra_display.sort_values(
+                        ["body_name", "orbit_name"]
+                    ).reset_index(drop=True)
+
+                    for _, row in infra_display.iterrows():
+                        with st.container():
+                            cols = st.columns([3, 1, 1, 1, 1])
+                            cols[0].markdown(f"**{row['body_name']}** — {row['orbit_name']}")
+                            cols[1].markdown(f"🏗️ {row['habs_in_orbit']}")
+                            cols[2].markdown(f"🚀 {row['fleets_in_orbit']}")
+                            cols[3].markdown(f"⏳ {row['pending_habs']}")
+                            cols[4].markdown(f"💥 {row['destroyed_assets']}")
+                else:
+                    st.info("No space infrastructure detected.")
+            else:
+                st.info("No space infrastructure yet.")
+        else:
+            st.info("Space infrastructure data unavailable.")
