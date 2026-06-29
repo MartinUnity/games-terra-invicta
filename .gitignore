@@ -230,3 +230,8 @@ campaign_history.csv
 config.yml*
 campaign_history.csv
 config.yml
+*.csv
+*.bak
+*.bak2
+Game-ModsDir
+Game-ModsDir-Localization

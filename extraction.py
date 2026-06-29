@@ -215,6 +215,13 @@ def extract_nation_data(data):
         base_ip = nation.get("economyScore", 0)
         eff_ip = base_ip / cp_maintenance_cost if cp_maintenance_cost > 0 else 0
 
+        # --- MILITARY TECH ---
+        military_tech_level = nation.get("militaryTechLevel", 0)
+        max_military_tech_level = nation.get("maxMilitaryTechLevel", 0)
+
+        # --- SPACE ---
+        space_funding_year = nation.get("spaceFunding_year", 0)
+
         # --- FINAL DICT ---
         stats = {
             "date": current_date,
@@ -237,10 +244,72 @@ def extract_nation_data(data):
             "mc_built": round(mc_built, 1),
             "mc_cap": mc_cap_calc,
             "mc_utilization": round(mc_utilization, 1),
+            # Military Tech
+            "military_tech_level": round(military_tech_level, 2),
+            "max_military_tech_level": round(max_military_tech_level, 2),
+            # Space
+            "space_funding_year": round(space_funding_year, 2),
         }
         stats_list.append(stats)
 
     return pd.DataFrame(stats_list)
+
+
+def extract_space_infrastructure(data):
+    root = "gamestates"
+    prefix = "PavonisInteractive.TerraInvicta"
+
+    if root in data:
+        game_states = data[root]
+    else:
+        game_states = data
+
+    raw_orbits = game_states.get(f"{prefix}.TIOrbitState", [])
+    raw_habs = game_states.get(f"{prefix}.TIHabState", [])
+    raw_fleets = game_states.get(f"{prefix}.TISpaceFleetState", [])
+    raw_bodies = game_states.get(f"{prefix}.TISpaceBodyState", [])
+
+    # Build body name map
+    body_map = {}
+    for entry in raw_bodies:
+        b = entry.get("Value", entry)
+        bid = b.get("ID", {}).get("value")
+        if bid is not None:
+            body_map[bid] = b.get("displayName", f"Body {bid}")
+
+    # Build orbit data
+    infra_list = []
+    for entry in raw_orbits:
+        orbit = entry.get("Value", entry)
+        orbit_name = orbit.get("displayName", "Unknown")
+        orbit_id = orbit.get("ID", {}).get("value")
+        barycenter_id = orbit.get("barycenter", {}).get("value")
+        body_name = body_map.get(barycenter_id, "Unknown")
+        pending_habs = orbit.get("pendingHabs", 0)
+        destroyed = orbit.get("destroyedAssets", 0)
+
+        # Count assets in orbit by type
+        assets = orbit.get("assetsInOrbit", [])
+        habs_in_orbit = 0
+        fleets_in_orbit = 0
+        for asset in assets:
+            asset_type = asset.get("$type", "")
+            if "TIHabState" in asset_type:
+                habs_in_orbit += 1
+            elif "TISpaceFleetState" in asset_type:
+                fleets_in_orbit += 1
+
+        infra_list.append({
+            "orbit_name": orbit_name,
+            "body_name": body_name,
+            "orbit_id": orbit_id,
+            "pending_habs": pending_habs,
+            "destroyed_assets": destroyed,
+            "habs_in_orbit": habs_in_orbit,
+            "fleets_in_orbit": fleets_in_orbit,
+        })
+
+    return pd.DataFrame(infra_list)
 
 
 def run_mc_calibration(data):
@@ -603,6 +672,12 @@ def run_extraction_pipeline(specific_file_path=None):
 
         logger.info("Successfully updated campaign_history.csv")
         print(df_filtered.head())
+
+        # Extract space infrastructure (always overwrite with headers)
+        df_space = extract_space_infrastructure(data)
+        if not df_space.empty:
+            df_space.to_csv(config.SPACE_INFRA, mode="w", header=True, index=False)
+            logger.info(f"Updated space_infrastructure.csv ({len(df_space)} orbits)")
 
         # run_mc_calibration(data)
 

@@ -69,6 +69,7 @@ def check_file(
     game_names: set,
     mods_dir: Path,
     game_templates_dir: Path | None,
+    game_loc_dir: Path | None = None,
 ) -> Tuple[List[str], int, int, int, int, int, int]:
     msgs: List[str] = []
     try:
@@ -114,7 +115,7 @@ def check_file(
     else:
         msgs.append("top-level JSON is neither object nor array")
 
-    # localization checks
+    # localization checks - load mod localization
     loc_file = mods_dir / "Localization" / "en" / f"{base}.en"
     loc_keys = set()
     if loc_file.exists():
@@ -129,6 +130,23 @@ def check_file(
                         loc_keys.add(k.strip())
         except Exception as e:
             msgs.append(f"Failed to read localization file {loc_file}: {e}")
+
+    # load game localization for cross-referencing
+    game_loc_keys = set()
+    if game_loc_dir:
+        game_loc_file = game_loc_dir / f"{base}.en"
+        if game_loc_file.exists():
+            try:
+                with game_loc_file.open("r", encoding="utf-8") as gfl:
+                    for ln in gfl:
+                        ln = ln.strip()
+                        if not ln or ln.startswith("#"):
+                            continue
+                        if "=" in ln:
+                            k, _ = ln.split("=", 1)
+                            game_loc_keys.add(k.strip())
+            except Exception as e:
+                msgs.append(f"Failed to read game localization file {game_loc_file}: {e}")
 
     # determine dataNames and check localization rules
     data_names: List[str] = []
@@ -154,76 +172,69 @@ def check_file(
 
     loc_missing_examples: List[str] = []
     for dn in data_names:
-        # If the dataName exists in the game-specific template file, treat it as game-owned
-        # and skip local localization checks (game files have localization).
-        if dn in game_specific_names:
-            loc_ok_game += 1
-            continue
-        # If the dataName exists in the general game TIProjectTemplate list, also consider it covered
-        if dn in game_names:
-            loc_ok_game += 1
-            continue
+        is_game_owned = dn in game_specific_names or dn in game_names
 
-        # rules per file base
-        def has(key: str) -> bool:
+        # rules per file base - check both mod and game localization
+        def has_local(key: str) -> bool:
             return f"{base}.{key}.{dn}" in loc_keys
+
+        def has_game(key: str) -> bool:
+            return f"{base}.{key}.{dn}" in game_loc_keys
+
+        def has_any(key: str) -> bool:
+            return has_local(key) or has_game(key)
 
         ok = False
         if base == "TIProjectTemplate":
             # must have both displayName and summary
-            if has("displayName") and has("summary"):
+            if has_any("displayName") and has_any("summary"):
                 ok = True
             else:
-                # Report specific missing keys for better debugging
-                if not has("displayName"):
+                if not has_any("displayName"):
                     msgs.append(f"Missing localization key: {base}.displayName.{dn}")
-                if not has("summary"):
+                if not has_any("summary"):
                     msgs.append(f"Missing localization key: {base}.summary.{dn}")
         elif base == "TIShipHullTemplate":
-            if has("displayName") and has("abbr"):
+            if has_any("displayName") and has_any("abbr"):
                 ok = True
             else:
-                # Report specific missing keys for better debugging
-                if not has("displayName"):
+                if not has_any("displayName"):
                     msgs.append(f"Missing localization key: {base}.displayName.{dn}")
-                if not has("abbr"):
+                if not has_any("abbr"):
                     msgs.append(f"Missing localization key: {base}.abbr.{dn}")
         elif base == "TITechTemplate":
-            if has("displayName") and has("summary") and has("quote") and has("description"):
+            if has_any("displayName") and has_any("summary") and has_any("quote") and has_any("description"):
                 ok = True
             else:
-                # Report specific missing keys for better debugging
-                if not has("displayName"):
+                if not has_any("displayName"):
                     msgs.append(f"Missing localization key: {base}.displayName.{dn}")
-                if not has("summary"):
+                if not has_any("summary"):
                     msgs.append(f"Missing localization key: {base}.summary.{dn}")
-                if not has("quote"):
+                if not has_any("quote"):
                     msgs.append(f"Missing localization key: {base}.quote.{dn}")
-                if not has("description"):
+                if not has_any("description"):
                     msgs.append(f"Missing localization key: {base}.description.{dn}")
         elif base == "TIEffectTemplate":
             # Effects only require description
-            if has("description"):
+            if has_any("description"):
                 ok = True
             else:
                 msgs.append(f"Missing localization key: {base}.description.{dn}")
         else:
             # generic: either displayName or description required
-            if has("displayName") or has("description"):
+            if has_any("displayName") or has_any("description"):
                 ok = True
             else:
-                # Report missing keys for better debugging
                 msgs.append(f"Missing localization key: {base}.displayName.{dn} or {base}.description.{dn}")
         if ok:
-            loc_ok_local += 1
-        else:
-            # fallback: if the dataName exists in the game's template list, consider it covered by game
-            if dn in game_names:
+            if is_game_owned:
                 loc_ok_game += 1
             else:
-                loc_missing += 1
-                if len(loc_missing_examples) < 8:
-                    loc_missing_examples.append(dn)
+                loc_ok_local += 1
+        else:
+            loc_missing += 1
+            if len(loc_missing_examples) < 8:
+                loc_missing_examples.append(dn)
 
     msgs.append(f"matched_local={matched_local}; matched_game={matched_game}; unmatched={unmatched}")
     msgs.append(f"loc_ok_local={loc_ok_local}; loc_ok_game={loc_ok_game}; loc_missing={loc_missing}")
@@ -291,6 +302,12 @@ def main() -> int:
         help="Dump full local and game JSON objects for overridden dataNames",
     )
     p.add_argument(
+        "--game-loc",
+        type=Path,
+        default=None,
+        help="Path to game localization directory (e.g. Game-ModsDir-Localization)",
+    )
+    p.add_argument(
         "--check-descriptions",
         action="store_true",
         help="Check for projects/techs missing description (inline or localization)",
@@ -341,6 +358,14 @@ def main() -> int:
         except Exception:
             game_template_names = set()
 
+    # Load game localization directory (optional)
+    default_game_loc = repo_root / "Game-ModsDir-Localization"
+    game_loc_dir: Path | None = args.game_loc
+    if game_loc_dir is None and default_game_loc.exists():
+        game_loc_dir = default_game_loc
+    elif game_loc_dir is not None and not game_loc_dir.exists():
+        game_loc_dir = None
+
     template_names, template_issues = gather_template_issues(templates)
 
     results: List[Tuple[str, bool, List[str]]] = []
@@ -379,7 +404,7 @@ def main() -> int:
             results.append((str(fp.name), True, ["SKIPPED"]))
             continue
         msgs, ml, mg, mu, lok, lokg, lmissing = check_file(
-            fp, template_names, game_template_names, mods_dir, game_templates_dir
+            fp, template_names, game_template_names, mods_dir, game_templates_dir, game_loc_dir
         )
 
         # accumulate totals for scanned files

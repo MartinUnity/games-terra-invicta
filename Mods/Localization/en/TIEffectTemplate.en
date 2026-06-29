@@ -51,6 +51,11 @@ TIEffectTemplate.description.Effect_SpaceMineExtra4=-The number of habitat minin
 TIEffectTemplate.description.Effect_SpaceMineExtra8=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}
 TIEffectTemplate.description.Effect_SpaceMineExtra10=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}
 
+TIEffectTemplate.description.Effect_SpaceMineFreebies12=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}
+TIEffectTemplate.description.Effect_SpaceMineFreebies15=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}
+TIEffectTemplate.description.Effect_SpaceMineFreebies18=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}
+TIEffectTemplate.description.Effect_SpaceMineFreebies20=-The number of habitat mining modules we can support without paying a Mission Control cost increases by {0}
+
 TIEffectTemplate.description.Effect_SpaceMiningBonus03=-Grants {3} extra materials mined from Space Mines
 TIEffectTemplate.description.Effect_SpaceMiningBonus07=-Grants {3} extra materials mined from Space Mines
 TIEffectTemplate.description.Effect_SpaceMiningBonus15=-Grants {3} extra materials mined from Space Mines
@@ -108,6 +113,16 @@ TIEffectTemplate.description.Effect_CommanderNeuralGlobalNetwork=-Commander neur
 TIEffectTemplate.description.Effect_CyborneticCommandIntegration=-Cybernetic command integration increases military capacity by {0}
 
 TIEffectTemplate.description.Effect_BuildArmyPriorityBonus10=-Grants {3} extra Build Army priority
+
+TIEffectTemplate.description.Effect_WelfarePriorityBonus02=-National Investment Points we direct to the Welfare priority are increased by {3}
+TIEffectTemplate.description.Effect_WelfarePriorityBonus10=-National Investment Points we direct to the Welfare priority are increased by {3}
+
+TIEffectTemplate.description.Effect_MilitaryPriorityBonus10=-National Investment Points we direct to the Military priority are increased by {3}
+TIEffectTemplate.description.Effect_MilitaryPriorityBonus15=-National Investment Points we direct to the Military priority are increased by {3}
+
+TIEffectTemplate.description.Effect_LifeExtension45=-Our councilors will on average live 45 years longer
+TIEffectTemplate.description.Effect_LifeExtension55=-Our councilors will on average live 55 years longer
+TIEffectTemplate.description.Effect_LifeExtension60=-Our councilors will on average live 60 years longer
 
 TIEffectTemplate.description.Effect_ShipLaserDamage3=-Ship Lasers do {3} extra damage
 TIEffectTemplate.description.Effect_ShipLaserDamage5=-Ship Lasers do {3} extra damage
