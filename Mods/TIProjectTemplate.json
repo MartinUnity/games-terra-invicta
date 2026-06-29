@@ -34,7 +34,7 @@
       "Project_SpaceHotel"
     ],
     "effects": [
-      "Effect_ControlPointMaintenanceBonus05",
+      "Effect_ControlPointMaintenanceBonus10",
       "Effect_EconomyPriorityBonus1",
       "Effect_WelfarePriorityBonus10"
     ],
@@ -2504,7 +2504,7 @@
     "AI_projectRole": "None",
     "researchCost": 50000,
     "prereqs": [
-      "Project_MolecularBenefication"
+      "MolecularAssemblers"
     ],
     "oneTimeGlobally": false,
     "repeatable": false,
@@ -9031,28 +9031,6 @@
     "maxUnlockChance": 83
   },
   {
-    "dataName": "Project_Cognitive_Networks",
-    "friendlyName": "Cognitive Networks",
-    "techCategory": "SocialScience",
-    "researchCost": 23905,
-    "prereqs": [
-      "Project_SouthernCross"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 60,
-    "initialUnlockChance": 1,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 45
-  },
-  {
     "dataName": "Project_Shared_Purpose",
     "friendlyName": "Shared Purpose",
     "techCategory": "SocialScience",
@@ -10505,28 +10483,6 @@
     "maxUnlockChance": 96
   },
   {
-    "dataName": "Project_Cognitive_Uplift",
-    "friendlyName": "Cognitive Uplift",
-    "techCategory": "SocialScience",
-    "researchCost": 67855,
-    "prereqs": [
-      "Project_GreaterPanAsia"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 95,
-    "initialUnlockChance": 17,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 56
-  },
-  {
     "dataName": "Project_Veridian_Bloom",
     "friendlyName": "Veridian Bloom",
     "techCategory": "SocialScience",
@@ -11052,50 +11008,6 @@
     "factionAvailableChance": 75,
     "initialUnlockChance": 16,
     "deltaUnlockChance": 2,
-    "maxUnlockChance": 69
-  },
-  {
-    "dataName": "Project_Cognitive_Pathways",
-    "friendlyName": "Cognitive Pathways",
-    "techCategory": "SocialScience",
-    "researchCost": 19945,
-    "prereqs": [
-      "Project_SanctionedInvestigations"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 65,
-    "initialUnlockChance": 5,
-    "deltaUnlockChance": 10,
-    "maxUnlockChance": 48
-  },
-  {
-    "dataName": "Project_Cosmic_Archives",
-    "friendlyName": "Cosmic Archives",
-    "techCategory": "Xenology",
-    "researchCost": 54346,
-    "prereqs": [
-      "Project_ANewHome"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 63,
-    "initialUnlockChance": 19,
-    "deltaUnlockChance": 7,
     "maxUnlockChance": 69
   },
   {
@@ -12815,28 +12727,6 @@
     "maxUnlockChance": 23
   },
   {
-    "dataName": "Project_Cognitive_Mapping",
-    "friendlyName": "Cognitive Mapping",
-    "techCategory": "SocialScience",
-    "researchCost": 3606,
-    "prereqs": [
-      "Project_RegulatoryCapture"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 64,
-    "initialUnlockChance": 17,
-    "deltaUnlockChance": 9,
-    "maxUnlockChance": 86
-  },
-  {
     "dataName": "Project_Nexus_Stabilizers",
     "friendlyName": "Nexus Stabilizers",
     "techCategory": "Xenology",
@@ -13013,28 +12903,6 @@
     "maxUnlockChance": 24
   },
   {
-    "dataName": "Project_Astro_Insights",
-    "friendlyName": "Astro Insights",
-    "techCategory": "LifeScience",
-    "researchCost": 379,
-    "prereqs": [
-      "Project_AstronautFitnessRegimen"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 63,
-    "initialUnlockChance": 1,
-    "deltaUnlockChance": 1,
-    "maxUnlockChance": 26
-  },
-  {
     "dataName": "Project_Vein_Resonance",
     "friendlyName": "Vein Resonance",
     "techCategory": "SocialScience",
@@ -13189,28 +13057,6 @@
     "maxUnlockChance": 40
   },
   {
-    "dataName": "Project_Cognitive_Relay",
-    "friendlyName": "Cognitive Relay",
-    "techCategory": "Energy",
-    "researchCost": 700,
-    "prereqs": [
-      "Project_SolarSteamers"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 50,
-    "initialUnlockChance": 13,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 77
-  },
-  {
     "dataName": "Project_Apex_Predator_Analysis",
     "friendlyName": "Apex Predator Analysis",
     "techCategory": "SpaceScience",
@@ -13275,28 +13121,6 @@
     "initialUnlockChance": 15,
     "deltaUnlockChance": 9,
     "maxUnlockChance": 97
-  },
-  {
-    "dataName": "Project_Cognitive_Horizon",
-    "friendlyName": "Cognitive Horizon",
-    "techCategory": "SocialScience",
-    "researchCost": 8703,
-    "prereqs": [
-      "Project_SouthernCross"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 49,
-    "initialUnlockChance": 17,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 98
   },
   {
     "dataName": "Project_Veridian_Initiative",
@@ -15433,28 +15257,6 @@
     "maxUnlockChance": 50
   },
   {
-    "dataName": "Project_Resilience_Bloom",
-    "friendlyName": "Resilience Bloom",
-    "techCategory": "SpaceScience",
-    "researchCost": 424,
-    "prereqs": [
-      "MissiontotheAsteroids"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 91,
-    "initialUnlockChance": 10,
-    "deltaUnlockChance": 9,
-    "maxUnlockChance": 42
-  },
-  {
     "dataName": "Project_Market_Nexus",
     "friendlyName": "Market Nexus",
     "techCategory": "Energy",
@@ -15475,28 +15277,6 @@
     "initialUnlockChance": 17,
     "deltaUnlockChance": 7,
     "maxUnlockChance": 56
-  },
-  {
-    "dataName": "Project_Xeno_Symbiosis",
-    "friendlyName": "Xeno-Symbiosis",
-    "techCategory": "Xenology",
-    "researchCost": 41616,
-    "prereqs": [
-      "Project_PherocyteExposureNetworkTracing"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 52,
-    "initialUnlockChance": 19,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 20
   },
   {
     "dataName": "Project_Metal_Vein_Resonance",
@@ -16225,28 +16005,6 @@
     "maxUnlockChance": 64
   },
   {
-    "dataName": "Project_Pheromone_Shielding",
-    "friendlyName": "Pheromone Shielding",
-    "techCategory": "Xenology",
-    "researchCost": 14027,
-    "prereqs": [
-      "Project_TheirTechnology"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 56,
-    "initialUnlockChance": 19,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 38
-  },
-  {
     "dataName": "Project_Biosphere_Reclamation",
     "friendlyName": "Biosphere Reclamation",
     "techCategory": "Xenology",
@@ -16333,28 +16091,6 @@
     "initialUnlockChance": 19,
     "deltaUnlockChance": 3,
     "maxUnlockChance": 89
-  },
-  {
-    "dataName": "Project_Xeno_Resilience",
-    "friendlyName": "Xeno Resilience",
-    "techCategory": "MilitaryScience",
-    "researchCost": 62105,
-    "prereqs": [
-      "Project_MilitaryScienceInstitute"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 64,
-    "initialUnlockChance": 11,
-    "deltaUnlockChance": 9,
-    "maxUnlockChance": 37
   },
   {
     "dataName": "Project_Ecosystem_Bloom",
@@ -16641,28 +16377,6 @@
     "initialUnlockChance": 20,
     "deltaUnlockChance": 10,
     "maxUnlockChance": 24
-  },
-  {
-    "dataName": "Project_Galactic_Knowledge_Expansion",
-    "friendlyName": "Galactic Knowledge Expansion",
-    "techCategory": "SpaceScience",
-    "researchCost": 5948,
-    "prereqs": [
-      "Project_SettlementMiningComplex"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 68,
-    "initialUnlockChance": 18,
-    "deltaUnlockChance": 5,
-    "maxUnlockChance": 55
   },
   {
     "dataName": "Project_Economic_Priority_Shift",
@@ -17347,28 +17061,6 @@
     "maxUnlockChance": 58
   },
   {
-    "dataName": "Project_Pherocyte_Shield_Enhancer",
-    "friendlyName": "Pherocyte Shield Enhancer",
-    "techCategory": "MilitaryScience",
-    "researchCost": 5487,
-    "prereqs": [
-      "TerrestrialMilitaryScience"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 67,
-    "initialUnlockChance": 7,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 63
-  },
-  {
     "dataName": "Project_Ore_Extraction_Enhancement",
     "friendlyName": "Ore Extraction Enhancement",
     "techCategory": "Energy",
@@ -17521,28 +17213,6 @@
     "initialUnlockChance": 16,
     "deltaUnlockChance": 4,
     "maxUnlockChance": 61
-  },
-  {
-    "dataName": "Project_Cosmic_Market_Optimizer",
-    "friendlyName": "Cosmic Market Optimizer",
-    "techCategory": "InformationScience",
-    "researchCost": 2201,
-    "prereqs": [
-      "MissileWarfareDoctrine"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 67,
-    "initialUnlockChance": 20,
-    "deltaUnlockChance": 9,
-    "maxUnlockChance": 23
   },
   {
     "dataName": "Project_Galactic_Harmony_Booster",
@@ -18115,28 +17785,6 @@
     "initialUnlockChance": 11,
     "deltaUnlockChance": 6,
     "maxUnlockChance": 56
-  },
-  {
-    "dataName": "Project_Pherocyte_Defender",
-    "friendlyName": "Pherocyte Defender",
-    "techCategory": "MilitaryScience",
-    "researchCost": 11983,
-    "prereqs": [
-      "Project_60cmGreenLaserBattery"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 86,
-    "initialUnlockChance": 20,
-    "deltaUnlockChance": 6,
-    "maxUnlockChance": 100
   },
   {
     "dataName": "Project_Economic_Stardust",
@@ -19349,28 +18997,6 @@
     "maxUnlockChance": 43
   },
   {
-    "dataName": "Project_Volatile_Riches",
-    "friendlyName": "Volatile Riches",
-    "techCategory": "Xenology",
-    "researchCost": 40611,
-    "prereqs": [
-      "Project_AlienArmyAnalysis"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 50,
-    "initialUnlockChance": 11,
-    "deltaUnlockChance": 10,
-    "maxUnlockChance": 34
-  },
-  {
     "dataName": "Project_Advanced_War_Machine",
     "friendlyName": "Advanced War Machine",
     "techCategory": "MilitaryScience",
@@ -19547,28 +19173,6 @@
     "maxUnlockChance": 66
   },
   {
-    "dataName": "Project_Market_Nexus_Expansion",
-    "friendlyName": "Market Nexus Expansion",
-    "techCategory": "InformationScience",
-    "researchCost": 2908,
-    "prereqs": [
-      "Project_CivilianPhotonicComputing"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 86,
-    "initialUnlockChance": 11,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 42
-  },
-  {
     "dataName": "Project_Galactic_Infrastructure_Upgrade",
     "friendlyName": "Galactic Infrastructure Upgrade",
     "techCategory": "SocialScience",
@@ -19655,28 +19259,6 @@
     "initialUnlockChance": 10,
     "deltaUnlockChance": 4,
     "maxUnlockChance": 99
-  },
-  {
-    "dataName": "Project_Interstellar_Trade_Network",
-    "friendlyName": "Interstellar Trade Network",
-    "techCategory": "MilitaryScience",
-    "researchCost": 14574,
-    "prereqs": [
-      "Project_ParticleBeamBatteries"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 74,
-    "initialUnlockChance": 9,
-    "deltaUnlockChance": 1,
-    "maxUnlockChance": 25
   },
   {
     "dataName": "Project_Planetary_Infrastructure_Upgrade",
@@ -20185,28 +19767,6 @@
     "maxUnlockChance": 81
   },
   {
-    "dataName": "Project_Galactic_Knowledge_Seeker",
-    "friendlyName": "Galactic Knowledge Seeker",
-    "techCategory": "Energy",
-    "researchCost": 826,
-    "prereqs": [
-      "SolidCoreFissionSystems"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 64,
-    "initialUnlockChance": 10,
-    "deltaUnlockChance": 7,
-    "maxUnlockChance": 84
-  },
-  {
     "dataName": "Project_Laser_Intensity_Upgrade",
     "friendlyName": "Laser Intensity Upgrade",
     "techCategory": "Energy",
@@ -20359,28 +19919,6 @@
     "initialUnlockChance": 17,
     "deltaUnlockChance": 9,
     "maxUnlockChance": 31
-  },
-  {
-    "dataName": "Project_Galactic_Bazaar_Boost",
-    "friendlyName": "Galactic Bazaar Boost",
-    "techCategory": "LifeScience",
-    "researchCost": 6656,
-    "prereqs": [
-      "ExtendedSpaceSurvival"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 55,
-    "initialUnlockChance": 13,
-    "deltaUnlockChance": 10,
-    "maxUnlockChance": 36
   },
   {
     "dataName": "Project_Laser_Focus_Enhancement",
@@ -20711,28 +20249,6 @@
     "initialUnlockChance": 4,
     "deltaUnlockChance": 7,
     "maxUnlockChance": 33
-  },
-  {
-    "dataName": "Project_Cosmic_Bazaar_Boost",
-    "friendlyName": "Cosmic Bazaar Boost",
-    "techCategory": "Energy",
-    "researchCost": 6446,
-    "prereqs": [
-      "Project_MoltenCoreFissionReactorII"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 58,
-    "initialUnlockChance": 14,
-    "deltaUnlockChance": 10,
-    "maxUnlockChance": 95
   },
   {
     "dataName": "Project_Cosmic_Ore_Harvester",
@@ -21351,28 +20867,6 @@
     "maxUnlockChance": 91
   },
   {
-    "dataName": "Project_Galactic_Trade_Nexus",
-    "friendlyName": "Galactic Trade Nexus",
-    "techCategory": "SocialScience",
-    "researchCost": 2955,
-    "prereqs": [
-      "Project_GulfCooperationCouncil"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 51,
-    "initialUnlockChance": 14,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 47
-  },
-  {
     "dataName": "Project_Plasma_Pulse_Turrets",
     "friendlyName": "Plasma Pulse Turrets",
     "techCategory": "Energy",
@@ -21591,28 +21085,6 @@
     "initialUnlockChance": 8,
     "deltaUnlockChance": 10,
     "maxUnlockChance": 29
-  },
-  {
-    "dataName": "Project_Resilience_Nexus",
-    "friendlyName": "Resilience Nexus",
-    "techCategory": "MilitaryScience",
-    "researchCost": 17114,
-    "prereqs": [
-      "Project_SpaceportSecurityFramework"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 81,
-    "initialUnlockChance": 13,
-    "deltaUnlockChance": 3,
-    "maxUnlockChance": 94
   },
   {
     "dataName": "Project_Galactic_Defense_Enhancer",
@@ -21835,28 +21307,6 @@
     "maxUnlockChance": 36
   },
   {
-    "dataName": "Project_Quantum_Astro_Miner",
-    "friendlyName": "Quantum Astro-Miner",
-    "techCategory": "MilitaryScience",
-    "researchCost": 4709,
-    "prereqs": [
-      "Project_HarlequinMissileBay"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 49,
-    "initialUnlockChance": 5,
-    "deltaUnlockChance": 3,
-    "maxUnlockChance": 62
-  },
-  {
     "dataName": "Project_Cosmic_Prospectors",
     "friendlyName": "Cosmic Prospectors",
     "techCategory": "MilitaryScience",
@@ -21967,28 +21417,6 @@
     "maxUnlockChance": 46
   },
   {
-    "dataName": "Project_Xenocyte_Fortification",
-    "friendlyName": "Xenocyte Fortification",
-    "techCategory": "Xenology",
-    "researchCost": 60788,
-    "prereqs": [
-      "Project_PherocyteExposureNetworkTracing"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 71,
-    "initialUnlockChance": 10,
-    "deltaUnlockChance": 5,
-    "maxUnlockChance": 73
-  },
-  {
     "dataName": "Project_Orbital_Ore_Excavator",
     "friendlyName": "Orbital Ore Excavator",
     "techCategory": "MilitaryScience",
@@ -22053,28 +21481,6 @@
     "initialUnlockChance": 13,
     "deltaUnlockChance": 10,
     "maxUnlockChance": 74
-  },
-  {
-    "dataName": "Project_Orbital_Market_Expansion",
-    "friendlyName": "Orbital Market Expansion",
-    "techCategory": "MilitaryScience",
-    "researchCost": 929,
-    "prereqs": [
-      "NextGenerationAerospace"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 87,
-    "initialUnlockChance": 11,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 61
   },
   {
     "dataName": "Project_Advanced_Looting_Drive",
@@ -22207,50 +21613,6 @@
     "initialUnlockChance": 2,
     "deltaUnlockChance": 7,
     "maxUnlockChance": 99
-  },
-  {
-    "dataName": "Project_Nexus_Immunity",
-    "friendlyName": "Nexus Immunity",
-    "techCategory": "Xenology",
-    "researchCost": 13456,
-    "prereqs": [
-      "Project_PherocyteMastery"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 83,
-    "initialUnlockChance": 14,
-    "deltaUnlockChance": 7,
-    "maxUnlockChance": 55
-  },
-  {
-    "dataName": "Project_Celestial_Trade_Nexus",
-    "friendlyName": "Celestial Trade Nexus",
-    "techCategory": "SpaceScience",
-    "researchCost": 7483,
-    "prereqs": [
-      "Project_PonderomotiveVASIMR"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 41,
-    "initialUnlockChance": 11,
-    "deltaUnlockChance": 3,
-    "maxUnlockChance": 42
   },
   {
     "dataName": "Project_Iron_Fist_Protocol",
@@ -22581,28 +21943,6 @@
     "initialUnlockChance": 8,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 41
-  },
-  {
-    "dataName": "Project_Nebula_Warden",
-    "friendlyName": "Nebula Warden",
-    "techCategory": "SpaceScience",
-    "researchCost": 11839,
-    "prereqs": [
-      "Project_AntimatterMicrofissionDrive"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 54,
-    "initialUnlockChance": 12,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 74
   },
   {
     "dataName": "Project_Nexus_Beacon_Sustainment",
@@ -23705,28 +23045,6 @@
     "maxUnlockChance": 94
   },
   {
-    "dataName": "Project_Nexus_Trade_Synergy",
-    "friendlyName": "Nexus Trade Synergy",
-    "techCategory": "SocialScience",
-    "researchCost": 7009,
-    "prereqs": [
-      "Project_GulfCooperationCouncil"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency2"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 83,
-    "initialUnlockChance": 9,
-    "deltaUnlockChance": 9,
-    "maxUnlockChance": 81
-  },
-  {
     "dataName": "Project_Mobilization_Deterrence",
     "friendlyName": "Mobilization Deterrence",
     "techCategory": "MilitaryScience",
@@ -24013,28 +23331,6 @@
     "maxUnlockChance": 100
   },
   {
-    "dataName": "Project_Pherocyte_Warden",
-    "friendlyName": "Pherocyte Warden",
-    "techCategory": "Xenology",
-    "researchCost": 41616,
-    "prereqs": [
-      "Project_PherocyteExposureNetworkTracing"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 68,
-    "initialUnlockChance": 14,
-    "deltaUnlockChance": 5,
-    "maxUnlockChance": 26
-  },
-  {
     "dataName": "Project_Fury_of_the_Void",
     "friendlyName": "Fury of the Void",
     "techCategory": "Energy",
@@ -24077,50 +23373,6 @@
     "initialUnlockChance": 4,
     "deltaUnlockChance": 4,
     "maxUnlockChance": 37
-  },
-  {
-    "dataName": "Project_Celestial_Bazaar",
-    "friendlyName": "Celestial Bazaar",
-    "techCategory": "MilitaryScience",
-    "researchCost": 1270,
-    "prereqs": [
-      "Project_ElectronLance"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 98,
-    "initialUnlockChance": 12,
-    "deltaUnlockChance": 10,
-    "maxUnlockChance": 24
-  },
-  {
-    "dataName": "Project_Quantum_Leap_Research_Nexus",
-    "friendlyName": "Quantum Leap Research Nexus",
-    "techCategory": "Energy",
-    "researchCost": 25770,
-    "prereqs": [
-      "GasCoreFissionSystems"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 76,
-    "initialUnlockChance": 13,
-    "deltaUnlockChance": 10,
-    "maxUnlockChance": 67
   },
   {
     "dataName": "Project_Garrison_Veil",
@@ -24388,28 +23640,6 @@
     "maxUnlockChance": 96
   },
   {
-    "dataName": "Project_Xenophage_Ward",
-    "friendlyName": "Xenophage Ward",
-    "techCategory": "Xenology",
-    "researchCost": 2370,
-    "prereqs": [
-      "Project_AlienECM"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 66,
-    "initialUnlockChance": 3,
-    "deltaUnlockChance": 6,
-    "maxUnlockChance": 45
-  },
-  {
     "dataName": "Project_Tactical_Attrition_Protocol",
     "friendlyName": "Tactical Attrition Protocol",
     "techCategory": "SocialScience",
@@ -24430,28 +23660,6 @@
     "initialUnlockChance": 8,
     "deltaUnlockChance": 4,
     "maxUnlockChance": 67
-  },
-  {
-    "dataName": "Project_Cosmic_Trade_Nexus",
-    "friendlyName": "Cosmic Trade Nexus",
-    "techCategory": "SpaceScience",
-    "researchCost": 25523,
-    "prereqs": [
-      "Project_FlareDrive"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency2"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 56,
-    "initialUnlockChance": 12,
-    "deltaUnlockChance": 10,
-    "maxUnlockChance": 23
   },
   {
     "dataName": "Project_Celestial_Insight_Accelerator",
@@ -24542,28 +23750,6 @@
     "maxUnlockChance": 86
   },
   {
-    "dataName": "Project_Quantum_Leap_Initiative",
-    "friendlyName": "Quantum Leap Initiative",
-    "techCategory": "MilitaryScience",
-    "researchCost": 6120,
-    "prereqs": [
-      "Project_RailCannonMk3"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 90,
-    "initialUnlockChance": 6,
-    "deltaUnlockChance": 6,
-    "maxUnlockChance": 67
-  },
-  {
     "dataName": "Project_Nebula_Harvesters",
     "friendlyName": "Nebula Harvesters",
     "techCategory": "SpaceScience",
@@ -24606,28 +23792,6 @@
     "initialUnlockChance": 4,
     "deltaUnlockChance": 10,
     "maxUnlockChance": 70
-  },
-  {
-    "dataName": "Project_Celestial_Marketplace",
-    "friendlyName": "Celestial Marketplace",
-    "techCategory": "SocialScience",
-    "researchCost": 2328,
-    "prereqs": [
-      "Project_SkunkWorks"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency1"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 42,
-    "initialUnlockChance": 19,
-    "deltaUnlockChance": 2,
-    "maxUnlockChance": 46
   },
   {
     "dataName": "Project_Quantum_Lash",
@@ -24782,28 +23946,6 @@
     "initialUnlockChance": 7,
     "deltaUnlockChance": 9,
     "maxUnlockChance": 82
-  },
-  {
-    "dataName": "Project_Astrognosis",
-    "friendlyName": "Astrognosis",
-    "techCategory": "Xenology",
-    "researchCost": 6463,
-    "prereqs": [
-      "Project_EscapeVictory"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 80,
-    "initialUnlockChance": 19,
-    "deltaUnlockChance": 7,
-    "maxUnlockChance": 28
   },
   {
     "dataName": "Project_Civic_Harmonization",
@@ -25180,28 +24322,6 @@
     "maxUnlockChance": 90
   },
   {
-    "dataName": "Project_Nexus_Point",
-    "friendlyName": "Nexus Point",
-    "techCategory": "SocialScience",
-    "researchCost": 37429,
-    "prereqs": [
-      "Project_SouthernCross"
-    ],
-    "effects": [
-      "Effect_SpaceResearchBoost05"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 45,
-    "initialUnlockChance": 19,
-    "deltaUnlockChance": 1,
-    "maxUnlockChance": 81
-  },
-  {
     "dataName": "Project_Logistics_Network_Optimization",
     "friendlyName": "Logistics Network Optimization",
     "techCategory": "Materials",
@@ -25312,28 +24432,6 @@
     "maxUnlockChance": 30
   },
   {
-    "dataName": "Project_Integrated_Trade_Networks",
-    "friendlyName": "Integrated Trade Networks",
-    "techCategory": "SocialScience",
-    "researchCost": 40318,
-    "prereqs": [
-      "Project_SpaceResort"
-    ],
-    "effects": [
-      "Effect_SpaceMarketEfficiency2"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 46,
-    "initialUnlockChance": 10,
-    "deltaUnlockChance": 4,
-    "maxUnlockChance": 88
-  },
-  {
     "dataName": "Project_Civic_Stewardship",
     "friendlyName": "Civic Stewardship",
     "techCategory": "LifeScience",
@@ -25398,28 +24496,6 @@
     "initialUnlockChance": 17,
     "deltaUnlockChance": 5,
     "maxUnlockChance": 73
-  },
-  {
-    "dataName": "Project_Pherocyte_Resilience",
-    "friendlyName": "Pherocyte Resilience",
-    "techCategory": "SocialScience",
-    "researchCost": 597,
-    "prereqs": [
-      "Project_RegulatoryCapture"
-    ],
-    "effects": [
-      "Effect_PherocyteResistance"
-    ],
-    "AI_techRole": "None",
-    "AI_criticalTech": false,
-    "AI_projectRole": "SpaceResources",
-    "oneTimeGlobally": false,
-    "repeatable": false,
-    "resourcesGranted": [],
-    "factionAvailableChance": 74,
-    "initialUnlockChance": 16,
-    "deltaUnlockChance": 10,
-    "maxUnlockChance": 75
   },
   {
     "dataName": "Project_Habitability_Focus",

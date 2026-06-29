@@ -1046,18 +1046,6 @@
     "duration_months": -1
   },
   {
-    "dataName": "Effect_BuildArmyPriorityBonus02",
-    "operation": "Additive",
-    "value": 0.02,
-    "effectTarget": "SourceFaction",
-    "effectDuration": "permanent",
-    "stackable": true,
-    "duration_months": -1,
-    "contexts": [
-      "BuildArmyPriority"
-    ]
-  },
-  {
     "dataName": "Effect_BuildArmyPriorityBonus10",
     "operation": "Additive",
     "value": 0.1,
