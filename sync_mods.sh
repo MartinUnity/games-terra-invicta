@@ -28,6 +28,6 @@ else
   echo "Syncing:"
   echo "  $MODS_DIR/  ->  $DEST_DIR"
   echo
-  rsync -a --delete --exclude='*.bak' "$MODS_DIR/" "$DEST_DIR"
+  rsync -a --delete --exclude='*.bak*' "$MODS_DIR/" "$DEST_DIR"
   echo "Done."
 fi
