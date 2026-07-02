@@ -21,7 +21,7 @@ if [[ "${1:-}" == "--dry-run" ]]; then
   echo "Dry run - would sync:"
   echo "  $MODS_DIR/  ->  $DEST_DIR"
   echo
-  rsync --dry-run -a --delete -v --exclude='*.bak' "$MODS_DIR/" "$DEST_DIR"
+  rsync --dry-run -a --delete -v --exclude='*.bak*' "$MODS_DIR/" "$DEST_DIR"
   echo
   echo "Run without --dry-run to apply."
 else

@@ -29,7 +29,8 @@ Extract, visualize, and mod Terra Invicta savegame data.
 - `generate_weapon.py` - Generate weapon templates from damage/DPS parameters
 - `scan_effects.py` - Count effect occurrences in project templates
 - `update_descriptions.py` - Update project summaries via local Ollama model
-- `validate.py` - Read-only validator for mod JSON files
+- `validate.py` - Read-only validator for mod JSON files (includes localization orphan check via `loc_audit.py`)
+- `loc_audit.py` - Cross-reference templates vs localization: find orphan/missing/partial entries. Supports `--delete` to zap orphan localization lines.
 
 ### Tools (`scripts/tools/`)
 - `mining_bonus.sh` - Get full mining bonus data

@@ -11,6 +11,14 @@
 ### Single Test
 Run a specific test: `pytest --pyargs your.module.test_name`
 
+### Post-Edit: Sync Mods
+
+After modifying any file in `Mods/` (`.json` or `.en`), always run:
+```bash
+./sync_mods.sh
+```
+This rsyncs changes to the game's active mod directory.
+
 ## Code Style Guidelines
 
 ### Formatting

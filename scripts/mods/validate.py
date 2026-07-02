@@ -12,6 +12,7 @@ Checks:
   - For `TIShipHullTemplate.json`, require both `{filebase}.displayName.{dataName}` and `{filebase}.abbr.{dataName}`.
   - For `TITechTemplate.json`, require `{filebase}.displayName.{dataName}`, `{filebase}.summary.{dataName}`, `{filebase}.quote.{dataName}`, and `{filebase}.description.{dataName}`.
   - For other `TI*.json` files, require at least one of `{filebase}.displayName.{dataName}` or `{filebase}.description.{dataName}`.
+- Localization orphans: calls `loc_audit.py` to find localization entries that have no matching template dataName (orphaned entries from deleted projects/effects).
 
 Usage: python scripts/validate_mods.py [--mods-dir PATH] [--templates PATH] [--table]
 """
@@ -20,6 +21,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
+import sys
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
@@ -720,8 +723,29 @@ def main() -> int:
         else:
             print("\nAll projects, techs, and templates have descriptions.")
 
+    # --- localization orphan check ---
+    loc_audit_path = Path(__file__).parent / "loc_audit.py"
+    loc_audit_failed = False
+    if loc_audit_path.exists():
+        result = subprocess.run(
+            [sys.executable, str(loc_audit_path), "--mods-dir", str(mods_dir)],
+            capture_output=True,
+            text=True,
+        )
+        if result.stdout.strip():
+            print()
+            print(result.stdout, end="")
+        if result.stderr.strip():
+            print(result.stderr, end="")
+        if result.returncode == 1:
+            loc_audit_failed = True
+
     # exit code
-    any_errors = any(not ok for _, ok, _ in results) or bool(deep_errors)
+    any_errors = (
+        any(not ok for _, ok, _ in results)
+        or bool(deep_errors)
+        or loc_audit_failed
+    )
     return 0 if not any_errors else 1
 
 
