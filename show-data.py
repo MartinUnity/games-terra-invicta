@@ -21,6 +21,7 @@ _DEFAULT_STATE = {
     "fund_n": 8,
     "infra_n": 8,
     "mc_n": 8,
+    "row_height": 22,
 }
 
 
@@ -38,6 +39,7 @@ def _save_state():
         "fund_n": st.session_state.get("fund_n", _DEFAULT_STATE["fund_n"]),
         "infra_n": st.session_state.get("infra_n", _DEFAULT_STATE["infra_n"]),
         "mc_n": st.session_state.get("mc_n", _DEFAULT_STATE["mc_n"]),
+        "row_height": st.session_state.get("row_height", _DEFAULT_STATE["row_height"]),
     }
     _STATE_FILE.write_text(json.dumps(data, indent=2))
 
@@ -216,6 +218,7 @@ with st.sidebar:
 
         st.divider()
         st.markdown("### 📏 Chart Limits")
+        row_height = st.slider("Row Height (px):", 15, 45, _state.get("row_height", 22), key="row_height")
         n_gdp = st.slider("Economic Velocity:", 1, 50, _state.get("gdp_n", 8), key="gdp_n")
         n_mil = st.slider("Military Tech:", 1, 50, _state.get("mil_n", 8), key="mil_n")
         n_fund = st.slider("Space Funding:", 1, 50, _state.get("fund_n", 8), key="fund_n")
@@ -365,7 +368,7 @@ with tab1:
                 text = base_gdp.mark_text(align="left", dx=5, fontSize=11).encode(x="anchor", text="label", color=alt.value("white"))
                 final_chart = bar_base + bar_delta + text
 
-            st.altair_chart(final_chart.properties(height=30 + len(gdp_subset) * 22), use_container_width=True)
+            st.altair_chart(final_chart.properties(height=30 + len(gdp_subset) * row_height), use_container_width=True)
 
         # ---------------------------------------------------------
         # COLUMN 2: MILITARY TECH LEVEL
@@ -442,7 +445,7 @@ with tab1:
                     final_mil = bg_mil + fg_mil + txt_mil
 
                 st.altair_chart(
-                    final_mil.properties(height=30 + len(mil_subset) * 22), use_container_width=True
+                    final_mil.properties(height=30 + len(mil_subset) * row_height), use_container_width=True
                 )
             else:
                 st.info("No military tech data available.")
@@ -497,7 +500,7 @@ with tab1:
                     )
 
                     st.altair_chart(
-                        (bar_fund + txt_fund).properties(height=30 + len(fund_subset) * 22), use_container_width=True
+                        (bar_fund + txt_fund).properties(height=30 + len(fund_subset) * row_height), use_container_width=True
                     )
                 else:
                     st.info("No nations are funding space programs.")
@@ -601,7 +604,7 @@ with tab1:
                 )
 
                 st.altair_chart(
-                    (bg_mc + fg_mc + txt_mc).properties(height=30 + len(mc_subset) * 22), use_container_width=True
+                    (bg_mc + fg_mc + txt_mc).properties(height=30 + len(mc_subset) * row_height), use_container_width=True
                 )
             else:
                 st.success("All Optimized.")

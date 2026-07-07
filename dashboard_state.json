@@ -1,7 +1,8 @@
 {
-  "gdp_n": 15,
-  "mil_n": 15,
+  "gdp_n": 20,
+  "mil_n": 20,
   "fund_n": 8,
   "infra_n": 8,
-  "mc_n": 8
+  "mc_n": 8,
+  "row_height": 28
 }
