@@ -53,6 +53,26 @@ This rsyncs changes to the game's active mod directory.
 - Prefer `Result` pattern from `typing_extensions`
 - Use `logging.error()` for unhandled exceptions
 
+## Localization Format Specifiers
+
+Terra Invicta uses `{N}` placeholders in `.en` localization files. The number determines how the value is formatted:
+
+| Specifier | Meaning | Example (value=1.12) | Use For |
+|-----------|---------|---------------------|---------|
+| `{0}` | raw value | `1.12` | integers, counts |
+| `{3}` | value to % (value × 100) | `112%` | Additive percentage effects (value=0.12 → `12%`) |
+| `{4}` | value to % decrease | `-12%` | percentage decreases |
+| `{8}` | value - 1 to % ((value-1) × 100) | `+12%` | Multiplicative percentage effects (value=1.12 → `+12%`) |
+| `{9}` | nation displayName | `France` | nation names |
+| `{1}` | 1st target displayName | `target name` | target names |
+| `{2}` | 2nd target displayName | `target name` | secondary target names |
+| `{5}` | nation with preposition | `in France` | nation locations |
+| `{7}` | duration in months | `12` | time durations |
+
+**Critical rule**: Multiplicative effects (e.g., `value: 1.12` for +12%) require `{8}`, not `{3}`. Using `{3}` displays `112%` instead of `+12%`.
+
+Reference: `Game-ModsDir-Localization/TIEffectTemplate.en` (inline `// N: ...` comments)
+
 ## Cursor Rules (not found)
 
 ## Copilot Rules (not found)

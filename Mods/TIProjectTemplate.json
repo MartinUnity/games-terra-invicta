@@ -24743,6 +24743,7 @@
     "AI_projectRole": "None",
     "researchCost": 8500,
     "prereqs": [
+      "Project_Exotics",
       "Project_AntimatterPlasmaCoreTorch",
       "Project_AdvancedCavityDrive",
       "SuperconductingMagnets",
@@ -24771,6 +24772,7 @@
     "AI_projectRole": "None",
     "researchCost": 12500,
     "prereqs": [
+      "Project_Exotics",
       "Project_AdvancedCavityDrive",
       "GasCoreFissionSystems",
       "Project_GasCoreFissionReactorI",
@@ -24800,7 +24802,8 @@
     "AI_projectRole": "None",
     "researchCost": 150000,
     "prereqs": [
-      "Project_FusionPlatformKit"
+      "Project_FusionPlatformKit",
+      "Project_Exotics"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -24820,7 +24823,8 @@
     "AI_projectRole": "None",
     "researchCost": 18500,
     "prereqs": [
-      "Project_AntimatterParticleCannon"
+      "Project_AntimatterParticleCannon",
+      "Project_Exotics"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -24860,7 +24864,8 @@
     "AI_projectRole": "None",
     "researchCost": 1200,
     "prereqs": [
-      "Project_QuantumBattery"
+      "Project_QuantumBattery",
+      "Project_ExoticArmor"
     ],
     "effects": [],
     "oneTimeGlobally": false,
