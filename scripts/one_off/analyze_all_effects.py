@@ -57,6 +57,7 @@ PCT_ADDITIVE_CONTEXTS = {
     "InterrogationBonus",
     "Combat_ShipRepairSpeed",
     "SpaceMiningBonus",
+    "SpaceDevPriority",
 }
 
 

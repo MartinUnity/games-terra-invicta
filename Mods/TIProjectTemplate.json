@@ -24875,5 +24875,909 @@
     "deltaUnlockChance": 5,
     "maxUnlockChance": 50,
     "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_BudgetReform_Initiative",
+    "friendlyName": "Budget Reform Initiative",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 3000,
+    "prereqs": [
+      "Project_CivilianFusionReactors"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus02"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Investment_Optimization_I",
+    "friendlyName": "Investment Optimization I",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 4000,
+    "prereqs": [
+      "Project_AlgorithmicEconomicManagement"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus02"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Civic_Space_Pledge",
+    "friendlyName": "Civic Space Pledge",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 7000,
+    "prereqs": [
+      "Project_BudgetReform_Initiative",
+      "Project_MediaLiteracyTraining"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Space_Dev_Fund_I",
+    "friendlyName": "Space Development Fund I",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 8000,
+    "prereqs": [
+      "Project_Investment_Optimization_I",
+      "Project_CivicResourceStabilization_I"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Space_Economy_Framework",
+    "friendlyName": "Space Economy Framework",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 8500,
+    "prereqs": [
+      "Project_Civic_Space_Pledge",
+      "Project_CivilianQuantumComputing"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_National_Space_Trust",
+    "friendlyName": "National Space Trust",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 12000,
+    "prereqs": [
+      "Project_Space_Dev_Fund_I",
+      "Project_Space_Economy_Framework"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Strategic_Investment_Body",
+    "friendlyName": "Strategic Investment Body",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 13000,
+    "prereqs": [
+      "Project_National_Space_Trust",
+      "Project_Space_Economy_Framework"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Space_Dev_Corporatization",
+    "friendlyName": "Space Development Corporatization",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 15000,
+    "prereqs": [
+      "Project_Strategic_Investment_Body",
+      "Project_National_Space_Trust"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Global_Space_Economy",
+    "friendlyName": "Global Space Economy",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 17000,
+    "prereqs": [
+      "Project_Space_Dev_Corporatization",
+      "Project_Strategic_Investment_Body"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Cosmic_Dividend_Plan",
+    "friendlyName": "Cosmic Dividend Plan",
+    "techCategory": "SocialScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 22000,
+    "prereqs": [
+      "Project_Global_Space_Economy",
+      "Project_Space_Dev_Corporatization"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus15"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_AI_Budget_Analysis",
+    "friendlyName": "AI Budget Analysis",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 4000,
+    "prereqs": [
+      "Project_AugmentedLearning"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus02"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Predictive_Space_Planning",
+    "friendlyName": "Predictive Space Planning",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 7500,
+    "prereqs": [
+      "Project_AI_Budget_Analysis",
+      "Project_CivilianPhotonicComputing"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Digital_Fiscal_Oversight",
+    "friendlyName": "Digital Fiscal Oversight",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 8000,
+    "prereqs": [
+      "Project_Predictive_Space_Planning"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Blockchain_Space_Treasury",
+    "friendlyName": "Blockchain Space Treasury",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 12000,
+    "prereqs": [
+      "Project_Digital_Fiscal_Oversight"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Quantum_Economic_Modeling",
+    "friendlyName": "Quantum Economic Modeling",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 13000,
+    "prereqs": [
+      "Project_Blockchain_Space_Treasury",
+      "Project_CivilianQuantumComputing"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Automated_Fund_Routing",
+    "friendlyName": "Automated Fund Routing",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 14000,
+    "prereqs": [
+      "Project_Quantum_Economic_Modeling",
+      "Project_Blockchain_Space_Treasury"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Singularity_Budget_Ops",
+    "friendlyName": "Singularity Budget Operations",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 15000,
+    "prereqs": [
+      "Project_Automated_Fund_Routing",
+      "Project_Quantum_Economic_Modeling"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Neural_Economic_Grid",
+    "friendlyName": "Neural Economic Grid",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 18000,
+    "prereqs": [
+      "Project_Singularity_Budget_Ops",
+      "Project_Blockchain_Space_Treasury"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus15"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Orbital_Resource_AI",
+    "friendlyName": "Orbital Resource AI Director",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 20000,
+    "prereqs": [
+      "Project_Neural_Economic_Grid",
+      "Project_Singularity_Budget_Ops"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus15"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Omega_Investment_Protocol",
+    "friendlyName": "Omega Investment Protocol",
+    "techCategory": "InformationScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 25000,
+    "prereqs": [
+      "Project_Orbital_Resource_AI",
+      "Project_Neural_Economic_Grid"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus20"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Space_Infrastructure_Grant",
+    "friendlyName": "Space Infrastructure Grant Program",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 4500,
+    "prereqs": [
+      "Project_SpaceHotel"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus02"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Orbital_Financial_Hub",
+    "friendlyName": "Orbital Financial Hub",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 7500,
+    "prereqs": [
+      "Project_Space_Infrastructure_Grant"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Lunar_Investment_Corridor",
+    "friendlyName": "Lunar Investment Corridor",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 8000,
+    "prereqs": [
+      "Project_Orbital_Financial_Hub"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Mars_Dev_Capital",
+    "friendlyName": "Mars Development Capital",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 12000,
+    "prereqs": [
+      "Project_Lunar_Investment_Corridor"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Asteroid_Financing_Initiative",
+    "friendlyName": "Asteroid Financing Initiative",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 13000,
+    "prereqs": [
+      "Project_Mars_Dev_Capital"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Deep_Space_Budget_Expansion",
+    "friendlyName": "Deep Space Budget Expansion",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 14000,
+    "prereqs": [
+      "Project_Asteroid_Financing_Initiative",
+      "Project_Mars_Dev_Capital"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Cislunar_Economy",
+    "friendlyName": "Cislunar Economy Program",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 15000,
+    "prereqs": [
+      "Project_Deep_Space_Budget_Expansion",
+      "Project_Lunar_Investment_Corridor"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Helio_Orbital_Trade",
+    "friendlyName": "Helio-Orbital Trade Network",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 18000,
+    "prereqs": [
+      "Project_Cislunar_Economy",
+      "Project_Asteroid_Financing_Initiative"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus15"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Oort_Cloud_Fund",
+    "friendlyName": "Oort Cloud Development Fund",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 20000,
+    "prereqs": [
+      "Project_Helio_Orbital_Trade",
+      "Project_Cislunar_Economy"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus15"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Starlight_Investment_Plan",
+    "friendlyName": "Starlight Investment Plan",
+    "techCategory": "SpaceScience",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 25000,
+    "prereqs": [
+      "Project_Oort_Cloud_Fund",
+      "Project_Helio_Orbital_Trade"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus20"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Space_Mining_Venture_Cap",
+    "friendlyName": "Space Mining Venture Capital",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 7000,
+    "prereqs": [
+      "Project_Space_Infrastructure_Grant"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Resource_Backed_Bonds",
+    "friendlyName": "Resource-Backed Space Bonds",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 7500,
+    "prereqs": [
+      "Project_Space_Mining_Venture_Cap"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Orbital_Refinery_Equity",
+    "friendlyName": "Orbital Refinery Equity Program",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 8000,
+    "prereqs": [
+      "Project_Resource_Backed_Bonds"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Rare_Earth_Space_Fund",
+    "friendlyName": "Rare Earth Space Fund",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 8500,
+    "prereqs": [
+      "Project_Orbital_Refinery_Equity"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus05"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Titanium_Economic_Initiative",
+    "friendlyName": "Titanium Economic Initiative",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 12000,
+    "prereqs": [
+      "Project_Rare_Earth_Space_Fund"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Helium3_Market_Stabilization",
+    "friendlyName": "Helium-3 Market Stabilization",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 13000,
+    "prereqs": [
+      "Project_Titanium_Economic_Initiative"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus10"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Noble_Metal_Space_Standard",
+    "friendlyName": "Noble Metal Space Standard",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 16000,
+    "prereqs": [
+      "Project_Helium3_Market_Stabilization",
+      "Project_Titanium_Economic_Initiative"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus15"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Resource_Collateral_Framework",
+    "friendlyName": "Resource Collateral Framework",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 18000,
+    "prereqs": [
+      "Project_Noble_Metal_Space_Standard",
+      "Project_Rare_Earth_Space_Fund"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus15"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Planetary_Mining_Trust",
+    "friendlyName": "Planetary Mining Trust",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 20000,
+    "prereqs": [
+      "Project_Resource_Collateral_Framework",
+      "Project_Noble_Metal_Space_Standard"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus15"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_Interstellar_Resource_Reserve",
+    "friendlyName": "Interstellar Resource Reserve",
+    "techCategory": "Materials",
+    "AI_techRole": "None",
+    "AI_criticalTech": false,
+    "AI_projectRole": "SpaceResources",
+    "researchCost": 25000,
+    "prereqs": [
+      "Project_Planetary_Mining_Trust",
+      "Project_Resource_Collateral_Framework"
+    ],
+    "effects": [
+      "Effect_SpaceDevPriorityBonus20"
+    ],
+    "oneTimeGlobally": false,
+    "repeatable": false,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 10,
+    "deltaUnlockChance": 5,
+    "maxUnlockChance": 100,
+    "resourcesGranted": []
   }
 ]
