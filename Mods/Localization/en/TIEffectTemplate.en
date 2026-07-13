@@ -140,3 +140,10 @@ TIEffectTemplate.description.Effect_ShipMagDamage3=-Magnetic Weapons do {8} extr
 TIEffectTemplate.description.Effect_ShipMagDamage5=-Magnetic Weapons do {8} extra damage
 TIEffectTemplate.description.Effect_ImprovedSpaceCombatDamageControl3=-Improved Space Combat Damage Control by {8}
 TIEffectTemplate.description.Effect_ImprovedSpaceCombatDamageControl5=-Improved Space Combat Damage Control by {8}
+
+
+TIEffectTemplate.description.Effect_SpaceDevPriorityBonus02=-National Investment Points we direct to Space Development funding priorities are increased by {3}
+TIEffectTemplate.description.Effect_SpaceDevPriorityBonus05=-National Investment Points we direct to Space Development funding priorities are increased by {3}
+TIEffectTemplate.description.Effect_SpaceDevPriorityBonus10=-National Investment Points we direct to Space Development funding priorities are increased by {3}
+TIEffectTemplate.description.Effect_SpaceDevPriorityBonus15=-National Investment Points we direct to Space Development funding priorities are increased by {3}
+TIEffectTemplate.description.Effect_SpaceDevPriorityBonus20=-National Investment Points we direct to Space Development funding priorities are increased by {3}
