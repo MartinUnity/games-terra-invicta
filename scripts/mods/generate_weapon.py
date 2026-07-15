@@ -465,7 +465,7 @@ def main(argv: Optional[List[str]] = None) -> int:
 
         rows_all: List[List[str]] = []
         # also scan Mods/ in the repo for custom templates
-        repo_root = os.path.abspath(os.path.join(start, ".."))
+        repo_root = os.path.abspath(os.path.join(start, "..", ".."))
         mods_dir = os.path.join(repo_root, "Mods")
 
         # load project templates (for researchCost lookup)

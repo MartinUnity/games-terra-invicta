@@ -308,8 +308,7 @@
     "endGameTech": false,
     "researchCost": 2250,
     "prereqs": [
-      "MagneticForceManipulation",
-      "ProtoPlasmaArray_Model01"
+      "MagneticForceManipulation"
     ],
     "_meta_": {
       "notes": "Covers Mk1-Mk3 Prototype Plasma Cannons."
