@@ -3943,7 +3943,8 @@
     "researchCost": 2000,
     "prereqs": [
       "Project_40cmIRLaserBattery_RapidFire",
-      "Project_LayeredDefenseArray"
+      "Project_LayeredDefenseArray",
+      "ArcLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -3964,7 +3965,8 @@
     "researchCost": 3250,
     "prereqs": [
       "Project_40cmIRArcLaserBattery_RapidFire",
-      "Project_SpaceportSecurityFramework"
+      "Project_SpaceportSecurityFramework",
+      "PhasedArrayLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4007,7 +4009,8 @@
     "researchCost": 8000,
     "prereqs": [
       "Project_40cmGreenLaserBattery_RapidFire",
-      "Project_SpaceportSecurityFramework"
+      "Project_SpaceportSecurityFramework",
+      "ArcLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4028,7 +4031,8 @@
     "researchCost": 15000,
     "prereqs": [
       "Project_40cmGreenArcLaserBattery_RapidFire",
-      "Project_HarlequinMissileBay"
+      "Project_HarlequinMissileBay",
+      "PhasedArrayLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4049,7 +4053,8 @@
     "researchCost": 8000,
     "prereqs": [
       "Project_SpaceportSecurityFramework",
-      "RapidFireLaserBatteries"
+      "RapidFireLaserBatteries",
+      "UltravioletCombatLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4070,7 +4075,8 @@
     "researchCost": 12000,
     "prereqs": [
       "Project_40cmUVLaserBattery_RapidFire",
-      "Project_HarlequinMissileBay"
+      "Project_HarlequinMissileBay",
+      "ArcLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4091,7 +4097,8 @@
     "researchCost": 22000,
     "prereqs": [
       "Project_40cmUVArcLaserBattery_RapidFire",
-      "RapidFireLaserBatteries"
+      "RapidFireLaserBatteries",
+      "PhasedArrayLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4153,7 +4160,8 @@
     "researchCost": 6000,
     "prereqs": [
       "Project_RailCannonMk1",
-      "RapidFireLaserBatteries"
+      "RapidFireLaserBatteries",
+      "ArcLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4174,7 +4182,9 @@
     "researchCost": 30000,
     "prereqs": [
       "Project_480cmIRArcLaserCannon_RapidFire",
-      "Project_240cmGreenLaserCannon"
+      "Project_240cmGreenLaserCannon",
+      "VisibleCombatLasers",
+      "ArcLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4195,7 +4205,8 @@
     "researchCost": 80000,
     "prereqs": [
       "Project_480cmGreenArcLaserCannon_RapidFire",
-      "UltravioletCombatLasers"
+      "UltravioletCombatLasers",
+      "ArcLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4216,7 +4227,8 @@
     "researchCost": 30000,
     "prereqs": [
       "Project_480cmIRArcLaserCannon_RapidFire",
-      "AdvancedMissileWarfareDoctrine"
+      "AdvancedMissileWarfareDoctrine",
+      "ArcLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4237,7 +4249,9 @@
     "researchCost": 60000,
     "prereqs": [
       "Project_720cmIRArcLaserCannon_RapidFire",
-      "RapidFireLaserBatteries"
+      "RapidFireLaserBatteries",
+      "VisibleCombatLasers",
+      "ArcLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4258,7 +4272,8 @@
     "researchCost": 90000,
     "prereqs": [
       "Project_720cmGreenArcLaserCannon_RapidFire",
-      "UltravioletCombatLasers"
+      "UltravioletCombatLasers",
+      "ArcLasers"
     ],
     "effects": [],
     "oneTimeGlobally": false,
@@ -4615,7 +4630,9 @@
     "AI_projectRole": "HabInfrastructure",
     "researchCost": 55000,
     "prereqs": [
-      "Project_SingularityReactorArray"
+      "Project_SingularityReactorArray",
+      "Project_ColonyCore",
+      "Project_RingCore"
     ],
     "effects": [],
     "oneTimeGlobally": false,

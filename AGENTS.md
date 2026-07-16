@@ -63,6 +63,7 @@ Terra Invicta uses `{N}` placeholders in `.en` localization files. The number de
 | `{3}` | value to % (value × 100) | `112%` | Additive percentage effects (value=0.12 → `12%`) |
 | `{4}` | value to % decrease | `-12%` | percentage decreases |
 | `{8}` | value - 1 to % ((value-1) × 100) | `+12%` | Multiplicative percentage effects (value=1.12 → `+12%`) |
+| `{18}` | inverse multiplicative % ((1/value - 1) × 100) | `176%` | T4S internal for Multiplicative with value < 1 (e.g., value=0.5 → `100%` increase) |
 | `{9}` | nation displayName | `France` | nation names |
 | `{1}` | 1st target displayName | `target name` | target names |
 | `{2}` | 2nd target displayName | `target name` | secondary target names |

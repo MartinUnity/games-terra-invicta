@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 from typing import Any, Dict, List, Set, Tuple
 
@@ -27,13 +28,31 @@ LOC_REQUIREMENTS: Dict[str, List[str]] = {
     "TIEffectTemplate": ["description"],
 }
 
+# All valid {N} specifiers per AGENTS.md + T4S internal
+# {18} = inverse multiplicative percentage: (1/value - 1) * 100
+VALID_SPECIFIERS: Set[str] = {"0", "1", "2", "3", "4",
+                              "5", "7", "8", "9", "18"}
+
+# Operation -> set of acceptable {N} specifiers
+# {3} is allowed everywhere as it can show the raw value as a percentage
+# Additive: {3} for percentages (value < 1), {0} for raw counts (value >= 1)
+# Multiplicative: {8} standard, {18} inverse percentage (1/value - 1) * 100
+# IncreaseToValue: {0} raw value
+# Instant/no operation: {0} raw value
+OPERATION_SPECIFIERS: Dict[str, Set[str]] = {
+    "Multiplicative": {"3", "8", "18"},
+    "Additive": {"0", "3"},
+    "IncreaseToValue": {"0", "3"},
+    None: {"0", "3"},  # instant effects have no operation
+}
+
 
 def load_json(path: Path) -> Any:
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def load_loc_keys(path: Path) -> Dict[str, Set[str]]:
+def load_loc_entries(path: Path) -> Dict[str, Set[str]]:
     """Load .en file, return {dataName: set_of_key_suffixes}."""
     entries: Dict[str, Set[str]] = {}
     if not path.exists():
@@ -47,13 +66,114 @@ def load_loc_keys(path: Path) -> Dict[str, Set[str]]:
                 continue
             key, _val = line.split("=", 1)
             key = key.strip()
-            # Parse key like "TIProjectTemplate.displayName.Project_X"
             parts = key.split(".")
             if len(parts) >= 3:
                 suffix = parts[1]
                 data_name = ".".join(parts[2:])
                 entries.setdefault(data_name, set()).add(suffix)
     return entries
+
+
+def load_loc_values(path: Path) -> Dict[str, Dict[str, str]]:
+    """Load .en file, return {dataName: {suffix: value}}."""
+    entries: Dict[str, Dict[str, str]] = {}
+    if not path.exists():
+        return entries
+    with path.open("r", encoding="utf-8") as f:
+        for _ln in f:
+            line = _ln.strip()
+            if not line or line.startswith("#"):
+                continue
+            if "=" not in line:
+                continue
+            key, val = line.split("=", 1)
+            key = key.strip()
+            val = val.strip()
+            parts = key.split(".")
+            if len(parts) >= 3:
+                suffix = parts[1]
+                data_name = ".".join(parts[2:])
+                entries.setdefault(data_name, {})[suffix] = val
+    return entries
+
+
+def _load_effect_operations(mods_dir: Path) -> Dict[str, str | None]:
+    """Build {effect_dataName: operation} index from TIEffectTemplate.json."""
+    idx: Dict[str, str | None] = {}
+    fp = mods_dir / "TIEffectTemplate.json"
+    if not fp.exists():
+        return idx
+    obj = load_json(fp)
+    if not isinstance(obj, list):
+        return idx
+    for itm in obj:
+        if isinstance(itm, dict):
+            dn = itm.get("dataName")
+            if dn:
+                idx[dn] = itm.get("operation")
+    return idx
+
+
+_PLACEHOLDER_RE = re.compile(r"\{(\d+)\}")
+
+
+def validate_placeholders_in_effect_loc(
+    loc_values: Dict[str, Dict[str, str]],
+    effect_data_names: Set[str],
+    effect_operations: Dict[str, str | None],
+) -> List[Tuple[str, str, str]]:  # noqa: E501
+    """Validate {N} placeholders in effect .en values against operation type.
+
+    Returns list of (dataName, suffix, error_message).
+    """
+    issues: List[Tuple[str, str, str]] = []
+    for dn, suffixes in loc_values.items():
+        if dn not in effect_data_names:
+            continue
+        operation = effect_operations.get(dn)
+        expected = OPERATION_SPECIFIERS.get(operation, {"0"})
+        for suffix, value in suffixes.items():
+            found = {m.group(1) for m in _PLACEHOLDER_RE.finditer(value)}
+            invalid = found - VALID_SPECIFIERS
+            unexpected = found - expected
+            if invalid:
+                issues.append((
+                    dn,
+                    suffix,
+                    f"invalid specifier(s): {{{', '.join(sorted(invalid))}}}",
+                ))
+            elif unexpected:
+                issues.append((
+                    dn,
+                    suffix,
+                    f"unexpected specifier(s) for operation={operation}: "
+                    f"{{{', '.join(sorted(unexpected))}}} "
+                    f"(expected: {{{', '.join(sorted(expected))}}})",
+                ))
+    return issues
+
+
+def validate_placeholders_generic(
+    loc_values: Dict[str, Dict[str, str]],
+) -> List[Tuple[str, str, str]]:
+    """Check that all {N} in values use a known specifier (no tracing)."""
+    issues: List[Tuple[str, str, str]] = []
+    for dn, suffixes in loc_values.items():
+        for suffix, value in suffixes.items():
+            found = {m.group(1) for m in _PLACEHOLDER_RE.finditer(value)}
+            invalid = found - VALID_SPECIFIERS
+            if invalid:
+                issues.append((
+                    dn,
+                    suffix,
+                    f"invalid specifier(s): {{{', '.join(sorted(invalid))}}}",
+                ))
+    return issues
+
+
+def load_loc_keys(path: Path) -> Dict[str, Set[str]]:
+    """Load .en file, return {dataName: set_of_key_suffixes}."""
+    return load_loc_entries(path)
 
 
 def audit_file(
@@ -85,6 +205,7 @@ def audit_file(
     # Load localization
     loc_file = mods_dir / "Localization" / "en" / f"{base}.en"
     loc_entries = load_loc_keys(loc_file)
+    loc_values = load_loc_values(loc_file)
     loc_names = set(loc_entries.keys())
 
     required_keys = LOC_REQUIREMENTS.get(base, ["displayName", "description"])
@@ -96,7 +217,9 @@ def audit_file(
 
     # Missing localization: in .json but not in .en at all
     for dn in sorted(template_names - loc_names):
-        issues.append(("missing_loc", dn, f"no localization entries (need: {', '.join(required_keys)})"))
+        issues.append(("missing_loc", dn,
+                       f"no localization entries (need: "
+                       f"{', '.join(required_keys)})"))
 
     # Partial localization: dataName exists but not all required keys
     for dn in sorted(template_names & loc_names):
@@ -104,9 +227,18 @@ def audit_file(
         for req in required_keys:
             if req not in has:
                 issues.append(
-                    ("partial_loc", dn, f"has {', '.join(sorted(has))}, missing: {req}")
+                    ("partial_loc", dn,
+                     f"has {', '.join(sorted(has))}, missing: {req}")
                 )
                 break
+
+    # Placeholder validation for TIEffectTemplate
+    if base == "TIEffectTemplate":
+        effect_operations = _load_effect_operations(mods_dir)
+        for ph_issue in validate_placeholders_in_effect_loc(
+            loc_values, template_names, effect_operations
+        ):
+            issues.append(("placeholder", ph_issue[0], ph_issue[2]))
 
     return issues
 
@@ -116,7 +248,10 @@ def delete_orphan_loc(
     mods_dir: Path,
     orphan_names: Set[str],
 ) -> int:
-    """Remove orphan localization lines from .en file. Returns lines removed."""
+    """Remove orphan localization lines from .en file.
+
+    Returns lines removed.
+    """
     base = fp.stem
     loc_file = mods_dir / "Localization" / "en" / f"{base}.en"
     if not loc_file.exists():
@@ -144,15 +279,20 @@ def delete_orphan_loc(
 
 
 def main() -> int:
-    p = argparse.ArgumentParser(description="Audit mod localization vs template files")
-    p.add_argument("--mods-dir", type=Path, default=None, help="Path to Mods directory")
-    p.add_argument("--apply", action="store_true", help="Apply deletions (dry-run by default)")
+    p = argparse.ArgumentParser(
+        description="Audit mod localization vs template files"
+    )
+    p.add_argument("--mods-dir", type=Path, default=None,
+                   help="Path to Mods directory")
+    p.add_argument("--apply", action="store_true",
+                   help="Apply deletions (dry-run by default)")
     p.add_argument(
         "--delete",
         action="store_true",
         help="Delete orphan localization entries (implies --apply)",
     )
-    p.add_argument("--verbose", "-v", action="store_true", help="Show all issues including OK files")
+    p.add_argument("--verbose", "-v", action="store_true",
+                   help="Show all issues including OK files")
     args = p.parse_args()
 
     repo_root = Path(__file__).resolve().parents[2]
@@ -177,12 +317,14 @@ def main() -> int:
     orphan_count = sum(1 for _, t, _ in all_issues if t == "orphan_loc")
     missing_count = sum(1 for _, t, _ in all_issues if t == "missing_loc")
     partial_count = sum(1 for _, t, _ in all_issues if t == "partial_loc")
+    placeholder_count = sum(1 for _, t, _ in all_issues if t == "placeholder")
     error_count = sum(1 for _, t, _ in all_issues if t == "error")
 
     print(f"Total issues: {len(all_issues)}")
     print(f"  Orphan localization (loc exists, no template): {orphan_count}")
     print(f"  Missing localization (template exists, no loc): {missing_count}")
     print(f"  Partial localization (incomplete keys): {partial_count}")
+    print(f"  Invalid placeholder specifier: {placeholder_count}")
     if error_count:
         print(f"  Parse errors: {error_count}")
 
@@ -203,6 +345,7 @@ def main() -> int:
                 "orphan_loc": "ORPHAN",
                 "missing_loc": "MISSING",
                 "partial_loc": "PARTIAL",
+                "placeholder": "PLACEHOLDER",
                 "error": "ERROR",
             }.get(itype, itype)
             print(f"  [{label}] {dn}: {detail}")
@@ -216,12 +359,14 @@ def main() -> int:
         for fname, issues_list in by_file.items():
             fp = mods_dir / fname
             orphan_set = {
-                dn for itype, dn, detail in issues_list if itype == "orphan_loc"
+                dn for itype, dn, detail in issues_list
+                if itype == "orphan_loc"
             }
             if orphan_set:
                 removed = delete_orphan_loc(fp, mods_dir, orphan_set)
                 total_removed += removed
-                print(f"  {fname}: removed {removed} lines ({len(orphan_set)} orphans)")
+                print(f"  {fname}: removed {removed} lines "
+                      f"({len(orphan_set)} orphans)")
 
         print(f"\nTotal localization lines removed: {total_removed}")
         return 1
