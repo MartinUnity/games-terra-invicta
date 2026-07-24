@@ -2135,7 +2135,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 15,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2156,7 +2156,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 10,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 8,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2177,7 +2177,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 5,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 4,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2198,7 +2198,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 3,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 2,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2219,7 +2219,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2240,7 +2240,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2261,7 +2261,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2282,7 +2282,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2303,7 +2303,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2324,7 +2324,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2345,7 +2345,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2365,7 +2365,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2385,7 +2385,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2406,7 +2406,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -2427,7 +2427,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 0,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": [],
@@ -3481,7 +3481,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3501,7 +3501,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3521,7 +3521,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3542,7 +3542,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3562,7 +3562,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3582,7 +3582,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3603,7 +3603,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3623,7 +3623,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3643,7 +3643,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3664,7 +3664,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3684,7 +3684,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -3704,7 +3704,7 @@
     "oneTimeGlobally": false,
     "repeatable": false,
     "factionAvailableChance": 100,
-    "initialUnlockChance": 1,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 1,
     "maxUnlockChance": 100,
     "resourcesGranted": []
@@ -24781,10 +24781,10 @@
     "effects": [],
     "oneTimeGlobally": false,
     "repeatable": false,
-    "factionAvailableChance": 60,
-    "initialUnlockChance": 5,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 5,
-    "maxUnlockChance": 50,
+    "maxUnlockChance": 100,
     "resourcesGranted": []
   },
   {
@@ -24811,10 +24811,10 @@
     "effects": [],
     "oneTimeGlobally": false,
     "repeatable": false,
-    "factionAvailableChance": 60,
-    "initialUnlockChance": 5,
+    "factionAvailableChance": 100,
+    "initialUnlockChance": 100,
     "deltaUnlockChance": 5,
-    "maxUnlockChance": 50,
+    "maxUnlockChance": 100,
     "resourcesGranted": []
   },
   {
@@ -24899,5 +24899,71 @@
     "deltaUnlockChance": 5,
     "maxUnlockChance": 50,
     "resourcesGranted": []
+  },
+  {
+    "dataName": "Project_CavityDrive",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_AdvancedCavityDrive",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_PebbleDrive",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_AntimatterSpiker",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_AntimatterMicrofissionDrive",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_AntimatterPlasmaCoreTorch",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_SuperconductingMassDriver",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_NeutronFluxTorch",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_TritonPolywellDrive",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_PegasusDrive",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
+  },
+  {
+    "dataName": "Project_FirestarFissionLantern",
+    "initialUnlockChance": 100,
+    "maxUnlockChance": 100,
+    "factionAvailableChance": 100
   }
 ]
