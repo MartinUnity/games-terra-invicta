@@ -299,15 +299,17 @@ def extract_space_infrastructure(data):
             elif "TISpaceFleetState" in asset_type:
                 fleets_in_orbit += 1
 
-        infra_list.append({
-            "orbit_name": orbit_name,
-            "body_name": body_name,
-            "orbit_id": orbit_id,
-            "pending_habs": pending_habs,
-            "destroyed_assets": destroyed,
-            "habs_in_orbit": habs_in_orbit,
-            "fleets_in_orbit": fleets_in_orbit,
-        })
+        infra_list.append(
+            {
+                "orbit_name": orbit_name,
+                "body_name": body_name,
+                "orbit_id": orbit_id,
+                "pending_habs": pending_habs,
+                "destroyed_assets": destroyed,
+                "habs_in_orbit": habs_in_orbit,
+                "fleets_in_orbit": fleets_in_orbit,
+            }
+        )
 
     return pd.DataFrame(infra_list)
 
