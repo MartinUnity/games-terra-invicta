@@ -14,46 +14,63 @@ Extract, visualize, and mod Terra Invicta savegame data.
 
 ## Script Organization
 
-### AI Project Generation (`scripts/ai/`)
-- `worker.py` - AI worker that calls a local Ollama model to generate staged project candidates
-- `swarm.py` - Swarm orchestrator for multiple Ollama models
-- `runner.py` - Core run_cycle orchestration logic
-- `helpers.py` - JSON extraction, model calls, staging, validation utilities
-- `prompts.py` - Prompt building helpers
-- `selection.py` - Template/effect selection logic
-- `mining_leveler.py` - Mining bonus level suffix mapping
-
-### Mod Utilities (`scripts/mods/`)
-- `check_localization.py` - Validate mod entries against localization file
-- `fix_unlock_chance.py` - Fix max unlock chance values
-- `generate_weapon.py` - Generate weapon templates from damage/DPS parameters
-- `scan_effects.py` - Count effect occurrences in project templates
-- `update_descriptions.py` - Update project summaries via local Ollama model
-- `validate.py` - Read-only validator for mod JSON files (includes localization orphan check via `loc_audit.py`)
-- `loc_audit.py` - Cross-reference templates vs localization: find orphan/missing/partial entries. Supports `--delete` to zap orphan localization lines.
-
-### Tools (`scripts/tools/`)
-- `mining_bonus.sh` - Get full mining bonus data
-- `project_list.sh` - Generate project list for AI worker
-- `generate_outline.py` - Generate project outline documentation
-
-### One-Off Scripts (`scripts/one_off/`)
-
-#### Analysis (read-only, no side effects)
-- `analyze_weapon_balance.py` — Correlate weapon DPS with research cost, mount slots, and PD vulnerability. Reads all weapon template files plus project research costs. Use to find over/under-powered weapons.
-- `analyze_heatsink_balance.py` — Compare heat sink capacity/mass ratio against base game entries. Key metric: `heatCapacity_GJ / mass_tons`. Mod entries flagged if capacity/ton is >150% or <50% of base game average.
-- `analyze_radiator_balance.py` — Compare radiator specific power, operating temp, vulnerability, and collector status against base game. Key metrics: `specificPower_2s_KWkg`, `operatingTemp_K`, `vulnerability`. Includes vulnerability tier breakdown.
-- `analyze_powerplant_balance.py` — Compare power plant output, efficiency, and power density against base game. Key metrics: `maxOutput_GW`, `efficiency`, `specificPower_tGW`. Shows per-class comparison between mod and base entries.
-- `analyze_all_effects.py` — Analyze **all** effects across every project, grouped by context with value conversion (percentages, raw, multiplicative). Supports `--ctx <context>` filter and `--raw` mode. Use to see what effect totals look like before balancing.
-- `analyze_effects.py` — Narrower analysis of tracked priority effects only (from `project_effects.txt`). Use for quick checks on the effect categories you're actively balancing.
-
-#### Balancing (modify mod files, prompts before writing)
-- `balance_effects.py` — Bump effect tiers for categories below 400% total into the 400–700% target range. Increases research cost proportionally. Tracks effects from `project_effects.txt`.
-- `balance_prereqs.py` — Redistribute project prerequisites for even game-progression spread. Uses AI value scoring (1–10) and cumulative research cost as placement signal. Modes: `--analyze`, `--dry-run`, `--apply`. Results cached in `.balance_cache.json`.
-- `update_research_costs.py` — Reduce research cost for effect-matched projects (from `update_effects.txt`) and clamp extreme outliers.
-
-#### Content generation (AI-driven, modify mod files)
-- `generate_content.py` — Generate mod content in three tiers: `easy` (reuse existing effects), `middle` (new tech + child projects), `full` (new equipment + project). Supports `--type heatsink`, `--type radiator`, `--type laser`, `--type drive`, etc. Results cached in `.generate_cache.json`. Use `--dry-run` first, then `--apply`.
+| File | Summary |
+|------|---------|
+| | **Root** |
+| `extraction.py` | Parse savegames into structured CSV/JSON datasets |
+| `show-data.py` | Streamlit app with interactive charts and filters |
+| `config.py` | Centralized workspace paths and data file constants |
+| | |
+| | **scripts/cleanup_saves.py** |
+| `scripts/cleanup_saves.py` | Archive and tidy save games (keeps newest N per type) |
+| | |
+| | **scripts/ai/** — AI project generation |
+| `scripts/ai/worker.py` | Call local Ollama model to generate staged project candidates |
+| `scripts/ai/swarm.py` | Swarm orchestrator for multiple Ollama models |
+| `scripts/ai/runner.py` | Core run_cycle orchestration logic |
+| `scripts/ai/helpers.py` | JSON extraction, model calls, staging, validation utilities |
+| `scripts/ai/prompts.py` | Prompt building helpers |
+| `scripts/ai/selection.py` | Template/effect selection logic |
+| `scripts/ai/mining_leveler.py` | Mining bonus level suffix mapping |
+| | |
+| | **scripts/mods/** — Mod validation and utilities |
+| `scripts/mods/validate.py` | Read-only validator for all mod JSON files (includes loc orphan check) |
+| `scripts/mods/loc_audit.py` | Find orphan/missing/partial localization entries + placeholder validation. Supports `--delete`. |
+| `scripts/mods/check_localization.py` | Validate mod entries against localization file |
+| `scripts/mods/check_weapons.py` | Score weapons by capability, flag prereq-cost outliers |
+| `scripts/mods/check_armor.py` | Score armor by capability, flag prereq-cost outliers |
+| `scripts/mods/check_drives.py` | Score drives by capability, flag prereq-cost outliers |
+| `scripts/mods/generate_weapon.py` | Generate weapon templates from damage/DPS parameters |
+| `scripts/mods/scan_effects.py` | Count effect occurrences in project templates |
+| `scripts/mods/update_descriptions.py` | Update project summaries via local Ollama model |
+| `scripts/mods/fix_unlock_chance.py` | Fix max unlock chance values |
+| `scripts/mods/prereq_cost.py` | Calculate total prereq cost for projects and suggest chains |
+| | |
+| | **scripts/tools/** |
+| `scripts/tools/mining_bonus.sh` | Get full mining bonus data |
+| `scripts/tools/project_list.sh` | Generate project list for AI worker |
+| `scripts/tools/generate_outline.py` | Generate project outline documentation |
+| | |
+| | **scripts/one_off/** — Analysis |
+| `scripts/one_off/analyze_all_effects.py` | All effects across every project, grouped by context, with value conversion |
+| `scripts/one_off/analyze_effects.py` | Tracked priority effects only (from `project_effects.txt`) |
+| `scripts/one_off/analyze_weapon_balance.py` | Correlate weapon DPS with research cost, mount slots, PD vulnerability |
+| `scripts/one_off/analyze_heatsink_balance.py` | Compare heatsink capacity/mass ratio against base game |
+| `scripts/one_off/analyze_radiator_balance.py` | Compare radiator power, temp, vulnerability against base game |
+| `scripts/one_off/analyze_powerplant_balance.py` | Compare power plant output, efficiency, density against base game |
+| | |
+| | **scripts/one_off/** — Balancing (modify mod files) |
+| `scripts/one_off/balance_effects.py` | Bump effect tiers below 400% into target range, adjust cost |
+| `scripts/one_off/balance_prereqs.py` | Redistribute prerequisites for even game-progression spread |
+| `scripts/one_off/update_research_costs.py` | Reduce cost for effect-matched projects, clamp outliers |
+| | |
+| | **scripts/one_off/** — Content generation |
+| `scripts/one_off/generate_content.py` | AI-driven mod content: easy/middle/full tiers, `--dry-run` then `--apply` |
+| `scripts/one_off/consolidate_mc_hl.py` | Consolidate MC mining and human lifespan projects |
+| `scripts/one_off/consolidate_military.py` | Consolidate MilitaryPriority projects |
+| `scripts/one_off/generate_funding_effects.py` | Generate SpaceDevPriority effects and ~40 projects |
+| `scripts/one_off/reduce_effects.py` | Reduce overabundant effects (Pherocyte, HabResearch, MarketSales) |
+| `scripts/one_off/validate_exotic_prereqs.py` | Verify exotic-material items have Exotics in prereq chain |
 
 ## Getting Started
 

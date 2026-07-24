@@ -4,4 +4,4 @@ watchdog
 pyyaml
 requests
 jsonschema
-
+streamlit_autorefresh

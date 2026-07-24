@@ -5,7 +5,7 @@
 #   ./sync_mods.sh --dry-run # show what would be synced without making changes
 
 MODS_DIR="$HOME/src/games/terra-invicta/Mods"
-DEST_DIR="$HOME/.local/share/Steam/steamapps/common/Terra Invicta/Mods/Enabled/Zethrok"
+DEST_DIR="$HOME/.local/share/Steam/steamapps/common/Terra Invicta/Mods/Enabled/LongWar"
 
 if [[ ! -d "$MODS_DIR" ]]; then
   echo "ERROR: Mods directory not found: $MODS_DIR" >&2
