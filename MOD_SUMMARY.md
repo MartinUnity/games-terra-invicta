@@ -1,8 +1,8 @@
-# Zethrok — Terra Invicta "Long War" Mod
+# LongWar — Terra Invicta "Long War" Mod
 
 ## Overview
 
-**Zethrok** is a content-expansion mod for Terra Invicta designed to stretch the game into a marathon-length experience. By introducing over 1,100 new research projects and dozens of new ship systems, it transforms a typical campaign into a deep, multi-layered strategic struggle where technology trees feel expansive and progression meaningful.
+**LongWar** is a content-expansion mod for Terra Invicta designed to stretch the game into a marathon-length experience. By introducing over 1,100 new research projects and dozens of new ship systems, it transforms a typical campaign into a deep, multi-layered strategic struggle where technology trees feel expansive and progression meaningful.
 
 ## How to Play
 
@@ -20,16 +20,16 @@ For best results, start your game with a **reduced progress speed** setting (10%
 
 ## Content by Category
 
-| Category | Projects |
-|---|---|
-| Military Science | 225 |
-| Social Science | 203 |
-| Materials | 182 |
-| Space Science | 163 |
-| Energy | 125 |
-| Xenology | 119 |
-| Information Science | 83 |
-| Life Science | 28 |
+| Category            | Projects |
+| ------------------- | -------- |
+| Military Science    | 225      |
+| Social Science      | 203      |
+| Materials           | 182      |
+| Space Science       | 163      |
+| Energy              | 125      |
+| Xenology            | 119      |
+| Information Science | 83       |
+| Life Science        | 28       |
 
 ## Resource & Infrastructure Overhaul
 
@@ -50,4 +50,4 @@ The mod dramatically shifts the resource landscape. Base game mining caps are ex
 
 * Works as a standalone mod — no other mods required
 * All content is in a single mod directory; toggle on/off via Terra Invicta's mod manager
-* For questions or feedback, check the [GitHub repository](https://github.com/yourusername/terra-invicta-mod)
+* For questions or feedback, check the [GitHub repository](https://github.com/MartinUnity/games-terra-invicta)
